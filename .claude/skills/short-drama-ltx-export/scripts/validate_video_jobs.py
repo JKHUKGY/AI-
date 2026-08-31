@@ -7,7 +7,7 @@
 - first_frame/last_frame/ref_images 引用的文件是否在本地磁盘真实存在
   （相对路径按运行时的当前工作目录解析，约定从仓库根目录运行）。
 - width/height 是否能被 64 整除（LTX-2.5 的已知限制，见
-  short-drama-video-gen/references/ltx2_self_hosted.md 第 5 点）。
+  short-drama-ltx-generate/references/ltx_pipeline_gotchas.md）。
 - prompt/negative_prompt 里是否残留常见占位符文本，提示尚未真正展开。
 
 用法:

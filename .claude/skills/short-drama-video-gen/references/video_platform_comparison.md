@@ -33,11 +33,14 @@
 ## 自建模型：LTX-2.5（Lightricks LTX-2 仓库，用户自己租显卡部署）
 
 和上面几家 SaaS 不同，这是用户自己控制的推理环境（比如在 vast.ai 租显卡
-装好开源仓库），不是订阅制平台，本 skill 对这种情况提供了实际的 SSH 调用
-脚本，见 `ltx2_self_hosted.md` 和 `scripts/ltx_ssh_submit.py`，不需要用户
-手动上网页操作。接口细节（首尾帧参数名、负面提示词是否通用、竖屏支持）
-截至 2026-08 调研仍有部分未经官方文档完全确认，第一次用之前务必先
-`--dry-run` + 小范围测试，不要直接批量提交整集。
+装好开源仓库），不是订阅制平台。本 skill 只负责把这类镜头的提示词写好，
+真正的打包/租卡/执行/验收交给 `short-drama-ltx-export` +
+`short-drama-ltx-generate` 两个 skill 接力完成（实际调用脚本和 GPU 租赁/
+参数踩坑记录都在后者的 `references/` 下）。接口细节（`--image` 参数格式、
+`--negative-prompt` 是否通用、`--num-frames` 约束、竖屏支持）已经实测
+确认过一批，见 `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`，
+第一次用新 pipeline/新显卡之前仍务必先 `--dry-run` + 小范围测试，不要
+直接批量提交整集。
 
 ## 选型建议（按短剧场景）
 

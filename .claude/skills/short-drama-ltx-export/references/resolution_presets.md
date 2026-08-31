@@ -1,9 +1,9 @@
 # LTX-2.5 竖屏分辨率速查表
 
-来源约束：`short-drama-video-gen/references/ltx2_self_hosted.md` 第 5 点——
-`--width`/`--height` 必须能被 64 整除，官方案例没有专门验证过竖屏
-（9:16），第一次跑某个镜头必须先用测试档确认输出真的是竖屏、没被模型内部
-裁成横屏，再上正式档。
+来源约束：`short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`——
+`--width`/`--height` 必须能被 64 整除；竖屏（9:16）输出已经实测验证过
+没有被模型内部裁成横屏，但换新显卡架构/新 pipeline 时仍建议第一次先用
+测试档确认，再上正式档。
 
 下面数值都满足 64 整除、比例接近 9:16，不用每次重新算，直接选一档用：
 
@@ -24,7 +24,7 @@
   不变。
 - 全集统一用同一档正式分辨率，不要不同镜头用不同宽高比，除非故事本身要求
   某几镜特殊构图（比如需要横屏插入的资料画面）。
-- 显存不够时（`ltx2_self_hosted.md` 提到权重合计约 66GiB），优先降档到
+- 显存不够时（`ltx_pipeline_gotchas.md` 提到权重合计约 66GiB），优先降档到
   测试档甚至更小分辨率，而不是保持大分辨率再加
   `--quantization fp8-cast --offload cpu/disk`——量化+offload 会明显变慢，
   先问用户显卡余量再决定。

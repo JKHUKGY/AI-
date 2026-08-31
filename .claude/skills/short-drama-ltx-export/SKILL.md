@@ -14,8 +14,8 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的打�
 所以单独拆成这个 skill，别指望用户自己手动转录。
 
 这个 skill **只负责产出/校验文件**，不负责真正发起 SSH 生成——那是
-`short-drama-video-gen` 第 4.5 步 `ltx_ssh_submit.py` 去掉 `--dry-run`
-之后的事，本 skill 最多跑到 `--dry-run` 这一步为止。
+`short-drama-ltx-generate` 这个 skill 拿到本 skill 的产出后去掉
+`--dry-run` 真跑的事，本 skill 最多跑到 `--dry-run` 这一步为止。
 
 ## 0. 先确认这次针对哪一集/哪几镜
 
@@ -72,12 +72,12 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的打�
   `duration_sec × 24fps` 自动估算；如果这一镜需要更精确控制（比如卡住某个
   动作节拍），显式算好填进去并在 `notes` 写明为什么覆盖默认估算。
 - `width`/`height`：像素值必须能被 64 整除（见
-  `short-drama-video-gen/references/ltx2_self_hosted.md` 第 5 点）。竖屏
+  `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`）。竖屏
   9:16 常见可用组合比如 `704×1280`、`768×1344`——**先问用户这次要测试档
   还是正式档**，两档分辨率不同就分别产出两份 job（或用 `notes` 区分），
   不要自己拍板只出一档。第一次跑通某个镜头之前，优先建议测试档，跑通了再
-  升正式档，呼应 `ltx2_self_hosted.md` 里"竖屏没有被官方验证过，第一次
-  必须先测再上正式分辨率"的提醒。
+  升正式档——竖屏输出已经实测验证过没问题，但每次换新显卡架构/新 pipeline
+  仍建议先测试档确认再上正式档。
 - `seed`：默认不填（每次随机）；用户如果要复现某次结果（比如已经选中了
   某个 seed 生成的效果，想在正式分辨率下复现同一个动作走向）才填，问清楚
   再填，不要自己编一个数字。
@@ -107,16 +107,17 @@ python3 .claude/skills/short-drama-ltx-export/scripts/validate_video_jobs.py \
 
 - 已存在：读出来给用户看一眼当前的 `ssh_host`/`pipeline_module`/权重路径，
   确认没有变化（比如换了台显卡机器）。
-- 不存在：按 `short-drama-video-gen/references/ltx2_self_hosted.md` 的模板
-  问用户要：SSH 地址/端口/密钥、远程仓库路径 `remote_repo_dir`、远程工作
-  目录 `remote_work_dir`、这次用哪个 `pipeline_module`（比如
-  `ltx_pipelines.distilled`）、权重路径 `pipeline_extra_args`。这些都是
-  用户环境相关的真实值，**不要用占位符/猜测值直接写文件**，宁可停下来问。
+- 不存在：按 `short-drama-ltx-generate/references/gpu_rental_ops.md` 和
+  `ltx_pipeline_gotchas.md` 的模板问用户要：SSH 地址/端口/密钥、远程仓库
+  路径 `remote_repo_dir`、远程工作目录 `remote_work_dir`、这次用哪个
+  `pipeline_module`（比如 `ltx_pipelines.distilled`）、权重路径
+  `pipeline_extra_args`。这些都是用户环境相关的真实值，**不要用占位符/
+  猜测值直接写文件**，宁可停下来问。
 
 ## 6. Dry-run 验证能不能被脚本消费
 
 ```bash
-python3 .claude/skills/short-drama-video-gen/scripts/ltx_ssh_submit.py \
+python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
   --config output/<故事名>/videos/ep0X/ltx_remote_config.json \
   --jobs output/<故事名>/videos/ep0X/video_jobs.json \
   --out-dir output/<故事名>/videos/ep0X \
@@ -125,7 +126,8 @@ python3 .claude/skills/short-drama-video-gen/scripts/ltx_ssh_submit.py \
 
 这一步不实际连接远程机器，只确认脚本能正常解析 config+jobs、拼出远程命令
 不报 Python 异常（比如 KeyError）。逐条看打印出来的"远程命令"，对照
-`ltx2_self_hosted.md` 里标注的"占位实现/未确认参数"（尤其尾帧参数名和
+`short-drama-ltx-generate/references/ltx_pipeline_gotchas.md` 里标注的
+已知参数陷阱（`--image` 的三段式格式、`--num-frames` 必须 8k+1、
 `--negative-prompt` 是否通用）提醒用户：这一步只保证文件能被脚本消费，
 **不保证远程 pipeline 真的认得这些参数**，第一次真跑之前用户还是要自己在
 远程机器上跑一遍对应 pipeline 的 `--help` 核实。
@@ -139,16 +141,17 @@ python3 .claude/skills/short-drama-video-gen/scripts/ltx_ssh_submit.py \
 结束时说清楚：本次打包了几镜（哪些集/哪些镜号）、跳过了几镜（B/C 级或
 素材缺失）、校验阶段发现并修正了什么问题、`ltx_remote_config.json` 是
 新建的还是复用已有的、dry-run 是否通过。明确告诉用户：文件已经就位，
-真正生成还需要用户自己去掉 `--dry-run` 跑 `ltx_ssh_submit.py`（或者先用
-`--only` 只跑 1-2 个镜头验证效果），这一步 skill 不会替用户主动执行。
+真正生成交给 `short-drama-ltx-generate` 这个 skill 去掉 `--dry-run` 执行
+（或者先用 `--only` 只跑 1-2 个镜头验证效果），本 skill 不会替用户主动
+执行生成。
 
 ## 与其他 skill 的衔接
 
 - 上游：`short-drama-video-gen`（`video_jobs.md` 逐镜提示词）+
   `short-drama-keyframe-gen`（`keyframes.md` 关键帧路径）+
   `short-drama-image-gen`（`selected.md` 一致性参考图）。
-- 下游：用户或后续会话手动去掉 `--dry-run` 跑
-  `.claude/skills/short-drama-video-gen/scripts/ltx_ssh_submit.py`
-  实际提交生成；生成结果按 `short-drama-video-gen` SKILL.md 第 6 步用
-  `extract_frames.py` 抽帧验收，验收结果回填进 `video_jobs.md`（人读版）
-  和 `video_jobs.json`（`notes`/后续增量导出时的"状态"）。
+- 下游：`short-drama-ltx-generate` 拿本 skill 产出的 `video_jobs.json` +
+  `ltx_remote_config.json`，去掉 `--dry-run` 实际执行
+  `ltx_ssh_submit.py` 提交生成、抽帧+听审验收，验收结果回填进
+  `video_jobs.md`（人读版）和 `video_jobs.json`（`notes`/后续增量导出
+  时的"状态"）。

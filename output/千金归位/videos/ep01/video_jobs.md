@@ -6,28 +6,30 @@
 > 主清单，不再走本地 ffmpeg。
 >
 > **平台说明**：确认用的是自建 LTX-2.5（Lightricks `LTX-2` 仓库，租用
-> 显卡部署），不是 SaaS 订阅平台。已调研过官方接口现状，见
-> `.claude/skills/short-drama-video-gen/references/ltx2_self_hosted.md`
-> ——`--image` 首帧、`--prompt`/`--num-frames`/`--width`/`--height` 已
-> 确认，但首尾帧组合用法和 `--negative-prompt` 是否所有 pipeline 通用
-> 仍需上机 `--help` 核实。提交用
-> `.claude/skills/short-drama-video-gen/scripts/ltx_ssh_submit.py`，不是
-> 手动网页操作。
+> 显卡部署），不是 SaaS 订阅平台。打包/执行交给
+> `short-drama-ltx-export`（打包校验）+ `short-drama-ltx-generate`
+> （实际租卡/执行/验收）两个 skill，接口踩坑记录见
+> `.claude/skills/short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`
+> ——`--image` 是 `PATH FRAME_IDX STRENGTH` 三段式格式、
+> `ltx_pipelines.distilled` 没有 `--negative-prompt`、`--num-frames`
+> 必须 `8k+1`，这些已实测确认，不是猜测。提交用
+> `.claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py`，
+> 不是手动网页操作。
 
 ## 提交清单
 
-| 镜号 | 场景 | 首帧文件路径 | 尾帧 | 一致性参考图 | 台词/旁白 | 建议时长(s) | 状态 |
-|---|---|---|---|---|---|---|---|
-| 1 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜01/ep01_镜01_02.png` | 无 | `output/千金归位/assets/苏晚_落魄期_正面/苏晚_落魄期_正面_00.png` | 无 | 3 | 待生成 |
-| 2 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜02/ep01_镜02_00.png` | 无 | 同上 | "从今天起你就不是我们家的人了！"（亲戚背对镜头说完，画外音形式，不涉及对口型） | 4 | 待生成 |
-| 3 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜03/ep01_镜03_01.png` | 无 | 同上 | "婶，我真的无处可去了……" | 4 | 待生成 |
-| 5 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜05/ep01_镜05_01.png` | 无 | 同上 | 无（啜泣声） | 3 | 待生成 |
-| 7 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜07/ep01_镜07_01.png` | 无 | 同上 | 画外音："苏小姐，恭喜你，你的滴血验亲结果出来了。" | 5 | 待生成 |
-| 8 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜08/ep01_镜08_00.png` | 无 | 同上 | 旁白："滴血验亲……我从来没做过这个。" | 4 | 待生成 |
-| 9 | SC06(夜) | `output/千金归位/keyframes/ep01/ep01_镜09/ep01_镜09_00.png` | 无 | 无（空镜无人物） | 无 | 6 | 待生成 |
-| 10 | SC06 | `output/千金归位/keyframes/ep01/ep01_镜10/ep01_镜10_00.png` | 无 | 无 | 无 | 3 | 待生成 |
-| 11 | SC06 | `output/千金归位/keyframes/ep01/ep01_镜11/ep01_镜11_03.png` | 无 | 同上（全集最高优先级，建议额外多传一张参考图锁脸） | "上车，沈家二小姐，该回家了。" | 5 | 待生成 |
-| 12 | SC06 | `output/千金归位/keyframes/ep01/ep01_镜12/ep01_镜12_00.png` | 无 | 同上 | 无 | 5 | 待生成 |
+| 镜号 | 场景 | 首帧文件路径 | 尾帧 | 一致性参考图 | 台词/旁白 | 建议时长(s) | 状态 | 生成视频 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜01/ep01_镜01_02.png` | 无 | `output/千金归位/assets/苏晚_落魄期_正面/苏晚_落魄期_正面_00.png` | 无 | 3 | 已确认 | `output/千金归位/videos/ep01/ep01_镜01.mp4` |
+| 2 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜02/ep01_镜02_00.png` | 无 | 同上 | "从今天起你就不是我们家的人了！"（已嵌入提示词，亲戚背对镜头，测试LTX同步语音） | 4 | 已确认，音频待人工听审 | `output/千金归位/videos/ep01/ep01_镜02.mp4` |
+| 3 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜03/ep01_镜03_01.png` | 无 | 同上 | "婶，我真的无处可去了……"（已嵌入提示词，实测嘴型随语音变化） | 4 | 已确认，音频待人工听审 | `output/千金归位/videos/ep01/ep01_镜03.mp4` |
+| 5 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜05/ep01_镜05_01.png` | 无 | 同上 | 无（啜泣声） | 3 | 已确认 | `output/千金归位/videos/ep01/ep01_镜05.mp4` |
+| 7 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜07/ep01_镜07_01.png` | 无 | 同上 | 画外音："苏小姐，恭喜你，你的滴血验亲结果出来了。"（已嵌入提示词为电话听筒声音，苏晚本人不说话） | 5 | 已确认，音频待人工听审 | `output/千金归位/videos/ep01/ep01_镜07.mp4` |
+| 8 | SC01 | `output/千金归位/keyframes/ep01/ep01_镜08/ep01_镜08_00.png` | 无 | 同上 | 旁白："滴血验亲……我从来没做过这个。"（已嵌入提示词为画外音旁白，苏晚本人不说话） | 4 | 已确认，音频待人工听审 | `output/千金归位/videos/ep01/ep01_镜08.mp4` |
+| 9 | SC06(夜) | `output/千金归位/keyframes/ep01/ep01_镜09/ep01_镜09_00.png` | 无 | 无（空镜无人物） | 无 | 6 | 已确认 | `output/千金归位/videos/ep01/ep01_镜09.mp4` |
+| 10 | SC06 | `output/千金归位/keyframes/ep01/ep01_镜10/ep01_镜10_00.png` | 无 | 无 | 无 | 3 | 已确认 | `output/千金归位/videos/ep01/ep01_镜10.mp4` |
+| 11 | SC06 | `output/千金归位/keyframes/ep01/ep01_镜11/ep01_镜11_03.png` | 无 | 同上（全集最高优先级，建议额外多传一张参考图锁脸） | "上车，沈家二小姐，该回家了。"（已嵌入提示词为车内男声，苏晚本人不说话） | 5 | 已确认，音频待人工听审 | `output/千金归位/videos/ep01/ep01_镜11.mp4` |
+| 12 | SC06 | `output/千金归位/keyframes/ep01/ep01_镜12/ep01_镜12_00.png` | 无 | 同上 | 无 | 5 | 已确认 | `output/千金归位/videos/ep01/ep01_镜12.mp4` |
 
 ## 逐镜完整提示词
 
@@ -200,14 +202,24 @@
 ## 成本与检查记录
 
 - 本集 12 镜：10 个镜头（原 8 个 S/A 级 + 升级后的镜2/镜8）纳入 LTX 图生
-  视频提交清单，通过 `ltx_ssh_submit.py` 经 SSH 提交给自建 LTX-2.5 生成
-  （本轮尚未实际连接显卡生成，等 SSH 就绪后回填"状态"列和视频文件路径）；
-  2 个镜头（镜4、镜6）判定无合适素材、剪辑阶段用其他方式覆盖，不强行生成。
+  视频提交清单，2 个镜头（镜4、镜6）判定无合适素材、剪辑阶段用其他方式
+  覆盖，不强行生成。
 - 之前用本地 ffmpeg 给镜2/镜8 顶替生成的静态视频已按用户要求删除（不符合
   "真正用图生视频模型生成"的要求）；已回 `short-drama-keyframe-gen` 补
-  合成首帧（SC01场景背景+苏晚落魄期立绘，各出3张变体，逐张验收后选定
-  `ep01_镜02_00.png`/`ep01_镜08_00.png`，详见 `keyframes.md`），并按
-  `video_prompt_guide.md` 的三段式公式补完这两镜的动作提示词，现在和其余
-  8 镜一起进入正式提交清单。
-- 全部 10 个视频提交任务的台词/旁白信息已按用户要求补全到上表"台词/旁白"
-  列，仅作配音/剪辑对照参考，未写入正向提示词、不涉及模型生成语音。
+  合成首帧（详见 `keyframes.md`），补完这两镜的动作提示词。
+- **10 镜已全部在自建 LTX-2.5（RTX PRO 6000 Blackwell WS，vast.ai 租用）
+  上实际生成成功**，通过 `ltx_ssh_submit.py` 经 SSH 提交，测试分辨率
+  704×1280（竖屏，实测确认真的输出竖屏没有被裁成横屏）。首次尝试用
+  diffusion VAE（natten 后端）在这块 Blackwell 显卡上触发
+  CUBLAS/illegal-memory-access 报错，换成卷积版 VAE
+  （`ltx-2.5-video-vae-conv-bf16.safetensors`）后全部跑通，详见
+  `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`。
+- **确认 LTX-2.5 能根据提示词自动生成同步音频**：镜5个有台词的镜头
+  （镜2/3/7/8/11）已把台词按官方示例写法嵌入正向提示词（声音描述+语气+
+  "说道"+引号台词），画外音/旁白/电话听筒类台词额外注明"角色本人不说话"
+  防止误触发口型动作。实测音频音量明显高于纯环境音版本（-15~-27dB 均值
+  vs 纯雨声环境音的 -54.8dB），镜3（苏晚正面哀求台词）抽帧核对到嘴型随
+  时间真实变化，是同步语音而非静态表情。**台词内容/音色/语气是否准确、
+  自然，Claude 无法通过音频文件判断，需要用户实际听一遍确认**。
+- 全部 10 个视频提交任务的台词/旁白信息保留在上表"台词/旁白"列作为参考
+  记录（哪些镜已嵌入提示词、哪些角色本人不说话），方便后续剪辑核对。

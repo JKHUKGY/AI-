@@ -25,15 +25,16 @@ skill 不内置这类调用脚本，因为各家 SaaS 的 API 差异大、需要
 计费账号）。
 
 **例外：用户自己租显卡、自己部署开源模型（比如 Lightricks LTX-2.5）**。
-这种情况不是"平台订阅"，而是用户自己完全控制的推理环境，SSH 是通用协议，
-不存在"各家 API 不一样"的问题，所以本 skill 对这种情况提供了实际的调用
-脚本 `scripts/ltx_ssh_submit.py`，直接跑通"上传首帧 → 远程推理 → 下载
-视频"，不需要用户手动操作网页，见第 4.5 步和
-`references/ltx2_self_hosted.md`。
+这种情况不是"平台订阅"，而是用户自己完全控制的推理环境，不存在"各家 API
+不一样"的问题。本 skill 只负责把提示词按 `video_jobs.md`/`video_jobs.json`
+的格式写好，**真正打包提交、租显卡、跑生成、验收这几步交给下游的
+`short-drama-ltx-export`（打包校验）+ `short-drama-ltx-generate`（实际
+执行）两个 skill**，见第 4 步末尾的交接说明，本 skill 不再自己内置调用
+脚本。
 
 另一个例外是 B 级镜头——那个可以用本地 `ffmpeg` 零成本搞定，见第 5 步。
 
-先跟用户确认属于哪种情况（SaaS 手动提交 / 自建模型 SSH 调用 / 都不是），
+先跟用户确认属于哪种情况（SaaS 手动提交 / 自建模型 LTX-2.5 / 都不是），
 避免走错流程。
 
 ## 1. 先确认输入齐不齐
@@ -103,30 +104,21 @@ skill 不内置这类调用脚本，因为各家 SaaS 的 API 差异大、需要
 `references/video_jobs_schema.md`），这就是给用户手动提交生成的清单。如果
 用户明确要接自己的 API，再额外导出一份对应的 JSON。
 
-## 4.5 自建 LTX-2.5：SSH 直接提交生成任务
+## 4.5 自建 LTX-2.5：交给下游 skill 打包执行
 
 如果用户是自己租显卡、自己部署了 `Lightricks/LTX-2`（LTX-2.5）这类开源
-模型，不要停在"整理清单等用户手动提交"这一步——按下面的流程直接跑：
+模型，不要在本 skill 里继续手动拼 JSON/写调用脚本——第 4 步写好的
+`video_jobs.md` 已经是完整素材，接下来依次调用：
 
-1. 先读 `references/ltx2_self_hosted.md`，确认当前对 LTX-2.5 接口的已知
-   信息和不确定项（尤其是首尾帧参数名、`--negative-prompt` 是否通用），
-   不要凭空编参数名。
-2. 找用户要 SSH 访问信息（地址/端口/密钥），以及远程机器上 LTX-2 仓库路径
-   和模型权重路径，按模板整理成 `ltx_remote_config.json`。
-3. 把第 4 步展开好的提示词，按 `video_jobs_schema.md` 的 JSON 格式导出，
-   额外补 LTX 需要的 `width`/`height`（像素，需 64 整除）等字段。
-4. 先对 1-2 个用户指定的关键镜头跑：
-   ```bash
-   python3 .claude/skills/short-drama-video-gen/scripts/ltx_ssh_submit.py \
-     --config ltx_remote_config.json \
-     --jobs output/<故事名>/videos/ep0X/video_jobs.json \
-     --out-dir output/<故事名>/videos/ep0X \
-     --only <镜号> --dry-run
-   ```
-   `--dry-run` 先确认拼出来的远程命令对不对，再去掉这个参数真跑。
-5. 视频下载回本地后，按第 6 步抽帧验收；不合格就回
-   `stability_playbook.md` 调整提示词/参数后用 `--only` 只重跑这一镜，
-   确认没问题再批量跑剩下的镜头，不要没验证过第一条就把整集一次性提交。
+1. **`short-drama-ltx-export`**：把 `video_jobs.md` 转成严格结构化的
+   `video_jobs.json`，补齐 LTX 专属字段（`width`/`height`/`num_frames`/
+   `seed`），校验本地文件路径是否存在，检查/生成 `ltx_remote_config.json`。
+2. **`short-drama-ltx-generate`**：真正去租显卡（或复用已有实例）、部署
+   环境、跑 `ltx_ssh_submit.py` 提交生成、下载结果、抽帧+听审验收，
+   并且沉淀了 GPU 租赁/pipeline 参数/角色配音一致性方面的实测踩坑记录。
+
+本 skill 到"产出 `video_jobs.md`"为止就完成任务，不重复实现打包/执行
+逻辑。
 
 ## 5. B 级镜头：本地零成本推拉摇移
 
@@ -178,5 +170,6 @@ python3 .claude/skills/short-drama-video-gen/scripts/extract_frames.py \
 - 下游：`video_jobs.md` 是给用户/剪辑环节的提交清单，用户手动生成或接自己
   API 拿到视频文件后，路径要回填进这份表，方便剪辑阶段按镜号找素材；
   `ken_burns.py` 产出的 B 级视频文件可以直接进剪辑时间线，不需要额外处理；
-  自建 LTX-2.5 的场景由 `ltx_ssh_submit.py` 直接把视频下载到
-  `output/<故事名>/videos/ep0X/`，同样要把路径回填进 `video_jobs.md`。
+  自建 LTX-2.5 的场景交给 `short-drama-ltx-export` → `short-drama-ltx-generate`
+  接力完成打包和实际生成，视频下载到 `output/<故事名>/videos/ep0X/` 后
+  同样要把路径回填进 `video_jobs.md`。
