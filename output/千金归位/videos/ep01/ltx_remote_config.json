@@ -1,0 +1,15 @@
+{
+  "ssh_host": "root@ssh2.vast.ai",
+  "ssh_port": 35064,
+  "remote_repo_dir": "/workspace/LTX-2",
+  "remote_work_dir": "/workspace/jobs",
+  "pipeline_module": "ltx_pipelines.distilled",
+  "pipeline_extra_args": [
+    "--transformer-path", "models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+    "--text-encoder-path", "models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+    "--video-vae-path", "models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors",
+    "--audio-vae-path", "models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors",
+    "--spatial-upsampler-path", "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
+  ],
+  "python_bin": "uv run python"
+}
