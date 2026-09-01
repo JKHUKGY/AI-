@@ -161,6 +161,56 @@
   DFR 的"关键帧锚定解码"特性），**只是信息提示，不是报错**，视频照常
   正常生成，成片质量在这次实测里没有看出明显影响。
 
+## 官方文档记载、本仓库尚未验证/尚未完全接入的能力（2026-09 调研）
+
+查官方 GitHub 仓库（`README.md` + `packages/ltx-pipelines/docs/pipelines.md`
++ `docs/installation.md`，一手源码仓库、可信度高）和 HuggingFace/官方博客
+的二手摘要（`ltx.io/blog/*` 直接抓取遇到 `Header overflow`，只能靠搜索引擎
+摘要，措辞不保证跟原文完全一致，第一次要用之前建议换工具重新抓一次原文核
+对准确措辞）后，梳理出的 pipeline 家族比本仓库目前用到的更全，记下来避免
+以后重新调研一遍：
+
+- **`ltx_pipelines.retake`（局部重绘，本仓库 2026-09 已接入
+  `ltx_ssh_submit.py --retake`）**：只重新生成一段已有视频里指定的时间
+  窗口 `[--start-time, --end-time]`，其余部分保持不动，据称可独立控制
+  `regenerate_video`/`regenerate_audio`。这条命中 `loop-video-generation`
+  最大的浪费点——之前 Reviewer 发现"只有某几秒有问题"也要整段重来。**参数
+  名尚未用 `--help` 实测确认**，`ltx_ssh_submit.py` 里的 `build_retake_cmd`
+  是按文档 best-effort 拼的，第一次用先跑
+  `python -m ltx_pipelines.retake --help` 核对，报参数错误就照 `--help`
+  输出改这个函数，别猜。
+- **`ltx_pipelines.keyframe_interpolation` 支持任意数量关键帧**，不只是
+  首尾两张——`short-drama-video-gen` 的"起始姿态→过程关键点→结束姿态"三段
+  式目前"过程关键点"只有文字描述，没有对应的图像锚点。如果以后想让这个
+  中间关键点也有真实图像约束，需要 `short-drama-keyframe-gen` 先出一张
+  "过程关键点"关键帧图，再换用这个 pipeline，而不是现在这样只给首尾帧、
+  中间纯靠文字描述赌运气。**目前没有接入，是一个需要额外改
+  keyframe-gen 产出物的更大改动，先记录不急着做。**
+- **IC-LoRA 家族（相机控制 Canny/Depth/Pose、`Camera-Control-Static`、
+  Ingredients 单图参考表、Multi-Subject Reference LoRA 最多5张独立参考图、
+  Motion-Track-Control 轨迹样条）**：官方给的结构性一致性/运镜控制机制，
+  跟本仓库现在"全靠文字描述赌运气"的做法是两条完全不同的路。需要额外下载
+  对应 LoRA 权重、改 `ltx_remote_config.json` 结构支持 `--lora` 参数、换成
+  `ltx_pipelines.ic_lora` 调用方式，工程量不小，**目前没有接入**，值得
+  以后单独评估要不要投入，不建议顺手绑进现有 skill 流程里。
+- **`ti2vid_two_stages`/`_hq`**：这两个 pipeline 才有 CFG/STG guidance，
+  能承载负面提示词式的对抗引导——本仓库在用的 `distilled`/`dfr_pipeline`
+  **没有**这个机制，之前写"这个 pipeline 没有负面提示词"是准确的，但容易
+  被误读成"整个 LTX-2.5 都不支持"，这里澄清一下：只是我们选的这两个
+  pipeline 没有，不是模型整体没有。如果某类瑕疵在 distilled/dfr 上反复
+  出现同一种问题，`ti2vid_two_stages` 系列可以作为升级选项评估，**目前
+  没有接入**。
+- **DFR 的 `--temporal-upscalings{0,1,2}`/`--spatial-upscalings{1,2}`**：
+  理论上可以对已经验证过的测试档结果做时间/空间维度放大，比
+  `loop-video-generation` 现在"正式档确认"整段重新生成一次更省钱，**目前
+  `ltx_ssh_submit.py` 没有接这两个参数**，先记录，等以后有精力接的时候
+  参考这条。
+- **`ref_images` 字段是死代码**：`video_jobs_schema.md`/各 skill 文档里
+  写的"额外一致性参考图"这个字段，`ltx_ssh_submit.py` 从来没有读取或上传
+  过它，只处理 `first_frame`/`last_frame`。已经在脚本和相关文档里补了
+  提醒；真正的多参考图机制就是上面 IC-LoRA Ingredients/Multi-Subject
+  Reference LoRA，接入前不要假装这个字段有效果。
+
 ## 角色配音一致性（2026-08 查文档+源码，尚未实测）
 
 LTX-2.5 会根据提示词自动生成同步音频（见
@@ -187,3 +237,28 @@ LTX-2.5 会根据提示词自动生成同步音频（见
 现成素材、想要完全掌控音色/使用真人配音 → 用 A2Vid 外挂音频。两条路都
 **没有中文台词的实测验证**，第一次使用建议先对 1 个镜头测试，确认效果
 可用再批量套用到其他镜头。
+
+## 说话类镜头会把复杂/负面情绪收敛成通用笑容（2026-09 实测，多镜头交叉确认）
+
+`ltx_pipelines.distilled` 生成带台词的镜头时，如果目标情绪不是简单的
+"平静/生气"这类单一情绪，而是**混合或克制型情绪**（苦笑带泪、阴阳怪气的
+冷笑、强忍酸楚的笑），模型有明显倾向把结尾表情收敛成一个**通用的、真心
+开怀的大笑/露齿笑**，即使正向提示词已经写清楚具体的目标表情、负面提示词
+也明确排除"大笑/露齿笑/开心表情"。
+
+**已确认的案例**（《出狱后我成为了非洲矿王》ep01）：
+- 镜14（苏慧"含泪强忍的酸楚笑"）：3轮不同措辞都没能达成，模型稳定给出
+  "开心大笑"。
+- 镜18（刘兰"嘴角轻蔑上扬的冷笑，眼皮不抬阴阳怪气"）：3轮里最后一轮
+  把负面提示词加强到"嘴唇基本闭合、不露牙齿、任何形式的笑容都不要"这么
+  具体，依然收敛成开怀露齿笑。
+
+**建议**：这类"目标表情是克制/负面但台词内容本身语气偏日常"的镜头，跑满
+`stability_playbook.md`"最多3轮"上限仍未解决时，不要继续加大负面提示词
+力度硬扛（已验证无效），可选替代方案：
+1. 接受这个替代效果，情绪精度让位给动作/音频的正确性，如实记录差距。
+2. 换用非台词驱动的静态表情（把这一镜降级处理，不生成说话音频，只做
+   表情/微动作，配音在剪辑阶段单独叠加），绕开"台词驱动"这个触发条件。
+3. 换 pipeline（比如 `ltx_pipelines.dfr_pipeline` 生产质量档）测试是否
+   有同样倾向——本仓库目前只在 distilled pipeline 上验证过这个问题，
+   没有跨pipeline对比数据。

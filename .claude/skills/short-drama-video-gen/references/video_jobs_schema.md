@@ -52,7 +52,7 @@
 | `id` | 是 | 与 `keyframes.md`/`jobs.json` 一致的命名规则 `ep{集号:02d}_镜{镜号:02d}`，分段的话加后缀 `_seg1`/`_seg2`。 |
 | `first_frame` | 是 | 来自 `keyframes.md` 的关键帧文件路径，不要凭空指定。 |
 | `last_frame` | 否 | 只有确定用首尾帧控制、且已经有对应的"结束状态"关键帧时才填，没有就留 `null`，不要让视频模型的默认行为被误当成刻意设计的结束状态。 |
-| `ref_images` | 否 | 额外的一致性参考图（人脸/道具特写），数量按目标平台上限来，见 `video_platform_comparison.md`。 |
+| `ref_images` | 否 | 额外的一致性参考图（人脸/道具特写），数量按目标平台上限来，见 `video_platform_comparison.md`。**自建 LTX-2.5 路线注意**：`short-drama-ltx-generate/scripts/ltx_ssh_submit.py` 目前从不读取/上传这个字段，只处理 `first_frame`/`last_frame`——填了这个字段对自建通道的生成结果没有任何效果（官方真正的多参考图机制是 IC-LoRA Ingredients/Multi-Subject Reference LoRA，需要额外权重和不同调用方式，见 `ltx_pipeline_gotchas.md`）。这个字段目前只对手动提交到 SaaS 平台（可灵/即梦/Vidu/Veo 等，它们的网页版/API 本身支持多参考图）有意义。 |
 | `dialogue` | 否 | 从 `ep0X.md` 分镜表"台词/旁白"列原样搬过来，纯参考信息，给配音/剪辑环节对照用；没有台词就留 `null`。不要喂进 `prompt`/`negative_prompt` 让模型生成语音。 |
 | `prompt` / `negative_prompt` | 是 | 完整文本，按 `video_prompt_guide.md` 展开，不要留占位符。 |
 | `duration_sec` | 是 | 目标正式时长；测试轮次可以先用更短的值单独跑，不需要改这个字段，测试版本自己另开一条记录或在 `notes` 里注明。 |

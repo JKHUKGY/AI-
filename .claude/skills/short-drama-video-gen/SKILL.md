@@ -172,4 +172,7 @@ python3 .claude/skills/short-drama-video-gen/scripts/extract_frames.py \
   `ken_burns.py` 产出的 B 级视频文件可以直接进剪辑时间线，不需要额外处理；
   自建 LTX-2.5 的场景交给 `short-drama-ltx-export` → `short-drama-ltx-generate`
   接力完成打包和实际生成，视频下载到 `output/<故事名>/videos/ep0X/` 后
-  同样要把路径回填进 `video_jobs.md`。
+  同样要把路径回填进 `video_jobs.md`；如果想让"提交生成+验收"这一段换成
+  出片 agent + 审查 agent 互相打回重做的循环（审查时对照原剧本情节而不是
+  分镜表字面描述），`short-drama-ltx-generate` 那一段可以改用
+  `loop-video-generation` 执行。

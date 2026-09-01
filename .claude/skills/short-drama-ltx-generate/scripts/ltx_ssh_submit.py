@@ -16,19 +16,36 @@
 --negative-prompt 不是所有 pipeline 都有这几点，第一次用某个 pipeline
 之前务必先在远程跑一遍 `python -m <pipeline_module> --help` 核实。
 
-用法:
+用法（正常提交生成）:
   python3 ltx_ssh_submit.py --config ltx_remote_config.json \\
       --jobs output/<故事名>/videos/ep0X/video_jobs.json \\
       --out-dir output/<故事名>/videos/ep0X \\
       [--only 11 12] [--dry-run]
 
+用法（局部重绘，只重跑已有视频里一段时间窗口，其余画面不动，走
+ltx_pipelines.retake——官方文档记载但本仓库尚未用 --help 实测确认参数名，
+第一次用先看 ltx_pipeline_gotchas.md 的提醒，`--jobs`/`--only` 仍然要传，
+用来定位是哪个镜头、拿它当前的 prompt/seed）:
+  python3 ltx_ssh_submit.py --config ltx_remote_config.json \\
+      --jobs output/<故事名>/videos/ep0X/video_jobs.json \\
+      --out-dir output/<故事名>/videos/ep0X \\
+      --only 11 --retake 2.0 3.0 [--dry-run]
+  （要求 --out-dir 下已经有一份 <id>.mp4，即上一轮生成的结果，retake 会把
+  它上传上去当输入；产物落在 <id>_retake.mp4，不覆盖原文件）
+
 video_jobs.json 是 short-drama-video-gen/references/video_jobs_schema.md
 里 JSON 版本的结构，额外需要 width/height（像素，需能被 64 整除），可选
 num_frames（不填按 duration_sec * 24fps 估算，再吸附到最近的合法 8k+1
-值），可选 seed。
+值），可选 seed。**`ref_images` 字段目前是死代码**——本脚本从未读取/上传
+过这个字段，只处理 `first_frame`/`last_frame`，写了这个字段不会有任何
+效果，官方真正的多参考图机制是 IC-LoRA Ingredients/Multi-Subject
+Reference LoRA，需要额外权重和不同调用方式，本脚本还没接。
 
 ltx_remote_config.json 模板见 references/ltx_pipeline_gotchas.md 和
-SKILL.md。
+SKILL.md；retake 模式如果需要跟主 pipeline 不同的模块名/额外参数，可以在
+config 里加 `retake_pipeline_module`（默认 `ltx_pipelines.retake`）和
+`retake_extra_args`（默认空），不会跟 `pipeline_module`/`pipeline_extra_args`
+混用。
 """
 
 import argparse
@@ -121,6 +138,66 @@ def build_remote_cmd(cfg, job, remote_image, remote_last_image, remote_output):
     )
 
 
+def build_retake_cmd(cfg, remote_video, remote_output, start_sec, end_sec, prompt, seed):
+    # ltx_pipelines.retake：官方文档记载"只重新生成视频里一段时间窗口，
+    # 其余画面保持不动"，本仓库尚未用 --help 实测确认参数名，第一次用
+    # 之前务必先在远程跑一遍 `python -m ltx_pipelines.retake --help` 核对，
+    # 下面这几个参数名是按官方文档 best-effort 拼的，不保证跟当前版本 CLI
+    # 完全一致——如果报参数错误，对照 --help 输出改这个函数，不要瞎猜重试。
+    cmd = cfg.get("python_bin", "python").split() + [
+        "-m",
+        cfg.get("retake_pipeline_module", "ltx_pipelines.retake"),
+    ]
+    cmd += cfg.get("retake_extra_args", [])
+    cmd += ["--video-path", remote_video]
+    cmd += ["--start-time", str(start_sec), "--end-time", str(end_sec)]
+    cmd += ["--prompt", prompt]
+    if seed is not None:
+        cmd += ["--seed", str(seed)]
+    cmd += ["--output-path", remote_output]
+
+    return (
+        "export PATH=$HOME/.local/bin:$PATH && "
+        f"cd {shlex.quote(cfg['remote_repo_dir'])} && "
+        + " ".join(shlex.quote(c) for c in cmd)
+    )
+
+
+def run_retake(cfg, job, local_video, out_dir, start_sec, end_sec, dry_run=False):
+    job_id = job["id"]
+    remote_work = cfg["remote_work_dir"].rstrip("/")
+    remote_video = f"{remote_work}/{job_id}_retake_in.mp4"
+    remote_output = f"{remote_work}/{job_id}_retake_out.mp4"
+
+    remote_cmd = build_retake_cmd(
+        cfg, remote_video, remote_output, start_sec, end_sec, job["prompt"], job.get("seed")
+    )
+
+    print(f"\n=== {job_id} (retake {start_sec}s-{end_sec}s) ===")
+    print("远程命令:", remote_cmd)
+
+    if dry_run:
+        return {"id": job_id, "status": "dry_run", "cmd": remote_cmd}
+
+    if not os.path.exists(local_video):
+        raise FileNotFoundError(
+            f"--retake 需要先有一份本地已生成的视频作为输入（上一轮的产出），找不到: {local_video}"
+        )
+
+    upload(cfg, local_video, remote_video)
+    result = subprocess.run(ssh_base(cfg) + [remote_cmd], capture_output=True, text=True)
+    if result.stdout:
+        print(result.stdout[-2000:])
+    if result.returncode != 0:
+        print(result.stderr[-2000:], file=sys.stderr)
+        return {"id": job_id, "status": "failed", "stderr": result.stderr[-4000:]}
+
+    local_out = os.path.join(out_dir, f"{job_id}_retake.mp4")
+    download(cfg, remote_output, local_out)
+    print(f"已下载: {local_out}")
+    return {"id": job_id, "status": "done", "output": local_out}
+
+
 def run_job(cfg, job, out_dir, dry_run=False):
     job_id = job["id"]
     remote_work = cfg["remote_work_dir"].rstrip("/")
@@ -164,6 +241,17 @@ def main():
     ap.add_argument(
         "--dry-run", action="store_true", help="只打印将要执行的远程命令和上传/下载路径，不实际连接"
     )
+    ap.add_argument(
+        "--retake",
+        nargs=2,
+        metavar=("START_SEC", "END_SEC"),
+        help=(
+            "局部重绘模式：只重新生成 --only 指定的这一个镜头里 "
+            "[START_SEC, END_SEC] 这段时间窗口，其余画面不动（ltx_pipelines.retake，"
+            "官方文档记载但本仓库未实测，见脚本头部说明）。要求 --only 精确匹配到"
+            "唯一一个镜头，且 --out-dir 下已有该镜头上一轮生成的 <id>.mp4。"
+        ),
+    )
     args = ap.parse_args()
 
     with open(args.config, encoding="utf-8") as f:
@@ -182,6 +270,28 @@ def main():
             sys.exit(f"--only {args.only} 在 jobs 文件里没有匹配到任何镜头")
 
     os.makedirs(args.out_dir, exist_ok=True)
+
+    if args.retake:
+        if len(jobs) != 1:
+            sys.exit(
+                f"--retake 模式要求 --only 精确匹配到唯一一个镜头，当前匹配到 {len(jobs)} 个"
+            )
+        start_sec, end_sec = float(args.retake[0]), float(args.retake[1])
+        job = jobs[0]
+        local_video = os.path.join(args.out_dir, f"{job['id']}.mp4")
+        try:
+            result = run_retake(cfg, job, local_video, args.out_dir, start_sec, end_sec, dry_run=args.dry_run)
+        except Exception as e:
+            print(f"镜头 {job.get('id')} retake 出错: {e}", file=sys.stderr)
+            result = {"id": job.get("id"), "status": "error", "error": str(e)}
+        summary_path = os.path.join(args.out_dir, "ltx_submit_results.json")
+        with open(summary_path, "w", encoding="utf-8") as f:
+            json.dump([result], f, ensure_ascii=False, indent=2)
+        print(f"\n结果写入 {summary_path}")
+        if result["status"] not in ("done", "dry_run"):
+            print(f"\nretake 未成功，检查上面的报错或 {summary_path}", file=sys.stderr)
+        return
+
     results = []
     for job in jobs:
         try:

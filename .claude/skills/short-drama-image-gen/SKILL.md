@@ -156,3 +156,6 @@ job 连续 3 轮都选不出可用图就停下来问用户，不要自己无限�
 - 上游：`short-drama-storyboard` 产出 `characters.md` / `scenes.md`。
 - 下游：选定的图片路径会被后续"把关键帧丢进图生视频/剪辑"的环节直接引用，
   所以 `selected.md` 里的路径要准确、不要中途手动改文件名却不同步登记表。
+- 如果想要"生成 agent + 审查 agent 互相制衡"且最多 4 路并行的更严格执行
+  方式（而不是同一个 agent 自己生成又自己验收），本 skill 第 1 步组装完
+  jobs 之后，可以改用 `loop-picture-generation` 替代第 2-4 步。

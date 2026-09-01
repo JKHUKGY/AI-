@@ -150,3 +150,7 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
   只负责"真正跑起来"这一段，不重复定义提示词写法。
 - 下游：生成结果的文件路径要回填进 `short-drama-video-gen` 产出的
   `video_jobs.md`（人读版清单），方便剪辑阶段按镜号找素材。
+- 如果想要"出片 agent + 审查 agent 互相制衡"、审查时不拿分镜表字面描述
+  当标准而是对照原剧本情节判断、并且单镜最多三轮自动打回重做的更严格
+  执行方式，本 skill 第 1-3 步（租显卡/环境/核实参数）做完之后，可以改用
+  `loop-video-generation` 替代第 4-5 步（提交生成+验收）。
