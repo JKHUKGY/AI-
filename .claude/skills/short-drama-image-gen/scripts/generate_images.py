@@ -4,15 +4,23 @@
 用法：
     codex login --device-auth   # 先登录一次（ChatGPT Plus/Pro/Team 账号）
     python3 generate_images.py jobs.json --out-dir output/<故事名>/assets
+    python3 generate_images.py jobs.json --out-dir output/<故事名>/assets --parallel 3
 
 jobs.json 格式见 ../references/jobs_schema.md。不依赖任何 API key/计费账号，
 走的是 `codex` CLI 自带的 image_gen 工具，用你登录的 ChatGPT 账号额度。
+
+`--parallel N`（默认 1，等价于原来的顺序执行）会把这一批 job 里所有要生成
+的图片（job x count 展开成一个任务队列）放进一个线程池，最多同时跑 N 个
+`codex exec` 子进程——即多个 codex CLI 真正并发运行，而不是一张一张排队。
+并行数怎么选、什么情况不适合并行见 ../references/parallel_mode.md。
 """
 import argparse
 import json
 import subprocess
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 DEFAULT_TIMEOUT = 240
@@ -23,7 +31,7 @@ def check_login():
     return result.returncode == 0
 
 
-def run_one(job_id, prompt, ref_images, job_dir, target, model, timeout):
+def run_one(prompt, ref_images, job_dir, target, model, timeout):
     full_prompt = (
         f"{prompt}\n\n"
         f"请生成这张图片，并把最终图片文件保存到这个精确的绝对路径："
@@ -60,46 +68,61 @@ def run_one(job_id, prompt, ref_images, job_dir, target, model, timeout):
     return target.exists(), result.stdout
 
 
-def run_job(job, out_dir, model, timeout):
-    job_id = job["id"]
-    prompt = job["prompt"]
-    count = int(job.get("count", 3))
-    ref_images = job.get("ref_images") or []
-    job_dir = out_dir / job_id
-    job_dir.mkdir(parents=True, exist_ok=True)
+def build_tasks(jobs, out_dir):
+    """把 job x count 展开成独立的生成任务列表，每个任务对应一次 codex exec 调用。"""
+    tasks = []
+    for job in jobs:
+        job_id = job["id"]
+        prompt = job["prompt"]
+        count = int(job.get("count", 3))
+        ref_images = job.get("ref_images") or []
+        job_dir = out_dir / job_id
+        job_dir.mkdir(parents=True, exist_ok=True)
 
-    existing = sorted(job_dir.glob(f"{job_id}_*.png"))
-    start_idx = len(existing)
+        existing = sorted(job_dir.glob(f"{job_id}_*.png"))
+        start_idx = len(existing)
 
-    manifest_entries = []
-    for i in range(count):
-        idx = start_idx + i
-        fname = f"{job_id}_{idx:02d}.png"
-        target = (job_dir / fname).resolve()
-        print(f"[{job_id}] 生成第 {idx + 1} 张 -> {target.name} ...")
-
-        ok, stdout = run_one(job_id, prompt, ref_images, job_dir, target, model, timeout)
-        if not ok:
-            print(f"  [警告] 未生成 {target}，重试一次...", file=sys.stderr)
-            ok, stdout = run_one(job_id, prompt, ref_images, job_dir, target, model, timeout)
-
-        if ok:
-            print(f"  已保存 {target}")
-            manifest_entries.append(
+        for i in range(count):
+            idx = start_idx + i
+            fname = f"{job_id}_{idx:02d}.png"
+            target = (job_dir / fname).resolve()
+            tasks.append(
                 {
-                    "file": str(target),
                     "job_id": job_id,
                     "prompt": prompt,
                     "ref_images": ref_images,
-                    "backend": "codex-cli",
-                    "model": model or "default",
-                    "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                    "job_dir": job_dir,
+                    "target": target,
                 }
             )
-        else:
-            print(f"  [失败] {target} 仍未生成，放弃这一张。codex 最后输出：", file=sys.stderr)
-            print(stdout[-1000:], file=sys.stderr)
-    return manifest_entries
+    return tasks
+
+
+def run_task(task, model, timeout):
+    job_id = task["job_id"]
+    target = task["target"]
+    print(f"[{job_id}] 生成 -> {target.name} ...")
+
+    ok, stdout = run_one(task["prompt"], task["ref_images"], task["job_dir"], target, model, timeout)
+    if not ok:
+        print(f"  [警告][{job_id}] 未生成 {target.name}，重试一次...", file=sys.stderr)
+        ok, stdout = run_one(task["prompt"], task["ref_images"], task["job_dir"], target, model, timeout)
+
+    if ok:
+        print(f"  已保存 [{job_id}] {target.name}")
+        return {
+            "file": str(target),
+            "job_id": job_id,
+            "prompt": task["prompt"],
+            "ref_images": task["ref_images"],
+            "backend": "codex-cli",
+            "model": model or "default",
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        }
+
+    print(f"  [失败][{job_id}] {target.name} 仍未生成，放弃这一张。codex 最后输出：", file=sys.stderr)
+    print(stdout[-1000:], file=sys.stderr)
+    return None
 
 
 def main():
@@ -108,6 +131,12 @@ def main():
     ap.add_argument("--out-dir", default="output/assets", help="输出根目录，每个 job 一个子目录")
     ap.add_argument("--model", default=None, help="传给 codex exec -m 的模型名，默认用 codex 配置里的默认模型")
     ap.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT, help="单张图片生成超时秒数")
+    ap.add_argument(
+        "--parallel",
+        type=int,
+        default=1,
+        help="最多同时跑几个 codex exec 子进程（默认 1=顺序执行）。见 references/parallel_mode.md。",
+    )
     args = ap.parse_args()
 
     if not check_login():
@@ -122,14 +151,24 @@ def main():
     out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    all_manifest = []
-    for job in jobs:
-        all_manifest.extend(run_job(job, out_dir, args.model, args.timeout))
-
+    tasks = build_tasks(jobs, out_dir)
     manifest_path = out_dir / "manifest.append.jsonl"
-    with manifest_path.open("a", encoding="utf-8") as f:
-        for entry in all_manifest:
-            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    manifest_lock = threading.Lock()
+    all_manifest = []
+
+    def worker(task):
+        entry = run_task(task, args.model, args.timeout)
+        if entry:
+            with manifest_lock:
+                with manifest_path.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        return entry
+
+    parallel = max(1, args.parallel)
+    with ThreadPoolExecutor(max_workers=parallel) as executor:
+        for entry in executor.map(worker, tasks):
+            if entry:
+                all_manifest.append(entry)
 
     print(f"\n完成，本次共生成 {len(all_manifest)} 张图片，记录已追加到 {manifest_path}")
 

@@ -73,6 +73,13 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
 `pipeline_extra_args` 填得对。第一次用一个新 pipeline 或换了新显卡架构，
 一定要走这一步，不要图省事跳过。
 
+**`pipeline_extra_args` 里不要加 `--enhance_prompt`**（除非用户明确要单独
+测试这个官方"自动增强提示词"功能）——原因见 `ltx_pipeline_gotchas.md`
+"官方文档 + 社区实测交叉验证的共识"一节，本仓库的提示词已经是上游手写好
+的完整详细提示词，不属于这个功能的适用场景，多篇第三方实测也反馈它不稳定。
+同理，distilled pipeline 不需要也没有 CFG/steps 相关参数，看到网上教程让
+调 CFG 不要照搬（那是给 dev/full 完整模型用的）。
+
 ## 4. 提交生成
 
 1. 先 `--dry-run` 看拼出来的远程命令对不对：
@@ -85,12 +92,20 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
    ```
 2. 去掉 `--dry-run`，先对用户指定的 1-2 个关键镜头跑真实生成，确认没问题
    （不崩溃、能下载到本地）再用不带 `--only` 或多个镜号批量跑剩下的。
+   "先小范围测试档（小分辨率+短时长+固定 seed）确认稳定，再放大分辨率/
+   时长批量跑正式档"这套流程不是本仓库自己拍脑袋定的，官方文档和多篇
+   第三方实测教程都独立给出同样的建议，可以放心照做，不用每次重新纠结
+   要不要跳过测试档直接上正式档。
 3. 遇到报错（CUDA 错误、参数错误等）先看 `stderr`，对照
    `ltx_pipeline_gotchas.md` 有没有已知条目，没有就记录下来，解决后
    补一条进这份文档，不要每次重新排查同样的坑。
 
 ## 5. 验收
 
+0. 生成结果明显不对时，先对照 `ltx_pipeline_gotchas.md`"生成质量丢分的
+   三大常见诱因"（分辨率/宽高比传错、CFG 相关参数、提示词堆砌矛盾）快速
+   排查一遍，这是官方文档和多篇第三方实测反复提到的最容易翻车的原因，
+   往往比直接去查显卡/环境问题更快定位。
 1. 每个生成出来的视频，用
    `.claude/skills/short-drama-video-gen/scripts/extract_frames.py` 抽帧，
    Read 工具逐张看：人脸/服装一致性、动作方向、结尾定格姿态，按

@@ -58,6 +58,13 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的打�
 - `prompt`/`negative_prompt`：去对应"逐镜完整提示词"章节找这一镜的完整
   正向/负面提示词整段抄过来，不要截断、不要自己精简，也不要因为提示词长
   就省略"备注"里对生成效果有实际影响的限制条件（比如"不出现第二张脸"）。
+  抄的时候顺手扫一眼：如果这一镜有 `first_frame`，提示词却大段在复述
+  首帧图里已经有的静态内容（人物穿着、发型、背景陈设）而几乎没写动作/
+  镜头运动的变化量，这是 LTX 图生视频的已知常见坑（见
+  `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`），容易
+  跟首帧图像条件冲突导致生成结果跑偏——**照抄导出，但提醒用户回
+  `short-drama-video-gen` 检查这一镜提示词**，不要自己在导出阶段改写
+  提示词内容。
 - `duration_sec`：表格"建议时长(s)"列。
 - `aspect_ratio`：短剧默认 `"9:16"`，除非用户明确说这镜要横屏。
 - `platform_recommend`：固定写 `["LTX-2.5 (self-hosted)"]`，不要照抄
@@ -71,6 +78,10 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的打�
 - `num_frames`：默认不填，让 `ltx_ssh_submit.py` 按
   `duration_sec × 24fps` 自动估算；如果这一镜需要更精确控制（比如卡住某个
   动作节拍），显式算好填进去并在 `notes` 写明为什么覆盖默认估算。
+  第一次验证某镜动作方向时，参照
+  `references/resolution_presets.md`"时长也要走同样的先测试再放大阶梯"
+  一节，优先出一份 `num_frames` 较小（比如 73/97）的测试档 job，跟分辨率
+  测试档同一批产出，不要一上来就按最终时长导出。
 - `width`/`height`：像素值必须能被 64 整除（见
   `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md`）。竖屏
   9:16 常见可用组合比如 `704×1280`、`768×1344`——**先问用户这次要测试档
@@ -96,8 +107,10 @@ python3 .claude/skills/short-drama-ltx-export/scripts/validate_video_jobs.py \
 
 脚本检查（详见脚本内注释，规则不在这里重复）：必填字段是否齐全、
 `first_frame`/`last_frame`/`ref_images` 引用的文件是否在本地磁盘真实存在、
-`width`/`height` 是否能被 64 整除、`prompt`/`negative_prompt` 是否有明显
-占位符（比如残留的"TODO"/"（完整正向提示词）"这类没展开的字样）。
+`width`/`height` 是否能被 64 整除、`aspect_ratio` 字段是否跟实际
+`width`/`height` 比例吻合（防止漏填/传错分辨率悄悄退回默认横屏）、
+`num_frames`（如果手填了）是否满足 8k+1、`prompt`/`negative_prompt` 是否
+有明显占位符（比如残留的"TODO"/"（完整正向提示词）"这类没展开的字样）。
 
 校验报错就回 `video_jobs.md` 或对应素材目录核实修正，不要手动改 JSON 把
 报错糊过去（比如路径不存在就编一个假路径让脚本通过）——这种"通过校验"没有
@@ -113,6 +126,10 @@ python3 .claude/skills/short-drama-ltx-export/scripts/validate_video_jobs.py \
   `pipeline_module`（比如 `ltx_pipelines.distilled`）、权重路径
   `pipeline_extra_args`。这些都是用户环境相关的真实值，**不要用占位符/
   猜测值直接写文件**，宁可停下来问。
+  `pipeline_extra_args` 里**不要主动加 `--enhance_prompt`**——见
+  `ltx_pipeline_gotchas.md`"官方文档 + 社区实测交叉验证的共识"一节，
+  本 skill 导出的提示词都是上游手写好的完整详细提示词，不适用这个"自动
+  增强简略提示词"的功能，多篇第三方实测也反馈它不稳定。
 
 ## 6. Dry-run 验证能不能被脚本消费
 
