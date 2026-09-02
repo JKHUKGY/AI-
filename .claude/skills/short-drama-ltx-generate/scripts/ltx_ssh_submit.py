@@ -36,16 +36,30 @@ ltx_pipelines.retake——官方文档记载但本仓库尚未用 --help 实测�
 video_jobs.json 是 short-drama-video-gen/references/video_jobs_schema.md
 里 JSON 版本的结构，额外需要 width/height（像素，需能被 64 整除），可选
 num_frames（不填按 duration_sec * 24fps 估算，再吸附到最近的合法 8k+1
-值），可选 seed。**`ref_images` 字段目前是死代码**——本脚本从未读取/上传
+值），可选 seed，可选 first_frame_strength（首帧锁定强度，默认 1.0=完全锁死；
+调低能让背景松动但首帧保真度下降，未实测，见 model_capability_ledger.md D4）。**`ref_images` 字段目前是死代码**——本脚本从未读取/上传
 过这个字段，只处理 `first_frame`/`last_frame`，写了这个字段不会有任何
 效果，官方真正的多参考图机制是 IC-LoRA Ingredients/Multi-Subject
 Reference LoRA，需要额外权重和不同调用方式，本脚本还没接。
+
+用法（跑完这一批就自动把显卡关掉，别继续烧钱）:
+  python3 ltx_ssh_submit.py --config ltx_remote_config.json \\
+      --jobs .../video_jobs.json --out-dir ... --auto-stop
+  `--auto-stop` 会在这一批任务**全部跑完、结果已经下载到本地之后**（包括
+  中途报错、Ctrl-C 中断这两种情况，走 finally，不会因为异常就漏掉关机）调用
+  `gpu_teardown.py` 停掉实例并轮询确认真的停了。要求 config 里有 `platform`
+  和 `instance_id` 两个字段，**这个检查放在提交任务之前**——宁可现在就报错，
+  也不要等两小时批量任务跑完了才发现关不掉。默认 `--auto-stop-mode auto`：
+  RunPod 上是 terminate（Network Volume 上的模型权重不受影响，且顺带省掉
+  停止 Pod 仍在收的磁盘费），vast.ai/AutoDL 上是停机（那两家销毁会连模型
+  权重一起删）。细节见 gpu_teardown.py 的头部说明。
 
 ltx_remote_config.json 模板见 references/ltx_pipeline_gotchas.md 和
 SKILL.md；retake 模式如果需要跟主 pipeline 不同的模块名/额外参数，可以在
 config 里加 `retake_pipeline_module`（默认 `ltx_pipelines.retake`）和
 `retake_extra_args`（默认空），不会跟 `pipeline_module`/`pipeline_extra_args`
-混用。
+混用。`platform`/`instance_id`（RunPod 填 pod_id）这两个字段本脚本自己不用，
+只有 `--auto-stop` 用来知道该去关哪个平台的哪台机器。
 """
 
 import argparse
@@ -54,6 +68,7 @@ import os
 import shlex
 import subprocess
 import sys
+from pathlib import Path
 
 
 def ssh_base(cfg):
@@ -117,8 +132,17 @@ def build_remote_cmd(cfg, job, remote_image, remote_last_image, remote_output):
     # 这个参数（它根本不存在），负面提示词只留在 job 数据里给人看/给未来
     # 支持这个字段的 pipeline 用，不传给这个 pipeline 的 CLI。
     # --image 的实际格式是 `PATH FRAME_IDX STRENGTH [CRF]`（经 --help 确认），
-    # 不是一个裸路径。首帧固定用 FRAME_IDX=0、STRENGTH=1.0（完全锁定首帧）。
-    cmd += ["--image", remote_image, "0", "1.0"]
+    # 不是一个裸路径。首帧用 FRAME_IDX=0；STRENGTH 默认 1.0（完全锁定首帧），
+    # 但可以由 job 的 `first_frame_strength` 覆盖。
+    #
+    # 为什么要留这个口子：strength=1.0 把首帧焊死，直接后果是生成出来的视频
+    # **背景像素级不动**，只有人物的手和脸在变（实测证据见
+    # short-drama-video-gen/references/model_capability_ledger.md A6）。
+    # 调低理论上能让画面松动、允许视差和真实运镜，代价是首帧保真度下降
+    # （人脸/服装漂移）。**这个权衡本仓库还没实测**，A/B 方案见 ledger D4——
+    # 所以默认值保持 1.0 不变，不改现有行为，只是让那个实验做得了。
+    first_frame_strength = job.get("first_frame_strength", 1.0)
+    cmd += ["--image", remote_image, "0", str(first_frame_strength)]
     if remote_last_image:
         # 尾帧同样走 --image，FRAME_IDX 用最后一帧的索引（num_frames-1）。
         cmd += ["--image", remote_last_image, str(num_frames - 1), "1.0"]
@@ -230,6 +254,34 @@ def run_job(cfg, job, out_dir, dry_run=False):
     return {"id": job_id, "status": "done", "output": local_out}
 
 
+def auto_stop(cfg, config_path, mode):
+    """这一批任务收工，立刻把显卡关掉。
+
+    实际动作全部交给 gpu_teardown.py（它负责挑对每个平台该用 stop 还是
+    terminate、调完接口轮询确认真的停了、顺带杀掉本机的闲置看门狗），这里
+    只负责"批量任务一结束就把它叫起来"这个时机。故意不吞掉它的退出码——
+    关机没确认成功是必须让人看见的事，不能被"生成成功"的日志盖过去。
+    """
+    script = str(Path(__file__).resolve().parent / "gpu_teardown.py")
+    cmd = ["python3", script, "--platform", cfg["platform"],
+           "--instance-id", str(cfg["instance_id"]), "--mode", mode]
+    if config_path:
+        cmd += ["--config", config_path]
+    print("\n=== 自动关闭显卡 ===")
+    print(" ".join(cmd))
+    # 子进程直接写继承来的 stdout，父进程这边被重定向到文件/管道时是块缓冲，
+    # 不 flush 的话日志顺序会错乱（关机日志跑到生成日志前面），排查时很误导。
+    sys.stdout.flush()
+    result = subprocess.run(cmd)
+    if result.returncode != 0:
+        print(
+            "\n⚠️ 自动关机没能确认成功，实例可能还在计费，去平台控制台手动确认"
+            f"（实例 {cfg['instance_id']}，平台 {cfg['platform']}）",
+            file=sys.stderr,
+        )
+    return result.returncode
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--config", required=True, help="ltx_remote_config.json 路径")
@@ -240,6 +292,21 @@ def main():
     )
     ap.add_argument(
         "--dry-run", action="store_true", help="只打印将要执行的远程命令和上传/下载路径，不实际连接"
+    )
+    ap.add_argument(
+        "--auto-stop",
+        action="store_true",
+        help=(
+            "这一批任务跑完（含中途报错/中断）后自动调用 gpu_teardown.py 停掉显卡实例"
+            "并确认停成功了，别让实例空转烧钱。要求 config 里有 platform/instance_id，"
+            "缺了会在提交任务之前就报错退出。--dry-run 时不会真的关机。"
+        ),
+    )
+    ap.add_argument(
+        "--auto-stop-mode",
+        choices=["auto", "stop", "terminate"],
+        default="auto",
+        help="透传给 gpu_teardown.py 的 --mode，默认 auto（RunPod terminate / 其余停机）",
     )
     ap.add_argument(
         "--retake",
@@ -263,6 +330,17 @@ def main():
     if missing:
         sys.exit(f"config 缺少必填字段: {', '.join(missing)}")
 
+    # --auto-stop 需要的字段在**提交任何任务之前**就校验掉：等批量任务跑完
+    # 几小时才发现关不掉机器，等于白交一轮学费。
+    if args.auto_stop and not args.dry_run:
+        missing_stop = [k for k in ("platform", "instance_id") if not cfg.get(k)]
+        if missing_stop:
+            sys.exit(
+                f"--auto-stop 需要 config 里有 {', '.join(missing_stop)} 字段"
+                "（platform 取值 vast/autodl/runpod，instance_id 在 RunPod 上是 pod_id）；"
+                "补上再跑，不要先跑生成再想怎么关机。"
+            )
+
     if args.only:
         wanted = {str(x) for x in args.only}
         jobs = [j for j in jobs if str(j.get("shot_no")) in wanted or j["id"] in wanted]
@@ -271,43 +349,53 @@ def main():
 
     os.makedirs(args.out_dir, exist_ok=True)
 
-    if args.retake:
-        if len(jobs) != 1:
-            sys.exit(
-                f"--retake 模式要求 --only 精确匹配到唯一一个镜头，当前匹配到 {len(jobs)} 个"
-            )
-        start_sec, end_sec = float(args.retake[0]), float(args.retake[1])
-        job = jobs[0]
-        local_video = os.path.join(args.out_dir, f"{job['id']}.mp4")
-        try:
-            result = run_retake(cfg, job, local_video, args.out_dir, start_sec, end_sec, dry_run=args.dry_run)
-        except Exception as e:
-            print(f"镜头 {job.get('id')} retake 出错: {e}", file=sys.stderr)
-            result = {"id": job.get("id"), "status": "error", "error": str(e)}
+    # --retake 的入参校验放在 try 之前：这类"命令敲错了、一个任务都还没提交"
+    # 的退出不该触发 --auto-stop 去关机（用户大概率是要改个参数马上重跑）。
+    if args.retake and len(jobs) != 1:
+        sys.exit(
+            f"--retake 模式要求 --only 精确匹配到唯一一个镜头，当前匹配到 {len(jobs)} 个"
+        )
+
+    # 从这里往下只要真的动过显卡，无论正常收工、抛异常还是 Ctrl-C，finally 里
+    # 的 --auto-stop 都会执行——"任务崩了没人管、实例挂着通宵计费"是最贵的
+    # 一种失败方式，比任何一次生成失败都贵。
+    try:
+        if args.retake:
+            start_sec, end_sec = float(args.retake[0]), float(args.retake[1])
+            job = jobs[0]
+            local_video = os.path.join(args.out_dir, f"{job['id']}.mp4")
+            try:
+                result = run_retake(cfg, job, local_video, args.out_dir, start_sec, end_sec, dry_run=args.dry_run)
+            except Exception as e:
+                print(f"镜头 {job.get('id')} retake 出错: {e}", file=sys.stderr)
+                result = {"id": job.get("id"), "status": "error", "error": str(e)}
+            summary_path = os.path.join(args.out_dir, "ltx_submit_results.json")
+            with open(summary_path, "w", encoding="utf-8") as f:
+                json.dump([result], f, ensure_ascii=False, indent=2)
+            print(f"\n结果写入 {summary_path}")
+            if result["status"] not in ("done", "dry_run"):
+                print(f"\nretake 未成功，检查上面的报错或 {summary_path}", file=sys.stderr)
+            return
+
+        results = []
+        for job in jobs:
+            try:
+                results.append(run_job(cfg, job, args.out_dir, dry_run=args.dry_run))
+            except Exception as e:
+                print(f"镜头 {job.get('id')} 出错: {e}", file=sys.stderr)
+                results.append({"id": job.get("id"), "status": "error", "error": str(e)})
+
         summary_path = os.path.join(args.out_dir, "ltx_submit_results.json")
         with open(summary_path, "w", encoding="utf-8") as f:
-            json.dump([result], f, ensure_ascii=False, indent=2)
-        print(f"\n结果写入 {summary_path}")
-        if result["status"] not in ("done", "dry_run"):
-            print(f"\nretake 未成功，检查上面的报错或 {summary_path}", file=sys.stderr)
-        return
+            json.dump(results, f, ensure_ascii=False, indent=2)
+        print(f"\n结果汇总写入 {summary_path}")
 
-    results = []
-    for job in jobs:
-        try:
-            results.append(run_job(cfg, job, args.out_dir, dry_run=args.dry_run))
-        except Exception as e:
-            print(f"镜头 {job.get('id')} 出错: {e}", file=sys.stderr)
-            results.append({"id": job.get("id"), "status": "error", "error": str(e)})
-
-    summary_path = os.path.join(args.out_dir, "ltx_submit_results.json")
-    with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"\n结果汇总写入 {summary_path}")
-
-    failed = [r for r in results if r["status"] not in ("done", "dry_run")]
-    if failed:
-        print(f"\n{len(failed)} 个镜头未成功，检查上面的报错或 {summary_path}", file=sys.stderr)
+        failed = [r for r in results if r["status"] not in ("done", "dry_run")]
+        if failed:
+            print(f"\n{len(failed)} 个镜头未成功，检查上面的报错或 {summary_path}", file=sys.stderr)
+    finally:
+        if args.auto_stop and not args.dry_run:
+            auto_stop(cfg, args.config, args.auto_stop_mode)
 
 
 if __name__ == "__main__":

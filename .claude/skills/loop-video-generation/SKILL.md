@@ -51,8 +51,9 @@ agent + 审查 agent 互相制衡、单镜最多三轮"的执行方式，同时�
   实际调用 `ltx_ssh_submit.py` 提交生成、下载结果、抽帧"这一件事。Reviewer
   上一轮给的修改意见（改正向提示词文字、换 seed、缩小动作幅度、拆段、换
   一张首尾帧等）在进入下一轮之前已经由你（orchestrator）落实进 unit 的
-  `prompt`/`seed`/`segments` 等字段，Generator 拿到就是照最新版本提交，
-  不用自己重新设计方案。**`negative_prompt` 字段不是有效杠杆**——已确认
+  `prompt`/`seed`/`segments` 等字段（`prompt` 是从镜头卡装配出来的派生字段，
+  orchestrator 改卡后重跑 `build_prompt.py` 再同步进队列），Generator 拿到
+  就是照最新版本提交，不用自己重新设计方案。**`negative_prompt` 字段不是有效杠杆**——已确认
   当前用的 `ltx_pipelines.distilled`/`dfr_pipeline` 都没有对应 CLI 参数，
   改这个字段不会影响生成结果，细节和原因见 `references/units_schema.md`
   和 `references/generator_agent.md`。完整模板见
@@ -97,13 +98,30 @@ Codex CLI（ChatGPT 账号额度），互不抢资源。这里不一样：所有
 `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md` 里对应的
 提醒。另外要注意：**`ref_images`/`negative_prompt` 这两个字段在自建
 LTX-2.5 通道上都不生效**（`ltx_ssh_submit.py` 从不读取/传递），`fix_instruction`
-不能落在这两个字段上，只能落在 prompt 文字/`seed`/分段/局部重绘这几项
+不能落在这两个字段上，只能落在镜头卡字段（`beats[i].motion_en`/
+`beats[i].t`/`camera_en.rig`）/`seed`/分段/局部重绘这几项
 真正有效的杠杆上，见 `references/reviewer_agent.md`。
 
 ## 4. 汇总落地
 
 跑完这一批 unit 之后：
 
+- **第一件事：把显卡关掉**。循环跑完（所有 unit 都 pass 或到轮次上限
+  放行）之后，登记表格、写汇报、给用户看抽帧截图这些全是本地工作，
+  显卡挂着不干活就是纯烧钱。所以先跑
+  ```bash
+  python3 .claude/skills/short-drama-ltx-generate/scripts/gpu_teardown.py \
+    --config output/<故事名>/videos/ep0X/ltx_remote_config.json
+  ```
+  确认输出里有 `✅ 已确认停止计费` 再继续往下写汇报（RunPod 上它默认
+  terminate Pod，Network Volume 上的模型权重不受影响，下次挂同一个卷
+  重建即可）。这一步不用问用户"要不要关"，用完就关是默认行为；只有用户
+  明确说接下来还要继续跑、或者还有 unit 等着补跑时才留着。细节和各平台
+  差别见 `short-drama-ltx-generate/SKILL.md`「用完就关」一节。
+  **注意**：这个循环里 Generator 是一个 unit 一个 unit 提交的，所以
+  **不要**给循环内的 `ltx_ssh_submit.py` 加 `--auto-stop`（那会在第一个
+  unit 跑完就把显卡关了，后面的 unit 全部失败）——`--auto-stop` 只适合
+  "一次性批量提交完就不再用显卡"的场景。
 - 按 `video_jobs.md` 的表格格式登记结果，多加两列：**用了几轮**、
   **结果（通过/到三轮上限放行，附具体卡在哪一帧/哪个环节）**。
 - 给用户的汇报要点名：这一批共 N 个镜头，M 个一轮就过，K 个 2-3 轮后过，
@@ -111,7 +129,8 @@ LTX-2.5 通道上都不生效**（`ltx_ssh_submit.py` 从不读取/传递），`
   多少次生成任务（视频比图片贵，这个数字比出图流程更值得强调）。
 - 3 轮仍未通过的镜头不要自己决定"将就用"，按
   `video_review_checklist.md`"何时可以判定这个镜头没必要用图生视频"一节
-  的思路，把"降级成 B 级纯运镜处理"作为一个选项列给用户，交用户决定。
+  的思路，把"降级为本地推拉摇移（`ken_burns.py`）兜底处理，不再走图生视频"
+  作为一个选项列给用户，交用户决定。
 
 ## 与其他 skill 的衔接
 
@@ -123,4 +142,5 @@ LTX-2.5 通道上都不生效**（`ltx_ssh_submit.py` 从不读取/传递），`
   抽帧工具，`short-drama-ltx-generate` 负责 GPU 租赁/环境/pipeline 参数
   的实测踩坑记录，本 skill 都直接复用，不重新实现。
 - 下游：产出的视频文件路径和登记表跟原来 `short-drama-ltx-generate` 第 5-7
-  步一致，可以直接接续那份 skill 的收尾流程（提醒用户停显卡、补踩坑记录）。
+  步一致，可以直接接续那份 skill 的收尾流程（`gpu_teardown.py` 关显卡、
+  补踩坑记录）。

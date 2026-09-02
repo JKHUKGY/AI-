@@ -1,92 +1,12 @@
 [
   {
-    "id": "ep02_镜01",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中长餐桌摆满海鲜精致菜肴、四人已各自落座的构图。过程：镜头缓慢横向摇镜扫过四人，顾万通（主位，中年男性）微微低头夹菜；刘兰（他一侧，中年女性）自然地摆弄餐具，视线落在桌面；顾浩、顾瑶（另一侧的年轻男女）各自低头看手机或夹菜，四人之间没有眼神交流，动作幅度都很轻微自然。结束：镜头摇镜完成后定格在顾万通所在的主位画面，四人保持刚才的漫不经心姿态，定格0.3秒。' --image '/workspace/jobs/ep02_镜01_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜01.mp4'"
-  },
-  {
-    "id": "ep02_镜02",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧系着围裙、端着一碗汤站在餐桌旁的姿态。过程：苏慧俯身将汤碗稳稳放在桌面上，动作熟练麻利，随即直起身、转身面向厨房方向，脚步迈出准备离开。结束：苏慧已转过身、朝厨房方向迈出第一步，定格0.3秒。镜头随苏慧转身方向做轻微平移跟随。' --image '/workspace/jobs/ep02_镜02_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜02.mp4'"
-  },
-  {
-    "id": "ep02_镜03",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中顾万通端坐主位的姿态。过程：顾万通微微抬起下巴，用带着随意语气的中文声音说道：\"苏慧，你也坐吧，今天江砚刚来，加双筷子。\"说话时嘴部自然张合，表情始终随意不经意，不刻意热情也不冷漠。结束：说完后不再看向苏慧方向，低头继续夹菜，嘴唇闭合静止，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜03_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜03.mp4'"
-  },
-  {
-    "id": "ep02_镜04",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中刘兰猛地放下筷子、脸色骤沉的姿态。过程：刘兰用带着尖酸嫌恶、语气强硬的中文声音说道：\"坐什么坐，厨房里的碗还没刷，水果还没切，她坐了谁干活？再说了，她一个做饭的，上桌吃饭像什么样子。\"说话时眉头持续紧锁，嘴角始终向下压或平直，不上扬。结束：说完后嘴唇闭合，表情维持理所当然的轻蔑、眉头紧锁，视线锐利地看向画面外一侧，绝对不出现任何笑意，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜04_first.png' 0 1.0 --num-frames 121 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜04.mp4'"
-  },
-  {
-    "id": "ep02_镜05",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧连忙赔笑、身体微微后退半步的姿态。过程：苏慧用带着局促讨好、语速略快的中文声音说道：\"没事没事，我去厨房吃就行，你们吃你们的。\"说话时身体持续维持后退、准备转身离开的姿态。结束：说完后维持赔笑表情，身体已转向厨房方向，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜05_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜05.mp4'"
-  },
-  {
-    "id": "ep02_镜06",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中江砚一把拉住苏慧手臂、身后椅子后移的姿态。过程：江砚保持拉住母亲手臂的动作不松开，用语气坚决、带着压抑怒意的中文声音说道：\"我妈凭什么不能上桌？这顿饭是给我接风，我妈不上桌，我也不吃。\"苏慧在江砚身侧维持身形一顿、脸上带着慌乱的表情，嘴唇始终闭合、不说话、不做任何张合动作，只有身体轻微地想要挣脱又被拉住的细微挣扎。结束：江砚说完后目光锐利地看向画面外一侧，嘴唇闭合静止，苏慧维持慌乱表情，两人保持贴身站立姿态，定格0.4秒。镜头骤然向前推进，渲染情绪爆发。' --image '/workspace/jobs/ep02_镜06_first.png' 0 1.0 --num-frames 97 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜06.mp4'"
-  },
-  {
     "id": "ep02_镜07",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中江砚和苏慧站在画面中心、周围四人愣住的构图。过程：江砚（画面中心焦点）维持目光锐利看向画面外一侧的姿态，胸膛因刚才的情绪爆发微微起伏；苏慧（他身侧）维持慌乱表情，肩膀有极轻微的颤动；周围其余四人（简化处理，不需要逐一还原细节）保持愣住的静止姿态，只有呼吸幅度的细微起伏。结束：全场保持刚才的僵持构图，定格0.3秒，没有人先打破沉默。镜头固定不动。' --image '/workspace/jobs/ep02_镜07_first.png' 0 1.0 --num-frames 49 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜07.mp4'"
-  },
-  {
-    "id": "ep02_镜08_seg_a",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为顾浩（浅棕色潮流发型、深色T恤的年轻男性）吊儿郎当地靠在椅背上、嘴角带嗤笑的姿态，顾瑶（染色长直发的年轻女性）坐在一旁，嘴唇闭合安静听着。过程：只有顾浩一人持续小幅度张合嘴唇，用语气轻慢嘲讽的中文声音说道：\"江砚，你搞清楚，这是我家，不是你国内的破屋。我妈说的没错，你妈这些年在我家，本来就是干保姆活的，吃的住的哪一样不是我家出钱？\"顾瑶从头到尾嘴唇紧闭、完全不张合、不做任何说话动作，只有视线转向顾浩方向的细微反应。结束：顾浩说完后维持轻蔑嗤笑的表情，嘴唇闭合静止，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜08_seg_a_first.png' 0 1.0 --num-frames 97 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜08_seg_a.mp4'"
-  },
-  {
-    "id": "ep02_镜09",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中顾万通抬手准备打圆场的姿态。过程：顾万通先轻咳一声，随后用语气敷衍、带着和稀泥意味的中文声音说道：\"行了行了，都是一家人，说这些干什么，苏慧，你就坐下吃吧。\"说话时手部维持随意摆动的动作。结束：说完后低头继续吃饭，不再理会周围，嘴唇闭合静止，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜09_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜09.mp4'"
-  },
-  {
-    "id": "ep02_镜10",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧伸手拉着江砚衣角、使眼色的姿态。过程：苏慧用压低声音、带着紧张暗示的中文声音说道：\"小砚，快坐下，别不懂事。我去厨房端碗，马上就来。\"江砚在旁保持安静坐姿，嘴唇闭合、不说话，只有视线短暂看向母亲的细微反应。结束：苏慧说完后起身，转身朝厨房方向快步走去，江砚维持坐姿目送，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜10_first.png' 0 1.0 --num-frames 97 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜10.mp4'"
-  },
-  {
-    "id": "ep02_镜11",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧背对镜头站立的姿态。过程：苏慧肩膀先轻微一颤，随后抬起右手抹了一把脸颊，手部动作清晰可见，紧接着缓慢转过侧脸露出半张脸的表情。结束：苏慧深吸一口气，肩膀停止颤动，表情迅速恢复平静，定格0.3秒。镜头固定并轻微推近，聚焦人物背影转侧脸的过程。' --image '/workspace/jobs/ep02_镜11_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜11.mp4'"
-  },
-  {
-    "id": "ep02_镜12",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中江砚死死攥拳、指节发白、视线看向厨房方向的姿态。过程：江砚维持攥拳姿态片刻，随后缓慢而克制地坐下，动作幅度不大、带着压抑感。结束：江砚已坐下，肩膀依旧紧绷，嘴唇闭合不说话，定格0.3秒。镜头缓慢向后拉远，从手部特写拉至坐下的全身动作。' --image '/workspace/jobs/ep02_镜12_first.png' 0 1.0 --num-frames 97 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜12.mp4'"
+    "status": "done",
+    "output": "output/出狱后我成为了非洲矿王/videos/ep02/ep02_镜07.mp4"
   },
   {
     "id": "ep02_镜13",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧端着水果盘、刚走入客房画面的姿态，江砚坐在床边翻看专业书。过程：苏慧脚步放轻，继续向床边方向走近两步；江砚听见脚步声，缓慢抬眼看向母亲方向。结束：苏慧已走到床边附近站定，江砚维持抬眼看她的姿态，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜13_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜13.mp4'"
-  },
-  {
-    "id": "ep02_镜14",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧坐在江砚身边、身体略侧向他的姿态。过程：苏慧用轻声、满是心疼的中文声音说道：\"小砚，今天是妈不好，让你受委屈了。\"江砚安静聆听，嘴唇闭合、不说话，只有视线看向母亲的细微反应。结束：苏慧说完后维持心疼的表情看着儿子，嘴唇闭合静止，定格0.3秒。镜头固定不动，双人中近景构图保持稳定。' --image '/workspace/jobs/ep02_镜14_first.png' 0 1.0 --num-frames 97 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜14.mp4'"
-  },
-  {
-    "id": "ep02_镜15",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中江砚抬头看向母亲的姿态。过程：江砚用声音发沉、带着心疼与压抑怒意的中文声音说道：\"妈，这些年你就这么过的？天天伺候他们一家，连上桌吃饭都不行？\"说话时眉头持续微蹙。结束：说完后眉头微蹙地等待回答，嘴唇闭合静止，定格0.3秒。镜头缓慢向前推进。' --image '/workspace/jobs/ep02_镜15_first.png' 0 1.0 --num-frames 97 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜15.mp4'"
-  },
-  {
-    "id": "ep02_镜16",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中苏慧低头、双手搓着衣角的姿态。过程：苏慧用语气平淡、带着自我说服式忍耐的中文声音说道：\"你表叔也不容易，这边生意难做，我在这有吃有住，每个月还能寄点钱给你打回去当学费，挺好的，你刚毕业，正好你表叔矿上缺人，你留下来帮他，也算报答他的恩情。\"说话过程中双手持续搓动衣角的细微动作。结束：说完后抬眼看向画面外一侧，眼神带着期盼，嘴唇闭合静止，定格0.3秒。镜头固定不动。' --image '/workspace/jobs/ep02_镜16_first.png' 0 1.0 --num-frames 145 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜16.mp4'"
-  },
-  {
-    "id": "ep02_镜17",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中江砚抿紧嘴唇、沉默的姿态。过程：江砚先维持沉默片刻，目光逐渐坚定，随后用一字一句、语气郑重的中文声音说道：\"我答应你，留下来帮他，但妈，等我站稳脚跟，我一定带你离开这，咱们自己过日子。\"结束：说完后目光坚定地看向前方，嘴唇闭合静止，定格0.4秒。镜头固定不动，长镜头留白节奏。' --image '/workspace/jobs/ep02_镜17_first.png' 0 1.0 --num-frames 145 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜17.mp4'"
-  },
-  {
-    "id": "ep02_镜18",
-    "status": "dry_run",
-    "cmd": "export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt '起始画面为参考图中江砚站在窗边、望着房门方向的姿态（此时母亲已应下点头转身离开房间，房门刚合上，衔接镜17结尾）。过程：江砚维持目送的姿态片刻，随后暗暗地将手缓慢攥紧成拳，动作幅度不大但清晰可见。结束：镜头缓慢向后拉远，从中景拉至远景，江砚孤独的侧影定格在窗边逆光轮廓中，持续0.6秒。' --image '/workspace/jobs/ep02_镜18_first.png' 0 1.0 --num-frames 121 --width 704 --height 1280 --output-path '/workspace/jobs/ep02_镜18.mp4'"
+    "status": "done",
+    "output": "output/出狱后我成为了非洲矿王/videos/ep02/ep02_镜13.mp4"
   }
 ]

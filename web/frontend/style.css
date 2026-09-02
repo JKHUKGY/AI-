@@ -218,6 +218,11 @@ button:disabled { opacity: .5; cursor: default; }
 .editable-section .edit-textarea { width: 100%; min-height: 220px; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 6px; white-space: pre; }
 .editable-section .edit-status { font-size: 12px; color: #b3392c; }
 
+.post-save-regen { margin-top: 10px; padding: 10px; border: 1px dashed var(--line); border-radius: 8px; background: #fbf8f2; }
+.post-save-job-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+.post-save-job-row .job-name { font-weight: 600; font-size: 13px; }
+.post-save-job-row .img-grid { width: 100%; }
+
 .notice { padding: 10px 14px; border-radius: 8px; margin-bottom: 14px; font-size: 14px; }
 .notice.info { background: #eef2f6; color: #2c4a63; }
 .notice.warn { background: #fbf1e0; color: #7a5613; }

@@ -1,0 +1,215 @@
+[
+  {
+    "id": "xueshan_shot01_u1",
+    "shot_no": 1,
+    "unit_of": "xueshan_shot01",
+    "unit_index": [
+      1,
+      3
+    ],
+    "scene": "雪山之巅_生死决斗",
+    "tier": "S",
+    "intent_zh": "第一人称视角，女主握剑指着男主质问『为什么骗我的是你』。情绪是压抑的愤怒逐级升高，但全程克制——不是暴怒嚎叫。",
+    "script_ref": "雪山之巅，男女主曾是同门/爱人，女主发现是男主骗了她。她握剑指着男主（=镜头）质问。角色：女主，武艺高、外冷内烈，此刻是『爱与杀意同时在身上』的状态，绝不能演成单纯的暴怒或单纯的痛哭。本段判断标准：观众要看懂她在质问、在忍、在往上憋，而不是在撒泼；剑必须始终指着镜头。",
+    "first_frame": "output/雪山决斗/refs/雪山决斗_女主_首帧_1600x896.png",
+    "first_frame_state_zh": "实际看图确认：16:9 横屏，女子在画面偏右，正面直视镜头。右手单手握剑、手臂朝镜头方向伸出，无名指戴一枚银戒；剑身从画面左下向右上斜插进画，剑尖已经抬起并指向镜头方向（**不是从身体侧下方待抬的状态**）。黑色长发和红色围巾/披风被风往画面左侧大幅吹开，几缕碎发横过面颊，发上有雪粒。表情眉头微皱、嘴唇微张、直视镜头。背景是虚化的灰白风雪雪山。所以第一拍只能写『维持这个持剑姿态 + 握力加大 + 剑尖细微颤抖』，不能写『慢慢把剑抬起来』——那会和焊死的首帧打架。",
+    "last_frame": null,
+    "props_en": [
+      "sword",
+      "sword tip",
+      "blade",
+      "hilt",
+      "scarf",
+      "snow"
+    ],
+    "camera_en": {
+      "position": "shot from the male lead's first-person position, standing directly in front of her on the snowfield at her eye level, the same spot for the whole take",
+      "rig": "locked-off camera, the axis stays fixed for the whole take and she keeps looking straight into the lens",
+      "framing_path": "one medium close-up held for the whole take",
+      "move": null
+    },
+    "subject_lock_en": "the same young woman throughout, same face, same long black hair, same red scarf over black robes",
+    "beats": [
+      {
+        "t": [
+          0,
+          5.7083
+        ],
+        "framing_en": "medium close-up on her upper body, her sword hand, and the blade angled up toward the lens",
+        "motion_en": "She keeps the sword where it already is, tip aimed at the lens, and her grip closes harder on the hilt until the blade tip picks up a fine, real tremor. Her brow draws in a fraction at a time, her eyelids lower, her jaw sets, her back teeth clamp, and her nostrils flare with shallow, held-in breaths. Driven snow streams in from screen left through her long hair, the loose strands at her forehead, her red scarf and her hem; snow grains settle on the ends of her hair and on her lashes, and her breath leaves a faint white plume.",
+        "dialogue": {
+          "speaker": "女主",
+          "text_zh": "为什么……骗我的是你……为什么？为什么！",
+          "delivery_en": "she speaks in Mandarin Chinese, low and forced out between her teeth, breaking off with a heavy breath before the volume climbs into a demand, the feeling stepping up while she holds it in",
+          "pace": "slow",
+          "onscreen": true,
+          "delivery_zh": "她用中文低声说道，声音从牙缝里挤出，说完明显停顿、呼吸变重，然后音量抬起来追问，情绪逐级升高但克制"
+        },
+        "sfx_en": "howling wind and driven snow, her breathing",
+        "framing_zh": "正面近景，看到她的上半身、握剑的手和斜指向镜头的剑身",
+        "motion_zh": "她维持当前的持剑姿态，剑尖对准镜头，握剑的手持续发力，剑尖出现极细小的真实颤抖。眉头一点点收紧，眼睛微微压低，下颌绷紧，后槽牙咬住，鼻翼随压抑的浅呼吸轻微张合。风雪持续从画面左侧吹动她的长发、额前碎发、红色围巾和衣摆，雪粒落在发梢和睫毛上，呼气带出淡淡白气。",
+        "sfx_zh": "风雪声、她的呼吸声"
+      }
+    ],
+    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range; her face, hairstyle and red-and-black costume stay identical to the first frame all the way through",
+    "duration_sec": 5.7083,
+    "fps": 24,
+    "width": 1600,
+    "height": 896,
+    "seed": 42,
+    "known_limit": null,
+    "notes": "137 帧。手写 v1 给这段 5.5s，按 slow 语速（14 字/3.0 + 0.8 缓冲）最低需要 5.47s，卡得太紧，这里加到 5.71s（下一档合法帧数）。另外补了一套全中文并行字段（camera_zh/motion_zh/delivery_zh/style_tail_zh），专门用来跑 model_capability_ledger.md D1 的『英文正文 vs 全中文正文』A/B 对照，跑法：同一张卡分别 --lang en 和 --lang zh。",
+    "camera_zh": {
+      "rig": "镜头固定在男主第一人称正面视角这一条轴线上，与她视线齐高、正面相对，整段保持同一条轴线，她始终正面直视镜头",
+      "framing_path": "全程保持同一个正面近景",
+      "move": null
+    },
+    "subject_lock_zh": "全程同一个女子，同一张脸、同样的黑色长发、红围巾配黑色衣袍",
+    "style_tail_zh": "电影级超写实东方武侠，顶级院线质感，真实皮肤质感与冻出的自然微红，冷灰蓝雪地环境光，真实发丝与布料物理，风雪有明确方向和体积感，高动态范围，面容/发型/红黑服装全程与首帧一致",
+    "scene_plate": "无场景资产库：手工首帧的一次性镜头，机位=男主第一人称正面轴线"
+  },
+  {
+    "id": "xueshan_shot01_u2",
+    "shot_no": 1,
+    "unit_of": "xueshan_shot01",
+    "unit_index": [
+      2,
+      3
+    ],
+    "scene": "雪山之巅_生死决斗",
+    "tier": "S",
+    "intent_zh": "怒意沉下去，露出被背叛后的酸楚和不忍（湿眼眶但不落泪），然后她把这份不忍压回去、重新握紧剑。这是整段戏的转折，也是最难的一段。",
+    "script_ref": "承上：质问完之后，女主的怒气退潮，底下是『我不想杀你』的酸楚，剑尖会不自觉往下沉；但她随即压住这份不忍，重新握紧剑、把剑尖抬回来对准他。角色：女主外冷内烈。本段判断标准：观众要看懂『她动摇了，然后她把动摇压下去了』这两个动作的先后顺序，剑尖的下沉→抬回是这个心理过程唯一的外部证据，必须真的看得见。无台词。",
+    "first_frame": null,
+    "first_frame_from": "xueshan_shot01_u1:last",
+    "first_frame_state_zh": "承 u1 的结束状态：正面近景，她维持持剑姿态、剑尖指向镜头，握剑手发力、剑尖有细微颤抖，眉头收紧、下颌绷紧，刚说完质问、呼吸偏重。风雪从画面左侧吹动长发和红围巾。（u1 跑完后用 extract_frames.py 抽最后一帧，把路径填回 first_frame 再提交这一段。）",
+    "last_frame": null,
+    "props_en": [
+      "sword",
+      "sword tip",
+      "blade",
+      "hilt",
+      "scarf"
+    ],
+    "camera_en": {
+      "position": "shot from the male lead's first-person position, standing directly in front of her on the snowfield at her eye level, the same spot for the whole take",
+      "rig": "locked-off camera on the same fixed axis, and she keeps looking into the lens",
+      "framing_path": "the framing eases in to a face close-up and then eases back out to the same medium close-up, all on the one fixed axis",
+      "move": null
+    },
+    "subject_lock_en": "the same young woman throughout, same face, same long black hair, same red scarf over black robes",
+    "beats": [
+      {
+        "t": [
+          0,
+          3.4
+        ],
+        "framing_en": "the framing eases in to a face close-up on the same axis, with a short length of the blade still crossing the lower foreground",
+        "motion_en": "The anger drains down out of her face: the knot between her brows loosens, her eyes open a little wider, her lips part as if to speak and then press together again, her breathing holds for half a beat, her throat completes one clear, held-back swallow, her eye rims go wet while the tears stay in, one corner of her mouth twitches on its own, and her gaze drops for a moment before it climbs slowly back to the lens. At the same time her grip presses harder and the blade tip sinks a short way down through the lower edge of frame.",
+        "dialogue": null,
+        "sfx_en": "wind and snow only, and her breathing"
+      },
+      {
+        "t": [
+          3.4,
+          6.375
+        ],
+        "framing_en": "the framing eases back out to the medium close-up, her upper body, her sword hand and the blade readable again",
+        "motion_en": "Her five fingers close back onto the hilt one knuckle at a time until the knuckles stand out, her forearm tenses, and the sunken blade lifts slowly back up until the tip is aimed at the lens again; the lift gets smaller and smaller and then stops dead, and her gaze sets hard.",
+        "dialogue": null,
+        "sfx_en": "howling wind and driven snow"
+      }
+    ],
+    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range; her face, hairstyle and red-and-black costume stay identical to the first frame all the way through",
+    "duration_sec": 6.375,
+    "fps": 24,
+    "width": 1600,
+    "height": 896,
+    "seed": 4271,
+    "known_limit": {
+      "item": "混合/克制型情绪会被收敛成通用表情",
+      "evidence": "出狱后 ep01 镜14/镜18，各 3 轮加强负面提示词无效（model_capability_ledger.md）",
+      "decision": "本段刻意设计成**无台词**——已确认那个收敛倾向的触发条件是『带台词的镜头』。情绪全部挂在可见的物理变化上（吞咽、眼眶湿、嘴角抖、剑尖下沉再抬回），不依赖模型自己理解『酸楚』这个词。如果 3 轮仍拿不到，按 ledger 的第 2 条降级：只保留剑尖下沉→抬回这一条动作线，情绪精度让位。"
+    },
+    "notes": "153 帧。手写 v1 把 5.5-9s 和 9-12s 两段合起来是 6.5s，这里取最近的合法档 6.375s。",
+    "scene_plate": "无场景资产库：手工首帧的一次性镜头，机位=男主第一人称正面轴线"
+  },
+  {
+    "id": "xueshan_shot01_u3",
+    "shot_no": 1,
+    "unit_of": "xueshan_shot01",
+    "unit_index": [
+      3,
+      3
+    ],
+    "scene": "雪山之巅_生死决斗",
+    "tier": "S",
+    "intent_zh": "她说出『今天我们只能活一个』，然后完整走一遍起手式，一剑直刺镜头，在剑尖抵达的瞬间定格转黑白。",
+    "script_ref": "承上：女主压下不忍后，说出决绝的话，然后动手。这句台词不是喊、不是宣告，是把一个她自己不愿承认的事实从嘴里挤出来。角色：女主外冷内烈。本段判断标准：（1）台词必须是压到最低最沉的语气，每个字带重音，不能演成怒吼或宣言；（2）起手式必须完整、不省略中间动作——观众要看清『收指→提腕→整条手臂连剑向后拉开→肘收→肩收→上身扭压→蓄满停顿』，这是武侠动作可信度的全部来源；（3）刺剑要短快狠净，定格在剑尖抵达镜头那一瞬间，不展示刺穿之后的画面。",
+    "first_frame": null,
+    "first_frame_from": "xueshan_shot01_u2:last",
+    "first_frame_state_zh": "承 u2 的结束状态：正面近景，她五指已重新收紧剑柄、指节凸起，剑尖重新抬回并对准镜头、已经停住，眼神凝固、直视镜头。风雪从画面左侧吹动长发和红围巾。（u2 跑完后抽最后一帧，把路径填回 first_frame 再提交这一段。）",
+    "last_frame": null,
+    "props_en": [
+      "sword",
+      "sword tip",
+      "blade",
+      "hilt",
+      "scarf"
+    ],
+    "camera_en": {
+      "position": "shot from the male lead's first-person position, standing directly in front of her on the snowfield at her eye level, the same spot for the whole take",
+      "rig": "locked-off camera on the same fixed axis, and her eyes stay locked on the lens",
+      "framing_path": "medium close-up, widening slightly to take in the whole sword arm and blade, held until the blade tip fills the frame",
+      "move": null
+    },
+    "subject_lock_en": "the same young woman throughout, same face, same long black hair, same red scarf over black robes",
+    "beats": [
+      {
+        "t": [
+          0,
+          3.9
+        ],
+        "framing_en": "medium close-up, her face and the raised blade both in frame",
+        "motion_en": "Her gaze is already settled and steady on the lens; as the last word leaves her, her lips press shut, her jaw holds, and her breathing steadies.",
+        "dialogue": {
+          "speaker": "女主",
+          "text_zh": "今天……我们……只能活一个。",
+          "delivery_en": "she speaks in Mandarin Chinese, pitched as low and as heavy as she can, squeezing out a fact she would rather leave unsaid, every syllable stressed, quieter than a shout and flatter than a declaration",
+          "pace": "slow",
+          "onscreen": true
+        },
+        "sfx_en": "howling wind and driven snow"
+      },
+      {
+        "t": [
+          3.9,
+          5.0
+        ],
+        "framing_en": "the framing widens a little to take in her sword hand, elbow, shoulder and the full length of the blade",
+        "motion_en": "The full wind-up plays out with every stage of it visible: her fingers clamp onto the hilt, her wrist lifts the hilt a short way straight up, then her sword hand and the whole blade travel back along one clear arc, her elbow pulls back, her shoulder closes in with it, her upper body twists and presses toward the far side, the load builds to full, and there is a very brief dead hold at the top of it. Her eyes stay on the lens the whole time while wind lifts her long hair and red scarf hard.",
+        "dialogue": null,
+        "sfx_en": "wind tearing at cloth, the rush of the blade loading"
+      },
+      {
+        "t": [
+          5.0,
+          5.7083
+        ],
+        "framing_en": "the same framing, holding until the blade tip fills the frame",
+        "motion_en": "She releases all of it at once and drives the sword straight into the lens, short, fast, hard and clean, with the tip rushing from dead centre of frame right up to the lens until it covers the whole frame; her eyes stay locked on the lens, and the image freezes on the single instant the tip reaches the lens and turns to high-contrast black and white.",
+        "dialogue": null,
+        "sfx_en": "the blade tearing the air, rising sharply, then cutting to silence on the freeze"
+      }
+    ],
+    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range; her face, hairstyle and red-and-black costume stay identical to the first frame all the way through",
+    "duration_sec": 5.7083,
+    "fps": 24,
+    "width": 1600,
+    "height": 896,
+    "seed": 4272,
+    "known_limit": null,
+    "notes": "137 帧。手写 v1 只给这句台词 1.2s（12-13.2s），按 slow 语速（9 字/3.0 + 0.8 缓冲）最低需要 3.8s——这是 v1 里最实的一处缺陷，实测这种情况 LTX-2.5 会自己把台词压缩说完。这里给到 3.9s。",
+    "scene_plate": "无场景资产库：手工首帧的一次性镜头，机位=男主第一人称正面轴线"
+  }
+]

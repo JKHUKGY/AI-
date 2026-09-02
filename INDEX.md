@@ -23,7 +23,8 @@
 ## 顶层目录
 
 ```
-.claude/skills/   7 个流水线 skill（选题→分镜→出图→关键帧→视频提示词→LTX导出→LTX执行）
+.claude/skills/   9 个 skill：7 个流水线环节（选题→分镜→出图→关键帧→镜头卡/视频提示词→LTX校验→LTX执行）
+                  + 2 个双 agent 循环（loop-picture-generation / loop-video-generation）
 output/           按剧名分目录的产出物（storyboard/assets/keyframes/videos/_web_state）
 web/              本地/局域网剧本家协作网站（纯 stdlib Python 后端 + 无构建前端）
 scripts/          仓库级公共脚本（目前只有 gemini_client.py）
@@ -38,12 +39,19 @@ README.md         仅一行占位，无实际内容
 | 顺序 | Skill 目录 | 输入 → 输出 | 关键文件 |
 |---|---|---|---|
 | 1 | `short-drama-scout/` | 选题方向/大纲要点 → 故事梗概+人物小传+12-15集分集大纲 | `references/output_template.md`, `references/tiktok_trends.md` |
-| 2 | `short-drama-storyboard/` | 故事/大纲 → 画风+逐集分镜表+人物/场景提示词 | `references/shot_grammar.md`, `character_prompt_template.md`, `scene_prompt_template.md`, `storyboard_methods.md`, `style_guide.md`, `checklist.md` |
+| 2 | `short-drama-storyboard/` | 故事/大纲 → 画风 + 逐集分镜表（含**机位**列）+ 人物三视图提示词 + **场景机位组**提示词（每地点 A主机位/B反打/C侧机位/D细节 + 空间关系） | `references/shot_grammar.md`, `character_prompt_template.md`, `scene_prompt_template.md`, `storyboard_methods.md`, `style_guide.md`, `checklist.md` |
 | 3 | `short-drama-image-gen/` | 人物/场景提示词 → 三视图立绘 + 场景图（Codex CLI 出图） | `scripts/generate_images.py`, `references/jobs_schema.md`, `parallel_mode.md`, `review_checklist.md`, `api_setup.md` |
 | 4 | `short-drama-keyframe-gen/` | 分镜表 + 已选人物/场景图 → 每集 8-12 张关键帧 | `references/keyframe_prompt_guide.md`, `shot_selection.md`, `keyframe_review_checklist.md` |
-| 5 | `short-drama-video-gen/` | 关键帧 + 运动描述 → 图生视频完整提示词（S/A级）+ ffmpeg 推拉摇移脚本（B级） | `scripts/extract_frames.py`, `ken_burns.py`, `references/video_prompt_guide.md`, `stability_playbook.md`, `video_jobs_schema.md`, `video_platform_comparison.md`, `video_review_checklist.md` |
-| 6 | `short-drama-ltx-export/` | video_jobs 提示词清单 → 校验后的 `video_jobs.json` + `ltx_remote_config.json` | `scripts/validate_video_jobs.py`, `references/resolution_presets.md` |
-| 7 | `short-drama-ltx-generate/` | 校验好的 job 文件 → 真实租显卡（vast.ai / AutoDL 二选一比价）跑 LTX-2.5、下载结果、验收 | `scripts/ltx_ssh_submit.py`, `idle_shutdown_watchdog.py`, `autodl_ops.py`, `references/gpu_rental_ops.md`, `autodl_gpu_ops.md`, `autodl_cpu_ops.md`, `ltx_pipeline_gotchas.md` |
+| 5 | `short-drama-video-gen/` | 关键帧 + 运动描述 → **镜头卡 `shot_cards.json`**（4-8 秒生成单元，逐拍结构化）→ `build_prompt.py` 机械装配出 `video_jobs.json`。**提示词是派生产物，不手写。** B 级跟 S/A 级一样走 LTX，`ken_burns.py` 只是反复生成失败时的兜底 | `scripts/build_prompt.py`（装配+校验）, `extract_frames.py`, `ken_burns.py`, `references/shot_card_schema.md`, `model_capability_ledger.md`（模型能做/做不到清单，每条带证据）, `video_prompt_guide.md`, `stability_playbook.md`, `video_jobs_schema.md`, `video_review_checklist.md`, `video_platform_comparison.md` |
+| 6 | `short-drama-ltx-export/` | 提交前关卡：校验 `video_jobs.json`（路径/64整除/8k+1/台词语言声明/seed 有效性/token 预算/否定句残留/**是否还和镜头卡一致**）+ `ltx_remote_config.json` + `--dry-run` | `scripts/validate_video_jobs.py`, `references/resolution_presets.md` |
+| 7 | `short-drama-ltx-generate/` | 校验好的 job 文件 → 真实租显卡（vast.ai / AutoDL / RunPod 比价）跑 LTX-2.5、下载结果、验收、**用完关机** | `scripts/ltx_ssh_submit.py`, `gpu_teardown.py`, `idle_shutdown_watchdog.py`, `autodl_ops.py`, `runpod_ops.py`, `references/gpu_rental_ops.md`, `autodl_gpu_ops.md`, `runpod_gpu_ops.md`, `ltx_pipeline_gotchas.md` |
+
+双 agent 循环（可选，替换上面某一环的"生成+验收+重试"部分）：
+
+| Skill 目录 | 替换谁 | 说明 |
+|---|---|---|
+| `loop-picture-generation/` | `short-drama-image-gen`/`keyframe-gen` 的出图+验收 | 出图 agent + 审查 agent，4 路并行 |
+| `loop-video-generation/` | `short-drama-ltx-generate` 的提交+验收+重试 | Generator + Reviewer，**严格串行**（都抢同一块显卡）。审查只对照 `script_ref`（剧本原文），不拿分镜表"画面描述"自问自答；`fix_instruction` 指向**镜头卡的字段** |
 
 每个 skill 目录下都有 `SKILL.md`（含 `description` frontmatter，触发关键词见其中）、
 可选的 `scripts/`（可执行脚本）、`references/`（详细方法论/规范文档）、部分还有

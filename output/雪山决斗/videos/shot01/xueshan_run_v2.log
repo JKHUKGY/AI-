@@ -1,0 +1,18 @@
+INFO:ltx_pipelines.utils.constants:Checkpoint declares model_version=2.5.0 (parsed as (2, 5, 0))
+INFO:ltx_pipelines.utils.constants:Checkpoint declares model_version=2.5.0 (parsed as (2, 5, 0))
+INFO:ltx_pipelines.utils.constants:Checkpoint declares model_version=2.5.0 (parsed as (2, 5, 0))
+INFO:ltx_pipelines.utils.blocks:Building text encoder from /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors
+INFO:ltx_pipelines.utils.blocks:Text encoder done, building embeddings processor from ('/workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors', '/workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors')
+INFO:ltx_pipelines.utils.blocks:Prompt encoding complete
+INFO:ltx_pipelines.utils.blocks:Building transformer (standard) from /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors
+INFO:ltx_core.model.transformer.model:Building transformer with attention backends -- self: SDPA[CUDNN_ATTENTION>FLASH_ATTENTION>EFFICIENT_ATTENTION>MATH], masked: SDPA[CUDNN_ATTENTION>FLASH_ATTENTION>EFFICIENT_ATTENTION>MATH]
+INFO:ltx_pipelines.utils.blocks:Running denoising loop (8 steps, 800x448 361 frames @ 24.0 fps)
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:04<00:28,  4.03s/it] 25%|██▌       | 2/8 [00:07<00:23,  3.85s/it] 38%|███▊      | 3/8 [00:11<00:18,  3.79s/it] 50%|█████     | 4/8 [00:15<00:15,  3.77s/it] 62%|██████▎   | 5/8 [00:18<00:11,  3.75s/it] 75%|███████▌  | 6/8 [00:22<00:07,  3.75s/it] 88%|████████▊ | 7/8 [00:26<00:03,  3.75s/it] 88%|████████▊ | 7/8 [00:30<00:04,  4.31s/it]
+INFO:ltx_pipelines.utils.blocks:Building video encoder + spatial upsampler from /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors
+INFO:ltx_pipelines.utils.blocks:Building transformer (standard) from /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors
+INFO:ltx_pipelines.utils.blocks:Running denoising loop (3 steps, 1600x896 361 frames @ 24.0 fps)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:27<00:55, 27.89s/it] 67%|██████▋   | 2/3 [00:55<00:27, 27.94s/it]100%|██████████| 3/3 [01:23<00:00, 27.96s/it]100%|██████████| 3/3 [01:23<00:00, 27.95s/it]
+INFO:ltx_pipelines.utils.blocks:Building video decoder from /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors
+INFO:ltx_pipelines.utils.blocks:Building audio decoder + vocoder from /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:02<00:07,  1.44s/it] 43%|████▎     | 3/7 [00:05<00:07,  2.00s/it] 57%|█████▋    | 4/7 [00:08<00:06,  2.29s/it] 71%|███████▏  | 5/7 [00:11<00:04,  2.45s/it] 86%|████████▌ | 6/7 [00:12<00:02,  2.03s/it]100%|██████████| 7/7 [00:12<00:00,  1.81s/it]
+INFO:ltx_pipelines.utils.media_io.encode:Video saved to /workspace/jobs/xueshan_shot01_v2.mp4

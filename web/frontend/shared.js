@@ -263,7 +263,64 @@ const UI = (() => {
     container.appendChild(block);
   }
 
-  function mountEditableSection(container, { text, html, onSave }) {
+  // "提示词正文"标题后面不一定紧跟代码块——有的项目会在标题里带括注
+  // （比如"提示词正文（正面立绘，伪装期）"），所以标题和"```"之间不能只
+  // 按空白字符匹配，要允许中间有任意文字，非贪婪找最近的一个代码块。
+  const _PROMPT_BLOCK_RE = /提示词正文[\s\S]*?```\n?([\s\S]*?)```/;
+
+  function extractPromptBlock(text) {
+    const m = _PROMPT_BLOCK_RE.exec(text || '');
+    return m ? m[1].trim() : null;
+  }
+
+  function mountRegenShortcut(container, project, jobs, opts, prompt) {
+    container.innerHTML = '';
+    const jobIds = Object.keys(jobs || {});
+    if (!jobIds.length) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'post-save-regen';
+    wrap.innerHTML = `
+      <div class="muted">检测到"提示词正文"有更新，要不要用它重新生成对应的图？（免费本机生成，1-3 分钟一张）</div>
+      <div class="post-save-jobs"></div>
+    `;
+    const jobsBox = wrap.querySelector('.post-save-jobs');
+    jobIds.forEach((jobId) => {
+      const row = document.createElement('div');
+      row.className = 'post-save-job-row';
+      row.innerHTML = `
+        <span class="job-name">${esc(jobId)}</span>
+        <label>张数 <input type="number" min="1" max="6" value="2" style="width:48px"></label>
+        <button class="small go-regen">重新生成</button>
+        <div class="regen-status" hidden></div>
+        <div class="img-grid"></div>
+      `;
+      jobsBox.appendChild(row);
+      row.querySelector('.go-regen').addEventListener('click', async (e) => {
+        const btn = e.currentTarget;
+        btn.disabled = true;
+        const statusBox = row.querySelector('.regen-status');
+        const grid = row.querySelector('.img-grid');
+        statusBox.hidden = false;
+        try {
+          const count = Number(row.querySelector('input[type=number]').value) || 2;
+          const body = { job_id: jobId, kind: opts.kind, count, prompt };
+          if (opts.episode) body.episode = opts.episode;
+          const { token } = await guarded(() => API.regenerate(project, body));
+          const refPath = (jobs[jobId].files && jobs[jobId].files[0])
+            || `${project}/${opts.baseDirHint}/${jobId}/${jobId}_00.png`;
+          await pollRegenerate(project, token, statusBox, grid, jobId, refPath);
+        } catch (err) {
+          statusBox.hidden = false;
+          statusBox.textContent = '失败: ' + err.message;
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
+    container.appendChild(wrap);
+  }
+
+  function mountEditableSection(container, { text, html, onSave, project, opts, jobs }) {
     const wrap = document.createElement('div');
     wrap.className = 'editable-section';
     wrap.innerHTML = `
@@ -279,12 +336,14 @@ const UI = (() => {
         </div>
         <div class="edit-status" hidden></div>
       </div>
+      <div class="regen-shortcut-mount"></div>
     `;
     const viewMode = wrap.querySelector('.view-mode');
     const editMode = wrap.querySelector('.edit-mode');
     const contentHtml = wrap.querySelector('.content-html');
     const textarea = wrap.querySelector('.edit-textarea');
     const statusBox = wrap.querySelector('.edit-status');
+    const regenMount = wrap.querySelector('.regen-shortcut-mount');
     contentHtml.innerHTML = html;
 
     wrap.querySelector('.edit-toggle').addEventListener('click', () => {
@@ -309,6 +368,12 @@ const UI = (() => {
         editMode.hidden = true;
         viewMode.hidden = false;
         toast('已保存');
+        if (jobs && Object.keys(jobs).length) {
+          const prompt = extractPromptBlock(newText);
+          if (prompt) {
+            mountRegenShortcut(regenMount, project, jobs, opts, prompt);
+          }
+        }
       } catch (err) {
         statusBox.hidden = false;
         statusBox.textContent = '保存失败：' + err.message;

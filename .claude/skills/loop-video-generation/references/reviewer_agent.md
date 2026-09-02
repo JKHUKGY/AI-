@@ -44,9 +44,37 @@ Reviewer 唯一的判断依据是 unit 的 `script_ref`（原剧本/分集大纲
   有没有莫名其妙的镜头切换、异常抖动、视角跳变。
 - **首尾帧衔接**：首帧是否还是原关键帧的样子；如果指定了尾帧，结尾是否
   落在预期的定格姿态。
+- **台词是否被总结/压缩**（这一镜嵌了台词时才检查）：听感上台词内容比
+  `script_ref`/`ep0X.md` 台词列的原文短、漏词漏句，但确实在说目标语言、
+  响度也正常——这是人工审查实测确认过的独立故障模式，成因几乎总是
+  `duration_sec` 不够这句台词按合理语速念完，判 `fail` 时 `fix_instruction`
+  要落在"按 `video_prompt_guide.md`"台词时长计算"公式加长 `duration_sec`"
+  上（见下面"真正生效的修改杠杆"第 5 条），不要当成"prompt 写法问题"去
+  调整措辞，那样重试多少轮都没用。
 - 以上这几条的具体检查手法（怎么抽帧、逐帧看什么）沿用
   `short-drama-video-gen/references/video_review_checklist.md`"逐帧核对"
   一节，这里不重复列细则，只强调判断的"标的"从分镜表换成了 script_ref。
+
+### `fix_instruction` 必须指向镜头卡的字段，不是"重写那段提示词"
+
+**2026-09 变更**：提示词不再手写，它是
+`short-drama-video-gen/scripts/build_prompt.py` 从**镜头卡**
+（`shot_cards.json`）机械装配出来的派生产物。所以 `fix_instruction` 要写成
+"改哪张卡的哪个字段"，orchestrator 改完卡重跑装配脚本，而不是直接改
+`units_queue.json` 里的 `prompt` 字符串——手改会被下次装配冲掉，而且会让
+提示词和卡脱钩（`validate_video_jobs.py` 会拦这种不一致）。
+
+写法示例（都能被 orchestrator 直接执行，不用再猜）：
+
+- `beats[1].motion_en`：把"他很生气但忍住了"改写成具体的可见位移
+  （"手指一节节收紧到指节发白 → 前臂发力 → 肩膀微微内收"）
+- `beats[0].t` 从 `[0, 3.0]` 加长到 `[0, 3.9]`（台词被压缩，按公式核算）
+- `seed` 从 4271 换成 8813（这一轮看起来是采样运气差，不是系统性问题）
+- `camera_en.rig`：删掉复述首帧静态内容的那半句
+- 拆成 2 张卡：u1 只留江砚说话，u2 用 u1 尾帧作首帧、只留陈野说话
+
+镜头卡的字段定义见
+`short-drama-video-gen/references/shot_card_schema.md`。
 
 ### 真正生效的修改杠杆（`fix_instruction` 只能落在这几项上）
 
@@ -70,10 +98,38 @@ Reviewer 唯一的判断依据是 unit 的 `script_ref`（原剧本/分集大纲
    秒），orchestrator 会改用 `ltx_pipelines.retake` 只重绘这一段，省下
    重跑整段的显卡时间。如果问题影响了全片基调（比如首帧身份就错了、
    整体情绪从头到尾都不对），不要给 `defect_window`，走整段重来。
+5. **`duration_sec`（台词被压缩时唯一有效的杠杆）**——判定为"台词被总结/
+   压缩"时，`fix_instruction` 必须是"按台词字数/语速核算的最低时长加长
+   `duration_sec`"（公式见 `video_prompt_guide.md`"台词时长计算"），不是
+   改 prompt 措辞、不是换 seed——这两个杠杆对"时间不够说完"这个物理限制
+   没有作用。算出来时长明显变长（超过 8-10 秒）时，`fix_instruction` 改成
+   建议拆成分段生成（回到第 3 条）。
+
+**注意：「视角/机位不对」和「场景太单一」这两类问题，在这一层是修不了的。**
+首帧是用 `--image <path> 0 1.0` 焊死的，画面从哪个角度拍完全由**关键帧合成时用了哪张
+机位底板**决定（`unit.scene_plate` 记着是哪一张）。所以：
+
+- 判定"这一镜的视角不对／该用反打却用了正打" → `fix_instruction` 写
+  **"回关键帧阶段把 `scene_plate` 换成 `SC0X_..._B反打` 重出首帧"**，
+  不要写"提示词里加一句从侧面拍"——写了也不会变。
+- 判定"整场戏看起来都是一个视角／场景没有变化" → 这是**分镜和资产层**的问题，
+  不是这一镜的问题。如实上报"这一场连续 N 镜的 `scene_plate` 都是同一张，
+  建议回分镜阶段补机位"，**不要把它算进这一镜的 3 轮重试**——烧显卡解决不了。
+- 判定"背景在单镜内完全不动" → 见 `model_capability_ledger.md` A6，
+  这是 strength 1.0 的直接后果；两条可能的出路（D4 调强度、D5 首尾帧插值）
+  **都还没实测**。如实记录，不要当成这一镜的 fail 反复重跑。
 
 **注意：`ref_images` 不是有效杠杆**——`ltx_ssh_submit.py` 从不读取/上传
 这个字段（详见 `units_schema.md`），`fix_instruction` 不能落在"补一张
-参考图"上，一致性问题只能靠改 `prompt` 文字或换 `seed` 解决。
+参考图"上，一致性问题只能靠改卡上的 `subject_lock_en` / 动作描述或换
+`seed` 解决。
+
+**判 fail 之前先过一遍能力清单**：
+`short-drama-video-gen/references/model_capability_ledger.md` 里标为
+"已验证做不到"的项（最常见的是 A1：带台词 + 混合克制型情绪 → 收敛成通用
+开怀笑，正反两向各试 3 轮无效），如果这一镜的缺陷正好命中，`fix_instruction`
+不要写"再调措辞试试"，直接写降级建议（接受现状 / 降级成无台词表情镜、
+配音后期叠 / 换 dfr pipeline），并说明依据是 ledger 的哪一条。
 
 ### 三、音画同步（提醒，不判断）
 
@@ -136,9 +192,10 @@ downgrade_suggestion: <是否建议把这一镜降级成 short-drama-video-gen �
   `script_ref` 描述的情节，仍然判 `fail`。反过来也不要因为"这镜情节很
   重要"就对明显的技术崩坏（换脸、背景闪烁）视而不见，两条标准都要过。
 - `fix_instruction` 必须具体到"下一轮 Generator agent 不需要再猜"的程度，
-  能直接对应到"真正生效的修改杠杆"里的某一项（改 prompt 文字、换 seed、
-  拆段、局部重绘），写含糊的意见、或者落在不生效的 `negative_prompt`/
-  `ref_images` 字段上，等于把问题又踢回给下一轮。
+  能直接对应到"真正生效的修改杠杆"里的某一项，**而且要写成镜头卡的字段路径**
+  （`beats[1].motion_en` / `beats[0].t` / `seed` / `camera_en.rig` / 拆段）。
+  写含糊的意见、或者落在不生效的 `negative_prompt`/`ref_images` 字段上，
+  等于把问题又踢回给下一轮。
 - 不要为了"省一次整段重来"硬凑一个 `defect_window`——如果背景闪烁其实
   从头到尾都有、只是某几秒更明显，那不是"局部问题"，老实判定成全片问题，
   走整段重来，`defect_window` 判断错了会让 retake 修出一段跟前后风格不

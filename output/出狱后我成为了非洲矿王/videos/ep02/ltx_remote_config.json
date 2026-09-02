@@ -1,19 +1,24 @@
 {
-  "ssh_host": "root@connect.bjb1.seetacloud.com",
-  "ssh_port": 45762,
-  "remote_repo_dir": "/root/autodl-tmp/LTX-2",
-  "remote_work_dir": "/root/autodl-tmp/jobs",
+  "ssh_host": "root@216.81.248.126",
+  "ssh_port": 17795,
+  "remote_repo_dir": "/workspace/LTX-2",
+  "remote_work_dir": "/workspace/jobs",
   "pipeline_module": "ltx_pipelines.distilled",
   "pipeline_extra_args": [
-    "--transformer-path", "models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
-    "--text-encoder-path", "models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
-    "--video-vae-path", "models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors",
-    "--audio-vae-path", "models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors",
-    "--spatial-upsampler-path", "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
+    "--transformer-path",
+    "models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+    "--text-encoder-path",
+    "models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+    "--video-vae-path",
+    "models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors",
+    "--audio-vae-path",
+    "models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors",
+    "--spatial-upsampler-path",
+    "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
   ],
   "python_bin": "uv run python",
-  "ssh_password": "oXOhT/Ifo1HT",
-  "platform": "autodl",
-  "instance_id": "pro-788348171e4a",
-  "notes": "AutoDL RTX PRO 6000 96GB，¥5.98/小时（约$0.83/hr），替代第1集用的vast.ai实例（该实例欠费停用）。/root/autodl-tmp 是AutoDL的大容量数据盘挂载点，模型权重(66GB)必须放这里，不能放系统盘(通常较小)。重要：这台实例已经下载好LTX-2.5全部权重+装好环境，以后复用时只调用power_on开机即可，不要调用release（会删除硬盘数据、导致下次要重新下载66GB模型），只用power_off关机停止计费。启动watchdog时--ssh-host必须带root@前缀，漏了会导致watchdog自己的活动检测一直连接失败、把实例正常运行时也误判成空闲关机（已踩坑，见ltx_pipeline_gotchas.md）。"
+  "platform": "runpod",
+  "instance_id": "kcccxjifst3l2d",
+  "network_volume_id": "vr1dk0uvnx",
+  "notes": "RunPod A100 SXM 80GB，US-KS-2，$1.59/hr。模型权重(67GB)已下载完成到Network Volume(/workspace)，跟Pod生命周期解耦——即使这个Pod被terminate，只要挂载同一个network_volume_id(vr1dk0uvnx)新建Pod，模型还在，不用重新下载。所以【用完就关】的正确动作是 terminate 这个 Pod，不是只 stop：停止的Pod磁盘按RunPod官方计费口径仍在收费，而容器盘本来也不跨stop/start持久。直接跑 .claude/skills/short-drama-ltx-generate/scripts/gpu_teardown.py --config 这个文件（--mode auto 会自动选 terminate 并轮询确认真的停了）。永远不要调用 volume_delete——那才会真的丢掉这67GB权重。"
 }

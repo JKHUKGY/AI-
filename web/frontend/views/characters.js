@@ -21,6 +21,9 @@ Views.characters = async function characters(app, project) {
       text: sec.body,
       html: sec.html,
       onSave: (newText) => API.patchCharacter(project, sec.title, newText),
+      project,
+      opts: { kind: 'asset', baseDirHint: 'assets' },
+      jobs: sec.variants,
     });
     const jobsMount = block.querySelector('.jobs-mount');
     const jobIds = Object.keys(sec.variants);

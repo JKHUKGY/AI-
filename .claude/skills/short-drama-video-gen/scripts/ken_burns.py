@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""用 ffmpeg 的 zoompan 滤镜给 B 级静态关键帧做推拉摇移(Ken Burns)效果。
+"""用 ffmpeg 的 zoompan 滤镜给静态关键帧做推拉摇移(Ken Burns)效果。
 
-零成本、不调用任何生成 API，纯本地处理，用于分镜表里判定为 B 级
-（空镜头/环境介绍/内心活动/时间流逝）的镜头。
+零成本、不调用任何生成 API，纯本地处理。**不是 B 级镜头的默认路径**——
+B 级现在跟 S/A 级一样正常走图生视频/LTX 生成，本脚本只在某镜（不分级别）
+连续多轮生成仍选不出可用片段时，作为本地兜底方案使用，见
+`short-drama-video-gen/SKILL.md` 第 5 步。
 
 用法：
     ffmpeg -version   # 先确认已安装，没有就 apt-get install ffmpeg / brew install ffmpeg

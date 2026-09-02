@@ -21,6 +21,9 @@ Views.scenes = async function scenes(app, project) {
       text: sec.body,
       html: sec.html,
       onSave: (newText) => API.patchScene(project, sec.title, newText),
+      project,
+      opts: { kind: 'asset', baseDirHint: 'assets' },
+      jobs: sec.variants,
     });
     const jobsMount = block.querySelector('.jobs-mount');
     const jobIds = Object.keys(sec.variants);

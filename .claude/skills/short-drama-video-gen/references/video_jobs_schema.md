@@ -1,64 +1,100 @@
-# video_jobs.md / video_jobs.json 格式说明
+# video_jobs.json / video_jobs.md 格式说明
 
-因为没有统一的免 API key 调用脚本（见 SKILL.md 第 0 步），这份清单的默认
-形态是给用户看的 **Markdown 表格**，用户手动复制提示词到平台网页版提交。
-只有用户明确说要接自己的 API 时，才额外导出对应字段的 JSON。
+自建 LTX-2.5 通道（本仓库的主路线）里，`video_jobs.json` 是
+`ltx_ssh_submit.py` 直接消费的输入，也是这一层的**主产物**。
 
-## Markdown 版本（默认产出，`output/<故事名>/videos/ep0X/video_jobs.md`）
+**它由 `scripts/build_prompt.py` 从镜头卡装配出来，不手写。**
 
-| 镜号 | 场景 | 首帧文件路径 | 尾帧文件路径(可选) | 一致性参考图 | 台词/旁白 | 正向提示词 | 负面提示词 | 建议时长(秒) | 推荐平台 | 分段说明 | 状态 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+```
+shot_cards.json  ──build_prompt.py──▶  video_jobs.json  ──▶  ltx_ssh_submit.py
+（人维护这个）                          （派生，别手改）
+```
 
-- **台词/旁白**列直接从 `ep0X.md` 分镜表的"台词/旁白"列原样搬过来，没有
-  就写"无"。这一列**只是给配音/剪辑环节对照用的参考信息**，不代表要把
-  这句话喂给图生视频模型生成语音——目前没有确认任何一个平台能可靠地按
-  台词生成对应角色音色的同步语音/口型，所以提示词部分依然只描述动作和
-  镜头，不要把台词硬塞进正向提示词里让模型自己编。
-- **状态**列用来跟踪进度：`待生成` / `已提交测试版` / `测试版已核对，待正式版`
-  / `已确认` / `不合格待调整`，方便多轮返工时不丢进度。
-- **分段说明**：如果这个镜头被拆成了多段（见 `stability_playbook.md` 第 3
-  条），在这里写清楚"第 1/2 段，结束帧衔接下一段"，并各自占一行。
+镜头卡字段见 `shot_card_schema.md`，装配规则见 `video_prompt_guide.md`。
 
-## JSON 版本（仅用户要接自己 API 时导出）
+Markdown 版本（`video_jobs.md`）现在只是**给人看的汇总视图**，不再是提示词的
+落脚处——需要时从 `video_jobs.json` 生成一份即可，用来贴进 PR/汇报或者手动
+提交到 SaaS 平台。
+
+---
+
+## JSON 结构（`output/<故事名>/videos/ep0X/video_jobs.json`）
 
 ```json
 [
   {
-    "id": "ep01_镜03",
-    "shot_no": 3,
-    "scene": "SC01_出租屋_日间",
-    "first_frame": "output/千金归位/keyframes/ep01/ep01_镜03_00.png",
+    "id": "xueshan_shot01_u1",
+    "shot_no": 1,
+    "scene": "雪山之巅_生死决斗",
+    "shot_card_id": "xueshan_shot01_u1",
+    "scene_plate": "无场景资产库：手工首帧的一次性镜头，机位=男主第一人称正面轴线",
+    "first_frame_strength": 1.0,
+    "prompt_lang": "en",
+    "first_frame": "output/雪山决斗/refs/雪山决斗_女主_首帧_1600x896.png",
+    "first_frame_from": null,
     "last_frame": null,
-    "ref_images": [
-      "output/千金归位/assets/苏晚_落魄期_正面/苏晚_落魄期_正面_00.png"
-    ],
-    "dialogue": "婶，我真的无处可去了……",
-    "prompt": "起始画面为参考图中人物近景，人物眼眶先泛红...(完整正向提示词)",
-    "negative_prompt": "避免：人物面部变形、五官错位、多余肢体...(完整负面提示词)",
-    "duration_sec": 3,
-    "aspect_ratio": "9:16",
-    "resolution_test": "720p",
-    "resolution_final": "1080p",
-    "platform_recommend": ["可灵 Kling", "即梦 Jimeng"],
-    "notes": "A级反应镜，先跑720p测试版确认动作方向再上1080p正式版"
+    "ref_images": [],
+    "dialogue": "女主：\"为什么……骗我的是你……为什么？为什么！\"",
+    "prompt": "shot from the male lead's first-person position, standing directly in front of her on the snowfield at her eye level, the same spot for the whole take. locked-off camera, ...",
+    "negative_prompt": "(ltx_pipelines.distilled 没有 --negative-prompt 参数，此字段不会被发送，仅为兼容旧 schema 保留。...)",
+    "duration_sec": 5.7083,
+    "fps": 24,
+    "num_frames": 137,
+    "aspect_ratio": "16:9",
+    "width": 1600,
+    "height": 896,
+    "seed": 42,
+    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "notes": "137 帧。..."
   }
 ]
 ```
 
-字段说明：
-
-| 字段 | 必填 | 说明 |
+| 字段 | 来源 | 说明 |
 |---|---|---|
-| `id` | 是 | 与 `keyframes.md`/`jobs.json` 一致的命名规则 `ep{集号:02d}_镜{镜号:02d}`，分段的话加后缀 `_seg1`/`_seg2`。 |
-| `first_frame` | 是 | 来自 `keyframes.md` 的关键帧文件路径，不要凭空指定。 |
-| `last_frame` | 否 | 只有确定用首尾帧控制、且已经有对应的"结束状态"关键帧时才填，没有就留 `null`，不要让视频模型的默认行为被误当成刻意设计的结束状态。 |
-| `ref_images` | 否 | 额外的一致性参考图（人脸/道具特写），数量按目标平台上限来，见 `video_platform_comparison.md`。**自建 LTX-2.5 路线注意**：`short-drama-ltx-generate/scripts/ltx_ssh_submit.py` 目前从不读取/上传这个字段，只处理 `first_frame`/`last_frame`——填了这个字段对自建通道的生成结果没有任何效果（官方真正的多参考图机制是 IC-LoRA Ingredients/Multi-Subject Reference LoRA，需要额外权重和不同调用方式，见 `ltx_pipeline_gotchas.md`）。这个字段目前只对手动提交到 SaaS 平台（可灵/即梦/Vidu/Veo 等，它们的网页版/API 本身支持多参考图）有意义。 |
-| `dialogue` | 否 | 从 `ep0X.md` 分镜表"台词/旁白"列原样搬过来，纯参考信息，给配音/剪辑环节对照用；没有台词就留 `null`。不要喂进 `prompt`/`negative_prompt` 让模型生成语音。 |
-| `prompt` / `negative_prompt` | 是 | 完整文本，按 `video_prompt_guide.md` 展开，不要留占位符。 |
-| `duration_sec` | 是 | 目标正式时长；测试轮次可以先用更短的值单独跑，不需要改这个字段，测试版本自己另开一条记录或在 `notes` 里注明。 |
-| `platform_recommend` | 是 | 1-2 个推荐平台，参考 `video_platform_comparison.md` 的选型建议。 |
-| `notes` | 否 | 分段/测试策略/特殊注意事项。 |
+| `id` | 卡 | 生成单元 id。拆段的用 `_u1`/`_u2` 后缀 |
+| `shot_no` | 卡 | 对应分镜表镜号 |
+| `scene` | 卡 | 场景编号 |
+| `shot_card_id` | 卡 | **回指镜头卡**。改提示词回这张卡改，不要改本文件 |
+| `scene_plate` | 卡 | 这一单元首帧用的**机位底板 id**（如 `SC04_顾家别墅餐厅_B反打`）。溯源用：验收说"这一镜视角不对"时先查底板对不对，改提示词没用 |
+| `first_frame_strength` | 卡 | 首帧锁定强度，默认 `1.0`（完全锁死）。低于 1.0 是未实测的路，见 `model_capability_ledger.md` D4 |
+| `prompt_lang` | 装配参数 | `en`（英文正文 + 中文台词）/ `zh`（全中文，旧行为） |
+| `first_frame` | 卡 | 首帧图路径。**拆段的后续段在上一段跑完抽帧之后才能填上** |
+| `first_frame_from` | 卡 | 如 `xueshan_shot01_u1:last`，说明这一段的首帧该从哪来 |
+| `last_frame` | 卡 | 一般 `null`。只有确实要用首尾帧控制、且已经有"结束状态"关键帧时才填 |
+| `ref_images` | 恒为 `[]` | **死字段**。`ltx_ssh_submit.py` 从不读取它，填了对自建通道没有任何效果（见 `model_capability_ledger.md` A4） |
+| `dialogue` | 卡 | 各拍台词的中文汇总，**只是给人和配音/剪辑环节对照用**。真正驱动语音的是 `prompt` 里嵌好的台词 |
+| `prompt` | **派生** | 装配产物。手改这里会让它和镜头卡脱钩，导出校验会拦 |
+| `negative_prompt` | 固定文案 | distilled pipeline 没有这个参数，**不会被发送**。仅为兼容旧 schema 保留 |
+| `duration_sec` | 派生 | = `num_frames / fps`，已经是合法值 |
+| `fps` | 卡 | 固定 24。LTX 没有 `--fps` 参数，这个值只用来推 `num_frames` |
+| `num_frames` | 派生 | `8k+1` 合法值 |
+| `aspect_ratio` | 派生 | 由 `width`/`height` 推出并吸附到常见比例。导出校验会拿它反查分辨率有没有漏填 |
+| `width` / `height` | 卡 | 必须被 64 整除。漏填会悄悄退回 pipeline 默认的横屏 `1536×1024` |
+| `seed` | 卡 | **必填，且不能是 10**（LTX `--seed` 的默认值就是 10，留着等于没指定） |
+| `platform_recommend` | 固定 | `["LTX-2.5 (self-hosted)"]` |
+| `notes` | 卡 | 原样带过来 |
 
-这份 JSON 不被任何脚本自动消费（B 级的 `ken_burns.py` 用的是单独的
-`kenburns_jobs.json`，见该脚本头部说明），纯粹是给用户自己接 API 时省去
-从 Markdown 表格再转录一遍的功夫。
+---
+
+## 关于台词：LTX-2.5 和 SaaS 平台的规则是相反的
+
+- **SaaS 平台**（可灵/即梦/Vidu/Veo…）：多数没有可靠的对口型/角色语音能力，
+  台词只能作为参考信息放在 `dialogue` 字段，**不要塞进提示词**。
+- **自建 LTX-2.5（本仓库主路线）**：自带音频 VAE，**必须**把台词按格式嵌进
+  正向提示词，否则生成出来只有环境音、没有台词。这是"视频没有台词"这类问题
+  最常见的直接原因。
+
+镜头卡的 `beats[].dialogue` 就是这个格式的结构化形式，装配器负责嵌入，
+校验器负责确认语言声明和时长够不够。详见 `model_capability_ledger.md` C1/B4。
+
+---
+
+## 状态跟踪
+
+生成进度不记在这份 JSON 里，记在 `loop-video-generation` 的
+`units_queue.json`（`status` / `round_count` / `history[]` / `selected_file`）。
+这份 JSON 只描述"要生成什么"，不描述"生成到哪一步了"。
+
+需要给人看的进度视图时，`video_jobs.md` 可以带一列
+`待生成 / 已提交测试档 / 测试档已核对 / 已确认 / 不合格待调整`。

@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """闲置显卡自动停止看门狗：连续 N 秒检测不到生成活动，就调用
-`vastai stop instance` 停止计费。
+`gpu_teardown.py` 停掉实例、停止计费（各平台该 stop 还是 terminate、
+以及"停完要确认真的停了"这套逻辑都在那个脚本里，这里不重复实现）。
+
+**它跟"用完就关"是两个不同的东西，两个都要有**：本脚本是被动兜底
+（"人忘了关"时超时自救），跑完一批任务后主动收工应该直接跑
+`gpu_teardown.py`，或者干脆给 `ltx_ssh_submit.py` 加 `--auto-stop`
+让它批量任务一结束就自己关——那样不用干等看门狗的超时时间。
 
 判断"有没有活动"看三件事（任一为真就算活动，重置计时）：
 - 远程 GPU 利用率 > 0（`nvidia-smi --query-gpu=utilization.gpu`）
@@ -28,6 +34,15 @@
       --platform autodl --autodl-config .claude/skills/short-drama-ltx-generate/autodl_config.json \\
       --idle-seconds 120 --check-interval 15
 
+用法（RunPod，Pod ID 用 --instance-id 传）:
+  python3 idle_shutdown_watchdog.py \\
+      --instance-id <pod_id> \\
+      --ssh-host root@<公网IP> --ssh-port <映射端口> \\
+      --platform runpod --runpod-config .claude/skills/short-drama-ltx-generate/runpod_config.json \\
+      --stop-mode terminate \\
+      --idle-seconds 120 --check-interval 15
+  （权重在 Network Volume 上时推荐带 `--stop-mode terminate`，见下面局限一节）
+
 局限（必须让用户知道，不要含糊过去）：
 - 这个看门狗是本地（Claude Code 会话里的一个后台进程）在轮询，**只在当前
   会话/任务存活期间生效**。如果会话被关掉、这个后台任务被杀掉，看门狗
@@ -37,8 +52,14 @@
 - SSH 连不上（实例已经挂了/网络问题）时，直接判定为"检测不到活动"计入
   闲置计时，而不是报错退出——这样即使实例本身已经故障，也能尽快调用停止
   接口，避免继续计费。
-- `vastai stop instance` 失败（比如实例已经是 stopped 状态）不算脚本
-  故障，打印一下就正常退出。
+- 停止接口调用失败（比如实例本来就已经是 stopped 状态）不算脚本故障，
+  `gpu_teardown.py` 会继续查状态、用状态说话；只有连状态都确认不了才会
+  用非 0 退出码报警。
+- 默认 `--stop-mode stop` 只停机，最保守。**RunPod 上"停机"并不等于
+  "不烧钱"**：停止的 Pod 磁盘按官方计费口径仍在收费，而且容器盘本来就
+  不跨 stop/start 持久（实测 `uv` 会没了）。模型权重在 Network Volume 上
+  时，加 `--stop-mode terminate`（或 `auto` + `--ltx-config`）更省，
+  下次挂同一个卷建新 Pod，权重还在。
 """
 
 import argparse
@@ -100,25 +121,33 @@ def check_activity(ssh_host, ssh_port):
     return has_gpu_util or has_proc or has_load
 
 
-def stop_instance(instance_id, api_key=None):
-    print(f"[watchdog] 闲置超时，调用 vastai stop instance {instance_id}", file=sys.stderr)
-    cmd = ["vastai", "stop", "instance", str(instance_id), "--raw"]
-    if api_key:
-        cmd += ["--api-key", api_key]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    print(result.stdout)
-    if result.returncode != 0:
-        print(f"[watchdog] 停止实例调用失败（可能已经是 stopped 状态）: {result.stderr}", file=sys.stderr)
+def stop_instance(args):
+    """闲置超时的实际停机动作：全部委托给 gpu_teardown.py。
 
-
-def stop_instance_autodl(instance_id, autodl_config):
-    print(f"[watchdog] 闲置超时，调用 AutoDL power_off {instance_id}", file=sys.stderr)
-    script = str(Path(__file__).resolve().parent / "autodl_ops.py")
-    cmd = ["python3", script, "--config", autodl_config, "power_off", "--instance-uuid", str(instance_id)]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    print(result.stdout)
+    这里故意不自己拼各平台的停止命令——`gpu_teardown.py` 已经把"哪个平台该
+    用 stop 还是 terminate""调完接口要轮询确认真的停了""确认不了要报警"
+    这几件事做完了，看门狗再写一份就会出现两套行为不一致的关机逻辑（尤其是
+    RunPod 上 stop 只停 GPU、磁盘还在收费这个差别），那才是真正会漏钱的地方。
+    """
+    script = str(Path(__file__).resolve().parent / "gpu_teardown.py")
+    cmd = ["python3", script, "--platform", args.platform,
+           "--instance-id", str(args.instance_id), "--mode", args.stop_mode]
+    if args.ltx_config:
+        cmd += ["--config", args.ltx_config]
+    if args.platform == "autodl" and args.autodl_config:
+        cmd += ["--platform-config", args.autodl_config]
+    if args.platform == "runpod" and args.runpod_config:
+        cmd += ["--platform-config", args.runpod_config]
+    if args.platform == "vast" and args.api_key:
+        cmd += ["--api-key", args.api_key]
+    print(f"[watchdog] 闲置超时，调用 gpu_teardown.py 停止 {args.platform} 实例 {args.instance_id}",
+          file=sys.stderr)
+    sys.stderr.flush()
+    result = subprocess.run(cmd)
     if result.returncode != 0:
-        print(f"[watchdog] 停止实例调用失败（可能已经是 shutdown 状态）: {result.stderr}", file=sys.stderr)
+        print("[watchdog] ⚠️ 关机没能确认成功，实例可能还在计费，去平台控制台手动确认",
+              file=sys.stderr)
+    return result.returncode
 
 
 def main():
@@ -134,16 +163,37 @@ def main():
              "存好的 key（~/.config/vastai/vast_api_key）",
     )
     ap.add_argument(
-        "--platform", choices=["vast", "autodl"], default="vast",
+        "--platform", choices=["vast", "autodl", "runpod"], default="vast",
         help="实例所在平台，决定闲置超时后调用哪个停止接口，默认 vast",
     )
     ap.add_argument(
         "--autodl-config", default=None,
         help="platform=autodl 时必填，autodl_config.json 路径（存 api_token）",
     )
+    ap.add_argument(
+        "--stop-mode", choices=["auto", "stop", "terminate"], default="stop",
+        help="闲置超时后做什么，透传给 gpu_teardown.py 的 --mode。默认 stop"
+             "（只停机，最保守）。RunPod 上停止的 Pod 磁盘仍在计费、容器盘本来"
+             "也不跨 stop/start 持久，如果模型权重在 Network Volume 上，用 "
+             "`--stop-mode terminate`（或 auto）才是真的不烧钱，下次挂同一个卷"
+             "建新 Pod 权重还在",
+    )
+    ap.add_argument(
+        "--ltx-config", default=None,
+        help="可选，ltx_remote_config.json 路径，透传给 gpu_teardown.py 让它能读到"
+             "network_volume_id（--stop-mode auto 判断 RunPod 能不能安全 terminate 要用）",
+    )
+    ap.add_argument(
+        "--runpod-config", default=None,
+        help="platform=runpod 时必填，runpod_config.json 路径（存 api_key）；"
+             "--instance-id 传 pod_id。RunPod 的 stop 只影响 Pod 计费，"
+             "挂载的 Network Volume 不受影响，见 references/runpod_gpu_ops.md",
+    )
     args = ap.parse_args()
     if args.platform == "autodl" and not args.autodl_config:
         ap.error("--platform autodl 需要同时传 --autodl-config")
+    if args.platform == "runpod" and not args.runpod_config:
+        ap.error("--platform runpod 需要同时传 --runpod-config")
 
     last_active = time.time()
     print(
@@ -166,11 +216,9 @@ def main():
                 file=sys.stderr,
             )
             if idle_for >= args.idle_seconds:
-                if args.platform == "autodl":
-                    stop_instance_autodl(args.instance_id, args.autodl_config)
-                else:
-                    stop_instance(args.instance_id, api_key=args.api_key)
-                print("[watchdog] 已停止实例，看门狗退出", file=sys.stderr)
+                stop_instance(args)
+                print("[watchdog] 停机流程已执行完（结果见上面 gpu_teardown 的输出），看门狗退出",
+                      file=sys.stderr)
                 return
 
 

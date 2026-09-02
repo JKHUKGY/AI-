@@ -84,6 +84,10 @@ agent 实例。agent 不需要记得"上一轮生成过什么"，orchestrator �
        这个文件里对应 <unit.id> 的条目> \
      --out-dir <本集视频输出目录> \
      --only <unit.shot_no>
+   **不要加 `--auto-stop`**：那个参数会在这一次提交跑完后把显卡实例关掉，
+   而这个循环后面还有别的 unit 要用同一台实例，关了就全部失败。关显卡是
+   orchestrator 在整批循环结束后才做的事（`gpu_teardown.py`），不是
+   Generator 的职责。
 
 3. 下载完成后，用
    python3 .claude/skills/short-drama-video-gen/scripts/extract_frames.py \

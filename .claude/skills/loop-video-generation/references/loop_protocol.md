@@ -52,7 +52,13 @@
 4. **更新状态**：
    - `round_count += 1`（只有走到这一步、真的拿到 verdict 才算一轮）。
    - `verdict: fail` 且 `round_count < 3` → 把 `fix_instruction` 落实进
-     `prompt`（**不落在 `negative_prompt`/`ref_images`**，这两个字段对
+     **镜头卡的对应字段**（`shot_cards.json` 里 `shot_card_id` 那张卡的
+     `beats[i].motion_en` / `beats[i].t` / `camera_en.rig` / `seed` / 拆段），
+     然后重跑
+     `short-drama-video-gen/scripts/build_prompt.py` 把新的 `prompt` 同步进
+     队列——**不要手改队列里的 `prompt` 字符串**（下次装配会冲掉，而且
+     `validate_video_jobs.py` 会拦不一致）；也**不落在
+     `negative_prompt`/`ref_images`**，这两个字段对
      这个 pipeline 都不生效）；如果 Reviewer 判断是"随机采样运气差"，换
      一个新的 `seed` 值（不要沿用上一轮的 seed，否则同一个 prompt+同一个
      seed 会拿到几乎一样的结果）；必要时按 `stability_playbook.md` 拆段。
@@ -94,7 +100,8 @@
 - 镜7：测试档第 1 轮 `fail`（背景闪烁），落实 `fix_instruction` 后第 2
   轮 `pass`，正式档确认 `pass` → `passed`，总共 3 次生成调用。
 - 镜11：测试档 3 轮都 `fail`（同一角色反复换脸）→ `capped`，Reviewer
-  给出 `best_of_all` 和 `downgrade_suggestion`（建议降级成 B 级纯运镜），
+  给出 `best_of_all` 和 `downgrade_suggestion`（建议降级为本地推拉摇移
+  `ken_burns.py` 兜底处理，不再走图生视频），
   总共 3 次生成调用，交给用户决定。
 - 镜9：测试档第 1 轮整段生成后 `fail`，Reviewer 判断"只有 1.5-2.5 秒背景
   闪烁了一下，其余都正常"，给了 `defect_window: {start: 1.5, end: 2.5}`；

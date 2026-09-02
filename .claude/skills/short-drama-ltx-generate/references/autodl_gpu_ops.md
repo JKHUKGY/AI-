@@ -113,6 +113,13 @@ AutoDL 官方文档明确写了：`power_on` 的 `payload` 参数只支持
 
 跟 `gpu_rental_ops.md` 第 4 条要求一致：
 
+- **用完就关**：跑完这一批就直接
+  `gpu_teardown.py --config .../ltx_remote_config.json`（config 里
+  `platform: "autodl"` + `instance_id` 填实例 UUID），它会 `power_off`
+  并轮询 `status` 确认真的进了 shutdown 状态；或者提交时就用
+  `ltx_ssh_submit.py --auto-stop`。**AutoDL 上这个脚本只做 `power_off`、
+  不做 `release`**——`release` 会连盘上的模型权重一起删，要用户明确说
+  "这台不要了"才手动做。
 - 实例一确认 `running` 就要启动 `idle_shutdown_watchdog.py`
   （传 `--platform autodl --autodl-config <路径>`，见脚本内 `--help`），
   不是可选步骤。
