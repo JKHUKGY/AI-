@@ -1,0 +1,19 @@
+{
+  "ssh_host": "root@connect.bjb1.seetacloud.com",
+  "ssh_port": 45762,
+  "remote_repo_dir": "/root/autodl-tmp/LTX-2",
+  "remote_work_dir": "/root/autodl-tmp/jobs",
+  "pipeline_module": "ltx_pipelines.distilled",
+  "pipeline_extra_args": [
+    "--transformer-path", "models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+    "--text-encoder-path", "models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+    "--video-vae-path", "models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors",
+    "--audio-vae-path", "models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors",
+    "--spatial-upsampler-path", "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
+  ],
+  "python_bin": "uv run python",
+  "ssh_password": "oXOhT/Ifo1HT",
+  "platform": "autodl",
+  "instance_id": "pro-788348171e4a",
+  "notes": "AutoDL RTX PRO 6000 96GB，¥5.98/小时（约$0.83/hr），替代第1集用的vast.ai实例（该实例欠费停用）。/root/autodl-tmp 是AutoDL的大容量数据盘挂载点，模型权重(66GB)必须放这里，不能放系统盘(通常较小)。重要：这台实例已经下载好LTX-2.5全部权重+装好环境，以后复用时只调用power_on开机即可，不要调用release（会删除硬盘数据、导致下次要重新下载66GB模型），只用power_off关机停止计费。启动watchdog时--ssh-host必须带root@前缀，漏了会导致watchdog自己的活动检测一直连接失败、把实例正常运行时也误判成空闲关机（已踩坑，见ltx_pipeline_gotchas.md）。"
+}

@@ -107,6 +107,23 @@ def split_h2_sections(text):
     return sections
 
 
+def set_h2_section_body(text, title, new_body):
+    """把标题为 title 的二级标题段落的正文整体替换成 new_body，标题行本身
+    不能改——标题文本被 app.py 用来跟 assets/ 目录做前缀匹配，找对应的
+    立绘/场景图，改了标题会让图片对不上。找不到这个标题抛 ValueError。"""
+    sections = split_h2_sections(text)
+    found = False
+    for sec in sections:
+        if sec['title'] == title:
+            sec['body'] = new_body
+            found = True
+            break
+    if not found:
+        raise ValueError(f'找不到标题为“{title}”的段落')
+    parts = [sec['body'] if sec['title'] is None else f"## {sec['title']}\n{sec['body']}" for sec in sections]
+    return '\n'.join(parts)
+
+
 def render(text):
     lines = text.replace('\r\n', '\n').split('\n')
     out = []

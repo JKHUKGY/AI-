@@ -17,6 +17,8 @@ function parseHash() {
   return { name: 'home' };
 }
 
+let currentUser = null;
+
 function navHtml(route) {
   const items = [['#/guide', '指南', route.name === 'guide']];
   if (route.project) {
@@ -28,7 +30,11 @@ function navHtml(route) {
     items.push([`#/p/${p}/keyframes/${route.ep || 1}`, '关键帧', route.name === 'keyframes']);
     items.push([`#/p/${p}/videos/${route.ep || 1}`, '视频', route.name === 'videos']);
   }
-  items.push(['#/inbox', '反馈汇总', route.name === 'inbox']);
+  // 反馈汇总是跨剧的管理视角，普通剧本家账号只能看到自己被授权的那几部剧，
+  // 汇总页对他们意义不大，只给管理员账号看。
+  if (currentUser && currentUser.is_admin) {
+    items.push(['#/inbox', '反馈汇总', route.name === 'inbox']);
+  }
   items.push(['#/', '切换项目', route.name === 'home']);
   return items.map(([href, label, active]) => `<a href="${href}" class="${active ? 'active' : ''}">${UI.esc(label)}</a>`).join('');
 }
@@ -54,5 +60,22 @@ async function render() {
   }
 }
 
+async function initAuthBar() {
+  try {
+    const me = await API.me();
+    currentUser = me;
+    document.getElementById('whoami').textContent = `已登录：${me.display_name}`;
+    const logoutBtn = document.getElementById('logoutBtn');
+    logoutBtn.hidden = false;
+    logoutBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      await API.logout();
+      location.href = '/login.html';
+    });
+  } catch (e) {
+    // API.me() 401 时 api.js 已经直接跳转登录页了，这里不需要额外处理
+  }
+}
+
 window.addEventListener('hashchange', render);
-window.addEventListener('DOMContentLoaded', render);
+window.addEventListener('DOMContentLoaded', async () => { await initAuthBar(); render(); });

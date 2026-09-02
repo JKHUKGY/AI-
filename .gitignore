@@ -1,7 +1,12 @@
 .env
 __pycache__/
 *.pyc
+autodl_config.json
 
 # 剧本家协作网站：重新生成子进程的临时 jobs.json + 日志，纯调试用途，
 # review.json（评论/入选/编辑记录）本身仍然要提交，不受这条影响。
 **/_web_state/logs/
+
+# 剧本家协作网站的登录账号（密码哈希）和会话签名密钥，机器本地生成，
+# 不应该进 git（换机器部署要在新机器上用 manage_users.py 重新建账号）。
+web/server/data/

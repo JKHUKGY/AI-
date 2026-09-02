@@ -15,8 +15,13 @@ Views.scenes = async function scenes(app, project) {
   data.scenes.forEach((sec) => {
     const block = document.createElement('div');
     block.className = 'figure-block';
-    block.innerHTML = `<h2>${UI.esc(sec.title)}</h2>${sec.html}<div class="jobs-mount"></div>`;
+    block.innerHTML = `<h2>${UI.esc(sec.title)}</h2><div class="sec-mount"></div><div class="jobs-mount"></div>`;
     listEl.appendChild(block);
+    UI.mountEditableSection(block.querySelector('.sec-mount'), {
+      text: sec.body,
+      html: sec.html,
+      onSave: (newText) => API.patchScene(project, sec.title, newText),
+    });
     const jobsMount = block.querySelector('.jobs-mount');
     const jobIds = Object.keys(sec.variants);
     if (!jobIds.length) {

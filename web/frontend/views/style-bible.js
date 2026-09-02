@@ -8,6 +8,11 @@ Views.styleBible = async function styleBible(app, project) {
   }
   app.innerHTML = `
     <h1>${UI.esc(project)} · 风格与叙事基调简报</h1>
-    <div class="card">${data.html}</div>
+    <div class="card" id="sbMount"></div>
   `;
+  UI.mountEditableSection(document.getElementById('sbMount'), {
+    text: data.text,
+    html: data.html,
+    onSave: (newText) => API.patchStyleBible(project, newText),
+  });
 };

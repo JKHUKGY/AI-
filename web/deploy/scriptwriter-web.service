@@ -1,0 +1,18 @@
+[Unit]
+Description=剧本家协作网站
+After=network.target
+
+[Service]
+Type=simple
+# 换成实际部署用户和仓库路径
+User=deploy
+WorkingDirectory=/home/deploy/AI-
+# claude/codex 装在 ~/.local/bin 或 npm 全局目录，systemd 默认 PATH 不含用户
+# home 目录，不加这条 AI 改写提示词功能会报"找不到 claude 命令"。
+Environment="PATH=/home/deploy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/usr/bin/python3 web/server/app.py --port 8000 --secure-cookies
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

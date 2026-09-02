@@ -1,6 +1,6 @@
 {
-  "ssh_host": "root@ssh3.vast.ai",
-  "ssh_port": 25144,
+  "ssh_host": "root@ssh8.vast.ai",
+  "ssh_port": 33724,
   "remote_repo_dir": "/workspace/LTX-2",
   "remote_work_dir": "/workspace/jobs",
   "pipeline_module": "ltx_pipelines.distilled",

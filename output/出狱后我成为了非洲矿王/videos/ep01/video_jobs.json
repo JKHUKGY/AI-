@@ -222,7 +222,7 @@
     "platform_recommend": [
       "LTX-2.5 (self-hosted)"
     ],
-    "notes": "镜20第2段，首帧取自第1段最终选定版本(ep01_镜20_seg1.mp4)结束前0.1秒的抽帧，只生成1次不做多轮迭代（用户明确要求）。"
+    "notes": "已通过loop-video-generation发现配音错位问题并拆分修复，最终文件由ep01_镜20_seg2a+ep01_镜20_seg2b拼接而成，详见video_jobs.md和units_queue.json。此条目的prompt/seed是已废弃的单段版本，仅存档。"
   },
   {
     "id": "ep01_镜02",
@@ -241,7 +241,9 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程。v1手落在脖子/后颈位置且两人脸贴得过近，构图变成类似亲密贴脸的姿态，不符合\"拍肩\"设计；v2改用更明确的位置描述+负面提示词重新生成。",
     "seed": 11
   },
@@ -261,7 +263,9 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程（未按第一批5轮迭代规格）。"
   },
   {
@@ -280,7 +284,9 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程（未按第一批5轮迭代规格）。"
   },
   {
@@ -300,8 +306,10 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
-    "notes": "第二批标准单轮流程；单镜头两人先后说话，参考镜20_seg2经验，如出现串音/串嘴型问题考虑拆段。"
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "已通过loop-video-generation发现配音错位问题并拆分修复，最终文件由ep01_镜06_seg1+ep01_镜06_seg2拼接而成，详见video_jobs.md和units_queue.json。此条目的prompt/seed是已废弃的单段版本，仅存档。"
   },
   {
     "id": "ep01_镜08",
@@ -319,7 +327,9 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程。v1画面底部烧出了一行乱码中文字幕（跟镜14 v1同类型的LTX-2.5偶发bug），已在负面提示词加上\"不得出现任何汉字/拼音文字\"重新生成。",
     "seed": 11
   },
@@ -339,7 +349,9 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程（未按第一批5轮迭代规格）。"
   },
   {
@@ -359,7 +371,9 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程（未按第一批5轮迭代规格）。"
   },
   {
@@ -378,8 +392,90 @@
     "aspect_ratio": "9:16",
     "width": 768,
     "height": 1344,
-    "platform_recommend": ["LTX-2.5 (self-hosted)"],
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
     "notes": "第二批标准单轮流程，跑满3轮（stability_playbook上限）。v1/v2/v3结尾表情全部变成了真心开怀露齿笑，跟\"嘴角轻蔑上扬\"的阴阳怪气设计完全相反，即使v3把负面提示词加到\"任何形式的笑容\"这么强硬依然没有改变结果——确认是LTX-2.5 distilled pipeline的系统性倾向（说话类镜头会把复杂/负面情绪收敛成通用的开心笑容，镜14的苏慧\"含泪强忍笑\"也是同一类问题）。已停止重试，接受v3为最终版本，如实告知用户这个情绪表现与分镜表要求有差距。",
     "seed": 27
+  },
+  {
+    "id": "ep01_镜06_seg1",
+    "shot_no": 6,
+    "scene": "SC01_监狱门口",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜06/ep01_镜06_00.png",
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "江砚（喝水后）：\"我猜到是他。\"",
+    "prompt": "起始画面为参考图中江砚仰头喝水的姿态。过程：喉结明显滚动一次，随后放下水瓶，语气平静而笃定地说道：\"我猜到是他。\"陈野在一旁保持安静站立，仔细倾听，嘴唇始终闭合、不说话、不做出反应动作。结束：江砚说完后目光平静地看向前方，嘴唇闭合静止，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "duration_sec": 3,
+    "aspect_ratio": "9:16",
+    "width": 768,
+    "height": 1344,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "loop-video-generation拆段修复，用于解决多说话人配音错位问题",
+    "seed": 10
+  },
+  {
+    "id": "ep01_镜20_seg2a",
+    "shot_no": 20,
+    "scene": "SC05_顾家客房",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜20/ep01_镜20_seg2_first.png",
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "苏慧（压低声音）：\"小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。\"",
+    "prompt": "起始画面为苏慧（灰白发中年女性，身穿灰蓝色碎花上衣、系围裙）关上房门后放松又略带疲惫的姿态，江砚（年轻男性，身穿米色衬衫）安静站在一旁。过程：只有苏慧一人持续小幅度张合嘴唇说话，压低声音、语气带着小心翼翼与恳求地说道：\"小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。\"说话时身体略微前倾、肩膀略微佝偻，带着恳求畏缩的姿态，眼神不时低垂或紧张地看向门口方向。江砚从头到尾嘴唇紧闭、完全不张合、不做任何说话动作，不摆手不做手势，只用安静的眼神和轻微低头表示在倾听，全程不说一个字。两人构图保持并排站立，不要变成面对面近距离对峙。结束：苏慧说完后表情带着担忧地看着儿子，嘴唇闭合静止，江砚依旧嘴唇紧闭安静站立，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "duration_sec": 6,
+    "aspect_ratio": "9:16",
+    "width": 768,
+    "height": 1344,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "loop-video-generation拆段修复，用于解决多说话人配音错位问题",
+    "seed": 21
+  },
+  {
+    "id": "ep01_镜06_seg2",
+    "shot_no": 6,
+    "scene": "SC01_监狱门口",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜06/ep01_镜06_seg2_first.png",
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "陈野（愣了）：\"你知道？\"",
+    "prompt": "起始画面为江砚说完话后两人对视的姿态。过程：陈野猛地愣住，随即张嘴反问道：\"你知道？\"表情外放震惊，眉毛上扬、眼睛睁大。江砚保持静立，表情平静，嘴唇始终闭合、不说话。结束：陈野停留在满脸愕然的表情，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "duration_sec": 2,
+    "aspect_ratio": "9:16",
+    "width": 768,
+    "height": 1344,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "loop-video-generation拆段修复，镜6第2段（陈野反问）",
+    "seed": 10
+  },
+  {
+    "id": "ep01_镜20_seg2b",
+    "shot_no": 20,
+    "scene": "SC05_顾家客房",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜20/ep01_镜20_seg2b_first.png",
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "江砚：\"我知道了妈。\"",
+    "prompt": "起始画面为苏慧（灰白发中年女性，身穿灰蓝色碎花上衣）刚说完话，嘴唇已经完全闭合，表情带一丝欣慰又克制地看向儿子；江砚（年轻男性，身穿米色衬衫）站在一旁，微微张嘴准备开口，母子二人相对无言。过程：苏慧嘴唇从视频第一帧到最后一帧全程紧闭，不得有任何张合动作，面部表情可以有细微变化但嘴部必须保持闭合静止，安静看着儿子。江砚缓缓开口，嘴部随台词持续张合直到语音结束、语速平缓幅度适中，语气温和地说道：\"我知道了妈。\"两人视线始终保持相对，不要转向镜头正面。结束：江砚说完后停顿半拍，随后头部缓慢、清晰地向下点一次，幅度小但要清楚可见，眼神仍看向苏慧；苏慧全程嘴唇闭合，表情欣慰又心疼，定格0.4秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "duration_sec": 3,
+    "aspect_ratio": "9:16",
+    "width": 768,
+    "height": 1344,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "loop-video-generation拆段修复，镜20_seg2第2段（江砚回应）",
+    "seed": 33
   }
 ]

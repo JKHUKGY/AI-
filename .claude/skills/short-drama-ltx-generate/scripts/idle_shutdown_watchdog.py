@@ -15,10 +15,17 @@
 堵上这个漏洞，新增判断条件时优先往「宁可错放过一次真正的闲置，也不要
 错杀正在干活的实例」这个方向偏。
 
-用法:
+用法（vast.ai，默认）:
   python3 idle_shutdown_watchdog.py \\
       --instance-id 49395065 \\
       --ssh-host root@ssh2.vast.ai --ssh-port 35064 \\
+      --idle-seconds 120 --check-interval 15
+
+用法（AutoDL，GPU/有卡模式的实例）:
+  python3 idle_shutdown_watchdog.py \\
+      --instance-id pro-788241abd595 \\
+      --ssh-host root@connect.bjb2.seetacloud.com --ssh-port 53213 \\
+      --platform autodl --autodl-config .claude/skills/short-drama-ltx-generate/autodl_config.json \\
       --idle-seconds 120 --check-interval 15
 
 局限（必须让用户知道，不要含糊过去）：
@@ -38,6 +45,7 @@ import argparse
 import subprocess
 import sys
 import time
+from pathlib import Path
 
 
 def ssh_cmd(ssh_host, ssh_port, remote_cmd, timeout=15):
@@ -103,6 +111,16 @@ def stop_instance(instance_id, api_key=None):
         print(f"[watchdog] 停止实例调用失败（可能已经是 stopped 状态）: {result.stderr}", file=sys.stderr)
 
 
+def stop_instance_autodl(instance_id, autodl_config):
+    print(f"[watchdog] 闲置超时，调用 AutoDL power_off {instance_id}", file=sys.stderr)
+    script = str(Path(__file__).resolve().parent / "autodl_ops.py")
+    cmd = ["python3", script, "--config", autodl_config, "power_off", "--instance-uuid", str(instance_id)]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    print(result.stdout)
+    if result.returncode != 0:
+        print(f"[watchdog] 停止实例调用失败（可能已经是 shutdown 状态）: {result.stderr}", file=sys.stderr)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--instance-id", required=True)
@@ -115,7 +133,17 @@ def main():
         help="vast.ai API key，透传给 stop 命令；不传就用本机 vastai CLI 已经"
              "存好的 key（~/.config/vastai/vast_api_key）",
     )
+    ap.add_argument(
+        "--platform", choices=["vast", "autodl"], default="vast",
+        help="实例所在平台，决定闲置超时后调用哪个停止接口，默认 vast",
+    )
+    ap.add_argument(
+        "--autodl-config", default=None,
+        help="platform=autodl 时必填，autodl_config.json 路径（存 api_token）",
+    )
     args = ap.parse_args()
+    if args.platform == "autodl" and not args.autodl_config:
+        ap.error("--platform autodl 需要同时传 --autodl-config")
 
     last_active = time.time()
     print(
@@ -138,7 +166,10 @@ def main():
                 file=sys.stderr,
             )
             if idle_for >= args.idle_seconds:
-                stop_instance(args.instance_id, api_key=args.api_key)
+                if args.platform == "autodl":
+                    stop_instance_autodl(args.instance_id, args.autodl_config)
+                else:
+                    stop_instance(args.instance_id, api_key=args.api_key)
                 print("[watchdog] 已停止实例，看门狗退出", file=sys.stderr)
                 return
 

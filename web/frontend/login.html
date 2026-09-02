@@ -1,0 +1,72 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>登录 · 剧本家协作台</title>
+<style>
+  :root {
+    --bg: #f6f5f2; --panel: #ffffff; --ink: #22201c; --ink-dim: #6b675f;
+    --line: #e4e0d8; --accent: #a8543a; --bad: #b3402f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  }
+  form {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 32px; width: 300px; box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  }
+  h1 { font-size: 18px; margin: 0 0 20px; }
+  label { display: block; font-size: 13px; color: var(--ink-dim); margin-bottom: 4px; }
+  input {
+    width: 100%; padding: 8px 10px; margin-bottom: 14px; border: 1px solid var(--line);
+    border-radius: 6px; font-size: 14px;
+  }
+  button {
+    width: 100%; padding: 9px; background: var(--accent); color: #fff; border: none;
+    border-radius: 6px; font-size: 14px; cursor: pointer;
+  }
+  button:disabled { opacity: .6; cursor: default; }
+  #err { color: var(--bad); font-size: 13px; margin: -6px 0 14px; min-height: 16px; }
+</style>
+<form id="loginForm">
+  <h1>剧本家协作台 · 登录</h1>
+  <label for="u">用户名</label>
+  <input id="u" name="username" autocomplete="username" required>
+  <label for="p">密码</label>
+  <input id="p" name="password" type="password" autocomplete="current-password" required>
+  <div id="err"></div>
+  <button type="submit">登录</button>
+</form>
+<script>
+  const form = document.getElementById('loginForm');
+  const err = document.getElementById('err');
+  const params = new URLSearchParams(location.search);
+  const next = params.get('next') || '/';
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    err.textContent = '';
+    const btn = form.querySelector('button');
+    btn.disabled = true;
+    try {
+      const resp = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: form.username.value.trim(),
+          password: form.password.value,
+        }),
+      });
+      if (!resp.ok) {
+        const data = await resp.json().catch(() => ({}));
+        err.textContent = data.error || '登录失败';
+        btn.disabled = false;
+        return;
+      }
+      location.href = next;
+    } catch (e2) {
+      err.textContent = '网络错误，请重试';
+      btn.disabled = false;
+    }
+  });
+</script>

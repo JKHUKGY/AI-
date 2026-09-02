@@ -1,6 +1,6 @@
 ---
 name: short-drama-ltx-generate
-description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助手：拿到 short-drama-ltx-export 校验好的 video_jobs.json + ltx_remote_config.json 之后，实际去 vast.ai 等平台用用户提供的 API key 租显卡（或复用已有实例）、通过 SSH 部署 LTX-2 环境、下载模型权重、真正调用 ltx_ssh_submit.py 提交生成任务、监控进度、下载结果、抽帧+听审验收，并沉淀了一批实测踩坑的通用注意事项（GPU 租赁稳定性、环境搭建陷阱、pipeline 参数陷阱、角色配音一致性方案）。当用户说"帮我实际生成视频""调用显卡跑""执行生成任务""这一步真的把视频跑出来""租显卡生成"时使用。
+description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助手：拿到 short-drama-ltx-export 校验好的 video_jobs.json + ltx_remote_config.json 之后，实际去 vast.ai / AutoDL 等平台用用户提供的 API key 租显卡（两个渠道都支持，先比价再选）、通过 SSH 部署 LTX-2 环境、下载模型权重、真正调用 ltx_ssh_submit.py 提交生成任务、监控进度、下载结果、抽帧+听审验收，并沉淀了一批实测踩坑的通用注意事项（GPU 租赁稳定性、环境搭建陷阱、pipeline 参数陷阱、角色配音一致性方案）。当用户说"帮我实际生成视频""调用显卡跑""执行生成任务""这一步真的把视频跑出来""租显卡生成""AutoDL 也能跑吗""哪个平台便宜用哪个"时使用。
 ---
 
 # LTX-2.5 实际生成执行助手 (short-drama-ltx-generate)
@@ -20,8 +20,22 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助�
 
 ## 1. 租显卡（如果需要新租）
 
-用户提供平台 API key 后（比如 vast.ai），按
-`references/gpu_rental_ops.md` 的顺序操作：
+**先选渠道**：目前支持 vast.ai 和 AutoDL 两个平台，问用户提供的是哪个的
+API key（也可能两个都有）。如果两个都有且用户没指定，按下面的比价流程
+选便宜的那个；用户已经明确指定平台（比如"用AutoDL"）就不用再比价。
+
+- **两个渠道都有 key、需要比价时**：AutoDL 没有公开的价目 API，只能创建
+  后从 `snapshot` 读真实价格（见 `autodl_gpu_ops.md`），vast.ai 能用
+  `vastai search offers` 先查价再决定。所以比价顺序是：先用 vast.ai 查到
+  一个满足显存门槛的价格作为参照，再去 AutoDL 创建同显存量级的实例查
+  `snapshot` 里的 `payg_price`，两边都满足 0 条的显存门槛后选更便宜的那个；
+  AutoDL 那边如果创建后发现价格明显更贵或规格不满足，`power_off` + 
+  `release` 掉换用 vast.ai，不要因为"已经建了"就将就用。
+- **只有一个平台的 key**：直接用那个平台，跳过比价。
+
+### vast.ai 渠道
+
+按 `references/gpu_rental_ops.md` 的顺序操作：
 
 1. 设置 API key，先查账户计费状态（`balance`/`credit`/`has_billing`），
    不对劲要先提醒用户，不要闷头往下走。
@@ -35,20 +49,51 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助�
 4. 如果反复"排队后又变回停止"，先按 `gpu_rental_ops.md` 的症状识别表
    判断是账户计费问题还是单台宿主机问题，再决定是提醒用户处理账单还是
    直接换个 offer 重建。
-5. **实例一确认 `running`，立刻在后台启动闲置看门狗**——这是标准步骤，
-   不是等用户提醒才做：
-   ```bash
-   nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watchdog.py \
-     --instance-id <实例ID> --ssh-host <ssh_host> --ssh-port <ssh_port> \
-     --idle-seconds 120 --check-interval 15 \
-     > /tmp/ltx_watchdog_<实例ID>.log 2>&1 &
-   ```
-   之后每次**重启**已有实例（比如实例意外掉线重连）也要重新跑这一步，
-   看门狗进程不会跨实例重启存活。跑完这一集/这一批生成任务、确认不再
-   需要这台显卡时，看门狗会在 2 分钟无活动后自动停止实例；如果用户明确
-   说还要继续用，不要因为看门狗顺手把实例关了打断用户——看门狗只应该在
-   真的没有生成任务在跑时触发，不要把它当成手动的"用完记得停"的替代品
-   去跳过第 7 步的收尾提醒。
+
+### AutoDL 渠道
+
+按 `references/autodl_gpu_ops.md` 的顺序操作，用
+`scripts/autodl_ops.py`（`create`/`status`/`snapshot`/`power_on`/
+`power_off`/`release` 子命令，封装了 AutoDL 开放平台 API，AutoDL 没有
+官方 CLI）：
+
+1. Token 放进 `autodl_config.json`（`.gitignore` 已排除，不进仓库）。
+2. `create` 时显存门槛按 `autodl_gpu_ops.md` 第 0 条来（跟 vast.ai 一致，
+   ≥80GB 优先），**不要用本仓库已经建好的那台 `4090D`（24GB）跑生成，那台
+   是给 CPU 编排任务用的，装不下 LTX-2.5**。部分规格需要用户先完成实名
+   认证（`TORealName` 报错）、部分规格常无库存，都是正常现象，换规格或
+   提醒用户认证，不是账号或 API key 坏了。
+3. `status` 轮询到 `running`，`snapshot` 拿 SSH 信息和真实价格
+   （`payg_price` 除以1000才是元/小时）。
+4. **无卡模式（省钱模式）的开机动作 API 不支持，只能用户去网页控制台点**
+   ——但生成任务本身就需要有卡（GPU）模式，这条限制不影响生成流程本身的
+   自动化，只影响"这台实例平时兼职跑CPU编排任务时怎么切省钱模式"这件事，
+   见 `autodl_cpu_ops.md`。
+
+### 两个渠道通用：闲置看门狗
+
+**实例一确认 `running`，立刻在后台启动闲置看门狗**——这是标准步骤，
+不是等用户提醒才做：
+```bash
+# vast.ai
+nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watchdog.py \
+  --instance-id <实例ID> --ssh-host <ssh_host> --ssh-port <ssh_port> \
+  --idle-seconds 120 --check-interval 15 \
+  > /tmp/ltx_watchdog_<实例ID>.log 2>&1 &
+
+# AutoDL（多传 --platform autodl --autodl-config）
+nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watchdog.py \
+  --instance-id <实例UUID> --ssh-host <ssh_host> --ssh-port <ssh_port> \
+  --platform autodl --autodl-config .claude/skills/short-drama-ltx-generate/autodl_config.json \
+  --idle-seconds 120 --check-interval 15 \
+  > /tmp/ltx_watchdog_<实例UUID>.log 2>&1 &
+```
+之后每次**重启**已有实例（比如实例意外掉线重连）也要重新跑这一步，
+看门狗进程不会跨实例重启存活。跑完这一集/这一批生成任务、确认不再
+需要这台显卡时，看门狗会在 2 分钟无活动后自动停止实例；如果用户明确
+说还要继续用，不要因为看门狗顺手把实例关了打断用户——看门狗只应该在
+真的没有生成任务在跑时触发，不要把它当成手动的"用完记得停"的替代品
+去跳过第 7 步的收尾提醒。
 
 ## 2. 环境搭建
 
@@ -103,9 +148,10 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
 ## 5. 验收
 
 0. 生成结果明显不对时，先对照 `ltx_pipeline_gotchas.md`"生成质量丢分的
-   三大常见诱因"（分辨率/宽高比传错、CFG 相关参数、提示词堆砌矛盾）快速
-   排查一遍，这是官方文档和多篇第三方实测反复提到的最容易翻车的原因，
-   往往比直接去查显卡/环境问题更快定位。
+   四大常见诱因"（分辨率/宽高比传错、CFG 相关参数、提示词堆砌矛盾、画面
+   看起来"没在动"只有镜头本身在推拉摇移）快速排查一遍，这是官方文档和
+   多篇第三方实测反复提到、外加本仓库 ep01 镜1 实测确认过的最容易翻车的
+   原因，往往比直接去查显卡/环境问题更快定位。
 1. 每个生成出来的视频，用
    `.claude/skills/short-drama-video-gen/scripts/extract_frames.py` 抽帧，
    Read 工具逐张看：人脸/服装一致性、动作方向、结尾定格姿态，按
@@ -135,11 +181,13 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
 任务批量跑完后：
 1. 汇报本轮生成了几镜、验收结果、还有哪些问题待用户确认（尤其是音频
    内容）。
-2. 提醒用户是否要停止实例省钱（见 `gpu_rental_ops.md` 第 4 条），不要
-   替用户做这个决定。
-3. 如果这次踩到了新的坑（参数陷阱/环境问题/显卡兼容性），补进
-   `references/ltx_pipeline_gotchas.md` 或 `references/gpu_rental_ops.md`，
-   给下一集/下一次会话省事。
+2. 提醒用户是否要停止实例省钱（vast.ai 见 `gpu_rental_ops.md` 第 4 条，
+   AutoDL 见 `autodl_gpu_ops.md` 第 5 条：`power_off` 就够，`release` 会
+   连数据删掉，不要在用户没明确说"不再需要"时调用），不要替用户做这个
+   决定。
+3. 如果这次踩到了新的坑（参数陷阱/环境问题/显卡兼容性/新的价格参考点），
+   补进 `references/ltx_pipeline_gotchas.md`、`references/gpu_rental_ops.md`
+   或 `references/autodl_gpu_ops.md`，给下一集/下一次会话省事。
 
 ## 与其他 skill 的衔接
 

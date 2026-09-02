@@ -160,14 +160,18 @@ const UI = (() => {
     });
 
     const regenPanel = block.querySelector('.regen-panel');
-    block.querySelector('.regen-toggle').addEventListener('click', () => {
+    block.querySelector('.regen-toggle').addEventListener('click', async () => {
       regenPanel.hidden = !regenPanel.hidden;
       if (!regenPanel.hidden && !regenPanel.dataset.built) {
         regenPanel.dataset.built = '1';
         regenPanel.innerHTML = `
           <div class="regen-form">
-            <div class="muted">留空提示词会自动复用这个角色/场景上一次生成时用的提示词，只改张数也可以。默认还会自动复用上一次生成这个 job 时用过的参考图（保证同一张脸/同一个场景），取消下面的勾选可以改成纯文字生成。</div>
-            <textarea placeholder="要改提示词就在这里写完整版本…"></textarea>
+            <div class="muted">下面是这个角色/场景上一次生成时实际用的提示词，可以直接在里面改，改完点"开始生成"就会用你改过的版本重新生成，不改也可以直接生成。默认还会自动复用上一次生成这个 job 时用过的参考图（保证同一张脸/同一个场景），取消下面的勾选可以改成纯文字生成。</div>
+            <div class="ai-rewrite-row">
+              <input type="text" class="ai-instruction" placeholder="不想自己改提示词？口语化说说想怎么改（比如"头发剪短一点，表情更冷艳"），点右边按钮让 AI 帮你改写">
+              <button class="small ai-rewrite-btn">AI 改写</button>
+            </div>
+            <textarea placeholder="加载上一次的提示词中…" disabled></textarea>
             <label class="regen-refs-toggle"><input type="checkbox" checked> 复用上一次的参考图（保持人物/场景一致性）</label>
             <div class="toolbar">
               <label>生成张数 <input type="number" min="1" max="6" value="2" style="width:52px"></label>
@@ -177,6 +181,46 @@ const UI = (() => {
             <div class="regen-status" hidden></div>
           </div>
         `;
+        const textarea = regenPanel.querySelector('textarea');
+        API.lastPrompt(project, jobId, opts.kind, opts.episode).then(({ prompt }) => {
+          textarea.value = prompt || '';
+          textarea.placeholder = prompt ? '' : '没有找到上一次的提示词，手动写一个完整版本…';
+        }).catch((e) => {
+          textarea.placeholder = '加载上一次的提示词失败（' + e.message + '），可以手动写一个完整版本…';
+        }).finally(() => {
+          textarea.disabled = false;
+        });
+
+        regenPanel.querySelector('.ai-rewrite-btn').addEventListener('click', async (e) => {
+          const btn = e.currentTarget;
+          const instrInput = regenPanel.querySelector('.ai-instruction');
+          const instruction = instrInput.value.trim();
+          if (!instruction) {
+            toast('先写一句想怎么改，再点 AI 改写', 'error');
+            return;
+          }
+          const before = textarea.value;
+          btn.disabled = true;
+          textarea.disabled = true;
+          const savedPlaceholder = textarea.placeholder;
+          textarea.placeholder = 'AI 改写中，通常 10-30 秒…';
+          try {
+            const { prompt } = await guarded(() => API.aiRewritePrompt(project, {
+              job_id: jobId, kind: opts.kind, episode: opts.episode,
+              instruction, current_prompt: before,
+            }));
+            textarea.value = prompt;
+            instrInput.value = '';
+            toast('AI 已改写，还可以在文本框里继续手动微调');
+          } catch (err) {
+            textarea.value = before;
+          } finally {
+            textarea.placeholder = savedPlaceholder;
+            textarea.disabled = false;
+            btn.disabled = false;
+          }
+        });
+
         regenPanel.querySelector('.go-regen').addEventListener('click', async (e) => {
           const btn = e.currentTarget;
           btn.disabled = true;
@@ -219,6 +263,64 @@ const UI = (() => {
     container.appendChild(block);
   }
 
+  function mountEditableSection(container, { text, html, onSave }) {
+    const wrap = document.createElement('div');
+    wrap.className = 'editable-section';
+    wrap.innerHTML = `
+      <div class="view-mode">
+        <div class="content-html"></div>
+        <button class="small edit-toggle">编辑…</button>
+      </div>
+      <div class="edit-mode" hidden>
+        <textarea class="edit-textarea"></textarea>
+        <div class="toolbar">
+          <button class="primary small save-btn">保存</button>
+          <button class="small cancel-btn">取消</button>
+        </div>
+        <div class="edit-status" hidden></div>
+      </div>
+    `;
+    const viewMode = wrap.querySelector('.view-mode');
+    const editMode = wrap.querySelector('.edit-mode');
+    const contentHtml = wrap.querySelector('.content-html');
+    const textarea = wrap.querySelector('.edit-textarea');
+    const statusBox = wrap.querySelector('.edit-status');
+    contentHtml.innerHTML = html;
+
+    wrap.querySelector('.edit-toggle').addEventListener('click', () => {
+      textarea.value = text;
+      statusBox.hidden = true;
+      viewMode.hidden = true;
+      editMode.hidden = false;
+    });
+    wrap.querySelector('.cancel-btn').addEventListener('click', () => {
+      editMode.hidden = true;
+      viewMode.hidden = false;
+    });
+    wrap.querySelector('.save-btn').addEventListener('click', async (e) => {
+      const btn = e.currentTarget;
+      const newText = textarea.value;
+      btn.disabled = true;
+      statusBox.hidden = true;
+      try {
+        const result = await onSave(newText);
+        text = newText;
+        contentHtml.innerHTML = result.html;
+        editMode.hidden = true;
+        viewMode.hidden = false;
+        toast('已保存');
+      } catch (err) {
+        statusBox.hidden = false;
+        statusBox.textContent = '保存失败：' + err.message;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    container.appendChild(wrap);
+    return wrap;
+  }
+
   function openCommentPanel(project, target, title) {
     const overlay = document.createElement('div');
     overlay.className = 'lightbox';
@@ -242,5 +344,5 @@ const UI = (() => {
     return ['S', 'A', 'B', 'C'].includes(g) ? `grade-${g}` : '';
   }
 
-  return { esc, toast, guarded, mountComments, mountAssetJob, openLightbox, openCommentPanel, gradeClass, targetKey };
+  return { esc, toast, guarded, mountComments, mountAssetJob, mountEditableSection, openLightbox, openCommentPanel, gradeClass, targetKey };
 })();

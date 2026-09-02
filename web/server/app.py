@@ -18,9 +18,11 @@ import re
 import sys
 import traceback
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import parse_qs, unquote, urlparse
+from urllib.parse import parse_qs, quote, unquote, urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ai_prompt
+import auth
 import jobs
 import md_render
 import md_tables
@@ -90,7 +92,11 @@ def api_guide(ctx, params):
 
 @router.get(r'/api/projects')
 def api_projects(ctx, params):
-    return {'projects': projects.list_projects()}
+    allowed = auth.allowed_projects(ctx.username)
+    all_projects = projects.list_projects()
+    if allowed is None:
+        return {'projects': all_projects}
+    return {'projects': [p for p in all_projects if p['name'] in allowed]}
 
 
 # ---------------- characters / scenes / style bible ----------------
@@ -111,7 +117,7 @@ def _parse_named_sections(text, title_re):
         if not m:
             intro_parts.append(f'## {title}\n\n{sec["body"]}')
             continue
-        named.append({'title': title, 'key': m.group(1).strip(), 'html': md_render.render(sec['body'])})
+        named.append({'title': title, 'key': m.group(1).strip(), 'html': md_render.render(sec['body']), 'body': sec['body']})
     return intro_parts, named
 
 
@@ -143,6 +149,34 @@ def api_characters(ctx, params):
     }
 
 
+def _patch_named_section(md_path, file_rel, name, title, new_text, edit_note):
+    text = _read_text(md_path)
+    old_section = next((s for s in md_render.split_h2_sections(text) if s['title'] == title), None)
+    try:
+        new_full = md_render.set_h2_section_body(text, title, new_text)
+    except ValueError as e:
+        raise ApiError(404, str(e))
+    _write_text(md_path, new_full)
+    old_body = old_section['body'] if old_section else None
+    state.add_edit(_state_path(name), file_rel, edit_note, old_body, new_text, row_key={'标题': title})
+    return {'html': md_render.render(new_text)}
+
+
+@router.patch(r'/api/projects/(?P<name>[^/]+)/characters/(?P<title>[^/]+)')
+def api_patch_character(ctx, params):
+    name = params['name']
+    _project_or_404(name)
+    title = unquote(params['title'])
+    path = projects.characters_md_path(name)
+    if not path:
+        raise ApiError(404, '这个项目还没有人物设计文档')
+    body = ctx.json()
+    new_text = body.get('text')
+    if new_text is None:
+        raise ApiError(400, '需要 text')
+    return _patch_named_section(path, 'storyboard/characters.md', name, title, new_text, '人物描述正文')
+
+
 @router.get(r'/api/projects/(?P<name>[^/]+)/scenes')
 def api_scenes(ctx, params):
     name = params['name']
@@ -162,6 +196,21 @@ def api_scenes(ctx, params):
     }
 
 
+@router.patch(r'/api/projects/(?P<name>[^/]+)/scenes/(?P<title>[^/]+)')
+def api_patch_scene(ctx, params):
+    name = params['name']
+    _project_or_404(name)
+    title = unquote(params['title'])
+    path = projects.scenes_md_path(name)
+    if not path:
+        raise ApiError(404, '这个项目还没有场景设计文档')
+    body = ctx.json()
+    new_text = body.get('text')
+    if new_text is None:
+        raise ApiError(400, '需要 text')
+    return _patch_named_section(path, 'storyboard/scenes.md', name, title, new_text, '场景描述正文')
+
+
 @router.get(r'/api/projects/(?P<name>[^/]+)/style-bible')
 def api_style_bible(ctx, params):
     name = params['name']
@@ -169,7 +218,25 @@ def api_style_bible(ctx, params):
     path = projects.style_bible_md_path(name)
     if not path:
         return {'exists': False}
-    return {'exists': True, 'html': md_render.render(_read_text(path))}
+    text = _read_text(path)
+    return {'exists': True, 'html': md_render.render(text), 'text': text}
+
+
+@router.patch(r'/api/projects/(?P<name>[^/]+)/style-bible')
+def api_patch_style_bible(ctx, params):
+    name = params['name']
+    _project_or_404(name)
+    path = projects.style_bible_md_path(name)
+    if not path:
+        raise ApiError(404, '这个项目还没有风格简报')
+    body = ctx.json()
+    new_text = body.get('text')
+    if new_text is None:
+        raise ApiError(400, '需要 text')
+    old_text = _read_text(path)
+    _write_text(path, new_text)
+    state.add_edit(_state_path(name), 'storyboard/style_bible.md', '风格简报全文', old_text, new_text)
+    return {'html': md_render.render(new_text)}
 
 
 # ---------------- episodes ----------------
@@ -346,6 +413,60 @@ def api_select_post(ctx, params):
 
 # ---------------- regenerate (image / keyframe only, free & local) ----------------
 
+def _out_dir_for_kind(pdir, kind, episode):
+    if kind == 'keyframe':
+        if not episode:
+            raise ApiError(400, 'keyframe 类型需要 episode')
+        return os.path.join(pdir, 'keyframes', f'ep{int(episode):02d}')
+    return os.path.join(pdir, 'assets')
+
+
+@router.get(r'/api/projects/(?P<name>[^/]+)/last_prompt')
+def api_last_prompt(ctx, params):
+    name = params['name']
+    pdir = _project_or_404(name)
+    job_id = ctx.query_one('job_id')
+    kind = ctx.query_one('kind', 'asset')
+    episode = ctx.query_one('episode')
+    if not job_id:
+        raise ApiError(400, '需要 job_id')
+    out_dir = _out_dir_for_kind(pdir, kind, episode)
+    prompt, ref_images = jobs.find_last_job_meta(out_dir, job_id)
+    ref_images_rel = [
+        r for r in (projects.media_rel_from_manifest_path(p) for p in ref_images) if r
+    ]
+    return {'prompt': prompt, 'ref_images': ref_images_rel}
+
+
+@router.post(r'/api/projects/(?P<name>[^/]+)/ai_rewrite_prompt')
+def api_ai_rewrite_prompt(ctx, params):
+    """口语化修改意见 -> Claude 改写成完整提示词，只返回文本，不落地、不
+    触发生成——剧本家拿到改写结果后还能在文本框里再手动调，改到满意了再走
+    /regenerate 提交。"""
+    name = params['name']
+    pdir = _project_or_404(name)
+    body = ctx.json()
+    job_id = body.get('job_id')
+    kind = body.get('kind', 'asset')
+    episode = body.get('episode')
+    instruction = (body.get('instruction') or '').strip()
+    if not job_id or not instruction:
+        raise ApiError(400, '需要 job_id 和 instruction')
+
+    current_prompt = (body.get('current_prompt') or '').strip()
+    if not current_prompt:
+        out_dir = _out_dir_for_kind(pdir, kind, episode)
+        current_prompt, _ = jobs.find_last_job_meta(out_dir, job_id)
+    if not current_prompt:
+        raise ApiError(400, '没有找到现有提示词，请先在文本框里手动写一个完整版本再用 AI 改写')
+
+    try:
+        new_prompt = ai_prompt.rewrite(current_prompt, instruction)
+    except RuntimeError as e:
+        raise ApiError(502, f'AI 改写失败：{e}')
+    return {'prompt': new_prompt}
+
+
 @router.post(r'/api/projects/(?P<name>[^/]+)/regenerate')
 def api_regenerate(ctx, params):
     name = params['name']
@@ -357,12 +478,7 @@ def api_regenerate(ctx, params):
     if not job_id:
         raise ApiError(400, '需要 job_id')
 
-    if kind == 'keyframe':
-        if not episode:
-            raise ApiError(400, 'keyframe 类型需要 episode')
-        out_dir = os.path.join(pdir, 'keyframes', f'ep{int(episode):02d}')
-    else:
-        out_dir = os.path.join(pdir, 'assets')
+    out_dir = _out_dir_for_kind(pdir, kind, episode)
 
     last_prompt, last_ref_images = jobs.find_last_job_meta(out_dir, job_id)
     prompt = body.get('prompt') or last_prompt
@@ -419,12 +535,26 @@ def api_regenerate_status(ctx, params):
     return status
 
 
+# ---------------- auth ----------------
+
+@router.get(r'/api/me')
+def api_me(ctx, params):
+    return {
+        'username': ctx.username,
+        'display_name': auth.display_name(ctx.username),
+        'is_admin': auth.is_admin(ctx.username),
+    }
+
+
 # ---------------- inbox ----------------
 
 @router.get(r'/api/inbox')
 def api_inbox(ctx, params):
+    allowed = auth.allowed_projects(ctx.username)
     out = []
     for p in projects.list_projects():
+        if allowed is not None and p['name'] not in allowed:
+            continue
         sp = _state_path(p['name'])
         comments = state.list_comments(sp, resolved=False)
         regen_jobs = [j for j in state.list_regen_jobs(sp) if j.get('status') != 'done']
@@ -450,17 +580,71 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _read_body(self):
+        length = int(self.headers.get('Content-Length', 0) or 0)
+        return self.rfile.read(length) if length else b''
+
+    def _handle_login(self):
+        body_bytes = self._read_body()
+        try:
+            body = json.loads(body_bytes.decode('utf-8')) if body_bytes else {}
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            self._send_json(400, {'error': '请求体不是合法 JSON'})
+            return
+        username = (body.get('username') or '').strip()
+        password = body.get('password') or ''
+        if not username or not password:
+            self._send_json(400, {'error': '需要用户名和密码'})
+            return
+        if not auth.verify_password(username, password):
+            self._send_json(401, {'error': '用户名或密码错误'})
+            return
+        cookie_value = auth.make_session_cookie_value(username)
+        payload = json.dumps({'ok': True, 'display_name': auth.display_name(username)}, ensure_ascii=False).encode('utf-8')
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Content-Length', str(len(payload)))
+        self.send_header('Set-Cookie', auth.build_set_cookie_header(cookie_value, auth.SESSION_TTL_SECONDS, self.server.secure_cookies))
+        self.end_headers()
+        self.wfile.write(payload)
+
+    def _handle_logout(self):
+        payload = json.dumps({'ok': True}, ensure_ascii=False).encode('utf-8')
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Content-Length', str(len(payload)))
+        self.send_header('Set-Cookie', auth.build_clear_cookie_header(self.server.secure_cookies))
+        self.end_headers()
+        self.wfile.write(payload)
+
     def _handle_api(self, method):
         parsed = urlparse(self.path)
         path = unquote(parsed.path)
         query = parse_qs(parsed.query)
+
+        if path == '/api/login' and method == 'POST':
+            self._handle_login()
+            return
+        if path == '/api/logout' and method == 'POST':
+            self._handle_logout()
+            return
+
+        username = auth.username_from_headers(self.headers)
+        if not username:
+            self._send_json(401, {'error': '未登录或登录已过期，请重新登录'})
+            return
+
         handler, params = router.match(method, path)
         if not handler:
             self._send_json(404, {'error': f'未知接口: {method} {path}'})
             return
-        length = int(self.headers.get('Content-Length', 0) or 0)
-        body_bytes = self.rfile.read(length) if length else b''
+        project_name = params.get('name')
+        if project_name is not None and not auth.can_access_project(username, project_name):
+            self._send_json(403, {'error': '没有权限访问这个项目'})
+            return
+        body_bytes = self._read_body()
         ctx = Ctx(query, body_bytes, self.headers)
+        ctx.username = username
         try:
             result = handler(ctx, params)
             self._send_json(200, result)
@@ -471,7 +655,15 @@ class Handler(BaseHTTPRequestHandler):
             self._send_json(500, {'error': '服务器内部错误'})
 
     def _handle_media(self, path):
+        username = auth.username_from_headers(self.headers)
+        if not username:
+            self.send_error(401)
+            return
         rel = unquote(path[len('/media/'):])
+        project_name = rel.split('/', 1)[0] if rel else None
+        if not project_name or not auth.can_access_project(username, project_name):
+            self.send_error(403)
+            return
         abs_path = projects.resolve_media_path(rel)
         if not abs_path:
             self.send_error(404)
@@ -501,6 +693,12 @@ class Handler(BaseHTTPRequestHandler):
     def _handle_static(self, path):
         if path == '/':
             path = '/index.html'
+        if path != '/login.html' and not auth.username_from_headers(self.headers):
+            self.send_response(302)
+            self.send_header('Location', '/login.html?next=' + quote(path, safe=''))
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return
         safe = os.path.normpath(path).lstrip('/')
         abs_path = os.path.normpath(os.path.join(FRONTEND_DIR, safe))
         if not (abs_path == FRONTEND_DIR or abs_path.startswith(FRONTEND_DIR + os.sep)) or not os.path.isfile(abs_path):
@@ -546,8 +744,15 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--host', default='0.0.0.0', help='默认监听所有网卡，方便局域网访问')
     ap.add_argument('--port', type=int, default=8000)
+    ap.add_argument('--secure-cookies', action='store_true',
+                     help='服务在 HTTPS 反向代理（nginx+certbot 等）后面时打开，'
+                          '给登录 cookie 加 Secure 标记；纯 HTTP（局域网内网用）不要加这个参数')
     args = ap.parse_args()
+    if not auth.has_any_user():
+        print('提醒：目前还没有任何登录账号，所有页面/接口都会拒绝访问。')
+        print('先运行：python3 web/server/manage_users.py add <用户名> 创建一个账号。')
     httpd = Server((args.host, args.port), Handler)
+    httpd.secure_cookies = args.secure_cookies
     print(f'剧本家协作网站已启动：http://{args.host}:{args.port} （局域网内用这台机器的 IP 替换 {args.host} 访问，Ctrl+C 停止）')
     try:
         httpd.serve_forever()

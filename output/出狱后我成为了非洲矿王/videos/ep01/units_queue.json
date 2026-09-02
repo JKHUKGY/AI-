@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ep01_镜06",
+    "shot_no": 6,
+    "scene": "SC01_监狱门口",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜06/ep01_镜06_00.png",
+    "last_frame": null,
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王/assets/江砚_出狱期_正面/江砚_出狱期_正面_00.png",
+      "output/出狱后我成为了非洲矿王/assets/陈野_正面/陈野_正面_00.png"
+    ],
+    "_ref_images_note": "仅存档，ltx_ssh_submit.py 不会读取/上传这个字段，对自建 LTX-2.5 通道无效",
+    "dialogue": "江砚（喝水后）：\"我猜到是他。\"／陈野（愣了）：\"你知道？\"",
+    "prompt": "起始画面为参考图中江砚仰头喝水的姿态。过程：喉结明显滚动一次，随后放下水瓶，语气平静地说道：\"我猜到是他。\"陈野在一旁听到后猛地愣住，随即张嘴反问道：\"你知道？\"神情惊讶。结束：两人对视，江砚神情平静，陈野满脸愕然，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档参考，distilled pipeline 不接受这个 CLI 参数，不会真正生效）避免：人物面部变形、五官错位、多余或缺失肢体、手指数量错误、肢体拉伸扭曲、镜头剧烈抖动、画面闪烁跳变、人物中途换脸、模糊、低质量、水印、字幕、多余人物入镜、色调突变、人物之间不重叠穿模、位置关系保持稳定、面部五官保持清晰不模糊",
+    "seed": 10,
+    "duration_sec_test": 5,
+    "resolution_test": "768x1344",
+    "duration_sec_final": 5,
+    "resolution_final": "768x1344",
+    "platform_recommend": [
+      "自建 LTX-2.5"
+    ],
+    "script_ref": "（人物小传·江砚）气质关键词：内敛稳重、专业冷静、隐忍中带锋利。（人物小传·陈野）气质关键词：耿直热血、重情义仗义、行动力强/情绪写在脸上。这一镜的情节意图：陈野刚爆料完顾浩陷害江砚的内幕，江砚喝水后平静说出'我猜到是他'——这句话要传达的是江砚早已看透一切、比外人以为的更聪明冷静，语气是笃定从容而不是愤怒或惊讶，这是全剧建立'江砚不是任人拿捏的老实人'这个人设的关键一拍；陈野的反问'你知道？'要体现他真心震惊、情绪毫无掩饰地外露的反差感，衬托江砚的沉稳。判断标准：视频里必须能分清哪句话是江砚说的、哪句是陈野说的（嘴型/说话时机跟对应角色对上），且江砚的语气/表情是平静笃定而非慌张或愤怒，陈野是外放的震惊而非面无表情。",
+    "round_count": 1,
+    "status": "capped_by_split",
+    "history": [
+      {
+        "round": 0,
+        "seed": 10,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜06.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜06_round0_frames",
+        "verdict": "fail",
+        "reason": "单镜头两人先后说话的高风险结构+用户实测反馈配音对不上说话人，判定fail（详见Reviewer agent完整reason）",
+        "fix_instruction": "拆成2段：seg1只有江砚说'我猜到是他'+陈野静默倾听；seg2用seg1结束帧作首帧，只有陈野说'你知道？'+江砚静默",
+        "defect_window": null
+      }
+    ],
+    "final_confirmed": false,
+    "selected_file": null
+  },
+  {
+    "id": "ep01_镜20_seg2",
+    "shot_no": 20,
+    "scene": "SC05_顾家客房",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜20/ep01_镜20_seg2_first.png",
+    "last_frame": null,
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王/assets/苏慧_佣人期_正面/苏慧_佣人期_正面_00.png",
+      "output/出狱后我成为了非洲矿王/assets/江砚_出狱期_正面/江砚_出狱期_正面_00.png"
+    ],
+    "_ref_images_note": "仅存档，ltx_ssh_submit.py 不会读取/上传这个字段，对自建 LTX-2.5 通道无效",
+    "dialogue": "苏慧（压低声音）：\"小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。\"／江砚：\"我知道了妈。\"",
+    "prompt": "起始画面为第1段结束帧：苏慧关上房门后放松又略带疲惫的姿态，江砚站在一旁。过程：苏慧压低声音、语气带着小心翼翼与恳求地说道：\"小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。\"说话过程中江砚保持静止倾听、嘴部不动，眼神里透出心酸；苏慧说完后，江砚才开口，语气温和地说道：\"我知道了妈。\"结束：母子二人相对无言，江砚轻轻点头，定格0.4秒。镜头固定不动。",
+    "negative_prompt": "（仅存档参考，distilled pipeline 不接受这个 CLI 参数，不会真正生效）避免：人物面部变形、五官错位、多余或缺失肢体、手指数量错误、肢体拉伸扭曲、镜头剧烈抖动、画面闪烁跳变、人物中途换脸、模糊、低质量、水印、字幕、多余人物入镜、色调突变、人物之间不重叠穿模、位置关系保持稳定",
+    "seed": 10,
+    "duration_sec_test": 4,
+    "resolution_test": "768x1344",
+    "duration_sec_final": 4,
+    "resolution_final": "768x1344",
+    "platform_recommend": [
+      "自建 LTX-2.5"
+    ],
+    "script_ref": "（人物小传·苏慧）气质关键词：温柔隐忍、软弱委曲求全、护子心切——被训斥时下意识后退半步、绞手指的习惯性姿态，提到儿子时眼神瞬间柔软坚定。（人物小传·江砚）气质关键词：内敛稳重、隐忍中带锋利。这一镜的情节意图：苏慧刚把儿子推进客房关上门，卸下人前的强笑后，压低声音叮嘱儿子'多一事不如少一事、要懂得感恩'——这句话要传达她多年寄人篱下养成的谨小慎微和对儿子安危的担忧，语气是恳求、有点畏缩的，不是理直气壮地说教；江砚回应'我知道了妈'要体现孝顺体谅但内心已经在积蓄不甘的克制感。判断标准：视频里必须能分清哪句话是苏慧说的、哪句是江砚说的（嘴型/说话时机跟对应角色对上，不能出现苏慧的话从江砚嘴里冒出来或反之），且苏慧的语气是小心翼翼的恳求而非平静陈述，江砚的回应是温和克制而非敷衍。",
+    "round_count": 1,
+    "status": "capped_by_split",
+    "history": [
+      {
+        "round": 0,
+        "seed": 10,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜20_seg2_round0_frames",
+        "verdict": "fail",
+        "reason": "逐帧确认嘴型-台词-角色分配完全对调（江砚嘴里说出苏慧的长台词，苏慧嘴里说出江砚的短回应），判定fail",
+        "fix_instruction": "拆成2段：seg2a只有苏慧说完整段长台词+江砚静默倾听；seg2b用seg2a结束帧作首帧，只有江砚说'我知道了妈'+苏慧静默",
+        "defect_window": null
+      }
+    ],
+    "final_confirmed": false,
+    "selected_file": null
+  },
+  {
+    "id": "ep01_镜06_seg1",
+    "shot_no": 6,
+    "scene": "SC01_监狱门口",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜06/ep01_镜06_00.png",
+    "last_frame": null,
+    "ref_images": [],
+    "_ref_images_note": "仅存档，对自建LTX-2.5通道无效",
+    "dialogue": "江砚（喝水后）：\"我猜到是他。\"",
+    "prompt": "起始画面为参考图中江砚仰头喝水的姿态。过程：喉结明显滚动一次，随后放下水瓶，语气平静而笃定地说道：\"我猜到是他。\"陈野在一旁保持安静站立，仔细倾听，嘴唇始终闭合、不说话、不做出反应动作。结束：江砚说完后目光平静地看向前方，嘴唇闭合静止，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "seed": 10,
+    "duration_sec_test": 3,
+    "resolution_test": "768x1344",
+    "duration_sec_final": 3,
+    "resolution_final": "768x1344",
+    "platform_recommend": [
+      "自建 LTX-2.5"
+    ],
+    "script_ref": "（人物小传·江砚）内敛稳重、专业冷静、隐忍中带锋利。江砚早已看透顾浩的算计，'我猜到是他'这句话要说得平静笃定、带着一种洞悉全局的从容，不是惊讶或愤怒——这是建立'江砚比外人以为的更聪明冷静'这个人设的关键一拍。判断标准：只有江砚一人说话，陈野全程嘴部静止不说话；江砚语气笃定从容。",
+    "round_count": 1,
+    "status": "passed",
+    "history": [
+      {
+        "round": 1,
+        "seed": 10,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜06_seg1.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜06_seg1_r1_frames",
+        "verdict": "pass",
+        "reason": "陈野全程未说话、嘴部静止，江砚有清晰单人说话动作，首尾帧/背景/人物均正常",
+        "fix_instruction": null,
+        "defect_window": null
+      }
+    ],
+    "final_confirmed": true,
+    "selected_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜06_seg1.mp4"
+  },
+  {
+    "id": "ep01_镜06_seg2",
+    "shot_no": 6,
+    "scene": "SC01_监狱门口",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜06/ep01_镜06_seg2_first.png",
+    "last_frame": null,
+    "ref_images": [],
+    "_ref_images_note": "仅存档，对自建LTX-2.5通道无效",
+    "dialogue": "陈野（愣了）：\"你知道？\"",
+    "prompt": "起始画面为江砚说完话后两人对视的姿态。过程：陈野猛地愣住，随即张嘴反问道：\"你知道？\"表情外放震惊，眉毛上扬、眼睛睁大。江砚保持静立，表情平静，嘴唇始终闭合、不说话。结束：陈野停留在满脸愕然的表情，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "seed": 10,
+    "duration_sec_test": 2,
+    "resolution_test": "768x1344",
+    "duration_sec_final": 2,
+    "resolution_final": "768x1344",
+    "platform_recommend": [
+      "自建 LTX-2.5"
+    ],
+    "script_ref": "（人物小传·陈野）耿直热血、重情义仗义、情绪写在脸上。陈野的反问'你知道？'要体现他真心震惊、情绪毫无掩饰地外露的反差感，衬托江砚的沉稳。判断标准：只有陈野一人说话，江砚全程嘴部静止不说话；陈野表情外放震惊而非面无表情。",
+    "round_count": 1,
+    "status": "passed",
+    "history": [
+      {
+        "round": 1,
+        "seed": 10,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜06_seg2.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜06_seg2_r1_frames",
+        "verdict": "pass",
+        "reason": "陈野全程外放震惊说话，江砚全程闭嘴静止，说话人分配正确",
+        "fix_instruction": null,
+        "defect_window": null
+      }
+    ],
+    "final_confirmed": true,
+    "selected_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜06_seg2.mp4"
+  },
+  {
+    "id": "ep01_镜20_seg2a",
+    "shot_no": 20,
+    "scene": "SC05_顾家客房",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜20/ep01_镜20_seg2_first.png",
+    "last_frame": null,
+    "ref_images": [],
+    "_ref_images_note": "仅存档，对自建LTX-2.5通道无效",
+    "dialogue": "苏慧（压低声音）：\"小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。\"",
+    "prompt": "起始画面为苏慧（灰白发中年女性，身穿灰蓝色碎花上衣、系围裙）关上房门后放松又略带疲惫的姿态，江砚（年轻男性，身穿米色衬衫）安静站在一旁。过程：只有苏慧一人持续小幅度张合嘴唇说话，压低声音、语气带着小心翼翼与恳求地说道：\"小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。\"说话时身体略微前倾、肩膀略微佝偻，带着恳求畏缩的姿态，眼神不时低垂或紧张地看向门口方向。江砚从头到尾嘴唇紧闭、完全不张合、不做任何说话动作，不摆手不做手势，只用安静的眼神和轻微低头表示在倾听，全程不说一个字。两人构图保持并排站立，不要变成面对面近距离对峙。结束：苏慧说完后表情带着担忧地看着儿子，嘴唇闭合静止，江砚依旧嘴唇紧闭安静站立，定格0.3秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "seed": 21,
+    "duration_sec_test": 6,
+    "resolution_test": "768x1344",
+    "duration_sec_final": 6,
+    "resolution_final": "768x1344",
+    "platform_recommend": [
+      "自建 LTX-2.5"
+    ],
+    "script_ref": "（人物小传·苏慧）温柔隐忍、软弱委曲求全、护子心切。这句台词要传达她多年寄人篱下养成的谨小慎微和对儿子安危的担忧，语气是恳求、有点畏缩的，不是理直气壮地说教。判断标准：只有苏慧一人说话，江砚全程嘴部静止倾听；苏慧语气是小心翼翼的恳求。",
+    "round_count": 2,
+    "status": "passed",
+    "history": [
+      {
+        "round": 1,
+        "seed": 10,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2a.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜20_seg2a_r1_frames",
+        "verdict": "fail",
+        "reason": "说话人完全对调——江砚在说话，苏慧全程闭嘴，跟script_ref要求完全相反",
+        "fix_instruction": "把角色外貌特征跟动作显式绑定重写prompt（苏慧=灰白发中年女性说话，江砚=年轻男性米色衬衫全程闭嘴不动），换新seed",
+        "defect_window": null
+      },
+      {
+        "round": 2,
+        "seed": 21,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2a.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜20_seg2a_r2_frames",
+        "verdict": "pass",
+        "reason": "外貌特征绑定动作+换seed后说话人分配正确，苏慧持续说话，江砚全程闭嘴倾听",
+        "fix_instruction": null,
+        "defect_window": null
+      }
+    ],
+    "final_confirmed": true,
+    "selected_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2a.mp4"
+  },
+  {
+    "id": "ep01_镜20_seg2b",
+    "shot_no": 20,
+    "scene": "SC05_顾家客房",
+    "first_frame": "output/出狱后我成为了非洲矿王/keyframes/ep01/ep01_镜20/ep01_镜20_seg2b_first.png",
+    "last_frame": null,
+    "ref_images": [],
+    "_ref_images_note": "仅存档，对自建LTX-2.5通道无效",
+    "dialogue": "江砚：\"我知道了妈。\"",
+    "prompt": "起始画面为苏慧（灰白发中年女性，身穿灰蓝色碎花上衣）刚说完话，嘴唇已经完全闭合，表情带一丝欣慰又克制地看向儿子；江砚（年轻男性，身穿米色衬衫）站在一旁，微微张嘴准备开口，母子二人相对无言。过程：苏慧嘴唇从视频第一帧到最后一帧全程紧闭，不得有任何张合动作，面部表情可以有细微变化但嘴部必须保持闭合静止，安静看着儿子。江砚缓缓开口，嘴部随台词持续张合直到语音结束、语速平缓幅度适中，语气温和地说道：\"我知道了妈。\"两人视线始终保持相对，不要转向镜头正面。结束：江砚说完后停顿半拍，随后头部缓慢、清晰地向下点一次，幅度小但要清楚可见，眼神仍看向苏慧；苏慧全程嘴唇闭合，表情欣慰又心疼，定格0.4秒。镜头固定不动。",
+    "negative_prompt": "（仅存档，distilled pipeline不接受此CLI参数）",
+    "seed": 33,
+    "duration_sec_test": 3,
+    "resolution_test": "768x1344",
+    "duration_sec_final": 3,
+    "resolution_final": "768x1344",
+    "platform_recommend": [
+      "自建 LTX-2.5"
+    ],
+    "script_ref": "（人物小传·江砚）内敛稳重，隐忍中带锋利。'我知道了妈'要体现孝顺体谅但内心已经在积蓄不甘的克制感，不是敷衍或麻木。判断标准：只有江砚一人说话，苏慧全程嘴部静止；江砚语气温和克制，结尾有轻轻点头的动作。",
+    "round_count": 2,
+    "status": "passed",
+    "history": [
+      {
+        "round": 1,
+        "seed": 10,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2b.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜20_seg2b_r1_frames",
+        "verdict": "fail",
+        "reason": "首帧苏慧就张嘴、跟江砚同时张合，江砚说话嘴型只在开头0.3秒一闪而过跟音频时长不匹配，结尾点头不明确且两人转向镜头",
+        "fix_instruction": "强化苏慧全程闭嘴约束+江砚说话覆盖全程音频时长+首帧改为苏慧已闭嘴+结尾明确点头动作，换新seed整段重来",
+        "defect_window": null
+      },
+      {
+        "round": 2,
+        "seed": 33,
+        "video_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2b.mp4",
+        "frames_dir": "/tmp/claude-1000/-workspaces-AI-/aa75d8b3-1a97-459e-b310-a5c1062b5f30/scratchpad/ep01_镜20_seg2b_r2_frames",
+        "verdict": "pass",
+        "reason": "苏慧全程闭嘴，江砚说话嘴型覆盖合理时长，结尾有清晰点头动作",
+        "fix_instruction": null,
+        "defect_window": null
+      }
+    ],
+    "final_confirmed": true,
+    "selected_file": "output/出狱后我成为了非洲矿王/videos/ep01/ep01_镜20_seg2b.mp4"
+  }
+]

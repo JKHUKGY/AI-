@@ -43,7 +43,7 @@ README.md         仅一行占位，无实际内容
 | 4 | `short-drama-keyframe-gen/` | 分镜表 + 已选人物/场景图 → 每集 8-12 张关键帧 | `references/keyframe_prompt_guide.md`, `shot_selection.md`, `keyframe_review_checklist.md` |
 | 5 | `short-drama-video-gen/` | 关键帧 + 运动描述 → 图生视频完整提示词（S/A级）+ ffmpeg 推拉摇移脚本（B级） | `scripts/extract_frames.py`, `ken_burns.py`, `references/video_prompt_guide.md`, `stability_playbook.md`, `video_jobs_schema.md`, `video_platform_comparison.md`, `video_review_checklist.md` |
 | 6 | `short-drama-ltx-export/` | video_jobs 提示词清单 → 校验后的 `video_jobs.json` + `ltx_remote_config.json` | `scripts/validate_video_jobs.py`, `references/resolution_presets.md` |
-| 7 | `short-drama-ltx-generate/` | 校验好的 job 文件 → 真实租显卡跑 LTX-2.5、下载结果、验收 | `scripts/ltx_ssh_submit.py`, `idle_shutdown_watchdog.py`, `references/gpu_rental_ops.md`, `ltx_pipeline_gotchas.md` |
+| 7 | `short-drama-ltx-generate/` | 校验好的 job 文件 → 真实租显卡（vast.ai / AutoDL 二选一比价）跑 LTX-2.5、下载结果、验收 | `scripts/ltx_ssh_submit.py`, `idle_shutdown_watchdog.py`, `autodl_ops.py`, `references/gpu_rental_ops.md`, `autodl_gpu_ops.md`, `autodl_cpu_ops.md`, `ltx_pipeline_gotchas.md` |
 
 每个 skill 目录下都有 `SKILL.md`（含 `description` frontmatter，触发关键词见其中）、
 可选的 `scripts/`（可执行脚本）、`references/`（详细方法论/规范文档）、部分还有
@@ -91,7 +91,8 @@ output/<剧名>/
 ## `web/` —— 剧本家协作网站
 
 零依赖：后端纯 `stdlib http.server`，前端纯静态无构建。启动：
-`python3 web/server/app.py --port 8000`。详细设计取舍见 `web/README.md`。
+`python3 web/server/app.py --port 8000`。详细设计取舍见 `web/README.md`；
+公网云主机部署步骤见 `web/DEPLOY.md`。
 
 ```
 web/server/
