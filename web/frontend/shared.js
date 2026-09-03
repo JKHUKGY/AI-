@@ -79,34 +79,100 @@ const UI = (() => {
     container.appendChild(wrap);
   }
 
-  function openLightbox(project, jobId, relPath, fname, isSelected) {
+  // opts: { files: [媒体相对路径], index, selected: 文件名, caption, meta, onSelect(fname) }
+  // 只传一张图时退化成旧行为；传多张时可以在同一镜的备选之间左右翻，不用
+  // 关掉再点开下一张——审片时"这一镜的三张里挑一张"是最高频的动作。
+  function openLightbox(project, jobId, opts) {
+    const files = opts.files && opts.files.length ? opts.files : [];
+    if (!files.length) return;
+    let idx = Math.max(0, Math.min(opts.index || 0, files.length - 1));
+    let selected = opts.selected || null;
+
     const overlay = document.createElement('div');
     overlay.className = 'lightbox';
     overlay.innerHTML = `
       <div class="lightbox-panel">
-        <img src="${API.mediaUrl(relPath)}" alt="${esc(fname)}">
-        <div class="muted">${esc(fname)}</div>
+        <div class="lightbox-stage">
+          <button class="nav-btn prev" title="上一张 (←)" ${files.length > 1 ? '' : 'hidden'}>‹</button>
+          <img alt="">
+          <button class="nav-btn next" title="下一张 (→)" ${files.length > 1 ? '' : 'hidden'}>›</button>
+        </div>
+        ${opts.caption ? `<p class="lightbox-caption">${esc(opts.caption)}</p>` : ''}
+        ${opts.meta ? `<div class="muted">${esc(opts.meta)}</div>` : ''}
+        <div class="muted lightbox-fname"></div>
         <div class="lightbox-actions">
-          <button class="select-btn primary small">${isSelected ? '已入选 ✓' : '标记为入选'}</button>
+          <button class="select-btn primary small"></button>
           <button class="close-btn small">关闭</button>
         </div>
         <div class="comments-mount"></div>
       </div>
     `;
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
-    overlay.querySelector('.close-btn').addEventListener('click', () => overlay.remove());
-    overlay.querySelector('.select-btn').addEventListener('click', async (e) => {
+    const img = overlay.querySelector('img');
+    const fnameBox = overlay.querySelector('.lightbox-fname');
+    const selectBtn = overlay.querySelector('.select-btn');
+    const commentsMount = overlay.querySelector('.comments-mount');
+    let allComments = null;
+
+    function currentName() {
+      return files[idx].split('/').pop();
+    }
+
+    function paint() {
+      const fname = currentName();
+      img.src = API.mediaUrl(files[idx]);
+      img.alt = fname;
+      fnameBox.textContent = files.length > 1
+        ? `${fname}（第 ${idx + 1} / ${files.length} 张备选）`
+        : fname;
+      selectBtn.textContent = selected === fname ? '已入选 ✓' : '把这张定为入选';
+      // 留言是挂在具体某一张图上的，翻页要跟着换
+      commentsMount.innerHTML = '';
+      if (allComments) {
+        mountComments(commentsMount, project, { type: 'image', job_id: jobId, file: fname }, allComments);
+      }
+    }
+
+    function go(step) {
+      if (files.length < 2) return;
+      idx = (idx + step + files.length) % files.length;
+      paint();
+    }
+
+    function onKey(e) {
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') go(-1);
+      else if (e.key === 'ArrowRight') go(1);
+    }
+    function close() {
+      document.removeEventListener('keydown', onKey);
+      overlay.remove();
+    }
+
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+    overlay.querySelector('.close-btn').addEventListener('click', close);
+    overlay.querySelector('.prev').addEventListener('click', () => go(-1));
+    overlay.querySelector('.next').addEventListener('click', () => go(1));
+    document.addEventListener('keydown', onKey);
+
+    selectBtn.addEventListener('click', async () => {
+      const fname = currentName();
       await guarded(() => API.select(project, jobId, fname));
-      e.currentTarget.textContent = '已入选 ✓';
+      selected = fname;
+      selectBtn.textContent = '已入选 ✓';
       toast('已标记入选，供 Claude 下次核对时参考');
+      if (opts.onSelect) opts.onSelect(fname, files[idx]);
     });
+
     API.comments(project).then(({ comments }) => {
-      mountComments(overlay.querySelector('.comments-mount'), project, { type: 'image', job_id: jobId, file: fname }, comments);
+      allComments = comments;
+      paint();
     }).catch(() => {});
+
+    paint();
     document.body.appendChild(overlay);
   }
 
-  async function pollRegenerate(project, token, statusBox, grid, jobId, refPathForNaming) {
+  async function pollRegenerate(project, token, statusBox, onNewFile, refPathForNaming) {
     for (let i = 0; i < 90; i += 1) {
       await new Promise((r) => setTimeout(r, 4000));
       let st;
@@ -120,12 +186,7 @@ const UI = (() => {
       if (st.status !== 'running') {
         if (st.status === 'done' && st.new_files && st.new_files.length) {
           st.new_files.forEach((fname) => {
-            const relPath = refPathForNaming.replace(/[^/]+$/, fname);
-            const card = document.createElement('div');
-            card.className = 'img-card';
-            card.innerHTML = `<img loading="lazy" src="${API.mediaUrl(relPath)}">`;
-            card.addEventListener('click', () => openLightbox(project, jobId, relPath, fname, false));
-            grid.appendChild(card);
+            onNewFile(refPathForNaming.replace(/[^/]+$/, fname), fname);
           });
           statusBox.textContent += `\n\n已生成 ${st.new_files.length} 张新图，已加入下方图库，点开可以标记入选或留言。`;
         } else if (st.status === 'failed') {
@@ -137,32 +198,11 @@ const UI = (() => {
     statusBox.textContent += '\n\n(轮询超时，任务可能仍在后台继续跑，稍后刷新页面查看新图)';
   }
 
-  function mountAssetJob(container, project, jobId, jobData, opts) {
-    const block = document.createElement('div');
-    block.className = 'job-block';
-    block.innerHTML = `
-      <div class="job-title">
-        <span>${esc(jobId)}</span>
-        <button class="small regen-toggle">重新生成…</button>
-      </div>
-      <div class="img-grid"></div>
-      <div class="regen-panel" hidden></div>
-    `;
-    const grid = block.querySelector('.img-grid');
-    (jobData.files || []).forEach((relPath) => {
-      const fname = relPath.split('/').pop();
-      const isSelected = jobData.selected === fname;
-      const card = document.createElement('div');
-      card.className = 'img-card' + (isSelected ? ' selected' : '');
-      card.innerHTML = `<img loading="lazy" src="${API.mediaUrl(relPath)}">` + (isSelected ? '<span class="mark">入选</span>' : '');
-      card.addEventListener('click', () => openLightbox(project, jobId, relPath, fname, isSelected));
-      grid.appendChild(card);
-    });
-
-    const regenPanel = block.querySelector('.regen-panel');
-    block.querySelector('.regen-toggle').addEventListener('click', async () => {
-      regenPanel.hidden = !regenPanel.hidden;
-      if (!regenPanel.hidden && !regenPanel.dataset.built) {
+  // 把"重新生成"面板（提示词编辑 / AI 改写 / 参考图复用 / 提交+轮询）做成
+  // 可复用的一块：立绘、场景图、关键帧卡片都挂同一份逻辑，只是新图落到哪里
+  // 由调用方通过 onNewFile 决定。
+  function attachRegenPanel(regenPanel, project, jobId, jobData, opts, onNewFile) {
+      if (!regenPanel.dataset.built) {
         regenPanel.dataset.built = '1';
         regenPanel.innerHTML = `
           <div class="regen-form">
@@ -250,12 +290,50 @@ const UI = (() => {
               });
             }
             const refPath = (jobData.files && jobData.files[0]) || `${project}/${opts.baseDirHint}/${jobId}/${jobId}_00.png`;
-            await pollRegenerate(project, token, statusBox, grid, jobId, refPath);
+            await pollRegenerate(project, token, statusBox, onNewFile, refPath);
           } catch (err) {
             statusBox.textContent = '失败: ' + err.message;
           } finally {
             btn.disabled = false;
           }
+        });
+      }
+  }
+
+  function mountAssetJob(container, project, jobId, jobData, opts) {
+    const block = document.createElement('div');
+    block.className = 'job-block';
+    block.innerHTML = `
+      <div class="job-title">
+        <span>${esc(jobId)}</span>
+        <button class="small regen-toggle">重新生成…</button>
+      </div>
+      <div class="img-grid"></div>
+      <div class="regen-panel" hidden></div>
+    `;
+    const grid = block.querySelector('.img-grid');
+    const files = (jobData.files || []).slice();
+
+    function addCard(relPath, i) {
+      const fname = relPath.split('/').pop();
+      const isSelected = jobData.selected === fname;
+      const card = document.createElement('div');
+      card.className = 'img-card' + (isSelected ? ' selected' : '');
+      card.innerHTML = `<img loading="lazy" src="${API.mediaUrl(relPath)}">` + (isSelected ? '<span class="mark">入选</span>' : '');
+      card.addEventListener('click', () => openLightbox(project, jobId, {
+        files, index: i, selected: jobData.selected,
+      }));
+      grid.appendChild(card);
+    }
+    files.forEach(addCard);
+
+    const regenPanel = block.querySelector('.regen-panel');
+    block.querySelector('.regen-toggle').addEventListener('click', () => {
+      regenPanel.hidden = !regenPanel.hidden;
+      if (!regenPanel.hidden) {
+        attachRegenPanel(regenPanel, project, jobId, jobData, opts, (relPath) => {
+          files.push(relPath);
+          addCard(relPath, files.length - 1);
         });
       }
     });
@@ -308,7 +386,17 @@ const UI = (() => {
           const { token } = await guarded(() => API.regenerate(project, body));
           const refPath = (jobs[jobId].files && jobs[jobId].files[0])
             || `${project}/${opts.baseDirHint}/${jobId}/${jobId}_00.png`;
-          await pollRegenerate(project, token, statusBox, grid, jobId, refPath);
+          const shown = [];
+          await pollRegenerate(project, token, statusBox, (relPath) => {
+            shown.push(relPath);
+            const card = document.createElement('div');
+            card.className = 'img-card';
+            card.innerHTML = `<img loading="lazy" src="${API.mediaUrl(relPath)}">`;
+            card.addEventListener('click', () => openLightbox(project, jobId, {
+              files: shown, index: shown.indexOf(relPath),
+            }));
+            grid.appendChild(card);
+          }, refPath);
         } catch (err) {
           statusBox.hidden = false;
           statusBox.textContent = '失败: ' + err.message;
@@ -409,5 +497,8 @@ const UI = (() => {
     return ['S', 'A', 'B', 'C'].includes(g) ? `grade-${g}` : '';
   }
 
-  return { esc, toast, guarded, mountComments, mountAssetJob, mountEditableSection, openLightbox, openCommentPanel, gradeClass, targetKey };
+  return {
+    esc, toast, guarded, mountComments, mountAssetJob, attachRegenPanel,
+    mountEditableSection, openLightbox, openCommentPanel, gradeClass, targetKey,
+  };
 })();

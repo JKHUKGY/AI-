@@ -287,7 +287,15 @@ def check_job(job, index, cards=None):
             )
 
     # --- prompt 里的否定句（ledger B1） ---
-    negations = bp.find_negations(prompt_text)
+    # 扫描前先摘掉引号里的台词。台词是**说话内容**、是剧本原文，不是给模型的
+    # 指令，而 ledger B1 要防的是 `避免XX` 这类指令被注入文本编码器。
+    # 中文否定词是按子串匹配的，不摘会误伤大量正常台词：
+    #   《出狱后》ep03 镜14「能不能找到矿」里的「能不能」命中「不能」，
+    #   而那是 S 级镜的剧本原句、整场戏的重点就在这句"不打包票"上。
+    #   同类还有「我不能答应你」「没有别的办法」这种再常见不过的台词。
+    # 装配器把台词放进引号：en 模式是 ASCII 双引号，zh 模式是中文引号，两种都摘。
+    scan_text = re.sub(r'"[^"]*"|“[^”]*”', " ", prompt_text)
+    negations = bp.find_negations(scan_text)
     if negations:
         errors.append(
             f"[{label}] `prompt` 里含否定词 {sorted(set(negations))}。"

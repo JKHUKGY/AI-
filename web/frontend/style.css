@@ -241,3 +241,92 @@ code { background: #f1efe9; padding: 1px 5px; border-radius: 4px; font-size: 13p
 .empty-hint { color: var(--ink-dim); font-size: 14px; padding: 24px 0; text-align: center; }
 
 video.preview { max-width: 260px; border-radius: 8px; display: block; margin: 6px 0; background: #000; }
+
+/* ---------- 关键帧接触印相表（contact sheet） ---------- */
+/* 关键帧是 9:16 竖屏，用 .img-card 那种固定 170px 高的横向卡片会把人脸和
+   构图裁掉，所以这里单独一套：整帧完整显示，一屏能扫过一整集。 */
+.kf-toolbar {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  justify-content: space-between; margin-bottom: 14px;
+  padding: 10px 12px; background: var(--panel);
+  border: 1px solid var(--line); border-radius: var(--radius);
+}
+.kf-stats { font-size: 13px; color: var(--ink-dim); }
+.kf-stats b { color: var(--ink); }
+.kf-filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip {
+  padding: 3px 11px; border-radius: 999px; font-size: 12px;
+  border: 1px solid var(--line); background: transparent; color: var(--ink-dim);
+}
+.chip.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.chip-grade { font-weight: 700; }
+.chip-sep { width: 1px; height: 16px; background: var(--line); margin: 0 2px; }
+
+.kf-grid {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+/* .kf-card 显式声明了 display:flex，会盖掉浏览器默认的 [hidden]{display:none}，
+   所以过滤要靠这条把它按回去，否则点了筛选按钮卡片不会消失。 */
+.kf-card[hidden] { display: none; }
+.kf-card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.kf-thumb {
+  position: relative; aspect-ratio: 9 / 16; background: #171614; cursor: zoom-in;
+}
+.kf-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.kf-thumb.empty {
+  cursor: default; display: flex; align-items: center; justify-content: center;
+  background: repeating-linear-gradient(45deg, #f1efe9, #f1efe9 10px, #e8e5dd 10px, #e8e5dd 20px);
+}
+.kf-empty-mark { text-align: center; font-size: 13px; color: var(--ink-dim); padding: 0 12px; }
+.kf-thumb.is-selected { outline: 3px solid var(--ok); outline-offset: -3px; }
+.kf-no, .kf-count, .kf-comment-flag, .kf-selected-mark {
+  position: absolute; font-size: 11px; padding: 2px 7px; border-radius: 999px;
+  background: rgba(0,0,0,.62); color: #fff; backdrop-filter: blur(2px);
+}
+.kf-no { top: 6px; left: 6px; font-weight: 700; }
+.kf-no.grade-S { background: var(--s-grade); }
+.kf-no.grade-A { background: var(--a-grade); }
+.kf-no.grade-B { background: var(--b-grade); }
+.kf-no.grade-C { background: var(--c-grade); }
+.kf-count { top: 6px; right: 6px; }
+.kf-comment-flag { bottom: 6px; left: 6px; background: var(--warn); }
+.kf-selected-mark { bottom: 6px; right: 6px; background: var(--ok); }
+
+.kf-body { padding: 9px 10px 11px; display: flex; flex-direction: column; gap: 7px; }
+.kf-desc { margin: 0; font-size: 13px; line-height: 1.5; }
+.kf-meta { font-size: 12px; color: var(--ink-dim); }
+.kf-notes { display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.kf-note {
+  font-size: 12px; color: var(--ink-dim);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.kf-note span {
+  display: inline-block; margin-right: 5px; padding: 0 5px; border-radius: 4px;
+  background: #f1efe9; color: var(--ink);
+}
+.kf-variants { display: flex; flex-wrap: wrap; gap: 5px; }
+.kf-var { padding: 0; border: 2px solid transparent; border-radius: 5px; overflow: hidden; line-height: 0; background: none; }
+.kf-var img { width: 30px; height: 53px; object-fit: cover; display: block; }
+.kf-var.on { border-color: var(--accent); }
+.kf-var.picked { border-color: var(--ok); }
+.kf-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* 大图弹窗：左右翻同一镜的备选 */
+.lightbox-stage { position: relative; display: flex; align-items: center; justify-content: center; }
+.lightbox-stage img { max-height: 74vh; }
+.nav-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 34px; height: 44px; font-size: 22px; line-height: 1;
+  background: rgba(0,0,0,.5); color: #fff; border: 0; border-radius: 6px;
+}
+.nav-btn:hover { background: rgba(0,0,0,.72); }
+.nav-btn.prev { left: 4px; }
+.nav-btn.next { right: 4px; }
+.lightbox-caption { margin: 10px 0 2px; font-size: 14px; line-height: 1.55; }
+.lightbox-panel { max-width: 620px; }

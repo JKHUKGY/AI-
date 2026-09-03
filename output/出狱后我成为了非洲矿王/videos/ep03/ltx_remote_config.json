@@ -1,0 +1,24 @@
+{
+  "ssh_host": "",
+  "ssh_port": null,
+  "remote_repo_dir": "/workspace/LTX-2",
+  "remote_work_dir": "/workspace/jobs",
+  "pipeline_module": "ltx_pipelines.distilled",
+  "pipeline_extra_args": [
+    "--transformer-path",
+    "models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+    "--text-encoder-path",
+    "models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+    "--video-vae-path",
+    "models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors",
+    "--audio-vae-path",
+    "models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors",
+    "--spatial-upsampler-path",
+    "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
+  ],
+  "python_bin": "uv run python",
+  "platform": "runpod",
+  "instance_id": "",
+  "network_volume_id": "vr1dk0uvnx",
+  "notes": "【ep03 待租显卡】ssh_host / ssh_port / instance_id 三项留空，是因为显卡还没租——第13步 short-drama-ltx-generate 租到实例后回填这三项才能真正提交。\n模型权重(67GB)在 RunPod Network Volume vr1dk0uvnx 上，跟 Pod 生命周期解耦：只要新建 Pod 时挂载同一个 network_volume_id，权重还在，不用重新下载，所以下面那串 pipeline_extra_args 的路径可以直接沿用。\n【用完就关】跑完立刻 terminate 这个 Pod（不是只 stop——停止的 Pod 磁盘按 RunPod 计费口径仍在收费）：python3 .claude/skills/short-drama-ltx-generate/scripts/gpu_teardown.py --config 本文件 --mode auto，或者提交时直接带 ltx_ssh_submit.py --auto-stop。**永远不要调用 volume_delete**——那才会真的丢掉这 67GB 权重。"
+}

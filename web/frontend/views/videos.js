@@ -2,9 +2,13 @@ window.Views = window.Views || {};
 
 Views.videos = async function videos(app, project, ep) {
   const epList = await API.episodeList(project);
-  const episodes = epList.episodes;
+  // 跟关键帧页同理：有视频产出但没有 storyboard/ep0X.md 的项目，集数要
+  // 取"分镜表 ∪ 视频目录"，否则已经跑出来的片子会被整集藏起来。
+  const episodes = Array.from(new Set([
+    ...(epList.episodes || []), ...(epList.video_episodes || []),
+  ])).sort((a, b) => a - b);
   if (!episodes.length) {
-    app.innerHTML = '<div class="empty-hint">这个项目还没有分镜表，也就没有视频任务清单。</div>';
+    app.innerHTML = '<div class="empty-hint">这个项目还没有分镜表，也还没有任何视频产出。</div>';
     return;
   }
   const currentEp = episodes.includes(ep) ? ep : episodes[0];

@@ -245,7 +245,13 @@ def api_patch_style_bible(ctx, params):
 def api_episodes(ctx, params):
     name = params['name']
     _project_or_404(name)
-    return {'episodes': projects.list_episode_numbers(name)}
+    kf = projects.list_media_episode_numbers(name, 'keyframes')
+    vd = projects.list_media_episode_numbers(name, 'videos')
+    return {
+        'episodes': projects.list_episode_numbers(name),
+        'keyframe_episodes': kf,
+        'video_episodes': vd,
+    }
 
 
 @router.get(r'/api/projects/(?P<name>[^/]+)/episodes/(?P<ep>\d+)')
@@ -287,6 +293,80 @@ def api_episode_patch(ctx, params):
 
 # ---------------- keyframes ----------------
 
+# keyframes.md 的表头在不同项目/不同时期并不统一（早期是"对应画面描述/选中文件
+# 路径"，新版是"这一镜要讲成什么（验收依据）/选中文件"，新版还多了"机位"列），
+# 镜号也有"1"和"镜1"两种写法。前端不该去猜这些，所以在这里统一归一化成固定
+# 字段，认不出来的列原样放进 notes，不丢信息。
+_KF_COLS = (
+    ('scene', ('场景',)),
+    ('camera', ('机位',)),
+    ('characters', ('出场人物', '人物')),
+    ('description', ('对应画面描述', '画面描述', '讲成什么', '描述')),
+    ('file', ('选中文件路径', '选中文件')),
+    ('grade', ('分级',)),
+)
+
+
+def _pick_col(header, aliases, used):
+    for a in aliases:
+        if a in header and a not in used:
+            return a
+    for h in header:
+        if h in used:
+            continue
+        if any(a in h for a in aliases):
+            return h
+    return None
+
+
+def _normalize_keyframe_rows(table, ep, variants):
+    """把 keyframes.md 的表格行 + 磁盘上的图片对齐成一条条"镜"。
+
+    镜号可能写成 "1" 或 "镜1"，只取其中的数字来拼 job_id，避免出现
+    `ep01_镜镜1` 这种对不上目录名、导致整集图片一张都挂不到镜上的情况。
+    """
+    header = table['header'] if table else []
+    used = {'镜号'}
+    colmap = {}
+    for field, aliases in _KF_COLS:
+        col = _pick_col(header, aliases, used)
+        if col:
+            colmap[field] = col
+            used.add(col)
+    note_cols = [h for h in header if h not in used]
+
+    shots = []
+    matched = set()
+    for row in (table['rows'] if table else []):
+        raw_no = (row.get('镜号') or '').strip()
+        m = re.search(r'\d+', raw_no)
+        if not m:
+            continue
+        num = int(m.group())
+        job_id = f'ep{ep:02d}_镜{num:02d}'
+        job = variants.get(job_id)
+        if job:
+            matched.add(job_id)
+        listed = (row.get(colmap.get('file', '')) or '').strip().strip('`')
+        shots.append({
+            'shot_no': raw_no or str(num),
+            'shot_num': num,
+            'job_id': job_id,
+            'scene': row.get(colmap.get('scene', ''), ''),
+            'camera': (row.get(colmap.get('camera', ''), '') or '').strip('`'),
+            'characters': row.get(colmap.get('characters', ''), ''),
+            'description': row.get(colmap.get('description', ''), ''),
+            'grade': row.get(colmap.get('grade', ''), ''),
+            'listed_file': listed.split('/')[-1] if listed else '',
+            'notes': [{'label': c, 'value': row[c]} for c in note_cols if row.get(c)],
+            'files': (job or {}).get('files', []),
+            'selected': (job or {}).get('selected'),
+        })
+
+    orphans = {jid: variants[jid] for jid in variants if jid not in matched}
+    return shots, orphans
+
+
 @router.get(r'/api/projects/(?P<name>[^/]+)/keyframes/(?P<ep>\d+)')
 def api_keyframes(ctx, params):
     name = params['name']
@@ -295,9 +375,21 @@ def api_keyframes(ctx, params):
     path = projects.keyframes_md_path(name, ep)
     variants = _augment_variants(projects.list_keyframe_variants(name, ep), state.get_selections(_state_path(name)))
     if not path:
-        return {'exists': False, 'header': [], 'rows': [], 'variants': variants}
+        # 还没写 keyframes.md 但图已经出了（生成中途/老项目），也要能看图，
+        # 这时每个 job 目录自己就是一"镜"。
+        shots, orphans = [], variants
+        return {'exists': False, 'header': [], 'rows': [], 'variants': variants,
+                'shots': shots, 'orphan_jobs': orphans}
     table = md_tables.parse_table(_read_text(path))
-    return {'exists': True, 'header': table['header'] if table else [], 'rows': table['rows'] if table else [], 'variants': variants}
+    shots, orphans = _normalize_keyframe_rows(table, ep, variants)
+    return {
+        'exists': True,
+        'header': table['header'] if table else [],
+        'rows': table['rows'] if table else [],
+        'variants': variants,
+        'shots': shots,
+        'orphan_jobs': orphans,
+    }
 
 
 # ---------------- videos ----------------

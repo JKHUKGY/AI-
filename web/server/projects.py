@@ -36,6 +36,26 @@ def list_episode_numbers(name):
     return sorted(nums)
 
 
+def list_media_episode_numbers(name, kind):
+    """keyframes/ 或 videos/ 下实际存在 ep0X 目录的集数。
+
+    有些项目（早期跑通的样例）图和视频都出了、却没有 storyboard/ep0X.md，
+    只按分镜表列集数会把这些已有产出整个藏起来，所以按目录再取一遍。
+    """
+    pdir = project_dir(name)
+    if not pdir:
+        return []
+    root = os.path.join(pdir, kind)
+    if not os.path.isdir(root):
+        return []
+    nums = []
+    for fn in os.listdir(root):
+        m = re.fullmatch(r'ep(\d+)', fn)
+        if m and os.path.isdir(os.path.join(root, fn)):
+            nums.append(int(m.group(1)))
+    return sorted(nums)
+
+
 def list_projects():
     if not os.path.isdir(OUTPUT_DIR):
         return []
