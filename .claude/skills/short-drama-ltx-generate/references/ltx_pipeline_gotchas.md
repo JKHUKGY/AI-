@@ -226,6 +226,35 @@
   提醒；真正的多参考图机制就是上面 IC-LoRA Ingredients/Multi-Subject
   Reference LoRA，接入前不要假装这个字段有效果。
 
+## Prompt Enhancer：确认它没有在我们这条路径上偷偷开着（2026-09）
+
+**背景**：LTX 官方的 ComfyUI 模板**默认启用 "Prompt Enhance"**——在编码之前用一个
+LLM 把短提示词自动扩写成模型偏好的写法（可以关）。`ltx-pipelines` 的 README 里
+也把 prompt-enhancer 列为可用能力。
+
+**为什么必须确认**：我们整条链路的前提是"**同一张镜头卡永远装配出同一段
+字符串**"。自动扩写会在运行时注入**我们没写过、也没审过**的内容，直接破坏
+可复现性——同样的卡、同样的 seed，两次跑出来的提示词可能不一样，那么
+`loop-video-generation` 的"改一格再跑一轮"就失去了对照意义。
+
+**现状**：`ltx_ssh_submit.py` 的命令行里**没有任何 enhance 相关参数**，
+所以只要 CLI 的默认是关闭，我们就是安全的。**但这一条没有实测确认过。**
+
+**要做的检查（一条命令，下次开机顺手做掉）**：
+
+```bash
+python -m ltx_pipelines.distilled --help | grep -i -E "enhanc|rewrit|caption"
+```
+
+- 没有匹配项 → 这条路径不带扩写，安全，回来把这一节改成"已确认"。
+- 有匹配项且默认开启 → 在 `ltx_ssh_submit.py` 里显式关掉，
+  并把这条写进 `model_capability_ledger.md` 的 B 组。
+
+如果将来要用 LLM 扩写提示词，**正确的位置是"卡 → 提示词"这一步之外**：
+把扩写结果**落回镜头卡字段**，让它变成人审过的输入，而不是运行时的黑箱。
+
+---
+
 ## 角色配音一致性（2026-08 查文档+源码，尚未实测）
 
 LTX-2.5 会根据提示词自动生成同步音频（见

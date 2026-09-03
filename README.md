@@ -8,6 +8,9 @@
 
 > 给 Claude 用的更详细索引见 [`INDEX.md`](./INDEX.md)（文件/目录级别的定位表）。
 > 这份 README 是给**人**看的使用说明。
+>
+> 不知道东西放哪了、想知道现在做到第几集，直接对 Claude 说 **`/index`**（或"这个
+> 文件在哪""现在做到哪一步了"），它会读索引 + 现扫磁盘给你实时进度，不用自己翻目录。
 
 ## 这套流水线是怎么被使用的
 
@@ -18,10 +21,7 @@
 
 ## 开始之前：环境准备
 
-1. **Gemini API key（可选）**：如果要用 `scripts/gemini_client.py` 走 Gemini
-   文生图/文本，把 `.env.example` 复制成 `.env`，填入 `GEMINI_API_KEY`。
-   （`.env` 已加入 `.gitignore`，不会被提交。）
-2. **Codex CLI 登录（出图必需）**：人物立绘、场景图、关键帧图默认走 Codex CLI
+1. **Codex CLI 登录（出图必需）**：人物立绘、场景图、关键帧图默认走 Codex CLI
    （用 ChatGPT 账号登录，不需要额外 API key/计费），需要在本机执行一次：
    ```bash
    codex --version          # 没装先 npm install -g @openai/codex
@@ -29,7 +29,7 @@
    ```
    按提示在浏览器里用 ChatGPT 账号（需要 Plus/Pro/Team 等订阅）完成登录，
    凭证会缓存在 `~/.codex/`，之后长期有效，不用每次都登。
-3. **LTX-2.5 实际生成（可选，到最后一步才需要）**：需要 vast.ai 等 GPU 租赁
+2. **LTX-2.5 实际生成（可选，到最后一步才需要）**：需要 vast.ai 等 GPU 租赁
    平台的账号和 API key，会真实产生费用，用到再准备。
 
 ## 流水线七步
@@ -174,8 +174,6 @@ Codex CLI，服务进程会直接在本机起 `codex exec` 子进程出图。
 .claude/skills/   7 个流水线 skill（选题→分镜→出图→关键帧→视频提示词→LTX导出→LTX执行）
 output/           按剧名分目录的产出物
 web/              剧本家协作网站（Python 标准库后端 + 无构建前端）
-scripts/          仓库级公共脚本（gemini_client.py：Gemini 文生图/文本的最小 CLI 客户端）
 需求.md           原始需求 + 按日期记录的开发日志
 INDEX.md          给 Claude 用的详细文件级索引
-.env.example      GEMINI_API_KEY 模板，复制为 .env 使用
 ```

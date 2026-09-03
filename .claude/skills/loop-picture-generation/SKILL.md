@@ -19,8 +19,17 @@ description: 面向 AI 短剧从文字版分镜到图像版分镜/人物形象�
 
 - 走这个 skill 之前，先确认已经有（或先跑出）：
   - 角色/场景：`short-drama-image-gen` 产出的 `characters.md` / `scenes.md`。
-  - 关键帧：`short-drama-keyframe-gen` 依赖的 `ep0X.md` 分镜表 +
-    `short-drama-image-gen` 产出的 `selected.md`。
+  - 关键帧：`short-drama-keyframe-gen` **阶段一已经跑完并经用户确认**的
+    `jobs_ep0X.json`（连同 `keyframe_cards.json` 和那份
+    `keyframe_prompts_ep0X.md` 审阅表）。这个 skill 只替代它的阶段二
+    （出图+验收），**不许绕过阶段一那道人工闸门直接开始出图**——走位/朝向/
+    景别在出图之前必须由人看过一遍，理由见
+    `short-drama-keyframe-gen/references/blocking_guide.md`。
+    Reviewer 的 `storyboard_ref` 用卡上的 `script_ref_zh`，
+    `fix_instruction` 要落到卡的具体字段上（比如
+    `people[1].camera_relation` 改成 `three_quarter_back`），
+    改完由 orchestrator 重跑 `build_keyframe_prompt.py` 拿新 prompt，
+    不要手改 prompt 字符串。
   - 这些文件怎么产出、占位符怎么替换，不在这里重复，缺了就先引导用户/自己
     跑对应的上游 skill。
 - 检查 Codex CLI 登录状态（同 `short-drama-image-gen/references/api_setup.md`），

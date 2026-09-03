@@ -17,7 +17,7 @@
     "camera_en": {
       "position": "Camera stands at the far end of a double-height villa living room in front of the floor-to-ceiling glass, looking back toward the entry hall and the staircase",
       "rig": "locked-off camera on sticks at eye level, the axis held fixed for the whole take",
-      "framing_path": "starts on a medium shot of the man and tightens to a chest-up close-up as he closes the distance",
+      "framing_path": "starts on a medium shot of the man and tightens only as far as a chest-up close-up, then holds at that size for the rest of the take",
       "move": "slow steady push-in"
     },
     "subject_lock_en": "the same heavyset man in his fifties throughout, same face, same swept grey hair, same navy textured polo, same gold chain and gold watch, same cream trousers",
@@ -25,7 +25,7 @@
       {
         "t": [
           0,
-          1.3
+          1.8
         ],
         "framing_en": "medium shot, his whole upper body and the swinging briefcase inside the frame",
         "motion_en": "His legs keep alternating in full strides so his whole body travels steadily toward the lens and grows larger in frame; his left fingers drag the necktie knot further down his chest; his jaw stays clamped and his nostrils flare.",
@@ -34,18 +34,18 @@
       },
       {
         "t": [
-          1.3,
-          2.4
+          1.8,
+          3.3
         ],
-        "framing_en": "the framing tightens toward a chest-up close-up",
-        "motion_en": "His right arm whips forward and the briefcase leaves his hand, flying out of frame toward the sofa; his shoulder rotates through the throw and his torso twists after it; his left hand rips the loosened necktie clear of his collar.",
+        "framing_en": "the framing settles at a chest-up close-up and holds",
+        "motion_en": "His right arm swings back past his hip and then whips forward, his fingers open, and the briefcase leaves his hand and travels out through the right edge of frame; his shoulder rotates through the throw and his torso twists after it; his left fist keeps the necktie clamped against his chest.",
         "dialogue": null,
         "sfx_en": "a dull heavy slap of leather on leather"
       },
       {
         "t": [
-          2.4,
-          3.375
+          3.3,
+          5.0417
         ],
         "framing_en": "close-up, his face filling the upper safe area",
         "motion_en": "His feet plant and his body halts; his chest rises and falls twice in visible heaving breaths; his fingers crush the necktie into a fist at his side and the vertical crease between his brows deepens as he holds the stare.",
@@ -54,11 +54,11 @@
       }
     ],
     "style_tail_en": "Cinematic realistic photography, documentary-style light, vertical 9:16 framing, fine skin and fabric texture, warm golden dusk light through the glass wall against cold black leather and dark marble",
-    "duration_sec": 3.375,
+    "duration_sec": 5.0417,
     "width": 704,
     "height": 1280,
     "seed": 3001,
-    "notes": "开场3秒钩子。运镜用推（缩放，单张底板撑得起）。摔包动作在节拍2，与镜02 的落包做匹配剪辑。"
+    "notes": "开场3秒钩子。运镜用推（缩放，单张底板撑得起）。摔包动作在节拍2，与镜02 的落包做匹配剪辑。 【2026-09-02 首轮实测后修正】原 3.375s 三拍里模型只做出了'走进来+扯领带'，摔包动作整个丢了（叙事核心，且是镜02 的匹配剪辑接点）；推镜还一路推到大特写、中途脸有漂移。改动：时长 81→121 帧给摔包一个独立的 1.5 秒窗口；framing_path 写死落幅只到胸部以上近景；摔包那一拍拆成'手臂后摆→前甩→手指张开→包飞出右边框'的分解动作。"
   },
   {
     "id": "ep03_镜02",
@@ -167,7 +167,7 @@
     "camera_en": {
       "position": "Camera stands on the inner side of the same living room near the entry, looking toward the floor-to-ceiling glass wall, with the man three-quarters on to the lens",
       "rig": "locked-off camera at eye level, the axis held fixed",
-      "framing_path": "opens on a medium close-up and tightens gradually to a close-up on his face",
+      "framing_path": "opens on a medium close-up and tightens only as far as a close-up on his face, then holds at that size for the rest of the take",
       "move": "slow continuous push-in"
     },
     "subject_lock_en": "the same heavyset man in his fifties throughout, same face, same swept grey hair, same navy textured polo, same gold chain and gold watch",
@@ -194,7 +194,7 @@
     "width": 704,
     "height": 1280,
     "seed": 3004,
-    "notes": "台词36字·fast→最低7.35秒，时长7.375秒刚好覆盖。"
+    "notes": "台词36字·fast→最低7.35秒，时长7.375秒刚好覆盖。 【2026-09-02 实测修正·运镜】镜01 和镜14 的成片都出现同一条弧线：中景→**冲过头到大特写**→再回落到设计的落幅，而脸部漂移正好集中在冲过头那一段（首帧 704×1280 的像素撑不起大特写，模型只能现编细节）。修法是在 framing_path 里把落幅**说死**（tightens only as far as X, then holds at that size），不写\"避免推太近\"这类否定句（ledger B1：没有负面提示词参数）。"
   },
   {
     "id": "ep03_镜05",
@@ -395,7 +395,7 @@
     "camera_en": {
       "position": "Camera stands in front of the far glass wall of the same living room looking back toward the entry hall, the woman on frame right",
       "rig": "locked-off camera at eye level, the axis held fixed",
-      "framing_path": "opens medium close and tightens slightly onto her face",
+      "framing_path": "opens medium close and tightens only a little onto her face, then holds at that size for the rest of the take",
       "move": "very slow push-in"
     },
     "subject_lock_en": "the same weathered woman in her forties throughout, same face, same greying low bun, same faded work dress and apron",
@@ -432,7 +432,7 @@
     "width": 704,
     "height": 1280,
     "seed": 3009,
-    "notes": "台词8字但走slow档（她说话带停顿、气不足）→最低3.47秒，节拍2 给了3.575秒。弦乐底噪从这一镜进入，是全集'希望感'的起点（style_bible 勘矿段落基调）。"
+    "notes": "台词8字但走slow档（她说话带停顿、气不足）→最低3.47秒，节拍2 给了3.575秒。弦乐底噪从这一镜进入，是全集'希望感'的起点（style_bible 勘矿段落基调）。 【2026-09-02 实测修正·运镜】镜01 和镜14 的成片都出现同一条弧线：中景→**冲过头到大特写**→再回落到设计的落幅，而脸部漂移正好集中在冲过头那一段（首帧 704×1280 的像素撑不起大特写，模型只能现编细节）。修法是在 framing_path 里把落幅**说死**（tightens only as far as X, then holds at that size），不写\"避免推太近\"这类否定句（ledger B1：没有负面提示词参数）。"
   },
   {
     "id": "ep03_镜10",
@@ -685,7 +685,7 @@
     "camera_en": {
       "position": "Camera stands in front of the far glass wall of the same living room looking back toward the entry hall and the staircase, the young man centred",
       "rig": "locked-off camera at eye level, the axis held fixed",
-      "framing_path": "opens on a medium shot of him standing and tightens gradually toward a chest-up close-up",
+      "framing_path": "opens on a medium shot of him standing and tightens only as far as a chest-up close-up, then holds at that size for the rest of the take",
       "move": "slow continuous push-in"
     },
     "subject_lock_en": "the same lean young man in his twenties throughout, same face, same black cropped hair, same sun-tanned skin, same faded pale shirt with rolled cuffs and same khaki work trousers",
@@ -738,7 +738,7 @@
     "width": 704,
     "height": 1280,
     "seed": 3014,
-    "notes": "S级：专业能力第一次亮出来。**首帧已站定，节拍从站姿继续，不写起身**（ledger A3）。台词37字·normal→最低10.05秒，两个台词拍分别给4.3秒/5.075秒。"
+    "notes": "S级：专业能力第一次亮出来。**首帧已站定，节拍从站姿继续，不写起身**（ledger A3）。台词37字·normal→最低10.05秒，两个台词拍分别给4.3秒/5.075秒。 【2026-09-02 实测修正·运镜】镜01 和镜14 的成片都出现同一条弧线：中景→**冲过头到大特写**→再回落到设计的落幅，而脸部漂移正好集中在冲过头那一段（首帧 704×1280 的像素撑不起大特写，模型只能现编细节）。修法是在 framing_path 里把落幅**说死**（tightens only as far as X, then holds at that size），不写\"避免推太近\"这类否定句（ledger B1：没有负面提示词参数）。"
   },
   {
     "id": "ep03_镜15",
@@ -1282,7 +1282,7 @@
     "camera_en": {
       "position": "Camera sits beside the low cabinet on the west side of the same site office looking east along the sample desk, the young man deep on frame right at the coloured geological map, the older man near on frame left and the technician between them",
       "rig": "locked-off camera at eye level, the axis held fixed",
-      "framing_path": "opens on a medium three-shot and tightens gradually toward the pointing hand and the map",
+      "framing_path": "opens on a medium three-shot and tightens only as far as a medium close-up on the pointing hand and the map, then holds at that size for the rest of the take",
       "move": "slow continuous push-in"
     },
     "subject_lock_en": "the same lean young man in a faded pale shirt at the map, the same heavyset man in a navy polo on frame left and the same weathered technician in a dark work shirt between them",
@@ -1335,7 +1335,7 @@
     "width": 704,
     "height": 1280,
     "seed": 3025,
-    "notes": "S级、本集专业高光点。台词36字·normal→最低9.8秒，拆两拍（12字→3.8s 给3.9s；18字→5.3s 给4.84s）。**三个人的反应各自写成可见的物理变化**：江砚指尖按压/点两下、顾万通搓手指加快+前倾、技术员手臂下垂+下巴放平+眉头拧起。"
+    "notes": "S级、本集专业高光点。台词36字·normal→最低9.8秒，拆两拍（12字→3.8s 给3.9s；18字→5.3s 给4.84s）。**三个人的反应各自写成可见的物理变化**：江砚指尖按压/点两下、顾万通搓手指加快+前倾、技术员手臂下垂+下巴放平+眉头拧起。 【2026-09-02 实测修正·运镜】镜01 和镜14 的成片都出现同一条弧线：中景→**冲过头到大特写**→再回落到设计的落幅，而脸部漂移正好集中在冲过头那一段（首帧 704×1280 的像素撑不起大特写，模型只能现编细节）。修法是在 framing_path 里把落幅**说死**（tightens only as far as X, then holds at that size），不写\"避免推太近\"这类否定句（ledger B1：没有负面提示词参数）。"
   },
   {
     "id": "ep03_镜26",
@@ -1403,7 +1403,7 @@
     "camera_en": {
       "position": "Camera stands at the inner corner of the same site office looking back toward the open doorway, the young man standing beside the sample desk with the blown-out daylight behind him",
       "rig": "locked-off camera at eye level, the axis held fixed",
-      "framing_path": "starts on a medium shot of him and widens steadily to a wide shot as the frame opens out",
+      "framing_path": "starts on a medium shot of him and widens only as far as a wide shot that still keeps him clearly readable, then holds at that size",
       "move": "slow steady pull-back"
     },
     "subject_lock_en": "the same lean young man in his twenties throughout, same face, same black cropped hair, same faded pale shirt with rolled cuffs, same khaki work trousers",
@@ -1444,6 +1444,6 @@
     "width": 704,
     "height": 1280,
     "seed": 3027,
-    "notes": "结尾硬钩子，S级、演绎镜（无台词、无对应剧本原句）。运镜用拉（缩放，单张底板撑得起）。**关键帧验收记录的差距**：门口逆光比设计的弱一档、正面没完全压进阴影——调色阶段压暗正面+提亮门口即可。"
+    "notes": "结尾硬钩子，S级、演绎镜（无台词、无对应剧本原句）。运镜用拉（缩放，单张底板撑得起）。**关键帧验收记录的差距**：门口逆光比设计的弱一档、正面没完全压进阴影——调色阶段压暗正面+提亮门口即可。 【2026-09-02 实测修正·运镜】镜01 和镜14 的成片都出现同一条弧线：中景→**冲过头到大特写**→再回落到设计的落幅，而脸部漂移正好集中在冲过头那一段（首帧 704×1280 的像素撑不起大特写，模型只能现编细节）。修法是在 framing_path 里把落幅**说死**（tightens only as far as X, then holds at that size），不写\"避免推太近\"这类否定句（ledger B1：没有负面提示词参数）。"
   }
 ]

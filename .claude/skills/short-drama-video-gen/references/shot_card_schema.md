@@ -40,6 +40,7 @@
 | `camera_en.move` | ✗ | ✅ | 运镜，固定机位填 `null` |
 | `subject_lock_en` | 建议 | ✅ | **一句**，只为了别换人。不许堆外观形容词 |
 | `beats[]` | ✅ | ✅ | 节拍数组，见下方专门一节 |
+| `preserve_en` | 建议 | ✅ | **这一段里必须保持不变的东西**（身份/服装/背景/构图）。装配时排在节拍之后、风格尾块之前，前面自动加 `Throughout the shot, `。见下方专门一节 |
 | `style_tail_en` | 建议 | ✅ | 风格尾块。装配时**永远排最后** |
 | `duration_sec` | ✅ | ✗ | 单元时长。要能被 `8k+1` 帧精确表示 |
 | `fps` | ✗ | ✗ | 默认 24。LTX 没有 `--fps` 参数，这个值只用来推 `num_frames` |
@@ -160,8 +161,8 @@ She speaks in Mandarin Chinese, low and forced out between her teeth: "为什么
 
 2026-09 新增。以前场景资产每个地点只有一张底板（只按日/夜拆），所以同一场戏里所有
 镜头都是同一个摄影机位置，只有景别（裁切松紧）在变——整场戏从一个视角演完。
-实拍证据见 `output/出狱后我成为了非洲矿王/videos/ep02/_frames_check/`：
-镜04 和镜07 是同一个餐厅的同一个机位，只是拉宽了。
+实拍证据见 `output/出狱后我成为了非洲矿王/videos/ep02/` 的 ep02_镜04.mp4 / ep02_镜07.mp4：
+两镜是同一个餐厅的同一个机位，只是拉宽了（原抽帧目录已清理，用 ffmpeg 从 mp4 重抽即可复现）。
 
 现在每个场景有一组机位底板（`A主机位`/`B反打`/`C侧机位`/`D细节`，词表见
 `short-drama-storyboard/references/scene_prompt_template.md`），分镜表有「机位」列。
@@ -178,6 +179,39 @@ She speaks in Mandarin Chinese, low and forced out between her teeth: "为什么
 
 ---
 
+## `preserve_en`：这一段里什么必须保持不变
+
+2026-09 新增。来源是图生视频提示词的通用五要素——一条合格的 I2V 提示词要回答
+五件事：**一个主体动作 / 一个相机指令 / 什么必须保持不变 / 节奏 / 结束状态**。
+我们原来只有前两项和第四、五项（节拍里带），**第三项一直是空的**。
+
+**为什么它不能靠首帧代劳**：`--image PATH 0 <strength>` 只锁住**第 0 帧**。
+后面 4-8 秒里人会不会换脸、衣服会不会变色、背景会不会漂成另一个房间，
+靠的就是这句话。A6「背景冻住」是锁太死的一端，"中途换景"是另一端，
+`preserve_en` 是唯一能在两端之间给出正向约束的字段。
+
+写法要求：
+
+- **正向陈述**，不许写否定句（脚本会拦）。写"她的脸、发型和灰色针织裙全程保持
+  与首帧一致"，不要写"不要改变她的长相"。
+- **逐项点名**，不要写笼统的 "keep everything consistent"。至少覆盖
+  **人（脸/发型/服装）** 和 **景（陈设/墙面/光）** 两侧。
+- 和 `subject_lock_en` 分工：`subject_lock_en` 是**一句话说清这是谁**
+  （防止换人），`preserve_en` 是**说清哪些属性在这几秒里不许变**（防止漂移）。
+
+真实例子（`output/雪山决斗/videos/shot01/shot_cards.json`，2026-09 从
+`style_tail_en` 里拆出来的——它本来就混在风格尾块里，拆出来是为了让它
+**排在风格尾块之前**，因为风格尾块是"被截掉也不致命"的那一段，
+而保持不变的约束不是）：
+
+```json
+"preserve_en": "her face, hairstyle and red-and-black costume stay identical to the first frame, and the snowfield behind her keeps the same ridgeline, snow depth and grey-blue light"
+```
+
+装配结果：`Throughout the shot, her face, hairstyle and ... grey-blue light.`
+
+---
+
 ## `first_frame_strength`：首帧锁多死
 
 `ltx_ssh_submit.py` 用 `--image <path> <frame_idx> <strength>` 传首帧，以前把
@@ -188,8 +222,11 @@ strength **硬编码成 `1.0`**（完全锁死）。这是第二个"场景不变
 `--image` 的强度本来是可调的，**但本仓库从没试过 1.0 以外的值**。
 
 - 默认保持 `1.0`，不改现有行为。
-- 调低（0.85~0.95）**预期**让画面松动、允许视差和真实运镜，代价是首帧保真度下降
-  （人脸/服装漂移）。**这是未实测的推测**，A/B 方案见
+- **官方 I2V 工作流的第一阶段用的是 0.7**（原话："establishing the starting point
+  while leaving room for natural motion"），第二阶段才用 1.0 重新注入保细节。
+  也就是说全程 1.0 是我们自己的选择，不是官方默认。
+- 调低（0.7~0.95）**预期**让画面松动、允许视差和真实运镜，代价是首帧保真度下降
+  （人脸/服装漂移）。**这仍是未实测的推测**，扫描方案见
   `model_capability_ledger.md` D4，跑出结果再决定是否改默认值。
 
 **这个字段治不了"场景单一"。** 画面的空间感来自**镜头之间切机位**（`scene_plate`

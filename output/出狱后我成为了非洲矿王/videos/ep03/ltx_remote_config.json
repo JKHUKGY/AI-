@@ -16,9 +16,10 @@
     "--spatial-upsampler-path",
     "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
   ],
-  "python_bin": "uv run python",
+  "python_bin": ".venv/bin/python",
   "platform": "runpod",
   "instance_id": "",
   "network_volume_id": "vr1dk0uvnx",
-  "notes": "【ep03 待租显卡】ssh_host / ssh_port / instance_id 三项留空，是因为显卡还没租——第13步 short-drama-ltx-generate 租到实例后回填这三项才能真正提交。\n模型权重(67GB)在 RunPod Network Volume vr1dk0uvnx 上，跟 Pod 生命周期解耦：只要新建 Pod 时挂载同一个 network_volume_id，权重还在，不用重新下载，所以下面那串 pipeline_extra_args 的路径可以直接沿用。\n【用完就关】跑完立刻 terminate 这个 Pod（不是只 stop——停止的 Pod 磁盘按 RunPod 计费口径仍在收费）：python3 .claude/skills/short-drama-ltx-generate/scripts/gpu_teardown.py --config 本文件 --mode auto，或者提交时直接带 ltx_ssh_submit.py --auto-stop。**永远不要调用 volume_delete**——那才会真的丢掉这 67GB 权重。"
+  "notes": "【已停机 2026-09-02 16:40】两台 Pod 都已 terminate 并确认停止计费：tt0ljasiaeahnc（A100 80GB $1.59/h）、mamv7lpn2o8dkk（H100 NVL 94GB $3.19/h）。Network Volume vr1dk0uvnx 完好，67GB 权重 + /workspace/LTX-2/.venv 都在，下次挂同一个卷建新 Pod 直接可用、不用重下。\n下次续跑要做的三件事：(1) 回填 ssh_host/ssh_port/instance_id；(2) ssh-keyscan 把新 Pod 主机密钥写进 ~/.ssh/known_hosts（否则 ltx_ssh_submit.py 的 ssh 子进程报 exit 255）；(3) 按卡的显存决定要不要加 --offload cpu —— 80GB 必须加（否则 ≥217 帧 OOM），90GB+ 不要加（offload 会让 GPU 84% 时间等 PCIe）。\n选卡提醒：96GB 的 RTX PRO 6000（ledger C2 跑通 361 帧的那张）在 US-KS-2 长期无库存；H100 NVL 实际收 $3.19/h 而非列表价 $2.59。",
+  "cost_per_hr": 3.19
 }

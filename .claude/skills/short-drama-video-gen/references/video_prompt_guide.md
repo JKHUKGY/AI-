@@ -24,18 +24,25 @@ videos/ep0X/video_jobs.json     ← prompt 字段是派生产物
 ## 装配顺序（固定，而且是 token 截尾的保险）
 
 ```
-[camera_en.rig] . [camera_en.framing_path] . [camera_en.move] . [subject_lock_en] .
+[camera_en.position] . [camera_en.rig] . [camera_en.framing_path] . [camera_en.move] . [subject_lock_en] .
 
 [beat 1: framing_en ; motion_en . 台词 . sfx_en]
 
 [beat 2: …]
 
+Throughout the shot, [preserve_en].
+
 [style_tail_en]
 ```
 
+这个顺序有出处，不是拍脑袋排的：【官方】LTX-2.5 指南要求
+**"在第一句就把相机运动叫出来"**，并且**相机运动和主体运动必须分句写**
+（"keep them in separate clauses so the model knows which is which"）。
+
 **风格尾块永远排最后。** Gemma 文本编码器超过 1024 token 会**静默截尾**
 （`model_capability_ledger.md` B2），排最后意味着万一真被截掉，丢的是风格
-描述而不是高潮动作。
+描述而不是高潮动作。**`preserve_en` 排在它之前**，因为"什么不许变"被截掉是
+会出事的，而风格描述被截掉不会。
 
 ---
 
@@ -50,6 +57,23 @@ to video prompts focus almost exclusively on motion"*）。
 所以镜头卡在结构上就限死了：人物一致性只能靠 `subject_lock_en` **一句话**
 （`the same young woman throughout, same face, same long black hair, same red
 scarf over black robes`），没有第二个字段可以堆外观。
+
+### 规则 1b：一条合格的 I2V 提示词要回答五件事
+
+【业界】跨来源的共识清单，逐条对应到卡上的字段：
+
+| 要回答的 | 卡上的字段 |
+|---|---|
+| ① 一个主体动作 | `beats[].motion_en`（**一段只有一条动作线**） |
+| ② 一个相机指令 | `camera_en.move`（固定机位就填 `null`） |
+| ③ **什么必须保持不变** | `preserve_en` ← 2026-09 补上的，以前这一格是空的 |
+| ④ 节奏 | `beats[].t` + 幅度限定词（`slowly`/`slightly`） |
+| ⑤ 结束状态 | 最后一拍的 `motion_en` 要写清收在什么姿态 |
+
+【官方】关于①，LTX-2.5 指南的原话很硬：
+**"两条动作线抢同样的秒数，结果是两条都糊"**（two arcs competing for the same
+seconds lose fidelity on both）。所以一段只放一个动作节拍，需要两个就拆两段
+生成再剪——剪辑台永远比模型更会掐时间。
 
 ### 规则 2：可见位移检验
 
@@ -182,7 +206,7 @@ GPU（ledger B1）。
 
 以前每个地点只有一张场景底板（只按日/夜拆），所以同一场戏所有镜头都是同一个摄影机
 位置，只有景别（裁切松紧）在变。实拍证据：
-`output/出狱后我成为了非洲矿王/videos/ep02/_frames_check/` 里镜04 和镜07 是同一个
+`output/出狱后我成为了非洲矿王/videos/ep02/` 里 ep02_镜04.mp4 和 ep02_镜07.mp4 是同一个
 餐厅的同一个机位，只是拉宽了——同一盏吊灯在正中、同一个厨房门洞在右、同一个台灯在左。
 
 现在每个场景有一组机位底板（`A主机位`/`B反打`/`C侧机位`/`D细节`），分镜表有「机位」列，
@@ -211,6 +235,12 @@ GPU（ledger B1）。
 | 轻微视差 / 呼吸感 | ⚠️ 取决于 `first_frame_strength` | 1.0 完全焊死时基本没有 |
 | 摇 / 移（pan / track） | ❌ 一般撑不起 | 本质是平移，**需要画外的像素**。底板右边没有东西，"镜头向右摇露出门口"就是注定失败的一镜——模型不会现编，它会保持不动 |
 | 换机位 | ❌ 单镜内做不到 | 这是**切**出来的，不是摇出来的 |
+
+**这条现在有外部依据，不只是我们的经验**：相机移动到原图没拍到的区域时，
+学术上叫 disocclusion 失败——"当视角进入此前未观测的区域，模型难以处理
+disocclusion，导致**新露出区域的内容坍塌**，说明扩散先验缺乏足够的
+inpainting 能力"（CamGeo, arXiv 2605.30895）；同类工作也记录了镜头一路移动时
+画面"从室内慢慢漂成室外"的场景漂移（Look Beyond, arXiv 2509.00843）。
 
 所以 `camera_en.move` 写摇/移之前，先问一句：这张底板的那个方向上真的有像素吗？
 没有就改成推/拉，或者干脆拆成两镜切机位。分镜表如果写了撑不起的运镜，

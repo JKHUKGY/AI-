@@ -20,6 +20,9 @@
   历史上《出狱后》ep01 有台词的 15 镜里"中文"出现 0 次，规则确立后从未回填，
   也没有任何校验——这一条就是补上那个缺口，见
   short-drama-video-gen/references/model_capability_ledger.md B4。
+- first_frame_strength 是不是全批都留成 1.0（完全焊死首帧）。官方第一阶段用
+  0.7，全程 1.0 是我们自己的选择，也是 ledger A3/A6 的疑似成因——给一条汇总
+  WARN 提醒先做 D4 的扫描，不阻塞提交。
 - seed 是否填了、以及是不是留成了 LTX `--seed` 的默认值 10。留成默认值等于
   没指定，不改提示词重跑会原地复现，"换种子再试一次"这条杠杆完全失效
   （历史上 ep01 缺 9/22、ep02 缺 19/19），见 ledger B3。
@@ -353,6 +356,17 @@ def main():
         errors, warnings = check_job(job, i, cards)
         all_errors += errors
         all_warnings += warnings
+
+    # 首帧强度：全批都是 1.0 时给一条汇总提示（逐条提太吵）
+    strengths = {float(j.get("first_frame_strength", 1.0)) for j in jobs}
+    if strengths == {1.0}:
+        all_warnings.append(
+            "本批 %d 条 job 的 first_frame_strength 全是 1.0（完全焊死首帧）。"
+            "官方 I2V 工作流第一阶段用的是 0.7（留给自然运动的空间），"
+            "全程 1.0 是我们自己的选择，而且是 ledger A3「人物不动」/ A6「背景"
+            "像素级冻住」的疑似成因。这不阻塞提交，但 D4 那组 0.7-0.95 的扫描"
+            "还没做——正式跑整集之前先花一镜做掉它" % len(jobs)
+        )
 
     print(f"共校验 {len(jobs)} 条 job")
 

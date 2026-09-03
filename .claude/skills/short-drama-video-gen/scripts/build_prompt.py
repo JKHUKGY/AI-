@@ -341,7 +341,17 @@ def build_prompt(card, lang="en"):
     if tail:
         tail = tail.rstrip(".。") + ("." if lang == "en" else "。")
 
-    blocks = [head_text] + beat_texts + ([tail] if tail else [])
+    # 保持不变的东西：排在节拍之后、风格尾块之前。
+    # 依据是 I2V 通用五要素的第 3 条"say what must stay unchanged"，以及
+    # OpenAI 侧同样的 preservation 约束——两边都要求把"不变量"显式点名。
+    preserve = (card.get("preserve_en" if lang == "en" else "preserve_zh") or "").strip()
+    if preserve:
+        prefix = "Throughout the shot, " if lang == "en" else "整段之内，"
+        preserve = prefix + preserve.rstrip(".。") + ("." if lang == "en" else "。")
+
+    blocks = ([head_text] + beat_texts
+              + ([preserve] if preserve else [])
+              + ([tail] if tail else []))
     return "\n\n".join(b for b in blocks if b)
 
 
@@ -390,6 +400,17 @@ def check_card(card, index, lang, tokenizer, cards_by_unit, cards_root):
             "摆烂，表现为人物姿态不动、只有镜头在动（见 model_capability_ledger.md）"
         )
 
+    # 保持不变的东西：I2V 通用五要素里的第 3 条，缺了模型就可能在中途改人/改景
+    if not (card.get("preserve_en" if lang == "en" else "preserve_zh") or "").strip():
+        warn(
+            f"`preserve_{lang}` 为空。图生视频的通用五要素里有一条是"
+            "**显式说明这一段里什么必须保持不变**（身份/服装/背景/构图）。"
+            "首帧只锁住第 0 帧，后面几秒会不会换人换景，靠的是这句话。"
+            "写成正向陈述，例如：her face, hairstyle and grey knit dress stay "
+            "exactly as in the first frame; the room behind her keeps the same "
+            "furniture, wall colour and window light"
+        )
+
     fp = card.get("first_frame")
     if fp:
         path = fp if os.path.isabs(fp) else os.path.join(cards_root, fp) if not os.path.exists(fp) else fp
@@ -411,6 +432,7 @@ def check_card(card, index, lang, tokenizer, cards_by_unit, cards_root):
         ("camera_en.framing_path", cam.get("framing_path")),
         ("camera_en.move", cam.get("move")),
         ("subject_lock_en", card.get("subject_lock_en")),
+        ("preserve_en", card.get("preserve_en")),
         ("style_tail_en", card.get("style_tail_en")),
     ]
     for i, b in enumerate(beats):
@@ -426,6 +448,7 @@ def check_card(card, index, lang, tokenizer, cards_by_unit, cards_root):
         negation_targets += [
             ("camera_zh.rig", cam_zh.get("rig")),
             ("subject_lock_zh", card.get("subject_lock_zh")),
+            ("preserve_zh", card.get("preserve_zh")),
             ("style_tail_zh", card.get("style_tail_zh")),
         ]
         for i, b in enumerate(beats):

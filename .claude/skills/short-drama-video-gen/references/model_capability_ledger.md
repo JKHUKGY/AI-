@@ -72,6 +72,10 @@ prompt_v1.txt` 给"今天……我们……只能活一个。"（9 字，语气�
 
 ### A3. 首帧被 strength 1.0 焊死，欠描述的动作会导致"人物没在动"
 
+> ⚠️ **2026-09：这条很可能不是"做不到"，是我们参数用错了。**
+> 官方 I2V 工作流第一阶段用的是 **strength 0.7**（"留给自然运动的空间"），
+> 全程 1.0 是我们自己的选择。先做 D4 那组 A/B，再决定这条留不留在 A 组。
+
 **现象**：`--image <path> 0 1.0` 把首帧完全锁定。如果提示词的动作描述笼统，
 模型只会移动镜头，人物姿态焊死在首帧上。
 
@@ -129,10 +133,12 @@ LoRA，需要额外权重和不同调用方式，**本仓库还没接**。
 
 ### A6. 单镜内背景像素级冻住（首帧 strength 1.0 的直接后果）
 
+> ⚠️ **同 A3：先做 D4 的 strength 扫描再下结论。** 官方默认不是全程 1.0。
+
 **现象**：一段视频里除了人物的手和脸，**背景完全不动**——不是"动得很小"，是像素级一致。
 
-**证据**：`output/出狱后我成为了非洲矿王/videos/ep02/_frames_check/ep02_镜04/`
-的 `frame00.png` 和 `frame04.png`：吊灯、门洞、台灯、桌上餐具、地面反光全部逐像素相同，
+**证据**：从 `output/出狱后我成为了非洲矿王/videos/ep02/ep02_镜04.mp4`
+抽出的第 0 帧和第 4 帧（原抽帧目录已清理，用 ffmpeg 重抽可复现）：吊灯、门洞、台灯、桌上餐具、地面反光全部逐像素相同，
 只有刘兰的右手从伸出变成放下、表情从皱眉变成张嘴。
 
 **成因**：`--image <path> 0 1.0` 把首帧完全锁死，加上 `distilled` 只有 8 步、CFG=1，
@@ -207,21 +213,34 @@ A3 靠把动作写成可见位移解决了，A6 解决不了——因为背景�
 
 ## B. 参数层面的硬事实
 
-### B1. 没有 `--negative-prompt`
+### B1. distilled 跑在 CFG=1，所以没有（也不可能有）`--negative-prompt`
 
 `ltx_pipelines.distilled` 和 `dfr_pipeline` **都没有这个参数，它根本不存在**。
 
 **证据**：远程 `python -m ltx_pipelines.distilled --help` 实测确认。
 
-**代价已经付过了**：41/41 条历史 job 都写了长长的
-`negative_prompt`，其中《出狱后》ep01 镜18 还专门为它跑了 3 轮 GPU。
+**成因（2026-09 补，来自官方文档，措辞比原来精确）**：不是"LTX-2.5 不支持负面
+提示词"，而是**我们选的这条管线跑在无引导模式下**——官方原话是
+"Distilled inference … runs **unguided (guidance_scale=1.0, so `negative_prompt`
+is unused)**"。CFG=1 时负面条件根本不参与计算，所以这个参数没有意义，也就没暴露。
 
-**装配时怎么做**：
+**这意味着它是个选择，不是天花板。** 想要负面提示词有两条出路（都没实测过）：
+- 换成带引导的管线：`TI2VidTwoStagesPipeline` 一类支持 CFG + STG，
+  有 `--negative-prompt`。代价是速度和显存（要跑 cond/uncond 两条前向）。
+- 在 CFG=1 下用 NAG（normalized attention guidance）一类的补丁注入负面条件。
+
+**但先别急着换**：官方同时说明**`cfg_scale` 调高会提升提示词贴合度、
+降低运动自然度**（见 D6）。我们目前的主要故障是"人物不动"，加引导可能加重它。
+
+**装配时怎么做（不变）**：
 - `video_jobs.json` 的 `negative_prompt` 由脚本写成固定的存档说明，不再逐镜手写。
 - 想排除的东西按 `video_prompt_guide.md`「否定→正向改写表」改写成**正向陈述**，
   改写不了的（字幕/水印这类）**直接删掉**——写进正向提示词只会把"字幕"这个
   概念注入文本编码器。
 - 脚本硬拦 `*_en` / `*_zh` 字段里的否定词。
+
+**代价已经付过了**：41/41 条历史 job 都写了长长的
+`negative_prompt`，其中《出狱后》ep01 镜18 还专门为它跑了 3 轮 GPU。
 
 ### B2. Gemma tokenizer ~1024 token 上限，超了**静默截尾**
 
@@ -283,6 +302,98 @@ A3 靠把动作写成可见位移解决了，A6 解决不了——因为背景�
 | fps | 固定 24，**没有 `--fps` 参数** | `--help` |
 | `--enhance_prompt` | **不要用** | `ltx_pipeline_gotchas.md` |
 | VAE | 用 conv VAE；natten diffusion VAE 在 Blackwell(cc 12.0) 解码时 `CUBLAS_STATUS_INTERNAL_ERROR` | 实测 |
+
+---
+
+### B6. 每次调用 CLI 都要重新加载 67GB 权重，加载比生成贵得多
+
+**现象**：`ltx_ssh_submit.py` 是 `for job in jobs:` 逐个起独立 ssh + 独立
+`python -m ltx_pipelines.distilled` 进程，**每个镜头都完整重新加载一次模型**。
+
+**实测**（RunPod A100-SXM4-80GB，Network Volume 挂 `/workspace`，2026-09-02）：
+
+| | 耗时 |
+|---|---|
+| 单镜端到端 | **约 14 分钟** |
+| 其中模型加载 | **约 12 分钟** |
+| 其中实际生成（81 帧 @704×1280） | 1-3 分钟 |
+
+瓶颈**不是网络**：加载过程中网卡 RX 为 0 MB/s（权重已在 page cache），
+显存以约 **92 MB/s** 增长，卡在 CPU→显存的搬运上。进程状态是 `D`
+（不可中断睡眠）、`wchan` 为 `folio_wait_bit_common` / `request_wait_answer`，
+是 mmap 缺页 + FUSE 等待。
+
+**注意别用错测量方法**：权重是 mmap 进来的，`/proc/<pid>/io` 的 `rchar`
+和 `read_bytes` **都测不出真实吞吐**（页错误不走 read() 系统调用），
+我第一次就是这么误判成"0.2 MB/s、要跑 95 小时"的。正确的观测量是
+`nvidia-smi` 的显存增长速度和网卡 `rx_bytes`。
+
+**代价**：一集 27 镜串行 ≈ 6.8 小时 ≈ **$11（按 $1.59/hr）**，其中约八成
+是重复加载同一个模型。集数越多这个浪费越大。
+
+**做法**：用 `short-drama-ltx-generate/scripts/ltx_batch.py`——它严格镜像
+`ltx_pipelines/distilled.py` 的 `main()`，唯一区别是 `DistilledPipeline(...)`
+只构造一次，然后对每个 job 调一次 `pipeline(...)` + `encode_video(...)`。
+argv 直接复用 `ltx_ssh_submit.py` 的 `build_remote_cmd()` 生成，不自己重新
+实现 `model_paths`/`images` 的解析。
+
+**一个必踩的坑**：`resolve_cli_params()` 会去读 `sys.argv` 判断是 monolith
+还是 split checkpoint，所以批量脚本必须先
+`sys.argv = [sys.argv[0]] + jobs[0]["argv"]` 再建 parser，否则报
+`Missing --distilled-checkpoint-path (monolith) or --transformer-path (split)`。
+
+---
+
+### B7. 80GB 卡上 ≥217 帧必 OOM，除非加 `--offload cpu`
+
+**实测**（RunPod A100-SXM4-80GB，704×1280，2026-09-02）：
+
+| 帧数 | 不加 offload | 加 `--offload cpu` |
+|---|---|---|
+| 81 / 121 帧 | ✅ 正常 | ✅ |
+| 241 帧（镜25）| ❌ CUDA OOM | — |
+| 249 帧（镜14）| ❌ CUDA OOM | ✅ **5 分钟跑通** |
+
+不加 offload 时权重独占约 **66GB 显存**，80GB 的卡只剩 13GB 放 latent，
+长镜头装不下。加了之后权重层层流式送入、**显存只占约 465 MiB**
+（`OffloadMode.CPU` 的文档写的是 ~5GB VRAM + ~36GB RAM）。
+
+**这条不与 C2 矛盾**：C2 那次 361 帧跑通用的是 **96GB 的 RTX PRO 6000**。
+**显存 80GB vs 96GB 就是过与不过的分界**，换卡前先按帧数算一遍。
+
+**附带好处**：`--offload cpu` 的文档写明
+"First pass reads from disk; subsequent passes reuse the CPU cache"，
+所以它同时缓解 B6 那条重复加载——实测带 offload 的 249 帧单镜端到端 **5 分钟**，
+比不带 offload 的 81 帧单镜（14 分钟）还快。
+
+**装配时怎么做**：`ltx_remote_config.json` 的 `pipeline_extra_args` 里加
+`["--offload", "cpu"]`。80GB 及以下的卡建议**无条件加**，代价很小。
+
+---
+
+### A8. 「推/拉」运镜会冲过头，而脸部漂移就集中在冲过头那一段
+
+**现象**：写了 `push-in` 的镜头，成片的景别弧线是
+**起幅 → 冲过头到大特写 → 再回落到设计的落幅**，不是单调推进。
+而人物**脸部漂移正好发生在冲过头那一段**——回落之后脸又变回来了。
+
+**证据**：《出狱后》ep03 两镜独立复现，同一条弧线：
+- 镜01（中景→胸部以上近景，81帧）：frame00 全身 → frame02 大特写且脸明显变方变胖 → frame04 回落
+- 镜14（中景→胸部以上近景，249帧）：frame00 全身 → frame02 大特写且**不是同一张脸** → frame04 回到接近基准
+
+**成因推断**：首帧只有 704×1280，撑不起大特写需要的细节密度，
+模型必须现编五官——`subject_lock_en` 锁不住这种"无中生有"。
+
+**装配时怎么做**：在 `camera_en.framing_path` 里把落幅**说死**：
+
+> `opens on a medium shot and tightens **only as far as** a chest-up close-up,
+> **then holds at that size** for the rest of the take`
+
+关键是 `only as far as` + `then holds at that size` 这两个短语。
+**不要写"避免推太近"** —— 那是否定句，`build_prompt.py` 会拦，
+而且 ledger B1 说明了否定句只会把概念注入编码器。
+
+⚠️ **这条修法本身还没验证**（ep03 的 6 个运镜镜头改完后的重跑结果出来再回填）。
 
 ---
 
@@ -366,12 +477,31 @@ python3 $S output/雪山决斗/videos/shot01/shot_cards.json --lang zh \
 
 ### D4. `first_frame_strength` < 1.0 到底能不能让画面松动
 
-**状态**：**未实测**。`ltx_ssh_submit.py` 以前把首帧强度硬编码成 `1.0`，
-2026-09 改成读 job 的 `first_frame_strength`（**默认仍是 1.0，不改现有行为**），
-只是让这个实验做得了。
+**状态**：**未实测，但 2026-09 找到了官方先验，优先级提到最高。**
+`ltx_ssh_submit.py` 以前把首帧强度硬编码成 `1.0`，现在改成读 job 的
+`first_frame_strength`（**默认仍是 1.0，不改现有行为**），只是让这个实验做得了。
 
 `--image` 的真实格式是 `PATH FRAME_IDX STRENGTH [CRF]`（`--help` 确认），
 强度本来就是可调的，本仓库从来没试过 1.0 以外的值。
+
+**官方先验（LTX 官方 I2V 文档）**：官方工作流是**两阶段"先松后紧"**——
+第一阶段用 **strength 0.7** 注入源图，原话是"establishing the starting point
+while **leaving room for natural motion**"；第二阶段在全分辨率时才用 1.0 重新
+注入以保住细节。
+
+> **也就是说我们目前的做法（全程 1.0）等于只保留了官方的"紧"，把官方专门
+> 留给运动的那一段空间去掉了。A3「人物不动」和 A6「背景像素级冻住」很可能
+> 就是这么来的。**
+
+口径差异要注意：官方那个 0.7 是**管线内部两阶段**的第一阶段强度，我们的 CLI
+只有一个 `--image PATH 0 STRENGTH`、没有第二阶段重注入，所以不是照抄 0.7，
+而是在 0.7–0.95 之间扫。
+
+**另一条相关杠杆（同样未实测）**：官方代码里图片条件化有两种实现——
+`image_conditionings_by_replacing_latent`（替换，我们在用）和
+`image_conditionings_by_adding_guiding_latent`（**加性引导**，
+`KeyframeInterpolationPipeline` 在用）。前者是"这一帧就是它"，后者是"往这个
+方向靠"。如果调 strength 的权衡点不理想，下一个该试的是换成引导式条件化。
 
 **验证方案**：同一张首帧、同一 seed、同一提示词、测试档分辨率，跑三条：
 `first_frame_strength` = `1.0` / `0.95` / `0.85`。抽 5 帧看两件事：
@@ -406,11 +536,30 @@ python3 $S output/雪山决斗/videos/shot01/shot_cards.json --lang zh \
 `dfr_pipeline` 需要 `--detailing-lora`（**单独 gated 的 HF 仓库**，要另外
 申请授权）。
 
+### D6. 换带引导的管线时，`cfg_scale` 该给多少（官方给了区间和取舍）
+
+**状态**：未实测，只是把官方口径记下来，等真要换管线时不用重查。
+
+【官方 `multimodal-guidance.md`】各参数典型区间：
+`cfg_scale` 2.0–5.0（1.0 = 关闭）、`stg_scale` 0.5–1.5（0.0 = 关闭）、
+`rescale_scale` 0.5–0.7（防过饱和）、`modality_scale` 视频+音频时用 3.0 左右、
+纯视频填 1.0。
+
+**关键取舍（原话）**：
+> "Higher `cfg_scale` increases prompt adherence but **reduces natural motion**;
+> higher `stg_scale` improves temporal coherence but requires extra forward passes."
+
+**对我们的含义**：CFG 调高 = 更贴文字但动作更僵。我们当前最大的问题恰恰是
+"人物不动"，所以**如果为了拿回负面提示词而换到带 CFG 的管线，要从区间下限
+（2.0）开始试，不要一上来就 4-5**，否则很可能把 A3 变得更严重。
+
+---
+
 ### D3. 时间轴式提示词（`0-2.5s:` 这种绝对时间前缀）到底有多少约束力
 
 **状态**：**只有一个 datapoint**。`output/雪山决斗/videos/shot01/prompt_v1.txt`
 用了 7 段绝对时间前缀，跑出了可用的 15 秒镜头
-（`xueshan_shot01.mp4`，`_frames_check/` 里的抽帧刻意加密在刺剑那 1.5 秒）。
+（`xueshan_shot01.mp4`，当时的抽帧刻意加密在刺剑那 1.5 秒，抽帧目录已清理）。
 官方文档没有记载这个格式。
 
 `build_prompt.py` 目前的策略：`duration_sec > 6` 用绝对时间前缀，

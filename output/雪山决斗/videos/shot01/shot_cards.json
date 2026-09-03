@@ -51,7 +51,8 @@
         "sfx_zh": "风雪声、她的呼吸声"
       }
     ],
-    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range; her face, hairstyle and red-and-black costume stay identical to the first frame all the way through",
+    "preserve_en": "her face, hairstyle and red-and-black costume stay identical to the first frame, and the snowfield behind her keeps the same ridgeline, snow depth and grey-blue light",
+    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range",
     "duration_sec": 5.7083,
     "fps": 24,
     "width": 1600,
@@ -120,7 +121,8 @@
         "sfx_en": "howling wind and driven snow"
       }
     ],
-    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range; her face, hairstyle and red-and-black costume stay identical to the first frame all the way through",
+    "preserve_en": "her face, hairstyle and red-and-black costume stay identical to the first frame, and the snowfield behind her keeps the same ridgeline, snow depth and grey-blue light",
+    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range",
     "duration_sec": 6.375,
     "fps": 24,
     "width": 1600,
@@ -202,7 +204,8 @@
         "sfx_en": "the blade tearing the air, rising sharply, then cutting to silence on the freeze"
       }
     ],
-    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range; her face, hairstyle and red-and-black costume stay identical to the first frame all the way through",
+    "preserve_en": "her face, hairstyle and red-and-black costume stay identical to the first frame, and the snowfield behind her keeps the same ridgeline, snow depth and grey-blue light",
+    "style_tail_en": "cinematic ultra-realistic wuxia, top-tier theatrical image quality, true skin texture with the natural flush of cold, cold grey-blue snowfield ambient light, real hair and cloth physics, snowfall with clear direction and volume, high dynamic range",
     "duration_sec": 5.7083,
     "fps": 24,
     "width": 1600,
