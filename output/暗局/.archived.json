@@ -1,0 +1,91 @@
+{
+  "project": "暗局",
+  "archived_at": "2026-09-03T07:12:41+00:00",
+  "remote": "gdrive:AI-短剧归档/暗局",
+  "volumes": {
+    "assets": {
+      "archive": "暗局__assets.tar.zst",
+      "archive_size": 29280791,
+      "archive_sha256": "7d8a18a678e31b3a1c6794b109797041f2ec02eaf83141a5cb5862c50f5be9cb",
+      "raw_size": 29464413,
+      "file_count": 15,
+      "files": [
+        {
+          "path": "assets/SC01_顶层露台派对/SC01_顶层露台派对_00.png",
+          "size": 2226935,
+          "sha256": "61a8b32beaa2c9719082121543b6d6b29727fab90817a7e5af723c0111185182"
+        },
+        {
+          "path": "assets/SC02_露台僻静角落/SC02_露台僻静角落_00.png",
+          "size": 1604110,
+          "sha256": "38c14937908b84a4506b7d9057ce90623cdb950bbd291cdb58d6e4cbcd32dccc"
+        },
+        {
+          "path": "assets/冷屿_派对造型_正面/冷屿_派对造型_正面_00.png",
+          "size": 1856024,
+          "sha256": "e6f7ee08a56133c543071ebc1291b7b36f5bb77e3d8b9fdc026dab9a35fc235b"
+        },
+        {
+          "path": "assets/冷屿_表情_当众轻蔑冷笑/冷屿_表情_当众轻蔑冷笑_00.png",
+          "size": 2017320,
+          "sha256": "4035b1ad241ac872a6c2a7cf4ba82bd04739ade6162d4b1ff36e1fae1e6be4a6"
+        },
+        {
+          "path": "assets/冷屿_表情_骤然色变/冷屿_表情_骤然色变_00.png",
+          "size": 2063495,
+          "sha256": "c2038d7c3ffaf89bf3ce20090daf9b4c2cc0da51b59a3fe9d301ba55b2bfa4f7"
+        },
+        {
+          "path": "assets/封景行_派对造型_正面/封景行_派对造型_正面_00.png",
+          "size": 1602815,
+          "sha256": "d9d5e856ab06ab0d127cfd715868e986f8528321d0c90364e2f6e464bfbd27c2"
+        },
+        {
+          "path": "assets/封景行_表情_挑衅得意笑/封景行_表情_挑衅得意笑_00.png",
+          "size": 1765661,
+          "sha256": "d80b22b8d868570047f9efcb585497a7f4b6ddeb63eb4c9b62fee0f639c16475"
+        },
+        {
+          "path": "assets/封景行_表情_骤然色变/封景行_表情_骤然色变_00.png",
+          "size": 1834801,
+          "sha256": "7e778b6d90acfed62215a8e4b6e24a674950f57959237f957925079ecf67f7d7"
+        },
+        {
+          "path": "assets/苏眠眠_派对造型_正面/苏眠眠_派对造型_正面_01.png",
+          "size": 2100801,
+          "sha256": "af3ddcdd50bf49af6bdd88e64a5db42c2f99e4af8d53a0dc01f8590887cf4d10"
+        },
+        {
+          "path": "assets/苏眠眠_表情_煽动起哄夸张笑/苏眠眠_表情_煽动起哄夸张笑_00.png",
+          "size": 2232884,
+          "sha256": "deaf687d9dc4a684fc07dc0ad21c7623d9c358b2fbd3bf2b202fd8d3a2c0b282"
+        },
+        {
+          "path": "assets/苏眠眠_表情_直播翻车错愕/苏眠眠_表情_直播翻车错愕_00.png",
+          "size": 2344504,
+          "sha256": "ca441b6825668fb7268c7bda2bcb4b9d4ca18f5a5fc0db3515a78273112108c5"
+        },
+        {
+          "path": "assets/陆晚_伪装期_正面/陆晚_伪装期_正面_01.png",
+          "size": 1820292,
+          "sha256": "97fda17aa2ace2b680b837c8f33e4784603b6f7abd1103b92338eb1002915663"
+        },
+        {
+          "path": "assets/陆晚_伪装期_转身背影/陆晚_伪装期_转身背影_00.png",
+          "size": 1744998,
+          "sha256": "1735e38d6140a758eef222aacac6a8a9284e0c8f238a8ff87bbf3d770fe21986"
+        },
+        {
+          "path": "assets/陆晚_表情_强忍泪水/陆晚_表情_强忍泪水_00.png",
+          "size": 2181338,
+          "sha256": "97bbc840d33cf2a3ceee18048d117ddf7ec9b423631d5824fedafc878fcaa066"
+        },
+        {
+          "path": "assets/陆晚_表情_转折冷笑/陆晚_表情_转折冷笑_00.png",
+          "size": 2068435,
+          "sha256": "751149df754d3c1a7e2209568b091445a1bbb2a873231eb955d26ffff80404df"
+        }
+      ]
+    }
+  }
+}

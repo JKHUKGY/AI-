@@ -22,7 +22,7 @@
   short-drama-video-gen/references/model_capability_ledger.md B4。
 - first_frame_strength 是不是全批都留成 1.0（完全焊死首帧）。官方第一阶段用
   0.7，全程 1.0 是我们自己的选择，也是 ledger A3/A6 的疑似成因——给一条汇总
-  WARN 提醒先做 D4 的扫描，不阻塞提交。
+  first_frame_strength 偏离实测确认的默认值 1.0 时给 WARN（ledger D4 已结案）。
 - seed 是否填了、以及是不是留成了 LTX `--seed` 的默认值 10。留成默认值等于
   没指定，不改提示词重跑会原地复现，"换种子再试一次"这条杠杆完全失效
   （历史上 ep01 缺 9/22、ep02 缺 19/19），见 ledger B3。
@@ -326,11 +326,24 @@ def check_job(job, index, cards=None):
         except (KeyError, TypeError):
             expected = None
         if expected is not None and expected.strip() != prompt_text.strip():
-            errors.append(
-                f"[{label}] `prompt` 和镜头卡 `{job['shot_card_id']}` 的装配结果"
-                "不一致——说明有人手改了 video_jobs.json。改提示词要回去改卡的"
-                "字段再重跑 build_prompt.py，手改的内容下次装配会被冲掉"
-            )
+            # 探针/对照组是**故意**偏离镜头卡的，但必须在文件里写明理由——
+            # 声明了就降级成 WARN，没声明就是有人手改了 JSON。
+            variant = (job.get("prompt_variant") or "").strip()
+            if variant:
+                warnings.append(
+                    f"[{label}] `prompt` 和镜头卡 `{job['shot_card_id']}` 的装配"
+                    f"结果不一致，但声明了 `prompt_variant`：{variant}。"
+                    "确认这是探针/对照组而不是正式镜头——**正式提交的 job 不许带"
+                    "这个字段**，改提示词要回去改卡再重跑 build_prompt.py"
+                )
+            else:
+                errors.append(
+                    f"[{label}] `prompt` 和镜头卡 `{job['shot_card_id']}` 的装配结果"
+                    "不一致——说明有人手改了 video_jobs.json。改提示词要回去改卡的"
+                    "字段再重跑 build_prompt.py，手改的内容下次装配会被冲掉。"
+                    "如果这是**故意**偏离的探针/对照组，在 job 上加 "
+                    "`prompt_variant` 字段写明理由"
+                )
 
     return errors, warnings
 
@@ -357,15 +370,18 @@ def main():
         all_errors += errors
         all_warnings += warnings
 
-    # 首帧强度：全批都是 1.0 时给一条汇总提示（逐条提太吵）
+    # 首帧强度：1.0 是**实测确认过**的正确默认值，只在有人改动它时才提示。
+    # 2026-09-04 已对镜14 跑完 1.0/0.95/0.85 三档扫描（ledger D4 已结案）：
+    # 三档之间没有可观察差异（各抽帧与首帧的像素差相差 <0.5，全在噪声里），
+    # 调低既不让画面松动、又白白损失首帧保真度，所以保持 1.0。
     strengths = {float(j.get("first_frame_strength", 1.0)) for j in jobs}
-    if strengths == {1.0}:
+    off_default = sorted(x for x in strengths if x != 1.0)
+    if off_default:
         all_warnings.append(
-            "本批 %d 条 job 的 first_frame_strength 全是 1.0（完全焊死首帧）。"
-            "官方 I2V 工作流第一阶段用的是 0.7（留给自然运动的空间），"
-            "全程 1.0 是我们自己的选择，而且是 ledger A3「人物不动」/ A6「背景"
-            "像素级冻住」的疑似成因。这不阻塞提交，但 D4 那组 0.7-0.95 的扫描"
-            "还没做——正式跑整集之前先花一镜做掉它" % len(jobs)
+            "本批有 job 的 first_frame_strength 不是 1.0（出现了 %s）。"
+            "ledger D4 已经实测结案：在本管线上 0.85-1.0 之间没有可观察差异，"
+            "调低不会让画面松动，只会掉首帧保真度。除非你在做新的对照实验，"
+            "否则保持 1.0。" % ", ".join(str(x) for x in off_default)
         )
 
     print(f"共校验 {len(jobs)} 条 job")

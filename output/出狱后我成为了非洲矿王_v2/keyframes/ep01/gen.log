@@ -1,0 +1,1700 @@
+  [警告] codex 退出码 1
+sh level.
+- Use camera/composition language for photorealism.
+- Only use SVG/vector stand-ins when the user explicitly asked for vector output or a non-image placeholder.
+- Quote exact text and specify typography + placement.
+- For tricky words, spell them letter-by-letter and require verbatim rendering.
+- For multi-image inputs, reference images by index and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+
+codex
+首版人物与场景匹配良好，但下缘露出了鞋、顶部留白也偏多；我正在按指定裁切做一次定向修正。
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+tokens used
+25,045
+
+  [警告][ep01_镜12] 未生成 ep01_镜12_01.png，重试一次...
+  [警告] codex 退出码 1
+体朝画面右侧，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线锁在陈野的脸上；背对镜头站着不动，只有肩膀随呼吸起伏；全程保持静止，只是听着——肩膀随呼吸缓慢起伏。
+【人物关系】陈野的大动作撞上江砚的不动，落差就是这一镜的内容。
+【光线】赤道正午顶光，人物头顶与肩线是硬高光、眼窝压在阴影里，红土地面的反光把下颌打亮一点。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜12/ep01_镜12_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:05.218081Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664b-e497-7931-9b01-7cdb1c841c7f.tmp-1788422644897386116: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜12] ep01_镜12_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+身体朝画面右侧，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线锁在陈野的脸上；背对镜头站着、正要转身朝画面右侧纵深处的越野车走；刚点了一次头，右肩已经开始朝画面右侧转动。
+【道具】画面右侧纵深端停着那辆沾满红土的深色越野车。
+【光线】赤道正午顶光，人物头顶与肩线是硬高光、眼窝压在阴影里，红土地面的反光把下颌打亮一点。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜15/ep01_镜15_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:08.182099Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664b-f04c-7ad3-93f5-ab9551e030d7.tmp-1788422647895110517: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜15] 未生成 ep01_镜15_01.png，重试一次...
+  [警告] codex 退出码 1
+(ad, UI mock, infographic) to set the mode and polish level.
+- Use camera/composition language for photorealism.
+- Only use SVG/vector stand-ins when the user explicitly asked for vector output or a non-image placeholder.
+- Quote exact text and specify typography + placement.
+- For tricky words, spell them letter-by-letter and require verbatim rendering.
+- For multi-image inputs, reference images by index and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+tokens used
+21,446
+
+  [警告][ep01_镜14] 未生成 ep01_镜14_01.png，重试一次...
+  [警告] codex 退出码 1
+(ad, UI mock, infographic) to set the mode and polish level.
+- Use camera/composition language for photorealism.
+- Only use SVG/vector stand-ins when the user explicitly asked for vector output or a non-image placeholder.
+- Quote exact text and specify typography + placement.
+- For tricky words, spell them letter-by-letter and require verbatim rendering.
+- For multi-image inputs, reference images by index and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+tokens used
+13,698
+
+  [警告][ep01_镜14] 未生成 ep01_镜14_02.png，重试一次...
+  [警告] codex 退出码 1
+身体朝画面右侧，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线锁在陈野的脸上；背对镜头站着、正要转身朝画面右侧纵深处的越野车走；刚点了一次头，右肩已经开始朝画面右侧转动。
+【道具】画面右侧纵深端停着那辆沾满红土的深色越野车。
+【光线】赤道正午顶光，人物头顶与肩线是硬高光、眼窝压在阴影里，红土地面的反光把下颌打亮一点。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜15/ep01_镜15_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:11.371480Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664b-fc35-7240-a52c-b9cd1565763d.tmp-1788422650950608895: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜15] ep01_镜15_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+近镜头的近端（因此比其他人更大、更靠画面下缘）；身体朝画面左侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面左侧的画外；站定、脊背笔直，头刚从摇过的位置停住；视线抬起看住画面左侧；说到最后两个字时下颌抬起约五度——这是他全集第一次抬下巴。
+【光线】正午顶光，脸的上半部压在阴影里、下颌与颧骨是亮的；背景过曝发白，把人物轮廓衬出来。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜14/ep01_镜14_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:12.967304Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-0213-7f73-bb6e-85be66bf2ea2.tmp-1788422652455978874: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜14] ep01_镜14_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+近镜头的近端（因此比其他人更大、更靠画面下缘）；身体朝画面左侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面左侧的画外；站定、脊背笔直，头刚从摇过的位置停住；视线抬起看住画面左侧；说到最后两个字时下颌抬起约五度——这是他全集第一次抬下巴。
+【光线】正午顶光，脸的上半部压在阴影里、下颌与颧骨是亮的；背景过曝发白，把人物轮廓衬出来。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜14/ep01_镜14_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:14.908685Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-09c1-7901-994f-403af8f4e1c2.tmp-1788422654417954846: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜14] ep01_镜14_02.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+米，朝向到达厅出口方向拍摄（A主机位））。
+【景别与裁切】全景；画面里最靠前的主体从头顶到画面底边占画幅高度约30%；空镜：画面里没有人物；挑檐的硬阴影带横切画面中段，底边保留一段被晒得反光的地面；基本保留底板的完整取景（本镜是空镜定场），只把底板下缘的地面裁掉一条。
+【道具】画面右侧停着几辆黄色出租车与一辆白色小巴；远处一个空白的大型广告牌骨架与一排棕榈树。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、场景陈设与场景参考图不符、多余人物、画面里出现任何人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:15.480980Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-0c74-72f1-bd54-ca55b21bcbdd.tmp-1788422655134512539: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜16] 未生成 ep01_镜16_00.png，重试一次...
+  [警告] codex 退出码 1
+米，朝向到达厅出口方向拍摄（A主机位））。
+【景别与裁切】全景；画面里最靠前的主体从头顶到画面底边占画幅高度约30%；空镜：画面里没有人物；挑檐的硬阴影带横切画面中段，底边保留一段被晒得反光的地面；基本保留底板的完整取景（本镜是空镜定场），只把底板下缘的地面裁掉一条。
+【道具】画面右侧停着几辆黄色出租车与一辆白色小巴；远处一个空白的大型广告牌骨架与一排棕榈树。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、场景陈设与场景参考图不符、多余人物、画面里出现任何人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:16.801340Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-112a-7851-a835-08642350f3d8.tmp-1788422656306033264: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜16] 未生成 ep01_镜16_01.png，重试一次...
+  [警告] codex 退出码 1
+曝的亮光里；左手扶着半旧行李箱的拉杆、背上一只深色登山包，右手把一张写着地址的纸条举到胸前；头转向画面右侧四处张望；左手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱；一只深色登山包背在肩上；右手举着一张写着地址的小纸条。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜17/ep01_镜17_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:18.438269Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-17f0-7283-9306-72a692146069.tmp-1788422658044887763: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜17] 未生成 ep01_镜17_00.png，重试一次...
+  [警告] codex 退出码 1
+米，朝向到达厅出口方向拍摄（A主机位））。
+【景别与裁切】全景；画面里最靠前的主体从头顶到画面底边占画幅高度约30%；空镜：画面里没有人物；挑檐的硬阴影带横切画面中段，底边保留一段被晒得反光的地面；基本保留底板的完整取景（本镜是空镜定场），只把底板下缘的地面裁掉一条。
+【道具】画面右侧停着几辆黄色出租车与一辆白色小巴；远处一个空白的大型广告牌骨架与一排棕榈树。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、场景陈设与场景参考图不符、多余人物、画面里出现任何人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:19.406616Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-1b57-7550-befa-a8635ef81eb8.tmp-1788422658913353973: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜16] ep01_镜16_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+米，朝向到达厅出口方向拍摄（A主机位））。
+【景别与裁切】全景；画面里最靠前的主体从头顶到画面底边占画幅高度约30%；空镜：画面里没有人物；挑檐的硬阴影带横切画面中段，底边保留一段被晒得反光的地面；基本保留底板的完整取景（本镜是空镜定场），只把底板下缘的地面裁掉一条。
+【道具】画面右侧停着几辆黄色出租车与一辆白色小巴；远处一个空白的大型广告牌骨架与一排棕榈树。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、场景陈设与场景参考图不符、多余人物、画面里出现任何人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:20.077252Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-1db7-7ae0-b784-d29516cee690.tmp-1788422659525446685: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜16] ep01_镜16_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+曝的亮光里；左手扶着半旧行李箱的拉杆、背上一只深色登山包，右手把一张写着地址的纸条举到胸前；头转向画面右侧四处张望；左手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱；一只深色登山包背在肩上；右手举着一张写着地址的小纸条。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜17/ep01_镜17_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:22.318576Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-265b-70c0-9e0e-f986f183eb89.tmp-1788422661751921680: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜17] ep01_镜17_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+曝的亮光里；左手扶着半旧行李箱的拉杆、背上一只深色登山包，右手把一张写着地址的纸条举到胸前；头转向画面右侧四处张望；左手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱；一只深色登山包背在肩上；右手举着一张写着地址的小纸条。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜17/ep01_镜17_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:23.081021Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-296f-7b80-b6ed-bdb87081b5f3.tmp-1788422662524636948: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜17] 未生成 ep01_镜17_01.png，重试一次...
+  [警告] codex 退出码 1
+侧的画外；背对镜头站着、肩上挂着登山包，只看得到后脑、右肩和一点侧脸轮廓；头缓慢转向画面左侧（看向出租车方向）、又转回来看向纵深端的公路；只有头颈在动，身体保持静止。
+【道具】画面左侧停着几辆黄色出租车；肩上一只深色登山包。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜18/ep01_镜18_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:23.737335Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-2bd6-7f52-81df-2747b705fff1.tmp-1788422663155331299: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜18] 未生成 ep01_镜18_00.png，重试一次...
+  [警告] codex 退出码 1
+侧的画外；背对镜头站着、肩上挂着登山包，只看得到后脑、右肩和一点侧脸轮廓；头缓慢转向画面左侧（看向出租车方向）、又转回来看向纵深端的公路；只有头颈在动，身体保持静止。
+【道具】画面左侧停着几辆黄色出租车；肩上一只深色登山包。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜18/ep01_镜18_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:25.729331Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-3407-7570-a29f-85fa3bde7ffb.tmp-1788422665265037215: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜18] 未生成 ep01_镜18_01.png，重试一次...
+  [警告] codex 退出码 1
+曝的亮光里；左手扶着半旧行李箱的拉杆、背上一只深色登山包，右手把一张写着地址的纸条举到胸前；头转向画面右侧四处张望；左手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱；一只深色登山包背在肩上；右手举着一张写着地址的小纸条。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜17/ep01_镜17_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:26.505315Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-36a2-7530-a7d8-c574c695c471.tmp-1788422666026092080: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜17] ep01_镜17_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+侧的画外；背对镜头站着、肩上挂着登山包，只看得到后脑、右肩和一点侧脸轮廓；头缓慢转向画面左侧（看向出租车方向）、又转回来看向纵深端的公路；只有头颈在动，身体保持静止。
+【道具】画面左侧停着几辆黄色出租车；肩上一只深色登山包。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜18/ep01_镜18_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:27.551787Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-3b5b-7010-8e12-2a59ab086ea7.tmp-1788422667135052134: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜18] ep01_镜18_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+侧的画外；背对镜头站着、肩上挂着登山包，只看得到后脑、右肩和一点侧脸轮廓；头缓慢转向画面左侧（看向出租车方向）、又转回来看向纵深端的公路；只有头颈在动，身体保持静止。
+【道具】画面左侧停着几辆黄色出租车；肩上一只深色登山包。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜18/ep01_镜18_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:30.017542Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-4405-7651-9d1c-41fe7abb3fb3.tmp-1788422669348921947: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜18] ep01_镜18_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+抬起来要去接他的背包；眼眶发红、嘴微张正在说话；双手正落到他肩上的背包带子上；双手握在背包带子上。
+【人物关系】她比他急：她已经伸手去接他的东西，他只是刚转过身。
+【道具】江砚肩上那只深色登山包，苏慧的双手正落在它的带子上。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:30.097415Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-4558-7f93-9c3e-a14238bd92be.tmp-1788422669675191774: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜19] 未生成 ep01_镜19_00.png，重试一次...
+  [警告] codex 退出码 1
+抬起来要去接他的背包；眼眶发红、嘴微张正在说话；双手正落到他肩上的背包带子上；双手握在背包带子上。
+【人物关系】她比他急：她已经伸手去接他的东西，他只是刚转过身。
+【道具】江砚肩上那只深色登山包，苏慧的双手正落在它的带子上。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:31.538281Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-4a55-7e40-a4fd-684ceb392667.tmp-1788422670950866095: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜19] 未生成 ep01_镜19_01.png，重试一次...
+  [警告] codex 退出码 1
+着，只看得到侧脸轮廓与花白的鬓角；双手仍握着他的背包带子不放；双手握在背包带子上。
+【人物关系】他的视线一路往下：从她的脸→鬓角的白发→那双泡得发白的手。
+【道具】苏慧花白的鬓角与她握着背包带子的粗糙双手（本镜的视觉焦点）。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:34.970717Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-5687-7af1-88b7-a67ddc8aa8b4.tmp-1788422674074712524: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜20] 未生成 ep01_镜20_00.png，重试一次...
+  [警告] codex 退出码 1
+抬起来要去接他的背包；眼眶发红、嘴微张正在说话；双手正落到他肩上的背包带子上；双手握在背包带子上。
+【人物关系】她比他急：她已经伸手去接他的东西，他只是刚转过身。
+【道具】江砚肩上那只深色登山包，苏慧的双手正落在它的带子上。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:35.409416Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-5a28-7581-aed3-950c23fe25d8.tmp-1788422674998705222: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜19] ep01_镜19_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+抬起来要去接他的背包；眼眶发红、嘴微张正在说话；双手正落到他肩上的背包带子上；双手握在背包带子上。
+【人物关系】她比他急：她已经伸手去接他的东西，他只是刚转过身。
+【道具】江砚肩上那只深色登山包，苏慧的双手正落在它的带子上。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:37.012720Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-5f85-7343-96a0-bd239eb3d727.tmp-1788422676438068931: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜19] ep01_镜19_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+着，只看得到侧脸轮廓与花白的鬓角；双手仍握着他的背包带子不放；双手握在背包带子上。
+【人物关系】他的视线一路往下：从她的脸→鬓角的白发→那双泡得发白的手。
+【道具】苏慧花白的鬓角与她握着背包带子的粗糙双手（本镜的视觉焦点）。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:39.259363Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-6743-70f3-8ba9-7be107aa848d.tmp-1788422678380647388: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜20] ep01_镜20_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+着，只看得到侧脸轮廓与花白的鬓角；双手仍握着他的背包带子不放；双手握在背包带子上。
+【人物关系】他的视线一路往下：从她的脸→鬓角的白发→那双泡得发白的手。
+【道具】苏慧花白的鬓角与她握着背包带子的粗糙双手（本镜的视觉焦点）。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:39.907624Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-6b9f-7951-9cc7-c6a1071e3f76.tmp-1788422679488817690: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜20] 未生成 ep01_镜20_01.png，重试一次...
+  [警告] codex 退出码 1
+着，只看得到侧脸轮廓与花白的鬓角；双手仍握着他的背包带子不放；双手握在背包带子上。
+【人物关系】他的视线一路往下：从她的脸→鬓角的白发→那双泡得发白的手。
+【道具】苏慧花白的鬓角与她握着背包带子的粗糙双手（本镜的视觉焦点）。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:41.512581Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-701c-76b2-ba3a-d4e338a0854c.tmp-1788422680617184296: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜20] 未生成 ep01_镜20_02.png，重试一次...
+  [警告] codex 退出码 1
+投向画面右侧的画外；站定、上身微微前倾含肩，另一只手仍拎着江砚的背包带子；右手手背在眼下抹了一把，随即把嘴角强行拉起来笑了一下——这个笑比不笑更难看；视线先躲开、说到最后才抬起来。
+【道具】她另一只手还拎着江砚的登山包带子。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:43.254960Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-7873-7401-b506-311b64709f4b.tmp-1788422682752907623: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜21] 未生成 ep01_镜21_00.png，重试一次...
+  [警告] codex 退出码 1
+着，只看得到侧脸轮廓与花白的鬓角；双手仍握着他的背包带子不放；双手握在背包带子上。
+【人物关系】他的视线一路往下：从她的脸→鬓角的白发→那双泡得发白的手。
+【道具】苏慧花白的鬓角与她握着背包带子的粗糙双手（本镜的视觉焦点）。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:44.085269Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-7be6-7af2-a62c-da55ccc704dc.tmp-1788422683642010511: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜20] ep01_镜20_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+着，只看得到侧脸轮廓与花白的鬓角；双手仍握着他的背包带子不放；双手握在背包带子上。
+【人物关系】他的视线一路往下：从她的脸→鬓角的白发→那双泡得发白的手。
+【道具】苏慧花白的鬓角与她握着背包带子的粗糙双手（本镜的视觉焦点）。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:45.279201Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-800c-7732-95ae-f57875038a8f.tmp-1788422684765116765: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜20] ep01_镜20_02.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+ and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+
+codex
+技能将此任务按“多参考图人物身份保持 + 场景合成”处理：参考图1锁定机位与环境，参考图2、3分别锁定陈野和江砚的身份、体型与服装。现在开始生成单张成品。
+2026-09-03T08:04:46.687437Z ERROR codex_core::tools::router: error=image generation failed: http 429 Too Many Requests: Some("{\"error\":{\"type\":\"usage_limit_reached\",\"message\":\"The usage limit has been reached\",\"plan_type\":\"plus\",\"resets_at\":1788433334,\"eligible_promo\":null,\"resets_in_seconds\":10648}}")
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+tokens used
+25,427
+
+  [警告][ep01_镜15] 未生成 ep01_镜15_00.png，重试一次...
+  [警告] codex 退出码 1
+投向画面右侧的画外；站定、上身微微前倾含肩，另一只手仍拎着江砚的背包带子；右手手背在眼下抹了一把，随即把嘴角强行拉起来笑了一下——这个笑比不笑更难看；视线先躲开、说到最后才抬起来。
+【道具】她另一只手还拎着江砚的登山包带子。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:47.355855Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-8842-7461-b4a9-4cbd39e5c054.tmp-1788422686824295061: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜21] ep01_镜21_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:48.148955Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-8c36-71c1-bc82-2b39ba262b51.tmp-1788422687814113239: line 2547: syntax error near unexpected token `('
+
+2026-09-03T08:04:50.179541Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+2026-09-03T08:04:50.729574Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜21] 未生成 ep01_镜21_01.png，重试一次...
+  [警告] codex 退出码 1
+官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜22/ep01_镜22_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:49.637029Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+2026-09-03T08:04:49.971097Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-90d8-7872-b8fa-de928655f416.tmp-1788422689010703654: line 2547: syntax error near unexpected token `('
+
+2026-09-03T08:04:51.093278Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜22] 未生成 ep01_镜22_00.png，重试一次...
+  [警告] codex 退出码 1
+人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜15/ep01_镜15_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:50.152070Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+2026-09-03T08:04:50.190363Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-92f5-7913-b224-b1e0bfadb035.tmp-1788422689537505566: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜15] ep01_镜15_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜22/ep01_镜22_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:51.305436Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+2026-09-03T08:04:51.817251Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-976e-7ea1-9392-c721de23d329.tmp-1788422690725340554: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜22] 未生成 ep01_镜22_01.png，重试一次...
+  [警告] codex 退出码 1
+投向画面右侧的画外；站定、上身微微前倾含肩，另一只手仍拎着江砚的背包带子；右手手背在眼下抹了一把，随即把嘴角强行拉起来笑了一下——这个笑比不笑更难看；视线先躲开、说到最后才抬起来。
+【道具】她另一只手还拎着江砚的登山包带子。
+【光线】赤道白天强光；挑檐下是浓重深阴影、檐外地面过曝发亮，人物站在阴影与强光的分界线上时半个身子在暗部、半个在亮部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:54.540211Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-a279-7bc3-b250-c1588c433ac7.tmp-1788422693533149932: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜21] ep01_镜21_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+上方；站得笔直但双脚并得很拢、肩膀微微内收，从上往下只看得到头顶、肩线与后背；右手握着行李箱拉杆、把箱子往身侧挪近了一点，左手空着贴在裤缝上；右手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱立在他右手边。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物、画面里出现其他人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:55.245882Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-a5f1-7492-9116-a5d187ba48eb.tmp-1788422694426165066: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜23] 未生成 ep01_镜23_00.png，重试一次...
+  [警告] codex 退出码 1
+），左手拖着行李箱；头向上抬起、视线在挑高的天花与水晶吊灯上扫过；左手握在行李箱拉杆上。
+【人物关系】母亲已经转身往里引路，儿子还落在半步之后抬头看这栋房子——两个人的注意力不在同一处。
+【道具】一只半旧的深色行李箱被江砚拖着。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜22/ep01_镜22_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:55.041302Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-a4e1-79a0-8357-d4820b8da81e.tmp-1788422694130198924: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜22] ep01_镜22_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+），左手拖着行李箱；头向上抬起、视线在挑高的天花与水晶吊灯上扫过；左手握在行李箱拉杆上。
+【人物关系】母亲已经转身往里引路，儿子还落在半步之后抬头看这栋房子——两个人的注意力不在同一处。
+【道具】一只半旧的深色行李箱被江砚拖着。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜22/ep01_镜22_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:56.052616Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-aa33-7963-96f2-abd447395ea5.tmp-1788422695501778297: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜22] ep01_镜22_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+上方；站得笔直但双脚并得很拢、肩膀微微内收，从上往下只看得到头顶、肩线与后背；右手握着行李箱拉杆、把箱子往身侧挪近了一点，左手空着贴在裤缝上；右手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱立在他右手边。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物、画面里出现其他人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:58.577989Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-b374-7140-9a8d-579cedcd4e3f.tmp-1788422697861124432: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜23] 未生成 ep01_镜23_01.png，重试一次...
+  [警告] codex 退出码 1
+上方；站得笔直但双脚并得很拢、肩膀微微内收，从上往下只看得到头顶、肩线与后背；右手握着行李箱拉杆、把箱子往身侧挪近了一点，左手空着贴在裤缝上；右手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱立在他右手边。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物、画面里出现其他人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:04:59.591754Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-b7f3-7082-873f-1d65439f8fdb.tmp-1788422699008077828: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜23] ep01_镜23_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+上方；站得笔直但双脚并得很拢、肩膀微微内收，从上往下只看得到头顶、肩线与后背；右手握着行李箱拉杆、把箱子往身侧挪近了一点，左手空着贴在裤缝上；右手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱立在他右手边。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物、画面里出现其他人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:00.734784Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-bbec-7810-a1d6-4371709fccf6.tmp-1788422700036758875: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜23] 未生成 ep01_镜23_02.png，重试一次...
+  [警告] codex 退出码 1
+镜头，只看得到一侧脸的轮廓线；视线落在手机屏幕上；半躺在转角沙发靠南那一段、一条腿架在沙发扶手上；双手举着手机、拇指在划屏；**视线停在屏幕上、头都没抬**。
+【道具】刘兰手边的美甲用品（虚焦处理）；顾瑶手里一部亮着屏幕的手机。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜24/ep01_镜24_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:01.389156Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-bee6-7142-acd5-39c531a620e1.tmp-1788422700825117520: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜24] 未生成 ep01_镜24_00.png，重试一次...
+  [警告] codex 退出码 1
+上方；站得笔直但双脚并得很拢、肩膀微微内收，从上往下只看得到头顶、肩线与后背；右手握着行李箱拉杆、把箱子往身侧挪近了一点，左手空着贴在裤缝上；右手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱立在他右手边。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物、画面里出现其他人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:03.458070Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-c72c-75f2-b801-2618f18be5cc.tmp-1788422702934213760: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜23] ep01_镜23_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+镜头，只看得到一侧脸的轮廓线；视线落在手机屏幕上；半躺在转角沙发靠南那一段、一条腿架在沙发扶手上；双手举着手机、拇指在划屏；**视线停在屏幕上、头都没抬**。
+【道具】刘兰手边的美甲用品（虚焦处理）；顾瑶手里一部亮着屏幕的手机。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜24/ep01_镜24_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:04.950250Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-cad9-7ea3-b114-5e7b9b141087.tmp-1788422703870346398: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜24] 未生成 ep01_镜24_01.png，重试一次...
+  [警告] codex 退出码 1
+上方；站得笔直但双脚并得很拢、肩膀微微内收，从上往下只看得到头顶、肩线与后背；右手握着行李箱拉杆、把箱子往身侧挪近了一点，左手空着贴在裤缝上；右手握在行李箱拉杆上。
+【道具】一只半旧的深色行李箱立在他右手边。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物、画面里出现其他人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:05.940983Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-d075-7b60-9a6c-a7fa3014712e.tmp-1788422705281347085: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜23] ep01_镜23_02.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+镜头，只看得到一侧脸的轮廓线；视线落在手机屏幕上；半躺在转角沙发靠南那一段、一条腿架在沙发扶手上；双手举着手机、拇指在划屏；**视线停在屏幕上、头都没抬**。
+【道具】刘兰手边的美甲用品（虚焦处理）；顾瑶手里一部亮着屏幕的手机。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜24/ep01_镜24_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:06.655071Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-d3e9-7740-945d-4eedb59bd94f.tmp-1788422706170657766: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜24] ep01_镜24_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+处在画面中段纵深；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；上身微微前倾、含着肩，双手在围裙前交叠；脸上是那个撑起来的笑，视线朝画面右侧的沙发方向；说话时双手在围裙上无意识地擦了一下。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜25/ep01_镜25_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:08.236440Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-d983-75a2-a5a9-83a363b2dca4.tmp-1788422707605887682: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜25] 未生成 ep01_镜25_00.png，重试一次...
+  [警告] codex 退出码 1
+镜头，只看得到一侧脸的轮廓线；视线落在手机屏幕上；半躺在转角沙发靠南那一段、一条腿架在沙发扶手上；双手举着手机、拇指在划屏；**视线停在屏幕上、头都没抬**。
+【道具】刘兰手边的美甲用品（虚焦处理）；顾瑶手里一部亮着屏幕的手机。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜24/ep01_镜24_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:09.863725Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-dfab-7e21-96e0-1be8eb147d88.tmp-1788422709189891246: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜24] ep01_镜24_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+处在画面中段纵深；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；上身微微前倾、含着肩，双手在围裙前交叠；脸上是那个撑起来的笑，视线朝画面右侧的沙发方向；说话时双手在围裙上无意识地擦了一下。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜25/ep01_镜25_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:10.638670Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-e29d-7ca0-b918-3d26dca6a1ac.tmp-1788422709941804646: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜25] 未生成 ep01_镜25_01.png，重试一次...
+  [警告] codex 退出码 1
+在自己的指甲上；坐在沙发上、上身后靠、下巴始终抬着，右手抬在眼前；慢悠悠地又朝指甲吹了一口气；**只在说到「名牌大学毕业」时用眼角朝画面左侧扫了一下、随即收回**；嘴角向下。
+【道具】刚做好的精致美甲（画面里能看清指甲的光泽）。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:11.646070Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-e6e1-7503-8eea-2498aa909bf0.tmp-1788422711025721488: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜26] 未生成 ep01_镜26_00.png，重试一次...
+  [警告] codex 退出码 1
+处在画面中段纵深；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；上身微微前倾、含着肩，双手在围裙前交叠；脸上是那个撑起来的笑，视线朝画面右侧的沙发方向；说话时双手在围裙上无意识地擦了一下。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜25/ep01_镜25_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:13.119214Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-ecb8-7400-8166-5db1f68af9ba.tmp-1788422712522878627: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜25] ep01_镜25_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+在自己的指甲上；坐在沙发上、上身后靠、下巴始终抬着，右手抬在眼前；慢悠悠地又朝指甲吹了一口气；**只在说到「名牌大学毕业」时用眼角朝画面左侧扫了一下、随即收回**；嘴角向下。
+【道具】刚做好的精致美甲（画面里能看清指甲的光泽）。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:14.609474Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-f1e6-7693-beab-748a4a6180f9.tmp-1788422713907215954: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜26] 未生成 ep01_镜26_01.png，重试一次...
+  [警告] codex 退出码 1
+处在画面中段纵深；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；上身微微前倾、含着肩，双手在围裙前交叠；脸上是那个撑起来的笑，视线朝画面右侧的沙发方向；说话时双手在围裙上无意识地擦了一下。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜25/ep01_镜25_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:15.491186Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-f58e-75f1-8bd3-554b15073e87.tmp-1788422714780257639: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜25] ep01_镜25_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+在自己的指甲上；坐在沙发上、上身后靠、下巴始终抬着，右手抬在眼前；慢悠悠地又朝指甲吹了一口气；**只在说到「名牌大学毕业」时用眼角朝画面左侧扫了一下、随即收回**；嘴角向下。
+【道具】刚做好的精致美甲（画面里能看清指甲的光泽）。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:16.098239Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664c-f7df-79c3-ae2c-22a5f74993db.tmp-1788422715378472627: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜26] ep01_镜26_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+面左侧的画外；站定不动、脊背挺直，左手还握着行李箱拉杆；视线平平地看向画面左侧的沙发方向；眉头**微微**蹙了一下（幅度要小）、嘴唇闭着；喉结滚动一次；左手握在行李箱拉杆上。
+【道具】画面左侧虚焦处是沙发上刘兰与顾瑶的身影轮廓。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜27/ep01_镜27_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:18.665020Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-01aa-7152-9736-5058ca89be5a.tmp-1788422717888105774: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜27] 未生成 ep01_镜27_00.png，重试一次...
+  [警告] codex 退出码 1
+面左侧的画外；站定不动、脊背挺直，左手还握着行李箱拉杆；视线平平地看向画面左侧的沙发方向；眉头**微微**蹙了一下（幅度要小）、嘴唇闭着；喉结滚动一次；左手握在行李箱拉杆上。
+【道具】画面左侧虚焦处是沙发上刘兰与顾瑶的身影轮廓。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜27/ep01_镜27_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:19.974731Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-0751-7223-aa48-9facc18218e5.tmp-1788422719380598898: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜27] 未生成 ep01_镜27_01.png，重试一次...
+  [警告] codex 退出码 1
+在自己的指甲上；坐在沙发上、上身后靠、下巴始终抬着，右手抬在眼前；慢悠悠地又朝指甲吹了一口气；**只在说到「名牌大学毕业」时用眼角朝画面左侧扫了一下、随即收回**；嘴角向下。
+【道具】刚做好的精致美甲（画面里能看清指甲的光泽）。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:19.176888Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-033c-7783-b37e-b65bea2601aa.tmp-1788422718300978889: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜26] ep01_镜26_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+上、姿势全程没换，双手举着手机；**视线从手机屏幕抬起、从下往上扫过画面左侧**（扫江砚那身平价衣服），随即鼻子里嗤笑一声、视线回到手机上；手机屏幕在她脸上反出一块冷白光斑。
+【道具】手里一部亮着屏幕的手机，冷白光反在她下巴上。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜28/ep01_镜28_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:21.524859Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-0d8b-7f02-8045-0a2c61a914db.tmp-1788422720926635209: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜28] 未生成 ep01_镜28_00.png，重试一次...
+  [警告] codex 退出码 1
+面左侧的画外；站定不动、脊背挺直，左手还握着行李箱拉杆；视线平平地看向画面左侧的沙发方向；眉头**微微**蹙了一下（幅度要小）、嘴唇闭着；喉结滚动一次；左手握在行李箱拉杆上。
+【道具】画面左侧虚焦处是沙发上刘兰与顾瑶的身影轮廓。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜27/ep01_镜27_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:23.856028Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-15fb-7b23-b033-bad0482ab960.tmp-1788422723095255447: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜27] ep01_镜27_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+面左侧的画外；站定不动、脊背挺直，左手还握着行李箱拉杆；视线平平地看向画面左侧的沙发方向；眉头**微微**蹙了一下（幅度要小）、嘴唇闭着；喉结滚动一次；左手握在行李箱拉杆上。
+【道具】画面左侧虚焦处是沙发上刘兰与顾瑶的身影轮廓。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜27/ep01_镜27_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:24.035189Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-1801-7ca0-836a-e68e02112d70.tmp-1788422723607660960: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜27] ep01_镜27_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+上、姿势全程没换，双手举着手机；**视线从手机屏幕抬起、从下往上扫过画面左侧**（扫江砚那身平价衣服），随即鼻子里嗤笑一声、视线回到手机上；手机屏幕在她脸上反出一块冷白光斑。
+【道具】手里一部亮着屏幕的手机，冷白光反在她下巴上。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜28/ep01_镜28_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:26.785380Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-20d9-7382-9c2e-45af1ae45a72.tmp-1788422725863785401: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜28] 未生成 ep01_镜28_01.png，重试一次...
+  [警告] codex 退出码 1
+上、姿势全程没换，双手举着手机；**视线从手机屏幕抬起、从下往上扫过画面左侧**（扫江砚那身平价衣服），随即鼻子里嗤笑一声、视线回到手机上；手机屏幕在她脸上反出一块冷白光斑。
+【道具】手里一部亮着屏幕的手机，冷白光反在她下巴上。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜28/ep01_镜28_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:27.008152Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-217b-7ea0-b78a-7685454ce032.tmp-1788422726039859307: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜28] ep01_镜28_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:32.182532Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:33.192505Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:35.012770Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:38.142038Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a353401f9888adda-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜29] 未生成 ep01_镜29_01.png，重试一次...
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:32.333489Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:33.445228Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:35.436681Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:38.817530Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a35340239d1eef55-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜29] 未生成 ep01_镜29_00.png，重试一次...
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:32.800361Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:33.946803Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:35.908543Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:39.247129Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a35340264bbfd8f8-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜28] ep01_镜28_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:33.467521Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:34.587444Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:36.369296Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:40.163950Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a353402bcb1b46df-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜30] 未生成 ep01_镜30_00.png，重试一次...
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:43.431500Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:44.556069Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:46.503782Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:50.076710Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a353406a1c01f65a-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜29] ep01_镜29_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:44.163881Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:45.323518Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:47.078282Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:50.487145Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a353406c8bfa3eb9-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜29] ep01_镜29_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:44.375806Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:45.429001Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:47.160646Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:50.440605Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a353406c3dcea9f2-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜30] 未生成 ep01_镜30_01.png，重试一次...
+  [警告] codex 退出码 1
+ to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 2/5
+2026-09-03T08:05:44.561025Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 3/5
+2026-09-03T08:05:46.109740Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 4/5
+2026-09-03T08:05:47.831815Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+ERROR: Reconnecting... 5/5
+2026-09-03T08:05:51.538017Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 403 Forbidden, url: wss://chatgpt.com/backend-api/codex/responses
+warning: Falling back from WebSockets to HTTPS transport. unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a35340731c0a003a-LHR
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜30] ep01_镜30_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+背离镜头，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线垂向斜下方的地面；刚被推进来、背对镜头站在近端；正把行李箱在身侧放下，右手松开拉杆；右手刚从行李箱拉杆上松开。
+【道具】一只半旧的深色行李箱正被放到地板上。
+【光线】房间里唯一光源是床头那盏暖黄台灯；门在关上的过程中，走廊透进来的一道冷白光正在变窄、即将被切断。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜31/ep01_镜31_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:51.519925Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-835d-75a3-adab-5328df2c1a44.tmp-1788422751079079929: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜31] 未生成 ep01_镜31_00.png，重试一次...
+  [警告] codex 退出码 1
+背离镜头，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线垂向斜下方的地面；刚被推进来、背对镜头站在近端；正把行李箱在身侧放下，右手松开拉杆；右手刚从行李箱拉杆上松开。
+【道具】一只半旧的深色行李箱正被放到地板上。
+【光线】房间里唯一光源是床头那盏暖黄台灯；门在关上的过程中，走廊透进来的一道冷白光正在变窄、即将被切断。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜31/ep01_镜31_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:52.920584Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-86c8-7940-9fd2-bbdab84a3ce9.tmp-1788422751965336662: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜31] 未生成 ep01_镜31_01.png，重试一次...
+  [警告] codex 退出码 1
+；头还朝画面左侧的沙发方向回看了一眼；左手握在行李箱拉杆上。
+【人物关系】她在推、他在被推——母亲的第一反应是把儿子从冲突里带走，而她自己留在原地继续陪笑。
+【道具】江砚拖着的半旧行李箱；画面右侧虚焦处是沙发上刘兰与顾瑶的身影。
+【光线】午后强光从纵深端的落地玻璃幕墙斜射进来，在抛光地面上拉出长条形硬光斑；室内灯光偏冷，人物身上是冷调的窗光。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜30/ep01_镜30_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:53.136111Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-8903-7d43-bb31-d8d4bbb3d69a.tmp-1788422752562402244: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜30] ep01_镜30_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+更靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；身体朝门的方向侧了一下（怕外面听见），上身微微前倾；双手在围裙前搓着；说到最后一句时右手抬起来在他手臂上按了一下；音量明显比在客厅时低。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜32/ep01_镜32_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:54.473429Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-8ddf-73d1-a6f3-ca4369323fd7.tmp-1788422753781893727: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜32] 未生成 ep01_镜32_00.png，重试一次...
+  [警告] codex 退出码 1
+背离镜头，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线垂向斜下方的地面；刚被推进来、背对镜头站在近端；正把行李箱在身侧放下，右手松开拉杆；右手刚从行李箱拉杆上松开。
+【道具】一只半旧的深色行李箱正被放到地板上。
+【光线】房间里唯一光源是床头那盏暖黄台灯；门在关上的过程中，走廊透进来的一道冷白光正在变窄、即将被切断。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜31/ep01_镜31_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:56.768659Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-96d5-7cd1-85a4-98315d62785a.tmp-1788422756075498856: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜31] ep01_镜31_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+更靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；身体朝门的方向侧了一下（怕外面听见），上身微微前倾；双手在围裙前搓着；说到最后一句时右手抬起来在他手臂上按了一下；音量明显比在客厅时低。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜32/ep01_镜32_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:58.373381Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-9c57-7083-a652-b3c85d4daf30.tmp-1788422757482359630: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜32] 未生成 ep01_镜32_01.png，重试一次...
+  [警告] codex 退出码 1
+背离镜头，以3/4背面对镜头（过肩视角，看得到后脑、一侧肩膀和一点脸颊轮廓）；视线垂向斜下方的地面；刚被推进来、背对镜头站在近端；正把行李箱在身侧放下，右手松开拉杆；右手刚从行李箱拉杆上松开。
+【道具】一只半旧的深色行李箱正被放到地板上。
+【光线】房间里唯一光源是床头那盏暖黄台灯；门在关上的过程中，走廊透进来的一道冷白光正在变窄、即将被切断。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜31/ep01_镜31_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:57.546468Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-99bf-7962-8671-5c4dcd973ce0.tmp-1788422756813399265: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜31] ep01_镜31_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+更靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；身体朝门的方向侧了一下（怕外面听见），上身微微前倾；双手在围裙前搓着；说到最后一句时右手抬起来在他手臂上按了一下；音量明显比在客厅时低。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜32/ep01_镜32_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:05:59.102898Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-a087-79c1-bb6c-667eeba4ed66.tmp-1788422758556941298: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜32] ep01_镜32_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+更靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；身体朝门的方向侧了一下（怕外面听见），上身微微前倾；双手在围裙前搓着；说到最后一句时右手抬起来在他手臂上按了一下；音量明显比在客厅时低。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜32/ep01_镜32_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:03.964975Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-afbd-7381-9280-95a2503b9e6b.tmp-1788422762479397122: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜32] ep01_镜32_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、双手放在膝上，上身略微朝画面右侧转着；**视线一直看着画面右侧母亲的脸、始终锁在她身上**；下颌绷紧了一次、鼻子明显吸了一口气。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:03.517004Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-ae73-71f3-aad8-f1ff819a46c2.tmp-1788422762116911277: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜33] 未生成 ep01_镜33_00.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、双手放在膝上，上身略微朝画面右侧转着；**视线一直看着画面右侧母亲的脸、始终锁在她身上**；下颌绷紧了一次、鼻子明显吸了一口气。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:04.518241Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-b2e8-7823-b894-7b455ad54442.tmp-1788422763294368162: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜33] 未生成 ep01_镜33_01.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面左侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面左侧的画外；坐在画面右侧的床沿、上身朝画面左侧微微转着，头刚从点过的位置停住；点了一次头（幅度很小）之后才开口；说完之后视线垂下、落到自己膝上的手上。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜34/ep01_镜34_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:04.634518Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-b46b-7391-8b49-4cf9dcc20d47.tmp-1788422763674999257: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜34] 未生成 ep01_镜34_00.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、双手放在膝上，上身略微朝画面右侧转着；**视线一直看着画面右侧母亲的脸、始终锁在她身上**；下颌绷紧了一次、鼻子明显吸了一口气。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:08.697346Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-c2df-7eb1-bf74-a50e0acec156.tmp-1788422767348774821: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜33] ep01_镜33_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、双手放在膝上，上身略微朝画面右侧转着；**视线一直看着画面右侧母亲的脸、始终锁在她身上**；下颌绷紧了一次、鼻子明显吸了一口气。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:08.793314Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-c422-72b2-93c0-ae11b7ca69a0.tmp-1788422767706522413: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜33] ep01_镜33_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面左侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面左侧的画外；坐在画面右侧的床沿、上身朝画面左侧微微转着，头刚从点过的位置停住；点了一次头（幅度很小）之后才开口；说完之后视线垂下、落到自己膝上的手上。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜34/ep01_镜34_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:09.596700Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-c8ed-7f43-b648-8bfe4b009cd2.tmp-1788422768892555716: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜34] ep01_镜34_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面左侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面左侧的画外；坐在画面右侧的床沿、上身朝画面左侧微微转着，头刚从点过的位置停住；点了一次头（幅度很小）之后才开口；说完之后视线垂下、落到自己膝上的手上。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜34/ep01_镜34_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:08.604856Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-c2c4-7183-a931-9d5a7a228293.tmp-1788422767323141258: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜34] 未生成 ep01_镜34_01.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、头部与肩线占满画面，视线追着画面右侧母亲刚出门的方向；脸上那点顺从在门关上的瞬间**褪掉**——眼睛慢慢睁开一点、瞳孔定住、下颌一寸寸绷紧。
+【光线】床头台灯的暖光只照亮他半张脸，另一半沉在暗部；画面右侧边缘有一点门缝冷白光正在收窄。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:12.622460Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-d3f9-7433-a633-32577600a8db.tmp-1788422771724470743: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜35] 未生成 ep01_镜35_00.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、头部与肩线占满画面，视线追着画面右侧母亲刚出门的方向；脸上那点顺从在门关上的瞬间**褪掉**——眼睛慢慢睁开一点、瞳孔定住、下颌一寸寸绷紧。
+【光线】床头台灯的暖光只照亮他半张脸，另一半沉在暗部；画面右侧边缘有一点门缝冷白光正在收窄。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:12.810791Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-d479-7062-ae95-ef11ac8ac400.tmp-1788422771856425024: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜35] 未生成 ep01_镜35_01.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、头部与肩线占满画面，视线追着画面右侧母亲刚出门的方向；脸上那点顺从在门关上的瞬间**褪掉**——眼睛慢慢睁开一点、瞳孔定住、下颌一寸寸绷紧。
+【光线】床头台灯的暖光只照亮他半张脸，另一半沉在暗部；画面右侧边缘有一点门缝冷白光正在收窄。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:13.850772Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-d903-79f0-8389-5f27d45bdd9e.tmp-1788422773012074739: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [警告][ep01_镜35] 未生成 ep01_镜35_02.png，重试一次...
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面左侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面左侧的画外；坐在画面右侧的床沿、上身朝画面左侧微微转着，头刚从点过的位置停住；点了一次头（幅度很小）之后才开口；说完之后视线垂下、落到自己膝上的手上。
+【光线】房间里唯一光源是床头那盏暖黄台灯，光晕范围小、从台灯朝地面斜切出一道光带，房间其余部分沉入暗部。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜34/ep01_镜34_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:14.395796Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-db48-7740-a193-5cf0163a8fef.tmp-1788422773607771832: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜34] ep01_镜34_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、头部与肩线占满画面，视线追着画面右侧母亲刚出门的方向；脸上那点顺从在门关上的瞬间**褪掉**——眼睛慢慢睁开一点、瞳孔定住、下颌一寸寸绷紧。
+【光线】床头台灯的暖光只照亮他半张脸，另一半沉在暗部；画面右侧边缘有一点门缝冷白光正在收窄。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_00.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:16.640192Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-e450-77d2-9245-aa614dff741d.tmp-1788422775901508244: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜35] ep01_镜35_00.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、头部与肩线占满画面，视线追着画面右侧母亲刚出门的方向；脸上那点顺从在门关上的瞬间**褪掉**——眼睛慢慢睁开一点、瞳孔定住、下颌一寸寸绷紧。
+【光线】床头台灯的暖光只照亮他半张脸，另一半沉在暗部；画面右侧边缘有一点门缝冷白光正在收窄。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_01.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:17.205083Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-e738-7022-bf06-ded2c7137225.tmp-1788422776654401436: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜35] ep01_镜35_01.png 仍未生成，放弃这一张。codex 最后输出：
+
+  [警告] codex 退出码 1
+靠画面下缘）；身体朝画面右侧，以3/4侧面朝镜头，能看到大半张脸和一侧耳朵；视线投向画面右侧的画外；坐在床沿、头部与肩线占满画面，视线追着画面右侧母亲刚出门的方向；脸上那点顺从在门关上的瞬间**褪掉**——眼睛慢慢睁开一点、瞳孔定住、下颌一寸寸绷紧。
+【光线】床头台灯的暖光只照亮他半张脸，另一半沉在暗部；画面右侧边缘有一点门缝冷白光正在收窄。
+【合成要求】把上述人物按【人物走位】放进参考图1的场景里，保持每个人的五官、发型、服装、体型比例、配色与其对应的人物参考图完全一致；保持场景的陈设、材质、光影和相机视角与参考图1完全一致（同一个房间、同一个机位，不要重新设计房间、不要换角度）；取景范围按【景别与裁切】重新裁切，参考图1里多出来的空间（尤其画面下缘的空地面）可以裁掉，不需要保留底板的完整取景范围。
+避免：多余肢体、手指数量错误、五官崩坏、水印文字、画面内出现任何文字或字幕、人物面部/发型/服装与人物参考图不符、场景陈设与场景参考图不符、多余人物
+
+请生成这张图片，并把最终图片文件保存到这个精确的绝对路径：/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_02.png
+只需要保存这一个 PNG 文件到这个路径，不需要额外说明或展示其它内容。
+warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.
+2026-09-03T08:06:17.731143Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: /home/codespace/.codex/shell_snapshots/01a0664d-e987-71f3-b6ba-6e48f2f43bcf.tmp-1788422777239036703: line 2547: syntax error near unexpected token `('
+
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 11:02 AM.
+
+  [失败][ep01_镜35] ep01_镜35_02.png 仍未生成，放弃这一张。codex 最后输出：
+
+[ep01_镜01] 生成 -> ep01_镜01_00.png ...
+[ep01_镜01] 生成 -> ep01_镜01_01.png ...
+[ep01_镜01] 生成 -> ep01_镜01_02.png ...
+[ep01_镜02] 生成 -> ep01_镜02_00.png ...
+  已保存 [ep01_镜02] ep01_镜02_00.png
+[ep01_镜02] 生成 -> ep01_镜02_01.png ...
+  已保存 [ep01_镜01] ep01_镜01_00.png
+[ep01_镜03] 生成 -> ep01_镜03_00.png ...
+  已保存 [ep01_镜01] ep01_镜01_01.png
+[ep01_镜03] 生成 -> ep01_镜03_01.png ...
+  已保存 [ep01_镜01] ep01_镜01_02.png
+[ep01_镜04] 生成 -> ep01_镜04_00.png ...
+  已保存 [ep01_镜02] ep01_镜02_01.png
+[ep01_镜04] 生成 -> ep01_镜04_01.png ...
+  已保存 [ep01_镜03] ep01_镜03_00.png
+[ep01_镜04] 生成 -> ep01_镜04_02.png ...
+  已保存 [ep01_镜03] ep01_镜03_01.png
+[ep01_镜05] 生成 -> ep01_镜05_00.png ...
+  已保存 [ep01_镜04] ep01_镜04_00.png
+[ep01_镜05] 生成 -> ep01_镜05_01.png ...
+  已保存 [ep01_镜04] ep01_镜04_02.png
+[ep01_镜06] 生成 -> ep01_镜06_00.png ...
+  已保存 [ep01_镜04] ep01_镜04_01.png
+[ep01_镜06] 生成 -> ep01_镜06_01.png ...
+  已保存 [ep01_镜06] ep01_镜06_00.png
+[ep01_镜07] 生成 -> ep01_镜07_00.png ...
+  已保存 [ep01_镜05] ep01_镜05_00.png
+[ep01_镜07] 生成 -> ep01_镜07_01.png ...
+  已保存 [ep01_镜06] ep01_镜06_01.png
+[ep01_镜08] 生成 -> ep01_镜08_00.png ...
+  已保存 [ep01_镜05] ep01_镜05_01.png
+[ep01_镜08] 生成 -> ep01_镜08_01.png ...
+  已保存 [ep01_镜07] ep01_镜07_00.png
+[ep01_镜09] 生成 -> ep01_镜09_00.png ...
+  已保存 [ep01_镜07] ep01_镜07_01.png
+[ep01_镜09] 生成 -> ep01_镜09_01.png ...
+  已保存 [ep01_镜08] ep01_镜08_00.png
+[ep01_镜10] 生成 -> ep01_镜10_00.png ...
+  已保存 [ep01_镜08] ep01_镜08_01.png
+[ep01_镜10] 生成 -> ep01_镜10_01.png ...
+  已保存 [ep01_镜09] ep01_镜09_01.png
+[ep01_镜11] 生成 -> ep01_镜11_00.png ...
+  已保存 [ep01_镜09] ep01_镜09_00.png
+[ep01_镜11] 生成 -> ep01_镜11_01.png ...
+  已保存 [ep01_镜10] ep01_镜10_00.png
+[ep01_镜12] 生成 -> ep01_镜12_00.png ...
+  已保存 [ep01_镜10] ep01_镜10_01.png
+[ep01_镜12] 生成 -> ep01_镜12_01.png ...
+  已保存 [ep01_镜11] ep01_镜11_00.png
+[ep01_镜13] 生成 -> ep01_镜13_00.png ...
+  已保存 [ep01_镜12] ep01_镜12_00.png
+[ep01_镜13] 生成 -> ep01_镜13_01.png ...
+  已保存 [ep01_镜11] ep01_镜11_01.png
+[ep01_镜14] 生成 -> ep01_镜14_00.png ...
+  已保存 [ep01_镜13] ep01_镜13_01.png
+[ep01_镜14] 生成 -> ep01_镜14_01.png ...
+  已保存 [ep01_镜13] ep01_镜13_00.png
+[ep01_镜14] 生成 -> ep01_镜14_02.png ...
+  已保存 [ep01_镜14] ep01_镜14_00.png
+[ep01_镜15] 生成 -> ep01_镜15_00.png ...
+[ep01_镜15] 生成 -> ep01_镜15_01.png ...
+[ep01_镜16] 生成 -> ep01_镜16_00.png ...
+[ep01_镜16] 生成 -> ep01_镜16_01.png ...
+[ep01_镜17] 生成 -> ep01_镜17_00.png ...
+[ep01_镜17] 生成 -> ep01_镜17_01.png ...
+[ep01_镜18] 生成 -> ep01_镜18_00.png ...
+[ep01_镜18] 生成 -> ep01_镜18_01.png ...
+[ep01_镜19] 生成 -> ep01_镜19_00.png ...
+[ep01_镜19] 生成 -> ep01_镜19_01.png ...
+[ep01_镜20] 生成 -> ep01_镜20_00.png ...
+[ep01_镜20] 生成 -> ep01_镜20_01.png ...
+[ep01_镜20] 生成 -> ep01_镜20_02.png ...
+[ep01_镜21] 生成 -> ep01_镜21_00.png ...
+[ep01_镜21] 生成 -> ep01_镜21_01.png ...
+[ep01_镜22] 生成 -> ep01_镜22_00.png ...
+[ep01_镜22] 生成 -> ep01_镜22_01.png ...
+[ep01_镜23] 生成 -> ep01_镜23_00.png ...
+[ep01_镜23] 生成 -> ep01_镜23_01.png ...
+[ep01_镜23] 生成 -> ep01_镜23_02.png ...
+[ep01_镜24] 生成 -> ep01_镜24_00.png ...
+[ep01_镜24] 生成 -> ep01_镜24_01.png ...
+[ep01_镜25] 生成 -> ep01_镜25_00.png ...
+[ep01_镜25] 生成 -> ep01_镜25_01.png ...
+[ep01_镜26] 生成 -> ep01_镜26_00.png ...
+[ep01_镜26] 生成 -> ep01_镜26_01.png ...
+[ep01_镜27] 生成 -> ep01_镜27_00.png ...
+[ep01_镜27] 生成 -> ep01_镜27_01.png ...
+[ep01_镜28] 生成 -> ep01_镜28_00.png ...
+[ep01_镜28] 生成 -> ep01_镜28_01.png ...
+[ep01_镜29] 生成 -> ep01_镜29_00.png ...
+[ep01_镜29] 生成 -> ep01_镜29_01.png ...
+[ep01_镜30] 生成 -> ep01_镜30_00.png ...
+[ep01_镜30] 生成 -> ep01_镜30_01.png ...
+[ep01_镜31] 生成 -> ep01_镜31_00.png ...
+[ep01_镜31] 生成 -> ep01_镜31_01.png ...
+[ep01_镜32] 生成 -> ep01_镜32_00.png ...
+[ep01_镜32] 生成 -> ep01_镜32_01.png ...
+[ep01_镜33] 生成 -> ep01_镜33_00.png ...
+[ep01_镜33] 生成 -> ep01_镜33_01.png ...
+[ep01_镜34] 生成 -> ep01_镜34_00.png ...
+[ep01_镜34] 生成 -> ep01_镜34_01.png ...
+[ep01_镜35] 生成 -> ep01_镜35_00.png ...
+[ep01_镜35] 生成 -> ep01_镜35_01.png ...
+[ep01_镜35] 生成 -> ep01_镜35_02.png ...
+
+完成，本次共生成 28 张图片，记录已追加到 /workspaces/AI-/output/出狱后我成为了非洲矿王_v2/keyframes/ep01/manifest.append.jsonl

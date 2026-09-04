@@ -621,6 +621,44 @@ def check_card(card, index, lang, tokenizer, cards_by_unit, cards_root):
             "见 video_prompt_guide.md「哪些运镜是这张底板撑得起的」"
         )
 
+    # 「锁死机位」和「运镜」是互斥指令，不能同时出现在同一段提示词里
+    STATIC_RIG_WORDS = ("locked off", "locked-off", "static camera", "stationary",
+                        "holds absolutely still", "holds still", "does not move",
+                        "fixed camera", "固定机位", "锁死")
+    static_text = " ".join(
+        (cam.get(k) or "") for k in ("position", "rig", "framing_path")
+    ).lower()
+    move_declared = (cam.get("move") or "").strip()
+    static_hit = [w for w in STATIC_RIG_WORDS if w in static_text]
+    if static_hit and move_declared:
+        err(
+            f"`camera_en` 里同时写了锁死机位 {sorted(set(static_hit))} 和运镜 "
+            f"`{move_declared[:50]}…`——这是两条互斥指令。装配出来的提示词会变成 "
+            "'The camera is locked off at eye level. … a slow push-in …'，"
+            "模型照哪条都不奇怪，实测表现就是运镜做不出来。有运镜的镜头，"
+            "`rig` 只写机高和载具（`The camera rides a slow dolly at eye level, "
+            "about 1.5 metres up`），'不动'这层意思交给 `move` 留空来表达，"
+            "不要在 `rig` 里再写一遍"
+        )
+
+    # 运镜和「背景逐项保持不变」同样互斥：推镜必然改变背景的尺度和构图
+    if move_declared:
+        preserve_text = (
+            card.get("preserve_en" if lang == "en" else "preserve_zh") or ""
+        ).lower()
+        FREEZE_WORDS = ("stay unchanged", "stays unchanged", "keeps the same",
+                        "keep the same", "remains identical", "remain identical",
+                        "保持不变", "完全一致")
+        freeze_hit = [w for w in FREEZE_WORDS if w in preserve_text]
+        if freeze_hit:
+            warn(
+                f"这一镜有运镜，而 `preserve_{lang}` 里写了 {sorted(set(freeze_hit))}。"
+                "确认这些'不变'只管身份（脸/发型/服装）和'还是同一个地点'，"
+                "**不要逐项点名背景元素要求它保持不变**——推镜必然改变背景的尺度和构图，"
+                "两条指令打架。背景被逐项冻结是 A6『背景像素级冻住』的可疑成因之一，"
+                "见 model_capability_ledger.md A6 / D4"
+            )
+
     ffs = card.get("first_frame_strength")
     if ffs is not None:
         if not isinstance(ffs, (int, float)) or not (0 < ffs <= 1.0):

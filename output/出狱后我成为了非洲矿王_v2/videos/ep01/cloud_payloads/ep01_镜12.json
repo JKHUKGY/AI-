@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest. The camera holds a static shot. The bearded man's right hand chops downward through the air and his chest pushes forward; the younger man in the near foreground stays completely still with only his shoulders rising on a breath. The speaker (S1) says, shouting, the consonants spitting, <d>[Chinese] 这兔崽子也太缺德了！</d> a hand slapping hard onto a thigh. His left palm smacks down onto his own thigh, then his right hand chops down through the air a second time; his chest keeps heaving and both arms finally drop. The speaker (S1) says, fast and bitter, leaning on the figure and on the last four words, <d>[Chinese] 你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！</d> ambient returning under the voice.\n\noverall_soundscape:\nA hand slapping hard onto a thigh. Ambient returning under the voice.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜12/ep01_镜12_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 9,
+  "ratio": "9:16"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same 46-year-old Chinese woman throughout, same face, same full chestnut waves, same slate-blue silk slip dress with bare collarbones. The camera holds a static shot. She blows once more across her fingernails held in front of her eyes; her chin stays lifted and her eyelids stay low. The speaker (S1) says, drawling, stretching the vowels, <d>[Chinese] 哟，来了啊，</d> a soft blow of breath. Only her eyeball slides to the left corner for a beat and comes straight back to her own nails; her head stays exactly where it is, and the corner of her mouth pulls down. The speaker (S1) says, still drawling, the question tipping up mockingly, <d>[Chinese] 听你妈说你是名牌大学毕业？</d>\n\noverall_soundscape:\nA soft blow of breath.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 8,
+  "ratio": "9:16"
+}

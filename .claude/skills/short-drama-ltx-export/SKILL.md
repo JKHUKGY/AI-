@@ -1,6 +1,6 @@
 ---
 name: short-drama-ltx-export
-description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的提交前关卡：short-drama-video-gen 的 build_prompt.py 已经从镜头卡（shot_cards.json）直接装配出 video_jobs.json，所以这个 skill 不再做"从 Markdown 表格转录"的工作，而是**提交前的最后一道校验关卡**——跑 validate_video_jobs.py 逐条查路径存在性、64 整除、8k+1、台词语言声明、seed 有效性、prompt token 预算、正向提示词里的否定句残留、以及 prompt 是否还和镜头卡装配结果一致（防止有人手改 JSON 绕过镜头卡），核对拆段单元的首帧是否已经落地，检查/生成 ltx_remote_config.json，最后跑一次 ltx_ssh_submit.py --dry-run。老项目只有 video_jobs.md 没有镜头卡时，退回"引导补齐镜头卡"而不是自己抠字段。当用户说"把这些整理成能交给LTX的文件""校验video_jobs.json""打包提交给LTX2.5""这一集的提示词整理成能跑的文件"时使用。
+description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的提交前关卡：short-drama-video-gen 的 build_prompt.py 已经从镜头卡（shot_cards.json）直接装配出 video_jobs.json，所以这个 skill 不做"从 Markdown 表格转录"的工作，而是**提交前的最后一道校验关卡**——跑 validate_video_jobs.py 逐条查路径存在性、64 整除、8k+1、台词语言声明、seed 有效性、prompt token 预算、正向提示词里的否定句残留、first_frame_strength 是否偏离实测确认的 1.0、以及 prompt 是否还和镜头卡装配结果一致（防止有人手改 JSON 绕过镜头卡），核对拆段单元的首帧是否已经落地，检查/生成 ltx_remote_config.json，最后跑一次 ltx_ssh_submit.py --dry-run。老项目只有 video_jobs.md 没有镜头卡时，退回"引导补齐镜头卡"而不是自己抠字段。当用户说"把这些整理成能交给LTX的文件""校验video_jobs.json""打包提交给LTX2.5""这一集的提示词整理成能跑的文件"时使用。**这一批要用 MiniMax-H3 就去 minimax-h3-export，不要用这个**——H3 的提示词是完全不同的六段结构化格式，校验规则也不一样。
 ---
 
 # AI 短剧 LTX-2.5 提交文件打包助手 (short-drama-ltx-export)
@@ -21,13 +21,32 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的提�
 这个 skill **只负责校验文件**，不负责真正发起 SSH 生成——那是
 `short-drama-ltx-generate` 拿到本 skill 的产出后去掉 `--dry-run` 真跑的事。
 
-## 0. 先确认这次针对哪一集/哪几镜
+## 0. 先确认这一批用的是 LTX-2.5
+
+**本 skill 只管 LTX-2.5。** 用户说要用 MiniMax-H3，或者
+`shot_cards.json` 同目录已经有 `h3_remote_config.json`，
+**转去 `minimax-h3-export`**，别在这里硬凑——两个模型的提示词格式、
+校验规则、提交方式完全不同。
+
+替用户判断的几条：
+
+- **这一集已经有跑通的 LTX 成片、只是补几镜** → 继续 LTX。两个模型的质感、
+  人脸、镜头语言都不一样，同一集混用会穿帮。
+- **需要台词真的出声** → 只能 H3。LTX 这条链是无声的，配音要另做。
+- **单元短于 4 秒** → H3 生不出来（帧数只能取 17n+5），这几镜只能走 LTX。
+- **想省显卡钱** → 反而是 H3 便宜：SGLang 有 1×RTX 4090 24GB 的实测配方
+  （$0.34/hr），LTX 我们实测要 80GB（$1.19–1.59/hr）。
+
+选定之后把结果写进 `ltx_remote_config.json` 的 `model` 字段（`"ltx-2.5"`），
+下游 `short-drama-ltx-generate` 读它确认没走错通道。
+
+## 1. 先确认这次针对哪一集/哪几镜
 
 不要一次性把全剧都打包，按用户指定的集数（`epNN`）处理；如果用户说"这几镜"，
 只处理指定镜号，其余镜头保留在已有的 `video_jobs.json`（增量更新，不要覆盖
 掉别的镜头已经校验过的记录）。
 
-## 1. 确认输入齐不齐
+## 2. 确认输入齐不齐
 
 - `output/<故事名>/videos/ep0X/shot_cards.json` + 由它装配出来的
   `video_jobs.json`——`short-drama-video-gen` 的产出，本 skill 的主要数据源。
@@ -45,7 +64,7 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的提�
   确认 `pipeline_module`/权重路径没有变化；不存在则见第 5 步问用户要，
   **不要瞎猜**。
 
-## 2. 确认这批 job 的范围和档位
+## 3. 确认这批 job 的范围和档位
 
 `video_jobs.json` 已经是装配好的，这一步只做三件核对，**不改内容**：
 
@@ -70,7 +89,7 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）图生视频通道的提�
 `video_jobs.json`。** 手改会让 `prompt` 和卡脱钩，第 3 步的一致性校验会拦
 下来，而且下次装配就把手改的内容冲掉了。
 
-## 3. 校验（本 skill 的核心）
+## 4. 校验（本 skill 的核心）
 
 跑校验脚本，不要跳过这一步：
 
@@ -91,7 +110,11 @@ python3 .claude/skills/short-drama-ltx-export/scripts/validate_video_jobs.py \
 - **`prompt` 里没有残留否定句**（distilled pipeline 没有 `--negative-prompt`
   参数，否定句只会注入不想要的概念）
 - **`prompt` 还和镜头卡的装配结果一致**（同目录有 `shot_cards.json` 且 job 带
-  `shot_card_id` 时才查）
+  `shot_card_id` 时才查）。探针/对照组要故意偏离时，在 job 上加
+  `prompt_variant` 写明理由，这条就降成 WARN
+- **有运镜的镜头，`rig` 里不许再写 `locked off`**（`build_prompt.py` 在装配层
+  就 ERROR 拦）。历史上 v2 ep01 的 40 张卡 40/40 都写着 `locked off`，其中 5 张
+  同时要求 push-in，装配出一句锁死机位、下一句要推镜的互斥提示词——见 ledger A6
 - 台词字数和 `duration_sec` 是否匹配
 
 后面这几条每一条都对着一个**已经付过代价**的实测故障，依据全部集中在
@@ -107,11 +130,11 @@ JSON 把报错糊过去（比如路径不存在就编一个假路径让脚本通
 存量项目（已经跑通并确认过的镜头）报出来的问题**只汇报、不回填**，避免动到
 已确认通过的产物；把清单给用户看，由用户决定要不要返工。
 
-## 4. 检查/生成 `ltx_remote_config.json`
+## 5. 检查/生成 `ltx_remote_config.json`
 
 - 已存在：读出来给用户看一眼当前的 `ssh_host`/`pipeline_module`/权重路径，
   确认没有变化（比如换了台显卡机器）。
-- 不存在：按 `short-drama-ltx-generate/references/gpu_rental_ops.md` 和
+- 不存在：按 `short-drama-ltx-generate/references/runpod_gpu_ops.md` 和
   `ltx_pipeline_gotchas.md` 的模板问用户要：SSH 地址/端口/密钥、远程仓库
   路径 `remote_repo_dir`、远程工作目录 `remote_work_dir`、这次用哪个
   `pipeline_module`（比如 `ltx_pipelines.distilled`）、权重路径
@@ -121,15 +144,17 @@ JSON 把报错糊过去（比如路径不存在就编一个假路径让脚本通
   `ltx_pipeline_gotchas.md`"官方文档 + 社区实测交叉验证的共识"一节，
   本 skill 导出的提示词都是上游手写好的完整详细提示词，不适用这个"自动
   增强简略提示词"的功能，多篇第三方实测也反馈它不稳定。
-- **`platform` + `instance_id` 这两个字段要一起写上**（`platform` 取值
-  `vast`/`autodl`/`runpod`，`instance_id` 在 RunPod 上填 pod_id、AutoDL 上
-  填实例 UUID；RunPod 还建议带上 `network_volume_id`）。提交脚本本身不用
+- **`model` 字段填 `"ltx-2.5"`**，下游据此确认没走错通道。
+- **`platform` + `instance_id` 这两个字段要一起写上**（`platform` 现在只有
+  `runpod` 一个取值——AutoDL 和 vast.ai 两条通道 2026-09-04 已经删掉，理由是
+  那两家没有 Network Volume 那种"卷和实例解耦"的东西，每次都要重下 67GB
+  权重；`instance_id` 填 pod_id，还要带上 `network_volume_id`）。提交脚本本身不用
   它们，但"用完就关"那套收尾机制要靠它们才知道该去关哪个平台的哪台机器
   （`short-drama-ltx-generate/scripts/gpu_teardown.py`、
   `ltx_ssh_submit.py --auto-stop`）。租显卡那一步能拿到这些值，别漏填——
   漏了就只能事后手敲实例 ID，最容易演变成"忘了关，显卡通宵计费"。
 
-## 5. Dry-run 验证能不能被脚本消费
+## 6. Dry-run 验证能不能被脚本消费
 
 ```bash
 python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
@@ -139,8 +164,8 @@ python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
   --dry-run
 ```
 
-这一步不实际连接远程机器，只确认脚本能正常解析 config+jobs、拼出远程命令
-不报 Python 异常（比如 KeyError）。逐条看打印出来的"远程命令"，对照
+这一步不实际连接远程机器，只确认脚本能正常解析 config+jobs、
+拼出远程命令不报 Python 异常（比如 KeyError）。逐条看打印出来的"远程命令"，对照
 `short-drama-ltx-generate/references/ltx_pipeline_gotchas.md` 里标注的
 已知参数陷阱（`--image` 的三段式格式、`--num-frames` 必须 8k+1、
 `--negative-prompt` 是否通用）提醒用户：这一步只保证文件能被脚本消费，
@@ -151,7 +176,7 @@ python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
 结构本身有问题，回第 2-4 步修，不是 `ltx_ssh_submit.py` 的 bug（那个脚本
 已经在别的地方验证过）。
 
-## 6. 汇报
+## 7. 汇报
 
 结束时说清楚：本次打包了几镜（哪些集/哪些镜号）、跳过了几镜（不承载新
 台词/新情节的 C 级复用镜、本地兜底降级镜、或素材缺失）、校验阶段发现并

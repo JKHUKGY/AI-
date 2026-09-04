@@ -35,7 +35,7 @@
 | `last_frame` | ✗ | ✗ | 尾帧图路径，一般为 `null` |
 | `props_en` | ✗ | ✗ | 道具名词列表，如 `["sword", "hilt"]`。只用来让"可见位移检验"认识这些词 |
 | `camera_en.position` | 建议 | ✅ | 相机站在场景的哪个位置往哪看，一句英文。从 `scenes.md` 的「空间关系」块翻译过来 |
-| `camera_en.rig` | ✅ | ✅ | 固定/手持、机高，**只收正向陈述** |
+| `camera_en.rig` | ✅ | ✅ | 固定/手持载具、机高，**只收正向陈述**。有 `move` 时不许再写 `locked off`（脚本 ERROR 拦，见下方专门一节） |
 | `camera_en.framing_path` | ✅ | ✅ | 整段的景别走向 |
 | `camera_en.move` | ✗ | ✅ | 运镜，固定机位填 `null` |
 | `subject_lock_en` | 建议 | ✅ | **一句**，只为了别换人。不许堆外观形容词 |
@@ -179,6 +179,31 @@ She speaks in Mandarin Chinese, low and forced out between her teeth: "为什么
 
 ---
 
+## `camera_en.rig` 和 `camera_en.move`：不许互相打架
+
+**2026-09-04 发现的真实缺陷。** 《出狱后》v2 ep01 的 40 张卡里，
+`rig` **40/40** 都是 `The camera is locked off at eye level`，其中 5 张同时在
+`move` 里写了 push-in。装配出来的提示词长这样：
+
+> The camera is **locked off** at eye level. … **a slow, restrained push-in** …
+
+一句话锁死机位，下一句要求推镜——两条互斥指令进同一个文本编码器，
+模型照哪条都不奇怪。这是"运镜做不出来"的一个**提示词层成因**，
+跟模型能力无关。
+
+规则：
+
+- **有 `move` 的镜头**，`rig` 只写机高和载具，不写"不动"：
+  `The camera rides a slow dolly at eye level`。
+- **没有 `move` 的镜头**（`move` 填 `null`），`rig` 才写
+  `The camera is locked off at eye level`。"不动"这层意思由
+  `move` 留空 + `rig` 说 locked off 共同表达，只说一次。
+- `build_prompt.py` 会 ERROR 拦住两者共存
+  （词表：`locked off` / `static camera` / `stationary` / `holds still` /
+  `does not move` / `fixed camera` / `固定机位` / `锁死`）。
+
+---
+
 ## `preserve_en`：这一段里什么必须保持不变
 
 2026-09 新增。来源是图生视频提示词的通用五要素——一条合格的 I2V 提示词要回答
@@ -196,6 +221,15 @@ She speaks in Mandarin Chinese, low and forced out between her teeth: "为什么
   与首帧一致"，不要写"不要改变她的长相"。
 - **逐项点名**，不要写笼统的 "keep everything consistent"。至少覆盖
   **人（脸/发型/服装）** 和 **景（陈设/墙面/光）** 两侧。
+- ⚠️ **有 `move` 的镜头，"景"这一侧不要逐项点名要求它保持不变。** 推镜必然
+  改变背景的尺度和构图，写 "the gate behind him **keeps the same** rust pattern,
+  … and the red-dirt ground **stay unchanged**" 等于一边要相机动、一边要背景
+  别动。这类镜头的景只写**同一性**（还是同一个地点、同一个光照方向），
+  不写**逐像素不变**：`the scene behind him stays the same location under the
+  same hard afternoon sun`。脚本会 WARN 提醒人工确认。
+- 这条写法是否也该推广到固定机位镜（现在 40/40 都在逐项冻结背景，而 A6
+  记的正是"背景像素级冻住"），**还没有实测结论**——A/B 方案见
+  `model_capability_ledger.md` A6。
 - 和 `subject_lock_en` 分工：`subject_lock_en` 是**一句话说清这是谁**
   （防止换人），`preserve_en` 是**说清哪些属性在这几秒里不许变**（防止漂移）。
 
@@ -219,15 +253,16 @@ strength **硬编码成 `1.0`**（完全锁死）。这是第二个"场景不变
 内部背景**像素级不动**，只有人物的手和脸在变（`ep02_镜04` 的 frame00 和 frame04
 背景完全一致）。
 
-`--image` 的强度本来是可调的，**但本仓库从没试过 1.0 以外的值**。
+`--image` 的强度本来是可调的，现在 `ltx_ssh_submit.py` 读 job 的
+`first_frame_strength`（默认仍是 `1.0`）。
 
-- 默认保持 `1.0`，不改现有行为。
-- **官方 I2V 工作流的第一阶段用的是 0.7**（原话："establishing the starting point
-  while leaving room for natural motion"），第二阶段才用 1.0 重新注入保细节。
-  也就是说全程 1.0 是我们自己的选择，不是官方默认。
-- 调低（0.7~0.95）**预期**让画面松动、允许视差和真实运镜，代价是首帧保真度下降
-  （人脸/服装漂移）。**这仍是未实测的推测**，扫描方案见
-  `model_capability_ledger.md` D4，跑出结果再决定是否改默认值。
+- **2026-09-04 实测结案：这个参数在本管线上没用，保持 `1.0`。** 镜14 上跑了
+  `1.0 / 0.95 / 0.85` 三档，同首帧同 seed，逐帧像素差全部落在噪声里（<0.5），
+  肉眼也分不出哪张来自哪一档。官方那个"0.7 留给自然运动的空间"的先验，
+  在我们这条单阶段 CLI 上没有复现出来。证据见 `model_capability_ledger.md` D4。
+- **一个未排除的干扰项**：那三条跑的提示词里带着 `locked off` 和
+  "背景逐项 stay unchanged"——在一个明令禁止画面变化的提示词下扫 strength，
+  测不出松动是预期结果。要真正给 A6 定因，得先把提示词层的冻结指令去掉再扫。
 
 **这个字段治不了"场景单一"。** 画面的空间感来自**镜头之间切机位**（`scene_plate`
 变化），不是靠一段视频自己摇出新空间——理由见 `video_prompt_guide.md`

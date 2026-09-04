@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 autodl_config.json
 runpod_config.json
+minimax_config.json
 
 # 剧本家协作网站：重新生成子进程的临时 jobs.json + 日志，纯调试用途，
 # review.json（评论/入选/编辑记录）本身仍然要提交，不受这条影响。

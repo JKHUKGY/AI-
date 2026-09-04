@@ -26,6 +26,8 @@
 - 质量咒（`8k`/`高细节`/`大师作品`/`masterpiece`）—— OpenAI 官方把"用赞美
   代替视觉事实"列为反面写法，这类词不产生质量只占位置（WARN）。
 - 参考图堆太多 —— 接口上限 16 张，但 3-5 张精选好过一堆输入（>5 报 WARN）。
+- `people` 为空但描述里有手/背影等身体部位 —— 那个局部属于谁？属于已建立角色就必须
+  进 people[] 带参考图，否则模型会按场景语境重新发明它（2026-09-03 实测）。
 
 用法:
   # 校验 + 打印装配结果，什么都不写出
@@ -430,6 +432,16 @@ def check_card(card, index, root):
     if not people:
         if not (card.get("props_zh") or []):
             err("people 为空的镜头必须填 props_zh，否则这一镜没有任何主体")
+        # people 为空但描述里出现身体部位 → 这个局部大概率属于某个已建立的角色
+        body_words = ["手", "掌", "指", "手臂", "小臂", "背影", "肩", "脚", "腿"]
+        blob = " ".join((card.get("props_zh") or []) + [card.get("beat_zh") or ""])
+        hit = [w for w in body_words if w in blob]
+        if hit:
+            err(f"people 为空，但描述里出现了身体部位 {hit}。**这个局部属于谁？**"
+                f"属于已建立三视图的角色就必须把他放进 people[] 并给 ref_images，"
+                f"在 action_zh 里注明'只有手从画面下方入画、看不到脸'。"
+                f"没传参考图的身体部位，模型会按场景语境重新发明它"
+                f"——ep03_镜19 的手就这样出成了深肤色（2026-09-03 实测）")
     for i, p in enumerate(people):
         who = p.get("name") or f"people[{i}]"
         for f in REQUIRED_PERSON:

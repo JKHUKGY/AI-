@@ -1,0 +1,2329 @@
+[
+  {
+    "id": "ep01_镜01+1",
+    "members": [
+      "ep01_镜01",
+      "ep01_镜02"
+    ],
+    "scene": "SC05",
+    "duration_sec": 5.75,
+    "shots": [
+      {
+        "id": "ep01_镜01",
+        "shot_no": 1,
+        "scene": "SC05",
+        "tier": "S",
+        "intent_zh": "开场3秒钩子：一个刚被放出来的人，没有一点狼狈",
+        "script_ref": "「▲锈迹斑斑的铁栅栏门缓缓打开，江砚穿着一身洗得发白的衬衫走出来，半个月的羁押没磨掉他眼底的沉稳，反倒添了几分冷冽。」——判断标准：观众要在3秒内同时接到「他刚从里面出来」和「他不慌」。角色小传：江砚24岁，内敛稳重，情绪全在眼睛和下颌、不在肢体。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜01/ep01_镜01_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚已经**跨过门槛站定在红土地上**（不是正在抬腿的中间态），身体在画面中央偏左、3/4朝镜头、脸微朝画面左下；左手空着垂在身侧，**右手拎着一只装深色衣物的透明塑料袋**（与档案写的左手相反，以图为准）；画面底边把他从大腿中段切断、看不到膝盖以下；**正午光把脸照得比较均匀，没有出成半剪影**；铁门与剥皮白墙在两侧、猴面包树在纵深端、越野车一角在画面左缘。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing eases from a medium shot into a medium close-up as he walks toward the lens",
+          "move": "a slow, restrained push-in that travels only far enough to tighten the framing by about one step and then holds"
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              1.695
+            ],
+            "motion_en": "From this planted stance he pushes off and takes one full stride straight toward the lens so his frame grows larger; the transparent plastic bag in his right hand swings forward and back once, and his shoulders settle.",
+            "framing_en": "the framing holds a medium shot with the gate filling the upper half",
+            "dialogue": null,
+            "sfx_en": "the dry rasp of the gate hinge, two footfalls on concrete then one duller step onto dirt"
+          },
+          {
+            "t": [
+              1.695,
+              3.375
+            ],
+            "motion_en": "He takes two more steps straight toward the lens so his frame grows steadily larger, then stops; his chin stays tight and his eyes come up level to the horizon while his chest rises once.",
+            "framing_en": "the framing tightens to a medium close-up as he arrives",
+            "dialogue": "",
+            "sfx_en": "dry hot wind over open ground, a few distant birds"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 714203,
+        "notes": "开场钩子。运镜选推不选摇/移：推是缩放，单张底板撑得起",
+        "props_en": [
+          "plastic bag",
+          "iron gate"
+        ]
+      },
+      {
+        "id": "ep01_镜02",
+        "shot_no": 2,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "他把身后那道门留在了背后",
+        "script_ref": "同镜1那句「▲…走出来」——这一镜是它的另一半。判断标准：观众要看清他确实是从这扇门里出来的，同时看到门外有人等他。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜02/ep01_镜02_00.png",
+        "first_frame_state_zh": "实际看图确认：完整背影、站在门内的水泥地上、位于**画面中央**（不是档案写的画面左侧），右手拎塑料袋垂在身侧、头略偏画面右；透过半开铁门看出去是门外红土路，**沾满红土的深色越野车在画面右侧**（B反打的左右翻转正确）；底边切在大腿。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium shot from behind him",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.375
+            ],
+            "motion_en": "Seen from behind, he walks two paces away from the gate toward the far right of frame so his back grows smaller, then his head turns to the right until a sliver of his cheek shows, aimed at the dust-caked off-roader parked down the road.",
+            "dialogue": null,
+            "sfx_en": "footsteps receding on dirt, wind over open ground"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 2.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 881546,
+        "notes": "越轴已核对：镜1 江砚画面中偏右→本镜画面左；越野车在 A 是画面左、在 B 是画面右",
+        "props_en": [
+          "iron gate",
+          "off-road vehicle"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜01/ep01_镜01_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 714203,
+    "width": 704,
+    "height": 1280,
+    "tier": "S",
+    "scene_plate": "SC05_监狱门口_A主机位",
+    "intent_zh": "开场3秒钩子：一个刚被放出来的人，没有一点狼狈",
+    "notes": "开场钩子。运镜选推不选摇/移：推是缩放，单张底板撑得起"
+  },
+  {
+    "id": "ep01_镜03+1",
+    "members": [
+      "ep01_镜03",
+      "ep01_镜04"
+    ],
+    "scene": "SC05",
+    "duration_sec": 5.417,
+    "shots": [
+      {
+        "id": "ep01_镜03",
+        "shot_no": 3,
+        "scene": "SC05",
+        "tier": "S",
+        "intent_zh": "只做「冷冽」这半句：观众要读到冷，不是苦",
+        "script_ref": "「半个月的羁押没磨掉他眼底的沉稳，反倒添了几分冷冽。」——判断标准：观众要在他脸上读到「冷」而不是「苦」；如果读出的是委屈或颓丧，这一镜就是废的。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜03/ep01_镜03_00.png",
+        "first_frame_state_zh": "实际看图确认：头肩特写，3/4侧面朝镜头、**眼睛已经是抬起的状态**、视线投向画面左上方画外；额头与鼻梁有明显汗光；底边切在胸口上方（比档案写的锁骨略宽）；背景是虚焦的铁门与剥皮白墙。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a tight close-up on his head and shoulders",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.375
+            ],
+            "motion_en": "His already-raised gaze narrows a fraction and holds on the far point off frame; a single bead of sweat slides down his temple, and the muscle along his jaw draws tight once and stays tight.",
+            "dialogue": null,
+            "sfx_en": "wind only, the ambient drops away"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 2.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 335901,
+        "notes": "注意别让模型把他拍成正脸看镜头"
+      },
+      {
+        "id": "ep01_镜04",
+        "shot_no": 4,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "陈野比江砚急，江砚反倒是平静的那个",
+        "script_ref": "「▲不远处的越野车旁，陈野早就靠着车门等着，看见人立刻大步迎上去，重重拍了拍他的肩膀。」——判断标准：观众要看出陈野比江砚急，江砚反倒是平静的那个。角色小传：陈野40岁基建工长，耿直热血、动作幅度大。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜04/ep01_镜04_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野在画面左近端、过肩背对镜头（看得到后脑与右侧脸颊轮廓），**右手已经抬到胸口高度、手掌朝向江砚但还没落到肩上**；江砚在画面右、3/4正面看着陈野、双臂垂在身侧；两人隔着约一步；底边把两人从大腿处切断。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.042
+            ],
+            "motion_en": "The bearded man strides in from the left edge and closes the gap in two long steps, his raised right hand travelling forward until the palm lands flat on the younger man's left shoulder and pushes it down a centimetre; the younger man's shoulder gives under the impact while his own arms stay at his sides.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "江老弟，你可算出来了！",
+              "delivery_en": "he says in Mandarin Chinese, loud and rough with relief pressed flat under it",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "quick footfalls on dirt, a dull slap of palm on cloth"
+          }
+        ],
+        "preserve_en": "both faces, both hairstyles and both sets of clothes stay exactly as in the first frame, and the prison gate, the peeling white wall with barbed wire and the red-dirt ground behind them stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 462118,
+        "notes": "台词11字·fast→最低2.8秒，本单元3.042秒",
+        "props_en": [
+          "water bottle"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜03/ep01_镜03_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 335901,
+    "width": 704,
+    "height": 1280,
+    "tier": "S",
+    "scene_plate": "SC05_监狱门口_A主机位",
+    "intent_zh": "只做「冷冽」这半句：观众要读到冷，不是苦",
+    "notes": "注意别让模型把他拍成正脸看镜头"
+  },
+  {
+    "id": "ep01_镜05+1",
+    "members": [
+      "ep01_镜05",
+      "ep01_镜06"
+    ],
+    "scene": "SC05",
+    "duration_sec": 8.417,
+    "shots": [
+      {
+        "id": "ep01_镜05",
+        "shot_no": 5,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "真相由朋友先说出口，不是主角自己抱怨",
+        "script_ref": "「陈野（递过一瓶冰水…）：江老弟，你可算出来了！／陈野（急切地）：这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。」——判断标准：观众要接到「这是被设计的」这个信息。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜05/ep01_镜05_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野在画面右、3/4正面；**水瓶已经在两人之间、江砚的手已经握住瓶身下半**（交接正在进行中，不是刚要递出）；江砚在画面左近端、完整背影只见后脑；陈野脖子上搭着深色汗巾；底边切在两人腰下。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              5.509
+            ],
+            "motion_en": "The bearded man pushes a sweating plastic water bottle forward into the gap between them until it leaves his fingers, and the younger man's hand closes around it; the older man's chin juts forward once as he speaks.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。",
+              "delivery_en": "he says in Mandarin Chinese, fast and urgent, the words piling onto each other",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "plastic crackling under a grip"
+          },
+          {
+            "t": [
+              5.509,
+              6.375
+            ],
+            "motion_en": "His jaw pushes forward a second time, his brows draw together and the tendon on his neck stands out; both their hands come down and the bottle settles against the younger man's thigh.",
+            "dialogue": null,
+            "sfx_en": "dry hot wind over open ground, a few distant birds"
+          }
+        ],
+        "preserve_en": "both faces, both hairstyles and both sets of clothes stay exactly as in the first frame, and the prison gate, the peeling white wall with barbed wire and the red-dirt ground behind them stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 6.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 590774,
+        "notes": "台词27字·fast→最低5.71秒；越轴已核对：镜4 陈野画面左→本镜画面右",
+        "props_en": [
+          "water bottle"
+        ]
+      },
+      {
+        "id": "ep01_镜06",
+        "shot_no": 6,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "从一只手上读出「他早就知道了」",
+        "script_ref": "「▲江砚拧瓶盖的手顿了一下，抬眼看他，神色里没多少意外。」——这一镜只拍那个「顿」。判断标准：观众要从一只手上读出「他早就知道了」，而不是「他吓到了」。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜06/ep01_镜06_00.png",
+        "first_frame_state_zh": "实际看图确认：双手特写，**肤色偏白、是江砚的手**（手部镜传了角色参考图，生效）；**瓶盖已经被拧下来、离开瓶口约一指高**，右手拇指与食指捏着瓶盖、左手握着瓶身；瓶里满水、瓶壁有冷凝水珠；背景是虚焦红土地与越野车一角；画面里没有人脸。⚠️ 图里是「已拧开」而不是「拧到一半停住」。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off close over his hands",
+          "framing_path": "the framing holds a tight close-up on both hands and the bottle",
+          "move": null
+        },
+        "subject_lock_en": "the same pair of hands throughout, same skin tone, same faded pale-blue rolled shirt cuff at the wrist",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.042
+            ],
+            "motion_en": "The hand holding the loose cap stops dead a finger-width above the bottle mouth; his thumb and index finger tighten on it until the knuckles blanch white, and a bead of condensation runs down the bottle wall past his other hand.",
+            "dialogue": null,
+            "sfx_en": "a plastic cap clicking, then cutting off mid-click; the ambient drops to silence"
+          }
+        ],
+        "preserve_en": "his hands, skin tone and rolled pale-blue cuff stay exactly as in the first frame, and the blurred red-dirt ground and vehicle behind stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 2.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 148390,
+        "notes": "本镜负载是「停」，不是「拧」。手部镜的首帧来自关键帧镜06（江砚已带参考图）",
+        "props_en": [
+          "water bottle",
+          "bottle cap"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜05/ep01_镜05_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+    "seed": 590774,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "intent_zh": "真相由朋友先说出口，不是主角自己抱怨",
+    "notes": "台词27字·fast→最低5.71秒；越轴已核对：镜4 陈野画面左→本镜画面右"
+  },
+  {
+    "id": "ep01_镜07",
+    "members": [
+      "ep01_镜07"
+    ],
+    "scene": "SC05",
+    "duration_sec": 8.375,
+    "shots": [
+      {
+        "id": "ep01_镜07",
+        "shot_no": 7,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "作案手法是可查证的、不是含糊的冤枉",
+        "script_ref": "「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」（本单元取到「高品位矿样」为止）——判断标准：观众要能复述出「伪造合同 + 塞矿样」这两件事。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜07/ep01_镜07_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野近景，3/4正面朝镜头、视线朝画面右上方；**右手已经抬到胸口高度、拇指与食指捏成一个小手势**；脖子搭汗巾；底边切在腰部；背景是铁门与剥皮白墙。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing eases from a medium close-up into a close-up",
+          "move": "a slow, restrained push-in that travels only far enough to tighten the framing by about one step and then holds"
+        },
+        "subject_lock_en": "the same 40-year-old broad-shouldered Chinese man throughout, same face, same uneven full beard, same open khaki work shirt over a grey vest with a dark towel around his neck",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              5.733
+            ],
+            "motion_en": "His right hand comes up to chest height and his index finger stabs once at the air in front of him; his brows knot and his nostrils flare as the words come out.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，",
+              "delivery_en": "he says in Mandarin Chinese, fast and indignant, hammering the two names",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "voice only over a hushed ambient"
+          },
+          {
+            "t": [
+              5.733,
+              8.375
+            ],
+            "motion_en": "His thumb and index finger pinch together into a small square shape and hold it up between them; the framing closes in on his face and his neck tendon stands out, then his hand drops back to his side.",
+            "framing_en": "the framing tightens to a close-up",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "拿了新矿的高品位矿样，",
+              "delivery_en": "he continues in Mandarin Chinese, still fast, the pitch dropping on the last word",
+              "pace": "fast",
+              "onscreen": true
+            }
+          }
+        ],
+        "preserve_en": "his face, beard and open khaki work shirt stay exactly as in the first frame, and the gate and peeling white wall behind him keep the same rust, the same barbed wire and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 8.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 927564,
+        "notes": "台词39字·fast→最低7.89秒，本单元8.042秒并拆2拍"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜07/ep01_镜07_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 40-year-old broad-shouldered Chinese man throughout, same face, same uneven full beard, same open khaki work shirt over a grey vest with a dark towel around his neck",
+    "seed": 927564,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "intent_zh": "作案手法是可查证的、不是含糊的冤枉",
+    "notes": "台词39字·fast→最低7.89秒，本单元8.042秒并拆2拍"
+  },
+  {
+    "id": "ep01_镜08",
+    "members": [
+      "ep01_镜08"
+    ],
+    "scene": "SC05",
+    "duration_sec": 6.708,
+    "shots": [
+      {
+        "id": "ep01_镜08",
+        "shot_no": 8,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "反应镜：他没有惊讶，只有确认",
+        "script_ref": "同镜7那段原文的后半（「趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警」）——这一镜的验收对象是江砚的脸。判断标准：观众要看到「他没有惊讶，只有确认」；如果他脸上出现震惊，这一镜就错了。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜08/ep01_镜08_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚近景，头略低、**视线已经垂下落在自己手里那瓶已开盖的水上**；右手握着瓶身举在胸腹前；底边切在腰下；背景是虚焦的剥皮白墙与顶部铁丝网。⚠️ 视线已经在瓶子上了。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              4.444
+            ],
+            "motion_en": "His throat moves once as he swallows, his gaze staying down on the bottle in his hand; his lower lip presses flat.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "趁你下井查工作的功夫，偷偷塞进你办公室抽屉，",
+              "delivery_en": "the voice comes in Mandarin Chinese from off-screen, fast and indignant, while the man visible in frame keeps his lips closed and still",
+              "pace": "fast",
+              "onscreen": false
+            }
+          },
+          {
+            "t": [
+              4.444,
+              6.708
+            ],
+            "motion_en": "His gaze slides down from the left of frame until it rests on the bottle in his own hand; the muscle along his jaw draws tight once and stays tight, and his chest rises and falls slowly.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "转头就匿名报了警。",
+              "delivery_en": "the voice continues in Mandarin Chinese from off-screen, dropping to a flat hard finish, while the man in frame stays silent",
+              "pace": "fast",
+              "onscreen": false
+            },
+            "sfx_en": "his own slow breathing"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 6.708,
+        "width": 704,
+        "height": 1280,
+        "seed": 203785,
+        "notes": "反应镜：说话人在画外，全部负载是听的人的脸",
+        "props_en": [
+          "water bottle"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜08/ep01_镜08_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 203785,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_A主机位",
+    "intent_zh": "反应镜：他没有惊讶，只有确认",
+    "notes": "反应镜：说话人在画外，全部负载是听的人的脸"
+  },
+  {
+    "id": "ep01_镜09+1",
+    "members": [
+      "ep01_镜09",
+      "ep01_镜10"
+    ],
+    "scene": "SC05",
+    "duration_sec": 5.084,
+    "shots": [
+      {
+        "id": "ep01_镜09",
+        "shot_no": 9,
+        "scene": "SC05",
+        "tier": "S",
+        "intent_zh": "五个字要说得比陈野整段话都轻，观众才会感到冷",
+        "script_ref": "「江砚（喝了口水，喉结滚动，眼神一点点冷下来）：我猜到是他。」——判断标准：这五个字要说得比陈野整段话都轻，观众才会感到冷。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜09/ep01_镜09_00.png",
+        "first_frame_state_zh": "实际看图确认：头肩特写、3/4侧面、视线朝画面左、嘴唇闭着；**手和水瓶都不在画面里**（档案里「瓶口刚离开嘴唇」这个信息画面上看不到）；底边切在胸口；背景虚焦铁门与白墙。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a tight close-up on his head and shoulders",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.042
+            ],
+            "motion_en": "His throat moves once as he swallows; his lips part only slightly as he speaks and close again, and his gaze stays level and fixed off to the left of frame.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "我猜到是他。",
+              "delivery_en": "he says in Mandarin Chinese, quiet and flat, barely opening his mouth",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "one swallow, then half a second of ambient silence"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 651028,
+        "notes": "台词6字·slow→最低2.8秒"
+      },
+      {
+        "id": "ep01_镜10",
+        "shot_no": 10,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "连最了解他的朋友都没料到他这么冷静",
+        "script_ref": "「陈野（愣了）：你知道？」——判断标准：观众要通过陈野的愣，反过来意识到江砚的反常。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜10/ep01_镜10_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野近景偏中景，3/4正面、**嘴微张、眉毛上挑**（愣住的状态已经在图里），**左手抬在胸前、手指半张开停在半空**；底边切在腰下；背景是院内两侧平房、铁门与门外的越野车。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face",
+          "move": null
+        },
+        "subject_lock_en": "the same 40-year-old broad-shouldered Chinese man throughout, same face, same uneven full beard, same open khaki work shirt over a grey vest with a dark towel around his neck",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.042
+            ],
+            "motion_en": "His right hand stays frozen where it was gesturing; his eyebrows jump up, his mouth falls open a centimetre and stays open after the words stop.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "你知道？",
+              "delivery_en": "he says in Mandarin Chinese, three words lifting into disbelief at the end",
+              "pace": "normal",
+              "onscreen": true
+            },
+            "sfx_en": "a hushed ambient as the score drops out"
+          }
+        ],
+        "preserve_en": "his face, beard and open khaki work shirt stay exactly as in the first frame, and the gate and peeling white wall behind him keep the same rust, the same barbed wire and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 2.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 377641,
+        "notes": "台词4字·normal→最低1.8秒"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜09/ep01_镜09_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 651028,
+    "width": 704,
+    "height": 1280,
+    "tier": "S",
+    "scene_plate": "SC05_监狱门口_A主机位",
+    "intent_zh": "五个字要说得比陈野整段话都轻，观众才会感到冷",
+    "notes": "台词6字·slow→最低2.8秒"
+  },
+  {
+    "id": "ep01_镜11",
+    "members": [
+      "ep01_镜11"
+    ],
+    "scene": "SC05",
+    "duration_sec": 5.042,
+    "shots": [
+      {
+        "id": "ep01_镜11",
+        "shot_no": 11,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "这句话里没有愤怒，只有结论",
+        "script_ref": "「江砚（语气冰冷）：除了他，没人会这么针对我。」——判断标准：观众要听出这句话里没有愤怒，只有结论。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜11/ep01_镜11_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚近景，3/4侧面、视线朝画面左；**双手都在瓶子上：左手扶着瓶身、右手拇指压在瓶盖上正在拧**；底边切在腰下；背景是剥皮白墙与画面右侧的铁门。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face and one hand",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              5.042
+            ],
+            "motion_en": "His left hand rotates the bottle cap the rest of the way until it seats with a click; as the last words leave him his chin pushes forward once and his gaze stays locked off to the left of frame.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "除了他，没人会这么针对我。",
+              "delivery_en": "he says in Mandarin Chinese, low and even, each word set down separately",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "a plastic cap seating with a click, then wind"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 5.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 806355,
+        "notes": "镜6那个没拧完的瓶盖在这里拧完了——道具呼应，剪辑不要拆开这两镜",
+        "props_en": [
+          "water bottle",
+          "bottle cap"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜11/ep01_镜11_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 806355,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_A主机位",
+    "intent_zh": "这句话里没有愤怒，只有结论",
+    "notes": "镜6那个没拧完的瓶盖在这里拧完了——道具呼应，剪辑不要拆开这两镜"
+  },
+  {
+    "id": "ep01_镜12",
+    "members": [
+      "ep01_镜12"
+    ],
+    "scene": "SC05",
+    "duration_sec": 8.0417,
+    "shots": [
+      {
+        "id": "ep01_镜12",
+        "shot_no": 12,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "交代「三吨金矿」这个数字，并立住顾家的忘恩负义",
+        "script_ref": "「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——判断标准：观众要记住「他给顾家找出了一座大矿」。这个数字第5集会被顾万通拿来吹。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜12/ep01_镜12_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野在画面右、完整侧面朝画面左，**右手正在向下挥动（画面里有明显的动态模糊）**，腰上挂着劳保手套；江砚在画面左近端、完整背影一动不动、双手垂在身侧；底边把两人从大腿处切断；背景是关着的铁门与剥皮白墙。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.554
+            ],
+            "motion_en": "The bearded man's right hand chops downward through the air and his chest pushes forward; the younger man in the near foreground stays completely still with only his shoulders rising on a breath.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "这兔崽子也太缺德了！",
+              "delivery_en": "he says in Mandarin Chinese, shouting, the consonants spitting",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "a hand slapping hard onto a thigh"
+          },
+          {
+            "t": [
+              2.554,
+              8.0417
+            ],
+            "motion_en": "His left palm smacks down onto his own thigh, then his right hand chops down through the air a second time; his chest keeps heaving and both arms finally drop.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！",
+              "delivery_en": "he continues in Mandarin Chinese, fast and bitter, leaning on the figure and on the last four words",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "ambient returning under the voice"
+          }
+        ],
+        "preserve_en": "both faces, both hairstyles and both sets of clothes stay exactly as in the first frame, and the prison gate, the peeling white wall with barbed wire and the red-dirt ground behind them stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 8.0417,
+        "width": 704,
+        "height": 1280,
+        "seed": 514902,
+        "notes": "台词37字·fast→最低7.53秒。埋线镜"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜12/ep01_镜12_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+    "seed": 514902,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "intent_zh": "交代「三吨金矿」这个数字，并立住顾家的忘恩负义",
+    "notes": "台词37字·fast→最低7.53秒。埋线镜"
+  },
+  {
+    "id": "ep01_镜13+1",
+    "members": [
+      "ep01_镜13",
+      "ep01_镜14"
+    ],
+    "scene": "SC05",
+    "duration_sec": 7.75,
+    "shots": [
+      {
+        "id": "ep01_镜13",
+        "shot_no": 13,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "连朋友都不确定他会不会忍下去",
+        "script_ref": "「陈野（顿了顿，试探着问）：那咱，还回万通矿业吗？」——判断标准：观众要感到这个问题是有分量的，不是随口一问。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜13/ep01_镜13_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野在画面中央偏左、3/4侧面朝画面右上方，**嘴闭着、双手垂在身侧**；底边切在膝盖下方（比档案要求的近景略宽）；背景是铁门、剥皮白墙与门外的越野车。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face",
+          "move": null
+        },
+        "subject_lock_en": "the same 40-year-old broad-shouldered Chinese man throughout, same face, same uneven full beard, same open khaki work shirt over a grey vest with a dark towel around his neck",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              4.042
+            ],
+            "motion_en": "His right hand wipes once down the seam of his trousers, his shoulders draw in a little, and only after that do his lips part; when the question ends his eyes stay aimed off to the left of frame, waiting.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "那咱，还回万通矿业吗？",
+              "delivery_en": "he asks in Mandarin Chinese, slowing down, the pitch sinking at the end as if testing the ground",
+              "pace": "normal",
+              "onscreen": true
+            },
+            "sfx_en": "wind only, the score cuts out"
+          }
+        ],
+        "preserve_en": "his face, beard and open khaki work shirt stay exactly as in the first frame, and the gate and peeling white wall behind him keep the same rust, the same barbed wire and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 4.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 238470,
+        "notes": "本集第二个留白点。台词11字·normal→最低3.55秒"
+      },
+      {
+        "id": "ep01_镜14",
+        "shot_no": 14,
+        "scene": "SC05",
+        "tier": "S",
+        "intent_zh": "全集唯一一次主角主动做决定，也是整部剧的起点",
+        "script_ref": "「江砚（摇了摇头，语气平静笃定）：不回了，自己干。」——判断标准：观众要感到这句话是「早就想好的」，不是「被气到的」；如果演成赌气，全剧人物底色就错了。",
+        "scene_plate": "SC05_监狱门口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜14/ep01_镜14_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚近景，3/4侧面朝画面左、**下颌已经略微抬起**、视线平；底边切在腰下；背景是剥皮白墙与画面右侧铁门。⚠️ 头已经是抬起的状态。",
+        "camera_en": {
+          "position": "The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing eases from a close-up into a tight close-up",
+          "move": "a slow, restrained push-in that travels only far enough to tighten the framing by about one step and then holds"
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.708
+            ],
+            "motion_en": "His head turns a few degrees left and back once in a single small shake, then settles; as the last two words leave him his chin lifts another few degrees and holds there, and his eyelids stay open and still.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "不回了，自己干。",
+              "delivery_en": "he says in Mandarin Chinese, quiet and completely settled, each syllable placed",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "the ambient is pulled away for half a second, then one low drum hit lands"
+          }
+        ],
+        "preserve_en": "his face, hair and faded pale-blue shirt stay exactly as in the first frame, and the prison gate behind him keeps the same rust pattern, the same peeling white wall with barbed wire on top and the same red-dirt ground and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.708,
+        "width": 704,
+        "height": 1280,
+        "seed": 469813,
+        "notes": "全集最该保命的一镜。台词8字·slow→最低3.47秒"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜13/ep01_镜13_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 40-year-old broad-shouldered Chinese man throughout, same face, same uneven full beard, same open khaki work shirt over a grey vest with a dark towel around his neck",
+    "seed": 238470,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "intent_zh": "连朋友都不确定他会不会忍下去",
+    "notes": "本集第二个留白点。台词11字·normal→最低3.55秒"
+  },
+  {
+    "id": "ep01_镜15",
+    "members": [
+      "ep01_镜15"
+    ],
+    "scene": "SC05",
+    "duration_sec": 9.75,
+    "shots": [
+      {
+        "id": "ep01_镜15",
+        "shot_no": 15,
+        "scene": "SC05",
+        "tier": "A",
+        "intent_zh": "他不是一个人从零开始，他有帮手（前半：爆发）",
+        "script_ref": "「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」（本单元取到「就等你这句话呢」为止）——判断标准：观众要接到「人和设备都不缺」这个信息，否则第4集的勘探会显得凭空。",
+        "scene_plate": "SC05_监狱门口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜15/ep01_镜15_00.png",
+        "first_frame_state_zh": "实际看图确认：陈野在画面右、3/4正面、**右手食指已经抬起来指向画面左侧的江砚**、嘴张开在说话；江砚在画面左近端、完整背影；纵深端门外能看到那辆越野车；底边把两人从大腿处切断。⚠️ 手已经指出去了，不是刚要拍腿。",
+        "camera_en": {
+          "position": "The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.375
+            ],
+            "motion_en": "The bearded man's pointing hand drops from the air and his right palm slaps down hard onto his own thigh and bounces off; his eyes widen and his upper body pitches forward toward the other man, whose back stays turned and still.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "好！我就等你这句话呢！",
+              "delivery_en": "he says in Mandarin Chinese, shouting with delight, the first word cracking out",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "a sharp slap on denim, then an upbeat percussion cue entering"
+          },
+          {
+            "t": [
+              3.375,
+              5.937
+            ],
+            "motion_en": "His right arm swings up and points past the other man toward the road; the younger man's head dips once in a nod.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "设备、工人我都能搞到，",
+              "delivery_en": "he continues in Mandarin Chinese, fast and confident",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "percussion continuing"
+          },
+          {
+            "t": [
+              5.937,
+              9.75
+            ],
+            "motion_en": "The younger man turns on the spot and walks two paces toward the right depth of frame so his back grows smaller, and his hand reaches out and closes on the door handle of the dust-caked off-roader.",
+            "dialogue": {
+              "speaker": "陈野",
+              "text_zh": "咱自己找矿自己干，不受他顾家的鸟气！",
+              "delivery_en": "he finishes in Mandarin Chinese, still loud, landing hard on the last three words",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "a car door handle clacking"
+          }
+        ],
+        "preserve_en": "both faces, both hairstyles and both sets of clothes stay exactly as in the first frame, and the prison gate, the peeling white wall with barbed wire and the red-dirt ground behind them stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 9.75,
+        "width": 704,
+        "height": 1280,
+        "seed": 742096,
+        "notes": "拆段前半（H3 单元：由 ep01_镜15_u1/ep01_镜15_u2 合并，LTX 时代的拆段在 H3 上没必要）",
+        "unit_of": "ep01_镜15",
+        "unit_index": [
+          1,
+          2
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜15/ep01_镜15_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest",
+    "seed": 742096,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "intent_zh": "他不是一个人从零开始，他有帮手（前半：爆发）",
+    "notes": "拆段前半（H3 单元：由 ep01_镜15_u1/ep01_镜15_u2 合并，LTX 时代的拆段在 H3 上没必要）"
+  },
+  {
+    "id": "ep01_镜16",
+    "members": [
+      "ep01_镜16"
+    ],
+    "scene": "SC06",
+    "duration_sec": 4.708,
+    "shots": [
+      {
+        "id": "ep01_镜16",
+        "shot_no": 16,
+        "scene": "SC06",
+        "tier": "B",
+        "intent_zh": "时间与地点的交接：观众要感到时间跳了",
+        "script_ref": "「1-2：一个月前 非洲A国国际机场出口 日 外／▲热带阳光灼人，机场出口人流混杂。」——判断标准：观众要在无字幕的情况下感到「时间跳了、这是另一天」。",
+        "scene_plate": "SC06_机场出口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_00.png",
+        "first_frame_state_zh": "实际看图确认：机场出口空镜、**画面里没有任何人物**；玻璃自动门与落地幕墙在画面左、水泥挑檐在上方投下一道斜向硬阴影带、行李推车沿柱列停放、金属栏杆在画面中右、黄色出租车与白色小巴在画面右、棕榈树与空白广告牌骨架在纵深端；地面被晒得反光。",
+        "camera_en": {
+          "position": "The camera stands under the terminal canopy on the arrivals kerb at eye level, about 1.5 metres up, facing the sliding glass doors of the arrivals hall",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a wide shot of the kerb",
+          "move": null
+        },
+        "subject_lock_en": "an empty kerb outside a small international terminal, only parked vehicles and luggage trolleys in frame",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              4.708
+            ],
+            "motion_en": "A white minibus rolls slowly across the far right of frame from the depth toward the edge and leaves; the heated air above the concrete shimmers and warps the distant palms throughout.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "我叫江砚。一个月前，我第一次到非洲。",
+              "delivery_en": "he narrates in Mandarin Chinese, calm and retrospective, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "normal",
+              "onscreen": false
+            },
+            "sfx_en": "a muffled airport announcement blurred past recognition, a vehicle passing at distance"
+          }
+        ],
+        "preserve_en": "the terminal facade, the concrete canopy and its hard shadow line, the metal kerb railing, the yellow taxis and the row of palms behind them all stay exactly as in the first frame and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 4.708,
+        "width": 704,
+        "height": 1280,
+        "seed": 613947,
+        "notes": "B级空镜。旁白已按短剧口语习惯压缩",
+        "props_en": [
+          "minibus"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "an empty kerb outside a small international terminal, only parked vehicles and luggage trolleys in frame",
+    "seed": 613947,
+    "width": 704,
+    "height": 1280,
+    "tier": "B",
+    "scene_plate": "SC06_机场出口_A主机位",
+    "intent_zh": "时间与地点的交接：观众要感到时间跳了",
+    "notes": "B级空镜。旁白已按短剧口语习惯压缩"
+  },
+  {
+    "id": "ep01_镜17",
+    "members": [
+      "ep01_镜17"
+    ],
+    "scene": "SC06",
+    "duration_sec": 11.75,
+    "shots": [
+      {
+        "id": "ep01_镜17",
+        "shot_no": 17,
+        "scene": "SC06",
+        "tier": "A",
+        "intent_zh": "他是外来者，站在光与影的界线上（前半）",
+        "script_ref": "「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。／▲江砚拖着一个半旧的行李箱，背着登山包，手里攥着写着地址的纸条，四处张望。」（本单元取前半）——判断标准：观众要看到他站在光与影的界线上，以及他手里那张纸条。",
+        "scene_plate": "SC06_机场出口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜17/ep01_镜17_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚在画面中央、3/4侧面朝镜头，**已经走出自动门好几步**、身体整个在挑檐阴影里，硬阴影带落在他画面右侧的地面上；**右手捏着一张浅色纸片（登机牌/字条）举在胸前**，左手握着黑色硬壳拉杆箱的拉杆；肩上一只深棕色登山包；头已经转向画面右上方在张望。画面左侧是玻璃幕墙与航站楼，右侧是黄色出租车与棕榈树。⚠️ 出门那几步已经走完了，而且手里多了一张纸片。",
+        "camera_en": {
+          "position": "The camera stands under the terminal canopy on the arrivals kerb at eye level, about 1.5 metres up, facing the sliding glass doors of the arrivals hall",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing eases from a wide shot into a medium shot",
+          "move": "a slow, restrained push-in that travels only far enough to tighten the framing by about one step and then holds"
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              5.375
+            ],
+            "motion_en": "He is already several paces clear of the sliding doors and keeps walking at the same unhurried pace toward the hard shadow line ahead of him until it crosses his chest, the suitcase wheels turning under his left hand and the folded slip of paper still held up in his right; his head, already turned up and to the right, comes back down and round to the left once, then settles forward.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "高一那年父亲车祸去世，母亲为了供我读书，",
+              "delivery_en": "he narrates in Mandarin Chinese, calm and low, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "normal",
+              "onscreen": false
+            },
+            "sfx_en": "suitcase wheels rolling on concrete"
+          },
+          {
+            "t": [
+              5.375,
+              9.437
+            ],
+            "motion_en": "His head turns to the left and scans the kerb, then settles; the suitcase stops rolling and he shifts his weight onto the other foot.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "远赴非洲投奔远房表叔顾万通，",
+              "delivery_en": "he continues in Mandarin Chinese, calm and low, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "normal",
+              "onscreen": false
+            },
+            "sfx_en": "wheels stopping"
+          },
+          {
+            "t": [
+              9.437,
+              11.75
+            ],
+            "motion_en": "His right hand lifts a small folded paper note up to chest height and he looks at it for a beat, then lowers it; he settles standing astride the shadow line.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "一去就是七年。",
+              "delivery_en": "he finishes in Mandarin Chinese, the last word held slightly, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "normal",
+              "onscreen": false
+            },
+            "sfx_en": "paper crackling faintly"
+          }
+        ],
+        "preserve_en": "the terminal facade, the concrete canopy and its hard shadow line, the metal kerb railing, the yellow taxis and the row of palms behind them all stay exactly as in the first frame, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base, the folded pale slip of paper stays in his right hand and keeps the same size and colour, the dark brown hiking backpack keeps the same shape and its strap the same webbing and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 11.75,
+        "width": 704,
+        "height": 1280,
+        "seed": 708261,
+        "notes": "拆段前半。人物必须跨在阴影与强光的分界线上（H3 单元：由 ep01_镜17_u1/ep01_镜17_u2 合并，LTX 时代的拆段在 H3 上没必要）",
+        "unit_of": "ep01_镜17",
+        "unit_index": [
+          1,
+          2
+        ],
+        "props_en": [
+          "suitcase",
+          "backpack",
+          "paper note"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜17/ep01_镜17_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 708261,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC06_机场出口_A主机位",
+    "intent_zh": "他是外来者，站在光与影的界线上（前半）",
+    "notes": "拆段前半。人物必须跨在阴影与强光的分界线上（H3 单元：由 ep01_镜17_u1/ep01_镜17_u2 合并，LTX 时代的拆段在 H3 上没必要）"
+  },
+  {
+    "id": "ep01_镜18",
+    "members": [
+      "ep01_镜18"
+    ],
+    "scene": "SC06",
+    "duration_sec": 11.75,
+    "shots": [
+      {
+        "id": "ep01_镜18",
+        "shot_no": 18,
+        "scene": "SC06",
+        "tier": "A",
+        "intent_zh": "交代他专业能力顶尖（前半）",
+        "script_ref": "「江砚 OS：我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家。」——判断标准：观众要接到两个信息——他专业能力顶尖（第3集的伏笔）、他来这里的唯一目的是接母亲。",
+        "scene_plate": "SC06_机场出口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜18/ep01_镜18_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚在画面右侧近端、完整背影偏3/4背面，**头已经转向画面左侧、露出了侧脸和一点脸颊**；肩上背着深色登山包（背带在右肩）；画面左侧是黄色出租车队与栏杆，纵深端是空白广告牌骨架与棕榈树；底边切在腰胯附近（比卡里写的胸口下方松一档）。⚠️ 转头这个动作已经做完了。",
+        "camera_en": {
+          "position": "The camera stands outside the metal kerb railing at eye level, about 1.5 metres up, with its back to the arrivals doors, looking out over the taxi rank toward the car park",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up from behind his shoulder",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              6.708
+            ],
+            "motion_en": "Seen from behind, his head is already turned to the left with a sliver of cheek showing; it holds there for a beat, then rotates slowly back toward the depth of frame until only the back of his head is left; his shoulders stay still and the backpack strap shifts a centimetre.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "我以全校第一的成绩考上夏国地质大学资源勘察专业。",
+              "delivery_en": "he narrates in Mandarin Chinese, even and unhurried, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "normal",
+              "onscreen": false
+            },
+            "sfx_en": "a distant taxi tout calling, the words blurred by distance"
+          },
+          {
+            "t": [
+              6.708,
+              11.75
+            ],
+            "motion_en": "His head turns back to the right and settles aimed at the road in the depth of frame; the heated air warps the far buildings behind him.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "大学毕业的第一件事，就是飞到这里。",
+              "delivery_en": "he continues in Mandarin Chinese, the pitch lifting slightly on the last phrase, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "normal",
+              "onscreen": false
+            }
+          }
+        ],
+        "preserve_en": "the terminal facade, the concrete canopy and its hard shadow line, the metal kerb railing, the yellow taxis and the row of palms behind them all stay exactly as in the first frame, the dark brown hiking backpack keeps the same shape and its strap the same webbing and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 11.75,
+        "width": 704,
+        "height": 1280,
+        "seed": 159028,
+        "notes": "拆段前半：旁白 23 字·normal→最低6.55秒。越轴已核对（H3 单元：由 ep01_镜18_u1/ep01_镜18_u2 合并，LTX 时代的拆段在 H3 上没必要）",
+        "props_en": [
+          "backpack"
+        ],
+        "unit_of": "ep01_镜18",
+        "unit_index": [
+          1,
+          2
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜18/ep01_镜18_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 159028,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC06_机场出口_B反打",
+    "intent_zh": "交代他专业能力顶尖（前半）",
+    "notes": "拆段前半：旁白 23 字·normal→最低6.55秒。越轴已核对（H3 单元：由 ep01_镜18_u1/ep01_镜18_u2 合并，LTX 时代的拆段在 H3 上没必要）"
+  },
+  {
+    "id": "ep01_镜19",
+    "members": [
+      "ep01_镜19"
+    ],
+    "scene": "SC06",
+    "duration_sec": 7.042,
+    "shots": [
+      {
+        "id": "ep01_镜19",
+        "shot_no": 19,
+        "scene": "SC06",
+        "tier": "A",
+        "intent_zh": "七年没见，她第一反应是替他分担重量",
+        "script_ref": "「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。／苏慧（眼眶一下子红了，上前接过他的背包，声音发颤）：小砚，可算到了，累不累？快跟我回家。」——判断标准：观众要看到她**先去接包、而不是先拥抱**——这个细节定义了这对母子的关系。",
+        "scene_plate": "SC06_机场出口_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_00.png",
+        "first_frame_state_zh": "实际看图确认：**苏慧已经走到他跟前站定**（在画面右侧中段、3/4正面朝画面左），上身前倾含肩、脸仰起看着他，眼睛湿的；**她的右手已经按在江砚胸前的背包带子上**（只有一只手，不是两只）；江砚在画面左侧近端、3/4背面过肩、肩膀已经转过来了。⚠️ 「快步走过来」和「手抬起来」都已经发生完了。",
+        "camera_en": {
+          "position": "The camera stands under the terminal canopy on the arrivals kerb at eye level, about 1.5 metres up, facing the sliding glass doors of the arrivals hall",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two people throughout: the young man in a faded pale-blue shirt and the older woman in a yellowed cotton dress under a grey-blue apron",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.185
+            ],
+            "motion_en": "She is already standing close in front of him with her right hand on the strap at his chest; her left hand comes up and closes on the strap beside it, and her upper body tips a few degrees further forward; the young man in the near foreground stays turned as he is, his shoulder rising once with a breath.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "小砚，可算到了，",
+              "delivery_en": "she says in Mandarin Chinese, slow and unsteady, the breath catching",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "quick soft-soled footsteps on concrete"
+          },
+          {
+            "t": [
+              3.185,
+              7.042
+            ],
+            "motion_en": "Both her hands tighten on the backpack strap and take its weight off his shoulder; her chin tips up to look at his face and her eyes glisten.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "累不累？快跟我回家。",
+              "delivery_en": "she continues in Mandarin Chinese, still slow and thin, pressing the last four words",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "cloth and webbing shifting"
+          }
+        ],
+        "preserve_en": "the terminal facade, the concrete canopy and its hard shadow line, the metal kerb railing, the yellow taxis and the row of palms behind them all stay exactly as in the first frame, and her apron and his backpack stay unchanged, the dark brown hiking backpack keeps the same shape and its strap the same webbing and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 7.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 481630,
+        "notes": "台词18字·slow→最低6.8秒",
+        "props_en": [
+          "backpack"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two people throughout: the young man in a faded pale-blue shirt and the older woman in a yellowed cotton dress under a grey-blue apron",
+    "seed": 481630,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC06_机场出口_A主机位",
+    "intent_zh": "七年没见，她第一反应是替他分担重量",
+    "notes": "台词18字·slow→最低6.8秒"
+  },
+  {
+    "id": "ep01_镜20",
+    "members": [
+      "ep01_镜20"
+    ],
+    "scene": "SC06",
+    "duration_sec": 6.375,
+    "shots": [
+      {
+        "id": "ep01_镜20",
+        "shot_no": 20,
+        "scene": "SC06",
+        "tier": "S",
+        "intent_zh": "他一眼就看出这七年在她身上留下了什么",
+        "script_ref": "「江砚（看着母亲鬓角新增的白发，喉结动了动）：妈，我不累，你怎么瘦了这么多。」——判断标准：观众的视线要被他的视线带到她的白发和那双手上；如果观众只看到两张说话的脸，这一镜就没做到。",
+        "scene_plate": "SC06_机场出口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_00.png",
+        "first_frame_state_zh": "实际看图确认：苏慧在画面左侧、3/4背面对镜头，只看得到侧脸轮廓与花白鬓角；**她的两只手已经握在江砚胸前的背包带子上**，手背粗糙、指节明显（这是本镜的视觉焦点）；江砚在画面右侧近端、3/4正面、脸看得清，视线落在她脸上，**右手还垂在身侧**（还没抬起来）。抬手那个动作可以正常演。",
+        "camera_en": {
+          "position": "The camera stands outside the metal kerb railing at eye level, about 1.5 metres up, with its back to the arrivals doors, looking out over the taxi rank toward the car park",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two people throughout, the young man in the faded pale-blue shirt and the older woman with grey at her temples",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.498
+            ],
+            "motion_en": "His eyes travel up from her face to the grey at her temple and hold there; his throat moves once.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "妈，我不累，",
+              "delivery_en": "he says in Mandarin Chinese, low and quiet",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "the ambient drops away, only faint wind"
+          },
+          {
+            "t": [
+              2.498,
+              6.375
+            ],
+            "motion_en": "His right hand lifts toward her hands on the strap and stops in the air a few centimetres short, then lowers back to his side; his gaze slides down and settles on her hands.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "你怎么瘦了这么多。",
+              "delivery_en": "he finishes in Mandarin Chinese, the voice thinning out on the last words",
+              "pace": "slow",
+              "onscreen": true
+            }
+          }
+        ],
+        "preserve_en": "the terminal facade, the concrete canopy and its hard shadow line, the metal kerb railing, the yellow taxis and the row of palms behind them all stay exactly as in the first frame, and her grey temples and her hands on the strap stay unchanged, the dark brown hiking backpack keeps the same shape and its strap the same webbing and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 6.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 305174,
+        "notes": "那只「抬起又停住的手」是本镜的核心动作，不要省。本集第三个留白点",
+        "props_en": [
+          "backpack"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜20/ep01_镜20_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two people throughout, the young man in the faded pale-blue shirt and the older woman with grey at her temples",
+    "seed": 305174,
+    "width": 704,
+    "height": 1280,
+    "tier": "S",
+    "scene_plate": "SC06_机场出口_B反打",
+    "intent_zh": "他一眼就看出这七年在她身上留下了什么",
+    "notes": "那只「抬起又停住的手」是本镜的核心动作，不要省。本集第三个留白点"
+  },
+  {
+    "id": "ep01_镜21",
+    "members": [
+      "ep01_镜21"
+    ],
+    "scene": "SC06",
+    "duration_sec": 9.7503,
+    "shots": [
+      {
+        "id": "ep01_镜21",
+        "shot_no": 21,
+        "scene": "SC06",
+        "tier": "A",
+        "intent_zh": "她在替顾家说好话，也在替自己遮掩（前半）",
+        "script_ref": "「苏慧（抹了把眼睛，强笑）：这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。」（本单元取到「显的」为止）——判断标准：观众要不信她这句话。",
+        "scene_plate": "SC06_机场出口_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_01.png",
+        "first_frame_state_zh": "实际看图确认：苏慧在画面中央近端、3/4正面朝画面右，**抹眼睛的动作已经做完、右手落在胸前**；**嘴角已经被强行拉起来、露出一点牙，眼睛却还是红的、眼下留着刚抹过的水光**；江砚那只深色登山包被她拎在身体左侧、垂在腰下（在画面左下角）；画面左侧是黄色出租车与栏杆。⚠️ 抹眼睛和笑起来两个动作都已经发生完了，这一帧就是「强笑」本身。",
+        "camera_en": {
+          "position": "The camera stands outside the metal kerb railing at eye level, about 1.5 metres up, with its back to the arrivals doors, looking out over the taxi rank toward the car park",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on her face",
+          "move": null
+        },
+        "subject_lock_en": "the same 48-year-old Chinese woman throughout, same face with sun spots on the cheekbones, same low bun with grey at the temples, same yellowed white cotton dress under a grey-blue work apron",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.042
+            ],
+            "motion_en": "The strained smile is already on her face, held only at the mouth while her eyes stay red and flat; her right hand lowers from her chest to her side, the corners of her mouth pull a fraction wider and hold, and she blinks once as her gaze stays down and off to the side.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "这边太阳大，显的，",
+              "delivery_en": "she says in Mandarin Chinese, brightening her voice on purpose over a thick throat",
+              "pace": "normal",
+              "onscreen": true
+            },
+            "sfx_en": "cloth brushing skin"
+          },
+          {
+            "t": [
+              3.042,
+              6.643
+            ],
+            "motion_en": "Her eyes come up to the right of frame and meet her son's; the smile stays fixed in place.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "快走吧，你表叔家都等着呢，",
+              "delivery_en": "she says in Mandarin Chinese, hurrying the words along",
+              "pace": "normal",
+              "onscreen": true
+            }
+          },
+          {
+            "t": [
+              6.643,
+              9.7503
+            ],
+            "motion_en": "Her left hand hitches the backpack strap higher onto her own shoulder and she half-turns toward the depth of frame; the smile is still there when the words end.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "特意给你做了接风饭。",
+              "delivery_en": "she finishes in Mandarin Chinese, lifting the last three words as if offering a gift",
+              "pace": "normal",
+              "onscreen": true
+            },
+            "sfx_en": "webbing shifting on cloth"
+          }
+        ],
+        "preserve_en": "the terminal facade, the concrete canopy and its hard shadow line, the metal kerb railing, the yellow taxis and the row of palms behind them all stay exactly as in the first frame, and her apron and low bun stay unchanged, the dark brown hiking backpack keeps the same shape and its strap the same webbing, hanging from her hand down by her side and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 9.7503,
+        "width": 704,
+        "height": 1280,
+        "seed": 864205,
+        "notes": "拆段前半。「强笑」是苏慧的招牌表情（H3 单元：由 ep01_镜21_u1/ep01_镜21_u2 合并，LTX 时代的拆段在 H3 上没必要）",
+        "unit_of": "ep01_镜21",
+        "unit_index": [
+          1,
+          2
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_01.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 48-year-old Chinese woman throughout, same face with sun spots on the cheekbones, same low bun with grey at the temples, same yellowed white cotton dress under a grey-blue work apron",
+    "seed": 864205,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC06_机场出口_B反打",
+    "intent_zh": "她在替顾家说好话，也在替自己遮掩（前半）",
+    "notes": "拆段前半。「强笑」是苏慧的招牌表情（H3 单元：由 ep01_镜21_u1/ep01_镜21_u2 合并，LTX 时代的拆段在 H3 上没必要）"
+  },
+  {
+    "id": "ep01_镜22",
+    "members": [
+      "ep01_镜22"
+    ],
+    "scene": "SC01",
+    "duration_sec": 4.042,
+    "shots": [
+      {
+        "id": "ep01_镜22",
+        "shot_no": 22,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "顾家的定场：房子的体量压过人",
+        "script_ref": "「▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央」——判断标准：观众要感到这房子的体量压过人；如果人拍得太大，压迫感就没了。",
+        "scene_plate": "SC01_顾家别墅客厅_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜22/ep01_镜22_00.png",
+        "first_frame_state_zh": "实际看图确认：**两人已经进到客厅纵深处站定**——苏慧在画面中央偏右、完整侧面朝画面右，**右臂已经抬起来伸向客厅深处在引路**；江砚在她画面左侧、体型更小更靠纵深，**头已经仰起来在看那盏水晶吊灯**；玄关双开大门在他们身后，二层环形走廊玻璃栏板横跨画面上部，前景一大片空旷抛光地砖。⚠️ 走进来、抬手指、仰头三个动作全都已经做完了。",
+        "camera_en": {
+          "position": "The camera stands in front of the full-height glass wall at eye level, about 1.5 metres up, looking back across the living room toward the entrance doors and the floating staircase",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a wide shot of the whole double-height room",
+          "move": null
+        },
+        "subject_lock_en": "the same two small figures throughout, the woman in a grey-blue apron leading and the young man in a pale-blue shirt half a step behind",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              4.042
+            ],
+            "motion_en": "Both figures are already standing deep in the room, her right arm out and pointing into the depth and his head already tipped back to the chandelier; his head comes down level again and he takes two paces after her toward the right depth of frame, the suitcase wheels turning behind him, while her pointing arm lowers to her side.",
+            "dialogue": null,
+            "sfx_en": "suitcase wheels on polished stone, a low air-conditioning hum"
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 4.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 927380,
+        "notes": "机位选 B：只有 B 反打能看到玄关双开大门，人才有「从门里进来」的动线",
+        "props_en": [
+          "suitcase",
+          "chandelier"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜22/ep01_镜22_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two small figures throughout, the woman in a grey-blue apron leading and the young man in a pale-blue shirt half a step behind",
+    "seed": 927380,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC01_顾家别墅客厅_B反打",
+    "intent_zh": "顾家的定场：房子的体量压过人",
+    "notes": "机位选 B：只有 B 反打能看到玄关双开大门，人才有「从门里进来」的动线"
+  },
+  {
+    "id": "ep01_镜23+1",
+    "members": [
+      "ep01_镜23",
+      "ep01_镜24"
+    ],
+    "scene": "SC01",
+    "duration_sec": 6.417,
+    "shots": [
+      {
+        "id": "ep01_镜23",
+        "shot_no": 23,
+        "scene": "SC01",
+        "tier": "S",
+        "intent_zh": "用机位而不是表演拍「局促」",
+        "script_ref": "「▲…局促地站在客厅中央」——判断标准：观众要产生「他被这个房子审视着」的感觉；如果拍成平视，这一镜等于没拍。",
+        "scene_plate": "SC01_顾家别墅客厅_D细节",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_00.png",
+        "first_frame_state_zh": "实际看图确认：二楼俯拍，江砚在画面中央偏下、被整片空旷米白抛光地砖包住，完整背影只看得到头顶肩线与后背，双脚并得很拢；**右手已经握在深色硬壳行李箱的拉杆上**，箱子立在他右手边；画面下缘是二层玻璃栏板的一道横线作前景，上方是黑色转角沙发与茶几。收箱子和缩肩两个动作都还能正常演。",
+        "camera_en": {
+          "position": "The camera stands on the second-floor gallery looking down over the glass balustrade at about a 35-degree downward angle onto the empty polished floor of the living room below",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium shot looking down on him",
+          "move": null
+        },
+        "subject_lock_en": "the same young man throughout seen from above, same short black hair, same pale-blue shirt",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.375
+            ],
+            "motion_en": "Seen from directly above and behind, his right hand draws the suitcase a few centimetres closer to his leg, then his shoulders draw inward once; his feet stay pressed together on the empty polished floor.",
+            "dialogue": null,
+            "sfx_en": "an air-conditioning hum only"
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor, and the glass balustrade in the foreground stays unchanged, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 350716,
+        "notes": "这张二楼俯拍底板是这一版新加的资产；第9集苏慧跪地那场还要用同一张",
+        "props_en": [
+          "suitcase",
+          "glass balustrade"
+        ]
+      },
+      {
+        "id": "ep01_镜24",
+        "shot_no": 24,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "轻蔑不用说出口，不抬头就够了",
+        "script_ref": "「▲…沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。」——判断标准：观众要看到**两个人都没有抬头**；这一镜的全部负载是「不抬头」，不是「做美甲」和「玩手机」。",
+        "scene_plate": "SC01_顾家别墅客厅_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜24/ep01_镜24_01.png",
+        "first_frame_state_zh": "实际看图确认：刘兰在画面中央偏左、坐在黑色转角沙发上、一条腿翘着、上身后靠，**右手已经抬在脸前对着自己的指甲**、眼皮低垂；顾瑶在画面右侧近端、**半躺陷在沙发里、一条小腿伸在沙发上**、双手举着手机、视线在屏幕上；茶几上有几瓶指甲油；两人都没有抬头。吹指甲、转手腕、划屏三个动作都还能正常演。",
+        "camera_en": {
+          "position": "The camera stands on the inner side of the double-height living room near the staircase at eye level, about 1.5 metres up, looking down the room toward the full-height glass wall and the pool beyond",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot of the sofa",
+          "move": null
+        },
+        "subject_lock_en": "the same two women throughout, the older one in a slate-blue silk slip dress with chestnut waves and the younger one in a white knit camisole",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.042
+            ],
+            "motion_en": "The older woman blows once across her own fingernails held up in front of her eyes and then rotates her wrist to look at them from another angle; the younger one's thumb swipes twice across her phone screen; both keep their eyelids lowered on their own hands throughout.",
+            "dialogue": null,
+            "sfx_en": "a soft blow of breath, two light touch-screen taps"
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 183624,
+        "notes": "「不抬头」要写进逐拍动作，不能只写在表情里",
+        "props_en": [
+          "phone",
+          "nail file"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜23/ep01_镜23_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same young man throughout seen from above, same short black hair, same pale-blue shirt",
+    "seed": 350716,
+    "width": 704,
+    "height": 1280,
+    "tier": "S",
+    "scene_plate": "SC01_顾家别墅客厅_D细节",
+    "intent_zh": "用机位而不是表演拍「局促」",
+    "notes": "这张二楼俯拍底板是这一版新加的资产；第9集苏慧跪地那场还要用同一张"
+  },
+  {
+    "id": "ep01_镜25",
+    "members": [
+      "ep01_镜25"
+    ],
+    "scene": "SC01",
+    "duration_sec": 4.042,
+    "shots": [
+      {
+        "id": "ep01_镜25",
+        "shot_no": 25,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "她在这个家里连「介绍自己儿子」都得小心",
+        "script_ref": "「苏慧（小心翼翼地陪着笑）：刘姐，瑶瑶，小砚到了。」——判断标准：观众要听出她这句话是**在请示，不是在通报**。",
+        "scene_plate": "SC01_顾家别墅客厅_C侧机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜25/ep01_镜25_00.png",
+        "first_frame_state_zh": "实际看图确认：苏慧在画面中央、纵深中段、3/4正面朝画面右，上身微微前倾含肩，**双手已经在围裙前交叠着**；江砚在画面左侧近端、完整背影、只看得到后脑与右肩，站着不动；画面右侧是黑色转角沙发与深色大理石电视墙。⚠️ 手已经是交叠状态，搓手要从「已经叠着」这个姿势开始。",
+        "camera_en": {
+          "position": "The camera stands on the west side of the seating group beside the glass wall at eye level, about 1.5 metres up, looking east across the low table at the dark marble media wall and the sectional",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two people throughout, the woman in a grey-blue apron and the young man seen from behind in a pale-blue shirt",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              4.042
+            ],
+            "motion_en": "Her hands rub once against the front of her apron and settle folded again; her upper body stays tipped forward and her head turns a few degrees toward her son and back; the young man in the near foreground stays completely still.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "刘姐，瑶瑶，小砚到了。",
+              "delivery_en": "she says in Mandarin Chinese, light and deferential, the last three words lifting as if asking permission",
+              "pace": "normal",
+              "onscreen": true
+            },
+            "sfx_en": "an air-conditioning hum only"
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor, and her grey-blue apron stays unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 4.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 760413,
+        "notes": "机位选 C：C 侧机位是「母子这一侧看向沙发」的视角"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜25/ep01_镜25_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two people throughout, the woman in a grey-blue apron and the young man seen from behind in a pale-blue shirt",
+    "seed": 760413,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC01_顾家别墅客厅_C侧机位",
+    "intent_zh": "她在这个家里连「介绍自己儿子」都得小心",
+    "notes": "机位选 C：C 侧机位是「母子这一侧看向沙发」的视角"
+  },
+  {
+    "id": "ep01_镜26",
+    "members": [
+      "ep01_镜26"
+    ],
+    "scene": "SC01",
+    "duration_sec": 7.042,
+    "shots": [
+      {
+        "id": "ep01_镜26",
+        "shot_no": 26,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "她连正眼都不给，「名牌大学」在她嘴里是个笑话",
+        "script_ref": "「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」（本单元取到「名牌大学毕业？」为止）——判断标准：观众要因为**那个只用眼角扫一下的动作**感到被冒犯。",
+        "scene_plate": "SC01_顾家别墅客厅_C侧机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_00.png",
+        "first_frame_state_zh": "实际看图确认：刘兰在画面中央偏右近端、坐在沙发上、上身后靠、**下巴始终抬着**，**右手已经抬在脸前、正对着自己的指甲**，眼皮低垂只看指甲；暖调窗光从画面左侧的落地窗进来。吹指甲、眼球斜一下再回来都还能正常演。",
+        "camera_en": {
+          "position": "The camera stands on the west side of the seating group beside the glass wall at eye level, about 1.5 metres up, looking east across the low table at the dark marble media wall and the sectional",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on her face and one hand",
+          "move": null
+        },
+        "subject_lock_en": "the same 46-year-old Chinese woman throughout, same face, same full chestnut waves, same slate-blue silk slip dress with bare collarbones",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.187
+            ],
+            "motion_en": "She blows once more across her fingernails held in front of her eyes; her chin stays lifted and her eyelids stay low.",
+            "dialogue": {
+              "speaker": "刘兰",
+              "text_zh": "哟，来了啊，",
+              "delivery_en": "she says in Mandarin Chinese, drawling, stretching the vowels",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "a soft blow of breath"
+          },
+          {
+            "t": [
+              2.187,
+              7.042
+            ],
+            "motion_en": "Only her eyeball slides to the left corner for a beat and comes straight back to her own nails; her head stays exactly where it is, and the corner of her mouth pulls down.",
+            "dialogue": {
+              "speaker": "刘兰",
+              "text_zh": "听你妈说你是名牌大学毕业？",
+              "delivery_en": "she continues in Mandarin Chinese, still drawling, the question tipping up mockingly",
+              "pace": "slow",
+              "onscreen": true
+            }
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 7.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 594871,
+        "notes": "台词18字·slow→最低6.8秒。「只有眼球动、头不动」是本镜的负载"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜26/ep01_镜26_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 46-year-old Chinese woman throughout, same face, same full chestnut waves, same slate-blue silk slip dress with bare collarbones",
+    "seed": 594871,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC01_顾家别墅客厅_C侧机位",
+    "intent_zh": "她连正眼都不给，「名牌大学」在她嘴里是个笑话",
+    "notes": "台词18字·slow→最低6.8秒。「只有眼球动、头不动」是本镜的负载"
+  },
+  {
+    "id": "ep01_镜27",
+    "members": [
+      "ep01_镜27"
+    ],
+    "scene": "SC01",
+    "duration_sec": 5.708,
+    "shots": [
+      {
+        "id": "ep01_镜27",
+        "shot_no": 27,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "他听懂了、也忍住了",
+        "script_ref": "同镜26那句原文的后半（「我们家可小，委屈你大学生了」）——这一镜的验收对象是江砚的脸。判断标准：观众要看到「他听懂了、也忍住了」；蹙眉幅度大到变成瞪眼就错了。",
+        "scene_plate": "SC01_顾家别墅客厅_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜27/ep01_镜27_01.png",
+        "first_frame_state_zh": "实际看图确认：江砚在画面右侧近端、3/4正面朝画面左，眉头**已经是微微蹙着**的状态、嘴唇闭着、视线平平地投向画面左侧；画面左侧虚焦处是黑色转角沙发，**沙发上是刘兰与顾瑶两个女性身影**（第一版出成了一男一女，这是第二轮重出的）；底边切在胸腹之间、看不到行李箱。蹙眉再松开、喉结滚动都还能正常演。",
+        "camera_en": {
+          "position": "The camera stands in front of the full-height glass wall at eye level, about 1.5 metres up, looking back across the living room toward the entrance doors and the floating staircase",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              5.708
+            ],
+            "motion_en": "His brows draw together by a hair and release; his throat moves once, then his eyes blink and drop a few degrees before coming back level to the left of frame.",
+            "dialogue": {
+              "speaker": "刘兰",
+              "text_zh": "我们家可小，委屈你大学生了。",
+              "delivery_en": "the voice comes in Mandarin Chinese from off-screen, drawling and mocking, while the man visible in frame keeps his lips closed and still",
+              "pace": "slow",
+              "onscreen": false
+            },
+            "sfx_en": "an air-conditioning hum, the score adding one low string"
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 5.708,
+        "width": 704,
+        "height": 1280,
+        "seed": 472195,
+        "notes": "反应镜。越轴已核对：镜26 刘兰在 C 机位画面右→本镜 B 反打里她的身影在画面左"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜27/ep01_镜27_01.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 472195,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC01_顾家别墅客厅_B反打",
+    "intent_zh": "他听懂了、也忍住了",
+    "notes": "反应镜。越轴已核对：镜26 刘兰在 C 机位画面右→本镜 B 反打里她的身影在画面左"
+  },
+  {
+    "id": "ep01_镜28+1",
+    "members": [
+      "ep01_镜28",
+      "ep01_镜29"
+    ],
+    "scene": "SC01",
+    "duration_sec": 12.125,
+    "shots": [
+      {
+        "id": "ep01_镜28",
+        "shot_no": 28,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "她的羞辱是当着人说给妈妈听的（前半）",
+        "script_ref": "「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」（本单元取到「好日子？」为止）——判断标准：观众要注意到她**全程在对妈妈说话、没有一句冲着江砚**。",
+        "scene_plate": "SC01_顾家别墅客厅_C侧机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜28/ep01_镜28_00.png",
+        "first_frame_state_zh": "实际看图确认：顾瑶在画面右侧近端、半躺在黑色沙发上、3/4正面朝画面左，**双手举着手机、视线停在屏幕上**，嘴角有一点若有若无的笑；冷白屏幕光反在她下巴与前胸上；背景是深色大理石电视墙与嵌入式置物架。抬眼扫一下再回到屏幕这个核心动作还能正常演。",
+        "camera_en": {
+          "position": "The camera stands on the west side of the seating group beside the glass wall at eye level, about 1.5 metres up, looking east across the low table at the dark marble media wall and the sectional",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on her face and phone",
+          "move": null
+        },
+        "subject_lock_en": "the same 21-year-old Chinese woman throughout, same face, same light-brown long straight hair, same white knit camisole and pale skirt",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              0.844
+            ],
+            "motion_en": "Her eyes lift off the phone screen and sweep upward across the left of frame, then snap back down to the screen; her nose gives one short scoffing exhale and her posture stays exactly as it was.",
+            "dialogue": null,
+            "sfx_en": "a short scoff, then screen taps resuming"
+          },
+          {
+            "t": [
+              0.844,
+              6.375
+            ],
+            "motion_en": "Her thumb swipes across the screen twice while she speaks, the cool screen light moving on her chin.",
+            "dialogue": {
+              "speaker": "顾瑶",
+              "text_zh": "妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？",
+              "delivery_en": "she says in Mandarin Chinese, airy and amused, aiming every word at her mother",
+              "pace": "fast",
+              "onscreen": true
+            }
+          },
+          {
+            "t": [
+              6.375,
+              9.75
+            ],
+            "motion_en": "Her shoulders give one small shrug and her thumb keeps swiping; her eyes stay on the screen the whole time.",
+            "dialogue": {
+              "speaker": "顾瑶",
+              "text_zh": "别回头住不惯，再闹着要回去。",
+              "delivery_en": "she finishes in Mandarin Chinese, still airy, a laugh under the last words",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "screen taps continuing"
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 9.75,
+        "width": 704,
+        "height": 1280,
+        "seed": 238905,
+        "notes": "拆段前半。「抬眼扫一下再回到手机」是核心动作（H3 单元：由 ep01_镜28_u1/ep01_镜28_u2 合并，LTX 时代的拆段在 H3 上没必要）",
+        "unit_of": "ep01_镜28",
+        "unit_index": [
+          1,
+          2
+        ],
+        "props_en": [
+          "phone"
+        ]
+      },
+      {
+        "id": "ep01_镜29",
+        "shot_no": 29,
+        "scene": "SC01",
+        "tier": "S",
+        "intent_zh": "第一次把他的情绪落到一个可见的物理动作上",
+        "script_ref": "「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——判断标准：观众要在没有台词、没有脸的情况下感到他的忍；如果这一镜拍成脸部特写，就浪费了「攥紧拉杆」这个剧本给的动作。",
+        "scene_plate": "SC01_顾家别墅客厅_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜29/ep01_镜29_00.png",
+        "first_frame_state_zh": "实际看图确认：只有一只右手与深色行李箱的银色金属拉杆，手占满画面中段，肤色偏白（带了江砚三视图当参考图）；**五指已经收拢握在橡胶握把上、手背筋络已经浮起来了**；背景是虚焦的抛光地砖与光斑。⚠️ 「一节一节收拢」这个过程已经发生完了，这一帧是握紧之后的状态。",
+        "camera_en": {
+          "position": "The camera stands in front of the full-height glass wall at eye level, about 1.5 metres up, looking back across the living room toward the entrance doors and the floating staircase",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a tight close-up on one hand and the suitcase handle",
+          "move": null
+        },
+        "subject_lock_en": "the same hand throughout, same skin tone, same rolled pale-blue shirt cuff at the wrist",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.375
+            ],
+            "motion_en": "The hand is already closed on the rubber grip; the fingers draw tighter one knuckle at a time until the knuckles blanch white and the tendons stand further up on the back of the hand, and a thin film of sweat shows on the inside of the wrist.",
+            "dialogue": null,
+            "sfx_en": "the ambient is pulled away, only a faint squeak of skin on rubber"
+          }
+        ],
+        "preserve_en": "his hand, skin tone and rolled pale-blue cuff stay exactly as in the first frame, and the blurred polished stone floor and dark sofa mass behind stay unchanged, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 2.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 619043,
+        "notes": "手部三连的第三次（镜6→镜11→本镜）",
+        "props_en": [
+          "suitcase handle"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜28/ep01_镜28_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 21-year-old Chinese woman throughout, same face, same light-brown long straight hair, same white knit camisole and pale skirt",
+    "seed": 238905,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC01_顾家别墅客厅_C侧机位",
+    "intent_zh": "她的羞辱是当着人说给妈妈听的（前半）",
+    "notes": "拆段前半。「抬眼扫一下再回到手机」是核心动作（H3 单元：由 ep01_镜28_u1/ep01_镜28_u2 合并，LTX 时代的拆段在 H3 上没必要）"
+  },
+  {
+    "id": "ep01_镜30",
+    "members": [
+      "ep01_镜30"
+    ],
+    "scene": "SC01",
+    "duration_sec": 6.375,
+    "shots": [
+      {
+        "id": "ep01_镜30",
+        "shot_no": 30,
+        "scene": "SC01",
+        "tier": "A",
+        "intent_zh": "母亲的第一反应是把儿子从冲突里带走",
+        "script_ref": "「苏慧（赶紧打圆场，推着江砚往客房走）：快把行李放进去，歇会儿就开饭了，你表叔一会儿就回来。」——判断标准：观众要看到**是她在推他走**，而且推得很急。",
+        "scene_plate": "SC01_顾家别墅客厅_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜30/ep01_镜30_01.png",
+        "first_frame_state_zh": "实际看图确认：苏慧在画面中央偏左、3/4正面朝画面右、上身前倾，**右手已经按在江砚的后背上**（只有一只手，另一只还在身侧）；江砚在画面右侧、被推着朝画面右移动，**头已经转回来朝画面左下方看**；他右手握着**深色硬壳拉杆箱**的拉杆（第一版出成了棕色旧皮箱，这是第二轮重出的）；画面右后方是黑色转角沙发与深色大理石电视墙，沙发那边有刘兰与顾瑶两个虚焦身影。⚠️ 回头这个动作已经做完了。",
+        "camera_en": {
+          "position": "The camera stands on the inner side of the double-height living room near the staircase at eye level, about 1.5 metres up, looking down the room toward the full-height glass wall and the pool beyond",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two people throughout, the woman in a grey-blue apron pushing and the young man in a pale-blue shirt being pushed",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.625
+            ],
+            "motion_en": "Her right hand is already pressed to his back and his head is already turned back to the left; her left hand comes up onto his shoulder and both of them move two paces toward the right of frame, the suitcase wheels turning, while his head stays turned back for a beat longer.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "快把行李放进去，歇会儿就开饭了，",
+              "delivery_en": "she says in Mandarin Chinese, hurrying, pushing the sentence forward",
+              "pace": "fast",
+              "onscreen": true
+            },
+            "sfx_en": "wheels on polished stone, soft-soled steps"
+          },
+          {
+            "t": [
+              3.625,
+              6.375
+            ],
+            "motion_en": "Her right hand nudges his head back to the front and both of them keep moving toward the right edge of frame until only their near shoulders remain.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "你表叔一会儿就回来。",
+              "delivery_en": "she finishes in Mandarin Chinese, still quick, dropping the pitch at the end",
+              "pace": "fast",
+              "onscreen": true
+            }
+          }
+        ],
+        "preserve_en": "the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor, and her grey-blue apron stays unchanged, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 6.375,
+        "width": 704,
+        "height": 1280,
+        "seed": 851762,
+        "notes": "运镜写「移」靠人物自己在画内横向走动实现，不要求相机真的平移",
+        "props_en": [
+          "suitcase"
+        ]
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜30/ep01_镜30_01.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two people throughout, the woman in a grey-blue apron pushing and the young man in a pale-blue shirt being pushed",
+    "seed": 851762,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC01_顾家别墅客厅_A主机位",
+    "intent_zh": "母亲的第一反应是把儿子从冲突里带走",
+    "notes": "运镜写「移」靠人物自己在画内横向走动实现，不要求相机真的平移"
+  },
+  {
+    "id": "ep01_镜31+1",
+    "members": [
+      "ep01_镜31",
+      "ep01_镜32"
+    ],
+    "scene": "SC03",
+    "duration_sec": 10.75,
+    "shots": [
+      {
+        "id": "ep01_镜31",
+        "shot_no": 31,
+        "scene": "SC03",
+        "tier": "A",
+        "intent_zh": "门一关，她才敢说话",
+        "script_ref": "「▲苏慧把江砚推进客房，反手带上门，才压低声音。」——这一镜的负载是那扇门关上的动作。判断标准：观众要意识到「她刚才在客厅说的话和马上要说的话，是两套话」。",
+        "scene_plate": "SC03_顾家客房_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜31/ep01_镜31_00.png",
+        "first_frame_state_zh": "实际看图确认：客房，暖黄台灯光；苏慧在画面中央、纵深中段、3/4正面朝镜头，**右手已经反手按在身后那扇深色木门上、门只剩一道缝**，门缝里还漏着一条冷白走廊光；江砚在画面右侧近端、3/4背面对镜头，**行李箱已经立在地板上、他的右手还搭在拉杆上**；画面左侧是书桌与椅子，右侧是床。⚠️ 「把箱子放到地上」已经做完了，只剩松手。",
+        "camera_en": {
+          "position": "The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a medium two-shot",
+          "move": null
+        },
+        "subject_lock_en": "the same two people throughout, the woman in a grey-blue apron and the young man in a pale-blue shirt seen from behind",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.042
+            ],
+            "motion_en": "Her right arm is already reached back behind her with her hand flat on the door; she pushes it the last few centimetres until it seats shut and the thin cool-white strip of corridor light in the gap is cut off; the young man in the near foreground releases the suitcase handle and his hand drops to his side.",
+            "dialogue": null,
+            "sfx_en": "a door clicking softly shut, then insects outside the window"
+          }
+        ],
+        "preserve_en": "the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 706318,
+        "notes": "转场：客厅→客房。光线从冷白+冷调变成只有一盏暖黄台灯",
+        "props_en": [
+          "door",
+          "suitcase"
+        ]
+      },
+      {
+        "id": "ep01_镜32",
+        "shot_no": 32,
+        "scene": "SC03",
+        "tier": "A",
+        "intent_zh": "她教儿子的第一件事是忍，因为她自己就是这么活过七年的",
+        "script_ref": "「苏慧：小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？」——判断标准：观众要感到心里发堵，而不是觉得她软弱可笑。",
+        "scene_plate": "SC03_顾家客房_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜32/ep01_镜32_00.png",
+        "first_frame_state_zh": "实际看图确认：苏慧在画面中央近端、3/4正面朝画面右，暖黄台灯光从画面右侧打在她半边脸上；**她的右手已经抬起来伸在身前（刚比划完一个手势）、左手在小腹前**，两只手还没有合到一起；身后画面左侧是那扇深色木门，右侧是床与床头台灯。⚠️ 卡里写的「两手在围裙前互相搓」要从「右手还举在半空」这个状态收回来开始。",
+        "camera_en": {
+          "position": "The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on her face",
+          "move": null
+        },
+        "subject_lock_en": "the same 48-year-old Chinese woman throughout, same face with sun spots on the cheekbones, same low bun with grey at the temples, same yellowed white cotton dress under a grey-blue work apron",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              4.986
+            ],
+            "motion_en": "Her right hand, still raised in front of her from the gesture she has just finished, comes down and meets the other in front of the apron, and the two keep rubbing against each other; her upper body angles a few degrees toward the door behind her.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "小砚，在人家里住着，多一事不如少一事，",
+              "delivery_en": "she says in Mandarin Chinese, dropping her volume to almost a breath",
+              "pace": "normal",
+              "onscreen": true
+            },
+            "sfx_en": "cloth rubbing, insects outside"
+          },
+          {
+            "t": [
+              4.986,
+              7.708
+            ],
+            "motion_en": "Her right hand lifts and presses once on his forearm, then lowers back to her lap; her eyes stay on his face waiting.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "别跟她们顶嘴，啊？",
+              "delivery_en": "she finishes in Mandarin Chinese, still almost whispering, the last syllable pleading",
+              "pace": "normal",
+              "onscreen": true
+            }
+          }
+        ],
+        "preserve_en": "the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor, and her grey-blue apron and low bun stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 7.708,
+        "width": 704,
+        "height": 1280,
+        "seed": 394627,
+        "notes": "台词27字·normal→最低7.55秒"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜31/ep01_镜31_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same two people throughout, the woman in a grey-blue apron and the young man in a pale-blue shirt seen from behind",
+    "seed": 706318,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC03_顾家客房_B反打",
+    "intent_zh": "门一关，她才敢说话",
+    "notes": "台词27字·normal→最低7.55秒"
+  },
+  {
+    "id": "ep01_镜33+1",
+    "members": [
+      "ep01_镜33",
+      "ep01_镜34"
+    ],
+    "scene": "SC03",
+    "duration_sec": 10.084,
+    "shots": [
+      {
+        "id": "ep01_镜33",
+        "shot_no": 33,
+        "scene": "SC03",
+        "tier": "A",
+        "intent_zh": "他没有信这句话、但接受了这句话",
+        "script_ref": "同镜32那段原文的后半（「你表叔这些年收留我，供你上大学，咱们得懂得感恩」）——这一镜的验收对象是江砚。判断标准：观众要看到他没有信这句话、但接受了这句话；如果拍成认同或反感的任何一端都不对。",
+        "scene_plate": "SC03_顾家客房_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚坐在床沿、在画面左侧近端、3/4正面朝画面右，视线看着画面右侧的母亲；画面左侧是床头柜与暖黄台灯，背后是夜色窗户（窗外有城市灯点）；底边切在腰胯附近。咬肌绷一下、深吸一口气都还能正常演。",
+        "camera_en": {
+          "position": "The camera stands just inside the guest-room door at eye level, about 1.5 metres up, facing the window on the far wall",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.145
+            ],
+            "motion_en": "He sits on the edge of the bed with his gaze locked on her face to the right of frame; the muscle along his jaw tightens once.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "你表叔这些年收留我，",
+              "delivery_en": "the voice comes in Mandarin Chinese from off-screen, low and almost whispering, while the man in frame keeps his lips closed",
+              "pace": "normal",
+              "onscreen": false
+            },
+            "sfx_en": "insects outside the window"
+          },
+          {
+            "t": [
+              3.145,
+              7.042
+            ],
+            "motion_en": "His nose draws in an audible breath and his shoulders lift and fall once with it; his eyes blink slowly but his gaze stays fixed on her.",
+            "dialogue": {
+              "speaker": "苏慧",
+              "text_zh": "供你上大学，咱们得懂得感恩。",
+              "delivery_en": "the voice continues in Mandarin Chinese from off-screen, pressing on the last two words, while the man in frame stays silent",
+              "pace": "normal",
+              "onscreen": false
+            }
+          }
+        ],
+        "preserve_en": "the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 7.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 127548,
+        "notes": "反应镜。越轴已核对：镜32 苏慧在 B 反打画面中偏左→本镜 A 机位江砚在画面左（床=西）"
+      },
+      {
+        "id": "ep01_镜34",
+        "shot_no": 34,
+        "scene": "SC03",
+        "tier": "A",
+        "intent_zh": "他答应的不是「懂得感恩」，是「不让妈难做」",
+        "script_ref": "「江砚（看着母亲小心翼翼的样子，心里发酸，点了点头）：我知道了妈。」——判断标准：这四个字要说得没有力气，观众才能听出他答应的是什么。",
+        "scene_plate": "SC03_顾家客房_B反打",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜34/ep01_镜34_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚坐在画面中央偏右的床沿、3/4正面朝画面左，**头已经低下来、视线已经落在自己膝上**——这就是「点完头之后停住」的状态；画面左侧是那扇深色木门与门外走廊，右侧是床头台灯的暖黄光。⚠️ 点头和垂下视线都已经发生完了。",
+        "camera_en": {
+          "position": "The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing holds a close-up on his face",
+          "move": null
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              3.042
+            ],
+            "motion_en": "His head is already lowered with his gaze resting on his own hands on his knees; it lifts a few degrees toward her as his lips part, dips once in a small nod as the words leave him, and then settles back down to where it started.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "我知道了妈。",
+              "delivery_en": "he says in Mandarin Chinese, very quietly and slowly, the voice almost out of strength",
+              "pace": "slow",
+              "onscreen": true
+            },
+            "sfx_en": "insects outside, then half a second of quiet"
+          }
+        ],
+        "preserve_en": "the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 3.042,
+        "width": 704,
+        "height": 1280,
+        "seed": 538091,
+        "notes": "机位从 A 换成 B反打：避免镜33-35 连续三镜同一底板；越轴已核对"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 127548,
+    "width": 704,
+    "height": 1280,
+    "tier": "A",
+    "scene_plate": "SC03_顾家客房_A主机位",
+    "intent_zh": "他没有信这句话、但接受了这句话",
+    "notes": "反应镜。越轴已核对：镜32 苏慧在 B 反打画面中偏左→本镜 A 机位江砚在画面左（床=西）"
+  },
+  {
+    "id": "ep01_镜35",
+    "members": [
+      "ep01_镜35"
+    ],
+    "scene": "SC03",
+    "duration_sec": 6.708,
+    "shots": [
+      {
+        "id": "ep01_镜35",
+        "shot_no": 35,
+        "scene": "SC03",
+        "tier": "S",
+        "intent_zh": "结尾硬钩子：门一关，脸上的顺从褪掉",
+        "script_ref": "「江砚 OS：…可我没想到，等待我们母子的，是屈辱与…」——这一镜是结尾硬钩子。判断标准：观众看完要有「下一集会看到什么屈辱」的期待；他脸上那个「顺从褪掉」的变化必须做出来。",
+        "scene_plate": "SC03_顾家客房_A主机位",
+        "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_00.png",
+        "first_frame_state_zh": "实际看图确认：江砚的头与肩线占满画面、3/4正面朝画面右，视线投向画面右侧（母亲刚出画的方向），眼神已经收住；台灯暖光从画面左侧只照亮他半张脸、另半张沉在暗部；背景是夜色窗户。眼皮张开一点、咬肌一点点绷紧都还能正常演。",
+        "camera_en": {
+          "position": "The camera stands just inside the guest-room door at eye level, about 1.5 metres up, facing the window on the far wall",
+          "rig": "The camera is locked off at eye level",
+          "framing_path": "the framing eases from a close-up into a tight close-up",
+          "move": "a slow, restrained push-in that travels only far enough to tighten the framing by about one step and then holds"
+        },
+        "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+        "beats": [
+          {
+            "t": [
+              0.0,
+              2.515
+            ],
+            "motion_en": "His eyes stay aimed at the right of frame following something leaving; as the door clicks shut off-screen his eyelids open a fraction wider and his pupils fix.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "可我没想到，",
+              "delivery_en": "he narrates in Mandarin Chinese, colder than the earlier lines, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "slow",
+              "onscreen": false
+            },
+            "sfx_en": "a door clicking shut off-screen, then insects"
+          },
+          {
+            "t": [
+              2.515,
+              6.708
+            ],
+            "motion_en": "The muscle along his jaw draws tight a millimetre at a time until it holds; the framing closes in on his eyes and his eyelids stay open and still.",
+            "dialogue": {
+              "speaker": "江砚",
+              "text_zh": "等待我们母子的，是屈辱。",
+              "delivery_en": "he finishes in Mandarin Chinese, landing hard and flat on the last word, the voice comes from off-screen while nobody in frame moves their lips",
+              "pace": "slow",
+              "onscreen": false
+            },
+            "sfx_en": "the score cuts out for half a second, then one low single note"
+          }
+        ],
+        "preserve_en": "the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot",
+        "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+        "duration_sec": 6.708,
+        "width": 704,
+        "height": 1280,
+        "seed": 960284,
+        "notes": "全集最该保命的第二镜。结尾硬钩子"
+      }
+    ],
+    "first_frame": "output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜35/ep01_镜35_00.png",
+    "style_tail_en": "cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range",
+    "subject_lock_en": "the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers",
+    "seed": 960284,
+    "width": 704,
+    "height": 1280,
+    "tier": "S",
+    "scene_plate": "SC03_顾家客房_A主机位",
+    "intent_zh": "结尾硬钩子：门一关，脸上的顺从褪掉",
+    "notes": "全集最该保命的第二镜。结尾硬钩子"
+  }
+]

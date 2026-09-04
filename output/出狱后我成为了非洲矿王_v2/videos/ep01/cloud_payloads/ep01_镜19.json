@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same two people throughout: the young man in a faded pale-blue shirt and the older woman in a yellowed cotton dress under a grey-blue apron. The camera holds a static shot. She is already standing close in front of him with her right hand on the strap at his chest; her left hand comes up and closes on the strap beside it, and her upper body tips a few degrees further forward; the young man in the near foreground stays turned as he is, his shoulder rising once with a breath. The speaker (S1) says, slow and unsteady, the breath catching, <d>[Chinese] 小砚，可算到了，</d> quick soft-soled footsteps on concrete. Both her hands tighten on the backpack strap and take its weight off his shoulder; her chin tips up to look at his face and her eyes glisten. The speaker (S1) says, still slow and thin, pressing the last four words, <d>[Chinese] 累不累？快跟我回家。</d> cloth and webbing shifting.\n\noverall_soundscape:\nQuick soft-soled footsteps on concrete. Cloth and webbing shifting.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜19/ep01_镜19_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 8,
+  "ratio": "9:16"
+}

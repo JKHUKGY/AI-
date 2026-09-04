@@ -21,17 +21,18 @@
 堵上这个漏洞，新增判断条件时优先往「宁可错放过一次真正的闲置，也不要
 错杀正在干活的实例」这个方向偏。
 
-用法（vast.ai，默认）:
-  python3 idle_shutdown_watchdog.py \\
-      --instance-id 49395065 \\
-      --ssh-host root@ssh2.vast.ai --ssh-port 35064 \\
-      --idle-seconds 120 --check-interval 15
+用法（RunPod）:
+
+    python3 idle_shutdown_watchdog.py \
+      --platform runpod --instance-id <pod_id> \
+      --ssh-host root@<公网IP> --ssh-port <端口> \
+      --idle-minutes 20
+
 
 用法（AutoDL，GPU/有卡模式的实例）:
   python3 idle_shutdown_watchdog.py \\
       --instance-id pro-788241abd595 \\
       --ssh-host root@connect.bjb2.seetacloud.com --ssh-port 53213 \\
-      --platform autodl --autodl-config .claude/skills/short-drama-ltx-generate/autodl_config.json \\
       --idle-seconds 120 --check-interval 15
 
 用法（RunPod，Pod ID 用 --instance-id 传）:
@@ -47,7 +48,7 @@
 - 这个看门狗是本地（Claude Code 会话里的一个后台进程）在轮询，**只在当前
   会话/任务存活期间生效**。如果会话被关掉、这个后台任务被杀掉，看门狗
   也会跟着消失，不会再保护后续的计费。不是"设置一次永久生效"的平台级
-  开关——vast.ai 本身没有找到原生的"闲置自动停止"功能，所以只能用这种
+  开关——RunPod 本身没有原生的"闲置自动停止"功能，所以只能用这种
   外部轮询的方式实现，效果上等同于"只要这个会话还在，就有人盯着"。
 - SSH 连不上（实例已经挂了/网络问题）时，直接判定为"检测不到活动"计入
   闲置计时，而不是报错退出——这样即使实例本身已经故障，也能尽快调用停止
@@ -83,7 +84,12 @@ def ssh_cmd(ssh_host, ssh_port, remote_cmd, timeout=15):
 # 等）没有 GPU 占用、也没有 ltx_pipelines 进程，但同样是正经在干活，绝对
 # 不能被当成闲置停掉。这里覆盖所有已知的搭建期/生成期进程关键字。
 ACTIVE_PROC_PATTERN = (
-    "ltx_pipelines|uv sync|uv run|uv pip|hf download|hf auth|"
+    # ⚠️ 新增一种跑法就必须往这里加一条，否则看门狗会把正在干活的机器当闲置停掉。
+    # 2026-09-03 真实事故：批量脚本 ltx_batch.py 不在这个列表里 → 16 个单元跑到
+    # 一半，看门狗判定"闲置 1820s"把 Pod terminate 了。GPU 利用率是瞬时采样、
+    # LTX 生成期间大量时间是 0%，loadavg 也压不过 0.5 阈值，两条兜底都没救回来。
+    "ltx_pipelines|ltx_batch|"
+    "uv sync|uv run|uv pip|hf download|hf auth|"
     "git clone|git-lfs|pip install|pip3 install|apt-get install|"
     "curl.*astral|tar -x"
 )
@@ -134,12 +140,8 @@ def stop_instance(args):
            "--instance-id", str(args.instance_id), "--mode", args.stop_mode]
     if args.ltx_config:
         cmd += ["--config", args.ltx_config]
-    if args.platform == "autodl" and args.autodl_config:
-        cmd += ["--platform-config", args.autodl_config]
     if args.platform == "runpod" and args.runpod_config:
         cmd += ["--platform-config", args.runpod_config]
-    if args.platform == "vast" and args.api_key:
-        cmd += ["--api-key", args.api_key]
     print(f"[watchdog] 闲置超时，调用 gpu_teardown.py 停止 {args.platform} 实例 {args.instance_id}",
           file=sys.stderr)
     sys.stderr.flush()
@@ -158,17 +160,8 @@ def main():
     ap.add_argument("--idle-seconds", type=int, default=120, help="连续闲置多少秒后停止实例，默认120")
     ap.add_argument("--check-interval", type=int, default=15, help="每隔多少秒检查一次，默认15")
     ap.add_argument(
-        "--api-key", default=None,
-        help="vast.ai API key，透传给 stop 命令；不传就用本机 vastai CLI 已经"
-             "存好的 key（~/.config/vastai/vast_api_key）",
-    )
-    ap.add_argument(
-        "--platform", choices=["vast", "autodl", "runpod"], default="vast",
+        "--platform", choices=["runpod"], default="runpod",
         help="实例所在平台，决定闲置超时后调用哪个停止接口，默认 vast",
-    )
-    ap.add_argument(
-        "--autodl-config", default=None,
-        help="platform=autodl 时必填，autodl_config.json 路径（存 api_token）",
     )
     ap.add_argument(
         "--stop-mode", choices=["auto", "stop", "terminate"], default="stop",
@@ -190,8 +183,6 @@ def main():
              "挂载的 Network Volume 不受影响，见 references/runpod_gpu_ops.md",
     )
     args = ap.parse_args()
-    if args.platform == "autodl" and not args.autodl_config:
-        ap.error("--platform autodl 需要同时传 --autodl-config")
     if args.platform == "runpod" and not args.runpod_config:
         ap.error("--platform runpod 需要同时传 --runpod-config")
 

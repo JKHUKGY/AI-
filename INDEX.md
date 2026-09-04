@@ -49,9 +49,11 @@ README.md         给人看的流水线使用说明（每步的触发词 + 环�
 | 2 | `short-drama-storyboard/` | 故事/大纲 → 画风 + 逐集分镜表（含**机位**列）+ 人物三视图提示词 + **场景机位组**提示词（每地点 A主机位/B反打/C侧机位/D细节 + 空间关系） | `references/shot_grammar.md`, `character_prompt_template.md`, `scene_prompt_template.md`, `storyboard_methods.md`, `style_guide.md`, `checklist.md` |
 | 3 | `short-drama-image-gen/` | 人物/场景提示词 → 三视图立绘 + 场景图（Codex CLI 出图） | `scripts/generate_images.py`, `references/jobs_schema.md`, `parallel_mode.md`, `review_checklist.md`, `api_setup.md` |
 | 4 | `short-drama-keyframe-gen/` | **两阶段、中间一道人工闸门**。阶段一：分镜表 + 已选人物/场景图 → **关键帧卡 `keyframe_cards.json`**（逐人写位置/纵深层/身体朝向/**相对镜头露多少脸**/视线/瞬间动作 + 景别对应的裁切线）→ `build_keyframe_prompt.py` 机械装配出提示词、审阅表 `keyframe_prompts_ep0X.md` 和 `jobs_ep0X.json`，**提示词是派生产物，不手写**；停下来等用户确认走位。阶段二：确认后才出图（全量每一镜，不按 S/A/B/C 筛选）| `scripts/build_keyframe_prompt.py`（装配+校验）, `references/keyframe_card_schema.md`, `blocking_guide.md`（走位/朝向/景别规则，每条带实拍证据）, `keyframe_prompt_guide.md`（素材查找+分镜表列对应）, `shot_selection.md`, `keyframe_review_checklist.md`, `examples/ep03_keyframe_cards.json`(+`_v1_replica`) |
-| 5 | `short-drama-video-gen/` | 关键帧 + 运动描述 → **镜头卡 `shot_cards.json`**（4-8 秒生成单元，逐拍结构化）→ `build_prompt.py` 机械装配出 `video_jobs.json`。**提示词是派生产物，不手写。** B 级跟 S/A 级一样走 LTX，`ken_burns.py` 只是反复生成失败时的兜底 | `scripts/build_prompt.py`（装配+校验）, `extract_frames.py`, `ken_burns.py`, `references/shot_card_schema.md`, `model_capability_ledger.md`（模型能做/做不到清单，每条带证据）, `video_prompt_guide.md`, `stability_playbook.md`, `video_jobs_schema.md`, `video_review_checklist.md`, `video_platform_comparison.md` |
-| 6 | `short-drama-ltx-export/` | 提交前关卡：校验 `video_jobs.json`（路径/64整除/8k+1/台词语言声明/seed 有效性/token 预算/否定句残留/**是否还和镜头卡一致**）+ `ltx_remote_config.json` + `--dry-run` | `scripts/validate_video_jobs.py`, `references/resolution_presets.md` |
-| 7 | `short-drama-ltx-generate/` | 校验好的 job 文件 → 真实租显卡（vast.ai / AutoDL / RunPod 比价）跑 LTX-2.5、下载结果、验收、**用完关机** | `scripts/ltx_ssh_submit.py`, `gpu_teardown.py`, `idle_shutdown_watchdog.py`, `autodl_ops.py`, `runpod_ops.py`, `references/gpu_rental_ops.md`, `autodl_gpu_ops.md`, `runpod_gpu_ops.md`, `ltx_pipeline_gotchas.md` |
+| 5 | `short-drama-video-gen/` | 关键帧 + 运动描述 → **镜头卡 `shot_cards.json`**（4-8 秒生成单元，逐拍结构化）→ 按选定模型分别装配：`build_prompt.py`→`video_jobs.json`（LTX-2.5）/ `build_h3_prompt.py`→`h3_jobs.json`（MiniMax-H3）。**同一份卡喂两个模型，提示词是派生产物，不手写。** B 级跟 S/A 级一样走 LTX，`ken_burns.py` 只是反复生成失败时的兜底 | `scripts/build_prompt.py`（LTX 装配+校验）, **`build_h3_prompt.py`（MiniMax-H3 装配+校验）**, **`rekey_shot.py`（L2 升级管道：改关键帧卡→重出图→回填首帧→重装配）**, `extract_frames.py`, `ken_burns.py`, `references/shot_card_schema.md`, **`keyframe_escalation_guide.md`（故障→L1视频层/L2关键帧层/L3分镜层 的路由表）**, `model_capability_ledger.md`（模型能做/做不到清单，每条带证据）, `video_prompt_guide.md`, `stability_playbook.md`, `video_jobs_schema.md`, `video_review_checklist.md`, `video_platform_comparison.md` |
+| 6 | `short-drama-ltx-export/` | **LTX-2.5 通道**的提交前关卡：校验 `video_jobs.json`（路径/64整除/8k+1/台词语言声明/seed/token 预算/否定句/first_frame_strength/**是否还和镜头卡一致**）+ `ltx_remote_config.json` + `--dry-run` | `scripts/validate_video_jobs.py`, `references/resolution_presets.md` |
+| 7 | `short-drama-ltx-generate/` | **LTX-2.5 通道**的执行：真实租显卡（只剩 RunPod，`rent_cheapest` 够用就行最便宜优先）→ `ltx_ssh_submit.py` 每镜跑一次 CLI（实测要 80GB，每镜重装 67GB 权重）→ 下载、验收、**用完关机**。⚠️ **本目录下的 GPU 运维资产是两条视频通道共用的** | `scripts/ltx_ssh_submit.py`, `ltx_batch.py`, **`runpod_ops.py` / `gpu_teardown.py` / `idle_shutdown_watchdog.py`（共用）**, `references/runpod_gpu_ops.md`（共用）, `ltx_pipeline_gotchas.md` |
+| 6′ | `minimax-h3-export/` | **MiniMax-H3 通道**的提交前关卡：驱动 `build_h3_prompt.py` 把同一份镜头卡装配成 **ref2va 六段结构化提示词** + `h3_jobs.json`（**装配即校验**）+ `h3_remote_config.json` + `--dry-run` 看真实 HTTP 请求体 | 无自有脚本（装配器在 `short-drama-video-gen/scripts/`） |
+| 7′ | `minimax-h3-generate/` | **MiniMax-H3 通道**的执行：租显卡（**门槛低得多，1×RTX 4090 24GB 就够，$0.34/hr**）→ 部署 SGLang Diffusion → 下 Ref2VA 权重 → 起**常驻服务**（权重只装一次）→ SSH 隧道 + `h3_submit.py` 走 HTTP 提交 → 抽帧**+听审**验收（原生立体声）→ 关机 | `scripts/h3_submit.py`（自建 SGLang）, **`h3_cloud_submit.py`（官方云 API，不租卡、能出 2K、没有 seed）**, `references/minimax_h3_ops.md`, **`minimax_cloud_api.md`（官方云 API 规格 + 跟自建那份 jobs 的四处落差）** |
 
 双 agent 循环（可选，替换上面某一环的"生成+验收+重试"部分）：
 
@@ -151,7 +153,7 @@ web/content/guide.md    渲染给剧本家看的指南正文（改这个文件�
 ## 其他
 
 - `.gitignore`：忽略 `.env`、`__pycache__/`、`*.pyc`、`**/_web_state/logs/`、
-  租显卡平台的 `autodl_config.json` / `runpod_config.json`、以及协作网站的
+  租显卡平台的 `runpod_config.json`、以及协作网站的
   `web/server/data/`（登录账号哈希 + 会话密钥，换机器部署要重新 `manage_users.py add`）。
   `review.json` 本身**要**提交，不受影响。
   → 所以"找不到账号/key/显卡配置"是正常的，它们按设计就不在仓库里，见

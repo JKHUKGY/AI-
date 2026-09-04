@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers. The camera holds a static shot. His throat moves once as he swallows; his lips part only slightly as he speaks and close again, and his gaze stays level and fixed off to the left of frame. The speaker (S1) says, quiet and flat, barely opening his mouth, <d>[Chinese] 我猜到是他。</d> one swallow, then half a second of ambient silence. [Shot 2] At 00:03.042, the camera cuts to the framing holds a close-up on his face. The camera stands inside the prison yard on the concrete apron at eye level, about 1.5 metres up, looking back out through the half-open iron gate toward the red-dirt road. The camera holds a static shot. His right hand stays frozen where it was gesturing; his eyebrows jump up, his mouth falls open a centimetre and stays open after the words stop. The speaker (S2) says, three words lifting into disbelief at the end, <d>[Chinese] 你知道？</d> a hushed ambient as the score drops out.\n\noverall_soundscape:\nOne swallow, then half a second of ambient silence. A hushed ambient as the score drops out.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜09/ep01_镜09_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 6,
+  "ratio": "9:16"
+}

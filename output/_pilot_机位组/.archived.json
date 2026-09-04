@@ -1,0 +1,21 @@
+{
+  "project": "_pilot_机位组",
+  "archived_at": "2026-09-03T07:08:55+00:00",
+  "remote": "gdrive:AI-短剧归档/_pilot_机位组",
+  "volumes": {
+    "PILOT_餐厅_A主机位": {
+      "archive": "_pilot_机位组__PILOT_餐厅_A主机位.tar.zst",
+      "archive_size": 2039962,
+      "archive_sha256": "bca5fb6a41624343637ee2fbe1306e3b4f14f3bd683f549fb93f79681d21edcf",
+      "raw_size": 2052534,
+      "file_count": 1,
+      "files": [
+        {
+          "path": "PILOT_餐厅_A主机位/PILOT_餐厅_A主机位_00.png",
+          "size": 2052534,
+          "sha256": "c3fe0e55638da137be9b86b16b3147de74cea616a4cabe710c1fab344f4a94a5"
+        }
+      ]
+    }
+  }
+}

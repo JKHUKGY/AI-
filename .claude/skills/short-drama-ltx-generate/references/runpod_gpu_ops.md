@@ -217,3 +217,47 @@ Network Volume 上那 67GB 权重，而它**实测确认不受 `terminate` 影�
   `/pods/<id>`，跟脚本调的是同一个接口），但"脚本自己走一遍 auto→terminate
   →轮询到 404"这条完整路径还没在真实运行中的 Pod 上跑过；`stop` 分支和
   轮询确认逻辑已经在 EXITED 状态的 Pod 上实测通过。
+
+## ⚠️ 2026-09-03 两个真实事故（第一次拿本仓库正式跑生成时踩的）
+
+### 事故 1：`ssh_host` 必须写成 `root@IP`，不能靠 `ssh_user` 字段
+
+`ltx_ssh_submit.py` **没有 `ssh_user` 这个字段**，它把 config 里的 `ssh_host`
+原样当 SSH 目标用。按常规写成 `{"ssh_user":"root","ssh_host":"216.81.245.7"}`
+的话，脚本会用**本地用户名**去连（`codespace@216.81.245.7`），所有 job 报
+`Permission denied (publickey,password)`、退出码 255。
+
+RunPod 官方镜像 `runpod/pytorch:*` 的账号是 `root`，所以正确写法是：
+
+```json
+{ "ssh_host": "root@216.81.245.7", "ssh_port": 36189 }
+```
+
+### 事故 2：看门狗把正在生成的 Pod 销毁了（已修）
+
+用 `ltx_batch.py`（一次加载权重跑多个单元）跑 16 个生成单元时，看门狗在
+第 12 分钟判定"闲置 1820 秒"，调用 `gpu_teardown.py --mode terminate`
+把 Pod 销毁了，批量任务从中间被砍断。
+
+三条检测全部漏判：
+
+| 检测项 | 为什么没救回来 |
+|---|---|
+| `ps aux \| grep ltx_pipelines` | 批量脚本的进程名是 **`ltx_batch.py`**，不含 `ltx_pipelines`，不匹配 |
+| GPU 利用率 > 0 | **瞬时采样**。LTX 生成期间大量时间在加载权重/VAE 解码/写盘，`nvidia-smi` 读到 0% 很常见（手动查证过：跑着的时候读到 `0 %, 0 MiB`） |
+| loadavg > 0.5 | GPU 推理时 CPU 负载压不过这个阈值 |
+
+**已修**：`ACTIVE_PROC_PATTERN` 加了 `ltx_batch`。
+
+**但这条修复不解决根本问题**——看门狗的定位是"兜住人忘了关"，它的活动检测
+是**关键字白名单**，任何新跑法都要记得往里加。所以：
+
+> **正式跑批量生成时，不要指望看门狗认得出来。** 要么在提交前把
+> `--idle-seconds` 调到远大于预计生成时长（16 个单元 × 89 帧 ≈ 20-35 分钟，
+> 就该给 `--idle-seconds 5400`），要么这段时间干脆不挂看门狗、改用
+> `ltx_ssh_submit.py --auto-stop` 让提交脚本自己跑完关机。
+
+**数据没丢**：mp4 写在 `/workspace/ltx_jobs`，那是 Network Volume 的挂载点，
+`terminate` 不影响卷上的数据——重新建 Pod 挂同一个 `network_volume_id`
+就能把已完成的片段取回来。这次事故实际损失只有那 34 分钟的机时（≈$0.79）
+和被砍断的那部分生成。

@@ -37,6 +37,7 @@ Token 从 runpod_config.json 读（同目录，需要自己创建，已加入 .g
 import argparse
 import json
 import sys
+import time
 import urllib.request
 import urllib.error
 from pathlib import Path
@@ -129,6 +130,96 @@ def cmd_gputypes(token, args):
     print(json.dumps(filtered if filtered else r, ensure_ascii=False, indent=2))
 
 
+
+def cmd_rent_cheapest(token, args):
+    """按"满足最低显存就行、越便宜越好"的策略挑卡并直接建 Pod。
+
+    2026-09-04 起这是**默认的租卡方式**。以前默认奔着 80GB 大卡去，
+    实际上两个模型都有低显存配方（见 SKILL.md 第 1 节的显存门槛表），
+    多花的钱纯属浪费：A100 80GB 约 $1.59/hr，RTX 5090 32GB 只要 $0.69/hr。
+
+    挑卡逻辑：
+      1. 拉全部型号，滤掉显存低于 --min-memory-gb 的
+      2. 按价格从低到高排
+      3. 从最便宜的开始挨个试着建 Pod，建成就返回
+
+    为什么要"挨个试"而不是只试最便宜那个：`gputypes` 返回的 stockStatus 是
+    **全局聚合值**，跟具体数据中心对不上（Network Volume 在哪，Pod 就必须在
+    哪）。实测见过 stockStatus=Medium 的型号建不出来、而 Low 的反而成了，
+    也见过一个数据中心四种 80GB+ 型号同时缺货、轮询 9 轮才抢到。所以
+    --rounds 控制整轮重试次数，别试一次失败就放弃。
+    """
+    query = """
+    query GpuTypes {
+      gpuTypes {
+        id
+        memoryInGb
+        lowestPrice(input: {gpuCount: 1}) {
+          uninterruptablePrice
+          stockStatus
+        }
+      }
+    }
+    """
+    r = graphql_call(token, query)
+    types = (r.get("data") or {}).get("gpuTypes") or []
+
+    def price(t):
+        return (t.get("lowestPrice") or {}).get("uninterruptablePrice")
+
+    cands = [t for t in types
+             if (t.get("memoryInGb") or 0) >= args.min_memory_gb and price(t) is not None]
+    cands.sort(key=price)
+    if args.max_price:
+        cands = [t for t in cands if price(t) <= args.max_price]
+    if not cands:
+        sys.exit(f"没有满足 显存≥{args.min_memory_gb}GB"
+                 + (f" 且 单价≤${args.max_price}/hr" if args.max_price else "")
+                 + " 的型号")
+
+    print(f"候选（按价格从低到高，共 {len(cands)} 个）:")
+    for t in cands:
+        lp = t.get("lowestPrice") or {}
+        print(f"  ${price(t):<6} {t['memoryInGb']:>4}GB  {lp.get('stockStatus')}  {t['id']}")
+
+    if args.dry_run:
+        print("\n--dry-run，不实际创建")
+        return
+
+    for rnd in range(1, args.rounds + 1):
+        for t in cands:
+            body = _create_body(args, t["id"])
+            resp = rest_call(token, "POST", "/pods", body)
+            if "error" not in resp:
+                print(f"\n✅ 建成: {resp.get('id')}  ${resp.get('costPerHr')}/hr  "
+                      f"{(resp.get('machine') or {}).get('gpuTypeId')}")
+                print(json.dumps(resp, ensure_ascii=False, indent=2))
+                return
+            err = json.dumps(resp.get("error"), ensure_ascii=False).lower()
+            # 这几种措辞都是"这个型号在这个数据中心当下拿不到"，不是参数错。
+            # 实测见过两种：
+            #   "there are no instances currently available"
+            #   "could not find any pods with required specifications"
+            #      ← 这条通常意味着该型号在 Network Volume 所在的数据中心根本没有
+            capacity = ("no instances currently available" in err
+                        or "could not find any pods" in err
+                        or "no pods available" in err)
+            # ⚠️ GraphQL 的 gputypes 会列出 REST 建 Pod 时**不接受**的型号
+            #（实测：MIG 切片如 "... MIG 1g.24gb" 不在 REST 的 gpuTypeIds 枚举里）。
+            # 这不是参数写错，是这个型号本来就建不了 Pod——跳过继续试下一个。
+            not_creatable = ("gputypeids" in err and "schema" in err)
+            if not_creatable:
+                print(f"  跳过 {t['id']}（REST 建 Pod 不接受这个型号，多半是 MIG 切片）")
+                continue
+            if not capacity:
+                # 真错了（参数/额度/权限），别继续糟蹋下一个型号
+                sys.exit(f"创建失败（不是容量问题）: {err}")
+        print(f"第 {rnd} 轮所有候选都缺货，{args.retry_interval}s 后重试")
+        if rnd < args.rounds:
+            time.sleep(args.retry_interval)
+    sys.exit(f"{args.rounds} 轮都没抢到。换个数据中心的 Volume，或抬高 --max-price")
+
+
 def cmd_volume_create(token, args):
     body = {"name": args.name, "size": args.size_gb, "dataCenterId": args.datacenter_id}
     print(json.dumps(rest_call(token, "POST", "/networkvolumes", body=body), ensure_ascii=False, indent=2))
@@ -142,21 +233,27 @@ def cmd_volume_delete(token, args):
     print(json.dumps(rest_call(token, "DELETE", f"/networkvolumes/{args.volume_id}"), ensure_ascii=False, indent=2))
 
 
-def cmd_create(token, args):
+def _create_body(args, gpu_type_id):
+    """建 Pod 的请求体。cmd_create 和 cmd_rent_cheapest 共用，避免两处漂移。"""
     body = {
         "name": args.name,
         "imageName": args.image,
-        "gpuTypeIds": [args.gpu_type_id],
+        "gpuTypeIds": [gpu_type_id],
         "cloudType": args.cloud_type,
         "containerDiskInGb": args.container_disk_gb,
         "ports": ["22/tcp"],
         "env": {"PUBLIC_KEY": args.public_key},
     }
-    if args.network_volume_id:
+    if getattr(args, "network_volume_id", None):
         body["networkVolumeId"] = args.network_volume_id
         body["volumeMountPath"] = args.volume_mount_path
     if args.cloud_type == "COMMUNITY":
         body["supportPublicIp"] = True
+    return body
+
+
+def cmd_create(token, args):
+    body = _create_body(args, args.gpu_type_id)
     print(json.dumps(rest_call(token, "POST", "/pods", body=body), ensure_ascii=False, indent=2))
 
 
@@ -202,6 +299,25 @@ def main():
     p = sub.add_parser("gputypes")
     p.add_argument("--min-memory-gb", type=int, default=80)
     p.set_defaults(func=cmd_gputypes)
+
+    p = sub.add_parser("rent_cheapest",
+                       help="满足最低显存的前提下挑最便宜的卡并建 Pod（推荐的默认租卡方式）")
+    p.add_argument("--min-memory-gb", type=int, required=True,
+                   help="这次任务的显存门槛。见 SKILL.md 的显存门槛表："
+                        "H3 走 diffusers int8+offload 时 24；H3 不量化单卡时 80；"
+                        "LTX-2.5 <217帧 时 80（低显存档未实测）")
+    p.add_argument("--max-price", type=float, default=None, help="单价上限 $/hr，超过的不考虑")
+    p.add_argument("--rounds", type=int, default=10, help="整轮重试次数，默认 10")
+    p.add_argument("--retry-interval", type=int, default=30, help="每轮之间等待秒数，默认 30")
+    p.add_argument("--network-volume-id", default=None)
+    p.add_argument("--volume-mount-path", default="/workspace")
+    p.add_argument("--image", required=True)
+    p.add_argument("--name", default="ltx-gpu")
+    p.add_argument("--container-disk-gb", type=int, default=50)
+    p.add_argument("--cloud-type", choices=["SECURE", "COMMUNITY"], default="SECURE")
+    p.add_argument("--public-key", required=True)
+    p.add_argument("--dry-run", action="store_true", help="只打印候选列表，不建")
+    p.set_defaults(func=cmd_rent_cheapest)
 
     p = sub.add_parser("volume_create")
     p.add_argument("--name", required=True)

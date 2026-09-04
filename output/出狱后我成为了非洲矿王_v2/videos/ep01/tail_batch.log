@@ -1,0 +1,90 @@
+
+=== ep01_镜30 ===
+远程命令: export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && /workspace/LTX-2/.venv/bin/python -m ltx_pipelines.distilled --transformer-path /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt 'The camera stands on the inner side of the double-height living room near the staircase at eye level, about 1.5 metres up, looking down the room toward the full-height glass wall and the pool beyond. The camera is locked off at eye level. the framing holds a medium two-shot. the same two people throughout, the woman in a grey-blue apron pushing and the young man in a pale-blue shirt being pushed.
+
+0-3.625s: Her right hand is already pressed to his back and his head is already turned back to the left; her left hand comes up onto his shoulder and both of them move two paces toward the right of frame, the suitcase wheels turning, while his head stays turned back for a beat longer. She says in Mandarin Chinese, hurrying, pushing the sentence forward: "快把行李放进去，歇会儿就开饭了，". Wheels on polished stone, soft-soled steps.
+
+3.625-6.375s: Her right hand nudges his head back to the front and both of them keep moving toward the right edge of frame until only their near shoulders remain. She finishes in Mandarin Chinese, still quick, dropping the pitch at the end: "你表叔一会儿就回来。".
+
+Throughout the shot, the double-height living room stays exactly as in the first frame: the same crystal cascade chandelier, the same black leather sectional, the same black gloss low table with the woven metal bowl, the same dark marble media wall and the same cream polished stone floor, and her grey-blue apron stays unchanged, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot.
+
+cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range.' --image '/workspace/ltx_jobs/ep01_镜30_first.png' 0 1.0 --num-frames 153 --width 704 --height 1280 --seed 851762 --output-path '/workspace/ltx_jobs/ep01_镜30.mp4'
+INFO:ltx_pipelines.utils.constants:Checkpoint declares model_version=2.5.0 (parsed as (2, 5, 0))
+INFO:ltx_pipelines.utils.constants:Checkpoint declares model_version=2.5.0 (parsed as (2, 5, 0))
+INFO:ltx_pipelines.utils.constants:Checkpoint declares model_version=2.5.0 (parsed as (2, 5, 0))
+INFO:ltx_pipelines.utils.blocks:Building text encoder from /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors
+Connection to 216.81.248.126 closed by remote host.
+
+
+=== ep01_镜31 ===
+远程命令: export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && /workspace/LTX-2/.venv/bin/python -m ltx_pipelines.distilled --transformer-path /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt 'The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door. The camera is locked off at eye level. the framing holds a medium two-shot. the same two people throughout, the woman in a grey-blue apron and the young man in a pale-blue shirt seen from behind.
+
+Her right arm is already reached back behind her with her hand flat on the door; she pushes it the last few centimetres until it seats shut and the thin cool-white strip of corridor light in the gap is cut off; the young man in the near foreground releases the suitcase handle and his hand drops to his side. A door clicking softly shut, then insects outside the window.
+
+Throughout the shot, the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor, the suitcase stays the same dark grey hard-shell trolley case with a silver telescopic handle, a black rubber grip and wheels at its base and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot.
+
+cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range.' --image '/workspace/ltx_jobs/ep01_镜31_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --seed 706318 --output-path '/workspace/ltx_jobs/ep01_镜31.mp4'
+ssh: connect to host 216.81.248.126 port 16622: Connection refused
+镜头 ep01_镜31 出错: Command '['ssh', '-p', '16622', '-i', '/home/codespace/.ssh/id_ed25519', 'root@216.81.248.126', 'mkdir -p /workspace/ltx_jobs']' returned non-zero exit status 255.
+
+=== ep01_镜32 ===
+远程命令: export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && /workspace/LTX-2/.venv/bin/python -m ltx_pipelines.distilled --transformer-path /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt 'The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door. The camera is locked off at eye level. the framing holds a close-up on her face. the same 48-year-old Chinese woman throughout, same face with sun spots on the cheekbones, same low bun with grey at the temples, same yellowed white cotton dress under a grey-blue work apron.
+
+0-4.986s: Her right hand, still raised in front of her from the gesture she has just finished, comes down and meets the other in front of the apron, and the two keep rubbing against each other; her upper body angles a few degrees toward the door behind her. She says in Mandarin Chinese, dropping her volume to almost a breath: "小砚，在人家里住着，多一事不如少一事，". Cloth rubbing, insects outside.
+
+4.986-7.708s: Her right hand lifts and presses once on his forearm, then lowers back to her lap; her eyes stay on his face waiting. She finishes in Mandarin Chinese, still almost whispering, the last syllable pleading: "别跟她们顶嘴，啊？".
+
+Throughout the shot, the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor, and her grey-blue apron and low bun stay unchanged and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot.
+
+cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range.' --image '/workspace/ltx_jobs/ep01_镜32_first.png' 0 1.0 --num-frames 185 --width 704 --height 1280 --seed 394627 --output-path '/workspace/ltx_jobs/ep01_镜32.mp4'
+ssh: connect to host 216.81.248.126 port 16622: Connection refused
+镜头 ep01_镜32 出错: Command '['ssh', '-p', '16622', '-i', '/home/codespace/.ssh/id_ed25519', 'root@216.81.248.126', 'mkdir -p /workspace/ltx_jobs']' returned non-zero exit status 255.
+
+=== ep01_镜33 ===
+远程命令: export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && /workspace/LTX-2/.venv/bin/python -m ltx_pipelines.distilled --transformer-path /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt 'The camera stands just inside the guest-room door at eye level, about 1.5 metres up, facing the window on the far wall. The camera is locked off at eye level. the framing holds a close-up on his face. the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers.
+
+0-3.145s: He sits on the edge of the bed with his gaze locked on her face to the right of frame; the muscle along his jaw tightens once. The voice comes in Mandarin Chinese from off-screen, low and almost whispering, while the man in frame keeps his lips closed: "你表叔这些年收留我，". The voice comes from off-screen while the person visible in frame keeps their lips closed and still. Insects outside the window.
+
+3.145-7.042s: His nose draws in an audible breath and his shoulders lift and fall once with it; his eyes blink slowly but his gaze stays fixed on her. The voice continues in Mandarin Chinese from off-screen, pressing on the last two words, while the man in frame stays silent: "供你上大学，咱们得懂得感恩。". The voice comes from off-screen while the person visible in frame keeps their lips closed and still.
+
+Throughout the shot, the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot.
+
+cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range.' --image '/workspace/ltx_jobs/ep01_镜33_first.png' 0 1.0 --num-frames 169 --width 704 --height 1280 --seed 127548 --output-path '/workspace/ltx_jobs/ep01_镜33.mp4'
+ssh: connect to host 216.81.248.126 port 16622: Connection refused
+镜头 ep01_镜33 出错: Command '['ssh', '-p', '16622', '-i', '/home/codespace/.ssh/id_ed25519', 'root@216.81.248.126', 'mkdir -p /workspace/ltx_jobs']' returned non-zero exit status 255.
+
+=== ep01_镜34 ===
+远程命令: export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && /workspace/LTX-2/.venv/bin/python -m ltx_pipelines.distilled --transformer-path /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt 'The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door. The camera is locked off at eye level. the framing holds a close-up on his face. the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers.
+
+His head is already lowered with his gaze resting on his own hands on his knees; it lifts a few degrees toward her as his lips part, dips once in a small nod as the words leave him, and then settles back down to where it started. He says in Mandarin Chinese, very quietly and slowly, the voice almost out of strength: "我知道了妈。". Insects outside, then half a second of quiet.
+
+Throughout the shot, the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot.
+
+cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range.' --image '/workspace/ltx_jobs/ep01_镜34_first.png' 0 1.0 --num-frames 73 --width 704 --height 1280 --seed 538091 --output-path '/workspace/ltx_jobs/ep01_镜34.mp4'
+ssh: connect to host 216.81.248.126 port 16622: Connection refused
+镜头 ep01_镜34 出错: Command '['ssh', '-p', '16622', '-i', '/home/codespace/.ssh/id_ed25519', 'root@216.81.248.126', 'mkdir -p /workspace/ltx_jobs']' returned non-zero exit status 255.
+
+=== ep01_镜35 ===
+远程命令: export PATH=$HOME/.local/bin:$PATH && cd /workspace/LTX-2 && /workspace/LTX-2/.venv/bin/python -m ltx_pipelines.distilled --transformer-path /workspace/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path /workspace/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae-path /workspace/LTX-2/models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --spatial-upsampler-path /workspace/LTX-2/models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt 'The camera stands just inside the guest-room door at eye level, about 1.5 metres up, facing the window on the far wall. The camera is locked off at eye level. the framing eases from a close-up into a tight close-up. a slow, restrained push-in that travels only far enough to tighten the framing by about one step and then holds. the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers.
+
+0-2.515s: His eyes stay aimed at the right of frame following something leaving; as the door clicks shut off-screen his eyelids open a fraction wider and his pupils fix. He narrates in Mandarin Chinese, colder than the earlier lines, the voice comes from off-screen while nobody in frame moves their lips: "可我没想到，". The voice comes from off-screen while the person visible in frame keeps their lips closed and still. A door clicking shut off-screen, then insects.
+
+2.515-6.708s: The muscle along his jaw draws tight a millimetre at a time until it holds; the framing closes in on his eyes and his eyelids stay open and still. He finishes in Mandarin Chinese, landing hard and flat on the last word, the voice comes from off-screen while nobody in frame moves their lips: "等待我们母子的，是屈辱。". The voice comes from off-screen while the person visible in frame keeps their lips closed and still. The score cuts out for half a second, then one low single note.
+
+Throughout the shot, the small guest room stays exactly as in the first frame: the same single bed with pale bedding, the same warm bedside lamp as the only light source, the same dark wooden desk with the open textbook and the same dark timber floor and every person keeps the same head and body orientation relative to the lens as in the first frame, staying turned the same way for the whole shot.
+
+cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range.' --image '/workspace/ltx_jobs/ep01_镜35_first.png' 0 1.0 --num-frames 161 --width 704 --height 1280 --seed 960284 --output-path '/workspace/ltx_jobs/ep01_镜35.mp4'
+ssh: connect to host 216.81.248.126 port 16622: Connection refused
+镜头 ep01_镜35 出错: Command '['ssh', '-p', '16622', '-i', '/home/codespace/.ssh/id_ed25519', 'root@216.81.248.126', 'mkdir -p /workspace/ltx_jobs']' returned non-zero exit status 255.
+
+结果汇总写入 output/出狱后我成为了非洲矿王_v2/videos/ep01/ltx_submit_results.json
+
+6 个镜头未成功，检查上面的报错或 output/出狱后我成为了非洲矿王_v2/videos/ep01/ltx_submit_results.json
+
+=== 自动关闭显卡 ===
+python3 /workspaces/AI-/.claude/skills/short-drama-ltx-generate/scripts/gpu_teardown.py --platform runpod --instance-id 3ech6fcv1r3etd --mode auto --config output/出狱后我成为了非洲矿王_v2/videos/ep01/ltx_remote_config.json
+[teardown] 平台=runpod 实例=3ech6fcv1r3etd 动作=terminate
+[teardown] 理由: RunPod + 有 Network Volume（vr1dk0uvnx），terminate 不影响卷上的模型权重，且能连磁盘费一起省掉
+[teardown] runpod terminate 返回: {}
+[teardown] ✅ 已确认停止计费（http_status=404）
+[teardown] Network Volume vr1dk0uvnx 未被触碰，下次挂同一个卷建新 Pod 即可，不用重新下载权重。

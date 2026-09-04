@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same 48-year-old Chinese woman throughout, same face with sun spots on the cheekbones, same low bun with grey at the temples, same yellowed white cotton dress under a grey-blue work apron. The camera holds a static shot. The strained smile is already on her face, held only at the mouth while her eyes stay red and flat; her right hand lowers from her chest to her side, the corners of her mouth pull a fraction wider and hold, and she blinks once as her gaze stays down and off to the side. The speaker (S1) says, brightening her voice on purpose over a thick throat, <d>[Chinese] 这边太阳大，显的，</d> cloth brushing skin. Her eyes come up to the right of frame and meet her son's; the smile stays fixed in place. The speaker (S1) says, hurrying the words along, <d>[Chinese] 快走吧，你表叔家都等着呢，</d> Her left hand hitches the backpack strap higher onto her own shoulder and she half-turns toward the depth of frame; the smile is still there when the words end. The speaker (S1) says, lifting the last three words as if offering a gift, <d>[Chinese] 特意给你做了接风饭。</d> webbing shifting on cloth.\n\noverall_soundscape:\nCloth brushing skin. Webbing shifting on cloth.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜21/ep01_镜21_01.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 11,
+  "ratio": "9:16"
+}

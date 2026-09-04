@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest. The camera holds a static shot. The bearded man pushes a sweating plastic water bottle forward into the gap between them until it leaves his fingers, and the younger man's hand closes around it; the older man's chin juts forward once as he speaks. The speaker (S1) says, fast and urgent, the words piling onto each other, <d>[Chinese] 这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。</d> plastic crackling under a grip. His jaw pushes forward a second time, his brows draw together and the tendon on his neck stands out; both their hands come down and the bottle settles against the younger man's thigh. dry hot wind over open ground, a few distant birds. [Shot 2] At 00:06.375, the camera cuts to the framing holds a tight close-up on both hands and the bottle. The camera stands on the red-dirt road outside the prison gate at eye level, about 1.5 metres up, facing the rusted iron gate straight on. The camera holds a static shot. The hand holding the loose cap stops dead a finger-width above the bottle mouth; his thumb and index finger tighten on it until the knuckles blanch white, and a bead of condensation runs down the bottle wall past his other hand. a plastic cap clicking, then cutting off mid-click; the ambient drops to silence.\n\noverall_soundscape:\nPlastic crackling under a grip. Dry hot wind over open ground, a few distant birds. A plastic cap clicking, then cutting off mid-click; the ambient drops to silence.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜05/ep01_镜05_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 9,
+  "ratio": "9:16"
+}

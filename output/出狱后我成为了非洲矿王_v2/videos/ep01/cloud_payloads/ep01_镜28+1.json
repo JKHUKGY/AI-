@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same 21-year-old Chinese woman throughout, same face, same light-brown long straight hair, same white knit camisole and pale skirt. The camera holds a static shot. Her eyes lift off the phone screen and sweep upward across the left of frame, then snap back down to the screen; her nose gives one short scoffing exhale and her posture stays exactly as it was. a short scoff, then screen taps resuming. Her thumb swipes across the screen twice while she speaks, the cool screen light moving on her chin. The speaker (S1) says, airy and amused, aiming every word at her mother, <d>[Chinese] 妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？</d> Her shoulders give one small shrug and her thumb keeps swiping; her eyes stay on the screen the whole time. The speaker (S1) says, still airy, a laugh under the last words, <d>[Chinese] 别回头住不惯，再闹着要回去。</d> screen taps continuing. [Shot 2] At 00:09.750, the camera cuts to the framing holds a tight close-up on one hand and the suitcase handle. The camera stands in front of the full-height glass wall at eye level, about 1.5 metres up, looking back across the living room toward the entrance doors and the floating staircase. The camera holds a static shot. The hand is already closed on the rubber grip; the fingers draw tighter one knuckle at a time until the knuckles blanch white and the tendons stand further up on the back of the hand, and a thin film of sweat shows on the inside of the wrist. the ambient is pulled away, only a faint squeak of skin on rubber.\n\noverall_soundscape:\nA short scoff, then screen taps resuming. Screen taps continuing. The ambient is pulled away, only a faint squeak of skin on rubber.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜28/ep01_镜28_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 13,
+  "ratio": "9:16"
+}

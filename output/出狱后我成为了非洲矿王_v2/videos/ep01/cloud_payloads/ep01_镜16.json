@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is an empty kerb outside a small international terminal, only parked vehicles and luggage trolleys in frame. The camera holds a static shot with large amplitude. A white minibus rolls slowly across the far right of frame from the depth toward the edge and leaves; the heated air above the concrete shimmers and warps the distant palms throughout. The speaker (S1) says in an off-screen voiceover, calm and retrospective, the voice comes from off-screen while nobody in frame moves their lips,: <d>[Chinese] 我叫江砚。一个月前，我第一次到非洲。</d> while their lips remain completely closed. a muffled airport announcement blurred past recognition, a vehicle passing at distance.\n\noverall_soundscape:\nA muffled airport announcement blurred past recognition, a vehicle passing at distance.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜16/ep01_镜16_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 6,
+  "ratio": "9:16"
+}

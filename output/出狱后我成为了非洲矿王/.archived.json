@@ -1,0 +1,1154 @@
+{
+  "project": "出狱后我成为了非洲矿王",
+  "archived_at": "2026-09-03T07:09:39+00:00",
+  "remote": "gdrive:AI-短剧归档/出狱后我成为了非洲矿王",
+  "volumes": {
+    "assets": {
+      "archive": "出狱后我成为了非洲矿王__assets.tar.zst",
+      "archive_size": 100670315,
+      "archive_sha256": "e984a8ed0038aa0ac23d85babdc6fd753056e6675f8fcee593a63fcda8330014",
+      "raw_size": 101201466,
+      "file_count": 45,
+      "files": [
+        {
+          "path": "assets/SC01_监狱门口/SC01_监狱门口_00.png",
+          "size": 2467167,
+          "sha256": "9d609b3f29b8197aedb2ed32229ddfda7d36069d6ce798dbf3202ad916c50a8c"
+        },
+        {
+          "path": "assets/SC02_机场出口/SC02_机场出口_00.png",
+          "size": 2317369,
+          "sha256": "71b98bfa1e90de54b70fcc848e3f12b849528e25321b9c3bda31cf8894b081d5"
+        },
+        {
+          "path": "assets/SC03_顾家别墅客厅/SC03_顾家别墅客厅_00.png",
+          "size": 2447604,
+          "sha256": "f37091506fef4ee410310ab139f5dfff693e1511fdd9646418a74c9e7b7e8e0b"
+        },
+        {
+          "path": "assets/SC03_顾家别墅客厅_B反打/SC03_顾家别墅客厅_B反打_01.png",
+          "size": 2120444,
+          "sha256": "bffc2a1f85891c4a7956dcd9ebe443e631ae23a3d6299eff65f09866bfcee3fd"
+        },
+        {
+          "path": "assets/SC03_顾家别墅客厅_C侧机位/SC03_顾家别墅客厅_C侧机位_00.png",
+          "size": 2184687,
+          "sha256": "0f7f7c108e4855c71cd39b830c92c9c2bca59094d26803fb4f983e25926c045c"
+        },
+        {
+          "path": "assets/SC03_顾家别墅客厅_D细节/SC03_顾家别墅客厅_D细节_00.png",
+          "size": 2548801,
+          "sha256": "00957bb868b0ed68fe83f7a24b72830d08e3f68c8fe2846e8e90109f2beb3c9a"
+        },
+        {
+          "path": "assets/SC04_顾家别墅餐厅/SC04_顾家别墅餐厅_00.png",
+          "size": 2184252,
+          "sha256": "2e3dd8355995cb11405882f9b0a797eaf213599c4119d691cd6b574a84511fc0"
+        },
+        {
+          "path": "assets/SC05_顾家客房/SC05_顾家客房_00.png",
+          "size": 1998292,
+          "sha256": "4fcdb967b323adc9ac7889d7b67265b3c835d2f9f8acaf09114b97185acecf06"
+        },
+        {
+          "path": "assets/SC06_矿场办公室_夜版/SC06_矿场办公室_夜版_00.png",
+          "size": 1954798,
+          "sha256": "a65a0871e51e95f6c11dd0a723ca4313fb5b2009a351d68dafc0666117f26e42"
+        },
+        {
+          "path": "assets/SC06_矿场办公室_日版/SC06_矿场办公室_日版_00.png",
+          "size": 2506014,
+          "sha256": "3fe8b4b039f20ee316d474c3d235c2d2db90652faeb51eaeb41a97a66aba7e5f"
+        },
+        {
+          "path": "assets/SC06_矿场办公室_日版_B反打/SC06_矿场办公室_日版_B反打_00.png",
+          "size": 2459364,
+          "sha256": "cdfd4909a20801cab2dfc77b40040d9510b7d0ad9e50b85047b14ad6256b2fa6"
+        },
+        {
+          "path": "assets/SC06_矿场办公室_日版_C侧机位/SC06_矿场办公室_日版_C侧机位_00.png",
+          "size": 2826121,
+          "sha256": "29b3d000e73d32acfd32034cdd5db4563e1099840c0a7c525f76aaef02eda48b"
+        },
+        {
+          "path": "assets/SC06_矿场办公室_日版_D细节/SC06_矿场办公室_日版_D细节_00.png",
+          "size": 2711888,
+          "sha256": "caac3e71ed796e0bce01799f03055bc8d261d6d03c41b64322bf106bc6650c59"
+        },
+        {
+          "path": "assets/SC07_矿场会议室/SC07_矿场会议室_00.png",
+          "size": 1884792,
+          "sha256": "7da3bc2b47de581d65008e6584d4e1af6df87379dafcb3996700494ed4171649"
+        },
+        {
+          "path": "assets/SC08_丛林山路断崖/SC08_丛林山路断崖_00.png",
+          "size": 3265317,
+          "sha256": "35d87a3c3081ed2f66abce1e5759799914213bdd7fc480c7707c51c9577bfe75"
+        },
+        {
+          "path": "assets/SC09_野外营地/SC09_野外营地_00.png",
+          "size": 2545410,
+          "sha256": "a0aa5b37f9277bef87c4fb479c09a130ec961aa59a3eb43445a6451feca68bf4"
+        },
+        {
+          "path": "assets/SC10_矿场开采工作面/SC10_矿场开采工作面_00.png",
+          "size": 2834949,
+          "sha256": "74d4d7b406019afa93bc3ff3bf6ff159ee4e5e2b9dfaf72177fed3ea0e8dba71"
+        },
+        {
+          "path": "assets/SC11_矿场仓库/SC11_矿场仓库_00.png",
+          "size": 2389293,
+          "sha256": "556d3107c5f3cdc205d0a900650e0dc831d4faf06d6487dc0619a35e6a0de2b8"
+        },
+        {
+          "path": "assets/SC12_顾家书房/SC12_顾家书房_00.png",
+          "size": 2033524,
+          "sha256": "fc6f0e3002a7caf5ca7185aca77be37dbbbec150c44e95d2b8d1cbfb87119bca"
+        },
+        {
+          "path": "assets/SC13_顾家别墅门外/SC13_顾家别墅门外_00.png",
+          "size": 2371709,
+          "sha256": "8e57d86e63d8ddbcf72477bd302af1d051c889dffec26e9f81631b0db0ab8c01"
+        },
+        {
+          "path": "assets/刘兰_侧面转身/刘兰_侧面转身_02.png",
+          "size": 1958100,
+          "sha256": "1cf3b7da90f7d3dde3e966575d7a045c113a60a1c6330132f8ed5b331fb4cc1d"
+        },
+        {
+          "path": "assets/刘兰_正面/刘兰_正面_00.png",
+          "size": 1933708,
+          "sha256": "2530427498d88b870f9a33204c3c4e11773cb94036cbd2ba2c5252ef46236ff6"
+        },
+        {
+          "path": "assets/刘兰_背面转身/刘兰_背面转身_00.png",
+          "size": 1814178,
+          "sha256": "2abfc6cf318aeceb98423c0bbf817d1f19a79c808cbaf7e466468206601d5caf"
+        },
+        {
+          "path": "assets/江砚_出狱期_侧面转身/江砚_出狱期_侧面转身_00.png",
+          "size": 1916401,
+          "sha256": "35ac8ebf8dcbcead4cbe92633cddce5866f2f40bd9580fbed04b598fccf6a7e9"
+        },
+        {
+          "path": "assets/江砚_出狱期_正面/江砚_出狱期_正面_00.png",
+          "size": 2049261,
+          "sha256": "3ecb3ed7b04de1bc65b113922154d5de6bb62cdf9f5dd2e9fb24ca5c33dea146"
+        },
+        {
+          "path": "assets/江砚_出狱期_正面/江砚_出狱期_正面_03.png",
+          "size": 1953994,
+          "sha256": "0284250e8e24fc8260eebb60c2cd2727ad916ca154d75f1fcbd18ad7042d243e"
+        },
+        {
+          "path": "assets/江砚_出狱期_背面转身/江砚_出狱期_背面转身_00.png",
+          "size": 1982365,
+          "sha256": "2cfe31c8e1eebeafbe37eec2ea0dc031436e6dc1ce4c319c8efca1887372f7e5"
+        },
+        {
+          "path": "assets/矿场技术员_三视图/矿场技术员_三视图_02.png",
+          "size": 2045630,
+          "sha256": "cc74d86aeb34fde6ff9fad06f0ce4b6cc161e8249023a1dcdaa8a05ccadc230b"
+        },
+        {
+          "path": "assets/秦总_正面/秦总_正面_00.png",
+          "size": 1562005,
+          "sha256": "35051d091c39e0b6ef016f11728c55ca322cf385d8516eedfa77a48812b14e1e"
+        },
+        {
+          "path": "assets/苏慧_佣人期_侧面转身/苏慧_佣人期_侧面转身_00.png",
+          "size": 2528962,
+          "sha256": "f57408a871d9fe2dde36c286d663680109fad1b295db6ad442fe2983fbd3bf69"
+        },
+        {
+          "path": "assets/苏慧_佣人期_正面/苏慧_佣人期_正面_00.png",
+          "size": 2683127,
+          "sha256": "c19e751e2ba49a325dd4f7207bfa09a07898d2a4d9597a0a00e1ea0af8b10d23"
+        },
+        {
+          "path": "assets/苏慧_佣人期_正面/苏慧_佣人期_正面_01.png",
+          "size": 2188017,
+          "sha256": "073647a4776eb01d794faf7805d0ba9ee4d747c52a02cfe2ab1a0d7ed67b20c5"
+        },
+        {
+          "path": "assets/苏慧_佣人期_背面转身/苏慧_佣人期_背面转身_00.png",
+          "size": 2624299,
+          "sha256": "3816710fc4aa66776ee3aa0b82232f39c6560bcdb40ca50e7b96ad8d1be3f9ce"
+        },
+        {
+          "path": "assets/陈野_侧面转身/陈野_侧面转身_00.png",
+          "size": 2397034,
+          "sha256": "f1450a247b55fe03aa66dc3e279a7df4afc2c9a1688d7df114f4c874970ccc71"
+        },
+        {
+          "path": "assets/陈野_正面/陈野_正面_00.png",
+          "size": 2451100,
+          "sha256": "1faa134031c0e149882d47eff808909b275a6f7df8cdd0a6a10c1f4c9ed6047f"
+        },
+        {
+          "path": "assets/陈野_背面转身/陈野_背面转身_00.png",
+          "size": 2373914,
+          "sha256": "6447ab2bf25999d0502cce89a5a457696772b9ae6a8bd88a894f30ba9a799952"
+        },
+        {
+          "path": "assets/顾万通_得势期_侧面转身/顾万通_得势期_侧面转身_01.png",
+          "size": 2301738,
+          "sha256": "83e9a0f60da18d0e94f2305f273217f2070e304852ee6ff929642553d1e9dbb9"
+        },
+        {
+          "path": "assets/顾万通_得势期_正面/顾万通_得势期_正面_00.png",
+          "size": 1990171,
+          "sha256": "1487c76bd3964b7babf5cd805ec815e82abef4f7dcea41b98b5cffa1ba7f9f79"
+        },
+        {
+          "path": "assets/顾万通_得势期_背面转身/顾万通_得势期_背面转身_00.png",
+          "size": 1875070,
+          "sha256": "e262855a5fee24b93dfd35242ae411d0318713f2a688644c7aedfaf420f5717d"
+        },
+        {
+          "path": "assets/顾浩_侧面转身/顾浩_侧面转身_00.png",
+          "size": 2431075,
+          "sha256": "75d4e2293d1dd1df97aca4f4651b4b50b75884f94a705570636a93d5c3beed8e"
+        },
+        {
+          "path": "assets/顾浩_正面/顾浩_正面_00.png",
+          "size": 2145094,
+          "sha256": "52ee0b55dc50efbf49b0073572909cc53ab8a9132c2b38801c15d63594251b10"
+        },
+        {
+          "path": "assets/顾浩_背面转身/顾浩_背面转身_00.png",
+          "size": 2175491,
+          "sha256": "6eae123878847e4ac92f059e76b8c82863226bd05701cf1af14eed598a6d990d"
+        },
+        {
+          "path": "assets/顾瑶_侧面转身/顾瑶_侧面转身_00.png",
+          "size": 1918039,
+          "sha256": "483c5a26ba14d1459c6fd8f619a1d286f42660b88e429fe2173583362bef1560"
+        },
+        {
+          "path": "assets/顾瑶_正面/顾瑶_正面_00.png",
+          "size": 2004484,
+          "sha256": "9691e413cc1509ab5a2505baa57af59422b170a17492f5f819d2a86b6ee64dbd"
+        },
+        {
+          "path": "assets/顾瑶_背面转身/顾瑶_背面转身_00.png",
+          "size": 1846414,
+          "sha256": "3f76db547f3df959cc8c49572d6732556d33c4cf805d19bc172f972640e8f5e0"
+        }
+      ]
+    },
+    "keyframes": {
+      "archive": "出狱后我成为了非洲矿王__keyframes.tar.zst",
+      "archive_size": 170950198,
+      "archive_sha256": "321d1107686839b641086d799579c3d911d26e59d2546bd1b3887188a06535d9",
+      "raw_size": 171797588,
+      "file_count": 75,
+      "files": [
+        {
+          "path": "keyframes/ep01/ep01_镜01/ep01_镜01_00.png",
+          "size": 2566523,
+          "sha256": "23c5a77fff21cf2f0179d93661a3d68503e8b5ec1b6144f27593b7805911f1ca"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜01/ep01_镜01_02.png",
+          "size": 2588022,
+          "sha256": "eb8d826f8bbe51de8d21f740487a688480ca8342a8ee984d242d3a18405d7f62"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜02/ep01_镜02_00.png",
+          "size": 2657820,
+          "sha256": "b27f7d2b19ba8d5c5ac184ce0dc4b52d9e4ef2c200a6ba3d4702f81e7fa08191"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜03/ep01_镜03_00.png",
+          "size": 2471143,
+          "sha256": "29d52d571d037fa3164d16229e9f27a6f5680b7f8abd0287b222f17cea5086c7"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜03/ep01_镜03_01.png",
+          "size": 2471322,
+          "sha256": "32357a0783fbbf720450e8789aa573d2a738162042a20670bee0f714408289dd"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜04/ep01_镜04_00.png",
+          "size": 2287168,
+          "sha256": "e07632ee8f0f1fa24f3819afad8c66f07c0471605712c576b8d2ed5501b99a82"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜05/ep01_镜05_00.png",
+          "size": 2349530,
+          "sha256": "6952f5b97799128ed69bb4a647229e4862f6f5edda581148ed6aad7f562be0b9"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜05/ep01_镜05_01.png",
+          "size": 2420083,
+          "sha256": "dd7a35eb5d38933aa6cdc6ee449a3f6e2681b922ec33508ce5839c0e81c73b18"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜06/ep01_镜06_00.png",
+          "size": 2566213,
+          "sha256": "63e82af1aa84c70d8fe0ad6afc2f230445eba1e532fcf26849ef129eb3051670"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜06/ep01_镜06_seg2_first.png",
+          "size": 1917436,
+          "sha256": "50ed2d609e84bff4947665726f02061020bdae5a2efdb2935c6290713ff6232a"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜07/ep01_镜07_00.png",
+          "size": 2341485,
+          "sha256": "52768d99ce640b54d3bc43565c74832a50601eced91ade0474b824029f5822d8"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜07/ep01_镜07_01.png",
+          "size": 2294758,
+          "sha256": "61750622027a301b14c975a13630263597e7760ae3bff95278a477e193781a74"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜08/ep01_镜08_00.png",
+          "size": 2358402,
+          "sha256": "c5eb6811fda779f70660662e831a07b04f7063ad567f901a542e90ab79af4e9f"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜09/ep01_镜09_00.png",
+          "size": 2450802,
+          "sha256": "033161246b8e63485ad5073378937f310b6c01503a7f8923d2526d980de44e80"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜10/ep01_镜10_00.png",
+          "size": 2515023,
+          "sha256": "3e88b68c0f3de8cc4904b8e122eeaa807f98aa2a962bc7bc4c88efea9d43c3c7"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜11/ep01_镜11_00.png",
+          "size": 2767526,
+          "sha256": "ff686408fcf9febbb99d63fcc0751f11891585808c09ee8934c77b27cfffa03e"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜12/ep01_镜12_00.png",
+          "size": 2422728,
+          "sha256": "ec341d2dc0660595c2a5b8dd58a531a571c9af083594a1ceea5f34c7a9f2d7c9"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜13/ep01_镜13_03.png",
+          "size": 2448579,
+          "sha256": "75cadbd1f11b3950b7a87f8c1311a6e0ff92f2e3336b0779573a795ad1d7befe"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜14/ep01_镜14_00.png",
+          "size": 2591937,
+          "sha256": "6818af6a8736fe4c1ea158db21b3eb2cd6d1fc60839e17d1137d5fe92a38b4f0"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜15/ep01_镜15_00.png",
+          "size": 2368697,
+          "sha256": "4dd8d27c733a84df5eebb0c51aad958c9fa71ae0c667f0d827f7577e743649f6"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜16/ep01_镜16_00.png",
+          "size": 2515275,
+          "sha256": "810fdc46c4460f96d86a320600cb43b20d91898597f6e0268e48133d0b31ac64"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜17/ep01_镜17_00.png",
+          "size": 2452972,
+          "sha256": "129820d6774bdf94ade3ddcc87a8beb46b617a97bde46226329fba5f5c56c634"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜18/ep01_镜18_00.png",
+          "size": 2175741,
+          "sha256": "6044875caf7f67727412578b0af4e10c77212dbbfc02aba221f6694f660d899a"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜19/ep01_镜19_00.png",
+          "size": 2376785,
+          "sha256": "63ccf36a67d97afdabf7db6962db758cb1e24814beb0ee311b34f02523edb356"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜20/ep01_镜20_00.png",
+          "size": 2266970,
+          "sha256": "b946bffafb35425993c4f330fe3f63311835037f7c05dd0758447c4bc8a015b8"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜20/ep01_镜20_seg2_first.png",
+          "size": 1165020,
+          "sha256": "0954ae544c352d6619fa8f5571c2189a01807d1f4ed8f0860a3973df7d81ed50"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜20/ep01_镜20_seg2b_first.png",
+          "size": 1163179,
+          "sha256": "3b0bf9fb58b0ebcdb9802521ddcbb342abbc4ff87f0b173933e1df5c8fe1a3a2"
+        },
+        {
+          "path": "keyframes/ep01/ep01_镜21/ep01_镜21_00.png",
+          "size": 2219961,
+          "sha256": "5d277aa7f807b07eef183f10473ff2becc30510246eff1eec7e223387d3a8b20"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜01/ep02_镜01_01.png",
+          "size": 2293187,
+          "sha256": "d6073c8136742c49ea914a2461a6d9f86b9c87feaf506db5310d539fea43797c"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜02/ep02_镜02_01.png",
+          "size": 2268425,
+          "sha256": "cd9a008ac7a8cece48cd59e046efb6b0292b5e8f685205d1ba8c4948bbe90f4a"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜03/ep02_镜03_00.png",
+          "size": 2319811,
+          "sha256": "6bb61d950a4aff1fcd937a6c90e7a691f6b6ab7e7946f9f87ce0a2d4b2d81c90"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜04/ep02_镜04_01.png",
+          "size": 2111584,
+          "sha256": "f1610549da463a79afcee69095e6258862df663cd20472ff301e96dac9395671"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜05/ep02_镜05_01.png",
+          "size": 2313645,
+          "sha256": "aa1346568eaef2131c09dd6fc3d3f4f87a9b75c3c4d7f90d3865ad716a8d20f8"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜06/ep02_镜06_01.png",
+          "size": 2564224,
+          "sha256": "bcf4125979e094abcb9dff387af742d17dd1689025d50f440c963ba085f95e50"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜07/ep02_镜07_00.png",
+          "size": 2359527,
+          "sha256": "882e173b2805f7206d2c63b5c74ef3bbd6201372bfc518f9913f9e1f82f0cd4f"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜08/ep02_镜08_00.png",
+          "size": 2124315,
+          "sha256": "624b88028d6131e6b5f2144f2a4c7648104335192ae2bfb3015c841fe59b4cb9"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜08/ep02_镜08_seg_b_first.png",
+          "size": 1474898,
+          "sha256": "065c4d6aecc9d1b27c3376f0e46f7a28fbaeeec96e2d38f781ef53a33d1afdff"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜09/ep02_镜09_00.png",
+          "size": 2200741,
+          "sha256": "fa1a66183583d215e3ca7f947336ec0095d172e3ea368ad2bcd37139eac81b0f"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜10/ep02_镜10_00.png",
+          "size": 2337896,
+          "sha256": "6b6d5115dcd1f45326316623217dab901629de8103de74c289099936eede7f55"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜11/ep02_镜11_01.png",
+          "size": 2458710,
+          "sha256": "bbb2c5273d9546f3fb799dd0f43ec99c6780de42e5ff9f8dcef74f52702baa3a"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜12/ep02_镜12_00.png",
+          "size": 2337276,
+          "sha256": "1a58ffb9e2402472b303f7ce0c80f223b40c223dc6a0f71404030932d7f360a8"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜13/ep02_镜13_00.png",
+          "size": 2116203,
+          "sha256": "ccb5ac09f20c6559fdbbfd587cba44042d8f8e29683a783ce6bd361d644937b8"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜14/ep02_镜14_00.png",
+          "size": 2128529,
+          "sha256": "20c149e6c6ee12f2eaeb413de269e3d0c857800080478d5d3a76d0d0770ac45a"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜15/ep02_镜15_00.png",
+          "size": 2107726,
+          "sha256": "0f19bf67ac2f2c73f3820497d2cc7448c745d9c34f2e23ba154e1f7f87e5977c"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜16/ep02_镜16_00.png",
+          "size": 2035477,
+          "sha256": "449c156bf9e2b23b6f695dc19a440ce4a826432b7d8df8a03cd992356cec0716"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜17/ep02_镜17_00.png",
+          "size": 2014637,
+          "sha256": "c5d2ab4ab50ef6014ee51d435b295286d95295fae06f06bec7c70bd3cec224da"
+        },
+        {
+          "path": "keyframes/ep02/ep02_镜18/ep02_镜18_00.png",
+          "size": 2093494,
+          "sha256": "7708bec12c7d80fd8c41024ca769d9a141ba6b6936475d3f8c9e4e45feed4028"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜01/ep03_镜01_02.png",
+          "size": 2030332,
+          "sha256": "8060c7e0f428a03a0a48cabec01d727a4a2612029ecbadfa6df961b624c1bc1d"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜02/ep03_镜02_01.png",
+          "size": 2451331,
+          "sha256": "546b0e42fec2567e12315c3aebebf0476dc0999100c77d1c2e7038093577b2d5"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜03/ep03_镜03_00.png",
+          "size": 2194165,
+          "sha256": "695cbd4e25eeab834484ff37c0d32b1a7311145101f181f1af445d9396865f58"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜03/ep03_镜03_01.png",
+          "size": 2158196,
+          "sha256": "08a3f544be4510ec2b2c9c8727de60372b1493ad3629102c3016590426583411"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜04/ep03_镜04_00.png",
+          "size": 2123308,
+          "sha256": "0cf0ced835e282be7f37b25c0d8760367877e5a3c896393263e170befc71c552"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜05/ep03_镜05_00.png",
+          "size": 2254103,
+          "sha256": "faaa1afcbd7173fb3ceb6cbd776f098da2ff39fb2477e0c960a69d4ddeba15ee"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜06/ep03_镜06_01.png",
+          "size": 2040148,
+          "sha256": "d047b6125f601f7035047c39be0a680a7a432afeb5edc8c8348faeffd39c3716"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜07/ep03_镜07_00.png",
+          "size": 2374362,
+          "sha256": "6a52d15a1e40d0dadf078df68fde1d0bfb1156250ec0dd49a5b4844d2018f7c3"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜08/ep03_镜08_00.png",
+          "size": 2356945,
+          "sha256": "b80b53edb9708bdb2715430f6282d4fc7f7cf9c2766ab947bd7f9fc9a019fded"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜09/ep03_镜09_00.png",
+          "size": 2254733,
+          "sha256": "23ccab33d042273c7417c01d792ea1ea5db717c9ec307bd4a43b97d11d193755"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜10/ep03_镜10_00.png",
+          "size": 2231140,
+          "sha256": "5b7529abd0e9343c95a2af5361ba3aceb12e4189ac35fd9871ae7838e22cede0"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜11/ep03_镜11_01.png",
+          "size": 2047641,
+          "sha256": "d0c7639e37b8a009746afbc893fcbc23c069c6a1a2fab5d00b4c787cb267cd24"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜12/ep03_镜12_00.png",
+          "size": 1993194,
+          "sha256": "5bf6410fdb0ff4fe49e449b73111d8d95df91ef13f6e1b71d4b0e95bda363c5b"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜13/ep03_镜13_00.png",
+          "size": 2380580,
+          "sha256": "ebc97661ff313caad4a3f56a3a4694829662e36744ed26a46d3f5b41d7bae9b6"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜14/ep03_镜14_00.png",
+          "size": 2186137,
+          "sha256": "9a68bbd5049d6483dbffb49bd35435ded99bdc66113c1ae2203cba9835f69af1"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜15/ep03_镜15_01.png",
+          "size": 2311334,
+          "sha256": "23d5e9b02c28a6eb51311a452b538c4dbb919b36a69f96c1e3c35e2a07f0d359"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜16/ep03_镜16_00.png",
+          "size": 2314185,
+          "sha256": "c480221f64822c287cc4118a1d1f94b5f9a697c1b4b7fb5520aa128e11aa98e9"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜17/ep03_镜17_00.png",
+          "size": 2432693,
+          "sha256": "6468847ad46044a73381d27d05e5335af877e34a1758a3944c356c1d5b6e02b2"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜18/ep03_镜18_00.png",
+          "size": 2714141,
+          "sha256": "331313e6f63d073cfad4579556c87a625d8b0e65a25c08ce19740cdfc6cb00d6"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜19/ep03_镜19_00.png",
+          "size": 2432296,
+          "sha256": "0de3801b38013286810ff292e23307d93e99d29aebde674892af20e01460b938"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜20/ep03_镜20_00.png",
+          "size": 2487388,
+          "sha256": "c20058a285f095c238cab85d3e873924df483447bf1f8024008c97b97e33fcd8"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜21/ep03_镜21_00.png",
+          "size": 2365750,
+          "sha256": "a72806639c80b358a16562890f7d82cbc6797fb6be8f80420c6c8f726077c3b2"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜22/ep03_镜22_00.png",
+          "size": 2746230,
+          "sha256": "91674b42985c20f33ed591e38bb65f05592ed09131c1599398d8e9e901db4e18"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜23/ep03_镜23_00.png",
+          "size": 2343726,
+          "sha256": "de48c4d654d8c560f7886b91ab471b9ca3719f86a5cb838fd292bf2c0aed9a67"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜24/ep03_镜24_00.png",
+          "size": 2183079,
+          "sha256": "d17adbe93b6cb86543a73cf59c40d0e4244c2bbe4f6476ee9ace3921634faa85"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜25/ep03_镜25_00.png",
+          "size": 2678709,
+          "sha256": "79ee447fc0c8565b1c216bcc75ac7165465f6700877107fde61206d7bd429e69"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜26/ep03_镜26_00.png",
+          "size": 2435835,
+          "sha256": "8bf522eabc3b337edfd069d98af2b98e8cd0aae7d8b0ffe678c1cb379a7ef129"
+        },
+        {
+          "path": "keyframes/ep03/ep03_镜27/ep03_镜27_01.png",
+          "size": 2424502,
+          "sha256": "129276fe3c1fd090bcd4afc96f6cb8c658dea61856dc9b845b61a34eedd9a0cc"
+        }
+      ]
+    },
+    "videos": {
+      "archive": "出狱后我成为了非洲矿王__videos.tar.zst",
+      "archive_size": 379815906,
+      "archive_sha256": "88dd83b48886158597952244365dfb1f616eb117292f4aa3c67c5fd435d2689d",
+      "raw_size": 379887591,
+      "file_count": 104,
+      "files": [
+        {
+          "path": "videos/ep01/ep01_full_cut.mp4",
+          "size": 83392007,
+          "sha256": "731b8f2ff44a64ba53fc1658bbda3d2d2155f1a822a5dcd9efcc0a6808a5ba3e"
+        },
+        {
+          "path": "videos/ep01/ep01_full_cut_v1.mp4",
+          "size": 79717347,
+          "sha256": "2d288b2c3e765c6d9f83429cdd43b2fa8a0bafd27d5f00d3ae962dcd26de2330"
+        },
+        {
+          "path": "videos/ep01/ep01_镜01.mp4",
+          "size": 3420364,
+          "sha256": "bed8725939499c342eac2975b0d5a2bc293c5d8c671f0face332f6223616bb6e"
+        },
+        {
+          "path": "videos/ep01/ep01_镜01_v1.mp4",
+          "size": 3266884,
+          "sha256": "b99df2ef7c3e184f930068929fc22592b501698b4a659c4c710cd9cc716c4b06"
+        },
+        {
+          "path": "videos/ep01/ep01_镜01_v2.mp4",
+          "size": 3216855,
+          "sha256": "0a0e7548b6d8ed7724cadee219f0170a8315cb733ff6ecd137169b4b666930ae"
+        },
+        {
+          "path": "videos/ep01/ep01_镜01_v3.mp4",
+          "size": 3652042,
+          "sha256": "895688c9405dbba65381355ceaed0b504a772ef15b35c979446f61a4f0b356de"
+        },
+        {
+          "path": "videos/ep01/ep01_镜01_v4.mp4",
+          "size": 3187295,
+          "sha256": "ab1e734696a8b05974b3eacd67742d01cd7faff263a4cd3704ca8fde397c1551"
+        },
+        {
+          "path": "videos/ep01/ep01_镜01_v5.mp4",
+          "size": 3420364,
+          "sha256": "bed8725939499c342eac2975b0d5a2bc293c5d8c671f0face332f6223616bb6e"
+        },
+        {
+          "path": "videos/ep01/ep01_镜02.mp4",
+          "size": 2862689,
+          "sha256": "9e0a44f6794924d9f6f6de40b09bee533bf9a5191f1d53172aecfb0988c70f03"
+        },
+        {
+          "path": "videos/ep01/ep01_镜02_v1.mp4",
+          "size": 2517388,
+          "sha256": "b8ff1b7ef6fd9d46b3ef571fa099e32350d7b747b8258ff8d1658e3d0b8fdebf"
+        },
+        {
+          "path": "videos/ep01/ep01_镜03.mp4",
+          "size": 1780936,
+          "sha256": "b9505a6f3eccaa1d1f1fb6b3f7ddd77dcd8762688f5a6f1770cd8453e914231c"
+        },
+        {
+          "path": "videos/ep01/ep01_镜04.mp4",
+          "size": 3688917,
+          "sha256": "a4881ccaf6a2ad9d52c8c781c45dc948b3de14c03ad0cf429c569c2fd18af748"
+        },
+        {
+          "path": "videos/ep01/ep01_镜04_v1.mp4",
+          "size": 3798866,
+          "sha256": "356552fcf05fe2a4bb6ab56222f947028d6b0427e596bdc35a2e0f04f45d3606"
+        },
+        {
+          "path": "videos/ep01/ep01_镜04_v2.mp4",
+          "size": 3825904,
+          "sha256": "f9b8ab11584d03315943385a7fda1412ad7d83fcbffe0233869f5528385ed1ce"
+        },
+        {
+          "path": "videos/ep01/ep01_镜04_v3.mp4",
+          "size": 4330716,
+          "sha256": "662dd845ab4184f40b34874fff814f61c07ffd335c55a98e62b40f968f3bd946"
+        },
+        {
+          "path": "videos/ep01/ep01_镜04_v4.mp4",
+          "size": 3968141,
+          "sha256": "1429c40a99718bb34ce48ae1a1fc7b7a8c0d98c41e017c2c90438166f04f1811"
+        },
+        {
+          "path": "videos/ep01/ep01_镜04_v5.mp4",
+          "size": 3688917,
+          "sha256": "a4881ccaf6a2ad9d52c8c781c45dc948b3de14c03ad0cf429c569c2fd18af748"
+        },
+        {
+          "path": "videos/ep01/ep01_镜05.mp4",
+          "size": 1133188,
+          "sha256": "464ae06bff97f199bbc0d4b4ac4212b4a951f259973a26d6484373dc69bc1ce9"
+        },
+        {
+          "path": "videos/ep01/ep01_镜06.mp4",
+          "size": 2901402,
+          "sha256": "c5b7ed19b9e55362ea59d74b0438786313fe1edac7b73435567d1f31e869d69b"
+        },
+        {
+          "path": "videos/ep01/ep01_镜06_old_unsplit.mp4",
+          "size": 2731243,
+          "sha256": "72366b0766400cda236d443c0a725721aceeb3a89e8ce00438484e6beb5ee8fb"
+        },
+        {
+          "path": "videos/ep01/ep01_镜06_seg1.mp4",
+          "size": 1676711,
+          "sha256": "0b66153829deb4f71524049871327daaee65bca16788adbcffd7e619a43e7e72"
+        },
+        {
+          "path": "videos/ep01/ep01_镜06_seg2.mp4",
+          "size": 1226028,
+          "sha256": "894d46d03a1128245009eeabdd66e2ab7be08b2d3e883fb9fadfb7396f5b72f8"
+        },
+        {
+          "path": "videos/ep01/ep01_镜07.mp4",
+          "size": 1535416,
+          "sha256": "36e54769c40028847d5fbf6118546e17bd479cd7a36c421f5e1b80b5a48a7c6b"
+        },
+        {
+          "path": "videos/ep01/ep01_镜07_v1.mp4",
+          "size": 1993815,
+          "sha256": "bce5a0ac1dda2e4c71b6a3a12de118dac59500a22f82940ffe4f80d1e720047f"
+        },
+        {
+          "path": "videos/ep01/ep01_镜07_v2.mp4",
+          "size": 1568163,
+          "sha256": "9c45eb225eda7730b24310d9b3e118171a473e1b98184bae3169ebcbadea81de"
+        },
+        {
+          "path": "videos/ep01/ep01_镜07_v3.mp4",
+          "size": 1744563,
+          "sha256": "491473fba5d00e7002998f99a0c98d1383c04b0e8a233735fbef216973949dd6"
+        },
+        {
+          "path": "videos/ep01/ep01_镜07_v4.mp4",
+          "size": 1898153,
+          "sha256": "84a127909a4fb8cc66b170b96c95adbac56da3f31f7d9b3a126deb90cf2a87c1"
+        },
+        {
+          "path": "videos/ep01/ep01_镜07_v5.mp4",
+          "size": 1535416,
+          "sha256": "36e54769c40028847d5fbf6118546e17bd479cd7a36c421f5e1b80b5a48a7c6b"
+        },
+        {
+          "path": "videos/ep01/ep01_镜08.mp4",
+          "size": 2239459,
+          "sha256": "39cb4580ab64d2e6a370f0379e2c331443e140f33276c3ef06b5ee3c1e4b07cb"
+        },
+        {
+          "path": "videos/ep01/ep01_镜08_v1.mp4",
+          "size": 2222780,
+          "sha256": "dbf103422519d7e4665b53edbbb79308ef22c7179dde77a80589043d7b5af262"
+        },
+        {
+          "path": "videos/ep01/ep01_镜09.mp4",
+          "size": 1245940,
+          "sha256": "0e235ee2f6bf2079ee42e6b29ca7f4f12322acb6a4ab88a3f69cf6d8d8e4b475"
+        },
+        {
+          "path": "videos/ep01/ep01_镜09_v1.mp4",
+          "size": 1111502,
+          "sha256": "069b0d6f54403f9de00a116cd699c8801b068da890d5b0e27b45476e5e64cf76"
+        },
+        {
+          "path": "videos/ep01/ep01_镜09_v2.mp4",
+          "size": 1239791,
+          "sha256": "6aa5b56035aa973867f26e6ad73157b4b7642be639a49f9cd7a0649cd5384e3b"
+        },
+        {
+          "path": "videos/ep01/ep01_镜09_v3.mp4",
+          "size": 1245940,
+          "sha256": "0e235ee2f6bf2079ee42e6b29ca7f4f12322acb6a4ab88a3f69cf6d8d8e4b475"
+        },
+        {
+          "path": "videos/ep01/ep01_镜09_v4.mp4",
+          "size": 1292766,
+          "sha256": "86bc162865c90e21d2b7c441841e28c85ddff8cb949303c4734f6ed000b4429a"
+        },
+        {
+          "path": "videos/ep01/ep01_镜09_v5.mp4",
+          "size": 1245940,
+          "sha256": "0e235ee2f6bf2079ee42e6b29ca7f4f12322acb6a4ab88a3f69cf6d8d8e4b475"
+        },
+        {
+          "path": "videos/ep01/ep01_镜10.mp4",
+          "size": 3548113,
+          "sha256": "9fed6e9bb691963b6d61f60b8191c6aabb81598979de3921aef92511e0c603a0"
+        },
+        {
+          "path": "videos/ep01/ep01_镜11.mp4",
+          "size": 594280,
+          "sha256": "a239f0038169ea49e932aee17abd6c24b69a3503d8e24d8ada50139e63b651ba"
+        },
+        {
+          "path": "videos/ep01/ep01_镜12.mp4",
+          "size": 1161847,
+          "sha256": "24b5cc8744737a7ac84071347e13aae212726273ddd4f15087bb112829af20ff"
+        },
+        {
+          "path": "videos/ep01/ep01_镜13.mp4",
+          "size": 361419,
+          "sha256": "75c756d1fdf2802f52573ce498f249ec5891447ef001266860e1600c676e84fb"
+        },
+        {
+          "path": "videos/ep01/ep01_镜14.mp4",
+          "size": 2946703,
+          "sha256": "14d9f6839ee55c9791db2ee42663e1c9f286bba5150aeebbefbde4ab6bb7ef98"
+        },
+        {
+          "path": "videos/ep01/ep01_镜14_v1.mp4",
+          "size": 2840079,
+          "sha256": "f7d15b398fcb7dd5bfe6451a47ebf7cbe32f678abea3392c4c1f1edbc9e1310b"
+        },
+        {
+          "path": "videos/ep01/ep01_镜14_v2.mp4",
+          "size": 2946703,
+          "sha256": "14d9f6839ee55c9791db2ee42663e1c9f286bba5150aeebbefbde4ab6bb7ef98"
+        },
+        {
+          "path": "videos/ep01/ep01_镜14_v3.mp4",
+          "size": 3027995,
+          "sha256": "996412ba0f89e28c11ed14e065db46339a6946ce99d6e040a6dd541d62065fa1"
+        },
+        {
+          "path": "videos/ep01/ep01_镜14_v4.mp4",
+          "size": 2897221,
+          "sha256": "5e6d8f0b7dc75db0084dab344789ae8d92b80a16e9e2c8e103c1345f9913dc22"
+        },
+        {
+          "path": "videos/ep01/ep01_镜14_v5.mp4",
+          "size": 2840079,
+          "sha256": "418ea8410ae5cebbceefc815c7884cf64ab6fa94536a89c3aee73724538cbde6"
+        },
+        {
+          "path": "videos/ep01/ep01_镜15.mp4",
+          "size": 2290067,
+          "sha256": "43a09aedcb2dc132450ea64ce4fe01205fe4c80a9df3f8db07dc78946c587394"
+        },
+        {
+          "path": "videos/ep01/ep01_镜16.mp4",
+          "size": 365042,
+          "sha256": "774b53ae0f55bc7b5fae6fb38870f36abda559298e419ff87063fc962c0f6a4e"
+        },
+        {
+          "path": "videos/ep01/ep01_镜17.mp4",
+          "size": 1962904,
+          "sha256": "fd576626f67730a3d20f74da2702ca2ac1acd4dd349c8c69bbd553268f7cd357"
+        },
+        {
+          "path": "videos/ep01/ep01_镜17_v1.mp4",
+          "size": 2378491,
+          "sha256": "0c2d4546fd3abf973fb9fe7448a498d78ccc7c6124d866fe6a5cb7265e3ae2de"
+        },
+        {
+          "path": "videos/ep01/ep01_镜17_v2.mp4",
+          "size": 2345424,
+          "sha256": "2ea0cf6aee5c3b79a21576633a82ee555ea71fac557801ad0089e350cf688d41"
+        },
+        {
+          "path": "videos/ep01/ep01_镜17_v3.mp4",
+          "size": 2207535,
+          "sha256": "481f8b7db22ef57d1064568e052a8242118333a7f7be45663896c3c5b15e8718"
+        },
+        {
+          "path": "videos/ep01/ep01_镜17_v4.mp4",
+          "size": 2086935,
+          "sha256": "8b5fa27b1878972da1eb289d6bc52d248e79f8d1ab8ce0d5d2f31c047a36f886"
+        },
+        {
+          "path": "videos/ep01/ep01_镜17_v5.mp4",
+          "size": 1962904,
+          "sha256": "fd576626f67730a3d20f74da2702ca2ac1acd4dd349c8c69bbd553268f7cd357"
+        },
+        {
+          "path": "videos/ep01/ep01_镜18.mp4",
+          "size": 1789961,
+          "sha256": "cf96b6285554d9fe24ea4707f1376d1032451bcd0e3d685fc1e4cf5af3eefe29"
+        },
+        {
+          "path": "videos/ep01/ep01_镜18_v1.mp4",
+          "size": 1729050,
+          "sha256": "58dea870ce74df974c574bbc88ce3525abb3f6bf6e04d615cfe08b0f2e62209e"
+        },
+        {
+          "path": "videos/ep01/ep01_镜18_v2.mp4",
+          "size": 1789027,
+          "sha256": "b42a4020787bb5decd5b410e1de635b06d96bad0d478e065aac63d21b374674c"
+        },
+        {
+          "path": "videos/ep01/ep01_镜19.mp4",
+          "size": 2620289,
+          "sha256": "e321f2e0986e847a7c4c7a374361bea48f6564df419bca4955d40ca6b5457db6"
+        },
+        {
+          "path": "videos/ep01/ep01_镜19_v1.mp4",
+          "size": 2950185,
+          "sha256": "acba38e3c8c46e19d181d89d951dc5325f117319dc6ef34cb8409facc03fd992"
+        },
+        {
+          "path": "videos/ep01/ep01_镜19_v2.mp4",
+          "size": 2375662,
+          "sha256": "db717dff228d06e125369250cb2c920c20a4ea30699167476b4dcebf30cd508c"
+        },
+        {
+          "path": "videos/ep01/ep01_镜19_v3.mp4",
+          "size": 2548639,
+          "sha256": "4ff61c0e6e9a5855201ac94476cf2672787c4c4f4d0510022604224a7937b933"
+        },
+        {
+          "path": "videos/ep01/ep01_镜19_v4.mp4",
+          "size": 2441169,
+          "sha256": "392e5cddaf16e1dc0642775b0397c351680d917754782173d2152d158166d0c7"
+        },
+        {
+          "path": "videos/ep01/ep01_镜19_v5.mp4",
+          "size": 2620289,
+          "sha256": "e321f2e0986e847a7c4c7a374361bea48f6564df419bca4955d40ca6b5457db6"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg1.mp4",
+          "size": 2590694,
+          "sha256": "37a917630a1ad63eb2b3b60390b1e72a37ba88c92f5020e0201e4eeb12e39277"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg1_v1.mp4",
+          "size": 2314448,
+          "sha256": "0e11a2bd8ccb98ade2622d74f4246bcfa8fe42024230bff6dc628cac7ea0afdc"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg1_v2.mp4",
+          "size": 2438088,
+          "sha256": "512354e53b2a6b4bed061dbb36bacbc2cc5506dfda090406614ab86f937e0270"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg1_v3.mp4",
+          "size": 2094807,
+          "sha256": "3527d587953f96b7c451ed54a066644f3ff3cc30a9506db1cd5de8a389ccffaf"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg1_v4.mp4",
+          "size": 2013391,
+          "sha256": "24ebc48a705e085f6033133ec0521b00c13905b1705099ea246af3c77007606a"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg1_v5.mp4",
+          "size": 2590694,
+          "sha256": "37a917630a1ad63eb2b3b60390b1e72a37ba88c92f5020e0201e4eeb12e39277"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg2.mp4",
+          "size": 2776639,
+          "sha256": "74fd7fea8bdb7db7b02b4c8e181b12c099f1e4c445a7edadd8878aaed6f14f04"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg2_old_unsplit.mp4",
+          "size": 1256399,
+          "sha256": "9be8e6386c10d94f9ee3f8f4322eb75151f9a29494de41ea5ded2cf7c6902d32"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg2a.mp4",
+          "size": 1862598,
+          "sha256": "f7ad24cea7ab66b936d18778817484e12a44cdd87ea51b901f4046dab7d1d619"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg2a_v1.mp4",
+          "size": 1966680,
+          "sha256": "cf6ed5f005edb6a2ad0ad3eb70a7a6c53c8509328c19c216b0b610d041a213a4"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg2b.mp4",
+          "size": 915354,
+          "sha256": "54612291d062ca8772216e2244dcfbf0754a92038e31e9da51c899d210daec61"
+        },
+        {
+          "path": "videos/ep01/ep01_镜20_seg2b_v1.mp4",
+          "size": 928356,
+          "sha256": "d87fa01371bbb650c12d6c8e3aa068fbb903d84eaf0bd77e8f6fc72edfb92026"
+        },
+        {
+          "path": "videos/ep01/ep01_镜21.mp4",
+          "size": 2036926,
+          "sha256": "ce9306ac07676cd0b2bf351ba3953424034a73f5eab6b1518ab9858d1b2a46eb"
+        },
+        {
+          "path": "videos/ep01/ep01_镜21_v1.mp4",
+          "size": 2125493,
+          "sha256": "612dfc96172faeb4d1f8e42e4cf0a5212bc5cbe39ef9e368ba9579821b3b6047"
+        },
+        {
+          "path": "videos/ep01/ep01_镜21_v2.mp4",
+          "size": 2012226,
+          "sha256": "61adfb6db867e884d99c32ec32e9acd722da610f98bb0eebbcf3f717697998c3"
+        },
+        {
+          "path": "videos/ep01/ep01_镜21_v3.mp4",
+          "size": 2196402,
+          "sha256": "f6ef317d87c2f6b2188b7e41b597f28f779a1fda70bbc99d54f76ebb5e8d04a6"
+        },
+        {
+          "path": "videos/ep01/ep01_镜21_v4.mp4",
+          "size": 2123381,
+          "sha256": "153f3c77c2ad3c795e87234dc24879954c46ea969348bf5744f4eb28f3df7dc8"
+        },
+        {
+          "path": "videos/ep01/ep01_镜21_v5.mp4",
+          "size": 2036926,
+          "sha256": "ce9306ac07676cd0b2bf351ba3953424034a73f5eab6b1518ab9858d1b2a46eb"
+        },
+        {
+          "path": "videos/ep02/ep02_镜01.mp4",
+          "size": 2943610,
+          "sha256": "09e800079f5aa5bd50f2d821014f2994d5535b37e8e3a54d06aa929d1f327297"
+        },
+        {
+          "path": "videos/ep02/ep02_镜02.mp4",
+          "size": 1099489,
+          "sha256": "9e01b3443bcf6168980e1508835682709beed32cc13f356b08188afa1cce402b"
+        },
+        {
+          "path": "videos/ep02/ep02_镜03.mp4",
+          "size": 2066030,
+          "sha256": "1d5851f555564bb15af7126cf2a7f7da379aca548a73bffec06aed6e28e31380"
+        },
+        {
+          "path": "videos/ep02/ep02_镜04.mp4",
+          "size": 1157968,
+          "sha256": "0342a6f1d67422255847f8109e58de3d35f28e8df0bb9dde7bef809c97bebfc9"
+        },
+        {
+          "path": "videos/ep02/ep02_镜05.mp4",
+          "size": 1310266,
+          "sha256": "c43f44477cac90d7c1d3c2a27beec7c29fdd3a02d998eab9af4935d177242652"
+        },
+        {
+          "path": "videos/ep02/ep02_镜06.mp4",
+          "size": 3056765,
+          "sha256": "061928406038142c8703d86d87302015d3652054b6c660ed04d29b1714934b3e"
+        },
+        {
+          "path": "videos/ep02/ep02_镜07.mp4",
+          "size": 1127250,
+          "sha256": "580cea869f7a3f0de123d598e5f3ad8a02b71671688c08a6292f1662ce94bb7a"
+        },
+        {
+          "path": "videos/ep02/ep02_镜08.mp4",
+          "size": 1821310,
+          "sha256": "4637ee8036fdc4e172eae399f3a81218a309a81c518ba6b789d67ad6fcdd293c"
+        },
+        {
+          "path": "videos/ep02/ep02_镜08_seg_a.mp4",
+          "size": 1052021,
+          "sha256": "9991b9c26e832ffcf79107101c2ccad8caf1be929fab980533226e5fec370daa"
+        },
+        {
+          "path": "videos/ep02/ep02_镜08_seg_b.mp4",
+          "size": 770602,
+          "sha256": "89fdcf7d79f703ad9e786da9cc04abdcd7e3af73e3633922fee01fda6d8ba9c4"
+        },
+        {
+          "path": "videos/ep02/ep02_镜09.mp4",
+          "size": 1854180,
+          "sha256": "d2433d8c6159356b2f13d99e4edf3635a9ca6ce6d5dabd1ed43e35ee58d49acc"
+        },
+        {
+          "path": "videos/ep02/ep02_镜10.mp4",
+          "size": 1483045,
+          "sha256": "07785c9e2ca8637529474c5739529aecfc346fdeccc196f6dd260c9f0990b379"
+        },
+        {
+          "path": "videos/ep02/ep02_镜11.mp4",
+          "size": 3032521,
+          "sha256": "fd16b193d71af32f645d92a6e956865e03bff7d6cd83b18cb18ef41a091d310e"
+        },
+        {
+          "path": "videos/ep02/ep02_镜12.mp4",
+          "size": 2108902,
+          "sha256": "37e5091fdae2bfdf6451f7db8e8b51a98981708b531c177bb2a29af950ba1b88"
+        },
+        {
+          "path": "videos/ep02/ep02_镜13.mp4",
+          "size": 1260983,
+          "sha256": "698347f16b572f74de7d053d33e937226432997eede6529f894bf418a219054e"
+        },
+        {
+          "path": "videos/ep02/ep02_镜14.mp4",
+          "size": 1361847,
+          "sha256": "d996b23c9a40e7cd911b3667619bfa314ba0bc7d46f8d476f8361f1b6042f3a8"
+        },
+        {
+          "path": "videos/ep02/ep02_镜15.mp4",
+          "size": 1483226,
+          "sha256": "eb7fa2fb2bc99dadf3793684814573eb8b5e5e86155454caf7320421a9576da0"
+        },
+        {
+          "path": "videos/ep02/ep02_镜16.mp4",
+          "size": 1690124,
+          "sha256": "54e68dd58b2b4cc06b1c9ccf79ce36bfd1c42b877e782900f50767ec09b8a981"
+        },
+        {
+          "path": "videos/ep02/ep02_镜17.mp4",
+          "size": 2181884,
+          "sha256": "0d540e11601eba6b65b615e231c2c8f3b7bdd868c8f6921cfd9057ecc3f4dead"
+        },
+        {
+          "path": "videos/ep02/ep02_镜18.mp4",
+          "size": 1198549,
+          "sha256": "5f0e0161390aeab68d129cee8838ebc9dc2dcd6276bb5691e5debfd09e840403"
+        },
+        {
+          "path": "videos/ep03/ep03_镜01.mp4",
+          "size": 2168315,
+          "sha256": "2d613eeb958bc8e2b817f26f96c51abb4d38b5725728b56633d1f00fbb1f20d1"
+        },
+        {
+          "path": "videos/ep03/ep03_镜02.mp4",
+          "size": 541906,
+          "sha256": "2ab1e896d0786de45e7f00fbdb548b53097b3500d7034d7fa425d349c545954c"
+        },
+        {
+          "path": "videos/ep03/ep03_镜03.mp4",
+          "size": 1685436,
+          "sha256": "eff26d5e7b438b410da7576fce18e18993f479eddd384c2f938c526772cd223a"
+        }
+      ]
+    }
+  }
+}

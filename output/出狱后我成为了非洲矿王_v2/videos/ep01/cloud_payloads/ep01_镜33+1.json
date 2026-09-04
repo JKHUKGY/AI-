@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same 24-year-old Chinese man throughout, same face, same short black hair, same faded pale-blue shirt with the sleeves rolled to the forearm over dark grey work trousers. The camera holds a static shot. He sits on the edge of the bed with his gaze locked on her face to the right of frame; the muscle along his jaw tightens once. The speaker (S1) says in an off-screen voiceover, comes in Mandarin Chinese from off-screen, low and almost whispering, while the man in frame keeps his lips closed,: <d>[Chinese] 你表叔这些年收留我，</d> while their lips remain completely closed. insects outside the window. His nose draws in an audible breath and his shoulders lift and fall once with it; his eyes blink slowly but his gaze stays fixed on her. The speaker (S1) says in an off-screen voiceover, from off-screen, pressing on the last two words, while the man in frame stays silent,: <d>[Chinese] 供你上大学，咱们得懂得感恩。</d> while their lips remain completely closed. [Shot 2] At 00:07.042, the camera cuts to the framing holds a close-up on his face. The camera stands in front of the guest-room window at eye level, about 1.5 metres up, looking back toward the door. The camera holds a static shot. His head is already lowered with his gaze resting on his own hands on his knees; it lifts a few degrees toward her as his lips part, dips once in a small nod as the words leave him, and then settles back down to where it started. The speaker (S2) says, very quietly and slowly, the voice almost out of strength, <d>[Chinese] 我知道了妈。</d> insects outside, then half a second of quiet.\n\noverall_soundscape:\nInsects outside the window. Insects outside, then half a second of quiet.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜33/ep01_镜33_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 11,
+  "ratio": "9:16"
+}

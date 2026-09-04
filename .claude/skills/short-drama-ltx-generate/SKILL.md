@@ -1,6 +1,6 @@
 ---
 name: short-drama-ltx-generate
-description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助手：拿到 short-drama-ltx-export 校验好的 video_jobs.json + ltx_remote_config.json 之后，实际去 vast.ai / AutoDL / RunPod 等平台用用户提供的 API key 租显卡（三个渠道都支持，先比价再选；RunPod 的 Network Volume 跟 Pod 生命周期解耦，适合"不想每次都重新下载模型"的场景）、通过 SSH 部署 LTX-2 环境、下载模型权重、真正调用 ltx_ssh_submit.py 提交生成任务、监控进度、下载结果、抽帧+听审验收，并沉淀了一批实测踩坑的通用注意事项（GPU 租赁稳定性、环境搭建陷阱、pipeline 参数陷阱、角色配音一致性方案）。**内置“用完就关”的显卡收尾机制**：`gpu_teardown.py` 一条命令关掉这次用的实例并轮询确认真的停止计费（RunPod 上默认 terminate Pod——Network Volume 上的模型权重不受影响，比只 stop 更省，停止的 Pod 磁盘仍在收费；vast.ai/AutoDL 上只停机，因为那两家销毁会连权重一起删），`ltx_ssh_submit.py --auto-stop` 让批量任务跑完/报错/被中断都自动关机，闲置看门狗只作为“人忘了关”的兜底。当用户说"帮我实际生成视频""调用显卡跑""执行生成任务""这一步真的把视频跑出来""租显卡生成""AutoDL 也能跑吗""RunPod 能不能用""不想每次重新下载模型""哪个平台便宜用哪个""用完把显卡关掉""生成完自动关机""RunPod 别一直烧钱""怎么确认显卡真的停了"时使用。
+description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助手：拿到 short-drama-ltx-export 校验好的 video_jobs.json + ltx_remote_config.json 之后，**真的去 RunPod 用用户的 API key 租显卡**（渠道只剩 RunPod——AutoDL 和 vast.ai 2026-09-04 已删除，那两家销毁实例会连模型权重一起删；RunPod 的 Network Volume 跟 Pod 生命周期解耦，卷还能在线扩容）、通过 SSH 部署 LTX-2 环境、下载模型权重、调用 ltx_ssh_submit.py 提交生成、监控进度、下载结果、抽帧验收。租卡默认用 runpod_ops.py rent_cheapest 按"够用就行最便宜优先"挑卡并自动重试缺货。沉淀了一批实测踩坑注意事项：GPU 缺货要轮询重试、ssh 保活、setsid 隔离进程组、python3 -u 不缓冲日志、按远端目录判进度、冷启动 14-23 分钟别误判成卡死。**内置"用完就关"的显卡收尾机制**：gpu_teardown.py 一条命令 terminate Pod 并轮询确认真的停止计费（Network Volume 上的权重不受影响），ltx_ssh_submit.py --auto-stop 让批量任务跑完/报错/被中断都自动关机，闲置看门狗作为"人忘了关"的兜底。**本 skill 目录下的 runpod_ops.py / gpu_teardown.py / idle_shutdown_watchdog.py 和 references/runpod_gpu_ops.md 是两条视频通道共用的 GPU 运维资产**，minimax-h3-generate 直接引用它们、不复制。当用户说"帮我实际生成视频""调用显卡跑""执行生成任务""租显卡生成""RunPod 能不能用""不想每次重新下载模型""用完把显卡关掉""生成完自动关机""怎么确认显卡真的停了"时使用。**这一批要用 MiniMax-H3 就去 minimax-h3-generate**——那条通道是 SGLang 常驻服务、走 HTTP，部署方式和显存门槛都完全不同。
 ---
 
 # LTX-2.5 实际生成执行助手 (short-drama-ltx-generate)
@@ -11,79 +11,68 @@ description: 面向自建 LTX-2.5（Lightricks LTX-2）的实际生成执行助�
 
 ## 0. 先确认前置条件
 
-- `output/<故事名>/videos/ep0X/video_jobs.json` 和 `ltx_remote_config.json`
-  已经由 `short-drama-ltx-export` 产出并校验通过（跑过
-  `validate_video_jobs.py` 且没有阻塞性错误）。没有就先回那个 skill 补，
-  不要凭空拼一份 job 文件上阵。
+- **确认这一批是 LTX-2.5**：读 `ltx_remote_config.json` 的 `model` 字段，
+  应该是 `"ltx-2.5"`。是 `"minimax-h3"` 或者同目录有 `h3_remote_config.json`
+  就**转去 `minimax-h3-generate`**——那条通道是 SGLang 常驻服务、走 HTTP，
+  部署方式、显存门槛、验收方式（H3 要听声音）都完全不同。
+
+- `video_jobs.json` 和 `ltx_remote_config.json` 已经由 `short-drama-ltx-export`
+  产出并校验通过。没有就先回那个 skill 补，不要凭空拼一份 job 文件上阵。
 - 问清楚这次是**新租一台显卡**还是**复用已有的实例**（已有 SSH 信息/
   `ltx_remote_config.json` 里已经填好 `ssh_host`）。
 
 ## 1. 租显卡（如果需要新租）
 
-**先选渠道**：目前支持 vast.ai、AutoDL、RunPod 三个平台，问用户提供的是
-哪个的 API key（也可能不止一个）。如果不止一个且用户没指定，按下面的比价
-流程选便宜的那个；用户已经明确指定平台（比如"用AutoDL"）就不用再比价。
-**如果用户明确提到"不想每次都重新下载模型"这类诉求，优先推荐 RunPod**——
-它的 Network Volume 跟 Pod 生命周期解耦，是三个渠道里唯一不依赖"记得别
-release/维护镜像仓库"这类操作习惯就能天然避免重复下载的方案，见
-`references/runpod_gpu_ops.md` 开头的说明。
+**渠道只有 RunPod 一个**（2026-09-04 起）。AutoDL 和 vast.ai 两条通道已经
+删掉——那两家没有"存储和算力分开生命周期"的东西，销毁实例会连 67GB 权重
+一起删，每次重租都要重下，实际用下来不划算。相关脚本和文档已经从本 skill
+移除，别再去找 `autodl_ops.py` / `gpu_rental_ops.md`。
 
-- **多个渠道都有 key、需要比价时**：AutoDL 没有公开的价目 API，只能创建
-  后从 `snapshot` 读真实价格（见 `autodl_gpu_ops.md`）；vast.ai 能用
-  `vastai search offers` 先查价再决定；RunPod 用 `runpod_ops.py gputypes`
-  能直接查到价格（见 `runpod_gpu_ops.md` 第 2 条），不需要先建实例。所以
-  比价顺序是：先用 vast.ai/RunPod 查到满足显存门槛的价格作为参照，再去
-  AutoDL 创建同显存量级的实例查 `snapshot` 里的 `payg_price`，都满足 0 条
-  的显存门槛后选更便宜的那个；AutoDL 那边如果创建后发现价格明显更贵或规格
-  不满足，`power_off` + `release` 掉换用别的渠道，不要因为"已经建了"就
-  将就用。
-- **只有一个平台的 key**：直接用那个平台，跳过比价。
+**先按模型确定显存门槛，然后租能满足门槛的最便宜的卡。**
 
-### vast.ai 渠道
+以前默认奔着 80GB 大卡去，那是浪费——两个模型都有官方的低显存配方：
 
-按 `references/gpu_rental_ops.md` 的顺序操作：
+| 跑什么 | 显存门槛 | 依据 | 参考卡/价 |
+|---|---|---|---|
+| **LTX-2.5**（<217 帧） | **80GB（实测）** | 本仓库跑通整集的配置 | A100 80GB $1.19–1.59 |
+| LTX-2.5 更低显存 + `--offload cpu` | ？ | ledger B7 只说 ≥217 帧要 offload，**低显存档没实测过** | 想省钱先拿一镜试，试完回填这一行 |
 
-1. 设置 API key，先查账户计费状态（`balance`/`credit`/`has_billing`），
-   不对劲要先提醒用户，不要闷头往下走。
-2. 搜索显卡 offer，显存门槛、磁盘门槛按 `gpu_rental_ops.md` 第 0 条来，
-   **不要相信用户口头说的"显存够"，去查实例页面/API 返回的真实型号和
-   显存数字**。创建实例时的 `--image` 先问用户有没有之前存过的"预装好"
-   镜像（见 `gpu_rental_ops.md` 第 3.5 条 `vastai take snapshot`），有就
-   直接用，能跳过下面第 2 步的环境搭建。
-3. 创建并启动实例，`--ssh --direct`。轮询 `actual_status` 直到变成
-   `running`，不要查一次就下结论（字段之间可能互相矛盾）。
-4. 如果反复"排队后又变回停止"，先按 `gpu_rental_ops.md` 的症状识别表
-   判断是账户计费问题还是单台宿主机问题，再决定是提醒用户处理账单还是
-   直接换个 offer 重建。
+> 顺带一提：**MiniMax-H3 那条通道反而更便宜**——SGLang 有 1×RTX 4090 24GB
+> 的实测配方（$0.34/hr）。需要省钱又能接受换模型时值得考虑，见
+> `minimax-h3-generate`。
 
-### AutoDL 渠道
+### 怎么租：一条命令挑最便宜的
 
-按 `references/autodl_gpu_ops.md` 的顺序操作，用
-`scripts/autodl_ops.py`（`create`/`status`/`snapshot`/`power_on`/
-`power_off`/`release` 子命令，封装了 AutoDL 开放平台 API，AutoDL 没有
-官方 CLI）：
+```bash
+python3 .claude/skills/short-drama-ltx-generate/scripts/runpod_ops.py rent_cheapest \
+  --min-memory-gb 24 \
+  --network-volume-id <你的卷 id> \
+  --image runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04 \
+  --public-key "$(cat ~/.ssh/id_ed25519.pub)" \
+  --dry-run          # 先看候选列表，确认了再去掉这个参数
+```
 
-1. Token 放进 `autodl_config.json`（`.gitignore` 已排除，不进仓库）。
-2. `create` 时显存门槛按 `autodl_gpu_ops.md` 第 0 条来（跟 vast.ai 一致，
-   ≥80GB 优先），**不要用本仓库已经建好的那台 `4090D`（24GB）跑生成，那台
-   是给 CPU 编排任务用的，装不下 LTX-2.5**。部分规格需要用户先完成实名
-   认证（`TORealName` 报错）、部分规格常无库存，都是正常现象，换规格或
-   提醒用户认证，不是账号或 API key 坏了。
-3. `status` 轮询到 `running`，`snapshot` 拿 SSH 信息和真实价格
-   （`payg_price` 除以1000才是元/小时）。
-4. **无卡模式（省钱模式）的开机动作 API 不支持，只能用户去网页控制台点**
-   ——但生成任务本身就需要有卡（GPU）模式，这条限制不影响生成流程本身的
-   自动化，只影响"这台实例平时兼职跑CPU编排任务时怎么切省钱模式"这件事，
-   见 `autodl_cpu_ops.md`。
+它做三件事：拉全部型号 → 滤掉显存不够的 → **从最便宜的开始挨个试着建**，
+建成即返回。`--max-price` 卡价格上限，`--rounds`/`--retry-interval` 控制重试。
+
+**为什么要"挨个试"而不是只试最便宜那个**：`gputypes` 返回的 `stockStatus` 是
+**全局聚合值**，跟具体数据中心对不上（Network Volume 在哪，Pod 就必须在哪）。
+实测见过 `Medium` 的型号建不出来、`Low` 的反而成了；也见过一个数据中心四种
+80GB+ 型号同时缺货、轮询 9 轮才抢到。脚本已经把这套重试逻辑包进去了，
+**不要试一次失败就报告"租不到"**。
+
+不是缺货的错误（参数错、额度不足、权限问题）脚本会直接退出，不会拿着同一个
+坏参数把每个型号都糟蹋一遍。
 
 ### RunPod 渠道
 
 按 `references/runpod_gpu_ops.md` 的顺序操作，用
 `scripts/runpod_ops.py`（`gputypes`/`volume_create`/`volume_list`/
 `volume_delete`/`create`/`status`/`snapshot`/`stop`/`start`/`terminate`
-子命令，封装了 RunPod REST API v1 + GraphQL，RunPod 没有官方 CLI）。**跟
-vast.ai/AutoDL 最大的不同：存储（Network Volume）和算力（Pod）是分开
-生命周期的两个资源**，这也是这个渠道存在的核心价值：
+子命令，封装了 RunPod REST API v1 + GraphQL，RunPod 没有官方 CLI）。
+**这个渠道的核心价值：存储（Network Volume）和算力（Pod）是分开生命周期的
+两个资源**——Pod 可以随便 terminate，卷上的 67GB 权重不受影响，下次挂同一个
+卷建新 Pod 直接能用：
 
 1. Token 放进 `runpod_config.json`（`.gitignore` 已排除，不进仓库）。
 2. `datacenters` 查数据中心 ID，`gputypes --min-memory-gb 80` 查显存达标的
@@ -106,11 +95,17 @@ vast.ai/AutoDL 最大的不同：存储（Network Volume）和算力（Pod）是
 6. 2026-09-02 已经用真实账号完整跑通一次（建 Volume → 建 Pod → SSH/SCP →
    `terminate` Pod → 用同一个 Volume 重建 Pod → 确认数据完好），
    `runpod_gpu_ops.md` 已经按实测结果更新，第 7 条列的是**这一次没碰到、
-   留给下次验证**的点（比如 Community Cloud 公网 IP 稳定性），不是"完全没
-   测过"，但仍然比 vast.ai/AutoDL 那两份文档积累的实测量少，遇到没写过的
+   留给下次验证**的点（比如 Community Cloud 公网 IP 稳定性）。遇到没写过的
    报错记得回去补一条。
 
-### 三个渠道通用：两道防线，别让显卡空转烧钱
+7. **缺货是常态，要写重试循环**。2026-09-04 实测：同一个数据中心
+   （Network Volume 在哪 Pod 就得在哪）四种 80GB+ 型号可以**同时全部缺货**，
+   轮询 9 轮（每轮 4 个型号、间隔 30 秒）才抢到。而且 `gputypes` 返回的
+   `stockStatus` 是全局聚合值，跟具体数据中心对不上——那次 `Medium` 的
+   A100-SXM 创建失败、`Low` 的 A100 PCIe 反而成了。**按型号列表轮着试 +
+   隔几十秒重试**，不要试一个失败就报告"租不到"。
+
+### 别让显卡空转烧钱：两道防线
 
 租显卡这一步最容易亏钱的地方不是"选贵了"，而是**跑完之后忘了关**。所以
 下面两件事是两道独立的防线，**都要做，不是二选一**：
@@ -123,19 +118,6 @@ vast.ai/AutoDL 最大的不同：存储（Network Volume）和算力（Pod）是
 **实例一确认 `running`，立刻在后台启动闲置看门狗**——这是标准步骤，
 不是等用户提醒才做：
 ```bash
-# vast.ai
-nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watchdog.py \
-  --instance-id <实例ID> --ssh-host <ssh_host> --ssh-port <ssh_port> \
-  --idle-seconds 120 --check-interval 15 \
-  > /tmp/ltx_watchdog_<实例ID>.log 2>&1 &
-
-# AutoDL（多传 --platform autodl --autodl-config）
-nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watchdog.py \
-  --instance-id <实例UUID> --ssh-host <ssh_host> --ssh-port <ssh_port> \
-  --platform autodl --autodl-config .claude/skills/short-drama-ltx-generate/autodl_config.json \
-  --idle-seconds 120 --check-interval 15 \
-  > /tmp/ltx_watchdog_<实例UUID>.log 2>&1 &
-
 # RunPod（多传 --platform runpod --runpod-config；权重在 Network Volume 上时
 # 建议 --stop-mode terminate，见下面「用完就关」里 RunPod 的计费差别）
 nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watchdog.py \
@@ -156,7 +138,7 @@ nohup python3 .claude/skills/short-drama-ltx-generate/scripts/idle_shutdown_watc
 实例关了打断用户（纯本地抽帧验收那段时间对看门狗来说就是闲置，把
 `--idle-seconds` 调大到 3600 或那段时间先不挂看门狗）。
 
-### 三个渠道通用：用完就关（`gpu_teardown.py`）
+### 用完就关（`gpu_teardown.py`）
 
 **确认这一批不再需要显卡，就立刻跑这一步，不要留给用户"记得去关"**：
 ```bash
@@ -185,13 +167,18 @@ python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
   上的 67GB 权重，下次挂同一个 `network_volume_id` 建新 Pod 权重还在。
   例外：config 里没有 `network_volume_id`（权重可能在容器盘上）时会自动
   降级成 `stop` 并警告，不会替用户删掉 67GB 权重。
-- **vast.ai / AutoDL → 停机**（`stop` / `power_off`）。这两家的销毁动作
+- **RunPod → `terminate`**（有 Network Volume 时）。销毁动作
   会连盘上的模型权重一起删，所以"用完就关"在这两家只能是停机。
-- 销毁类动作（`vastai destroy` / AutoDL `release` / RunPod
+- 销毁类动作（RunPod
   `volume_delete`）**不在这个脚本里**，是故意的：那要用户明确说"这台/这个
   卷不要了"才做，见第 7 步。
 
 ## 2. 环境搭建
+
+> 两条视频通道的环境可以共存在同一个 Network Volume 上（LTX 约 67GB +
+> H3 的 Ref2VA 约 144GB）。**卷不够就扩**——`runpod_ops.py` 没有扩容子命令，
+> 直接调 REST：`PATCH /v1/networkvolumes/{id}` body `{"size": 300}`，
+> **实测 Pod 在跑也能扩，只增不减**。
 
 1. SSH 连上后，`git clone --depth 1 https://github.com/Lightricks/LTX-2.git`。
 2. 装 `uv`（`curl -LsSf https://astral.sh/uv/install.sh | sh`），
@@ -201,7 +188,7 @@ python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
 4. 下载模型权重（约 66GiB，官方 README 给的 5 个文件），后台跑、轮询
    完成状态，不要前台傻等。
 5. 把这几步的已知坑（PATH 环境变量、非交互式 SSH 不加载 `.bashrc`）应用
-   进去，见 `references/gpu_rental_ops.md` 和
+   进去，见 `references/runpod_gpu_ops.md` 和
    `references/ltx_pipeline_gotchas.md`。
 
 ## 3. 核实 pipeline 真实参数
@@ -224,6 +211,7 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
 ## 4. 提交生成
 
 1. 先 `--dry-run` 看拼出来的远程命令对不对：
+
    ```bash
    python3 .claude/skills/short-drama-ltx-generate/scripts/ltx_ssh_submit.py \
      --config output/<故事名>/videos/ep0X/ltx_remote_config.json \
@@ -231,6 +219,7 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
      --out-dir output/<故事名>/videos/ep0X \
      --only <镜号> --dry-run
    ```
+
 2. 去掉 `--dry-run`，先对用户指定的 1-2 个关键镜头跑真实生成，确认没问题
    （不崩溃、能下载到本地）再用不带 `--only` 或多个镜号批量跑剩下的。
    "先小范围测试档（小分辨率+短时长+固定 seed）确认稳定，再放大分辨率/
@@ -244,6 +233,92 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
    提交、跑完只剩本地验收），直接给正式那一跑加 `--auto-stop`，让它跑完
    自己关，省掉"等验收完再想起来关机"的那段空转计费。如果跑完还要接着
    补跑镜头/做双 agent 循环，就别加，改成收尾时手动跑 `gpu_teardown.py`。
+   `--auto-stop` 是在 `finally` 里调 `gpu_teardown.py`——**包括报错和被中断
+   的情况**。
+
+### 批量跑长任务时的六条硬教训（2026-09-04 实测踩过）
+
+《出狱后》v2 ep01 一次性提交 35 条时全踩了一遍，代价是 GPU 空转 21 分钟。
+批量跑之前先把这六条摆好，不然会重复付同样的学费。
+
+**① ssh 会话会在远端命令跑完之后不返回，脚本就无限干等**
+
+实际发生的：`ep01_镜01.mp4` 远端 02:00 就生成好了，但 `ssh` 客户端没有退出，
+`ltx_ssh_submit.py` 阻塞在这条已经死掉的通道上，到 02:21 还在等——期间
+`nvidia-smi` 显示 GPU 0% / 0 MiB，远端没有任何 python 进程，**但计费一直在走**。
+
+修法：给本机 `~/.ssh/config` 加保活，通道断了让 ssh 自己报错退出，
+脚本就会把这一镜记成 error 然后继续下一镜，而不是永久卡住：
+
+```
+Host *
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+  TCPKeepAlive yes
+```
+
+**② 要保住 Pod 续跑，只能 `kill -9`——普通 kill / Ctrl-C 会把显卡关掉**
+
+`ltx_ssh_submit.py` 的 `--auto-stop` 写在 `finally` 里，**这是故意的**
+（"任务崩了没人管、实例挂着通宵计费"比任何一次生成失败都贵）。所以：
+
+- 想停下来**并且关机** → 普通 `kill` / `Ctrl-C`，让 `finally` 跑完
+- 想停下来**但保住机器接着跑** → `kill -9`，绕过 `finally`
+
+卡死要救场时是后者。救完记得自己在收尾时手动 `gpu_teardown.py`，
+因为这一跑的 `--auto-stop` 已经被你跳过了。
+
+**③ `nohup ... > log` 的日志会是 0 字节，必须加 `python3 -u`**
+
+Python 的 stdout 在重定向到文件时是块缓冲的，一条 4KB 以内的进度日志能在
+缓冲区里躺几十分钟。表现就是"任务在跑但日志一个字都没有"，完全没法判断
+是正常还是卡死。批量跑一律 `python3 -u`。
+
+**④ 判断进度别只看本地文件，要看远端 `/workspace/ltx_jobs/`**
+
+本地文件是"生成完 + scp 下载完"才出现的，中间任何一环卡住本地就一直是 0。
+远端产物目录才是真实进度：
+
+```bash
+ssh ... "ls -la --time-style=+%H:%M /workspace/ltx_jobs/*.mp4; \
+         nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv,noheader"
+```
+
+**GPU 0% + 0 MiB + 远端没有 ltx 进程 + 本地长时间不动 = 卡死，不是在算**
+（注意区分：装权重阶段 GPU 也是 0%，但那时候远端**有** python 进程、
+`load average` 很高、显存会逐步涨上去）。
+
+顺带一条好消息：`/workspace` 是 Network Volume，**产物跨 Pod 保留**。
+卡死后已经生成好的片子可以直接 `scp` 拉回来，用 `--only` 跳过它续跑，
+不用整批重来。
+
+**⑤ 后台批次必须 `setsid` 隔离进程组，否则你自己的监控命令会把它打断**
+
+2026-09-04 实测：批次用 `nohup ... &` 起在后台，然后在**同一个 shell 会话**里
+跑轮询监控。监控命令超时被杀时，**SIGINT 打到了整个进程组**，`nohup` 只挡
+SIGHUP、不挡 SIGINT，于是批次收到 KeyboardInterrupt → 走 `finally` →
+`--auto-stop` 把显卡关了。表现是"跑得好好的，突然 ssh connection refused，
+Pod 没了"，日志尾部能看到 `KeyboardInterrupt` 的 traceback。
+那一次断在 29/35，最后 6 镜要另起一台机器补。
+
+正确起法（自己开进程组，跟当前会话彻底脱钩）：
+
+```bash
+setsid nohup python3 -u .../ltx_ssh_submit.py ... > batch.log 2>&1 < /dev/null &
+```
+
+**判断标准**：看到 `Connection refused` + `snapshot` 返回 `desired_status: null`
+就是 Pod 已经没了，先去 `batch.log` 尾部找 `KeyboardInterrupt`——是的话就是
+这条，不是远端故障。已经生成的部分照样在 Network Volume 上，
+`--only` 补跑缺的那几镜即可（用 `video_jobs.json` 对本地 `*.mp4` 取差集）。
+
+**⑥ 冷启动那一条特别慢，别误判成卡死**
+
+权重 67GB 从 Network Volume 第一次读进来实测要 **14-23 分钟**（换了台新 Pod
+就得重来一次）。之后靠系统页缓存，同一台机器上后续每镜约 3 分钟。
+所以"第一条特别久、后面突然快起来"是正常的。
+
+---
 
 ## 5. 验收
 
@@ -290,14 +365,13 @@ pipeline 都有），确认 `ltx_remote_config.json` 里的 `pipeline_module`/
 2. 汇报本轮生成了几镜、验收结果、还有哪些问题待用户确认（尤其是音频
    内容），并在汇报里写清楚**显卡已经关了/为什么还开着**、这一轮大概花了
    多少钱（实例单价 × 开机时长）。
-3. **销毁类动作要用户明确点头才做**：`vastai destroy instance`、AutoDL
+3. **销毁类动作要用户明确点头才做**：RunPod
    `release`、RunPod `volume_delete` 会把盘上的模型权重一起删掉（下次要
    重新下 67GB），跟"关机省钱"是两件事，不要顺手做。判断依据见
-   `gpu_rental_ops.md` 第 4 条、`autodl_gpu_ops.md` 第 5 条、
    `runpod_gpu_ops.md` 第 6 条。
 4. 如果这次踩到了新的坑（参数陷阱/环境问题/显卡兼容性/新的价格参考点），
-   补进 `references/ltx_pipeline_gotchas.md`、`references/gpu_rental_ops.md`、
-   `references/autodl_gpu_ops.md` 或 `references/runpod_gpu_ops.md`，给
+   补进 `references/ltx_pipeline_gotchas.md`、`references/runpod_gpu_ops.md`、
+   `references/runpod_gpu_ops.md`，给
    下一集/下一次会话省事——RunPod 那份文档目前标了不少 ⚠️ 未实测点，第一次
    真实用完之后尤其应该回去把能确认的条目改成实测结论。
 

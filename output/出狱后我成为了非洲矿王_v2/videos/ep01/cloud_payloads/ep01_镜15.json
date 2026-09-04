@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same two men throughout: the younger one in a faded pale-blue shirt with rolled sleeves, the older broad-shouldered one in an open khaki work shirt over a grey vest. The camera holds a static shot. The bearded man's pointing hand drops from the air and his right palm slaps down hard onto his own thigh and bounces off; his eyes widen and his upper body pitches forward toward the other man, whose back stays turned and still. The speaker (S1) says, shouting with delight, the first word cracking out, <d>[Chinese] 好！我就等你这句话呢！</d> a sharp slap on denim, then an upbeat percussion cue entering. His right arm swings up and points past the other man toward the road; the younger man's head dips once in a nod. The speaker (S1) says, fast and confident, <d>[Chinese] 设备、工人我都能搞到，</d> percussion continuing. The younger man turns on the spot and walks two paces toward the right depth of frame so his back grows smaller, and his hand reaches out and closes on the door handle of the dust-caked off-roader. The speaker (S1) says, still loud, landing hard on the last three words, <d>[Chinese] 咱自己找矿自己干，不受他顾家的鸟气！</d> a car door handle clacking.\n\noverall_soundscape:\nA sharp slap on denim, then an upbeat percussion cue entering. Percussion continuing. A car door handle clacking.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜15/ep01_镜15_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 11,
+  "ratio": "9:16"
+}

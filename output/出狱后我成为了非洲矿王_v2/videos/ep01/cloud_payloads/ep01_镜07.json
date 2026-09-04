@@ -1,0 +1,19 @@
+{
+  "model": "MiniMax-H3",
+  "content": [
+    {
+      "type": "text",
+      "text": "subject_definitions:\n<Picture 1> is a storyboard reference for [Shot 1], defining its viewpoint, subject placement, framing and scene.\n\nsummary:\n[reference generation] The target video is a single shot built from <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] storyboard reference): partially_preserved - the viewpoint, subject placement and framing are followed, while the shot develops in time away from that exact arrangement.\n\ndetailed_description:\nThe target video is in a cinematic ultra-realistic contemporary African mining drama, documentary-grade natural light mixed with hard sources, true skin texture with sweat and fine dust, real cloth physics on worn cotton, red laterite dust in the air, high dynamic range style. [Shot 1] the shot follows the viewpoint and subject placement of <Picture 1>; the subject is the same 40-year-old broad-shouldered Chinese man throughout, same face, same uneven full beard, same open khaki work shirt over a grey vest with a dark towel around his neck. The camera pushes in with small amplitude at slow speed. His right hand comes up to chest height and his index finger stabs once at the air in front of him; his brows knot and his nostrils flare as the words come out. The speaker (S1) says, fast and indignant, hammering the two names, <d>[Chinese] 他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，</d> voice only over a hushed ambient. His thumb and index finger pinch together into a small square shape and hold it up between them; the framing closes in on his face and his neck tendon stands out, then his hand drops back to his side. The speaker (S1) says, still fast, the pitch dropping on the last word, <d>[Chinese] 拿了新矿的高品位矿样，</d>\n\noverall_soundscape:\nVoice only over a hushed ambient.\n\nnon_diegetic_music:\nN/A"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "file://output/出狱后我成为了非洲矿王_v2/keyframes/ep01/ep01_镜07/ep01_镜07_00.png"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "resolution": "2K",
+  "duration": 9,
+  "ratio": "9:16"
+}

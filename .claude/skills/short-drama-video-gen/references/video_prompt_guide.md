@@ -106,8 +106,8 @@ seconds lose fidelity on both）。所以一段只放一个动作节拍，需要
 
 | 想排除的 | ✗ 直接写否定 | ✓ 正向改写 |
 |---|---|---|
-| 侧面/斜拍/俯仰/绕行/越轴 | `禁止侧面、斜拍、俯拍、绕行、越轴` | `locked-off camera at eye level, facing her straight on; the axis stays fixed for the whole take` |
-| 镜头乱动/抖动 | `避免镜头剧烈抖动` | `locked-off camera, the frame holds absolutely still` |
+| 侧面/斜拍/俯仰/绕行/越轴 | `禁止侧面、斜拍、俯拍、绕行、越轴` | `the camera stays on this one axis for the whole take, facing her straight on`（**别写 `locked-off`**，除非这一镜真的没有运镜——见下方⚠️） |
+| 镜头乱动/抖动 | `避免镜头剧烈抖动` | 有运镜：`the move stays slow and even throughout`；无运镜：`locked-off camera, the frame holds absolutely still`（见下方⚠️） |
 | 中途换脸 | `避免人物中途换脸` | `subject_lock_en`: `the same young woman throughout, same face, same long black hair` |
 | 五官变形/模糊 | `避免面部变形、五官错位` | 无正向写法 → **删掉**（这是画质问题，靠分辨率档位和首帧质量解决，不是靠提示词） |
 | 手指数量错误 | `避免手指数量错误` | 要么用 `framing_en` 把手排出画，要么把手的动作写清楚到每根指头 |
@@ -115,6 +115,14 @@ seconds lose fidelity on both）。所以一段只放一个动作节拍，需要
 | 字幕/水印/屏幕文字 | `避免字幕、水印、屏幕文字` | 无正向写法 → **删掉**。写了只会把"字幕"这个概念注入编码器 |
 | 画外音带偏嘴型 | `避免角色出现说话嘴型` | 卡上填 `dialogue.onscreen: false`，装配器自动补 `the voice comes from off-screen while the person visible in frame keeps their lips closed and still` |
 | 多人穿模 | `避免人物之间重叠穿模` | 把两人的位置关系写成正向事实：`they stand three paces apart with clear space between them` |
+
+⚠️ **这张表最容易被过度套用的就是 `locked-off camera`。**
+2026-09-04 复查《出狱后》v2 ep01：40 张卡的 `camera_en.rig` **40/40** 都是
+`The camera is locked off at eye level`，其中 5 张同时在 `move` 里写了 push-in，
+装配出的提示词一句话锁死机位、下一句要求推镜。**有运镜的镜头绝不能写
+`locked-off`**——现在 `build_prompt.py` 会 ERROR 拦住。同理，`preserve_en` 里
+"背景逐项 stay unchanged" 和运镜也是互斥的（WARN 提醒）。
+详见 `shot_card_schema.md`「`camera_en.rig` 和 `camera_en.move`：不许互相打架」。
 
 `build_prompt.py` 会拦所有 `*_en` / `*_zh` 字段里的
 `no / not / never / none / nothing / without / avoid / nor / neither /
@@ -298,6 +306,11 @@ inpainting 能力"（CamGeo, arXiv 2605.30895）；同类工作也记录了镜�
 
 ⚠️ **写「摇」和「移」之前先读上面「哪些运镜是这张底板撑得起的」。** 平移需要画外的
 像素，单张场景底板一般没有——这两个运镜在本通道上大多是无效指令。
+
+⚠️ **填了 `move` 就要把 `rig` 和 `preserve_en` 一起改。** 这三个字段会拼进同一段
+提示词，写运镜的同时又写 `locked off` / 背景逐项 `stay unchanged`，等于给模型
+两条互斥指令。规则见 `shot_card_schema.md`「`camera_en.rig` 和 `camera_en.move`：
+不许互相打架」，脚本分别按 ERROR / WARN 拦。
 
 节奏副词按分级选：S 级用 `abruptly / hard / fast`，A 级用
 `slowly / slightly / naturally`。

@@ -1,0 +1,12 @@
+[
+  {"id": "ep01_镜14_str10", "status": "done", "first_frame_strength": 1.0,
+   "output": "output/出狱后我成为了非洲矿王_v2/videos/ep01/ep01_镜14_str10.mp4",
+   "frames": "output/出狱后我成为了非洲矿王_v2/videos/ep01/_frames_str10/"},
+  {"id": "ep01_镜14_str09", "status": "done", "first_frame_strength": 0.9,
+   "output": "output/出狱后我成为了非洲矿王_v2/videos/ep01/ep01_镜14_str09.mp4",
+   "frames": "output/出狱后我成为了非洲矿王_v2/videos/ep01/_frames_str09/"},
+  {"id": "ep01_镜14_str08", "status": "done", "first_frame_strength": 0.8,
+   "output": "output/出狱后我成为了非洲矿王_v2/videos/ep01/ep01_镜14_str08.mp4",
+   "frames": "output/出狱后我成为了非洲矿王_v2/videos/ep01/_frames_str08/"},
+  {"_note": "D4 第一轮扫描（2026-09-03 跑，2026-09-04 判定结论作废）。三条都在 frame01 把人物转成正面朝镜头（ledger A9），且跑的是加朝向锁定句之前的旧提示词。任务单见 jobs_strength_probe.round1.json。"}
+]
