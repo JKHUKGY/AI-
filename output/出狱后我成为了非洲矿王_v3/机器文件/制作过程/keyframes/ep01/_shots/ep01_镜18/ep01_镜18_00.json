@@ -1,0 +1,37 @@
+{
+  "id": "ep01_镜18",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-48a0407c-21d7-4b61-a2d4-0d483186e890.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_continuity.json",
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "母子身份服装与箱包未漂移，江砚右前景侧背虚焦，苏慧左侧面朝右，3旅客可见。但画面仍是A机位左玻璃墙、右车道，苏慧被移到了玻璃墙一侧，未采用批准B反打应有的左侧白小巴/黄车、右上挑檐布局。因此镜17→18只是换了母子屏幕位置，环境未反打，造成二人在场地侧别跳换。母亲全身可见，未把她误判为近端人物裁切违规；近端江砚大腿被画底截断。",
+      "fix_instruction": "核查参考装配让B反打底板控制机位，保留主帧只作身份/道具状态参考；明确左车队、右上挑檐，母亲左中远景朝右，儿子右前景侧背虚焦；保留3旅客在更远层。",
+      "card_field": "plate_image; camera_zh; framing.plate_crop_zh; background_people",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_single.json",
+      "id": "ep01_镜18",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "指定B反打应左侧车队、右上挑檐，实际仍左玻璃幕墙右栏杆黄车的A机位；只把人物左右调换而没有换机位。近端江砚从完整头部拍到膝下，躯干、大包和箱体均大量入画，不符合局部后肩与包边入画和大腿中段切断的设计。苏慧完整脚下仍可见，并站在三名旅客前方近处，未呈现人群后方走近的纵深关系。人物与三旅客服装大体对应，但机位、裁切和纵深未通过。",
+      "fix_instruction": "以B反打底板锁定左车道右上挑檐，禁止复用A主帧背景；把江砚变成右边缘虚焦局部后肩和包边，按中景裁至近端人物大腿以上；让苏慧留左侧中远层从人群后方走近，保持朝江砚的侧面视线关系。",
+      "card_field": "cards[ep01_镜18].plate_image / framing / people[苏慧].depth / posture_zh / background_people[江砚].posture_zh"
+    }
+  ],
+  "review_zh": "母子身份服装与箱包未漂移，江砚右前景侧背虚焦，苏慧左侧面朝右，3旅客可见。但画面仍是A机位左玻璃墙、右车道，苏慧被移到了玻璃墙一侧，未采用批准B反打应有的左侧白小巴/黄车、右上挑檐布局。因此镜17→18只是换了母子屏幕位置，环境未反打，造成二人在场地侧别跳换。母亲全身可见，未把她误判为近端人物裁切违规；近端江砚大腿被画底截断。；指定B反打应左侧车队、右上挑檐，实际仍左玻璃幕墙右栏杆黄车的A机位；只把人物左右调换而没有换机位。近端江砚从完整头部拍到膝下，躯干、大包和箱体均大量入画，不符合局部后肩与包边入画和大腿中段切断的设计。苏慧完整脚下仍可见，并站在三名旅客前方近处，未呈现人群后方走近的纵深关系。人物与三旅客服装大体对应，但机位、裁切和纵深未通过。",
+  "generator_agent_id": "/root/generate_villa_round3",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_a.json"
+}

@@ -19,6 +19,15 @@ const API = (() => {
   const enc = encodeURIComponent;
   return {
     projects: () => req('GET', '/api/projects'),
+    contentChange: (p, action, body) => req('POST', `/api/projects/${enc(p)}/content/${action}`, body),
+    contentTrash: (p) => req('GET', `/api/projects/${enc(p)}/content/trash`),
+    helpQuestion: (body) => req('POST', '/api/help/question', body),
+    tasks: () => req('GET', '/api/tasks'),
+    startPromptTask: (p, body) => req('POST', `/api/projects/${enc(p)}/prompt_tasks`, body),
+    createProject: (body) => req('POST', '/api/projects', body),
+    setup: (p) => req('GET', `/api/projects/${enc(p)}/setup`),
+    startSetup: (p) => req('POST', `/api/projects/${enc(p)}/setup/start`, {}),
+    setupFile: (p, path) => req('GET', `/api/projects/${enc(p)}/setup/file?path=${enc(path)}`),
     guide: () => req('GET', '/api/guide'),
 
     characters: (p) => req('GET', `/api/projects/${enc(p)}/characters`),
@@ -50,6 +59,8 @@ const API = (() => {
     select: (p, job_id, file) => req('POST', `/api/projects/${enc(p)}/select`, { job_id, file }),
 
     regenerate: (p, body) => req('POST', `/api/projects/${enc(p)}/regenerate`, body),
+    previewRegenerate: (p, body) => req('POST', `/api/projects/${enc(p)}/regenerate/preview`, body),
+    savePromptVersion: (p, body) => req('POST', `/api/projects/${enc(p)}/prompt_history`, body),
     regenerateStatus: (p, token) => req('GET', `/api/projects/${enc(p)}/regenerate/${enc(token)}`),
     lastPrompt: (p, jobId, kind, episode) => {
       const qs = new URLSearchParams({ job_id: jobId, kind: kind || 'asset' });

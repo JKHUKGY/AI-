@@ -1,0 +1,37 @@
+{
+  "id": "ep01_镜22",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070bb-cf89-76b1-9bbf-6af69bacb473/exec-3b5a5d1f-ba87-44c2-b823-a763111d6a40.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_continuity.json",
+      "id": "ep01_镜22",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "人物身份、B反打左车队右挑檐、三名旅客、母亲双手待接及江砚包仍在双肩符合动作起点。但从背后左侧可连续追踪的左臂向下握箱拉杆，与右手扶箱、左手收纸相反；未见收纸动作。近端人物膝部以下仍入画，母亲脚完整，江砚顶空约21%，明显偏离5%顶空、近端大腿中段裁切。",
+      "fix_instruction": "锁定江砚右手握箱拉杆，左手收纸进左胸衣袋；保留包仍双肩背、母亲双手待接；重构图至近端人物大腿中段截断且头顶约5%。",
+      "card_field": [
+        "people[0].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch02_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_single.json",
+      "id": "ep01_镜22",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "verdict": "fail",
+      "reason": "江砚右前景背面、苏慧左侧待接和包仍在肩上的动作起点正确，背景三旅客和B向车道基本正确。但画幅下端可见江砚膝盖以下与苏慧全身双脚，中景漂为全景；江砚靠镜头可见左臂连到扶箱的手，未按右手扶箱/左手收纸。",
+      "fix_instruction": "按近端江砚大腿中段截止重新取中景；保持包仍在双肩与苏慧双手待接；江砚右手扶箱，左手在衣袋口收地址纸，明确两臂连接。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[江砚].action_zh"
+    }
+  ],
+  "review_zh": "人物身份、B反打左车队右挑檐、三名旅客、母亲双手待接及江砚包仍在双肩符合动作起点。但从背后左侧可连续追踪的左臂向下握箱拉杆，与右手扶箱、左手收纸相反；未见收纸动作。近端人物膝部以下仍入画，母亲脚完整，江砚顶空约21%，明显偏离5%顶空、近端大腿中段裁切。；江砚右前景背面、苏慧左侧待接和包仍在肩上的动作起点正确，背景三旅客和B向车道基本正确。但画幅下端可见江砚膝盖以下与苏慧全身双脚，中景漂为全景；江砚靠镜头可见左臂连到扶箱的手，未按右手扶箱/左手收纸。",
+  "generator_agent_id": "/root/generate_keyframes_batch02_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch02_a.json"
+}

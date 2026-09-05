@@ -1,0 +1,622 @@
+{
+  "git_commit": "6f886ddcd0d9e504298feeb5b2da55b7f46aafbb",
+  "reason": "v2 directory disappeared during running task; restore required inherited v3 directories locally without restoring/deleting other projects",
+  "original_links": {
+    "SC02_顾家餐厅_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_A主机位",
+    "矿场技术员_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/矿场技术员_三视图",
+    "SC01_顾家别墅客厅_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_B反打",
+    "SC01_顾家别墅客厅_D细节": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_D细节",
+    "SC03_顾家客房_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_B反打",
+    "SC07_顾家厨房_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_B反打",
+    "SC01_顾家别墅客厅_C侧机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_C侧机位",
+    "苏慧_佣人期_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/苏慧_佣人期_三视图",
+    "顾万通_得势期_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/顾万通_得势期_三视图",
+    "顾瑶_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/顾瑶_三视图",
+    "SC05_监狱门口_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_B反打",
+    "SC04_矿场板房办公室_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_A主机位",
+    "SC06_B反打_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC06_B反打_紧",
+    "陈野_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/陈野_三视图",
+    "SC03_B反打_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC03_B反打_紧",
+    "SC02_顾家餐厅_C侧机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_C侧机位",
+    "SC03_A主机位_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC03_A主机位_紧",
+    "SC04_矿场板房办公室_D细节": "../../../../出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_D细节",
+    "刘兰_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/刘兰_三视图",
+    "SC06_机场出口_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_B反打",
+    "SC07_顾家厨房_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_A主机位",
+    "SC06_机场出口_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_A主机位",
+    "SC05_监狱门口_B反打_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_B反打_紧",
+    "SC05_监狱门口_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位",
+    "SC01_B反打_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_B反打_紧",
+    "SC01_顾家别墅客厅_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_A主机位",
+    "SC01_C侧机位_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_C侧机位_紧",
+    "SC04_矿场板房办公室_C侧机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_C侧机位",
+    "江砚_初来期_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/江砚_初来期_三视图",
+    "SC02_顾家餐厅_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_B反打",
+    "顾浩_三视图": "../../../../出狱后我成为了非洲矿王_v2/assets/顾浩_三视图",
+    "SC03_顾家客房_A主机位": "../../../../出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_A主机位",
+    "SC04_矿场板房办公室_B反打": "../../../../出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_B反打",
+    "SC05_监狱门口_A主机位_紧": "../../../../出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位_紧"
+  },
+  "files": [
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_00.png",
+      "git_blob": "d775addf6afacc4ec7ce6f42a62f459d5b66db73",
+      "sha256": "181973d6d80f365bb42115afc1ef92ab08d839fea1385e8badd02069ff8f0f4e",
+      "bytes": 2390894
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "git_blob": "c94064a97e0ef3e3037f65fe2d5749ee0f42a89c",
+      "sha256": "e9a37e358f63384407be1d381312c2e3d3a9bafa84203cf20f7f9c7be79faaf0",
+      "bytes": 2067887
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_02.png",
+      "git_blob": "3d107ec0cc27224db20ecb976fdf3a9b682d9365",
+      "sha256": "003c971a3d108c9bce86605450fa5f9c5cb3240fee93ce580673d7bf22c495c6",
+      "bytes": 2059049
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_00.png",
+      "git_blob": "d9a9a9c2548c81d20862ff5e4d225044985681ce",
+      "sha256": "554097a1110e4b2acc1a3eda28c1a3a911939476f45a095c60151437baeafa4e",
+      "bytes": 2141536
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_01.png",
+      "git_blob": "84b25b9bd626e225700c7318dc758b15e7f46ad8",
+      "sha256": "f4ad44bab38dc94f4e714e09b66870a9d292477250ab36a23083592462dd7545",
+      "bytes": 2105365
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_02.png",
+      "git_blob": "7747334239b6f9666fb0296de53a0227b0c1b55f",
+      "sha256": "764366394bd733ae68c9d28d9417105a4e607ab40ae3cfa60b2c43d4686542ac",
+      "bytes": 2020248
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_00.png",
+      "git_blob": "40db2e062f0765496bdb3cc76bdb458fd47df226",
+      "sha256": "ceba9863bbf5dd546652ce9e275d7a9b72b690997562861b9c6906ba36ee89e3",
+      "bytes": 2174189
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_01.png",
+      "git_blob": "0ea565beb36002bbdf9f906a958d7d6ff801612b",
+      "sha256": "e7ca0e04e99387d510faa28ffbbb4a8bec24c38e773cfeb651c3415736568801",
+      "bytes": 2197974
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_02.png",
+      "git_blob": "480479dffe5f316be11e80e0cb7631d09fbc95cc",
+      "sha256": "c182e1ab576f7737ee51623cc096ee8de0e565efe246606683ac97af556c36b7",
+      "bytes": 2226579
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_00.png",
+      "git_blob": "d3ada3f9976fceafc8dccff5aa52b2bdd03c07e6",
+      "sha256": "f7d3b5aa5adb81f20daed4fb9c85fc423b84d471e3df58eeae8155fedeb50cb9",
+      "bytes": 2312422
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_01.png",
+      "git_blob": "62e1a35e19b2a14b245dd66cb3f4533c39f947b2",
+      "sha256": "fab49473b062dad0cf95296eb455324682ad79aad82c835112794ad2f4a702e3",
+      "bytes": 2309769
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_02.png",
+      "git_blob": "3f09c9f5bf09b47ddd73453a9496a863f94f5761",
+      "sha256": "1f55c357819c7ad87dada106d16b70a177fa98b83016a7822159345e162aa734",
+      "bytes": 2317871
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_00.png",
+      "git_blob": "7fb507e33f86ea2832ae40b95a8d49302c0087db",
+      "sha256": "317470a3d436d1972fc34902aa48b2ebb5feb81f0aab27c147d4343ac449a917",
+      "bytes": 2184272
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_01.png",
+      "git_blob": "869b65618b10f5fe4153f74c72a069470190a81b",
+      "sha256": "cb0aab5e14bfa16f10cb453d58d1c8108a921237b11307da8525a2e26f74a842",
+      "bytes": 1975764
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_02.png",
+      "git_blob": "cb36f8e601f45ff5e697e9db42035b8fbf5a3809",
+      "sha256": "07a709610445e5036802a3e14f72eb03e47521a7edae6d698aae05e9bc430729",
+      "bytes": 1995202
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_00.png",
+      "git_blob": "4f5db618193c45d0837518ccdda32e4b49b153c9",
+      "sha256": "b7fc3f26ec3326e2aa15e9c38ff0c01da893bde96f6a587127aa25944dbaccea",
+      "bytes": 2153331
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_01.png",
+      "git_blob": "c2cf13f4b95795be8f6e810f9b6dcc7bd084299e",
+      "sha256": "d8848369f098d4ad21f5e32113671761663b0a2f5c87fdb1d1d378c0eb147cb5",
+      "bytes": 2150193
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_02.png",
+      "git_blob": "ad4cc874fda550257f46d6ef20344568ab42a2b2",
+      "sha256": "13bff362efee45118e24f75c160ab264ccb1312b80e8878f26a0c2e68f5695da",
+      "bytes": 2099077
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_00.png",
+      "git_blob": "5ae6abb4a420ab64824ce5a29d15336944a60007",
+      "sha256": "78a5f7828c2d52dc64c35b7eb0d34c6c9e69cd3f7b30cadb831c3a78c48b05da",
+      "bytes": 2148575
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_01.png",
+      "git_blob": "4b7532e077d4546a90cfbd23f83d5716d800e8cf",
+      "sha256": "b20ee3fa646fa941586731e7c0913b9b5eb7e3b90042b2fd003c588083c83832",
+      "bytes": 2163420
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_02.png",
+      "git_blob": "85e9343d6bd6eed7f106391543221ad3efce9df8",
+      "sha256": "7de17ca518c394c4420b50845c03ea3f53a7a6d0de04249925e4275805e963aa",
+      "bytes": 2033301
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_00.png",
+      "git_blob": "5197233120b5ad98988fb2e42f46ed08222ba5a4",
+      "sha256": "ab8c2482335d1210fb0680a66ec480e29128ddee11629f0a03df60d46d087c3f",
+      "bytes": 1584336
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_01.png",
+      "git_blob": "28a81a8a20fcee445d6bc09954e7441c69c64ad4",
+      "sha256": "df856142019aa5f2ea43a75f35ec84f82c0b6a49346263625451602cf3aebf37",
+      "bytes": 1557201
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_02.png",
+      "git_blob": "9190efde21fb8835a34ec2553e5e3afc616bef76",
+      "sha256": "fbcc9d28196bfbeef1eb4fa583fbdb938ae56885fe0e58e3d2f45e29d5f6e08a",
+      "bytes": 1607841
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_00.png",
+      "git_blob": "9bfd16c0c087354b26fff000315b91b534995ea6",
+      "sha256": "ce86aaf73e813fcd3f190218528d0a5bac62f47ac0f56c8dd21d514ff1d86b2e",
+      "bytes": 1473256
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_01.png",
+      "git_blob": "d46cef4a96dda699fc75da5208e51c6aef4ea896",
+      "sha256": "7caa72cedfbaa7ce542f954fbb5e5bcc676f6c59c966d6c5d288825276404ef5",
+      "bytes": 1588721
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_02.png",
+      "git_blob": "c8d08452d0cc891fba17523dee115f2b6101eeaa",
+      "sha256": "69dd0b0ee9534051be7e5599cd9988aa71543ca93c2024ad9cd95cf9cca2ccb9",
+      "bytes": 1512375
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_00.png",
+      "git_blob": "941f6e49a6dd719da26370028e70a30b823e636f",
+      "sha256": "bc07c026f071bf62f9d418435d28827d05aba38c24e088da0fd602f64958294b",
+      "bytes": 2583820
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_01.png",
+      "git_blob": "94eb14fda22f2119e34e8b64c7734c4e21a4511f",
+      "sha256": "28699d44747ecb92d09b2f5d9bf69ad31c1cf24af725d6e6cda150c2753de8fb",
+      "bytes": 2596937
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_02.png",
+      "git_blob": "cdeae83d87d9c4b82529a548d56fbd17c818cfe8",
+      "sha256": "caaddde417e384ac61d035397bfa993fd982ad62686f5e1990ea744b6f2c0131",
+      "bytes": 2527821
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_00.png",
+      "git_blob": "215a21d4eedea7ddabdec0e071e4c619752c920c",
+      "sha256": "a1bfce821a4f756d31309dd9dede3c0b46dbb49f19a9847f37c0c9d8ad054c7b",
+      "bytes": 2392230
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_01.png",
+      "git_blob": "f1b463ca5afdbb2da7ff21f937f093d198d22898",
+      "sha256": "00858978d78f28155315e132a4fd82a89d705e772bdf60f6099810e3e76e1456",
+      "bytes": 2527807
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_02.png",
+      "git_blob": "2dd77d11cbe2cf1d5e84c4a708dc4e3bdab502ba",
+      "sha256": "f3c73feaf7a980b0672ad3dc997aa13dd564c4a7151d573135f196c70ac275e8",
+      "bytes": 2519327
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_00.png",
+      "git_blob": "24f15915d2aef81ca30b216cf5d9723ce4eda1ed",
+      "sha256": "81586d3868875ec10f5f59fde0022a3ab7486564e0224cc6f879ca9c1c5c8963",
+      "bytes": 2498151
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_01.png",
+      "git_blob": "f9ec525ea6175fc9a473108275e5be9d9aabef18",
+      "sha256": "85f616d022af47f1a9ac105feae4fe450dfd38c1809a1c7b2f3a43a33b690809",
+      "bytes": 2740443
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_02.png",
+      "git_blob": "1ea1edb434c0fd43c3fc3110176f6897851e0ee0",
+      "sha256": "5b4a21c5e7aa3299163fc20ff4f154913b09c79f471ee7e7ba49e60033d3f9fd",
+      "bytes": 2545225
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_00.png",
+      "git_blob": "66bb61e9fc58320f976c36ab4eed1be5aa925827",
+      "sha256": "aa0d18616d86da94662d7fd98bda289d3d9c62b4e5886eeb33b6ce81967dd833",
+      "bytes": 2672744
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_01.png",
+      "git_blob": "32f92fd98ea39e1300cc1d9d3af29085934fb25c",
+      "sha256": "e195a7a90b99b2d5fb942433c79b263c7500f8791c1c457822997abbef17dbf1",
+      "bytes": 2547025
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_02.png",
+      "git_blob": "5d9b188999be19cb6326d3d0c2dd75dd1a7c110b",
+      "sha256": "4ceed9d93414d5c45eb401e690f763d244a09351e6c0b39fdc24e1f093d0683c",
+      "bytes": 2445740
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "git_blob": "c5ab5b05f8a192049333baf7d7f743c0bf380e88",
+      "sha256": "b8be8ac4defdce05ef364303ba223b0b3c1b224901e59db8adb5fcb28f77bf2e",
+      "bytes": 2583752
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_01.png",
+      "git_blob": "f62eb958c0818a6017658970876477d6f063afc8",
+      "sha256": "17ac8e5dd9ff88b43db28edf2ca116acfc9746a0b1144e41335b38bce64a0019",
+      "bytes": 2563951
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_02.png",
+      "git_blob": "de5a52267a617f97f6d5ec3a501bae3cd51b83c5",
+      "sha256": "e770d2c2c6bab5b045590eeb79975c9cadcc5a29ac6e320f963cf55b28f6bebd",
+      "bytes": 2366976
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "git_blob": "8ee4896da629539c8e94b030187f5617b68f6545",
+      "sha256": "1283d905b41230eab82a745f8fcf9e1274d877b02529aa4625c24b2ffc97f387",
+      "bytes": 2123259
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_01.png",
+      "git_blob": "68610fe1a29bbda81cf83af415fac4c554f52ff8",
+      "sha256": "2990d50ea9e901ac310c95db29bb08249da8cf72ad46ac94d3ed0fcd6abace97",
+      "bytes": 2245356
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_02.png",
+      "git_blob": "303fb35da0d964f459ab4793af60b3366b925d07",
+      "sha256": "6c57034cc0f8e912614a6914d6f45a4e047162128899ab24ee0ec6015227daaf",
+      "bytes": 2102069
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_00.png",
+      "git_blob": "708ca703a8dee398a7270bc41e949e35e50f9b47",
+      "sha256": "d14634d8795bab91ca9fc209e571c05ef456b9df305a653ea34eb84343a853b2",
+      "bytes": 2339530
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "git_blob": "f9f65ee3a00a2c7dbfb9be7fe426f89ccf1791f1",
+      "sha256": "2a52012f6e510a199d4d922f8a9150f60a3c728f7d7666c5f6b0b1d8ec2533e3",
+      "bytes": 2621561
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_02.png",
+      "git_blob": "b77de12e699e25f180fc1cfd327e13a5859e32f6",
+      "sha256": "566259e54b5c093fb7249a44059776ea2a75375f5f56e78aea7529c792c9af7e",
+      "bytes": 2393430
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+      "git_blob": "5a04e0aa3acfe96efdea47b4ddf99c6d822340e9",
+      "sha256": "d6a48deed73019211d4600007ebb21bd8732d2f70a25f365ba0d4a05908211d9",
+      "bytes": 2452606
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_01.png",
+      "git_blob": "76fa4c00db2a7e17c23883855c7159ca2e600ea9",
+      "sha256": "07b7a10efbbadc2c864b97a6664c29026e3a167ea0cadbea231b580bb1f55f5e",
+      "bytes": 2476770
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_02.png",
+      "git_blob": "5f10108a37a6d6952b72dec2a007853c88d1b250",
+      "sha256": "84556a86db33d1f082f1a2065e55901bf344702035597c1d4d47a43678f1befd",
+      "bytes": 2616197
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_00.png",
+      "git_blob": "dcbc734869e2d367cb922093a80d8d8928589181",
+      "sha256": "45cd4008971c5aa365d19bf5181110cdb9be2a134dcf50e23fe127a92785977b",
+      "bytes": 2058223
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_01.png",
+      "git_blob": "d7c86b76d851dff19d548562bd364ac237c3559b",
+      "sha256": "ad32cb954fcf5f56449d5e9d425ac229df004bdd560e6db2460e19403558b6d2",
+      "bytes": 1929376
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_02.png",
+      "git_blob": "00fddf44ef971eb3133da8e2eeca404e560d51e3",
+      "sha256": "1bb6feeaa2708c70c22e4b21f8f2558cc0e583037126db1554f56812dc1fd180",
+      "bytes": 2209262
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_00.png",
+      "git_blob": "97894eda3e98eb8ea4a5fd5322cef38d4ad475bf",
+      "sha256": "841288ff1af29fe9cc388c06abfa1fab355490d89e05ddbbde4109bdf89f1c44",
+      "bytes": 2117624
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_01.png",
+      "git_blob": "a96bb0503d21a5dfd6227b696b705a9b39fc81cc",
+      "sha256": "faa0e486d864e6a553ee6fbacd5ddfcbf00f018f7a31f6f5297fbcad5679c51e",
+      "bytes": 1915597
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_02.png",
+      "git_blob": "bc5477637b39469d705c2563d0c21ae9e55d86cf",
+      "sha256": "6f2cfcfdff537384c0ee77bf5d0cfef6b8122e18be4b630a169824f6ba563251",
+      "bytes": 1981786
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/刘兰_三视图/刘兰_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/刘兰_三视图/刘兰_三视图_00.png",
+      "git_blob": "6791ba72edfd4b6d741f72b8c6ff15c49d26251f",
+      "sha256": "fb8f4813423f460028c839e329d13ec72df4e3200f3709642ff02854c7b0c318",
+      "bytes": 1805971
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/刘兰_三视图/刘兰_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/刘兰_三视图/刘兰_三视图_01.png",
+      "git_blob": "200eebb306b2b2263e12a9ec2fcabb44cef696a4",
+      "sha256": "8b1395d2487a383d8a545c11ab846868a565423fa0ac954d043a7caef2a47401",
+      "bytes": 1926885
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/刘兰_三视图/刘兰_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/刘兰_三视图/刘兰_三视图_02.png",
+      "git_blob": "2a373bf56d74300aefd97f0778fbe790a20f68ae",
+      "sha256": "04de7c46d09e82865dc47616a43da9d7138a6aa6ce13948381601aaa866c9106",
+      "bytes": 1874133
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/江砚_初来期_三视图/江砚_初来期_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/江砚_初来期_三视图/江砚_初来期_三视图_00.png",
+      "git_blob": "6e6db1795ae0bf132e0219957c2bb191c269dee1",
+      "sha256": "b343db376d382aa1d258c3309137d517bc70f2330fb6595056777b7317c85fd1",
+      "bytes": 1892351
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/江砚_初来期_三视图/江砚_初来期_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/江砚_初来期_三视图/江砚_初来期_三视图_01.png",
+      "git_blob": "aa052985f33491cd5faf65756630d8c65eed7016",
+      "sha256": "7ceed20f86c3a8f1c4b5f2b283b8cf0ef459d4ef77b71d4652741d0ad1f1cb89",
+      "bytes": 1891169
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+      "git_blob": "b26f2be2282481d41a1134172d5830f47ca0164c",
+      "sha256": "f92bac6347329d0e9c4987608bde6a409f61c0d2893d5af6fe6b63197ad4d635",
+      "bytes": 1933791
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/矿场技术员_三视图/矿场技术员_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/矿场技术员_三视图/矿场技术员_三视图_00.png",
+      "git_blob": "c30aa43f1663b10dfb2debf8da28967c73ad3b14",
+      "sha256": "83dba441668b411f8e36b661cd4d8390b8750c8c68957de629a7d7e220763cec",
+      "bytes": 2110234
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/矿场技术员_三视图/矿场技术员_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/矿场技术员_三视图/矿场技术员_三视图_01.png",
+      "git_blob": "e173ab949cc596565ebb93da4f5a4b109d22fd44",
+      "sha256": "132bd786a240e5082d62a1831c7afa5eed8783e64f8268b1e7f6658c63ba3594",
+      "bytes": 2207573
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/矿场技术员_三视图/矿场技术员_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/矿场技术员_三视图/矿场技术员_三视图_02.png",
+      "git_blob": "b0dd8151331d3fd637d155aabe2c4ba8cbf17fe0",
+      "sha256": "52361c068d0b7bdbfaecb50189cf3f0721c8503fe3d13f91e8f7958fd8120810",
+      "bytes": 2021363
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_00.png",
+      "git_blob": "0fde2eec1dbbe18c17b2ddac6f87500e434e2eba",
+      "sha256": "b862c403d867dba98eccc1b106e3562a8e523994684404e0727c5a9ec9845c85",
+      "bytes": 2123408
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+      "git_blob": "3be17e1e10dc5cb973c90f9ecba081169e95ab95",
+      "sha256": "793129e1a4e79ca8ab16b8f5c3cb8db0837655c35c71cbe902c41e5b8827dc36",
+      "bytes": 2258508
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_02.png",
+      "git_blob": "1aa7de76583a13ba5a99f865a84e851a822826c7",
+      "sha256": "b7fd43ca3ae0d13abbc54e6a5cd50c991d43adfa8ca9fbd009a211485ea0b68a",
+      "bytes": 2090259
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/陈野_三视图/陈野_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/陈野_三视图/陈野_三视图_00.png",
+      "git_blob": "c2cd412ee197319249bac2c72da429708657e522",
+      "sha256": "8140176900bc20d6378804b7b9e35897a0492377188fa8e32c62a4d5d2c2c829",
+      "bytes": 2069428
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/陈野_三视图/陈野_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/陈野_三视图/陈野_三视图_01.png",
+      "git_blob": "23dadc054f8b543adbc93ed71a28cf80d1df33f0",
+      "sha256": "6f1ead0718d58547a72d6ab1af4f521fa2a52590a57f3f25d271fce1162a202f",
+      "bytes": 2143861
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/陈野_三视图/陈野_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/陈野_三视图/陈野_三视图_02.png",
+      "git_blob": "bbbcf8fa94378738e3df338879ed6c7c82652df3",
+      "sha256": "64e36d65d222e0a3973518885e1b0da1cbf85f85a83d36cd001fa1e14a89cb10",
+      "bytes": 1893590
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_00.png",
+      "git_blob": "cf8149077e47dfae8e121b0ececa051f9bcc02c2",
+      "sha256": "7c5b632dd869d46ec9cbd41c865d5975ae04f7e8513b27a4ec2e35e5ba654e08",
+      "bytes": 1899641
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_01.png",
+      "git_blob": "62ca126353f215d1f4d8f3f67043e39b7351b2da",
+      "sha256": "ebf0d24de09ada34cc606d18457c4cf8cc489ee0b129311a90a44bddbfe72a9c",
+      "bytes": 1898848
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_02.png",
+      "git_blob": "7dea3659a3d91f38e7195f5cd4e6774094996557",
+      "sha256": "36f9f2e557209bfbebd0531e522e1549ce55d5dfaedc619482c73bb6a3cee7a6",
+      "bytes": 1959770
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾浩_三视图/顾浩_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾浩_三视图/顾浩_三视图_00.png",
+      "git_blob": "e38c50eb651204ee37961e5ba7f25754f55329a6",
+      "sha256": "d025a6f9ac9d991206e32f095039fd22fca9867cfb08550887eec6361a00faa7",
+      "bytes": 1924731
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾浩_三视图/顾浩_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾浩_三视图/顾浩_三视图_01.png",
+      "git_blob": "823efcd6e94ce4e21143beb6d0b9253c27b62bad",
+      "sha256": "3d85768cddfb9250f3c1e023da51791aa2915b856761d5f0ccf5df61d874f791",
+      "bytes": 2004830
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾浩_三视图/顾浩_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾浩_三视图/顾浩_三视图_02.png",
+      "git_blob": "61af1b2c187ea560473aedaf7b29bb3b4758eb72",
+      "sha256": "2ff5c1cc6ae79c53ae92b11fc37bdc9438cf925d1311f63121514d53366064e7",
+      "bytes": 1885607
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+      "git_blob": "8274c05b1bb6f37a3281a17f749f8d83af90e63a",
+      "sha256": "16833643e23be8b1af564760f96e736fa6ea912c260719ede9cba9da7ebddaad",
+      "bytes": 1741679
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾瑶_三视图/顾瑶_三视图_01.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾瑶_三视图/顾瑶_三视图_01.png",
+      "git_blob": "4b560edc61624042bcb532fe66ea444dc4bfead7",
+      "sha256": "5e3b6e39dc7ff20bf75060c72790212e4fb77f874c1d7f59e05ba61a09420676",
+      "bytes": 1659340
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v2/assets/顾瑶_三视图/顾瑶_三视图_02.png",
+      "destination": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾瑶_三视图/顾瑶_三视图_02.png",
+      "git_blob": "34bb06b689b6086c4f9c6a772e1db0c8deb25b47",
+      "sha256": "de37f77b873bd19054d65307e0f712805450ba05adbfaf9153271b8298954153",
+      "bytes": 1756106
+    }
+  ],
+  "status": "completed",
+  "restored_files": 81,
+  "restored_dirs": 27,
+  "remaining_broken": [
+    "SC06_B反打_紧",
+    "SC03_B反打_紧",
+    "SC03_A主机位_紧",
+    "SC05_监狱门口_B反打_紧",
+    "SC01_B反打_紧",
+    "SC01_C侧机位_紧",
+    "SC05_监狱门口_A主机位_紧"
+  ],
+  "completed_at": "2026-09-05T09:49:54.554811+00:00"
+}

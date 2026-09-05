@@ -1,0 +1,92 @@
+{
+  "agent_id": "/root/review_round2_next_single",
+  "review_scope": "独立单图、原文锚点与已批准动作起点、构图验收；未读取其他审查者报告",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+      "verdict": "fail",
+      "reason": "江砚同脸、蓝灰衬衫、右侧三分之四正面和闭嘴视线正确；已是胸像，不是腰景。左侧陈野从窄头边扩到下缘约27%宽的肩背，不符约15%窄过肩；头顶空约12%，高于5%。瓶和手按胸下裁切在画外，不据此判丢失。",
+      "fix_instruction": "使用同镜09_02作最小局部修正：保持江砚当前脸部大小、表情与背景，只把陈野整条左缘肩背移到框外，最宽保留约15%。避免再次整体放大江砚。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh"
+    },
+    {
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+      "verdict": "fail",
+      "reason": "人物、衣服、机位、冷静闭嘴视线正确，主角胸像且头顶空约7%，可容忍该估算差异。失败仅在左下陈野肩背扩大到约30%宽，未做到全边约15%的窄虚焦过肩；不能只按上半头边宽度判断。",
+      "fix_instruction": "推荐本图同镜09_02；锁住主角像素尺度、头顶空、表情和背景，只将左侧陈野肩背整体外移，保留10%至15%窄边，不改变画外水瓶/瓶盖状态。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh"
+    },
+    {
+      "id": "ep01_镜14",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png",
+      "verdict": "fail",
+      "reason": "沉静坚定的目光与原文反转相符，同脸同衣、A机位和胸像正确，头顶空约6%合格。陈野头侧已窄，但下方肩背占至约27%宽，仍超出约15%的过肩设计。未要求胸口下的瓶盖额外入画。",
+      "fix_instruction": "推荐本图同镜14_01为第三轮编辑目标；保留江砚胸像尺寸、头顶空、平静表情及监狱背景，只修左下陈野肩背为全边宽约15%的窄弧线。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh"
+    },
+    {
+      "id": "ep01_镜14",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+      "verdict": "fail",
+      "reason": "身份、A机位、胸像、平静表情成立；左下陈野肩背占约26%画宽，超过15%。头顶空约10%亦偏多。本图不是腰景，无需把人物再次大幅放大。",
+      "fix_instruction": "优先同镜14_01作局部肩缘修正，该图头顶空更符合5%；只缩窄陈野过肩，保持已达成的主角构图。",
+      "card_field": "background_people[0].posture_zh; framing.headroom_frac"
+    },
+    {
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+      "verdict": "fail",
+      "reason": "江砚左侧坐姿的头颈、望向右侧母亲的目光、克制情绪、同脸同衣和窗边白天均连续；裁切已到胸部，不能算腰景。右下母亲肩背最宽约25%而非10%至15%，头顶空约10%，头部高约40%弱于目标50%。",
+      "fix_instruction": "推荐同镜38_01。轻微上移取景将头顶空减到5%，只需温和调整使头部接近约50%；重点把右侧母亲整个肩缘外移到10%至15%，保留相同眼神和光线，不重新引入腿、手或箱包。",
+      "card_field": "framing.headroom_frac; framing.crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+      "verdict": "fail",
+      "reason": "情绪、同脸同衣、左右关系和北窗日光正确，已是胸像。头顶空约15%，右下母亲肩背约30%宽，分别明显超出5%与10%至15%；头部仍约39%，结尾主体强调不足。",
+      "fix_instruction": "推荐同镜38_01，按该图作小幅纵向取景调整及右侧肩缘局部外移；不要从00重新裁，也不要大幅继续放大已成胸像的主角。",
+      "card_field": "framing.headroom_frac; framing.crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+      "verdict": "fail",
+      "reason": "监狱、车与人物身份正确，陈野靠左车侧右手持白盖水瓶，江砚门缝迈步动作较首轮明确；门缝约一肩宽可接受。江砚发顶约36%画高、鞋底68%，全身仅约32%，鞋下红土约32%；明显偏離批准全身40%、脚下15%的开场构图。",
+      "fix_instruction": "可用同镜01_01锁住车、脸、门缝及迈步动作，调整取景使江砚全身约40%，脚底约85%，把多余前景红土裁到15%；不得将人物缩小回首轮或让门大开。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh"
+    },
+    {
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png",
+      "verdict": "fail",
+      "reason": "门口窄缝、江砚迈步、陈野左侧靠车右手持瓶及人物服装身份正确；江砚头顶约33%、鞋底65%，全身约32%，脚下空地约35%。开场构图仍未达到全身40%、脚下15%，人物过小且地面过多。",
+      "fix_instruction": "优先以同镜01_01作第三轮局部重取景，保持窄缝和当前出门动作，把江砚全身增到约40%、鞋底移到画高85%，削减脚下空地。门柱、原车及靠车陈野相对位置维持。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh"
+    }
+  ],
+  "status": "completed",
+  "proposed_files": [],
+  "review_notes": "人体比例为人工近似估计，少量偏差容忍；所有近景已达到胸像，失败主要为过肩宽度和部分顶空，未把胸像误判成腰景。未要求画外低处道具补入。"
+}

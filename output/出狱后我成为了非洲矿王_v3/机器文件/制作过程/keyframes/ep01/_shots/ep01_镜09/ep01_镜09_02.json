@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜09",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070e9-1aa2-7380-9ea7-13b788a34a34/exec-81a052b3-ebaf-49d1-a8f3-5a48502a81a9.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+      "verdict": "fail",
+      "reason": "江砚身份、灰蓝衣、朝左看陈野的冷静神态及门外A方向正确，陈野左缘短发/棕衣/灰巾承接基准。手和瓶被胸部构图裁去，允许，未据此添加饮完要求。本张头顶约7%，已接近允许视觉误差，躯干取景也明显收紧；不因7%与5%的差别判fail。但陈野左下肩背仍宽约30%，约为批准15%的两倍，未缩成窄边过肩。需完成构图边缘修正。",
+      "fix_instruction": "保留当前江砚头部取景、表情和机位，主要把陈野左下肩背从30%收至约15%窄边，避免再次重排主体。",
+      "card_field": "framing.crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+      "verdict": "fail",
+      "reason": "人物、衣服、机位、冷静闭嘴视线正确，主角胸像且头顶空约7%，可容忍该估算差异。失败仅在左下陈野肩背扩大到约30%宽，未做到全边约15%的窄虚焦过肩；不能只按上半头边宽度判断。",
+      "fix_instruction": "推荐本图同镜09_02；锁住主角像素尺度、头顶空、表情和背景，只将左侧陈野肩背整体外移，保留10%至15%窄边，不改变画外水瓶/瓶盖状态。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh"
+    }
+  ],
+  "review_zh": "江砚身份、灰蓝衣、朝左看陈野的冷静神态及门外A方向正确，陈野左缘短发/棕衣/灰巾承接基准。手和瓶被胸部构图裁去，允许，未据此添加饮完要求。本张头顶约7%，已接近允许视觉误差，躯干取景也明显收紧；不因7%与5%的差别判fail。但陈野左下肩背仍宽约30%，约为批准15%的两倍，未缩成窄边过肩。需完成构图边缘修正。；人物、衣服、机位、冷静闭嘴视线正确，主角胸像且头顶空约7%，可容忍该估算差异。失败仅在左下陈野肩背扩大到约30%宽，未做到全边约15%的窄虚焦过肩；不能只按上半头边宽度判断。",
+  "generator_agent_id": "/root/generate_edits_09_14",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_09_14.json"
+}

@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/generate_keyframes_batch02_a",
+  "job_source": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/keyframes_batch02_a.json",
+  "refs_viewed": [
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+  ],
+  "records": [
+    {
+      "id": "ep01_镜22",
+      "round": 1,
+      "candidate": 0,
+      "source": "/home/codespace/.codex/generated_images/01a070bb-cf89-76b1-9bbf-6af69bacb473/exec-3b5a5d1f-ba87-44c2-b823-a763111d6a40.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "status": "pending_review",
+      "agent_id": "/root/generate_keyframes_batch02_a",
+      "started_at": "2026-09-05T08:43:20.522Z",
+      "completed_at": "2026-09-05T08:45:03.950Z",
+      "refs_viewed": [
+        "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+        "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+        "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+      ]
+    },
+    {
+      "id": "ep01_镜23",
+      "round": 1,
+      "candidate": 0,
+      "source": "/home/codespace/.codex/generated_images/01a070bb-cf89-76b1-9bbf-6af69bacb473/exec-8f8665f6-36e2-4be2-9aa7-5c27b9ddec91.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "status": "pending_review",
+      "agent_id": "/root/generate_keyframes_batch02_a",
+      "started_at": "2026-09-05T08:43:20.522Z",
+      "completed_at": "2026-09-05T08:45:03.971Z",
+      "refs_viewed": [
+        "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+        "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+        "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+        "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+      ]
+    }
+  ],
+  "errors": [],
+  "image_calls": 2,
+  "generated_images": 2,
+  "status": "completed",
+  "completed_at": "2026-09-05T08:45:23.346Z"
+}

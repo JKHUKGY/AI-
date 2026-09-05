@@ -1,0 +1,4 @@
+interface:
+  display_name: "单图可控视频"
+  short_description: "从单图制作深度或动作控制素材，验证视频生成并交付可行性报告与演示"
+  default_prompt: "使用 $single-image-video-control 研究并验证单图到可控视频的流程，制作控制素材、A/B 对照 demo 和可行性报告。"

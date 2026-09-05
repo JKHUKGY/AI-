@@ -1,0 +1,20 @@
+{
+  "model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+  "source": "output/单图可控视频_Demo/素材/original.png",
+  "source_sha256": "bc07c026f071bf62f9d418435d28827d05aba38c24e088da0fd602f64958294b",
+  "inference_seconds": 5.670720889000222,
+  "device": "cpu",
+  "semantics": "relative inverse depth; white is near; not metric distance",
+  "normalization_percentiles": [
+    1,
+    99
+  ],
+  "normalization_values": [
+    0.0,
+    8.918343896865842
+  ],
+  "image_preparation": "center crop to 128:256; Lanczos resize to 128x256",
+  "width": 128,
+  "height": 256
+}

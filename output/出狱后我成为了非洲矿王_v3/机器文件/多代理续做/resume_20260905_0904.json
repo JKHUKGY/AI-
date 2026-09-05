@@ -1,0 +1,18 @@
+{
+  "observed_host_agents": [
+    "/root"
+  ],
+  "interrupted_unit": "ep01_镜38",
+  "round": 1,
+  "candidate": 0,
+  "artifact_found": false,
+  "original_tool_directory": "/home/codespace/.codex/generated_images/01a070bc-9f32-7641-bdc2-b805f6ba50f5",
+  "last_output_at_utc": "2026-09-05T08:51:18.608Z",
+  "action": "补齐首轮唯一候选，不重置既有其他镜头轮次；原调用中断无产物单列",
+  "agents": [
+    "/root/resume_generate_38",
+    "/root/resume_review_room_single",
+    "/root/resume_review_room_continuity"
+  ],
+  "system_approval_policy": "never; no sandbox_permissions overrides"
+}

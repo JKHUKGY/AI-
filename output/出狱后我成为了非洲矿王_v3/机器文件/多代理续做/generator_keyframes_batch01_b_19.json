@@ -1,0 +1,13 @@
+{
+  "id": "ep01_镜19",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070a4-9786-7762-8eb3-85a329d97dc7/exec-68a0fd84-422f-41e8-ba0d-ad2f98a97184.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+  "status": "pending_review",
+  "agent_id": "/root/generate_keyframes_b",
+  "started_at": "2026-09-05T08:17:55.216Z",
+  "completed_at": "2026-09-05T08:19:39.214Z",
+  "source_job": "机器文件/多代理续做/keyframes_batch01_b.json",
+  "error": null
+}

@@ -1,8 +1,0 @@
-[
-  {
-    "id": "ep01_镜20",
-    "status": "error",
-    "error": "查状态失败: <urlopen error [Errno 111] Connection refused>",
-    "video_id": "97237c0a-fe8b-41e0-93c4-5ae2b53959de"
-  }
-]

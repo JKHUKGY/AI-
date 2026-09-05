@@ -1,0 +1,22 @@
+[
+  {
+    "id": "master_ep01_p2",
+    "edit_target": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png",
+    "requested_additional_candidates": 1,
+    "existing_completed_rounds": 3,
+    "requires_explicit_retry_exception": true,
+    "change_zh": "仅修江砚双手及必要前臂姿态：左手握透明瓶身，右手扶仍拧紧在瓶口上的白瓶盖；两只手和瓶口在身前清楚可辨。",
+    "preserve_zh": "人物身份、发型、服装、门外站位、陈野、门柱铁门、车辆、机位和光线保持原图。",
+    "status": "approved_one_additional_local_edit"
+  },
+  {
+    "id": "master_ep01_p3",
+    "edit_target": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png",
+    "requested_additional_candidates": 1,
+    "existing_completed_rounds": 3,
+    "requires_explicit_retry_exception": true,
+    "change_zh": "仅修江砚双手及必要前臂姿态：左手握开口透明瓶，右手单独拿已取下的白瓶盖；两只手和瓶口在身前清楚可辨。",
+    "preserve_zh": "人物身份、发型、服装、门外站位、陈野、门柱铁门、车辆、机位和光线保持原图。",
+    "status": "approved_one_additional_local_edit"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "api_key": "把 MiniMax 开放平台的 API key 填在这里，然后把文件名改成 minimax_config.json（已 gitignore）",
+  "region": "global"
+}

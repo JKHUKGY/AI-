@@ -1,0 +1,36 @@
+{
+  "id": "ep01_镜18",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-7a5f430d-4070-4548-a678-a739ec24bc99.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_continuity.json",
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "真实B机位已实现：左车队、右上挑檐、阴影在右，母亲左侧朝右行走，3旅客齐全，身份服装正确。江砚却占右侧约40%宽，完整后脑、肩、大片躯干入画；批准卡要求身体大部分在框外，仅右缘虚焦后肩/包边。母亲行走全身可见符合本轮卡对更远层姿态的澄清，不作为退回原因。",
+      "fix_instruction": "保持已正确B机位与母亲/3旅客，把相机旁的江砚身体移至右画框之外，右边界截过后肩与包体，仅留局部虚焦边缘。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_single.json",
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+      "verdict": "fail",
+      "reason": "B反打左车辆右挑檐、苏慧左侧朝右全身行走及三旅客远层正确；江砚完整后脑、颈部与大片上身占右侧约40%画宽，没有成为身体主体在画外的局部后肩及包边。",
+      "fix_instruction": "江砚整体右移到画外，仅后肩与包体窄边保留在右侧取景边界，维持苏慧左远层与B空间。",
+      "card_field": "framing.crop_zh; background_people[江砚].posture_zh; background_people[江砚].action_zh"
+    }
+  ],
+  "review_zh": "真实B机位已实现：左车队、右上挑檐、阴影在右，母亲左侧朝右行走，3旅客齐全，身份服装正确。江砚却占右侧约40%宽，完整后脑、肩、大片躯干入画；批准卡要求身体大部分在框外，仅右缘虚焦后肩/包边。母亲行走全身可见符合本轮卡对更远层姿态的澄清，不作为退回原因。；B反打左车辆右挑檐、苏慧左侧朝右全身行走及三旅客远层正确；江砚完整后脑、颈部与大片上身占右侧约40%画宽，没有成为身体主体在画外的局部后肩及包边。",
+  "generator_agent_id": "/root/generate_villa_round3",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_retry_a.json"
+}

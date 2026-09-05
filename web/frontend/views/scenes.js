@@ -2,21 +2,20 @@ window.Views = window.Views || {};
 
 Views.scenes = async function scenes(app, project) {
   const data = await API.scenes(project);
-  if (!data.exists) {
-    app.innerHTML = '<div class="empty-hint">这个项目还没有场景设计文档（scenes.md）。</div>';
-    return;
-  }
   app.innerHTML = `
     <h1>${UI.esc(project)} · 场景设计</h1>
-    <div class="card">${data.intro_html}</div>
+    <div class="manage-content"></div>
+    <div class="card">${data.intro_html || '还没有场景，点击“新增场景”开始。'}</div>
     <div id="sceneList"></div>
   `;
   const listEl = document.getElementById('sceneList');
-  data.scenes.forEach((sec) => {
+  ContentEditor.toolbar(app.querySelector('.manage-content'), project, 'scene');
+  (data.scenes || []).forEach((sec) => {
     const block = document.createElement('div');
     block.className = 'figure-block';
     block.innerHTML = `<h2>${UI.esc(sec.title)}</h2><div class="sec-mount"></div><div class="jobs-mount"></div>`;
     listEl.appendChild(block);
+    ContentEditor.deleteButton(block.querySelector('h2'), project, {kind:'scene',title:sec.title});
     UI.mountEditableSection(block.querySelector('.sec-mount'), {
       text: sec.body,
       html: sec.html,

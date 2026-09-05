@@ -1,0 +1,8 @@
+{
+  "transformer_path": "./checkpoints/transformer.safetensors",
+  "text_encoder_path": "./checkpoints/text_encoder.safetensors",
+  "video_vae_path": "./checkpoints/video_vae.safetensors",
+  "audio_vae_path": "./checkpoints/audio_vae.safetensors",
+  "spatial_upsampler_path": "./checkpoints/spatial_upsampler.safetensors",
+  "union_lora_path": "./checkpoints/union_lora.safetensors"
+}

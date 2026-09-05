@@ -1,0 +1,32 @@
+{
+  "id": "ep01_镜37",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-3dcf3840-9a84-4db5-8ca8-72d82f3d00d4.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_b.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_continuity.json",
+      "id": "ep01_镜37",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "verdict": "fail",
+      "reason": "江砚黑短发、灰蓝衬衫、空肩、略仰视右前景母亲的闭唇克制心酸均延续本镜00与r2主帧；窗在身后、床左、床头灯未亮，A方向与36的闭门B方向形成正确反打，没有把忍让剧情演成已识破骗局。取景仍有约18%头顶空白，发顶至下颏约37%画高，完整胸袋及以下躯干仍入画，母亲右下肩背占约四成画宽；未完成批准胸上截线与窄肩缘。",
+      "fix_instruction": "同镜放大并上移，头顶约5%、头部约50%，下缘截胸口；右前景苏慧整体再移出画外只留窄虚焦发丝肩弧。保留江砚轻仰视坐姿、闭唇表情、窗与灭灯状态。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_single.json",
+      "id": "ep01_镜37",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "verdict": "fail",
+      "reason": "身份、坐姿上仰看母亲、克制闭嘴、北窗日光及未亮灯保持；但顶空约18%、头高约38%，完整胸袋与胸下躯干保留，右下母亲肩背宽約42%，未达到5%顶空/头高约50%/10–15%窄过肩。",
+      "correction_zh": "按本报告next_round_plans给出的同镜框收紧，发顶留5%、头高约50%、胸口截断；右缘保留10–15%虚焦发丝后肩，背景只随原画面裁取，不复制被裁出的人员或家具。"
+    }
+  ],
+  "review_zh": "江砚黑短发、灰蓝衬衫、空肩、略仰视右前景母亲的闭唇克制心酸均延续本镜00与r2主帧；窗在身后、床左、床头灯未亮，A方向与36的闭门B方向形成正确反打，没有把忍让剧情演成已识破骗局。取景仍有约18%头顶空白，发顶至下颏约37%画高，完整胸袋及以下躯干仍入画，母亲右下肩背占约四成画宽；未完成批准胸上截线与窄肩缘。；身份、坐姿上仰看母亲、克制闭嘴、北窗日光及未亮灯保持；但顶空约18%、头高约38%，完整胸袋与胸下躯干保留，右下母亲肩背宽約42%，未达到5%顶空/头高约50%/10–15%窄过肩。"
+}

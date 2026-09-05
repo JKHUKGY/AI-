@@ -1,0 +1,98 @@
+{
+  "agent_id": "/root/review_keyframes_retry_single",
+  "status": "completed",
+  "updated_at": "2026-09-05T08:33:08.896943+00:00",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+      "verdict": "fail",
+      "reason": "江砚头顶约画高26%、鞋底约85%，全身约59%而非卡片40%；虽苏慧远层、三旅客、A向左玻璃右车道与左纸右箱均符合，但环境全景主体比例明确未实现。",
+      "fix_instruction": "相机后退/主体缩小至头顶约45%、鞋底85%，以A空底板决定构图，主帧仅提供角色与道具。",
+      "card_field": "framing.subject_frac; framing.crop_zh; framing.plate_crop_zh"
+    },
+    {
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png",
+      "verdict": "fail",
+      "reason": "江砚头顶约画高26%、鞋底约85%，全身约59%而非卡片40%；虽苏慧远层、三旅客、A向左玻璃右车道与左纸右箱均符合，但环境全景主体比例明确未实现。",
+      "fix_instruction": "相机后退/主体缩小至头顶约45%、鞋底85%，以A空底板决定构图，主帧仅提供角色与道具。",
+      "card_field": "framing.subject_frac; framing.crop_zh; framing.plate_crop_zh"
+    },
+    {
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+      "verdict": "fail",
+      "reason": "B反打左车辆右挑檐、苏慧左侧朝右全身行走及三旅客远层正确；江砚完整后脑、颈部与大片上身占右侧约40%画宽，没有成为身体主体在画外的局部后肩及包边。",
+      "fix_instruction": "江砚整体右移到画外，仅后肩与包体窄边保留在右侧取景边界，维持苏慧左远层与B空间。",
+      "card_field": "framing.crop_zh; background_people[江砚].posture_zh; background_people[江砚].action_zh"
+    },
+    {
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png",
+      "verdict": "fail",
+      "reason": "B反打左白小巴黄车、右挑檐与苏慧左侧朝右行走、三旅客远层保持；江砚右前景却显示大半后脑、整侧肩、上臂/前臂与大片登山包，约40%画宽，身体主体未在画外，违背局部后肩/包边过肩卡。",
+      "fix_instruction": "把江砚主体移至右侧画外，右边界只留虚焦后肩与包体边缘，保持B底板左右方向和苏慧左远层。",
+      "card_field": "framing.crop_zh; background_people[江砚].posture_zh; background_people[江砚].action_zh"
+    },
+    {
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "verdict": "fail",
+      "reason": "A玻璃挑檐方向、江砚身份、向右三分之四正面、闭嘴和双肩包带均正确；头顶约5%，但底部到腹部，完整胸袋下仍留约18%画高衣身并可见肘部，未按胸口下缘裁切。",
+      "fix_instruction": "继续收紧为胸口下缘截断，保留头顶约5%，持纸手/拉杆和胸下身体位于画外。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh"
+    },
+    {
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "verdict": "pass",
+      "reason": "胸上近景头顶约5%，底边在胸部下缘，脸与双肩占主要画面；江砚外貌、灰蓝衬衫、双肩磨旧橄榄包带匹配参考，三分之四正面向右确认、嘴唇闭合。A方向左玻璃与上方挑檐一致，纸/箱/双手及其他在场者均依卡画外，未添加字幕或剧情。",
+      "fix_instruction": "",
+      "card_field": ""
+    },
+    {
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+      "verdict": "fail",
+      "reason": "B反打左白小巴黄车、右上挑檐以及母子身份与尚未接包状态正确；苏慧头顶约20%、画面取到腰腹部，不是卡片胸上近景；江砚后脑、肩身占右侧约45%画宽，明显超过15%上限。",
+      "fix_instruction": "相机推进苏慧胸上，头顶留约5%，底边胸口下缘；江砚右移至画外，仅最右15%内留虚焦后肩和发丝边缘。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[江砚].posture_zh"
+    },
+    {
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+      "verdict": "fail",
+      "reason": "B反打左白小巴黄车、右上挑檐以及母子身份与尚未接包状态正确；苏慧头顶约23%、画面取到腰腹部，不是卡片胸上近景；江砚后脑、肩身占右侧约55%画宽，明显超过15%上限。",
+      "fix_instruction": "相机推进苏慧胸上，头顶留约5%，底边胸口下缘；江砚右移至画外，仅最右15%内留虚焦后肩和发丝边缘。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[江砚].posture_zh"
+    }
+  ],
+  "pending_images": [],
+  "independence": "逐张view_image原图及参考；未读取他人审查报告；未生成图片。",
+  "counts": {
+    "reviewed": 8,
+    "pass": 1,
+    "fail": 7,
+    "unclear": 0
+  }
+}

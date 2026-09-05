@@ -7,8 +7,8 @@ Type=simple
 # 换成实际部署用户和仓库路径
 User=deploy
 WorkingDirectory=/home/deploy/AI-
-# claude/codex 装在 ~/.local/bin 或 npm 全局目录，systemd 默认 PATH 不含用户
-# home 目录，不加这条 AI 改写提示词功能会报"找不到 claude 命令"。
+# codex 装在 ~/.local/bin 或 npm 全局目录，systemd 的 PATH 需包含安装位置。
+# 可选：Environment="CODEX_BIN=/实际路径/codex"、"CODEX_PROMPT_MODEL=模型名"
 Environment="PATH=/home/deploy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 ExecStart=/usr/bin/python3 web/server/app.py --port 8000 --secure-cookies
 Restart=on-failure

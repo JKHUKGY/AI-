@@ -1,0 +1,37 @@
+{
+  "id": "master_ep01_p2",
+  "round": 4,
+  "candidate": 6,
+  "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-cb0a636a-0e41-4652-9267-c67c01f91463.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+  "status": "rejected",
+  "reviewed": true,
+  "review_zh": "门外两人站位、陈野靠车及人物服装保留；江砚身前只清楚看见近侧弯曲手臂和一只小瓶，远侧手与瓶口重叠且被躯干遮挡，不能追踪到两只手各自从肩肘连接至瓶身和白盖；白盖是否仍拧紧亦不足以确认。；角色各一人、灰蓝衬衫/棕外衫及门外红土位置、右侧越野车和正午光可对应参考。江砚胸前仅清晰见一侧屈肘和瓶，另一只手及扶盖接触关系被遮挡，不能确认人体左手握瓶、右手扶仍拧紧白盖。",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_supplement_single",
+      "unit_id": "master_ep01_p2",
+      "round": 4,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+      "verdict": "unclear",
+      "reason": "门外两人站位、陈野靠车及人物服装保留；江砚身前只清楚看见近侧弯曲手臂和一只小瓶，远侧手与瓶口重叠且被躯干遮挡，不能追踪到两只手各自从肩肘连接至瓶身和白盖；白盖是否仍拧紧亦不足以确认。",
+      "fix": "把左肩至左肘至左手的连接和左手所握瓶身清楚展示在胸前；右臂在另一高度弯曲，右手独立可辨。p2右手扶仍盖紧瓶口的白盖；p3右手单独拿取下的白盖。已追加一轮，不自行再生成。",
+      "fix_instruction": "同 fix；需重新安排前臂可见性并保留门外站位，不能用遮挡推断通过。",
+      "card_field": "scene_beats[p2].blocking[江砚].holding_zh / action_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_continuity",
+      "unit_id": "master_ep01_p2",
+      "round": 4,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+      "verdict": "unclear",
+      "reason": "角色各一人、灰蓝衬衫/棕外衫及门外红土位置、右侧越野车和正午光可对应参考。江砚胸前仅清晰见一侧屈肘和瓶，另一只手及扶盖接触关系被遮挡，不能确认人体左手握瓶、右手扶仍拧紧白盖。",
+      "fix": "让左前臂与右前臂在轮廓上分开，右手在瓶口白盖处，左手在瓶身中段；保留两人的门外位置。",
+      "card_field": "scene_beats[].blocking[江砚/苏慧].holding_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    }
+  ]
+}

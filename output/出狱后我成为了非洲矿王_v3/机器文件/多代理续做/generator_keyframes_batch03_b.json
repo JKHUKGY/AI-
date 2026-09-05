@@ -1,0 +1,25 @@
+{
+  "agent_id": "/root/generate_keyframes_batch02_b",
+  "job_source": "keyframes_batch03_b.json",
+  "viewed_refs": [
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "status": "generating",
+  "results": [
+    {
+      "id": "ep01_镜37",
+      "round": 1,
+      "candidate": 0,
+      "source": "/home/codespace/.codex/generated_images/01a070bc-9f32-7641-bdc2-b805f6ba50f5/exec-365ea4af-f569-4f1f-abf0-dd8119a6f7ab.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+      "status": "pending_review",
+      "agent_id": "/root/generate_keyframes_batch02_b",
+      "started_at": "2026-09-05T08:50:25.325Z",
+      "finished_at": "2026-09-05T08:51:26.715Z"
+    }
+  ],
+  "errors": []
+}

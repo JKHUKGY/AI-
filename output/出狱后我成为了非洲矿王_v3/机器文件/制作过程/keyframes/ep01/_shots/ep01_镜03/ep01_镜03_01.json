@@ -1,0 +1,12 @@
+{
+  "id": "ep01_镜03",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-3df6d2de-bb63-46ea-a73f-5319534c6d18.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_01.png",
+  "status": "pending_review",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_prison_a.json",
+  "independent_reviews": [],
+  "review_zh": ""
+}

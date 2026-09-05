@@ -1,0 +1,47 @@
+{
+  "id": "ep01_镜34",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-5c2aefaf-f95d-4987-a98b-7de02c3b1358.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_batch05_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_continuity.json",
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "四人齐全，母子朝A左侧通道，刘兰仍坐右后北段举指甲、顾瑶坐右前南段刷手机，身份衣着、吊灯泳池沙发和混合日光基本延续。苏慧近侧左手拎包、远侧右手扶肩可辨，符合卡；但江砚显示左侧面，近侧左臂一直连到握箱杆的手，箱子改由左手拉，违背右手持箱且江砚应三分之四侧背。登山包从手到包底仅约苏慧身高四分之一，比机场选定大包约三分之一身高明显缩小。",
+      "fix_instruction": "保持四人、沙发座位与离场方向，江砚再转为三分之四侧背，右臂明确连到右手箱杆，左臂空手；苏慧仍左手提包右手扶肩，将包恢复选定机场大橄榄登山包的体积和长翻盖轮廓，包底落至小腿区域。",
+      "card_field": [
+        "people[0].camera_relation",
+        "people[0].action_zh",
+        "people[1].action_zh",
+        "props_zh"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_single.json",
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+      "verdict": "fail",
+      "reason": "四人齐全且母子向左通道离开、苏慧左手包右手扶后肩、沙发刘兰北顾瑶南均成立，人物全身约40%与构图基本吻合。但江砚画面显示左侧面，靠镜头左臂垂下握箱杆，成为左手拉箱；主卡要求右手，且原定三分之四背身被纯侧面替代。场景左侧额外出现高大黑框门洞，原底板左侧开放楼梯及靠北窄门关系被重构。",
+      "fix_instruction": "江砚身体转为三分之四背朝镜头，明确远侧右手握箱杆、近侧左手空着；保持苏慧左右手与两名坐者。沿用A底板左开放楼梯和原窄门的位置，将母子引向原通道，避免在靠镜头左墙新增高门洞。",
+      "card_field": [
+        "people[0].camera_relation",
+        "people[0].posture_zh",
+        "people[0].action_zh",
+        "framing.plate_crop_zh",
+        "plate_image"
+      ]
+    }
+  ],
+  "review_zh": "四人齐全，母子朝A左侧通道，刘兰仍坐右后北段举指甲、顾瑶坐右前南段刷手机，身份衣着、吊灯泳池沙发和混合日光基本延续。苏慧近侧左手拎包、远侧右手扶肩可辨，符合卡；但江砚显示左侧面，近侧左臂一直连到握箱杆的手，箱子改由左手拉，违背右手持箱且江砚应三分之四侧背。登山包从手到包底仅约苏慧身高四分之一，比机场选定大包约三分之一身高明显缩小。；四人齐全且母子向左通道离开、苏慧左手包右手扶后肩、沙发刘兰北顾瑶南均成立，人物全身约40%与构图基本吻合。但江砚画面显示左侧面，靠镜头左臂垂下握箱杆，成为左手拉箱；主卡要求右手，且原定三分之四背身被纯侧面替代。场景左侧额外出现高大黑框门洞，原底板左侧开放楼梯及靠北窄门关系被重构。",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch05_b.json"
+}

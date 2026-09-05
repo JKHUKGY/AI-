@@ -1,0 +1,26 @@
+[
+  {
+    "old": "storyboard",
+    "new": "机器文件/制作过程/storyboard",
+    "verified_original_files": 8,
+    "preserved_symlinks": 0
+  },
+  {
+    "old": "assets",
+    "new": "机器文件/制作过程/assets",
+    "verified_original_files": 52,
+    "preserved_symlinks": 34
+  },
+  {
+    "old": "keyframes",
+    "new": "机器文件/制作过程/keyframes",
+    "verified_original_files": 71,
+    "preserved_symlinks": 0
+  },
+  {
+    "old": "videos",
+    "new": "机器文件/制作过程/videos",
+    "verified_original_files": 0,
+    "preserved_symlinks": 0
+  }
+]

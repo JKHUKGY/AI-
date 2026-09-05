@@ -1,0 +1,47 @@
+{
+  "required_distinct_subagents": 4,
+  "host_max_active_children": 3,
+  "observed_max_active_children": 3,
+  "units": [
+    1,
+    9,
+    14,
+    38
+  ],
+  "round": 2,
+  "agents": [
+    {
+      "agent_id": "/root/generate_edits_09_14",
+      "role": "Generator A",
+      "deliverables": [
+        "generator_edits_round2_09_14.json"
+      ]
+    },
+    {
+      "agent_id": "/root/generate_keyframes_batch04_b",
+      "role": "Generator B",
+      "deliverables": [
+        "generator_edits_round2_38.json",
+        "generator_standard_round2_01.json"
+      ]
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "role": "Reviewer A",
+      "deliverables": [
+        "review_keyframes_round2_next_single.json"
+      ]
+    },
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "role": "Reviewer B",
+      "deliverables": [
+        "review_keyframes_edits_round2_09_14_38_continuity.json"
+      ]
+    }
+  ],
+  "status": "completed",
+  "images_generated": 8,
+  "selected": 0,
+  "four_agent_requirement_met": true
+}

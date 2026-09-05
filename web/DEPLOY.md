@@ -92,18 +92,23 @@ python3 server/app.py --port 8000 --secure-cookies
 # 另开一个终端 curl 一下确认能通，再 Ctrl+C 停掉，转成 systemd 常驻
 ```
 
-## 4. 装 Codex CLI 并登录（保留"重新生成图片"功能必须做这步）
+## 4. 装 Codex CLI 并登录（写提示词、重新生成图片都需要）
 
 ```bash
 sudo apt install -y npm   # 没有 npm 的话
 sudo npm install -g @openai/codex
 codex login --device-auth
+codex login status
 ```
 
 会打印一个链接+一次性代码，**在你自己电脑的浏览器里打开**，用有 Plus/
 Pro/Team 订阅的 ChatGPT 账号登录授权，跟本机是否有浏览器无关。登录凭证
-存在 `~/.codex/`，跟着这个 `deploy` 用户的 home 目录，长期有效不用每次
-重新登录（除非官方要求重新认证）。
+存在 `~/.codex/`，跟着这个 `deploy` 用户的 home 目录。网站必须以同一用户
+运行；凭证刷新由 CLI 管理，过期时重新登录，不要把 token 放到前端。
+
+提示词功能已在 Codex CLI 0.152.1 上验证，需支持 `--ignore-user-config` 和
+`--ephemeral`。使用服务器登录账号的 Codex 额度。可在 systemd 配置中用
+`CODEX_BIN` 指定命令路径、用 `CODEX_PROMPT_MODEL` 指定模型。
 
 ## 5. 用 systemd 常驻
 
@@ -141,10 +146,23 @@ sudo certbot --nginx -d scriptwriter-jia.eastasia.cloudapp.azure.com   # 自动�
 
 ## 7. 验收清单
 
+侧边问答独立部署：安装 `web/deploy/scriptwriter-help.service` 到 `/etc/systemd/system/`，
+执行 `sudo systemctl daemon-reload`、`sudo systemctl enable --now scriptwriter-help`。
+在 nginx 的 HTTPS server 中增加 `nginx.conf.example` 的 `/api/help/question` 精确匹配 location，
+指向 127.0.0.1:8001，超时 110 秒。检查 nginx 配置后 reload，不必重启正在生成内容的主网站。
+问答固定使用 `gpt-5.6-luna`，每次最多 90 秒；服务沿用 deploy 用户的 Codex 登录态。
+
 - [ ] `https://你的域名` 能打开登录页，账号密码能登录
-- [ ] 找一张已有图片点"重新生成"，确认服务器上真的在跑 `codex exec`
+- [ ] 使用帮助能回答操作问题，未登录请求及无权访问的项目请求被拒绝
+- [ ] nginx 反代配置包含 `proxy_read_timeout 150s;`（后端 Codex 超时 120 秒），
+      以及 `client_max_body_size 8m;`（剧本上传含 base64 开销）；
+      修改现有站点时保留原有 HTTPS 配置，运行 `sudo nginx -t` 后 reload
+- [ ] 图片“重新生成…”面板中显示历史提示词来源；选择同栏目参考图，
+      选择并载入历史版本，点击“Codex 按原文改写”，确认新文本回到编辑框并保存版本
+- [ ] 新建测试项目导入剧本，文字生成完成后能看人物、场景和分镜表，且没有图片/租卡执行
+- [ ] 图片预览时没有生成子进程；用户勾选批准并提交后才启动 `codex exec`
       （`journalctl -u scriptwriter-web -f` 能看到相关输出），几分钟后
-      图片更新
+      图片更新；重复提交同一审批不会再启动任务。实际图片验收需用户明确批准
 - [ ] 把账号分发给各个剧本家，每人自己的用户名密码（不要共用一个账号，
       改密码撤权限时才不会互相影响）
 - [ ] 确认 `output/<项目>/_web_state/review.json` 会随着评论/修改正常

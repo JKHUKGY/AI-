@@ -1,0 +1,81 @@
+---
+name: loop-picture-generation
+description: AI短剧多代理出图与独立审查：每批至少四个真实subagent，默认两名生成、两名单图与连戏审查；单任务用一名生成加三名审查。承接角色、场景、场次主帧及关键帧任务，按宿主槽位分批运行，保留每轮1→2→3和三轮上限。实际出图时必用。
+---
+
+## Codex 运行适配（业务工作流已按用户要求更新）
+
+- 在本项目根目录运行；此 skill 的 Codex 入口为 `.agents/skills/loop-picture-generation/SKILL.md`，用 `$loop-picture-generation` 调用。
+- 原文中的 Read：文本用文件读取工具，图片用图片查看工具；Bash 用 shell，Write/Edit 用文件编辑工具，Glob/Grep 用文件搜索工具；WebFetch/WebSearch 用可用的网页检索工具。
+- 原文提到其他 skill 时，读取同级 `../<skill-name>/SKILL.md`。Task/subagent/Generator/Reviewer 对应 Codex 的独立子代理能力；保留原来的职责隔离、轮次和预算，实际并发受宿主上限限制。能力缺失时报告限制，不声称已经执行。
+- 原文相对于 skill 的 references/、scripts/ 路径仍相对于本目录。原文命令里的 `.claude/skills/` 脚本及文档路径在 Codex 执行时映射到 `.agents/skills/`；项目素材、输出和私有配置文件的路径保持原意。脚本内部实现及默认配置保持原样，源目录与目标目录共存。
+- 原文的确认节点、输入要求和业务规则保持不变。本文只适配执行宿主，不自动执行生成、租卡或 API 调用。
+
+<!-- ORIGINAL-BODY-START -->
+
+# 至少四个 subagent 的循环出图工作流
+
+本 skill 承接 `short-drama-image-gen` 的角色／场景任务，以及
+`short-drama-keyframe-gen` 的场次主帧／逐镜关键帧任务。提示词和验收标准
+仍由上游 skill 提供；本 skill 负责实际生成、独立审查、返工与结果登记。
+
+## 强制人员配置
+
+**每次获准执行的出图批次，必须至少有四个不同的真实 subagent 完成实质工作。**
+主代理不计入四个；四个角色名称、四次工具调用、四个 CLI 进程或同一代理切换身份
+均不等于四个 subagent。记录宿主返回的真实 agent ID 和各自交付物。
+
+- 通常使用 **Generator A、Generator B、Reviewer A、Reviewer B**。
+  两名 Generator 分担互不依赖的 unit，只生成；Reviewer A 逐张审图，
+  Reviewer B 独立检查角色／道具／空间／光线的连续性，并复核拟选图。
+- 只有一个可生成 unit（包括用户要求“只出一张”）时，使用
+  **一个 Generator + 三个不同的 Reviewer**，分别做原文与构图核对、
+  身份／道具／空间一致性检查、最终独立复核。仍只生成原定张数。
+- 每张拟选图必须通过所有被分配的审查；Generator 不审自己的产物。
+  主代理只调度、按反馈修改卡片、运行装配校验并合并登记，不能替代缺席的审查者。
+- 四个是批次内实际参与的不同子代理总数，**不是要求同时运行四个**。
+  先检查宿主实际并发和生命周期能力。当前若总共只允许四个运行代理（包含主代理），
+  就分批运行，任意时刻最多三个 subagent；生成者完成后再调度新的审查者。
+  仅在宿主确实支持时关闭／释放代理。若无法累计创建四个独立代理，报告能力不足，
+  不把不足四人的流程声称为已满足要求，也不自行修改权限或并发配置。
+
+## 输入与授权
+
+范围沿用用户已指定的剧目、集数和镜号，不重新询问已有确认。
+关键帧先完成上游阶段一和提示词确认；本规则同样适用于确认后的场次主帧生成，
+不允许主代理先自行生成主帧，再仅把逐镜图交给 subagent。
+现有出图批准有效；修改 skill 本身不触发出图，也不重置已达到的重试上限。
+
+队列、人员及历史记录按 [references/units_schema.md](references/units_schema.md) 建立。
+关键帧的 `storyboard_ref` 使用 `script_ref_zh` 的剧本原文，另传已批准卡片、
+机位底板、人物基准和场次主帧。角色／场景使用对应档案原文。
+
+## 执行
+
+1. 读取 [references/batch_loop.md](references/batch_loop.md)，核对四人配置、
+   可用槽位、依赖、已有轮次及任务写入目录。每名代理只写其被分配的产物。
+2. 按 [references/generator_agent.md](references/generator_agent.md) 派发生成任务。
+   Generator 使用可用且获准的图像工具或原有生成脚本，返回实际文件与调用记录。
+3. 图片落盘后，按 [references/reviewer_agent.md](references/reviewer_agent.md)
+   派给不同的审查者。审查者必须实际打开原图及相关参考，不能只读生成者的文字报告。
+4. 未通过时，将具体反馈写回原卡片，再机械装配新 prompt；不手改派生提示词。
+   无卡片的角色／场景任务更新源 jobs。原文、已确认画风和角色设定不能为迁就候选而修改。
+5. 逐镜与整场审查均通过后，主代理合并结果；记录所有真实 agent ID、候选路径、
+   每位 Reviewer 的判断、修改字段和生成次数，写入 `selected.md` 或 `keyframes.md`。
+
+## 轮次与完成判定
+
+保持每个 unit **首轮1张、第二轮2张、第三轮3张**，最多三轮；人数增加不增加
+生成份数。复核已有图片不算新生成轮；技术性失败单独记录实际产图数量。
+既有候选与轮次必须继承，不能换代理或重建队列来清零重试次数。
+
+第三轮仍未通过时，该 unit 标为 `capped`，保留未通过原因与 `best_candidate`，
+`selected_file` 留空；立即汇报并停止该 unit 的生成。继续已有授权且不依赖它的任务；
+依赖未通过主帧的镜头保持阻塞。不能把“结束处理／腾出槽位”写成“验收通过”。
+
+汇报同时列出：实际完成工作的 subagent 数量与分工、实际最高并发、生成张数、
+通过／到限／依赖阻塞的 unit 及文件路径。参与不足四个或缺少独立审查时，不宣称本流程完成。
+
+## 人读与机器产物分开
+
+产物整理与每次汇报前执行 [references/output_layout.md](references/output_layout.md)，维护分镜表、已选图片和进度的阅读入口。

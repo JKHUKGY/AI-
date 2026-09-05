@@ -1,0 +1,38 @@
+{
+  "id": "ep01_镜17",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-13ecff40-da04-423f-b797-228c97bb2f93.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_continuity.json",
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "身份、灰蓝衬衫/旧白裙灰围裙、大橄榄包、右手深灰箱/左手地址纸、A机位左玻璃右车道均与基准一致。母亲缩到右远层，灰衫男中央、蓝裙女左、米色衫背包男右共3名旅客齐全，原文的陌生机场与走近关系成立。唯一明确不符为批准全景的主体比例：江砚头顶约画高26%，鞋底约85%，全身约占59%，明显超过卡片subject_frac=0.4。脚下约15%的留白正确。",
+      "fix_instruction": "保留已正确的身份、道具、母亲远距和三旅客；按批准全景把江砚全身调整为画高约40%，头脚完整，脚下仍留约15%，增加上部环境，不把母亲拉到前景。",
+      "card_field": "framing.subject_frac; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_single.json",
+      "id": "ep01_镜17",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+      "round": 1,
+      "verdict": "pass",
+      "reason": "江砚左侧全身侧身读地址纸，左手纸、右手扶细棱深灰硬箱、大橄榄包仍背在双肩；苏慧在右远景向左前方江砚走近，脸和身体明显小于江砚。蓝裙女旅客左远、灰衣男旅客中远、米色衬衫背包男旅客右远均存在，未遮挡主脸。左玻璃右栏杆车道的A机位、挑檐阴影与右侧热带硬光延续，头脚完整且脚下约15%余地，符合机场陌生感先于母子重逢的情节。",
+      "non_blocking_observation": "江砚实际约占画高六成，比 subject_frac 0.4 更大；仍是头脚完整、保留足够环境与纵深的全景。",
+      "fix_instruction": "",
+      "card_field": ""
+    }
+  ],
+  "review_zh": "身份、灰蓝衬衫/旧白裙灰围裙、大橄榄包、右手深灰箱/左手地址纸、A机位左玻璃右车道均与基准一致。母亲缩到右远层，灰衫男中央、蓝裙女左、米色衫背包男右共3名旅客齐全，原文的陌生机场与走近关系成立。唯一明确不符为批准全景的主体比例：江砚头顶约画高26%，鞋底约85%，全身约占59%，明显超过卡片subject_frac=0.4。脚下约15%的留白正确。；江砚左侧全身侧身读地址纸，左手纸、右手扶细棱深灰硬箱、大橄榄包仍背在双肩；苏慧在右远景向左前方江砚走近，脸和身体明显小于江砚。蓝裙女旅客左远、灰衣男旅客中远、米色衬衫背包男旅客右远均存在，未遮挡主脸。左玻璃右栏杆车道的A机位、挑檐阴影与右侧热带硬光延续，头脚完整且脚下约15%余地，符合机场陌生感先于母子重逢的情节。",
+  "generator_agent_id": "/root/generate_villa_round3",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_a.json"
+}

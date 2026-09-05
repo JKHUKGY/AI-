@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜09",
+    "prompt": "Make ONE localized edit to this photo. 仅编辑画面左下陈野棕衣肩背及紧邻背景，把该肩片向画框左外移，让其从左边缘切入的最大宽度约为画宽15%，形成窄虚焦肩弧；目前多占的15%区域恢复为同一高度原有监狱铁栏与虚焦院景。江砚头顶、脸部大小和位置、全部五官与神态、衬衫、头发、右门柱、背景视角、光线及整张9:16取景保持原位置和比例；无需继续放大主体。\nPreserve the sharp main person exactly: same face, expression, eye direction, hairstyle, clothes, scale and position. Preserve the current framing, lighting, and background camera direction. Keep 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_edge_plans_round3.json",
+    "script_ref_zh": "script_source.txt 第44行「江砚（喝了口水，喉结滚动，眼神一点点冷下来）：我猜到是他。」——江砚早有判断，喝水后才平静说出。"
+  },
+  {
+    "id": "ep01_镜14",
+    "prompt": "Make ONE localized edit to this photo. 仅编辑左下陈野棕衣肩片与紧邻背景，把棕色肩弧向左框外移，使其最宽处从左边缘伸入约15%画宽；腾出的区域补回原有同高度铁栏和虚焦院景。保持陈野左上已有窄头侧边、江砚全脸与平静笃定神态、头顶留白、主体大小和位置、右门柱、灰蓝衬衫及整体机位完全不动；无需重新裁切或继续放大江砚。\nPreserve the sharp main person exactly: same face, expression, eye direction, hairstyle, clothes, scale and position. Preserve the current framing, lighting, and background camera direction. Keep 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_edge_plans_round3.json",
+    "script_ref_zh": "script_source.txt 第49行「江砚（摇了摇头，语气平静笃定）：不回了，自己干。」——本场反转：主动离开顾家，决心自己创业。"
+  }
+]

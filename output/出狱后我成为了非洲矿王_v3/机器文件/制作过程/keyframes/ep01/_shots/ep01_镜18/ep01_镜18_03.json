@@ -1,0 +1,38 @@
+{
+  "id": "ep01_镜18",
+  "round": 3,
+  "candidate": 3,
+  "source": "/home/codespace/.codex/generated_images/01a070b4-d857-7cf1-b020-04282e9751be/exec-4517ebf6-d3d0-48fb-b0e0-59758ed0cea1.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_03.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_continuity.json",
+      "id": "ep01_镜18",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_03.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "母亲旧布裙围裙、白发晒黑肤色及三名旅客连续；但挑檐在左上、白小巴在右后，和要求B反打左车队右上挑檐相反。江砚大段后脑、躯干及手臂入画，占右侧约40%，不是10%至15%的肩包窄条。",
+      "fix_instruction": "恢复B底板左车队右挑檐；江砚主体移至右框外，仅留右缘10%至15%的虚焦后肩与包侧。",
+      "card_field": [
+        "camera_zh",
+        "framing.crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_single.json",
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_03.png",
+      "verdict": "fail",
+      "reason": "挑檐位于左上、白小巴位于右后，和B底板左车右挑檐的场地侧别相反；江砚右前景呈现大半后脑及大片肩身和包，宽约40%以上，超过右缘10–15%的局部过肩。",
+      "fix_instruction": "保持B底板左车右挑檐，并将江砚主体移出右侧画框，只留10–15%肩缘及包边。",
+      "card_field": "camera_zh; framing.crop_zh; framing.plate_crop_zh; background_people[江砚].posture_zh"
+    }
+  ],
+  "review_zh": "母亲旧布裙围裙、白发晒黑肤色及三名旅客连续；但挑檐在左上、白小巴在右后，和要求B反打左车队右上挑檐相反。江砚大段后脑、躯干及手臂入画，占右侧约40%，不是10%至15%的肩包窄条。；挑檐位于左上、白小巴位于右后，和B底板左车右挑檐的场地侧别相反；江砚右前景呈现大半后脑及大片肩身和包，宽约40%以上，超过右缘10–15%的局部过肩。",
+  "generator_agent_id": "/root/generate_keyframes_round3_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_round3_b.json"
+}

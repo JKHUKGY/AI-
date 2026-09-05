@@ -1,0 +1,82 @@
+{
+  "agent_id": "/root/resume_review_room_continuity",
+  "role": "Reviewer B / independent continuity",
+  "status": "completed",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png"
+  ],
+  "source_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜35",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+      "verdict": "fail",
+      "reason": "实际为近乎全身双人画面，江砚鞋底、苏慧双脚及大量地面均可见，江砚头顶留白约11%，不符中景大腿中段裁切/约5%头顶。苏慧朝右三分之四正面，近相机的右臂垂下提包，远侧左手扶门；江砚背向相机的画面左侧手扶箱，即人物左手，均与卡片规定的苏慧左手提包/右手扶门、江砚右手扶箱相反。门确实半开，左空桌右床方向及人物身份、衣服、大橄榄包和竖棱灰箱材质可衔接；没有额外行李。",
+      "fix_instruction": "保持B机位、门半开和空桌，把镜头收至江砚头顶留约5%且下缘切在大腿中段；将扶箱动作交给江砚解剖学右手；苏慧解剖学左手提大橄榄包、右手触身后门扇，手臂归属明确。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[江砚].action_zh",
+        "people[苏慧].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜36",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、围裙、谨慎表情及面向江砚正确；后门已闭，白天柔光、B反打方向可从35衔接。实际画面上方约25%为空墙，苏慧从头拍到腹前交叠双手，非胸上紧密胸像；江砚整块后脑、耳和肩背占右侧大块画面，底部约半幅，超过卡片仅约15%的肩与发丝窄边。江砚身体下部在画外，静帧不足判断其已坐稳或正在坐下，不将其作为独立失败理由。道具按卡在画外，不要求硬塞。",
+      "fix_instruction": "按既定B方向改为苏慧胸上紧密胸像，头顶约5%、脸约画高50%、下缘截胸口，腹前手全部在画外；江砚仅在最右约15%内保留虚焦后肩与发丝，不出现大半后脑或宽背。保持母亲站立与儿子开始坐下的原卡动作。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[江砚].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜37",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份、发型、灰蓝衬衫正确，确坐床沿并克制看母亲，北窗白天与未点亮台灯、床左关系和r2主帧相符。实际头顶空约20%，下方出现腰、前臂和大腿，非胸口截止。苏慧后脑、侧脸和宽背占右侧大块，下半部接近半幅，明显超过约15%虚焦侧背肩窄边。因此剧情与空间方向可衔接，但景别及过肩比例不合卡。",
+      "fix_instruction": "维持A机位与左侧江砚朝右看母亲，收至头顶约5%、下缘胸口、脸约画高50%；苏慧仅最右约15%虚焦后肩与发丝边，不把腰、手或行李拉入画。保持窗日光和灯关。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[苏慧].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+      "verdict": "fail",
+      "reason": "江砚坐在左床沿望向母亲，表情心酸克制，衣服身份和两人留在日间房内与37连续。北窗仍是黑框日光；灯位置受人物遮挡，不据遮挡判亮灯。画面实际拍至江砚大腿、双前臂和手，头顶留白约23%，脸含发顶到下颏约20%画高，远低于卡片约50%；苏慧整个后脑、后背和腰占右半，非约15%窄边虚焦过肩。作为结尾近景，本图比37还稍松，不能满足胸上构图。",
+      "fix_instruction": "保持A机位、江砚左侧坐姿朝右看母亲及既有日光，将主体放大到头顶约5%、脸含发顶到下颏约50%画高、下边缘胸口截断；母亲仅最右约15%虚焦发丝与后肩窄边，手、腰、腿均在画框外，不改变剧情动作。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[苏慧].posture_zh"
+      ]
+    }
+  ],
+  "scene_review": {
+    "status": "fail",
+    "reason": "实际独立查看4候选+7参考共11张图片。35门半开带行李进房→36门闭母亲低声→37/38江砚坐床沿听母亲，B看南门与A看北窗的空间、角色和日光状态可衔接。35左右手与卡相反，35–38全部景别过宽，36–38还把前景肩拍成大块后脑/后背，故四张当前均不能入选。36腿部在画外，无法判其已经坐稳；按原卡保留将坐动作，不由r2主帧改成已坐。画外箱包、灯具不强求出现，也未依据遮挡新增失败理由。",
+    "pass_count": 0,
+    "fail_count": 4,
+    "unclear_count": 0,
+    "independent_review": true,
+    "other_reviews_read": false
+  }
+}

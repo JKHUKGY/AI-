@@ -1,0 +1,31 @@
+{
+  "required_distinct_subagents": 4,
+  "host_max_active_children": 3,
+  "observed_max_active_children": 3,
+  "units": [
+    2,
+    3,
+    15,
+    16
+  ],
+  "round": 2,
+  "agents": [
+    {
+      "agent_id": "/root/generate_keyframes_batch04_b",
+      "role": "Generator",
+      "deliverable": "generator_standard_round2_prison_a.json"
+    },
+    {
+      "agent_id": "/root/generate_prison_round2_b",
+      "role": "Generator",
+      "deliverable": "generator_standard_round2_prison_b.json"
+    },
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "role": "Reviewer continuity",
+      "deliverable": "review_keyframes_round2_prison_continuity.json"
+    }
+  ],
+  "status": "in_progress",
+  "fourth_reviewer": "pending_slot"
+}

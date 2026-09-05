@@ -1,0 +1,40 @@
+{
+  "id": "ep01_镜24",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070bc-9f32-7641-bdc2-b805f6ba50f5/exec-5080cc37-7274-4f60-9a08-5fcaa1f84a45.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_continuity.json",
+      "id": "ep01_镜24",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "苏慧身份、右手眼角、左手持橄榄包、勉强笑及江砚无包带状态可读。但画面为左玻璃、左上挑檐、右车队，使用A方向而非规定B反打左车队右上挑檐；下边缘至围裙腰带、左手和包体露出，脸约25%画高，江砚右前景头肩占约40%且清楚，明显偏离胸上窄虚焦过肩。",
+      "fix_instruction": "先以B反打紧底板纠正背景侧别；苏慧胸上取景保持右手在眼角，左手包留胸下框外；江砚仅约15%虚焦肩缘，双肩无包带。",
+      "card_field": [
+        "camera_zh",
+        "plate_image",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch02_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_single.json",
+      "id": "ep01_镜24",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、勉强笑意和右手抬至眼角、江砚无包带基本成立；但实际为腰上中近景，连围裙腰带、左手和包顶都入画。机位明确错为左侧玻璃幕墙与左上挑檐的A向背景，卡要求B反打紧底板的左车队、右上挑檐。背景旅客进入画面也不符合画外安排。",
+      "fix_instruction": "先确保使用SC06_B反打_紧底板并执行B机位，保留苏慧左、江砚右的正反打人物分配；取胸上紧密胸像，只保留右手眼角动作，左手箱包在画外，旅客不入此构图。",
+      "card_field": "plate_image; camera_zh; framing.crop_zh; framing.plate_crop_zh; present_off_frame"
+    }
+  ],
+  "review_zh": "苏慧身份、右手眼角、左手持橄榄包、勉强笑及江砚无包带状态可读。但画面为左玻璃、左上挑檐、右车队，使用A方向而非规定B反打左车队右上挑檐；下边缘至围裙腰带、左手和包体露出，脸约25%画高，江砚右前景头肩占约40%且清楚，明显偏离胸上窄虚焦过肩。；苏慧身份、勉强笑意和右手抬至眼角、江砚无包带基本成立；但实际为腰上中近景，连围裙腰带、左手和包顶都入画。机位明确错为左侧玻璃幕墙与左上挑檐的A向背景，卡要求B反打紧底板的左车队、右上挑檐。背景旅客进入画面也不符合画外安排。",
+  "generator_agent_id": "/root/generate_keyframes_batch02_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch02_b.json"
+}

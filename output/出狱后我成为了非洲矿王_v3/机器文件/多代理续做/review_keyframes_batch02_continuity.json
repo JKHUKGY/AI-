@@ -1,0 +1,92 @@
+{
+  "agent_id": "/root/review_keyframes_round3_continuity",
+  "review_scope": "Reviewer B：机场22–25首轮独立连续性审查，未读取其他审查报告",
+  "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png"
+  ],
+  "reused_reference_observations": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜22",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "人物身份、B反打左车队右挑檐、三名旅客、母亲双手待接及江砚包仍在双肩符合动作起点。但从背后左侧可连续追踪的左臂向下握箱拉杆，与右手扶箱、左手收纸相反；未见收纸动作。近端人物膝部以下仍入画，母亲脚完整，江砚顶空约21%，明显偏离5%顶空、近端大腿中段裁切。",
+      "fix_instruction": "锁定江砚右手握箱拉杆，左手收纸进左胸衣袋；保留包仍双肩背、母亲双手待接；重构图至近端人物大腿中段截断且头顶约5%。",
+      "card_field": [
+        "people[0].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "江砚身份与灰蓝衬衫、无肩带、望母亲白发成立；A机位左玻璃的方向和光线连续。下边缘露到衬衫下摆/腰腹，脸仅约25%画高，母亲右前景占约45%画幅且头肩大块入镜；不符合胸上、脸约50%、过肩约15%。箱与包持手在画外，不据此判丢失。",
+      "fix_instruction": "按胸像边界重新取景：头顶约5%、脸高约50%、下边缘胸口；母亲只留右侧约15%虚焦白发与侧背肩，保持江砚双肩空。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜24",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "苏慧身份、右手眼角、左手持橄榄包、勉强笑及江砚无包带状态可读。但画面为左玻璃、左上挑檐、右车队，使用A方向而非规定B反打左车队右上挑檐；下边缘至围裙腰带、左手和包体露出，脸约25%画高，江砚右前景头肩占约40%且清楚，明显偏离胸上窄虚焦过肩。",
+      "fix_instruction": "先以B反打紧底板纠正背景侧别；苏慧胸上取景保持右手在眼角，左手包留胸下框外；江砚仅约15%虚焦肩缘，双肩无包带。",
+      "card_field": [
+        "camera_zh",
+        "plate_image",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜25",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "母子侧背向停车区离开的关系、江砚双肩空且右手拉深灰箱、A机位与三名旅客成立。但苏慧从背面可见的右肩—右前臂—右手连贯地提橄榄包，和卡片左手提包冲突，接镜24会发生换手。江砚全身约58%画高（头顶约26%、鞋底85%），明显大于全景设计40%。",
+      "fix_instruction": "让苏慧左手提包，右手自然空垂并保持侧背走向；将主角人物尺度降至全景40%，保持头脚完整和脚下约15%地面，右手拉箱不变。",
+      "card_field": [
+        "people[1].action_zh",
+        "scene_beats[ep01_a3].state_zh",
+        "framing.subject_frac",
+        "framing.crop_zh"
+      ]
+    }
+  ],
+  "scene_review": {
+    "status": "complete",
+    "expected_images": 4,
+    "approved_state_sequence": "22包仍双肩背、左手收纸，母亲双手准备接包；23双肩空、母亲左手持包在胸下取景外；24母亲右手在眼角、左手包在取景外；25母亲左包向停车区，儿子右箱跟随。",
+    "inspected_image_count": 4,
+    "new_reference_count": 1,
+    "reused_reference_count": 7,
+    "counts": {
+      "pass": 0,
+      "fail": 4,
+      "unclear": 0
+    },
+    "proposed_files": [],
+    "reason": "四镜首帧未达可剪辑连续性。22仍背包、23起无肩带这一状态转换正确；但22箱在左手、25包在右手违背场次左右持物约束，24机位被A方向替代，23/24都未落实胸上边界。角色服装和白天暖光总体连续。修正以原始动作起点和源卡裁切为准，不通过改验收标准来放行。"
+  }
+}

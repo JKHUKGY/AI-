@@ -1,0 +1,27 @@
+{
+  "agent_id": "/root/resume_generate_38",
+  "role": "Generator",
+  "source_job": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/keyframes_batch03_b.json",
+  "id": "ep01_镜38",
+  "round": 1,
+  "interrupted_previous_attempt_no_artifact": true,
+  "refs_viewed": [
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "tool_attempts": 1,
+  "files": [
+    {
+      "id": "ep01_镜38",
+      "round": 1,
+      "candidate": 0,
+      "source": "/home/codespace/.codex/generated_images/01a070cf-e1e0-71c3-a8ba-e8c0bd37ee15/exec-f9dbd328-7614-4015-8bb0-c37c88c7be23.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+      "status": "pending_review"
+    }
+  ],
+  "errors": [],
+  "status": "completed_pending_independent_review"
+}

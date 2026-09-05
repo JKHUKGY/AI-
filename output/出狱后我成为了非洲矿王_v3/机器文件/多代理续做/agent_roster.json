@@ -1,0 +1,62 @@
+{
+  "queried_at": "2026-09-05T07:57:35.030472+00:00",
+  "source": "collaboration.list_agents: 3 retained completed reviewers; generator completion verified from earlier event and saved report",
+  "required_distinct_subagents": 4,
+  "actual_created_subagents": 4,
+  "running_subagents": 0,
+  "four_agent_requirement_met": false,
+  "agents": [
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "role": "Reviewer A：原文与单图",
+      "status": "completed",
+      "report": "reviewer_a.json",
+      "deliverables": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/reviewer_a.json"
+      ],
+      "report_agent_id": "/root/master_visual_reviewer",
+      "listed_in_latest_query": true
+    },
+    {
+      "agent_id": "/root/review_image_workflow",
+      "role": "Reviewer B：身份、道具与空间连戏",
+      "status": "completed",
+      "report": "reviewer_b.json",
+      "deliverables": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/reviewer_b.json"
+      ],
+      "report_agent_id": "/root/review_image_workflow",
+      "listed_in_latest_query": true
+    },
+    {
+      "agent_id": "/root/image_generator_resume",
+      "role": "Generator：生成前检查，待授权与最终任务",
+      "status": "completed",
+      "report": "generator_preflight.json",
+      "deliverables": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_preflight.json"
+      ],
+      "report_agent_id": "/root/image_generator_resume",
+      "listed_in_latest_query": false
+    },
+    {
+      "agent_id": "/root/master_final_reviewer",
+      "role": "Reviewer C：候选最终独立复核",
+      "status": "completed",
+      "report": "reviewer_c.json",
+      "deliverables": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/reviewer_c.json"
+      ],
+      "report_agent_id": "/root/master_final_reviewer",
+      "listed_in_latest_query": true
+    }
+  ],
+  "note": "四个真实子代理已完成一份生成预检与三份独立图片审查；出图本身仍待默认临时目录的有限例外确认。",
+  "actual_completed_preflight_or_review_subagents": 4,
+  "generation_workflow_complete": false,
+  "currently_listed_agent_ids": [
+    "/root/master_final_reviewer",
+    "/root/master_visual_reviewer",
+    "/root/review_image_workflow"
+  ]
+}

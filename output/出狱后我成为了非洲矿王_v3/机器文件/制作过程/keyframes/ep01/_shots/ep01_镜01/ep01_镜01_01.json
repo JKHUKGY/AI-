@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜01",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-3f872c35-594d-47e4-a32e-c66d07a26f8f.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_01.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+      "verdict": "fail",
+      "reason": "人物身份、江砚灰蓝衣/深灰裤/旧鞋、陈野左车侧朝江砚并用右手垂拿白盖瓶、A方向与日光均正确；铁门已收窄到接近一个肩宽，改善了00的敞开状态。但江砚全身仅约33%画高，鞋下地面约32%，明显不符批准40%和脚下15%。当前左脚已落门外、右脚后抬，较要求躯干门内/左脚刚抬过门槛/右脚留门内的开场起点偏后，图不能稳妥确认躯干仍在门内。",
+      "fix_instruction": "缩减脚下大片红土，把江砚全身安排约40%画高、鞋底约85%；保留窄门缝和陈野右手白盖瓶，将江砚躯干退回门缝内，右脚留门内支撑、左脚刚向外迈过门槛。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+      "verdict": "fail",
+      "reason": "监狱、车与人物身份正确，陈野靠左车侧右手持白盖水瓶，江砚门缝迈步动作较首轮明确；门缝约一肩宽可接受。江砚发顶约36%画高、鞋底68%，全身仅约32%，鞋下红土约32%；明显偏離批准全身40%、脚下15%的开场构图。",
+      "fix_instruction": "可用同镜01_01锁住车、脸、门缝及迈步动作，调整取景使江砚全身约40%，脚底约85%，把多余前景红土裁到15%；不得将人物缩小回首轮或让门大开。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh"
+    }
+  ],
+  "review_zh": "人物身份、江砚灰蓝衣/深灰裤/旧鞋、陈野左车侧朝江砚并用右手垂拿白盖瓶、A方向与日光均正确；铁门已收窄到接近一个肩宽，改善了00的敞开状态。但江砚全身仅约33%画高，鞋下地面约32%，明显不符批准40%和脚下15%。当前左脚已落门外、右脚后抬，较要求躯干门内/左脚刚抬过门槛/右脚留门内的开场起点偏后，图不能稳妥确认躯干仍在门内。；监狱、车与人物身份正确，陈野靠左车侧右手持白盖水瓶，江砚门缝迈步动作较首轮明确；门缝约一肩宽可接受。江砚发顶约36%画高、鞋底68%，全身仅约32%，鞋下红土约32%；明显偏離批准全身40%、脚下15%的开场构图。"
+}

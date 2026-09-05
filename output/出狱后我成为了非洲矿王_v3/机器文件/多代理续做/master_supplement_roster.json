@@ -1,0 +1,36 @@
+{
+  "phase": "completed_review",
+  "required_distinct_agents": 4,
+  "peak_active_subagents": 3,
+  "four_agent_requirement_met": true,
+  "agents": [
+    {
+      "agent_id": "/root/generate_villa_round3",
+      "role": "Generator A",
+      "status": "completed"
+    },
+    {
+      "agent_id": "/root/generate_prison_local",
+      "role": "Generator B",
+      "status": "completed"
+    },
+    {
+      "agent_id": "/root/review_supplement_single",
+      "role": "Reviewer A",
+      "status": "completed"
+    },
+    {
+      "agent_id": "/root/review_supplement_continuity",
+      "role": "Reviewer B",
+      "status": "completed"
+    }
+  ],
+  "generation_workflow_complete": true,
+  "generated_images": 5,
+  "selected_images": 0,
+  "capped_units": [
+    "master_ep01_p2",
+    "master_ep01_p3",
+    "master_ep01_v1"
+  ]
+}

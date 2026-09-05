@@ -1,0 +1,233 @@
+{
+  "agent_id": "/root/review_keyframes_batch05_single",
+  "status": "completed",
+  "viewed_references": [
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_crop_plans.json"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+      "verdict": "fail",
+      "reason": "身份、看母亲的方向及双肩包带保留，机场A机位成立；但发顶约18%留白而非5%，头高约36%而非约50%，胸下大片衬衫仍入画；苏慧右下肩背宽约40%，超过10–15%窄边缘。局部编辑改善了原图但未达到批准裁切。",
+      "correction_zh": "继续按计划收紧至发顶5%、头高约50%、胸口截断，保持江砚脸及包带；苏慧只保留右边界10–15%的虚焦发丝后肩窄弧，背部及手臂主体留在右框外。"
+    },
+    {
+      "id": "ep01_镜36",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_01.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、衣服、小心神态及闭门保留；但发顶约16%留白、头高约34%，仍显示胸下大块围裙与双侧上臂，未到头高约50%的胸上近景；江砚右下灰蓝后肩占约半幅，不是10–15%窄弧。",
+      "correction_zh": "按苏慧发顶5%、头高约50%、胸口截断收紧，保持闭合原门与原神态；江砚头部和背部移至右边界外，画内只重构10–15%宽虚焦发丝后肩。"
+    },
+    {
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+      "verdict": "fail",
+      "reason": "江砚身份、朝向、心疼目光及双肩包带保留；但头顶仍约18%留白、头高约36%，下方完整胸袋和较长衬衫入画，达不到5%顶空与头高约50%的规定近景。苏慧右下肩背约40%画宽，原宽过肩问题仍在。",
+      "correction_zh": "按原局部框真正收紧，头顶5%、发顶至下颏约50%、下边界胸口；右缘苏慧虚焦发丝后肩最多10–15%宽，完整头部背部在框外。"
+    },
+    {
+      "id": "ep01_镜36",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、神态、闭合木门与日光保留，但顶空约14%、头高约34%，未到5%顶空与头高约50%；下部仍有大块围裙，江砚右下肩背约38%宽且有明显头部侧面，超过10–15%窄虚焦边缘。",
+      "correction_zh": "按苏慧头顶5%、头高约50%真正收紧至胸口；将江砚头背主体置于右框外，只在10–15%边缘保留虚焦发丝和肩弧。"
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+      "verdict": "fail",
+      "reason": "双肩空着、身份和看母亲的方向正确；但发顶约15%留白、头高约35%，完整胸袋及胸下躯干入画，右下母亲肩背近40%宽；两名背景旅客仍明显可见，与本镜画外声明不合。",
+      "correction_zh": "按本报告next_round_plans给出的同镜框收紧，发顶留5%、头高约50%、胸口截断；右缘保留10–15%虚焦发丝后肩，背景只随原画面裁取，不复制被裁出的人员或家具。"
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+      "verdict": "fail",
+      "reason": "身份、空肩、视线保持；头顶仍约11%留白，头高约38%低于50%，胸下长段衬衫和完整胸袋入画；母亲右下肩背约35%宽，两名旅客仍在主体后方可见。",
+      "correction_zh": "按本报告next_round_plans给出的同镜框收紧，发顶留5%、头高约50%、胸口截断；右缘保留10–15%虚焦发丝后肩，背景只随原画面裁取，不复制被裁出的人员或家具。"
+    },
+    {
+      "id": "ep01_镜37",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "verdict": "fail",
+      "reason": "身份、坐姿上仰看母亲、克制闭嘴、北窗日光及未亮灯保持；但顶空约18%、头高约38%，完整胸袋与胸下躯干保留，右下母亲肩背宽約42%，未达到5%顶空/头高约50%/10–15%窄过肩。",
+      "correction_zh": "按本报告next_round_plans给出的同镜框收紧，发顶留5%、头高约50%、胸口截断；右缘保留10–15%虚焦发丝后肩，背景只随原画面裁取，不复制被裁出的人员或家具。"
+    },
+    {
+      "id": "ep01_镜37",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_02.png",
+      "verdict": "fail",
+      "reason": "身份、坐姿向右上母亲的心酸目光、闭嘴和未亮台灯保持；但头顶约16%留白、头高约36%，胸下长段躯干和完整胸袋可见，右下苏慧肩背近半幅宽，继续偏离5%顶空、头高约50%、10–15%虚焦窄过肩。",
+      "correction_zh": "推荐本报告next_round_plans中镜37_01作为第三轮同镜目标；按给定框放大约1.31倍并重构10–15%右缘虚焦发丝后肩，胸口截断，保持神态与原窗墙背景。"
+    }
+  ],
+  "next_round_plans": [
+    {
+      "id": "ep01_镜21",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+      "original_size": [
+        941,
+        1672
+      ],
+      "head_bbox_pixels_estimate": [
+        166,
+        310,
+        643,
+        914
+      ],
+      "head_bbox_normalized_estimate": [
+        0.1764,
+        0.1854,
+        0.6833,
+        0.5467
+      ],
+      "crop_pixels_estimate": [
+        110,
+        250,
+        790,
+        1458
+      ],
+      "crop_box": [
+        0.1169,
+        0.1495,
+        0.8395,
+        0.872
+      ],
+      "zoom_estimate": 1.38,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。",
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。"
+    },
+    {
+      "id": "ep01_镜23",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+      "original_size": [
+        941,
+        1672
+      ],
+      "head_bbox_pixels_estimate": [
+        18,
+        180,
+        552,
+        813
+      ],
+      "head_bbox_normalized_estimate": [
+        0.0191,
+        0.1077,
+        0.5866,
+        0.4862
+      ],
+      "crop_pixels_estimate": [
+        0,
+        117,
+        712,
+        1383
+      ],
+      "crop_box": [
+        0.0,
+        0.07,
+        0.7566,
+        0.8272
+      ],
+      "zoom_estimate": 1.32,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。",
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。"
+    },
+    {
+      "id": "ep01_镜36",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "original_size": [
+        941,
+        1672
+      ],
+      "head_bbox_pixels_estimate": [
+        88,
+        223,
+        604,
+        819
+      ],
+      "head_bbox_normalized_estimate": [
+        0.0935,
+        0.1334,
+        0.6419,
+        0.4898
+      ],
+      "crop_pixels_estimate": [
+        30,
+        163,
+        701,
+        1355
+      ],
+      "crop_box": [
+        0.0319,
+        0.0975,
+        0.745,
+        0.8104
+      ],
+      "zoom_estimate": 1.4,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。",
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。"
+    },
+    {
+      "id": "ep01_镜37",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "original_size": [
+        941,
+        1672
+      ],
+      "head_bbox_pixels_estimate": [
+        51,
+        304,
+        577,
+        940
+      ],
+      "head_bbox_normalized_estimate": [
+        0.0542,
+        0.1818,
+        0.6132,
+        0.5622
+      ],
+      "crop_pixels_estimate": [
+        15,
+        240,
+        730,
+        1512
+      ],
+      "crop_box": [
+        0.0159,
+        0.1435,
+        0.7758,
+        0.9043
+      ],
+      "zoom_estimate": 1.31,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。",
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。"
+    }
+  ],
+  "summary": {
+    "reviewed_candidates": 8,
+    "pass": 0,
+    "fail": 8
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "agents": [
+    {
+      "agent_id": "/root/generate_villa_round3",
+      "role": "Generator",
+      "reports": [
+        "generator_keyframes_batch01_a.json",
+        "generator_keyframes_batch01_retry_a.json",
+        "generator_villa_round3.json"
+      ]
+    },
+    {
+      "agent_id": "/root/generate_keyframes_b",
+      "role": "Generator",
+      "reports": [
+        "generator_keyframes_batch01_b.json",
+        "generator_keyframes_batch01_b_19.json",
+        "generator_keyframes_batch01_b_20.json"
+      ]
+    },
+    {
+      "agent_id": "/root/generate_keyframes_retry_b",
+      "role": "Generator",
+      "reports": [
+        "generator_keyframes_batch01_retry_b.json"
+      ]
+    },
+    {
+      "agent_id": "/root/image_generator_resume",
+      "role": "Generator",
+      "reports": [
+        "generator_preflight.json"
+      ]
+    },
+    {
+      "agent_id": "/root/generate_prison_local",
+      "role": "Generator",
+      "reports": [
+        "generator_prison_local.json"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "role": "Reviewer",
+      "reports": [
+        "review_keyframes_batch01_continuity.json",
+        "review_keyframes_batch01_retry_continuity.json"
+      ]
+    },
+    {
+      "agent_id": "/root/review_supplement_single",
+      "role": "Reviewer",
+      "reports": [
+        "review_keyframes_batch01_single.json",
+        "review_supplement_single.json"
+      ]
+    },
+    {
+      "agent_id": "/root/review_supplement_continuity",
+      "role": "Reviewer",
+      "reports": [
+        "review_supplement_continuity.json"
+      ]
+    }
+  ],
+  "note": "真实宿主ID来自任务派发及独立报告；历史预检不作为实际出图计数；单项通过须独立审查齐备。"
+}

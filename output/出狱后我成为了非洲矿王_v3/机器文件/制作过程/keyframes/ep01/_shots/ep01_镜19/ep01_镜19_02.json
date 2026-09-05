@@ -1,0 +1,36 @@
+{
+  "id": "ep01_镜19",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-c793371c-d20e-4411-b777-e3eb109aac7b.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+  "status": "selected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_continuity.json",
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "round": 2,
+      "candidate": 2,
+      "verdict": "pass",
+      "reason": "相比_01进一步推进，头顶约5%，下沿已在胸袋下缘附近，画内为头肩胸部，不见肘部/腰腿/箱杆/纸条；三分之四正面向右，嘴闭、眼神确认，左缘和右肩均能辨认橄榄肩带。人脸与灰蓝衬衫身份一致，A玻璃与挑檐虚焦背景保留，母亲/3旅客按胸上裁切在框外。",
+      "fix_instruction": "",
+      "card_field": "",
+      "proposed_file": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png"
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_single.json",
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "verdict": "pass",
+      "reason": "胸上近景头顶约5%，底边在胸部下缘，脸与双肩占主要画面；江砚外貌、灰蓝衬衫、双肩磨旧橄榄包带匹配参考，三分之四正面向右确认、嘴唇闭合。A方向左玻璃与上方挑檐一致，纸/箱/双手及其他在场者均依卡画外，未添加字幕或剧情。",
+      "fix_instruction": "",
+      "card_field": ""
+    }
+  ],
+  "review_zh": "相比_01进一步推进，头顶约5%，下沿已在胸袋下缘附近，画内为头肩胸部，不见肘部/腰腿/箱杆/纸条；三分之四正面向右，嘴闭、眼神确认，左缘和右肩均能辨认橄榄肩带。人脸与灰蓝衬衫身份一致，A玻璃与挑檐虚焦背景保留，母亲/3旅客按胸上裁切在框外。；胸上近景头顶约5%，底边在胸部下缘，脸与双肩占主要画面；江砚外貌、灰蓝衬衫、双肩磨旧橄榄包带匹配参考，三分之四正面向右确认、嘴唇闭合。A方向左玻璃与上方挑檐一致，纸/箱/双手及其他在场者均依卡画外，未添加字幕或剧情。",
+  "generator_agent_id": "/root/generate_keyframes_retry_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_retry_b.json"
+}

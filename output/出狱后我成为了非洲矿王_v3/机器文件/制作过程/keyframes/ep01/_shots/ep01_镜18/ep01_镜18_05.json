@@ -1,0 +1,38 @@
+{
+  "id": "ep01_镜18",
+  "round": 3,
+  "candidate": 5,
+  "source": "/home/codespace/.codex/generated_images/01a070b4-d857-7cf1-b020-04282e9751be/exec-7cac2f2e-59bd-4726-bd1f-356a66ac5c9e.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_05.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_continuity.json",
+      "id": "ep01_镜18",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_05.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "母亲身份及B反打方向成立；右前景江砚头、颈、躯干、手臂和大包可见，占约40%，违反局部过肩；背景可见灰衫男和米色衫男，卡中最左远层蓝裙旅客未见，左侧通道无遮挡仍为空。",
+      "fix_instruction": "将江砚主体移出右框，只露窄肩包边；恢复最左远层蓝裙女子与米色手袋。",
+      "card_field": [
+        "framing.crop_zh",
+        "background_people[0].posture_zh",
+        "background_people[2]"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_single.json",
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_05.png",
+      "verdict": "fail",
+      "reason": "B反打左车右挑檐正确；江砚依然有大半后脑、颈肩上臂及包体，占右侧约35–40%画宽，超过10–15%局部过肩。另只看见灰衫男和米色衫男两名旅客，卡片要求远左蓝裙旅客也在画内，本图未见。",
+      "fix_instruction": "已到第三轮，停止本镜生成；如获新修正授权需恢复蓝裙旅客并把江主体移出右框，只留10–15%后肩包边。",
+      "card_field": "framing.crop_zh; background_people[江砚].posture_zh; background_people[旅客乙]"
+    }
+  ],
+  "review_zh": "母亲身份及B反打方向成立；右前景江砚头、颈、躯干、手臂和大包可见，占约40%，违反局部过肩；背景可见灰衫男和米色衫男，卡中最左远层蓝裙旅客未见，左侧通道无遮挡仍为空。；B反打左车右挑檐正确；江砚依然有大半后脑、颈肩上臂及包体，占右侧约35–40%画宽，超过10–15%局部过肩。另只看见灰衫男和米色衫男两名旅客，卡片要求远左蓝裙旅客也在画内，本图未见。",
+  "generator_agent_id": "/root/generate_keyframes_round3_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_round3_b.json"
+}

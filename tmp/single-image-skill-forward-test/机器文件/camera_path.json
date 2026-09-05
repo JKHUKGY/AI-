@@ -1,0 +1,188 @@
+{
+  "projection": "pinhole",
+  "coordinate_system": "x right, y down, z forward",
+  "horizontal_fov_degrees_assumed": 50,
+  "distance_units": "arbitrary, non-metric",
+  "relative_depth_mapping": "z = 1 / (0.25 + normalized_inverse_depth)",
+  "movement": "camera x 0.06, z 0.0; orientation fixed; smoothstep interpolation",
+  "frames": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "camera_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0
+    },
+    {
+      "frame": 1,
+      "time": 0.041666666666666664,
+      "camera_xyz": [
+        0.0006738281226716936,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0
+    },
+    {
+      "frame": 2,
+      "time": 0.08333333333333333,
+      "camera_xyz": [
+        0.002578125102445483,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0
+    },
+    {
+      "frame": 3,
+      "time": 0.125,
+      "camera_xyz": [
+        0.005537109449505806,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0
+    },
+    {
+      "frame": 4,
+      "time": 0.16666666666666666,
+      "camera_xyz": [
+        0.00937500037252903,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.000640869140625
+    },
+    {
+      "frame": 5,
+      "time": 0.20833333333333334,
+      "camera_xyz": [
+        0.013916015625,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.00408935546875
+    },
+    {
+      "frame": 6,
+      "time": 0.25,
+      "camera_xyz": [
+        0.018984375521540642,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.00946044921875
+    },
+    {
+      "frame": 7,
+      "time": 0.2916666666666667,
+      "camera_xyz": [
+        0.024404296651482582,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0130615234375
+    },
+    {
+      "frame": 8,
+      "time": 0.3333333333333333,
+      "camera_xyz": [
+        0.029999999329447746,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.01873779296875
+    },
+    {
+      "frame": 9,
+      "time": 0.375,
+      "camera_xyz": [
+        0.03559570387005806,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.021514892578125
+    },
+    {
+      "frame": 10,
+      "time": 0.4166666666666667,
+      "camera_xyz": [
+        0.041015625,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0223388671875
+    },
+    {
+      "frame": 11,
+      "time": 0.4583333333333333,
+      "camera_xyz": [
+        0.04608398303389549,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0274658203125
+    },
+    {
+      "frame": 12,
+      "time": 0.5,
+      "camera_xyz": [
+        0.05062500014901161,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.028076171875
+    },
+    {
+      "frame": 13,
+      "time": 0.5416666666666666,
+      "camera_xyz": [
+        0.054462891072034836,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0299072265625
+    },
+    {
+      "frame": 14,
+      "time": 0.5833333333333334,
+      "camera_xyz": [
+        0.05742187425494194,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.0341796875
+    },
+    {
+      "frame": 15,
+      "time": 0.625,
+      "camera_xyz": [
+        0.059326171875,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.035400390625
+    },
+    {
+      "frame": 16,
+      "time": 0.6666666666666666,
+      "camera_xyz": [
+        0.05999999865889549,
+        0.0,
+        0.0
+      ],
+      "unobserved_fraction": 0.035552978515625
+    }
+  ],
+  "width": 128,
+  "height": 256,
+  "fps": 24,
+  "num_frames": 17,
+  "sample_time_span_sec": 0.6666666666666666,
+  "encoded_duration_sec": 0.7083333333333334,
+  "max_unobserved_fraction": 0.035552978515625,
+  "hole_fill": "nearest observed sample; not generative completion"
+}

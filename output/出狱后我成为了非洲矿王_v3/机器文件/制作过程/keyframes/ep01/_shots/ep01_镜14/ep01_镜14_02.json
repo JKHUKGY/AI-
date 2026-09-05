@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜14",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070e9-1aa2-7380-9ea7-13b788a34a34/exec-2e5bf95e-39b0-437f-baad-e452bfd4f942.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_edits_09_14",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_09_14.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜14",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+      "verdict": "fail",
+      "reason": "江砚表情平静笃定、朝左陈野，不是愤怒宣战；发型、灰蓝衣及铁门/右门柱的A方向延续00和09，陈野左缘短发棕衣正确。瓶与手位于胸外，允许不展示。本张头顶约10%，躯干露到胸袋底及以下，左下陈野肩片约25%画宽；取景较01稍宽，尚未完成胸上和窄过肩。不以画外道具无法检查判fail。",
+      "fix_instruction": "沿用本镜01更紧主体取景，收去胸袋以下与过量顶空，同时把左下陈野肩片收至约15%窄边。",
+      "card_field": "framing.crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜14",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+      "verdict": "fail",
+      "reason": "身份、A机位、胸像、平静表情成立；左下陈野肩背占约26%画宽，超过15%。头顶空约10%亦偏多。本图不是腰景，无需把人物再次大幅放大。",
+      "fix_instruction": "优先同镜14_01作局部肩缘修正，该图头顶空更符合5%；只缩窄陈野过肩，保持已达成的主角构图。",
+      "card_field": "background_people[0].posture_zh; framing.headroom_frac"
+    }
+  ],
+  "review_zh": "江砚表情平静笃定、朝左陈野，不是愤怒宣战；发型、灰蓝衣及铁门/右门柱的A方向延续00和09，陈野左缘短发棕衣正确。瓶与手位于胸外，允许不展示。本张头顶约10%，躯干露到胸袋底及以下，左下陈野肩片约25%画宽；取景较01稍宽，尚未完成胸上和窄过肩。不以画外道具无法检查判fail。；身份、A机位、胸像、平静表情成立；左下陈野肩背占约26%画宽，超过15%。头顶空约10%亦偏多。本图不是腰景，无需把人物再次大幅放大。"
+}

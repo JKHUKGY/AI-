@@ -1,0 +1,24 @@
+{
+  "agent_id": "/root/review_keyframes_batch02_single",
+  "review_scope": "独立Reviewer A：镜35至38逐张原文/卡片/身份/机位核验；人物refs沿用上一组已实际看图记录。未阅读其他reviewer报告。",
+  "status": "in_progress",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜37",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+      "verdict": "fail",
+      "reason": "江砚坐床沿、朝右望母亲且嘴唇闭合，身份服装/情绪和后方北窗日光、未亮台灯成立。但实际从发顶一直拍到大腿与前臂，腰腹和整条屈肘手臂完整可见；头顶留白约20%，发顶至下颏约画高25%，是坐姿中景而非胸上近景。苏慧前景背肩占右侧约四成，超过卡片窄幅约15%。画外包和箱无需补进来。",
+      "fix_instruction": "源卡进一步约束光学取景或先准备胸像参考构图：江砚发顶距画顶约5%，脸含发顶到下颏约画高一半，画底直接截胸口；腰腹、屈肘、前臂和大腿保持画外。母亲右侧只留窄幅虚焦发丝后肩，保留左江右苏与坐姿向上视线。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[苏慧].posture_zh"
+    }
+  ]
+}

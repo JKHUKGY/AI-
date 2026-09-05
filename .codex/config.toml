@@ -1,0 +1,12 @@
+# Project command sandbox: keep writes in the current project without approval prompts.
+sandbox_mode = "workspace-write"
+approval_policy = "never"
+
+[sandbox_workspace_write]
+writable_roots = []
+exclude_slash_tmp = true
+exclude_tmpdir_env_var = true
+network_access = true
+
+[shell_environment_policy.set]
+TMPDIR = "/workspaces/AI-/tmp"

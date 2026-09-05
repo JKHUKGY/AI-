@@ -1,0 +1,45 @@
+{
+  "id": "ep01_镜14",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070d9-03ce-7501-a50b-16ad17385aa5/exec-6a6548cf-ed86-4f0e-934d-2a99d753e2b9.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_batch05_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_continuity.json",
+      "id": "ep01_镜14",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "江砚脸型、灰蓝衬衫、左瓶右白盖与陈野棕外套保持；门后院内树与建筑符合A向。但主角头顶约21%留白、下缘切到腰胯，陈野过肩占左侧接近半幅，违背5%顶空、胸下切断及约15%过肩；本镜反转近景没有落实。",
+      "fix_instruction": "保持身份、门外位置及左瓶右盖状态；按主卡裁成江砚胸上近景，头顶5%，陈野仅保留左侧15%虚焦肩缘，画外手/瓶不必强露。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "background_people[0].posture_zh"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_single.json",
+      "id": "ep01_镜14",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "verdict": "fail",
+      "reason": "江砚神态冷静、左手开瓶右手白盖、右侧三分之四正面与陈野左过肩均正确；但头顶约21%留白，画底已到髋部，成为腰上中景；陈野前景约半幅宽，不是约15%窄过肩。与已批准5%头顶留白、胸口下缘截断的近景明确不符。",
+      "fix_instruction": "保持人物与持物，按江砚头顶约5%留白推近到胸口下缘截断；陈野仅左缘约15%虚焦后肩和头侧。胸下手部自然出画，不为保全瓶身拉宽景别。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    }
+  ],
+  "review_zh": "江砚脸型、灰蓝衬衫、左瓶右白盖与陈野棕外套保持；门后院内树与建筑符合A向。但主角头顶约21%留白、下缘切到腰胯，陈野过肩占左侧接近半幅，违背5%顶空、胸下切断及约15%过肩；本镜反转近景没有落实。；江砚神态冷静、左手开瓶右手白盖、右侧三分之四正面与陈野左过肩均正确；但头顶约21%留白，画底已到髋部，成为腰上中景；陈野前景约半幅宽，不是约15%窄过肩。与已批准5%头顶留白、胸口下缘截断的近景明确不符。",
+  "generator_agent_id": "/root/generate_keyframes_batch05_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch05_a.json"
+}

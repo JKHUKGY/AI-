@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/generate_prison_local",
+  "role": "Generator B",
+  "source_job": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/jobs_prison_local_edit.json",
+  "status": "generated_pending_review",
+  "planned_images": 2,
+  "round": 4,
+  "retry_authorization": "execution_approval.json",
+  "targets_viewed": [
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png"
+  ],
+  "results": [
+    {
+      "id": "master_ep01_p2",
+      "round": 4,
+      "candidate": 6,
+      "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-cb0a636a-0e41-4652-9267-c67c01f91463.png",
+      "output": {
+        "id": "master_ep01_p2",
+        "round": 4,
+        "candidate": 6,
+        "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-cb0a636a-0e41-4652-9267-c67c01f91463.png",
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+        "status": "pending_review"
+      },
+      "status": "pending_independent_review",
+      "tool": "image_gen__imagegen"
+    },
+    {
+      "id": "master_ep01_p3",
+      "round": 4,
+      "candidate": 6,
+      "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-d4513111-1f3c-4e47-b3f8-0f579b8601cc.png",
+      "output": {
+        "id": "master_ep01_p3",
+        "round": 4,
+        "candidate": 6,
+        "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-d4513111-1f3c-4e47-b3f8-0f579b8601cc.png",
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+        "status": "pending_review"
+      },
+      "status": "pending_independent_review",
+      "tool": "image_gen__imagegen"
+    }
+  ],
+  "errors": []
+}

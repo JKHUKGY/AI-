@@ -1,0 +1,464 @@
+{
+  "agent_id": "/root/review_keyframes_continuity",
+  "status": "complete",
+  "review_scope": "独立第二轮连续性及批准设计核对，未读取另一审查报告",
+  "source_cards_at_review": [
+    {
+      "id": "ep01_镜17",
+      "shot_no": 17,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "plate_read_zh": "实际看图：左玻璃门幕墙及推车，上方水泥挑檐纵深收拢，右栏杆与黄色车队白小巴；前景地面约下半幅，阴影在左。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第56行「▲热带阳光灼人，机场出口人流混杂，各色皮肤的人穿梭往来。」；script_source.txt 第57行「▲江砚拖着一个半旧的行李箱，背着登山包，手里攥着写着地址的纸条，四处张望。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——交代闪回和身份，机场的陌生感先于重逢。",
+      "beat_zh": "江砚在左中景玻璃门外，侧身朝右前方接站区张望；右手拖半旧深灰硬壳行李箱，深橄榄色登山包仍双肩背好，左手持小纸条。苏慧在右远景人流之后朝他走来，侧面、脸很小；匿名旅客分前后层沿通道通过。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "环境全景，相机后退保持机场A角度。江砚全身高度严格为画幅高度约40%，头顶落在画高45%左右、鞋底落在85%左右，头脚完整且脚下留15%地面。天空与机场挑檐占上方大块环境，人物为较小环境中的主体。",
+        "plate_crop_zh": "完整保留A宽底板上部挑檐、左玻璃与右车道，把江砚比例缩至画高40%，保持母亲在更远层；参考主帧提供身份与道具，人物大小按本镜百分比重新安排。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:地址纸",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在远处人流后方朝江砚走近",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "relation_zh": "交代闪回和身份，机场的陌生感先于重逢。",
+      "count": 2,
+      "notes": "首轮独立审查反馈：保持批准环境全景比例或B反打机位与过肩设计，第二轮2张。"
+    },
+    {
+      "id": "ep01_镜18",
+      "shot_no": 18,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+      "plate_read_zh": "实际看图：白小巴与黄车在左后、棕榈和广告骨架居中，右上挑檐；栏杆左近向右远斜收，地面约下半幅、右侧阴影。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——把七年付出落到母亲的老态上；表叔关系保持原文。",
+      "beat_zh": "苏慧在左中远景穿白色旧布裙、侧身朝右前方的江砚走来，含肩、抬眼寻找，鬓角白发与晒黑肤色可辨；江砚右前景虚焦后肩与登山包边入画，旅客在母子之间更远层，不遮挡主脸。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机紧贴机场玻璃门一侧向外拍，镜头朝车道；画面左后方是白色小巴与黄色出租车，画面右上是挑檐底部。摄影机背后才是玻璃墙。严格依照B反打底板的场地侧别。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "中景过肩：江砚虚焦后肩和登山包右侧边缘贴着画面最右缘，身体主体在画幅右边界以外。苏慧位于左侧更远层、完整侧面朝右，保留从头到腿部的行走姿态；旅客位于更远通道。",
+        "plate_crop_zh": "取B反打宽底板的左侧白小巴和黄车以及右上挑檐作为环境，三名旅客在更远处。主帧中的玻璃墙与车道屏幕位置只用于人物道具信息，本镜空间方向严格来自B底板。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在接站人群后方，前脚已落在通道里",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在镜头右前方，画面右边界截过后肩与包体边缘，身体大部分在画框外",
+          "action_zh": "灰蓝衬衫虚焦后肩和深橄榄包侧缘仅在右侧形成局部过肩；右手拉杆、左手纸条随身体位于画框外，目光看向更远的母亲。",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "江砚仍右手握深灰硬壳箱拉杆、左手持纸，整箱、双手及纸条位于右侧取景外；大橄榄包仅边缘在右前景可见。"
+      ],
+      "relation_zh": "把七年付出落到母亲的老态上；表叔关系保持原文。",
+      "count": 2,
+      "notes": "首轮独立审查反馈：保持批准环境全景比例或B反打机位与过肩设计，第二轮2张。"
+    },
+    {
+      "id": "ep01_镜19",
+      "shot_no": 19,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：左侧玻璃反光和推车变大、右侧栏杆与黄车，顶部挑檐与棕榈背景；下方仍约三成通道地面，可裁去留胸上人物。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第57行「▲江砚拖着一个半旧的行李箱，背着登山包，手里攥着写着地址的纸条，四处张望。」——完整交代他的学业与地质能力，不另造毕业证或校园。",
+      "beat_zh": "江砚左中景胸上三分之四正面，面朝右前方母亲，肩上两条登山包肩带清楚；左手小纸条在胸下，眼神从寻人转为确认；苏慧右前景暂在裁切外接近，背景玻璃门和阴影带。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.78,
+        "crop_zh": "竖屏胸上近景。主体的脸和双肩充满画面主体区，头顶贴近上边缘约5%；画面底边从胸口下缘横切，身体胸口以下全部落在画框外。主体脸高约占画面高度三分之一。",
+        "plate_crop_zh": "相机推进到江砚胸上距离，背景只取A紧底板的上部玻璃与挑檐虚焦色块；地面、拉杆、箱体、持纸手全部落在画框底边以下。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "off_right",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "深橄榄色登山包的两条磨白宽织带贴在双肩，江砚嘴唇闭合、眼神从寻找转为确认，视线朝画面右侧。左手纸条、右手拉杆继续保持在胸下画框外。",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "画内仅呈现双肩上的两条深橄榄色宽织带；大包主体在背后，深灰箱、拉杆和左手纸条位于胸下画框以外。"
+      ],
+      "relation_zh": "完整交代他的学业与地质能力，不另造毕业证或校园。",
+      "count": 2,
+      "notes": "首轮审查退回：保持已批准胸上近景与机位，明确画外道具状态，避免道具描述拉宽取景。第二轮2张。"
+    },
+    {
+      "id": "ep01_镜20",
+      "shot_no": 20,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：左白小巴和黄出租车填满中部背景，栏杆横斜贯前景，棕榈/骨架在后，右上挑檐；地面约下部三成。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——交代此行目的；母亲在眼前，接回家的愿望更具体。",
+      "beat_zh": "苏慧左中景胸上三分之四正面，身体朝右前方江砚，眼眶微红、嘴唇轻颤；江砚右前景留虚焦侧背肩与包带，苏慧手尚未碰背包。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于机场出口玻璃门这一侧，朝停车车队拍摄苏慧胸上；画面左侧背景为白小巴与黄出租车，上右侧为挑檐，遵循B反打紧底板的方向。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.78,
+        "crop_zh": "竖屏胸上近景。主体的脸和双肩充满画面主体区，头顶贴近上边缘约5%；画面底边从胸口下缘横切，身体胸口以下全部落在画框外。主体脸高约占画面高度三分之一。江砚只有虚焦后肩和后脑发丝边缘从最右侧入画，宽度严格控制在画幅右边15%。",
+        "plate_crop_zh": "相机推进至苏慧胸上，背景只取B紧底板左侧白小巴、黄色出租车和右上挑檐的虚焦局部；三名旅客及地面处在裁切范围以外。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "眼眶微红，嘴唇轻颤，视线落在儿子脸上，含肩；双手保持自然下垂在胸下画框外。",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "右侧最边缘仅一小片虚焦后肩、后脑发丝边缘进入画面，人物主体位于画面右边界之外",
+          "action_zh": "侧背肩上的深橄榄色包带贴近画面右边缘；其余包体、双手、纸条和拉杆保持在画框外，继续看向母亲。",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "画面右缘只保留江砚后肩的一小段深橄榄色包带；包体、行李箱、拉杆、纸条及双手在胸下或画面右侧取景以外。"
+      ],
+      "relation_zh": "交代此行目的；母亲在眼前，接回家的愿望更具体。",
+      "count": 2,
+      "notes": "首轮审查退回：保持已批准胸上近景与机位，明确画外道具状态，避免道具描述拉宽取景。第二轮2张。"
+    }
+  ],
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png"
+  ],
+  "reference_reuse": "沿用本代理首轮实际查看的7张人物、底板、a1主帧参考，见本人首轮报告inspected_files。",
+  "images": [
+    {
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "A机位、角色身份、母亲右远处及3旅客、江砚右手箱杆左手纸条、大橄榄包均保持。人物比例几乎仍等于首轮：头顶约26%、鞋底85%，身高约59%，未按第二轮40%及头顶45%执行。",
+      "fix_instruction": "改变构图而非仅改变远处母亲大小；江砚及随身箱包整体缩至画高40%，头顶45%、鞋底85%，保持A环境与五人在场关系。",
+      "card_field": "framing.subject_frac; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png",
+      "round": 2,
+      "candidate": 2,
+      "verdict": "fail",
+      "reason": "江砚头顶仍约26%、鞋底约85%，全身约59%画高，与_01一样未缩到40%；本次主要把母亲缩得更远，没有落实主体全景比例。A机位、主角身份/左右手道具、大橄榄包、深灰箱、3旅客均正确；母亲在右远层。",
+      "fix_instruction": "将江砚与箱包的统一视觉尺度缩至40%画高、头顶45%/鞋底85%，不能只缩小母亲；保持现有A背景和3旅客。",
+      "card_field": "framing.subject_frac; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "真实B机位已实现：左车队、右上挑檐、阴影在右，母亲左侧朝右行走，3旅客齐全，身份服装正确。江砚却占右侧约40%宽，完整后脑、肩、大片躯干入画；批准卡要求身体大部分在框外，仅右缘虚焦后肩/包边。母亲行走全身可见符合本轮卡对更远层姿态的澄清，不作为退回原因。",
+      "fix_instruction": "保持已正确B机位与母亲/3旅客，把相机旁的江砚身体移至右画框之外，右边界截过后肩与包体，仅留局部虚焦边缘。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png",
+      "round": 2,
+      "candidate": 2,
+      "verdict": "fail",
+      "reason": "B反打侧别正确，左白小巴黄车、右上挑檐，母亲左侧向右迈步，3名旅客均在远层，身份服装和橄榄包可辨。江砚仍以完整后脑、肩、躯干、前臂及大面积包体占右侧约40%，未实现身体大部分在框外、只留局部过肩。",
+      "fix_instruction": "保持B背景与母亲侧身行走及3旅客，右边界截过江砚肩部，仅留虚焦后肩/包缘；完整后脑、躯干及前臂全部置于右画框之外。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "身份、灰蓝衬衫、双肩磨旧橄榄宽织带、三分之四正面朝右、A玻璃背景和画外旅客正确，纸条/箱杆也不再拉宽取景。但下沿仍截到腹部附近：胸袋下方仍有大段衬衫及多颗扣，肘部入画；脸约占画高1/4，未做到胸口下缘切断及脸约1/3。",
+      "fix_instruction": "保持现有人脸、朝向和双肩带，进一步推进相机或按胸口下缘构图，使胸袋下缘附近成为画底、腹部和肘部出框，头顶仍留约5%。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "round": 2,
+      "candidate": 2,
+      "verdict": "pass",
+      "reason": "相比_01进一步推进，头顶约5%，下沿已在胸袋下缘附近，画内为头肩胸部，不见肘部/腰腿/箱杆/纸条；三分之四正面向右，嘴闭、眼神确认，左缘和右肩均能辨认橄榄肩带。人脸与灰蓝衬衫身份一致，A玻璃与挑檐虚焦背景保留，母亲/3旅客按胸上裁切在框外。",
+      "fix_instruction": "",
+      "card_field": "",
+      "proposed_file": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png"
+    },
+    {
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "B机位已纠正：左白小巴和黄车、右上挑檐、无左玻璃墙；母亲身份白发/晒黑皮肤/旧白裙灰围裙相符，无额外旅客。仍未达到胸上近景，苏慧头顶约20%，腰带及腰下围裙和前臂入画；江砚右侧后脑与肩身占约45%宽，明显超过15%。",
+      "fix_instruction": "保持现有B机位和母亲脸，向苏慧推进，头顶约5%、画底切胸口下缘；把江砚身体移到画右边界以外，仅留右缘约15%的虚焦后肩、发丝及包带。",
+      "card_field": "framing.crop_zh; background_people[0].posture_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+      "round": 2,
+      "candidate": 2,
+      "verdict": "fail",
+      "reason": "母亲身份服装和B车队/挑檐背景正确，3旅客按裁切不出现。但与_01一样仍见围裙腰带及腰下，头顶约23%；儿子完整后脑及大片侧背肩身占右侧约半幅，未达到15%边缘过肩。因机位略俯看而露出更多路面，胸上情绪镜仍不成立。",
+      "fix_instruction": "保持B方向与母亲身份，镜头推进至头肩胸部，画顶紧贴母亲头顶约5%，底边切胸口下缘；将儿子后脑/躯干主体移出右边框，仅留15%虚焦肩缘与少量发丝。",
+      "card_field": "framing.crop_zh; background_people[0].posture_zh",
+      "proposed_file": ""
+    }
+  ],
+  "scene_review": {
+    "verdict": "fail",
+    "identity_costume_props": "八张脸、服装及橄榄包总体维持机场基准。17左右手纸条/箱杆和深灰箱一致；19/20及18的手持物按裁切置于框外，不以不可见判丢失。",
+    "people_presence": "17/18三旅客均出现且基本服装/左右分布符合卡；19/20本轮三旅客均按近景裁切不在画面，已消除首轮20多出灰衫旅客的问题。",
+    "spatial_axis": "18/20本轮均已成为真实B方向，车队移至左、挑檐在右上，与17/19的A镜建立可识别反打，首轮环境不反打而母子交换位置的问题已修正。",
+    "light": "A/B方向与明暗带随机位变换合理，无日夜或冷暖大跳。18_02母亲行进到更近阴影边，与其快步靠近动作相容。",
+    "framing": "仍存在结构性取景失效：17两张主角均约59%高而非40%；18两张儿子大半身过肩；20两张母亲腰下入画且儿子约半幅。19_02是本轮唯一满足胸上景别并保留身份/机位的候选。",
+    "proposed_files": {
+      "ep01_镜17": "",
+      "ep01_镜18": "",
+      "ep01_镜19": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "ep01_镜20": ""
+    },
+    "recommendation": "保留19_02待其他独立审查者确认。17/18/20应在源卡与参考策略层强化真正改变构图，第三轮按原工作流进行；不把较接近的失败图当通过。"
+  },
+  "counts": {
+    "reviewed": 8,
+    "pass": 1,
+    "fail": 7,
+    "unclear": 0
+  }
+}

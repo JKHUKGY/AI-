@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜38",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-cb226e00-8013-4bb8-a80b-9a9b9a917eb6.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_38.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+      "verdict": "fail",
+      "reason": "江砚灰蓝衣与黑短发延续00及r2主帧，坐姿略仰视右方母亲、心酸顺从而未愤怒，窗A方向和白天光线正确。门和低位道具在框外，不以不可见推定改变；画内未见亮灯。局部编辑保留了情节与身份，但下缘仍到完整胸袋底部以下，头顶约10%、发顶至下颏约40%，母亲右下前景仍约四分之一画宽。已比00明显紧，但胸口截断与窄肩缘尚未实现。",
+      "fix_instruction": "保持身份、表情、坐姿视线与北窗背景，将胸袋下半和以下躯干移出下框，缩小顶空并收窄右侧母亲肩缘至约10%至15%，形成批准胸上近景。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+      "verdict": "fail",
+      "reason": "江砚左侧坐姿的头颈、望向右侧母亲的目光、克制情绪、同脸同衣和窗边白天均连续；裁切已到胸部，不能算腰景。右下母亲肩背最宽约25%而非10%至15%，头顶空约10%，头部高约40%弱于目标50%。",
+      "fix_instruction": "推荐同镜38_01。轻微上移取景将头顶空减到5%，只需温和调整使头部接近约50%；重点把右侧母亲整个肩缘外移到10%至15%，保留相同眼神和光线，不重新引入腿、手或箱包。",
+      "card_field": "framing.headroom_frac; framing.crop_zh; background_people[0].posture_zh"
+    }
+  ],
+  "review_zh": "江砚灰蓝衣与黑短发延续00及r2主帧，坐姿略仰视右方母亲、心酸顺从而未愤怒，窗A方向和白天光线正确。门和低位道具在框外，不以不可见推定改变；画内未见亮灯。局部编辑保留了情节与身份，但下缘仍到完整胸袋底部以下，头顶约10%、发顶至下颏约40%，母亲右下前景仍约四分之一画宽。已比00明显紧，但胸口截断与窄肩缘尚未实现。；江砚左侧坐姿的头颈、望向右侧母亲的目光、克制情绪、同脸同衣和窗边白天均连续；裁切已到胸部，不能算腰景。右下母亲肩背最宽约25%而非10%至15%，头顶空约10%，头部高约40%弱于目标50%。"
+}

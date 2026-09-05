@@ -1,0 +1,78 @@
+{
+  "agent_id": "/root/review_keyframes_batch04_single",
+  "status": "complete",
+  "inspected_files": [
+    "assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "assets/陈野_三视图/陈野_三视图_00.png",
+    "keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+    "keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png",
+    "keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+    "keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+    "assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "keyframes/ep01/keyframe_cards.json",
+    "storyboard/script_source.txt"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜01",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+      "verdict": "fail",
+      "reason": "A机位、陈野倚左侧车、江砚衣着身份成立。但门缝已明显大开约一人以上宽，江砚双脚并列已到门外，未呈刚开缝门内左脚迈出起点。江砚头顶约33%、鞋底约56%，全身仅约23%画高，远小于卡要求40%，脚下空地约44%而非15%。瓶盖呈浅蓝色，与白盖定义不一致。",
+      "fix_instruction": "按原卡重构开门初始状态：江砚仍在窄缝门内左脚先迈过门槛，两手垂下；主体从头顶到鞋底约40%画高并按卡收脚下地面。铁门绕原门柱铰链收窄；陈野保留靠车姿态，右手水瓶使用白盖。",
+      "card_field": [
+        "people[0].posture_zh",
+        "props_zh[0]",
+        "framing.subject_frac",
+        "framing.crop_zh",
+        "people[1].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜02",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png",
+      "verdict": "fail",
+      "reason": "角色与江左侧背、陈右三分之四正面符合。陈野明确用左手持瓶、右手举向肩，与卡右持瓶左拍肩相反。两人均在门扇近侧，院内机位看外路却把人物放到院内；卡要求江砚在门外。江砚头顶留白约12%，超过约5%；近端主体大腿切断基本吻合。",
+      "fix_instruction": "在保持B机位、江左陈右的前提下把两人置于门槛外红土路，使门柱门扇在摄影机与人物之间的两侧；陈野解剖右手垂持白盖瓶、左手向江肩抬起。按江砚头顶定位留白约5%，底边仍切其大腿中段。",
+      "card_field": [
+        "people[1].action_zh",
+        "people[0].posture_zh",
+        "camera_zh",
+        "framing.headroom_frac"
+      ]
+    },
+    {
+      "id": "ep01_镜03",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+      "verdict": "fail",
+      "reason": "白盖封闭、递瓶起点、江砚左手待接右手下垂成立。陈野伸出的是靠相机的解剖左臂，右臂下垂，违反右手递瓶。B机位下两人位于门扇近侧院内，未在门外靠门和车侧。江砚头顶约13%，偏离5%，近端腿裁切基本符合。",
+      "fix_instruction": "陈野解剖右臂从远侧伸出递白盖瓶，左臂垂下；保持江砚左接右垂。两人移到门槛外红土上，门扇边缘位于人物近侧。头顶江砚留约5%并保留大腿中段切断。",
+      "card_field": [
+        "people[1].action_zh",
+        "people[0].posture_zh",
+        "camera_zh",
+        "framing.headroom_frac"
+      ]
+    },
+    {
+      "id": "ep01_镜09",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份、右侧三分之四正面望陈野、左手握瓶右指搭白盖、闭唇待饮均符合，A机位门外空间正确。主要失败是景别：画面直到衬衫下摆和裤腰，非胸口下缘切断；江砚头顶留白约14%而非5%。前景陈野整段头肩躯干占宽约45–50%，远超卡的约15%，并非仅虚焦头侧与后肩。",
+      "fix_instruction": "保留江砚左持瓶右扶盖的动作起点，改为真正胸上近景，江砚头顶留约5%、底边切胸口下缘；水瓶与双手抬到胸前能入画。陈野移至左画缘仅保留约15%宽的虚焦侧头及后肩，不改人物所在世界位置和视线。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "background_people[0].posture_zh",
+        "background_people[0].focus"
+      ]
+    }
+  ],
+  "summary": {
+    "pass": 0,
+    "fail": 4,
+    "unclear": 0
+  }
+}

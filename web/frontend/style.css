@@ -210,6 +210,67 @@ button:disabled { opacity: .5; cursor: default; }
 .regen-used-refs { font-size: 12px; }
 .regen-ref-thumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
 .regen-ref-thumbs img { height: 64px; border-radius: 6px; border: 1px solid var(--line); }
+.reference-options { display: grid; grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; }
+.reference-choice { border: 1px solid var(--line); border-radius: 8px; padding: 8px; min-width: 0; }
+.reference-choice:has(input:checked) { border: 2px solid var(--accent, #89613f); background: #f3ede1; padding: 7px; }
+.reference-choice label { display: flex; flex-direction: column; gap: 5px; cursor: pointer; font-size: 12px; overflow-wrap: anywhere; }
+.reference-choice input { align-self: flex-start; width: 18px; height: 18px; }
+.reference-choice img { width: 100%; height: 130px; object-fit: contain; background: #eee; border-radius: 4px; }
+.reference-choice button { margin-top: 6px; }
+.reference-preview { flex-direction: column; gap: 12px; }
+.reference-preview > img { max-height: 80vh; max-width: 90vw; object-fit: contain; }
+.original-prompt { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: 13px; max-height: 260px; overflow-y: auto; padding: 10px; background: #f6f2ea; }
+.original-prompt-details summary { cursor: pointer; }
+.history-picker { border: 1px solid var(--line); padding: 10px; border-radius: 8px; }
+.history-picker select { width: 100%; max-width: 100%; margin: 6px 0; padding: 8px; }
+.history-preview pre, .approval-prompt, .setup-document pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 50vh; overflow-y: auto; font: inherit; font-size: 13px; background: #f6f2ea; padding: 12px; }
+.approval-dialog .lightbox-panel { max-width: 800px; max-height: 90vh; overflow: auto; }
+.new-project-form { margin: 16px 0; }
+.new-project-form > label { display: flex; flex-direction: column; margin: 12px 0; gap: 6px; }
+.new-project-form input, .new-project-form textarea { font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 6px; max-width: 100%; }
+.new-project-form textarea { width: 100%; }
+.new-project-form .toolbar input { width: 90px; margin-left: 8px; }
+.setup-meter { width: 100%; height: 18px; }
+.setup-files { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.global-tasks { margin: 16px auto; padding: 12px 16px; max-width: 1060px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.global-tasks > summary { cursor: pointer; font-weight: 600; }
+.task-list { max-height: 45vh; overflow: auto; }
+.task-row { padding: 10px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.task-row > a { margin-left: 12px; white-space: nowrap; }
+.task-row pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.prompt-mode { display: block; margin: 8px 0; }
+.prompt-mode select { max-width: 100%; padding: 6px; }
+.help-launch { position: fixed; right: 22px; bottom: 20px; z-index: 80; border-radius: 24px; box-shadow: 0 3px 14px #0002; }
+.content-dialog .lightbox-panel { max-height: 90vh; overflow-y: auto; width: 700px; max-width: 95vw; box-sizing: border-box; }
+.content-dialog pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 40vh; overflow-y: auto; }
+.content-form label { display: flex; flex-direction: column; gap: 5px; margin: 12px 0; }
+.content-form input, .content-form textarea { padding: 8px; font: inherit; width: 100%; box-sizing: border-box; }
+.content-dialog button { margin: 5px 7px 5px 0; }
+.content-toolbar { margin: 12px 0; }
+.delete-content { margin-left: 12px; color: #a33826; }
+.trash-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.help-panel { position: fixed; right: 20px; bottom: 76px; width: 390px; max-width: calc(100vw - 24px); height: 680px; max-height: calc(100dvh - 100px); z-index: 80; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 6px 30px #0003; display: flex; flex-direction: column; overflow: hidden; }
+.help-panel[hidden] { display: none; }
+.help-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.help-close { font-size: 22px; padding: 0 9px; }
+.help-context, .help-intro { margin: 8px 14px 0; font-size: 13px; overflow-wrap: anywhere; }
+.help-shortcuts { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 14px; }
+.help-shortcuts button { font-size: 12px; padding: 4px 8px; }
+.help-messages { flex: 1; min-height: 80px; overflow-y: auto; padding: 0 14px; }
+.help-message { margin: 10px 0; padding: 10px; border-radius: 10px; background: #f6f4ef; font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.help-message.user { background: #fbece3; margin-left: 24px; }
+.help-message strong { display: block; margin-bottom: 4px; font-size: 12px; }
+.help-welcome, .help-status { font-size: 12px; line-height: 1.5; }
+.help-status { padding: 5px 14px; }
+.help-links { display: flex; gap: 12px; padding: 5px 14px; font-size: 12px; }
+.help-form { padding: 10px 14px; border-top: 1px solid var(--line); }
+.help-form label { font-size: 12px; display: block; margin-bottom: 4px; }
+.help-form textarea { width: 100%; box-sizing: border-box; resize: vertical; max-height: 120px; font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 7px; }
+.help-actions { display: flex; justify-content: space-between; margin-top: 7px; }
+@media (max-width: 600px) { .help-panel { right: 12px; bottom: 70px; } .help-launch { right: 12px; bottom: 14px; } }
+.setup-task { border-top: 1px solid var(--line); padding: 12px 0; }
+.setup-document { scroll-margin-top: 110px; }
+@media (max-width: 600px) { .ai-rewrite-row { flex-wrap: wrap; } .ai-rewrite-row input[type=text] { min-width: 0; width: 100%; } }
 .regen-status { font-size: 12px; color: var(--ink-dim); white-space: pre-wrap; max-height: 140px; overflow: auto; background: #f6f2ea; padding: 6px 8px; border-radius: 6px; }
 
 .editable-section { margin: 8px 0 16px; }

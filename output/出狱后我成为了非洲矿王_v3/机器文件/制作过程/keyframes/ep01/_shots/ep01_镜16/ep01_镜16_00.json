@@ -1,0 +1,40 @@
+{
+  "id": "ep01_镜16",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-51aee269-804c-4d4d-871f-72ba1d5e20c3.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_batch05_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_continuity.json",
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "A机位左车右江砚、门外红土、正午硬光与两人身份衣着均吻合；江砚仍站原对话位置向车，不把上车终点抢先画出，持瓶手序也无可见反转。问题在全景比例：江砚头至鞋约43%，陈野约61%，近端人物明显超过40%全身目标；江砚脚下余地约29%，陈野约10%，未落实约15%脚下地面与中央偏下全景主体的组合。",
+      "fix_instruction": "保持A机位门外走位和上车前状态，按full_body约40%从头至鞋量人，缩小陈野的前景放大程度并将主体群放至脚下约15%留白的区域，保留适度近远差而非让前景人占六成画高。",
+      "card_field": [
+        "framing.subject_frac",
+        "framing.crop_zh",
+        "people[1].depth"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_single.json",
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+      "verdict": "pass",
+      "reason": "两人均在门外红土，门内双排房舍、左侧同款关闭车门SUV与A底板对应。江砚右中景左向侧面，左手持瓶、右手在瓶口准备复位瓶盖；陈野左近景侧背双手垂下，尚未上车，动作起点正确。身份服装吻合。两人头脚完整，江砚头到鞋底约43%接近40%，陈野因近景纵深约61%；以主行动人江砚测量，不将主体下方红土计入身高。",
+      "fix_instruction": "",
+      "card_field": []
+    }
+  ],
+  "review_zh": "A机位左车右江砚、门外红土、正午硬光与两人身份衣着均吻合；江砚仍站原对话位置向车，不把上车终点抢先画出，持瓶手序也无可见反转。问题在全景比例：江砚头至鞋约43%，陈野约61%，近端人物明显超过40%全身目标；江砚脚下余地约29%，陈野约10%，未落实约15%脚下地面与中央偏下全景主体的组合。；两人均在门外红土，门内双排房舍、左侧同款关闭车门SUV与A底板对应。江砚右中景左向侧面，左手持瓶、右手在瓶口准备复位瓶盖；陈野左近景侧背双手垂下，尚未上车，动作起点正确。身份服装吻合。两人头脚完整，江砚头到鞋底约43%接近40%，陈野因近景纵深约61%；以主行动人江砚测量，不将主体下方红土计入身高。",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch05_b.json"
+}

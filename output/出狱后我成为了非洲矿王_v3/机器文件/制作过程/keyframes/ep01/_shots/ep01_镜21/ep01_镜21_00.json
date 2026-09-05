@@ -1,0 +1,37 @@
+{
+  "id": "ep01_镜21",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-ed027a5c-9592-4bfe-be5a-14589891d8df.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_continuity.json",
+      "id": "ep01_镜21",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "江砚身份、灰蓝衬衫、双肩橄榄包带和望向母亲白发的关系可读；A机位方向正确。但下边缘达到腰腹，可见胸袋以下多颗纽扣和前臂；脸部只约27%画高，苏慧右前景头肩占约半幅，均明显偏离胸口截断、脸约50%、过肩约15%的卡片。",
+      "fix_instruction": "收紧江砚胸上取景，头顶约5%、脸高约50%，裁断于胸口；将苏慧退至右缘仅约15%的虚焦白发及后肩。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_single.json",
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+      "verdict": "fail",
+      "reason": "A机位与母子身份服饰、江砚向右看母亲及肩带保留正确；江砚头顶约17%、发顶至下颏约27%，画面至腹部且露出前臂，不符合头顶5%、头高50%、底边胸口的紧密胸像。苏慧右前景显示大半后脑及宽大上身，肩体占约55%画宽，超过约15%的侧背肩/白发边缘。",
+      "fix_instruction": "收紧江砚胸像至头顶5%、发顶至下颏约50%、胸口截断；苏慧主体右移画外，仅约15%肩与白发边缘虚焦入画。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[苏慧].posture_zh"
+    }
+  ],
+  "review_zh": "江砚身份、灰蓝衬衫、双肩橄榄包带和望向母亲白发的关系可读；A机位方向正确。但下边缘达到腰腹，可见胸袋以下多颗纽扣和前臂；脸部只约27%画高，苏慧右前景头肩占约半幅，均明显偏离胸口截断、脸约50%、过肩约15%的卡片。；A机位与母子身份服饰、江砚向右看母亲及肩带保留正确；江砚头顶约17%、发顶至下颏约27%，画面至腹部且露出前臂，不符合头顶5%、头高50%、底边胸口的紧密胸像。苏慧右前景显示大半后脑及宽大上身，肩体占约55%画宽，超过约15%的侧背肩/白发边缘。",
+  "generator_agent_id": "/root/generate_villa_round3",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_round3_a.json"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ep01_镜19",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-134adb1c-2bf2-41f1-83db-3d8ac0747b24.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_continuity.json",
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "身份、灰蓝衬衫、双肩磨旧橄榄宽织带、三分之四正面朝右、A玻璃背景和画外旅客正确，纸条/箱杆也不再拉宽取景。但下沿仍截到腹部附近：胸袋下方仍有大段衬衫及多颗扣，肘部入画；脸约占画高1/4，未做到胸口下缘切断及脸约1/3。",
+      "fix_instruction": "保持现有人脸、朝向和双肩带，进一步推进相机或按胸口下缘构图，使胸袋下缘附近成为画底、腹部和肘部出框，头顶仍留约5%。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_single.json",
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "verdict": "fail",
+      "reason": "A玻璃挑檐方向、江砚身份、向右三分之四正面、闭嘴和双肩包带均正确；头顶约5%，但底部到腹部，完整胸袋下仍留约18%画高衣身并可见肘部，未按胸口下缘裁切。",
+      "fix_instruction": "继续收紧为胸口下缘截断，保留头顶约5%，持纸手/拉杆和胸下身体位于画外。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh"
+    }
+  ],
+  "review_zh": "身份、灰蓝衬衫、双肩磨旧橄榄宽织带、三分之四正面朝右、A玻璃背景和画外旅客正确，纸条/箱杆也不再拉宽取景。但下沿仍截到腹部附近：胸袋下方仍有大段衬衫及多颗扣，肘部入画；脸约占画高1/4，未做到胸口下缘切断及脸约1/3。；A玻璃挑檐方向、江砚身份、向右三分之四正面、闭嘴和双肩包带均正确；头顶约5%，但底部到腹部，完整胸袋下仍留约18%画高衣身并可见肘部，未按胸口下缘裁切。",
+  "generator_agent_id": "/root/generate_keyframes_retry_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_retry_b.json"
+}

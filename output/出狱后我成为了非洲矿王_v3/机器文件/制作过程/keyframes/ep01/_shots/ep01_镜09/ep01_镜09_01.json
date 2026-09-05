@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜09",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070e9-1aa2-7380-9ea7-13b788a34a34/exec-1cc95780-ff39-47cd-86ae-520184118f77.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+      "verdict": "fail",
+      "reason": "江砚身份、灰蓝衣、朝左看陈野的冷静神态及门外A方向正确，陈野左缘短发/棕衣/灰巾承接基准。手和瓶被胸部构图裁去，允许，未据此添加饮完要求。本张顶空约12%，取景仍露胸袋和下部，左下陈野肩背占约四分之一画宽。需完成构图边缘修正。",
+      "fix_instruction": "保留身份与门外A方向，继续减顶空、胸口截止；陈野头背移到画框外只留左缘约15%虚焦窄肩。",
+      "card_field": "framing.crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+      "verdict": "fail",
+      "reason": "江砚同脸、蓝灰衬衫、右侧三分之四正面和闭嘴视线正确；已是胸像，不是腰景。左侧陈野从窄头边扩到下缘约27%宽的肩背，不符约15%窄过肩；头顶空约12%，高于5%。瓶和手按胸下裁切在画外，不据此判丢失。",
+      "fix_instruction": "使用同镜09_02作最小局部修正：保持江砚当前脸部大小、表情与背景，只把陈野整条左缘肩背移到框外，最宽保留约15%。避免再次整体放大江砚。",
+      "card_field": "background_people[0].posture_zh; framing.crop_zh"
+    }
+  ],
+  "review_zh": "江砚身份、灰蓝衣、朝左看陈野的冷静神态及门外A方向正确，陈野左缘短发/棕衣/灰巾承接基准。手和瓶被胸部构图裁去，允许，未据此添加饮完要求。本张顶空约12%，取景仍露胸袋和下部，左下陈野肩背占约四分之一画宽。需完成构图边缘修正。；江砚同脸、蓝灰衬衫、右侧三分之四正面和闭嘴视线正确；已是胸像，不是腰景。左侧陈野从窄头边扩到下缘约27%宽的肩背，不符约15%窄过肩；头顶空约12%，高于5%。瓶和手按胸下裁切在画外，不据此判丢失。",
+  "generator_agent_id": "/root/generate_edits_09_14",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_09_14.json"
+}

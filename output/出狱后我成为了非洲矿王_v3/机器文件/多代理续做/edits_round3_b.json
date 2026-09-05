@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜36",
+    "prompt": "EDIT this photograph into a much tighter chest-up close-up of 苏慧. Move the framing in strongly. The complete head from hair crown to chin fills HALF of the final image height. Place the hair crown only 5% below the TOP edge. Cut the BOTTOM edge across the UPPER CHEST. Keep the face proportions natural and preserve the exact facial expression and eye direction.\nThe blurred listener is almost entirely outside the right edge: show only a thin sliver of hair and shoulder along the outermost 10-15% of that edge, including the bottom corner. The sharp face is dominant.\n同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。 以这个编辑目标为基准约放大1.4倍并向主体脸部收紧，过肩只留边缘细弧。\n保持同一张脸、原表情和视线、衬衫与肩带状态、光照和原机位背景。胸口以下动作及道具留在画外。\nKeep the same photographic look, lighting and camera direction. Final image portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_crop_plans_round3.json",
+    "script_ref_zh": "script_source.txt 第71行「苏慧：小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。」——她教儿子忍让，是长期寄人篱下的习惯。"
+  },
+  {
+    "id": "ep01_镜37",
+    "prompt": "EDIT this photograph into a much tighter chest-up close-up of 江砚. Move the framing in strongly. The complete head from hair crown to chin fills HALF of the final image height. Place the hair crown only 5% below the TOP edge. Cut the BOTTOM edge across the UPPER CHEST. Keep the face proportions natural and preserve the exact facial expression and eye direction.\nThe blurred listener is almost entirely outside the right edge: show only a thin sliver of hair and shoulder along the outermost 10-15% of that edge, including the bottom corner. The sharp face is dominant.\n同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。 以这个编辑目标为基准约放大1.31倍并向主体脸部收紧，过肩只留边缘细弧。\n保持同一张脸、原表情和视线、衬衫与肩带状态、光照和原机位背景。胸口以下动作及道具留在画外。\nKeep the same photographic look, lighting and camera direction. Final image portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_crop_plans_round3.json",
+    "script_ref_zh": "script_source.txt 第71行「苏慧：小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。」——江砚因母亲的小心而心酸，不能凭空演成已经知道后续骗局。"
+  }
+]

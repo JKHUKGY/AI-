@@ -1,0 +1,62 @@
+{
+  "scene_beats": [
+    {
+      "id": "ep01_p2",
+      "scene": "SC05",
+      "title_zh": "门口对话；江砚东/靠门，陈野西/靠车。镜3水瓶由陈野右手交到江砚左手，镜5右手拧盖暂停。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "画面严格只有江砚、陈野两个人，每人各一个身体。人物参考表上的正侧背三张是同一个人的方向说明。两人脚底都落在敞开铁门外的红土道路上，门槛位于他们与镜头之间。",
+        "铁门半开，两人站在门外：江砚靠东侧门口、陈野靠西侧车辆。",
+        "水瓶交接完成：左手持瓶的是江砚，右手搭在瓶盖上。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：B宽底板从院内看铁门外的红土路，右侧为越野车、两侧白色平房，天空上部大片白、下部是水泥地。",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "blocking": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "同一角色的三个方向，在画面里只合成该角色一个人",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "holding_zh": "眉头收紧、嘴唇将开，双手落在身侧"
+        },
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "同一角色的三个方向，在画面里只合成该角色一个人",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手持冰水瓶、右手搭白瓶盖，眼神平稳",
+          "contact_zh": null,
+          "holding_zh": "解剖学左手握瓶身，解剖学右手搭在白色瓶盖上，瓶盖仍拧紧在瓶口；两手在身前腹部。"
+        }
+      ],
+      "count": 2,
+      "master_status": "pending_user_review_then_generation"
+    }
+  ],
+  "cards": []
+}

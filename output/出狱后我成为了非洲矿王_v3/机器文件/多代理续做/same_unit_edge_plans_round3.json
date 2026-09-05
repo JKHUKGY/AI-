@@ -1,0 +1,25 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜09",
+      "target_image": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+      "correction_zh": "仅编辑画面左下陈野棕衣肩背及紧邻背景，把该肩片向画框左外移，让其从左边缘切入的最大宽度约为画宽15%，形成窄虚焦肩弧；目前多占的15%区域恢复为同一高度原有监狱铁栏与虚焦院景。江砚头顶、脸部大小和位置、全部五官与神态、衬衫、头发、右门柱、背景视角、光线及整张9:16取景保持原位置和比例；无需继续放大主体。",
+      "rationale": "09_02主体胸上取景与约7%顶空已基本可用，主要剩左下肩片约30%宽。",
+      "mode": "local_reframe",
+      "prompt_variant": "edge_only",
+      "foreground_edge": "left",
+      "preserve_zh": "保持主体取景、神态及原机位，唯一修改是陈野肩片。"
+    },
+    {
+      "id": "ep01_镜14",
+      "target_image": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png",
+      "correction_zh": "仅编辑左下陈野棕衣肩片与紧邻背景，把棕色肩弧向左框外移，使其最宽处从左边缘伸入约15%画宽；腾出的区域补回原有同高度铁栏和虚焦院景。保持陈野左上已有窄头侧边、江砚全脸与平静笃定神态、头顶留白、主体大小和位置、右门柱、灰蓝衬衫及整体机位完全不动；无需重新裁切或继续放大江砚。",
+      "rationale": "14_01头顶约6%与胸部主体已基本收紧，主要剩左下肩片约27%宽。",
+      "mode": "local_reframe",
+      "prompt_variant": "edge_only",
+      "foreground_edge": "left",
+      "preserve_zh": "保持主体取景、神态及原机位，唯一修改是陈野肩片。"
+    }
+  ],
+  "source_review": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json"
+}

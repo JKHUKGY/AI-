@@ -1,0 +1,37 @@
+{
+  "id": "master_ep01_v1",
+  "round": 3,
+  "candidate": 5,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-84fcd757-d3f8-4895-a451-e22cdfe1b09f.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+  "status": "rejected",
+  "reviewed": true,
+  "review_zh": "角色混淆：左中站着的苏慧之外，右后沙发看指甲的女人也穿米白旧布裙和灰围裙、盘灰黑发，呈现第二个苏慧；右近沙发看手机者穿刘兰蓝灰色长吊带裙，批准的顾瑶白色背心和浅裙不见。苏慧近侧右臂仍下垂提包，左手在腹前，持包左右也未修正。；苏慧仍以近相机右手提包。另有严重身份/座位串位：远侧沙发出现第二位灰发盘发、白裙灰围裙的苏慧；近侧沙发是蓝灰长裙刘兰在看手机；白上衣米短裙的顾瑶消失。虽总数四人，四个批准身份没有齐全；近景中央黑色单椅也从底板消失。",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_supplement_single",
+      "unit_id": "master_ep01_v1",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+      "verdict": "fail",
+      "reason": "角色混淆：左中站着的苏慧之外，右后沙发看指甲的女人也穿米白旧布裙和灰围裙、盘灰黑发，呈现第二个苏慧；右近沙发看手机者穿刘兰蓝灰色长吊带裙，批准的顾瑶白色背心和浅裙不见。苏慧近侧右臂仍下垂提包，左手在腹前，持包左右也未修正。",
+      "fix": "重新在源卡明确四个不同身份与座位绑定：右后沙发必须刘兰蓝灰长吊带裙，右近沙发必须顾瑶白色背心浅短裙，苏慧只能站西侧出现一次；苏慧近侧右臂腹前、远侧左手包。三轮已到上限，不能直接再生成。",
+      "fix_instruction": "同 fix。",
+      "card_field": "scene_beats[ep01_v1].blocking[刘兰/顾瑶].ref_images / posture_zh；blocking[苏慧].holding_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_continuity",
+      "unit_id": "master_ep01_v1",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+      "verdict": "fail",
+      "reason": "苏慧仍以近相机右手提包。另有严重身份/座位串位：远侧沙发出现第二位灰发盘发、白裙灰围裙的苏慧；近侧沙发是蓝灰长裙刘兰在看手机；白上衣米短裙的顾瑶消失。虽总数四人，四个批准身份没有齐全；近景中央黑色单椅也从底板消失。",
+      "fix": "严格每人一个：远侧沙发仅蓝灰绸长裙刘兰看指甲，近侧沙发仅白上衣米短裙顾瑶看手机，苏慧只站在母子区且左手提包右手腹前；恢复底板中央黑色单椅。",
+      "card_field": "scene_beats[ep01_v1].present / blocking / master_plate_image",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "required_distinct_subagents": 4,
+  "host_max_active_children": 3,
+  "observed_max_active_children": 3,
+  "units": [
+    21,
+    23,
+    36,
+    37
+  ],
+  "round": 2,
+  "agents": [
+    {
+      "agent_id": "/root/generate_edits_round2_a",
+      "role": "Generator A",
+      "deliverable": "generator_edits_round2_a.json"
+    },
+    {
+      "agent_id": "/root/generate_keyframes_batch04_b",
+      "role": "Generator B",
+      "deliverable": "generator_edits_round2_b.json"
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "role": "Reviewer A",
+      "deliverable": "review_keyframes_edits_round2_single.json"
+    },
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "role": "Reviewer B",
+      "deliverable": "review_keyframes_edits_round2_continuity.json"
+    }
+  ],
+  "status": "completed",
+  "images_generated": 8,
+  "selected": 0,
+  "four_agent_requirement_met": true
+}

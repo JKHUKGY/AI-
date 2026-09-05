@@ -1,0 +1,47 @@
+{
+  "id": "ep01_镜15",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070ef-c220-7161-8318-bb18c74f16cc/exec-2a0214bf-9004-465f-89dd-51d1343ddd75.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+  "status": "pending_review",
+  "generator_agent_id": "/root/generate_prison_round2_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_prison_b.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_prison_continuity.json",
+      "id": "ep01_镜15",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+      "verdict": "fail",
+      "reason": "人物在门外、B视角道路/右后车和身份服饰均正确。江砚远侧左手握开口瓶、近侧右手持唯一白盖，已解决01重复盖，手别与道具可用。陈野近侧左臂下垂正确，远侧右手却仍呈侧向松垂弯指，悬在身体前侧空处，没有明确掌心向下、位于右大腿前上方即将拍落的形态；关键动作起点不足。取景至膝附近，比大腿中段设计偏宽，头顶约9%不是单独判错依据。",
+      "fix_instruction": "保留开口瓶/唯一右手白盖和人物门外位置，局部把陈野远侧右手摆到右大腿前上方一掌距离，掌心朝下、手指自然展开，形成将拍未拍；收去膝部至大腿中段即可。",
+      "card_field": "people[1].action_zh; framing.crop_zh",
+      "spatial_annotations": {
+        "coordinate_system": "normalized x,y from top-left",
+        "jiang_left_bottle_bbox": [
+          0.37,
+          0.46,
+          0.48,
+          0.61
+        ],
+        "jiang_right_cap_region": [
+          0.36,
+          0.84,
+          0.43,
+          0.89
+        ],
+        "chen_right_hand": [
+          0.51,
+          0.61
+        ],
+        "chen_left_hand": [
+          0.85,
+          0.75
+        ],
+        "minimal_change": "无需交换左右手；只调整画面中央偏右约(0.51,0.61)处陈野的远侧右掌，其近侧左手保持下垂。"
+      }
+    }
+  ],
+  "review_zh": "人物在门外、B视角道路/右后车和身份服饰均正确。江砚远侧左手握开口瓶、近侧右手持唯一白盖，已解决01重复盖，手别与道具可用。陈野近侧左臂下垂正确，远侧右手却仍呈侧向松垂弯指，悬在身体前侧空处，没有明确掌心向下、位于右大腿前上方即将拍落的形态；关键动作起点不足。取景至膝附近，比大腿中段设计偏宽，头顶约9%不是单独判错依据。"
+}

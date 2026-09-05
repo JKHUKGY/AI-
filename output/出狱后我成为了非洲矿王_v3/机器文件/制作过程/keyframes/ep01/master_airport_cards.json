@@ -1,0 +1,442 @@
+{
+  "scene_beats": [
+    {
+      "id": "ep01_a1",
+      "scene": "SC06",
+      "title_zh": "一个月前白天；母亲从接站区走近；江砚右手深灰硬壳箱、背橄榄包、左手地址纸；两人先互认，旁白读完再问候。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "state_zh": [
+        "一个月前白天，母子在机场出口互认。",
+        "江砚双肩背橄榄包、右手拉深灰箱、左手有地址纸；母亲两手空着。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC06_机场出口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：机场A宽底板左玻璃幕墙与行李推车，上方挑檐，右侧栏杆与黄出租车/白小巴，中央下方通道约半幅。",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:地址纸",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条",
+          "contact_zh": null,
+          "holding_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在远处人流后方朝江砚走近",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null,
+          "holding_zh": "双手自然垂着，目光寻找儿子，眼眶微红"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年男子、浅灰短袖、黑软箱；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "浅棕皮肤成年男子、米色衬衫、黑背包；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation"
+    },
+    {
+      "id": "ep01_a2",
+      "scene": "SC06",
+      "title_zh": "镜22背包从江砚双肩转到苏慧左手；箱仍属江砚，地址纸收进口袋。此后江砚双肩无包带。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "state_zh": [
+        "母子在机场出口说话，三名旅客仍在远处通道。",
+        "交接完成后橄榄包在苏慧左手；江砚双肩空着、右手拉箱、地址纸在衣袋。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC06_机场出口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：机场A宽底板左玻璃幕墙与行李推车，上方挑檐，右侧栏杆与黄出租车/白小巴，中央下方通道约半幅。",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发",
+          "contact_zh": null,
+          "holding_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红",
+          "contact_zh": null,
+          "holding_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年男子、浅灰短袖、黑软箱；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "浅棕皮肤成年男子、米色衬衫、黑背包；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation"
+    }
+  ],
+  "cards": [
+    {
+      "id": "ep01_a1_主帧",
+      "shot_no": 17,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "plate_read_zh": "实际看图：机场A宽底板左玻璃幕墙与行李推车，上方挑檐，右侧栏杆与黄出租车/白小巴，中央下方通道约半幅。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第56行「▲热带阳光灼人，机场出口人流混杂，各色皮肤的人穿梭往来。」；script_source.txt 第57行「▲江砚拖着一个半旧的行李箱，背着登山包，手里攥着写着地址的纸条，四处张望。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——交代闪回和身份，机场的陌生感先于重逢。",
+      "beat_zh": "江砚在左中景玻璃门外，侧身朝右前方接站区张望；右手拖半旧深灰硬壳行李箱，深橄榄色登山包仍双肩背好，左手持小纸条。苏慧在右远景人流之后朝他走来，侧面、脸很小；匿名旅客分前后层沿通道通过。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身完整，前后层清楚；近端人物占高约40%，脚下留15%地面。",
+        "plate_crop_zh": "保留机场宽底板全部机位结构，左玻璃、右栏杆车道、中央接站通道；三名旅客占远景。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:地址纸",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条",
+          "contact_zh": null,
+          "holding_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在远处人流后方朝江砚走近",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null,
+          "holding_zh": "双手自然垂着，目光寻找儿子，眼眶微红"
+        }
+      ],
+      "background_people": [
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年男子、浅灰短袖、黑软箱；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李",
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李",
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "浅棕皮肤成年男子、米色衬衫、黑背包；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李",
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "relation_zh": "交代闪回和身份，机场的陌生感先于重逢。",
+      "count": 1,
+      "notes": "机场主帧用原关键帧装配器的background_people文字群演接口装配；原主帧脚本强制每人提供图片参考，无法表达已有文字群演。保持两份skill脚本原样。"
+    },
+    {
+      "id": "ep01_a2_主帧",
+      "shot_no": 23,
+      "scene": "SC06",
+      "beat_id": "ep01_a2",
+      "tier": "A",
+      "plate_id": "SC06_机场出口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "plate_read_zh": "实际看图：机场A宽底板左玻璃幕墙与行李推车，上方挑檐，右侧栏杆与黄出租车/白小巴，中央下方通道约半幅。",
+      "script_ref_zh": "script_source.txt 第60行「江砚（看着母亲鬓角新增的白发，喉结动了动）：妈，我不累，你怎么瘦了这么多。」——儿子先注意她的消瘦，而不是旅途辛苦。",
+      "beat_zh": "江砚左中景胸上三分之四正面，朝右前方苏慧，双肩已经没有包带，目光停在母亲鬓角；苏慧右前景白发与侧背肩虚焦，背包在她左手低于裁切线。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身完整，前后层清楚；近端人物占高约40%，脚下留15%地面。",
+        "plate_crop_zh": "保留机场宽底板全部机位结构，左玻璃、右栏杆车道、中央接站通道；三名旅客占远景。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发",
+          "contact_zh": null,
+          "holding_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红",
+          "contact_zh": null,
+          "holding_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红"
+        }
+      ],
+      "background_people": [
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年男子、浅灰短袖、黑软箱；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李",
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李",
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "浅棕皮肤成年男子、米色衬衫、黑背包；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李",
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "relation_zh": "儿子首先注意到母亲消瘦，自己的旅途疲惫显得次要。",
+      "count": 1,
+      "notes": "机场主帧用原关键帧装配器的background_people文字群演接口装配；原主帧脚本强制每人提供图片参考，无法表达已有文字群演。保持两份skill脚本原样。"
+    }
+  ]
+}

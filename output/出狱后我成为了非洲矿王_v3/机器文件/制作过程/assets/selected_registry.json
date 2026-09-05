@@ -1,0 +1,471 @@
+[
+  {
+    "id": "SC01_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；玄关居后、沙发左前景；沙发入画必须交代刘兰顾瑶。"
+  },
+  {
+    "id": "SC01_C侧机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；左窗、右电视墙、沙发横贯；人物按座位填入，禁止生成空沙发。"
+  },
+  {
+    "id": "SC01_顾家别墅客厅_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC01_顾家别墅客厅_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_02.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC01_顾家别墅客厅_C侧机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC01_顾家别墅客厅_D细节",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC01_顾家别墅客厅_E仰拍",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_E仰拍/SC01_顾家别墅客厅_E仰拍_01.png",
+    "status": "selected",
+    "evidence": "units_queue.json 已通过记录",
+    "note": ""
+  },
+  {
+    "id": "SC01_顾家别墅客厅_E仰拍_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_E仰拍_紧/SC01_顾家别墅客厅_E仰拍_紧_01.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "吊灯/电视/门洞轴线修正；低机位保留。"
+  },
+  {
+    "id": "SC01夜_顾家别墅客厅_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01夜_顾家别墅客厅_A主机位/SC01夜_顾家别墅客厅_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC02_顾家餐厅_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC02_顾家餐厅_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC02_顾家餐厅_C侧机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC03_A主机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03_A主机位_紧/SC03_A主机位_紧_00.png",
+    "status": "historical_candidate",
+    "evidence": "v2/keyframes/ep01/keyframe_cards.json 既有使用路径",
+    "note": "尚未重新验收；夜景不能用于第1集日内戏。"
+  },
+  {
+    "id": "SC03_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03_B反打_紧/SC03_B反打_紧_00.png",
+    "status": "historical_candidate",
+    "evidence": "v2/keyframes/ep01/keyframe_cards.json 既有使用路径",
+    "note": "尚未重新验收；夜景不能用于第1集日内戏。"
+  },
+  {
+    "id": "SC03_顾家客房_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": "SC03 为夜景，只用于晚内戏。"
+  },
+  {
+    "id": "SC03_顾家客房_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": "SC03 为夜景，只用于晚内戏。"
+  },
+  {
+    "id": "SC03日_顾家客房_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 本批生成并实际看图验收",
+    "note": "日光、台灯关闭；左床右桌，去掉预置行李和专业书。"
+  },
+  {
+    "id": "SC03日_顾家客房_A主机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 本批生成并实际看图验收",
+    "note": "同轴紧底板：左床与未亮台灯、后方窗、右侧桌椅边缘。"
+  },
+  {
+    "id": "SC03日_顾家客房_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "status": "selected",
+    "evidence": "2026-09-05 本批生成并实际看图验收",
+    "note": "修正床头灯方向；右床脚、左空桌、后方半开门；_00灯位错误。"
+  },
+  {
+    "id": "SC03日_顾家客房_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 本批生成并实际看图验收",
+    "note": "后方门已关闭，左挂钩与桌椅、右床脚；日光持续，门边为空墙。"
+  },
+  {
+    "id": "SC04_矿场板房办公室_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC04_矿场板房办公室_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC04_矿场板房办公室_C侧机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC04_矿场板房办公室_D细节",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC04外_板房门外_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04外_板房门外_A主机位/SC04外_板房门外_A主机位_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "独立外景可用；门左路右，室内外窗位尚无严格匹配依据。"
+  },
+  {
+    "id": "SC04夜_矿场板房办公室_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04夜_矿场板房办公室_A主机位/SC04夜_矿场板房办公室_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC04夜_矿场板房办公室_D细节",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC04夜_矿场板房办公室_D细节/SC04夜_矿场板房办公室_D细节_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "只用于赃物已放入的状态；放入前需另做空抽屉。"
+  },
+  {
+    "id": "SC05_监狱门口_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC05_监狱门口_A主机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；剥皮门柱、院内平房/树冠保留，车在裁切外。"
+  },
+  {
+    "id": "SC05_监狱门口_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC05_监狱门口_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；门外红土路、右侧越野车保留。"
+  },
+  {
+    "id": "SC06_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；栏杆、左侧黄出租车/白小巴、棕榈/广告骨架保留。"
+  },
+  {
+    "id": "SC06_机场出口_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC06_机场出口_A主机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "status": "selected",
+    "evidence": "units_queue.json 已通过记录",
+    "note": ""
+  },
+  {
+    "id": "SC06_机场出口_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC07_顾家厨房_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC07_顾家厨房_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "SC08_丛林山路_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC08_丛林山路_A主机位/SC08_丛林山路_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC08_丛林山路_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC08_丛林山路_B反打/SC08_丛林山路_B反打_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "岩壁从右转左；保留路面连续性。"
+  },
+  {
+    "id": "SC08_断崖_D细节",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC08_断崖_D细节/SC08_断崖_D细节_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC09_野外营地_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC09_野外营地_A主机位/SC09_野外营地_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC09_野外营地_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC09_野外营地_B反打/SC09_野外营地_B反打_01.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批修正：帐篷背面朝镜头，中央篝火与左侧石块保留。"
+  },
+  {
+    "id": "SC10_矿场会议室_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10_矿场会议室_A主机位/SC10_矿场会议室_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC10_矿场会议室_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10_矿场会议室_B反打/SC10_矿场会议室_B反打_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "门、地图与窗的方向成立；地图/白板排列略漂移，避免整墙精确匹配剪辑。"
+  },
+  {
+    "id": "SC10_矿场会议室_C侧机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10_矿场会议室_C侧机位/SC10_矿场会议室_C侧机位_01.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "桌子横贯画面，右端投影幕；弃用旧轴向 _00。"
+  },
+  {
+    "id": "SC10_矿场会议室_D细节",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10_矿场会议室_D细节/SC10_矿场会议室_D细节_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "桌面矿物图册/纸笔状态；广景需同步加入这些道具。"
+  },
+  {
+    "id": "SC10压抑版_矿场会议室_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10压抑版_矿场会议室_A主机位/SC10压抑版_矿场会议室_A主机位_00.png",
+    "status": "selected",
+    "evidence": "units_queue.json 已通过记录",
+    "note": ""
+  },
+  {
+    "id": "SC10压抑版_矿场会议室_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10压抑版_矿场会议室_B反打/SC10压抑版_矿场会议室_B反打_00.png",
+    "status": "selected",
+    "evidence": "units_queue.json 已通过记录",
+    "note": ""
+  },
+  {
+    "id": "SC10压抑版_矿场会议室_C侧机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10压抑版_矿场会议室_C侧机位/SC10压抑版_矿场会议室_C侧机位_02.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "侧机位修正；顶灯两亮两灭，闭合百叶。"
+  },
+  {
+    "id": "SC10压抑版_矿场会议室_D细节",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC10压抑版_矿场会议室_D细节/SC10压抑版_矿场会议室_D细节_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "与明亮版桌面物件一致；文字不承担剧情可读信息。"
+  },
+  {
+    "id": "SC11_矿场开采工作面_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC11_矿场开采工作面_A主机位/SC11_矿场开采工作面_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC11_矿场开采工作面_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC11_矿场开采工作面_B反打/SC11_矿场开采工作面_B反打_01.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批修正：挖掘机车尾配重/散热格栅朝镜头；7-1仍须另加剧本越野车。"
+  },
+  {
+    "id": "SC12_矿场仓库_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC12_矿场仓库_A主机位/SC12_矿场仓库_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC12_矿场仓库_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC12_矿场仓库_B反打/SC12_矿场仓库_B反打_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "门口夜色、蓝箱/麻袋方向可用；避免要求箱袋数量精确匹配。"
+  },
+  {
+    "id": "SC13_顾家书房_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC13_顾家书房_A主机位/SC13_顾家书房_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "SC13_顾家书房_B反打",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC13_顾家书房_B反打/SC13_顾家书房_B反打_01.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批修正：书桌座位侧有中央膝部开口，两侧抽屉，椅背保留。"
+  },
+  {
+    "id": "SC14_顾家别墅门外_A主机位",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC14_顾家别墅门外_A主机位/SC14_顾家别墅门外_A主机位_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "刘兰_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "律师_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/律师_三视图/律师_三视图_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  },
+  {
+    "id": "江砚_初来期_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "矿场技术员_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/矿场技术员_三视图/矿场技术员_三视图_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "苏慧_佣人期_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "陈野_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "顾万通_得势期_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_01.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "顾浩_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/顾浩_三视图/顾浩_三视图_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "顾瑶_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "status": "selected",
+    "evidence": "v2/assets/selected.md 历史验收；本次核对软链目标",
+    "note": ""
+  },
+  {
+    "id": "马库斯_三视图",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/马库斯_三视图/马库斯_三视图_00.png",
+    "status": "selected",
+    "evidence": "v3 PROGRESS 历史已验收记录；本次核对文件存在",
+    "note": "历史结论，未在本批重新逐张验收。"
+  }
+]

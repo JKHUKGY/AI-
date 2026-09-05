@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜09",
+    "prompt": "EDIT this photograph into a much tighter chest-up close-up of 江砚. Move the framing in strongly. The complete head from hair crown to chin fills HALF of the final image height. Place the hair crown only 5% below the TOP edge. Cut the BOTTOM edge across the UPPER CHEST. Keep the face proportions natural and preserve the exact facial expression and eye direction.\nThe blurred listener is almost entirely outside the left edge: show only a thin sliver of hair and shoulder along the outermost 10-15% of that edge, including the bottom corner. The sharp face is dominant.\n以同一张候选为编辑目标，按归一化框[0.45, 0.118, 0.89, 0.558]收紧主体和原背景，最终保持9:16。清晰主体江砚完整发顶至下颏约占画高50%，发顶留白约5%，下边界截在胸口。保留江砚面部朝画面左侧、冷静闭嘴及灰蓝衬衫。收紧至胸口，瓶和双手自然在画框以下；保留其原有左手持瓶、右手白盖动作状态，不把瓶强行抬入胸像。左侧仅重构陈野虚焦短发侧缘与棕衣后肩窄弧。前景陈野沿原左侧边界仅保留10%至15%画宽的虚焦发丝和后肩弧线，与主体视线相连；此处允许少量边缘重构来满足原卡。\n保持同一张脸、表情、视线、服装、肩带状态、光线与背景机位；胸口以下道具和动作留在原位画外。\nKeep the same photographic look, lighting and camera direction. Final image portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_crop_plans.json",
+    "script_ref_zh": "script_source.txt 第44行「江砚（喝了口水，喉结滚动，眼神一点点冷下来）：我猜到是他。」——江砚早有判断，喝水后才平静说出。"
+  },
+  {
+    "id": "ep01_镜14",
+    "prompt": "EDIT this photograph into a much tighter chest-up close-up of 江砚. Move the framing in strongly. The complete head from hair crown to chin fills HALF of the final image height. Place the hair crown only 5% below the TOP edge. Cut the BOTTOM edge across the UPPER CHEST. Keep the face proportions natural and preserve the exact facial expression and eye direction.\nThe blurred listener is almost entirely outside the left edge: show only a thin sliver of hair and shoulder along the outermost 10-15% of that edge, including the bottom corner. The sharp face is dominant.\n以同一张候选为编辑目标，按归一化框[0.46, 0.1855, 0.895, 0.6205]收紧主体与原背景，最终保持9:16。江砚完整发顶至下颏约占画高50%，发顶留白5%，底边截在胸口；保留同一张脸、三分之四正面朝左、冷静闭嘴且目光看左侧陈野。左边缘仅局部重构陈野虚焦短发侧缘与棕色衣服后肩窄弧，约占画宽10%至15%，主体头颈与后背留在左框外。江砚左手持开口瓶、右手持唯一白盖仍在原胸下位置，手瓶自然留在下画框外。\n保持同一张脸、表情、视线、服装、肩带状态、光线与背景机位；胸口以下道具和动作留在原位画外。\nKeep the same photographic look, lighting and camera direction. Final image portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_crop_plans.json",
+    "script_ref_zh": "script_source.txt 第49行「江砚（摇了摇头，语气平静笃定）：不回了，自己干。」——本场反转：主动离开顾家，决心自己创业。"
+  }
+]

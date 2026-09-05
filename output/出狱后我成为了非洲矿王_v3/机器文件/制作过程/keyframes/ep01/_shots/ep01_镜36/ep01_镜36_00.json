@@ -1,0 +1,41 @@
+{
+  "id": "ep01_镜36",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070c2-816b-7d02-bc43-290a5bc818a3/exec-59bb5a33-a2d4-4bc6-9c32-a8685e2723e9.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/resume_review_room_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch03_resume_continuity.json",
+      "id": "ep01_镜36",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、围裙、谨慎表情及面向江砚正确；后门已闭，白天柔光、B反打方向可从35衔接。实际画面上方约25%为空墙，苏慧从头拍到腹前交叠双手，非胸上紧密胸像；江砚整块后脑、耳和肩背占右侧大块画面，底部约半幅，超过卡片仅约15%的肩与发丝窄边。江砚身体下部在画外，静帧不足判断其已坐稳或正在坐下，不将其作为独立失败理由。道具按卡在画外，不要求硬塞。",
+      "fix_instruction": "按既定B方向改为苏慧胸上紧密胸像，头顶约5%、脸约画高50%、下缘截胸口，腹前手全部在画外；江砚仅在最右约15%内保留虚焦后肩与发丝，不出现大半后脑或宽背。保持母亲站立与儿子开始坐下的原卡动作。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[江砚].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/resume_review_room_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch03_resume_single.json",
+      "id": "ep01_镜36",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、含肩小心表情、朝右看儿子、闭门日光状态符合；但主体头顶上方空白约四分之一画高，取景下至腹前交叠双手，脸含发顶至下颏仅约四分之一画高；江砚虚焦头肩占右侧约四成以上，明显偏宽。未达到头顶5%、胸口截断、窄过肩约15%的批准构图。下肢在画外，不凭此判定坐立错误。",
+      "fix_instruction": "保持B反打及苏慧左、江砚右的轴线，收紧到苏慧胸口截断，头顶留约5%、脸含发顶至下颏约占50%；江砚仅保留最右窄幅发丝与后肩约15%，使腰腹和交叠双手留在画框外。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    }
+  ],
+  "review_zh": "苏慧身份、围裙、谨慎表情及面向江砚正确；后门已闭，白天柔光、B反打方向可从35衔接。实际画面上方约25%为空墙，苏慧从头拍到腹前交叠双手，非胸上紧密胸像；江砚整块后脑、耳和肩背占右侧大块画面，底部约半幅，超过卡片仅约15%的肩与发丝窄边。江砚身体下部在画外，静帧不足判断其已坐稳或正在坐下，不将其作为独立失败理由。道具按卡在画外，不要求硬塞。；苏慧身份、含肩小心表情、朝右看儿子、闭门日光状态符合；但主体头顶上方空白约四分之一画高，取景下至腹前交叠双手，脸含发顶至下颏仅约四分之一画高；江砚虚焦头肩占右侧约四成以上，明显偏宽。未达到头顶5%、胸口截断、窄过肩约15%的批准构图。下肢在画外，不凭此判定坐立错误。",
+  "generator_agent_id": "/root/generate_keyframes_batch03_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch03_a.json"
+}

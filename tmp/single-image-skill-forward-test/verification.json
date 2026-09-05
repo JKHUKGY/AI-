@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "scope": "file integrity and alignment only; not content or perceptual quality",
+  "errors": [],
+  "warnings": [
+    "Splat coverage holes reach 3.555%; nearest-neighbor filling is not hidden-surface reconstruction",
+    "A_baseline.mp4 absent: no actual model output to verify",
+    "B_depth_control.mp4 absent: no actual model output to verify"
+  ],
+  "first_depth_mae_255": 0.9791603925158188,
+  "media": {
+    "depth_control.mp4": {
+      "width": 128,
+      "height": 256,
+      "r_frame_rate": "24/1",
+      "duration": "0.708333",
+      "nb_read_frames": "17"
+    },
+    "reprojection_preview.mp4": {
+      "width": 128,
+      "height": 256,
+      "r_frame_rate": "24/1",
+      "duration": "0.708333",
+      "nb_read_frames": "17"
+    },
+    "coverage_mask.mp4": {
+      "width": 128,
+      "height": 256,
+      "r_frame_rate": "24/1",
+      "duration": "0.708333",
+      "nb_read_frames": "17"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ep01_镜20",
+  "round": 3,
+  "candidate": 4,
+  "source": "/home/codespace/.codex/generated_images/01a070b4-d857-7cf1-b020-04282e9751be/exec-0ee8d06f-f4fb-452e-9a32-7999dbbb5825.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_04.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_continuity.json",
+      "id": "ep01_镜20",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_04.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "身份服装及B反打方向符合；苏慧头顶约22%、脸约28%画高，画框下端到围裙腰带，明显是腰上像。江砚头颈和大块肩背入画、约40%宽且较清楚，偏离只露10%至15%虚焦肩弧。",
+      "fix_instruction": "保持苏慧身份、表情与B侧车队；镜头收紧到头顶5%、脸高50%、画底在胸口；江砚整体移出右框，仅最右10%至15%的虚焦灰蓝肩弧与包带片段。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_round3_single.json",
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_04.png",
+      "verdict": "fail",
+      "reason": "B车队/挑檐方向和苏慧身份正确；苏慧头顶约22%、头部约27%画高、底边到腰带，未实现紧密胸像；江砚右前景显示后脑颈肩与大片躯干，约40%画宽，超过10–15%。",
+      "fix_instruction": "苏慧推进至头顶5%、头高50%、底边胸口，江砚主体移出右框留10–15%后肩细条。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[江砚].posture_zh"
+    }
+  ],
+  "review_zh": "身份服装及B反打方向符合；苏慧头顶约22%、脸约28%画高，画框下端到围裙腰带，明显是腰上像。江砚头颈和大块肩背入画、约40%宽且较清楚，偏离只露10%至15%虚焦肩弧。；B车队/挑檐方向和苏慧身份正确；苏慧头顶约22%、头部约27%画高、底边到腰带，未实现紧密胸像；江砚右前景显示后脑颈肩与大片躯干，约40%画宽，超过10–15%。",
+  "generator_agent_id": "/root/generate_keyframes_round3_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_round3_b.json"
+}

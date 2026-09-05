@@ -1,0 +1,36 @@
+{
+  "id": "ep01_镜17",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-1f68d3f0-1118-40a2-800e-ff04de104e70.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_continuity.json",
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+      "round": 2,
+      "candidate": 1,
+      "verdict": "fail",
+      "reason": "A机位、角色身份、母亲右远处及3旅客、江砚右手箱杆左手纸条、大橄榄包均保持。人物比例几乎仍等于首轮：头顶约26%、鞋底85%，身高约59%，未按第二轮40%及头顶45%执行。",
+      "fix_instruction": "改变构图而非仅改变远处母亲大小；江砚及随身箱包整体缩至画高40%，头顶45%、鞋底85%，保持A环境与五人在场关系。",
+      "card_field": "framing.subject_frac; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_retry_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_retry_single.json",
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+      "verdict": "fail",
+      "reason": "江砚头顶约画高26%、鞋底约85%，全身约59%而非卡片40%；虽苏慧远层、三旅客、A向左玻璃右车道与左纸右箱均符合，但环境全景主体比例明确未实现。",
+      "fix_instruction": "相机后退/主体缩小至头顶约45%、鞋底85%，以A空底板决定构图，主帧仅提供角色与道具。",
+      "card_field": "framing.subject_frac; framing.crop_zh; framing.plate_crop_zh"
+    }
+  ],
+  "review_zh": "A机位、角色身份、母亲右远处及3旅客、江砚右手箱杆左手纸条、大橄榄包均保持。人物比例几乎仍等于首轮：头顶约26%、鞋底85%，身高约59%，未按第二轮40%及头顶45%执行。；江砚头顶约画高26%、鞋底约85%，全身约59%而非卡片40%；虽苏慧远层、三旅客、A向左玻璃右车道与左纸右箱均符合，但环境全景主体比例明确未实现。",
+  "generator_agent_id": "/root/generate_villa_round3",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_retry_a.json"
+}

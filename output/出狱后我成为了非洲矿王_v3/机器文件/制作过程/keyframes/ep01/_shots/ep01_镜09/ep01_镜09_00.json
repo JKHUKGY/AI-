@@ -1,0 +1,43 @@
+{
+  "id": "ep01_镜09",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-b1a60a5e-61ef-4357-9999-0b23cc84b6da.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/resume_review_room_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch04_continuity.json",
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+      "verdict": "fail",
+      "reason": "江砚右侧三分之四正面朝陈野，身份衣着正确；解剖学左手握透明白盖水瓶、右手指搭盖，嘴唇闭合未接瓶口，准确呈现本卡饮水前起点。A朝北视角中监狱门和院内树/屋在背后，门外站位成立。硬伤是实际拍到腰/裤腰，头顶留白约14%，未在胸口下缘截止；陈野整块后脑和上半身占左部，底部近半幅，且肩背较清楚，不是约15%的虚焦过肩窄边。",
+      "fix_instruction": "保留身份、解剖学左手握瓶/右手搭盖及门外A方向；将持瓶两手抬到胸前作为本镜可见动作，并收紧胸上景别：江砚头顶约5%，下缘胸口下缘截止，腰腿在画外。陈野仅最左约15%虚焦头侧边与后肩，避免宽背遮住主体。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[江砚].action_zh",
+        "background_people[陈野].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch04_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch04_single.json",
+      "id": "ep01_镜09",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份、右侧三分之四正面望陈野、左手握瓶右指搭白盖、闭唇待饮均符合，A机位门外空间正确。主要失败是景别：画面直到衬衫下摆和裤腰，非胸口下缘切断；江砚头顶留白约14%而非5%。前景陈野整段头肩躯干占宽约45–50%，远超卡的约15%，并非仅虚焦头侧与后肩。",
+      "fix_instruction": "保留江砚左持瓶右扶盖的动作起点，改为真正胸上近景，江砚头顶留约5%、底边切胸口下缘；水瓶与双手抬到胸前能入画。陈野移至左画缘仅保留约15%宽的虚焦侧头及后肩，不改人物所在世界位置和视线。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "background_people[0].posture_zh",
+        "background_people[0].focus"
+      ]
+    }
+  ],
+  "review_zh": "江砚右侧三分之四正面朝陈野，身份衣着正确；解剖学左手握透明白盖水瓶、右手指搭盖，嘴唇闭合未接瓶口，准确呈现本卡饮水前起点。A朝北视角中监狱门和院内树/屋在背后，门外站位成立。硬伤是实际拍到腰/裤腰，头顶留白约14%，未在胸口下缘截止；陈野整块后脑和上半身占左部，底部近半幅，且肩背较清楚，不是约15%的虚焦过肩窄边。；江砚身份、右侧三分之四正面望陈野、左手握瓶右指搭白盖、闭唇待饮均符合，A机位门外空间正确。主要失败是景别：画面直到衬衫下摆和裤腰，非胸口下缘切断；江砚头顶留白约14%而非5%。前景陈野整段头肩躯干占宽约45–50%，远超卡的约15%，并非仅虚焦头侧与后肩。",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch04_b.json"
+}

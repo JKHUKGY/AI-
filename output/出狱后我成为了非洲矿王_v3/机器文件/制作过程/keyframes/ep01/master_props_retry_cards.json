@@ -1,0 +1,162 @@
+{
+  "scene_beats": [
+    {
+      "id": "ep01_v1",
+      "scene": "SC01",
+      "title_zh": "同日抵达客厅；江砚站西南、苏慧站其北侧；刘兰坐东侧沙发北段，顾瑶坐南段。包在苏慧左手、箱在江砚右手。主人全程坐着。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "刘兰",
+        "顾瑶"
+      ],
+      "state_zh": [
+        "跨场道具连戏：行李箱与大登山包完全照机场交包后的实拍参考，登山包高约50厘米、宽约35厘米，单翻盖和两条长竖织带、前面一个大长方形口袋；是成年人长途旅行大包，放在桌上约占桌面深度的一半。持在手里时底端在膝盖下面。行李箱深灰硬壳高55厘米、宽38厘米，细竖棱、黑色双杆和四轮。",
+        "同日白天，母子在西侧站着；刘兰坐东侧沙发北段，顾瑶坐南段，两人持续坐着。",
+        "苏慧左手提橄榄包，江砚右手扶深灰箱；玄关在南，客房通道在西。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC01_顾家别墅客厅_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：左楼梯和侧门，右沙发与电视墙，正后玻璃泳池、上方吊灯和二楼玻璃走廊；前景空石材地约下部三成。",
+      "camera_zh": "相机在客厅南侧玄关附近，约1.5米高朝北窗与泳池，左西侧楼梯、右东侧沙发。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+            "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+          ],
+          "ref_note_zh": "第一张为江砚身份三视图；第二张是机场交包实拍，只复制该图的行李箱与大登山包外观、体积和材质。按本房间的走位重排人物",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_right",
+          "posture_zh": "站在西南侧空地",
+          "action_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着",
+          "contact_zh": null,
+          "holding_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在江砚北侧半步，含肩",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前，嘴角陪笑",
+          "contact_zh": null,
+          "holding_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前，嘴角陪笑"
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧沙发北段、双腿交叠",
+          "action_zh": "右手指甲举在眼前、低眼看指甲",
+          "contact_zh": null,
+          "holding_zh": "右手指甲举在眼前、低眼看指甲"
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠东侧沙发南段",
+          "action_zh": "双手握手机在胸前、低眼看屏幕",
+          "contact_zh": null,
+          "holding_zh": "双手握手机在胸前、低眼看屏幕"
+        }
+      ],
+      "count": 2,
+      "master_status": "pending_user_review_then_generation",
+      "seating": {
+        "刘兰": "东侧沙发北段",
+        "顾瑶": "东侧沙发南段"
+      }
+    },
+    {
+      "id": "ep01_r2",
+      "scene": "SC03日",
+      "title_zh": "门已关、灯未开，北窗日光持续；镜36江砚坐到西侧床沿；苏慧站东南侧面对他，背包在东侧书桌、箱在床脚。结尾母亲仍在房内。",
+      "present": [
+        "江砚",
+        "苏慧"
+      ],
+      "state_zh": [
+        "跨场道具连戏：行李箱与大登山包完全照机场交包后的实拍参考，登山包高约50厘米、宽约35厘米，单翻盖和两条长竖织带、前面一个大长方形口袋；是成年人长途旅行大包，放在桌上约占桌面深度的一半。持在手里时底端在膝盖下面。行李箱深灰硬壳高55厘米、宽38厘米，细竖棱、黑色双杆和四轮。",
+        "南侧房门闭合在相机身后。画面左边缘只留固定墙边，原空底板伸进画面的深色活动门扇和门把手已随关门转到相机身后画外。",
+        "白天客房，南门已关闭，北窗持续照入自然光，床头灯关闭。",
+        "橄榄包放东侧桌面、深灰箱在西侧床脚；江砚在床沿，苏慧在床边东南侧。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC03日_顾家客房_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png",
+      "master_plate_read_zh": "实际看图：A日间客房，左单人床与未亮台灯、正后窗、右空桌椅，地板占下部约四成；本主帧将包放桌上、箱放床脚。",
+      "camera_zh": "相机在客房南侧门内，约1.5米高朝北窗，左床、右桌。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+            "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+          ],
+          "ref_note_zh": "第一张为江砚身份三视图；第二张是机场交包实拍，只复制该图的行李箱与大登山包外观、体积和材质。按本房间的走位重排人物",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "坐在西侧床沿、重心下沉",
+          "action_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合",
+          "contact_zh": null,
+          "holding_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在床边东南侧，含着肩",
+          "action_zh": "双手在腹前交叠，眼神小心，准备低声说话",
+          "contact_zh": null,
+          "holding_zh": "双手在腹前交叠，眼神小心，准备低声说话"
+        }
+      ],
+      "count": 3,
+      "master_status": "pending_user_review_then_generation"
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,282 @@
+{
+  "agent_id": "/root/master_visual_reviewer",
+  "role": "独立 Reviewer A",
+  "review_scope": "已有场次主帧逐图独立审查；不生成、不修改卡片与公共状态",
+  "basis": [
+    "AGENTS.md",
+    ".agents/skills/loop-picture-generation/references/reviewer_agent.md",
+    ".agents/skills/short-drama-keyframe-gen/references/keyframe_review_checklist.md",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/storyboard/ep01.md"
+  ],
+  "independence_zh": "没有读取既有 master_review / master_generation 报告。首次读取完整卡片时输出内包含卡片自带 master_blocker 状态文字；本报告不把该状态文字作为判据，后续仅提取 state_zh / blocking / camera / reference。",
+  "script_anchors_zh": {
+    "ep01_p2": [
+      "陈野（递过一瓶冰水，语气里压着憋了许久的火气）：江老弟，你可算出来了！",
+      "▲江砚拧瓶盖的手顿了一下，抬眼看他，神色里没多少意外。"
+    ],
+    "ep01_p3": [
+      "江砚（喝了口水，喉结滚动，眼神一点点冷下来）：我猜到是他。",
+      "陈野（愣了）：你知道？"
+    ],
+    "ep01_v1": [
+      "▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央，沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。"
+    ]
+  },
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_02.png"
+  ],
+  "view_method": "每张图片实际使用 view_image(detail=original) 打开；未以其他代理描述代替看图。",
+  "verdict_definitions": {
+    "pass": "所有已核对关键要求有证据成立",
+    "fail": "至少一项有直接可见不符证据；看不清的项目另列",
+    "无法确认": "关键状态不可辨/遮挡，没有足够证据支持通过，也不虚构确定错误"
+  },
+  "reviews": [
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_p2",
+      "candidate_index": 3,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+      "verdict": "无法确认",
+      "evidence_zh": [
+        "画面只有江砚和陈野两人；江砚在左，陈野在右靠车辆；双方相向，未变成朝镜头合影。",
+        "院内向门外看的B机位成立：水泥院子在前景、红土路在门后、车辆在右；白墙门柱与指定底板匹配。",
+        "江砚灰蓝衬衫、深灰长裤及黑发背侧轮廓，陈野短发胡须、土棕外衫与深围巾，符合打开的角色参考；远景不足以对江砚完整五官作强确认。",
+        "江砚双手集中在身体画面右缘、腰上区域；手附近仅有很小的浅色/透明轮廓，无法分辨瓶身握持接触和白盖是否仍在瓶口。",
+        "两人位于门洞远端。江砚鞋底紧贴水泥与红土交界，鞋底是否全部跨出门槛不足以确认；没有证据把他认作站在近处院中。"
+      ],
+      "uncertain_items_zh": [
+        "左手是否握瓶、右手是否扶盖；白盖开合状态；鞋底完全落红土。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_p2].blocking[name=江砚].holding_zh",
+          "suggested_value_zh": "保持左手握瓶、右手扶盖：左前臂从人物左侧绕到胸前托握瓶身；右手只接触瓶口白盖，瓶盖仍旋紧。让两只手与瓶身、白盖的接触位置分开可见；不改变门外站位。"
+        },
+        {
+          "card_field": "scene_beats[id=ep01_p2].blocking[name=江砚].posture_zh",
+          "suggested_value_zh": "保留左中景与背侧朝向，双鞋后跟也完整落在门槛外红土上，鞋后缘与门槛之间留一小段可见红土。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_p2",
+      "candidate_index": 4,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_04.png",
+      "verdict": "fail",
+      "evidence_zh": [
+        "画面只有江砚和陈野两人；江砚在左，陈野在右靠车辆；双方相向，未变成朝镜头合影。",
+        "院内向门外看的B机位成立：水泥院子在前景、红土路在门后、车辆在右；白墙门柱与指定底板匹配。",
+        "江砚灰蓝衬衫、深灰长裤及黑发背侧轮廓，陈野短发胡须、土棕外衫与深围巾，符合打开的角色参考；远景不足以对江砚完整五官作强确认。",
+        "江砚背侧向右，画面右侧可见手臂从右肩/右肘连续连接到腰前握瓶的手；瓶身向该手下方延伸。可见右手在握瓶身，而卡片要求右手搭瓶盖、左手持瓶。",
+        "两人的主体位于门外，江砚鞋底接近门槛外缘；陈野位于更远红土上。"
+      ],
+      "uncertain_items_zh": [
+        "左手具体位置被身体及手部重叠遮挡；瓶口白色小部件是否完全旋紧不能可靠确认。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_p2].blocking[name=江砚].holding_zh",
+          "suggested_value_zh": "保持左手握瓶、右手扶盖：左前臂从人物左侧绕到胸前托握瓶身；右手只接触瓶口白盖，瓶盖仍旋紧。让两只手与瓶身、白盖的接触位置分开可见；不改变门外站位。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_p2",
+      "candidate_index": 5,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png",
+      "verdict": "fail",
+      "evidence_zh": [
+        "画面只有江砚和陈野两人；江砚在左，陈野在右靠车辆；双方相向，未变成朝镜头合影。",
+        "院内向门外看的B机位成立：水泥院子在前景、红土路在门后、车辆在右；白墙门柱与指定底板匹配。",
+        "江砚灰蓝衬衫、深灰长裤及黑发背侧轮廓，陈野短发胡须、土棕外衫与深围巾，符合打开的角色参考；远景不足以对江砚完整五官作强确认。",
+        "江砚可见右肘弯向前，右手包住腰前瓶身；瓶底在该手下方，可见握法不符合右手只搭瓶盖的卡片。",
+        "门槛横线在两人鞋底前方，二人站在门外红土上；前景水泥院子空着。"
+      ],
+      "uncertain_items_zh": [
+        "左手遮挡；右手附近很小的瓶口/盖轮廓不足以确认开合状态。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_p2].blocking[name=江砚].holding_zh",
+          "suggested_value_zh": "保持左手握瓶、右手扶盖：左前臂从人物左侧绕到胸前托握瓶身；右手只接触瓶口白盖，瓶盖仍旋紧。让两只手与瓶身、白盖的接触位置分开可见；不改变门外站位。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_p3",
+      "candidate_index": 3,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
+      "verdict": "fail",
+      "evidence_zh": [
+        "画面只有江砚和陈野两人；江砚在左，陈野在右靠车辆；双方相向，未变成朝镜头合影。",
+        "院内向门外看的B机位成立：水泥院子在前景、红土路在门后、车辆在右；白墙门柱与指定底板匹配。",
+        "江砚灰蓝衬衫、深灰长裤及黑发背侧轮廓，陈野短发胡须、土棕外衫与深围巾，符合打开的角色参考；远景不足以对江砚完整五官作强确认。",
+        "江砚背侧右臂弯到身前，可见右手握住瓶身上段，透明瓶向下延伸；与要求左手持开口瓶不符。",
+        "两人鞋底位于门洞后方红土地面，前景院中无人。"
+      ],
+      "uncertain_items_zh": [
+        "白盖是否已取下、究竟在哪只手，当前尺度不足以确认；不据此另判盖缺失。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_p3].blocking[name=江砚].holding_zh",
+          "suggested_value_zh": "保持左手握开口瓶在胸下、右手单独攥已取下的白盖；两件物品分开，右手白盖露出指缘。左肘略离躯干，让左手到瓶身的连接可见；右手与瓶身保持可见间隔。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_p3",
+      "candidate_index": 4,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_04.png",
+      "verdict": "fail",
+      "evidence_zh": [
+        "画面只有江砚和陈野两人；江砚在左，陈野在右靠车辆；双方相向，未变成朝镜头合影。",
+        "院内向门外看的B机位成立：水泥院子在前景、红土路在门后、车辆在右；白墙门柱与指定底板匹配。",
+        "江砚灰蓝衬衫、深灰长裤及黑发背侧轮廓，陈野短发胡须、土棕外衫与深围巾，符合打开的角色参考；远景不足以对江砚完整五官作强确认。",
+        "江砚背朝相机，画面右边的右臂向前弯曲并拿透明瓶；画面左边的左臂垂在身侧，手中清楚可见独立白色圆盖。瓶在右手、盖在左手，左右完全反转。",
+        "双脚及陈野双脚均位于门槛外红土，人物没有重复。"
+      ],
+      "uncertain_items_zh": [
+        "瓶口是否开口在此远景仍偏小；左右分配错误本身已有直接证据。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_p3].blocking[name=江砚].holding_zh",
+          "suggested_value_zh": "保持左手握开口瓶在胸下、右手单独攥已取下的白盖；两件物品分开，右手白盖露出指缘。左肘略离躯干，让左手到瓶身的连接可见；右手与瓶身保持可见间隔。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_p3",
+      "candidate_index": 5,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png",
+      "verdict": "无法确认",
+      "evidence_zh": [
+        "画面只有江砚和陈野两人；江砚在左，陈野在右靠车辆；双方相向，未变成朝镜头合影。",
+        "院内向门外看的B机位成立：水泥院子在前景、红土路在门后、车辆在右；白墙门柱与指定底板匹配。",
+        "江砚灰蓝衬衫、深灰长裤及黑发背侧轮廓，陈野短发胡须、土棕外衫与深围巾，符合打开的角色参考；远景不足以对江砚完整五官作强确认。",
+        "江砚右前臂向画面右下伸，右手旁可见很小浅色部件；左手与身体前侧重叠，大部分不可见。",
+        "没有清楚可见的完整瓶身，无法验证左手持开口瓶在胸下；也不能因为被遮挡而断言水瓶不存在。",
+        "人物鞋底后方是红土路，门槛与前景水泥院子在其前方，门外关系成立。"
+      ],
+      "uncertain_items_zh": [
+        "左手持瓶及开口状态；右手小部件是否为白盖。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_p3].blocking[name=江砚].holding_zh",
+          "suggested_value_zh": "保持左手握开口瓶在胸下、右手单独攥已取下的白盖；两件物品分开，右手白盖露出指缘。左肘略离躯干，让左手到瓶身的连接可见；右手与瓶身保持可见间隔。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_v1",
+      "candidate_index": 1,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_01.png",
+      "verdict": "fail",
+      "evidence_zh": [
+        "四个人均在场且各出现一次：江砚左前景站立，苏慧左中景站立；刘兰在右后方沙发北段坐着并举手看指甲，顾瑶在右前方南段坐着低头看手机。",
+        "人物有明确前后层次和各自视线，没有朝镜头合影；左楼梯、右黑皮沙发及电视石墙、中央吊灯、北侧玻璃门和泳池与指定A底板匹配。",
+        "江砚右手连接箱杆、双肩空着；深灰硬箱竖棱、黑杆/黑轮可见。橄榄帆布登山包有翻盖、两条长织带与扣件、前袋，底端低于膝盖；未见变成小手提包。",
+        "四人服装/发型与实开参考相符；江砚背侧脸未露完整五官，不做超出画面证据的身份保证。",
+        "苏慧面向画面右侧，背侧与右肩可见；靠相机的右臂从右肩一路垂到包把，右手正在提包。卡片要求左手提包、右手放腹前；实际提包手与要求相反。"
+      ],
+      "uncertain_items_zh": [
+        "远侧左手被身体挡住，无法确认是否放在腹前；不把遮挡判作断手。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_v1].blocking[name=苏慧].holding_zh",
+          "suggested_value_zh": "苏慧面向画面右侧沙发；提包的是远离南侧相机的左手，左臂下垂并略错开躯干使手及包把可见。靠相机的右手轻放腹前，右臂不连接包把。包仍沿用机场参考的大登山包、底端低于膝盖。"
+        }
+      ],
+      "proposed_file": null
+    },
+    {
+      "agent_id": "/root/master_visual_reviewer",
+      "unit_id": "ep01_v1",
+      "candidate_index": 2,
+      "round": "未读取生成日志，不能从文件编号推断真实轮次",
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_02.png",
+      "verdict": "fail",
+      "evidence_zh": [
+        "四个人均在场且各出现一次：江砚左前景站立，苏慧左中景站立；刘兰在右后方沙发北段坐着并举手看指甲，顾瑶在右前方南段坐着低头看手机。",
+        "人物有明确前后层次和各自视线，没有朝镜头合影；左楼梯、右黑皮沙发及电视石墙、中央吊灯、北侧玻璃门和泳池与指定A底板匹配。",
+        "江砚右手连接箱杆、双肩空着；深灰硬箱竖棱、黑杆/黑轮可见。橄榄帆布登山包有翻盖、两条长织带与扣件、前袋，底端低于膝盖；未见变成小手提包。",
+        "四人服装/发型与实开参考相符；江砚背侧脸未露完整五官，不做超出画面证据的身份保证。",
+        "苏慧靠相机的右臂清楚垂下并提包，另一只手在腹前侧露出；这是右手提包、左手靠腹的组合，和卡片指定左提右扶相反。"
+      ],
+      "uncertain_items_zh": [
+        "远景刘兰眼睛的小范围焦点不足以逐像素断言，但举指甲、身体坐姿与大致视线方向符合原文，并无证据判成抬头迎客。"
+      ],
+      "card_fixes": [
+        {
+          "card_field": "scene_beats[id=ep01_v1].blocking[name=苏慧].holding_zh",
+          "suggested_value_zh": "苏慧面向画面右侧沙发；提包的是远离南侧相机的左手，左臂下垂并略错开躯干使手及包把可见。靠相机的右手轻放腹前，右臂不连接包把。包仍沿用机场参考的大登山包、底端低于膝盖。"
+        }
+      ],
+      "proposed_file": null
+    }
+  ],
+  "summary": {
+    "pass": 0,
+    "fail": 6,
+    "无法确认": 2,
+    "proposed_files": []
+  },
+  "best_candidates_not_approved": {
+    "ep01_p2": {
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+      "remaining_zh": "没有本审查能清楚确认的左右手反例，但瓶与白盖状态被遮挡，无法作为通过主帧。"
+    },
+    "ep01_p3": {
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png",
+      "remaining_zh": "门外空间与双人站位可用，左手瓶及右手白盖均无法可靠验证，不能通过。"
+    },
+    "ep01_v1": {
+      "file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_02.png",
+      "remaining_zh": "空间、四人在场与道具外观较完整，苏慧提包手确定相反，不能通过。"
+    }
+  },
+  "global_card_advice_zh": [
+    "不应为了候选把原有左手/右手要求改成任意手，也不把身体遮挡解释成已经满足。",
+    "需要重新生成时从 holding_zh / action_zh 补足可见接触和两臂分离关系；p2/p3保留门外站位，不为看清瓶子把人物移回院内。",
+    "本报告只提供后续卡片修正建议，不授权新增轮次；三轮限制仍由主代理核验执行。"
+  ]
+}

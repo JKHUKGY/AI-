@@ -1,0 +1,16 @@
+{
+  "unit_id": "master_ep01_v1",
+  "round": 3,
+  "count": 3,
+  "status": "approved_ready",
+  "source_card": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/master_villa_retry3_cards.json",
+  "job_file": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/jobs_master_villa_retry3.json",
+  "scope": "仅别墅主帧提包手纠正，保留人物、房间、行李和剧本；监狱两项不追加超限生成",
+  "user_generation_approval": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/execution_approval.json",
+  "generator_agent": "/root/image_generator_resume",
+  "reviewer_agents": [
+    "/root/master_visual_reviewer",
+    "/root/review_image_workflow",
+    "/root/master_final_reviewer"
+  ]
+}

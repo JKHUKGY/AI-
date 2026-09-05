@@ -1,0 +1,129 @@
+[
+  {
+    "record": "v3_repairs2_jobs",
+    "data": [
+      {
+        "id": "SC09_野外营地_B反打",
+        "prompt": "Edit only the tent in this exact night campsite image to correct a reverse-angle continuity error. Keep tent on RIGHT, campfire center, stones/equipment case left, vehicle far left, framing and all illumination unchanged. We are looking at the BACK END of the same olive canvas ridge tent. Replace its visible open triangular doorway with a CLOSED SEAMED TRIANGULAR REAR CANVAS PANEL, continuous opaque khaki cloth, with a small stitched vent high on the triangle. Entrance is on the far opposite end, fully hidden. Keep tent silhouette, ridge height, pegs and guy ropes, material colour, warm fire illumination. No doorway slit facing camera, no new tents, no people. Photorealistic vertical 9:16; no text/watermark. This is the same tent viewed from opposite end."
+      },
+      {
+        "id": "SC11_矿场开采工作面_B反打",
+        "prompt": "Edit ONLY the yellow excavator in this exact mining quarry image. Keep machine at its current location on RIGHT, rock wall LEFT, ground and framing unchanged. Correct the excavator orientation for reverse camera: show its rounded yellow REAR COUNTERWEIGHT and engine cover towards the viewer, rear ventilation grille visible; boom extends AWAY from the camera toward distant quarry, bucket lowered on the FAR side mostly occluded by machine, no open bucket mouth facing camera. Same yellow excavator proportions, tracked chassis, same track direction on ground, dusty material and sun angle. Do not change rocks, terrain or background. No people, logos/text, additional machinery. Vertical 9:16 photorealistic African red-soil open pit."
+      },
+      {
+        "id": "SC13_顾家书房_B反打",
+        "prompt": "Edit only the camera-facing side of the wooden desk in this exact study photograph. Camera is behind the leather office chair, looking over the OCCUPANT SIDE of the desk towards double doors. Replace the impossible full-height closed wood panel directly in front of the chair with a realistic OPEN CENTRAL KNEE RECESS under the tabletop, dark cavity approximately 70cm wide and 65cm tall, supported by matching dark wood drawer pedestals on either side. Chair partially occludes right part of recess, but open knee space must be clearly visible left of chair. A modesty panel may exist on FAR visitor side recessed 60cm behind. Preserve desktop, brass lamp left, wooden box, papers/open book, chair silhouette and upholstery, window left/bookshelves right, doors back, rug and floor, camera framing, warm daylight. No added decor, people, logos/text. Vertical 9:16 photorealistic."
+      }
+    ]
+  },
+  {
+    "record": "v3_repairs2_results",
+    "data": [
+      {
+        "id": "SC09_野外营地_B反打",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-a6f226fe-8b3d-433c-92c5-240e4bb3959e.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC09_野外营地_B反打/SC09_野外营地_B反打_01.png"
+      },
+      {
+        "id": "SC11_矿场开采工作面_B反打",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-b9a241c8-72c6-4189-ba22-3e475052aab2.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC11_矿场开采工作面_B反打/SC11_矿场开采工作面_B反打_01.png"
+      },
+      {
+        "id": "SC13_顾家书房_B反打",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-6858b25f-e21b-45e0-88fc-a6d281f97b4a.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC13_顾家书房_B反打/SC13_顾家书房_B反打_01.png"
+      }
+    ]
+  },
+  {
+    "record": "v3_dayA_job",
+    "data": {
+      "id": "SC03日_顾家客房_A主机位",
+      "prompt": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字\nEdit the provided reference into the DAYTIME, BEFORE-UNPACKING version of this exact guest bedroom, same camera at doorway facing the window, same vertical composition. Preserve single bed on LEFT, window rear center, desk and chair on RIGHT, beige walls, dark wood floor, same bedside lamp and bedside table, all architecture and furniture. Window now shows softly overexposed tropical daytime sky, distant low buildings and trees; natural window daylight lights the room softly, modest and narrow rather than a luxury suite. Bedside lamp is OFF, visible ivory shade unlit, no warm pool from lamp. Remove the black suitcase beside the window completely: guest has not arrived yet. Remove the open book, notebook and pen from desktop: keep desk empty for arrival state. No people, luggage, backpacks, fruit or readable writing. Do not move furniture, enlarge room, add windows, or alter camera position. A photorealistic day relighting edit, not a new room.",
+      "referenced_image_paths": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_00.png"
+      ]
+    }
+  },
+  {
+    "record": "v3_day_next_jobs",
+    "data": [
+      {
+        "id": "SC03日_顾家客房_B反打",
+        "prompt": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字\nCreate the DAYTIME arrival-state version of image 1 (the reverse angle). Image 2 is the APPROVED daytime A view and supplies the lighting/material/state reference only. Keep image 1's reverse camera position and framing: doorway back center, wall clothes hooks left of door, single bed on RIGHT, desk/chair on LEFT, beige walls and dark wood floor. Soft natural daylight enters from the window BEHIND the camera, illumination matching image 2. Lamp is OFF; ivory shade should look unlit. Remove black suitcase next to door and all books/notebooks/pens from desk. Room empty before guests bring their luggage. Door remains half open so a later scene can show a woman closing it. Corridor beyond is light neutral daytime interior. Keep exactly the same door hardware, bed and desk styles. Do not add a window on this wall. Preserve narrow dimensions. No people or luggage, no readable text.",
+        "referenced_image_paths": [
+          "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_00.png",
+          "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png"
+        ]
+      },
+      {
+        "id": "SC03日_顾家客房_A主机位_紧",
+        "prompt": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字\nMake a TIGHT empty background plate from this approved daytime bedroom image, for a later chest-up close dialogue shot of a man sitting on the LEFT bed edge. Same doorway-side camera looking toward window, same eye level; use a longer focal length / tight framing without changing room layout. Frame the bed-side subject space in the center-left: show the same beige wall, part of the black window frame above/rear, same unlit ivory bedside lamp on its wooden table at left, a small part of desk at right edge, bed corner low left. The far walls and furniture should be larger; omit the long empty foreground floor and most ceiling. Daylight soft and neutral, lamp OFF, desktop empty. No people, books, luggage, new furniture, or text. This is the same room and daytime arrival state, only a closer focal-length plate.",
+        "referenced_image_paths": [
+          "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png"
+        ]
+      }
+    ]
+  },
+  {
+    "record": "v3_day_next_results",
+    "data": [
+      {
+        "id": "SC03日_顾家客房_B反打",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-e1c38ed3-6092-4121-8b9e-a99707ade52c.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_00.png"
+      },
+      {
+        "id": "SC03日_顾家客房_A主机位_紧",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-3779d0a2-8f54-4f01-b7b0-1771dab59ffd.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png"
+      }
+    ]
+  },
+  {
+    "record": "v3_dayB_fix_job",
+    "data": {
+      "id": "SC03日_顾家客房_B反打",
+      "prompt": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字\nCorrect a single spatial continuity error in image 1, the daytime reverse bedroom view. Image 2 shows the same room from doorway toward window: the bed HEAD and bedside lamp are at the NORTH/window end, immediately near the reverse-view CAMERA. In image 1 the lamp/table were wrongly duplicated at the far SOUTH/door end. REMOVE the visible bedside lamp and its small table beside the door completely, leaving beige wall in that back-right area. Keep the bed at RIGHT, its FOOT facing the far door; far end has a plain beige duvet, no pillow or headboard. The real headboard, pillow and lamp are at the near end outside the bottom/right crop, so do NOT add any new lamp anywhere. Keep desk/chair LEFT, half-open wooden door rear center, same hook/coat hanger left of door, lighting, dimensions, floor and every other detail exactly unchanged. No suitcase/books/people. No text. This correction is crucial: back right beside the door must simply be blank wall beyond the FOOT of the bed. Do not move the door or swap furniture sides.",
+      "referenced_image_paths": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_00.png",
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png"
+      ]
+    }
+  },
+  {
+    "record": "v3_dayB_fix_results",
+    "data": [
+      {
+        "id": "SC03日_顾家客房_B反打",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-e154e9e4-1b46-47c5-88fb-9c463c7ba9e2.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png"
+      },
+      {
+        "id": "SC03日_顾家客房_B反打",
+        "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-4eaf34f0-445c-4ec5-b4b0-4cd2d74548a3.png",
+        "target": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_02.png"
+      }
+    ]
+  },
+  {
+    "record": "v3_dayBtight_job",
+    "data": {
+      "id": "SC03日_顾家客房_B反打_紧",
+      "prompt": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字\nCreate the tighter SAME-AXIS background plate for the daytime mother-son conversation immediately after this room's door has closed. Use this corrected reverse-view reference only. Camera still near north window facing SOUTH to the wooden door, eye-level and a longer focal length, frame approximately chest-up-person field, significantly less foreground floor and ceiling. Door is now fully CLOSED in exactly the same frame, same wood panels and black lever, keep clothes hook and hanger on LEFT wall, left edge of empty desk/wood chair at lower LEFT, foot of beige bed at lower RIGHT. Beige wall on far RIGHT next to door stays EMPTY: the real lamp and bed head are behind camera outside crop, do not reintroduce a lamp near doorway. Daylight comes from behind camera. The frame can include upper door and the adjoining left wall so a woman will later be composited in center-left; NO people now. No luggage, books, writing. Maintain exact modest room, no new objects or perspective swing.",
+      "referenced_image_paths": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png"
+      ]
+    }
+  },
+  {
+    "record": "dayA_result",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png"
+  },
+  {
+    "record": "dayBtight_result",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-0eb8bba6-549d-49af-9fa7-98ce7f1a85df.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png"
+  }
+]

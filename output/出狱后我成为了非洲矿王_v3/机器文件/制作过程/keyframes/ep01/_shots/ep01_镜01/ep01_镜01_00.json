@@ -1,0 +1,45 @@
+{
+  "id": "ep01_镜01",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070cf-e1e0-71c3-a8ba-e8c0bd37ee15/exec-ac3b3b14-b243-404f-af76-b7a91c4aea57.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/resume_review_room_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch04_continuity.json",
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+      "verdict": "fail",
+      "reason": "陈野确实在左侧车旁倚靠看江砚，江砚正面由门口走出，角色衣着、A机位、红土和白天空正确。但铁门已大开，中间通道明显宽于一人，不是刚开可侧身过的窄缝；江砚双脚已在门外红土侧，不能明确表现卡片门内左脚刚迈向门槛的起点。江砚头到鞋底仅约画高23%，脚下仍有约44%红土空地，远离全景主体约40%/地面约15%的要求。陈野手中瓶盖呈浅蓝色，而后镜白盖，需统一。",
+      "fix_instruction": "维持原门柱和门扇铰链，将两扇铁门只开一人侧身通过的窄缝，江砚身体仍在门内、左脚刚迈向门槛；将主体/门口相对画幅放大并减掉前景空地，使江砚头到鞋底约40%、脚下地面约15%；陈野仍倚原车门右手持白盖透明瓶。",
+      "card_field": [
+        "props_zh",
+        "people[江砚].posture_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[陈野].action_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch04_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch04_single.json",
+      "id": "ep01_镜01",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+      "verdict": "fail",
+      "reason": "A机位、陈野倚左侧车、江砚衣着身份成立。但门缝已明显大开约一人以上宽，江砚双脚并列已到门外，未呈刚开缝门内左脚迈出起点。江砚头顶约33%、鞋底约56%，全身仅约23%画高，远小于卡要求40%，脚下空地约44%而非15%。瓶盖呈浅蓝色，与白盖定义不一致。",
+      "fix_instruction": "按原卡重构开门初始状态：江砚仍在窄缝门内左脚先迈过门槛，两手垂下；主体从头顶到鞋底约40%画高并按卡收脚下地面。铁门绕原门柱铰链收窄；陈野保留靠车姿态，右手水瓶使用白盖。",
+      "card_field": [
+        "people[0].posture_zh",
+        "props_zh[0]",
+        "framing.subject_frac",
+        "framing.crop_zh",
+        "people[1].action_zh"
+      ]
+    }
+  ],
+  "review_zh": "陈野确实在左侧车旁倚靠看江砚，江砚正面由门口走出，角色衣着、A机位、红土和白天空正确。但铁门已大开，中间通道明显宽于一人，不是刚开可侧身过的窄缝；江砚双脚已在门外红土侧，不能明确表现卡片门内左脚刚迈向门槛的起点。江砚头到鞋底仅约画高23%，脚下仍有约44%红土空地，远离全景主体约40%/地面约15%的要求。陈野手中瓶盖呈浅蓝色，而后镜白盖，需统一。；A机位、陈野倚左侧车、江砚衣着身份成立。但门缝已明显大开约一人以上宽，江砚双脚并列已到门外，未呈刚开缝门内左脚迈出起点。江砚头顶约33%、鞋底约56%，全身仅约23%画高，远小于卡要求40%，脚下空地约44%而非15%。瓶盖呈浅蓝色，与白盖定义不一致。",
+  "generator_agent_id": "/root/resume_generate_38",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch04_a.json"
+}

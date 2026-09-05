@@ -172,30 +172,37 @@ const UI = (() => {
     document.body.appendChild(overlay);
   }
 
-  async function pollRegenerate(project, token, statusBox, onNewFile, refPathForNaming) {
-    for (let i = 0; i < 90; i += 1) {
-      await new Promise((r) => setTimeout(r, 4000));
-      let st;
-      try {
-        st = await API.regenerateStatus(project, token);
-      } catch (e) {
-        statusBox.textContent = '查询失败: ' + e.message;
-        return;
-      }
-      statusBox.textContent = `状态: ${st.status}\n` + (st.log_tail || '').slice(-800);
-      if (st.status !== 'running') {
-        if (st.status === 'done' && st.new_files && st.new_files.length) {
-          st.new_files.forEach((fname) => {
-            onNewFile(refPathForNaming.replace(/[^/]+$/, fname), fname);
-          });
-          statusBox.textContent += `\n\n已生成 ${st.new_files.length} 张新图，已加入下方图库，点开可以标记入选或留言。`;
-        } else if (st.status === 'failed') {
-          statusBox.textContent += '\n\n生成失败，可以看看上面的日志或换个提示词再试。';
-        }
-        return;
-      }
-    }
-    statusBox.textContent += '\n\n(轮询超时，任务可能仍在后台继续跑，稍后刷新页面查看新图)';
+  async function approveImageGeneration(project, body) {
+    const {approval} = await API.previewRegenerate(project, body);
+    const payload = approval.payload;
+    const accepted = await new Promise((resolve) => {
+      const overlay = document.createElement('div');
+      overlay.className = 'lightbox approval-dialog';
+      overlay.innerHTML = `<div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="图片生成审批">
+        <h2>审批本次图片生成</h2><p class="approval-summary"></p>
+        <div class="regen-ref-thumbs"></div><h3>本次完整提示词</h3><pre class="approval-prompt"></pre>
+        <label><input class="approval-check" type="checkbox"> 我已检查提示词、参考图和张数，批准本次图片生成</label>
+        <p class="muted">本次将使用服务器的 Codex 图片额度。此审批不包含租显卡或视频生成。</p>
+        <div class="toolbar"><button class="primary approve-image" disabled>批准并生成</button><button class="cancel-approval">取消</button></div>
+      </div>`;
+      overlay.querySelector('.approval-summary').textContent = `${payload.job_id} · ${payload.count} 张图片 · ${payload.ref_images.length} 张参考图`;
+      overlay.querySelector('.approval-prompt').textContent = payload.prompt;
+      payload.ref_images.forEach((path) => {
+        const img = document.createElement('img');
+        img.src = API.mediaUrl(path); img.alt = path.split('/').pop();
+        overlay.querySelector('.regen-ref-thumbs').appendChild(img);
+      });
+      const done = (result) => { overlay.remove(); document.removeEventListener('keydown', onKey); resolve(result); };
+      const onKey = (e) => { if (e.key === 'Escape') done(false); };
+      const approve = overlay.querySelector('.approve-image');
+      overlay.querySelector('.approval-check').addEventListener('change', (e) => { approve.disabled = !e.target.checked; });
+      approve.addEventListener('click', () => done(true));
+      overlay.querySelector('.cancel-approval').addEventListener('click', () => done(false));
+      document.addEventListener('keydown', onKey);
+      document.body.appendChild(overlay);
+      overlay.querySelector('.cancel-approval').focus();
+    });
+    return accepted ? API.regenerate(project, {approval_id: approval.id, approved: true}) : null;
   }
 
   // 把"重新生成"面板（提示词编辑 / AI 改写 / 参考图复用 / 提交+轮询）做成
@@ -206,29 +213,286 @@ const UI = (() => {
         regenPanel.dataset.built = '1';
         regenPanel.innerHTML = `
           <div class="regen-form">
-            <div class="muted">下面是这个角色/场景上一次生成时实际用的提示词，可以直接在里面改，改完点"开始生成"就会用你改过的版本重新生成，不改也可以直接生成。默认还会自动复用上一次生成这个 job 时用过的参考图（保证同一张脸/同一个场景），取消下面的勾选可以改成纯文字生成。</div>
-            <div class="ai-rewrite-row">
-              <input type="text" class="ai-instruction" placeholder="不想自己改提示词？口语化说说想怎么改（比如"头发剪短一点，表情更冷艳"），点右边按钮让 AI 帮你改写">
-              <button class="small ai-rewrite-btn">AI 改写</button>
+            <strong>1. 选择参考图</strong>
+            <div class="muted refs-group">正在加载同栏目图片…</div>
+            <div class="reference-options"></div>
+            <div class="toolbar"><span class="refs-summary muted"></span><button class="small clear-refs" disabled>取消全部参考</button></div>
+            <strong>2. 选择提示词生成方式</strong>
+            <label class="prompt-mode">生成方式 <select class="prompt-mode-select"><option value="fresh">完全重新生成（只根据本次描述）</option><option value="edit" selected>参考历史原文，按描述局部修改</option></select></label>
+            <p class="mode-description muted"></p>
+            <div class="prompt-source muted" role="status">正在查找历史提示词…</div>
+            <div class="history-picker">
+              <label>历史提示词 <select class="history-select"><option value="">选择历史版本…</option></select></label>
+              <div class="toolbar"><button class="small use-history" disabled>载入这个版本</button><button class="small undo-history" hidden>撤销载入</button><button class="small save-version" disabled>保存当前为历史版本</button></div>
+              <details class="history-preview" hidden><summary>预览所选历史版本</summary><pre></pre></details>
             </div>
-            <textarea placeholder="加载上一次的提示词中…" disabled></textarea>
-            <label class="regen-refs-toggle"><input type="checkbox" checked> 复用上一次的参考图（保持人物/场景一致性）</label>
+            <button class="small retry-context" hidden>重新加载</button>
+            <details class="original-prompt-details"><summary>查看历史原始提示词</summary><pre class="original-prompt"></pre></details>
+            <div class="ai-rewrite-row">
+              <input type="text" class="ai-instruction" maxlength="4000" placeholder="只写想改的部分，例如：头发剪短一点，其余保持原样">
+              <button class="small ai-rewrite-btn" disabled>Codex 按原文改写</button>
+            </div>
+            <div class="muted">这里先生成文字提示词，图片仍需单独审批。参考图以本次勾选为准。</div>
+            <div class="ai-write-status muted" role="status" aria-live="polite" hidden></div>
+            <textarea maxlength="30000" placeholder="加载上一次的提示词中…" disabled></textarea>
+            <strong>3. 检查提示词后生成</strong>
             <div class="toolbar">
-              <label>生成张数 <input type="number" min="1" max="6" value="2" style="width:52px"></label>
-              <button class="primary small go-regen">开始生成</button>
+              <label>生成张数 <input type="number" min="1" max="6" value="1" style="width:52px"></label>
+              <button class="primary small go-regen" disabled>预览并审批图片生成</button>
             </div>
             <div class="regen-used-refs" hidden></div>
             <div class="regen-status" hidden></div>
           </div>
         `;
         const textarea = regenPanel.querySelector('textarea');
-        API.lastPrompt(project, jobId, opts.kind, opts.episode).then(({ prompt }) => {
-          textarea.value = prompt || '';
-          textarea.placeholder = prompt ? '' : '没有找到上一次的提示词，手动写一个完整版本…';
-        }).catch((e) => {
-          textarea.placeholder = '加载上一次的提示词失败（' + e.message + '），可以手动写一个完整版本…';
-        }).finally(() => {
-          textarea.disabled = false;
+        const historySelect = regenPanel.querySelector('.history-select');
+        const useHistory = regenPanel.querySelector('.use-history');
+        const saveVersion = regenPanel.querySelector('.save-version');
+        const undoHistory = regenPanel.querySelector('.undo-history');
+        let history = [];
+        let selectedVersion = null;
+        let beforeHistory = null;
+        const modeSelect = regenPanel.querySelector('.prompt-mode-select');
+        const draftKey = 'regen-draft:' + JSON.stringify([currentUser?.username, project, opts.kind, opts.episode || null, jobId]);
+        let draft = {};
+        try { draft = JSON.parse(localStorage.getItem(draftKey) || '{}'); } catch {}
+        let pendingSubmit = false;
+        let taskBusy = false;
+        const appliedImages = new Set(jobData.files || []);
+        function saveDraft() {
+          draft = {...draft, prompt: textarea.value, instruction: regenPanel.querySelector('.ai-instruction').value,
+            mode: modeSelect.value, selectedVersion, refs: [...selectedRefs],
+            original: regenPanel.querySelector('.original-prompt').textContent,
+            source: regenPanel.querySelector('.prompt-source').textContent};
+          try { localStorage.setItem(draftKey, JSON.stringify(draft)); } catch {}
+        }
+        function showMode() {
+          const fresh = modeSelect.value === 'fresh';
+          regenPanel.querySelector('.history-picker').hidden = fresh;
+          regenPanel.querySelector('.original-prompt-details').hidden = fresh;
+          regenPanel.querySelector('.prompt-source').hidden = fresh;
+          regenPanel.querySelector('.mode-description').textContent = fresh
+            ? '只根据这次描述从零写提示词，不传入历史原文或旧编辑内容。切换到此模式会清空旧参考图，可自行重新选择。'
+            : '根据历史原文和当前提示词，自动定位描述涉及的部分，只修改这些内容，其余设定保留。';
+          regenPanel.querySelector('.ai-instruction').placeholder = fresh ? '描述想要的完整画面，例如人物外貌、服装、构图和画风…' : '只写要改的部分，例如：把头发改短，其余保持原样';
+          regenPanel.querySelector('.ai-rewrite-btn').textContent = fresh ? 'Codex 全新写提示词' : 'Codex 按原文改写';
+        }
+        function setBusy(busy) {
+          taskBusy = busy;
+          for (const selector of ['textarea', '.ai-instruction', '.ai-rewrite-btn', '.go-regen', '.prompt-mode-select', '.history-select', '.save-version', '.undo-history']) {
+            regenPanel.querySelector(selector).disabled = busy || pendingSubmit;
+          }
+          useHistory.disabled = busy || pendingSubmit || !historySelect.value;
+        }
+        modeSelect.addEventListener('change', () => {
+          const instruction = regenPanel.querySelector('.ai-instruction');
+          if (modeSelect.value === 'fresh') {
+            draft.editPrompt = textarea.value;
+            draft.editInstruction = instruction.value;
+            instruction.value = draft.freshInstruction || '';
+            textarea.value = draft.freshPrompt || '';
+            selectedRefs.clear();
+            referenceOptions.querySelectorAll('input').forEach(input => { input.checked = false; });
+            paintRefCount();
+          } else {
+            draft.freshPrompt = textarea.value;
+            draft.freshInstruction = instruction.value;
+            instruction.value = draft.editInstruction || '';
+            textarea.value = draft.editPrompt ?? textarea.value;
+          }
+          showMode(); saveDraft();
+        });
+        function fillHistory(versions) {
+          history = versions;
+          historySelect.replaceChildren(new Option('选择历史版本…', ''));
+          history.forEach((v) => historySelect.add(new Option(
+            `${v.timestamp || '早期记录'} · ${v.source} · ${v.prompt.length} 字${v.image_count ? ` · 出过 ${v.image_count} 张图` : ''}`, v.id)));
+          useHistory.disabled = true;
+        }
+        function addVersion(v) {
+          if (v) fillHistory([v, ...history.filter((item) => item.id !== v.id)]);
+        }
+        historySelect.addEventListener('change', () => {
+          const version = history.find((v) => v.id === historySelect.value);
+          const preview = regenPanel.querySelector('.history-preview');
+          preview.hidden = !version;
+          preview.open = !!version;
+          preview.querySelector('pre').textContent = version?.prompt || '';
+          useHistory.disabled = !version;
+        });
+        useHistory.addEventListener('click', () => {
+          const version = history.find((v) => v.id === historySelect.value);
+          if (!version) return;
+          beforeHistory = {prompt: textarea.value, version: selectedVersion,
+            original: regenPanel.querySelector('.original-prompt').textContent,
+            source: regenPanel.querySelector('.prompt-source').textContent};
+          textarea.value = version.prompt;
+          selectedVersion = version.id;
+          regenPanel.querySelector('.original-prompt').textContent = version.prompt;
+          regenPanel.querySelector('.prompt-source').textContent = `已载入历史版本：${version.source} · ${version.timestamp || '早期记录'}；Codex 将以此为原文。`;
+          undoHistory.hidden = false;
+        });
+        undoHistory.addEventListener('click', () => {
+          if (!beforeHistory) return;
+          textarea.value = beforeHistory.prompt;
+          selectedVersion = beforeHistory.version;
+          regenPanel.querySelector('.original-prompt').textContent = beforeHistory.original;
+          regenPanel.querySelector('.prompt-source').textContent = beforeHistory.source;
+          undoHistory.hidden = true;
+        });
+        saveVersion.addEventListener('click', async () => {
+          saveVersion.disabled = true;
+          try {
+            const {version} = await guarded(() => API.savePromptVersion(project, {
+              job_id: jobId, kind: opts.kind, episode: opts.episode, prompt: textarea.value,
+            }));
+            addVersion(version);
+            toast('当前提示词已保存到历史版本');
+          } catch {} finally { saveVersion.disabled = false; }
+        });
+        const selectedRefs = new Set();
+        const referenceOptions = regenPanel.querySelector('.reference-options');
+        const clearRefs = regenPanel.querySelector('.clear-refs');
+        function paintRefCount() {
+          regenPanel.querySelector('.refs-summary').textContent = selectedRefs.size
+            ? `已选 ${selectedRefs.size} 张参考图（最多 6 张）`
+            : '未选参考图：本次将使用纯文字生成';
+        }
+        function addReferenceOption(option) {
+          if (Array.from(referenceOptions.querySelectorAll('input')).some((input) => input.value === option.path)) return;
+          const card = document.createElement('div');
+          card.className = 'reference-choice';
+          const label = document.createElement('label');
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.value = option.path;
+          checkbox.checked = selectedRefs.has(option.path);
+          const img = document.createElement('img');
+          img.src = API.mediaUrl(option.path);
+          img.alt = option.job_id;
+          img.loading = 'lazy';
+          const caption = document.createElement('span');
+          caption.textContent = option.path.split('/').pop() + (option.selected ? ' · 已入选' : '') + (option.previous ? ' · 上次参考' : '');
+          label.append(checkbox, img, caption);
+          const preview = document.createElement('button');
+          preview.className = 'small';
+          preview.textContent = '放大查看';
+          preview.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.className = 'lightbox reference-preview';
+            const full = document.createElement('img');
+            full.src = img.src;
+            full.alt = caption.textContent;
+            const close = document.createElement('button');
+            close.textContent = '关闭预览';
+            const dismiss = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+            const onKey = (e) => { if (e.key === 'Escape') dismiss(); };
+            close.addEventListener('click', dismiss);
+            overlay.addEventListener('click', (e) => { if (e.target === overlay) dismiss(); });
+            document.addEventListener('keydown', onKey);
+            overlay.append(full, close);
+            document.body.appendChild(overlay);
+            close.focus();
+          });
+          checkbox.addEventListener('change', () => {
+            if (checkbox.checked && selectedRefs.size >= 6) {
+              checkbox.checked = false;
+              toast('最多选择 6 张参考图', 'error');
+              return;
+            }
+            if (checkbox.checked) selectedRefs.add(option.path);
+            else selectedRefs.delete(option.path);
+            paintRefCount();
+          });
+          card.append(label, preview);
+          referenceOptions.appendChild(card);
+        }
+        clearRefs.addEventListener('click', () => {
+          selectedRefs.clear();
+          referenceOptions.querySelectorAll('input').forEach((input) => { input.checked = false; });
+          paintRefCount();
+        });
+        const retryContext = regenPanel.querySelector('.retry-context');
+        async function loadContext() {
+          retryContext.hidden = true;
+          try {
+            const context = await API.lastPrompt(project, jobId, opts.kind, opts.episode);
+            fillHistory(context.history || []);
+            textarea.value = opts.initialPrompt ?? context.prompt ?? '';
+            textarea.placeholder = context.prompt ? '' : '没有找到历史原文，请先补充完整提示词';
+            regenPanel.querySelector('.prompt-source').textContent = context.prompt
+              ? `已加载历史提示词 · 来源：${context.prompt_source} · ${context.prompt.length} 字`
+              : '未找到历史原文；补充完整提示词后才能进行改写。';
+            if (opts.initialPrompt !== undefined) {
+              regenPanel.querySelector('.prompt-source').textContent += '；下方当前版本使用你刚保存的提示词。';
+            }
+            regenPanel.querySelector('.original-prompt').textContent = context.original_prompt || '暂无历史原文';
+            regenPanel.querySelector('.refs-group').textContent = `同栏目：${context.reference_group}。勾选希望参考的图片，可多选；“上次参考”已默认勾选。`;
+            referenceOptions.innerHTML = '';
+            selectedRefs.clear();
+            (context.ref_images || []).slice(0, 6).forEach((path) => selectedRefs.add(path));
+            (context.reference_options || []).forEach(addReferenceOption);
+            if (!referenceOptions.children.length) referenceOptions.textContent = '该栏目暂时没有可用参考图。';
+            paintRefCount();
+            textarea.disabled = false;
+            clearRefs.disabled = false;
+            saveVersion.disabled = false;
+            regenPanel.querySelector('.ai-rewrite-btn').disabled = false;
+            regenPanel.querySelector('.go-regen').disabled = false;
+            if (Object.hasOwn(draft, 'prompt')) {
+              textarea.value = draft.prompt;
+              regenPanel.querySelector('.ai-instruction').value = draft.instruction || '';
+              modeSelect.value = draft.mode || 'edit';
+              selectedVersion = draft.selectedVersion || null;
+              regenPanel.querySelector('.original-prompt').textContent = draft.original || context.original_prompt || '';
+              regenPanel.querySelector('.prompt-source').textContent = draft.source || context.prompt_source || '';
+              selectedRefs.clear(); (draft.refs || []).forEach(path => selectedRefs.add(path));
+              referenceOptions.querySelectorAll('input').forEach(input => { input.checked = selectedRefs.has(input.value); });
+              paintRefCount();
+            }
+            showMode();
+            setBusy(taskBusy);
+            TaskUI.refresh();
+          } catch (e) {
+            regenPanel.querySelector('.prompt-source').textContent = '加载历史提示词失败：' + e.message + '。请重试后再修改。';
+            retryContext.hidden = false;
+          }
+        }
+        retryContext.addEventListener('click', loadContext);
+        loadContext();
+
+        regenPanel.addEventListener('input', () => { draft.editedAt = Date.now() / 1000; saveDraft(); });
+        regenPanel.addEventListener('change', saveDraft);
+        regenPanel.addEventListener('click', () => queueMicrotask(saveDraft));
+        TaskUI.subscribe(regenPanel, (tasks) => {
+          const matching = tasks.filter(t => t.project === project && t.target.job_id === jobId
+            && t.target.type === opts.kind && Number(t.target.episode || 0) === Number(opts.episode || 0));
+          const texts = matching.filter(t => t.kind === 'prompt');
+          const textTask = texts.at(-1);
+          const images = matching.filter(t => t.kind === 'image');
+          const imageTask = images.at(-1);
+          setBusy(matching.some(t => t.status === 'running'));
+          if (textTask) {
+            const box = regenPanel.querySelector('.ai-write-status'); box.hidden = false;
+            box.textContent = textTask.status === 'running' ? 'Codex 正在后台写提示词，换页或刷新后可继续查看。'
+              : textTask.status === 'done' ? '提示词已完成并保存在历史版本和顶部任务栏。' : (textTask.error || '文字任务未完成');
+            if (textTask.status === 'done' && draft.appliedTask !== textTask.id
+                && (!draft.editedAt || draft.editedAt <= textTask.created_at || draft.pendingTask === textTask.id)) {
+              textarea.value = textTask.result.prompt;
+              addVersion(textTask.result.version);
+              draft.appliedTask = textTask.id; draft.pendingTask = null;
+              saveDraft();
+            }
+          }
+          if (imageTask) {
+            const box = regenPanel.querySelector('.regen-status'); box.hidden = false;
+            box.textContent = imageTask.status === 'running' ? '图片正在后台生成，切换页面不会停止任务。'
+              : imageTask.status === 'done' ? '图片生成已完成。' : (imageTask.error || '图片生成失败，请检查任务记录。');
+            for (const fname of imageTask.new_files || []) {
+              const rel = `${project}/${opts.baseDirHint}/${jobId}/${fname}`;
+              if (!appliedImages.has(rel)) { appliedImages.add(rel); onNewFile(rel, fname); addReferenceOption({path:rel, job_id:jobId}); }
+            }
+          }
         });
 
         regenPanel.querySelector('.ai-rewrite-btn').addEventListener('click', async (e) => {
@@ -236,49 +500,86 @@ const UI = (() => {
           const instrInput = regenPanel.querySelector('.ai-instruction');
           const instruction = instrInput.value.trim();
           if (!instruction) {
-            toast('先写一句想怎么改，再点 AI 改写', 'error');
+            toast(modeSelect.value === 'fresh' ? '请先描述想要的完整画面' : '请先描述想修改的部分', 'error');
             return;
           }
           const before = textarea.value;
+          if (!before.trim() && modeSelect.value === 'edit') {
+            toast('请先补充完整的原提示词，再让 Codex 改写', 'error');
+            return;
+          }
+          pendingSubmit = true;
+          setBusy(true);
           btn.disabled = true;
           textarea.disabled = true;
+          historySelect.disabled = true;
+          useHistory.disabled = true;
+          undoHistory.disabled = true;
+          saveVersion.disabled = true;
+          instrInput.disabled = true;
+          const generateBtn = regenPanel.querySelector('.go-regen');
+          generateBtn.disabled = true;
+          const writeStatus = regenPanel.querySelector('.ai-write-status');
+          writeStatus.hidden = false;
+          writeStatus.textContent = 'Codex 正在写提示词，请稍候（最长约 2 分钟）…';
+          btn.textContent = 'Codex 正在写…';
           const savedPlaceholder = textarea.placeholder;
-          textarea.placeholder = 'AI 改写中，通常 10-30 秒…';
+          textarea.placeholder = 'Codex 正在写提示词…';
           try {
-            const { prompt } = await guarded(() => API.aiRewritePrompt(project, {
+            const { task } = await guarded(() => API.startPromptTask(project, {
               job_id: jobId, kind: opts.kind, episode: opts.episode,
-              instruction, current_prompt: before,
+              instruction, mode: modeSelect.value,
+              current_prompt: modeSelect.value === 'fresh' ? '' : before,
+              prompt_version_id: modeSelect.value === 'fresh' ? null : selectedVersion,
             }));
-            textarea.value = prompt;
-            instrInput.value = '';
-            toast('AI 已改写，还可以在文本框里继续手动微调');
+            draft.pendingTask = task.id;
+            saveDraft();
+            writeStatus.textContent = '已提交后台文字任务，可以切换页面。';
+            TaskUI.refresh();
           } catch (err) {
             textarea.value = before;
+            writeStatus.textContent = '生成失败：' + err.message;
           } finally {
+            pendingSubmit = false;
             textarea.placeholder = savedPlaceholder;
             textarea.disabled = false;
             btn.disabled = false;
+            btn.textContent = 'Codex 按原文改写';
+            instrInput.disabled = false;
+            generateBtn.disabled = false;
+            historySelect.disabled = false;
+            useHistory.disabled = !historySelect.value;
+            undoHistory.disabled = false;
+            saveVersion.disabled = false;
+            showMode();
+            setBusy(!!draft.pendingTask);
           }
         });
 
         regenPanel.querySelector('.go-regen').addEventListener('click', async (e) => {
           const btn = e.currentTarget;
           btn.disabled = true;
+          regenPanel.querySelector('.ai-rewrite-btn').disabled = true;
           const refsBox = regenPanel.querySelector('.regen-used-refs');
           const statusBox = regenPanel.querySelector('.regen-status');
           refsBox.hidden = true;
           refsBox.innerHTML = '';
           statusBox.hidden = false;
-          statusBox.textContent = '已提交，正在生成…（免费本机生成，通常 1-3 分钟一张，请不要关闭页面）';
+          statusBox.textContent = '正在准备本次图片任务的审批预览…';
+          let imageSubmitted = false;
           try {
             const prompt = regenPanel.querySelector('textarea').value.trim();
-            const count = Number(regenPanel.querySelector('input[type=number]').value) || 2;
-            const reuseRefs = regenPanel.querySelector('.regen-refs-toggle input').checked;
-            const body = { job_id: jobId, kind: opts.kind, count };
+            const count = Number(regenPanel.querySelector('input[type=number]').value) || 1;
+            const body = { job_id: jobId, kind: opts.kind, count, ref_images: Array.from(selectedRefs) };
             if (prompt) body.prompt = prompt;
             if (opts.episode) body.episode = opts.episode;
-            if (!reuseRefs) body.ref_images = [];
-            const { token, used_ref_images } = await guarded(() => API.regenerate(project, body));
+            const result = await guarded(() => approveImageGeneration(project, body));
+            if (!result) {
+              statusBox.textContent = '已取消审批，本次没有执行图片生成。';
+              return;
+            }
+            const { token, used_ref_images } = result;
+            imageSubmitted = true;
             if (used_ref_images && used_ref_images.length) {
               refsBox.hidden = false;
               refsBox.innerHTML = '<div class="muted">本次使用的参考图（保证一致性）：</div><div class="regen-ref-thumbs"></div>';
@@ -289,12 +590,14 @@ const UI = (() => {
                 thumbs.appendChild(img);
               });
             }
-            const refPath = (jobData.files && jobData.files[0]) || `${project}/${opts.baseDirHint}/${jobId}/${jobId}_00.png`;
-            await pollRegenerate(project, token, statusBox, onNewFile, refPath);
+            statusBox.textContent = '图片任务已提交后台，切换页面后可在顶部任务栏继续查看。';
+            TaskUI.refresh();
           } catch (err) {
             statusBox.textContent = '失败: ' + err.message;
           } finally {
             btn.disabled = false;
+            regenPanel.querySelector('.ai-rewrite-btn').disabled = false;
+            setBusy(imageSubmitted);
           }
         });
       }
@@ -367,27 +670,17 @@ const UI = (() => {
       row.className = 'post-save-job-row';
       row.innerHTML = `
         <span class="job-name">${esc(jobId)}</span>
-        <label>张数 <input type="number" min="1" max="6" value="2" style="width:48px"></label>
-        <button class="small go-regen">重新生成</button>
-        <div class="regen-status" hidden></div>
+        <button class="small choose-refs">选择参考图并生成…</button>
+        <div class="regen-panel" hidden style="width:100%"></div>
         <div class="img-grid"></div>
       `;
       jobsBox.appendChild(row);
-      row.querySelector('.go-regen').addEventListener('click', async (e) => {
-        const btn = e.currentTarget;
-        btn.disabled = true;
-        const statusBox = row.querySelector('.regen-status');
-        const grid = row.querySelector('.img-grid');
-        statusBox.hidden = false;
-        try {
-          const count = Number(row.querySelector('input[type=number]').value) || 2;
-          const body = { job_id: jobId, kind: opts.kind, count, prompt };
-          if (opts.episode) body.episode = opts.episode;
-          const { token } = await guarded(() => API.regenerate(project, body));
-          const refPath = (jobs[jobId].files && jobs[jobId].files[0])
-            || `${project}/${opts.baseDirHint}/${jobId}/${jobId}_00.png`;
-          const shown = [];
-          await pollRegenerate(project, token, statusBox, (relPath) => {
+      const shown = [];
+      row.querySelector('.choose-refs').addEventListener('click', () => {
+        const panel = row.querySelector('.regen-panel');
+        panel.hidden = !panel.hidden;
+        if (!panel.hidden) {
+          attachRegenPanel(panel, project, jobId, jobs[jobId], {...opts, initialPrompt: prompt}, (relPath) => {
             shown.push(relPath);
             const card = document.createElement('div');
             card.className = 'img-card';
@@ -395,13 +688,8 @@ const UI = (() => {
             card.addEventListener('click', () => openLightbox(project, jobId, {
               files: shown, index: shown.indexOf(relPath),
             }));
-            grid.appendChild(card);
-          }, refPath);
-        } catch (err) {
-          statusBox.hidden = false;
-          statusBox.textContent = '失败: ' + err.message;
-        } finally {
-          btn.disabled = false;
+            row.querySelector('.img-grid').appendChild(card);
+          });
         }
       });
     });

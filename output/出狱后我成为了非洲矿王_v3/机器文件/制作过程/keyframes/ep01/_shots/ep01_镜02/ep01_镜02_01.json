@@ -1,0 +1,34 @@
+{
+  "id": "ep01_镜02",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-5484dc09-6e3d-4e06-9f3e-ba679972b3e3.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_01.png",
+  "status": "pending_review",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_prison_a.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_prison_continuity.json",
+      "id": "ep01_镜02",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_01.png",
+      "verdict": "fail",
+      "reason": "门框已在两侧前景，二人站在门外红土、右后方车辆与B方向正确，解决了首轮人站门内问题。江砚侧背与陈野基准脸/棕衣/灰巾延续。但陈野伸向江砚的是解剖右臂，持白盖瓶的是近侧解剖左手，与卡定左手迎肩、右手持瓶相反，并造成后续右手递瓶的连戏断点。顶空约18%，下缘到膝部附近，仍宽于5%顶空/大腿中段的中景。",
+      "fix_instruction": "保留已正确门外红土和门框前景布局，交换陈野双臂职责：近侧左手伸向江砚肩，远侧右手垂持白盖瓶；收去上方天空与膝部，使江砚头頂约5%、底边在大腿中段。",
+      "card_field": "people[1].action_zh; framing.crop_zh; framing.headroom_frac",
+      "spatial_annotations": {
+        "coordinate_system": "normalized x,y from top-left",
+        "chen_right_arm": "从画面约(0.61,0.40)远侧右肩沿向左袖筒到(0.38,0.46)伸出臂，手被江砚肩遮挡；这是解剖右臂，当前错误用于拍肩。",
+        "chen_left_hand": "近侧左肩约(0.86,0.40)沿画面右侧上臂至(0.89,0.55)肘，再斜向左到(0.70,0.63)手握瓶；这是解剖左手，当前错误持瓶。",
+        "bottle_bbox": [
+          0.63,
+          0.57,
+          0.75,
+          0.69
+        ]
+      }
+    }
+  ],
+  "review_zh": "门框已在两侧前景，二人站在门外红土、右后方车辆与B方向正确，解决了首轮人站门内问题。江砚侧背与陈野基准脸/棕衣/灰巾延续。但陈野伸向江砚的是解剖右臂，持白盖瓶的是近侧解剖左手，与卡定左手迎肩、右手持瓶相反，并造成后续右手递瓶的连戏断点。顶空约18%，下缘到膝部附近，仍宽于5%顶空/大腿中段的中景。"
+}

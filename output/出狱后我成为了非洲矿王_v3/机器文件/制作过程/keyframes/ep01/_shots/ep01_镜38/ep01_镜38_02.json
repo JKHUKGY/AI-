@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜38",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-8930ed41-afcd-4fa0-bd8a-eb6f5b0381f1.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_38.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+      "verdict": "fail",
+      "reason": "灰蓝衬衫、黑发脸型、坐着仰视右侧母亲并准备顺从回应，北窗A方向和柔和日光均延续00与r2；画内无亮灯，门与箱包在裁切外。取景仍有约15%顶空，头部不足40%，完整胸袋及下方衣料延伸到画底，母亲右下肩背约30%宽。与胸上截止、5%顶空及10%至15%窄肩缘仍有明显差异。",
+      "fix_instruction": "同镜收紧胸部下缘与顶部空白，将母亲右下大块肩背收成窄虚焦边；保持江砚顺从心酸的表情及坐姿仰视方向。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+      "verdict": "fail",
+      "reason": "情绪、同脸同衣、左右关系和北窗日光正确，已是胸像。头顶空约15%，右下母亲肩背约30%宽，分别明显超出5%与10%至15%；头部仍约39%，结尾主体强调不足。",
+      "fix_instruction": "推荐同镜38_01，按该图作小幅纵向取景调整及右侧肩缘局部外移；不要从00重新裁，也不要大幅继续放大已成胸像的主角。",
+      "card_field": "framing.headroom_frac; framing.crop_zh; background_people[0].posture_zh"
+    }
+  ],
+  "review_zh": "灰蓝衬衫、黑发脸型、坐着仰视右侧母亲并准备顺从回应，北窗A方向和柔和日光均延续00与r2；画内无亮灯，门与箱包在裁切外。取景仍有约15%顶空，头部不足40%，完整胸袋及下方衣料延伸到画底，母亲右下肩背约30%宽。与胸上截止、5%顶空及10%至15%窄肩缘仍有明显差异。；情绪、同脸同衣、左右关系和北窗日光正确，已是胸像。头顶空约15%，右下母亲肩背约30%宽，分别明显超出5%与10%至15%；头部仍约39%，结尾主体强调不足。"
+}

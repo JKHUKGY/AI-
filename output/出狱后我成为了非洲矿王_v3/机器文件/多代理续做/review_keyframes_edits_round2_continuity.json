@@ -1,0 +1,102 @@
+{
+  "agent_id": "/root/review_edits_round2_continuity",
+  "status": "complete",
+  "review_scope": "独立逐张实际看图；剧情/身份/服饰/包带状态/机位/光线连续性与批准取景复核。未读取Reviewer A结论。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_02.png"
+  ],
+  "text_sources": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt",
+    ".agents/skills/loop-picture-generation/SKILL.md",
+    ".agents/skills/loop-picture-generation/references/reviewer_agent.md",
+    ".agents/skills/short-drama-keyframe-gen/references/keyframe_review_checklist.md"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜21",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+      "verdict": "fail",
+      "reason": "江砚脸型、灰蓝衬衫、双肩橄榄包带、朝右看母亲的克制心疼，以及左玻璃/右车道的机场A方向均延续原00和a1主帧。取景仍未完成：头顶留白约18%，发顶至下颏约36%，底边达胸袋以下；苏慧后肩在下部占约四成画宽，仍是一块明显肩背而非10%至15%的窄边。不是几百分点估算误差，脸部叙事近景和原批准胸上边界仍明显不足。",
+      "fix_instruction": "同镜局部重取景，把头顶留白压到约5%、发顶到下颏放大到约一半画高，下缘截胸口；母亲主体继续移到画外，只留右缘窄发丝及肩弧。保留双肩包带与当前表情、机场A方向。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜21",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+      "verdict": "fail",
+      "reason": "江砚脸型、灰蓝衬衫、双肩橄榄包带、朝右看母亲的克制心疼，以及左玻璃/右车道的机场A方向均延续原00和a1主帧。取景仍未完成：头顶留白约18%，发顶至下颏约36%，底边达胸袋以下；苏慧后肩在下部占约四成画宽，仍是一块明显肩背而非10%至15%的窄边。不是几百分点估算误差，脸部叙事近景和原批准胸上边界仍明显不足。",
+      "fix_instruction": "同镜局部重取景，把头顶留白压到约5%、发顶到下颏放大到约一半画高，下缘截胸口；母亲主体继续移到画外，只留右缘窄发丝及肩弧。保留双肩包带与当前表情、机场A方向。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+      "verdict": "fail",
+      "reason": "江砚仍是基准黑短发、灰蓝衬衫、空肩无包带，向右看母亲；脸和机场玻璃背景承接本镜00与a2状态，没有包重新回肩的连戏错误。头顶留白约15%，头部约35%画高，苏慧下部肩背约四成画宽。画面保留完整胸袋以下的躯干与大块前景肩背，仍未达到已批准头部约50%、胸口截止和窄肩缘的取景。",
+      "fix_instruction": "继续同镜局部放大与上移，压掉顶空、胸袋下方躯干，把苏慧头背移到右框外，仅保留10%至15%肩缘；保留当前无包带状态、视线和原机场机位。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+      "verdict": "fail",
+      "reason": "江砚仍是基准黑短发、灰蓝衬衫、空肩无包带，向右看母亲；脸和机场玻璃背景承接本镜00与a2状态，没有包重新回肩的连戏错误。取景比01稍紧，头顶约11%、头部约38%，苏慧下部肩背仍约三成画宽。画面保留完整胸袋以下的躯干与大块前景肩背，仍未达到已批准头部约50%、胸口截止和窄肩缘的取景。",
+      "fix_instruction": "继续同镜局部放大与上移，压掉顶空、胸袋下方躯干，把苏慧头背移到右框外，仅保留10%至15%肩缘；保留当前无包带状态、视线和原机场机位。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜36",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_01.png",
+      "verdict": "fail",
+      "reason": "苏慧灰白低髻、旧白衣和灰围裙、谨慎看右侧儿子的神态，以及身后闭门的B反打、日光均正确；没有新人物、亮灯或背包回肩。下肢及手在框外，不据此要求展示坐稳动作。仍留约16%顶空，头部仅约三分之一画高，围裙胸片向下露出过多；江砚右下肩背横向占近一半画宽，未成为指定10%至15%窄边。此版虽比00紧，仍未完成批准的胸上近景。",
+      "fix_instruction": "保持苏慧身份与低声劝慰神态、闭门B方向；同镜放大并上移至约5%顶空、头部约50%，下缘截在胸口，江砚右肩和头主体移出画框只留窄虚焦边。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜36",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "verdict": "fail",
+      "reason": "苏慧灰白低髻、旧白衣和灰围裙、谨慎看右侧儿子的神态，以及身后闭门的B反打、日光均正确；没有新人物、亮灯或背包回肩。下肢及手在框外，不据此要求展示坐稳动作。仍留约14%顶空，头部仅约三分之一画高，围裙胸片向下露出过多；江砚右下肩背横向占约四成画宽，未成为指定10%至15%窄边。此版虽比00紧，仍未完成批准的胸上近景。",
+      "fix_instruction": "保持苏慧身份与低声劝慰神态、闭门B方向；同镜放大并上移至约5%顶空、头部约50%，下缘截在胸口，江砚右肩和头主体移出画框只留窄虚焦边。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜37",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "verdict": "fail",
+      "reason": "江砚黑短发、灰蓝衬衫、空肩、略仰视右前景母亲的闭唇克制心酸均延续本镜00与r2主帧；窗在身后、床左、床头灯未亮，A方向与36的闭门B方向形成正确反打，没有把忍让剧情演成已识破骗局。取景仍有约18%头顶空白，发顶至下颏约37%画高，完整胸袋及以下躯干仍入画，母亲右下肩背占约四成画宽；未完成批准胸上截线与窄肩缘。",
+      "fix_instruction": "同镜放大并上移，头顶约5%、头部约50%，下缘截胸口；右前景苏慧整体再移出画外只留窄虚焦发丝肩弧。保留江砚轻仰视坐姿、闭唇表情、窗与灭灯状态。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜37",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_02.png",
+      "verdict": "fail",
+      "reason": "江砚黑短发、灰蓝衬衫、空肩、略仰视右前景母亲的闭唇克制心酸均延续本镜00与r2主帧；窗在身后、床左、床头灯未亮，A方向与36的闭门B方向形成正确反打，没有把忍让剧情演成已识破骗局。取景仍有约16%头顶空白，发顶至下颏约37%画高，完整胸袋及以下躯干仍入画，母亲右下肩背占约四成画宽；未完成批准胸上截线与窄肩缘。",
+      "fix_instruction": "同镜放大并上移，头顶约5%、头部约50%，下缘截胸口；右前景苏慧整体再移出画外只留窄虚焦发丝肩弧。保留江砚轻仰视坐姿、闭唇表情、窗与灭灯状态。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    }
+  ],
+  "proposed_file": null,
+  "summary": "8张均有取景硬差异；人物与情节连戏基本保留，本批不通过原因主要是未完成规定胸上构图与窄边过肩，不把画外低位道具不可见视为丢失。整集仍未齐图，不声称整场最终验收完成。"
+}

@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/review_keyframes_batch05_single",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+  ],
+  "inspection_method": "实际view_image原图及本代理前任务中已看过的同机位和角色参考；PIL只读尺寸。仅写metadata，没有编辑或生成图片。",
+  "plans": [
+    {
+      "id": "ep01_镜14",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "mode": "local_reframe",
+      "crop_box": [
+        0.46,
+        0.1855,
+        0.895,
+        0.6205
+      ],
+      "crop_box_role": "同一原图胸上收紧参考；仅纯裁会丢失陈野发丝后肩，须在左边缘做少量局部重构。",
+      "original_size": [
+        941,
+        1672
+      ],
+      "crop_pixels_estimate": [
+        433,
+        310,
+        842,
+        1037
+      ],
+      "subject_head_bbox_normalized_estimate": [
+        0.512,
+        0.208,
+        0.847,
+        0.425
+      ],
+      "head_height_fraction_after_crop_estimate": 0.499,
+      "headroom_fraction_after_crop_estimate": 0.052,
+      "foreground_edge": "left",
+      "pure_crop_pass": false,
+      "reason": "实际查看原图，江砚身份、衣服、朝左三分之四正面与冷静表情符合，左手握开口瓶右手握白盖清楚，门柱/门扇在其后方，未见妨碍局部取景的动作或空间硬伤。原头顶约348、下颏约710，收紧到胸口可解决宽景和大顶空；陈野头侧右界约260，裁框左433后其头侧完全出画，不能声称纯裁后过肩达标。",
+      "correction_zh": "以同一张候选为编辑目标，按归一化框[0.46, 0.1855, 0.895, 0.6205]收紧主体与原背景，最终保持9:16。江砚完整发顶至下颏约占画高50%，发顶留白5%，底边截在胸口；保留同一张脸、三分之四正面朝左、冷静闭嘴且目光看左侧陈野。左边缘仅局部重构陈野虚焦短发侧缘与棕色衣服后肩窄弧，约占画宽10%至15%，主体头颈与后背留在左框外。江砚左手持开口瓶、右手持唯一白盖仍在原胸下位置，手瓶自然留在下画框外。",
+      "preserve_zh": "保留同一候选的江砚身份、发型、肤色、年龄、灰蓝衬衫、神态、身体朝向与视线，保留原A机位及门柱铁栅栏局部和赤道日光。两人仍站在监狱门外原位；不为展现手瓶扩大胸上取景，不复制三视图人物，不改变手瓶动作。",
+      "retained_visible_elements_zh": "江砚胸上主体，原A机位脸后方监狱门局部，左缘陈野虚焦发丝与后肩。"
+    }
+  ]
+}

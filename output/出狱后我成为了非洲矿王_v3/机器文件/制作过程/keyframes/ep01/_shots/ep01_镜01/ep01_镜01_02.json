@@ -1,0 +1,33 @@
+{
+  "id": "ep01_镜01",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-1f8c353d-c9c9-4430-a70f-9ac9e1a150a2.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_01.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_09_14_38_continuity.json",
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png",
+      "verdict": "fail",
+      "reason": "江砚身份、灰蓝衣/深灰裤、陈野左车侧右手持瓶及日间A方向正确，门缝亦较首轮窄。但两扇门新增约膝高密集短尖栏，横梁分格也改变，原底板门型没有这套内嵌小栅栏，场景连续性失败。江砚全身约32%，鞋下约35%地面，仍远多于卡定15%；左脚已踏外、右脚后抬，起点仍偏后。陈野瓶盖上部受手遮挡且有蓝色区域，无法确认纯白盖，不靠猜测判正确。",
+      "fix_instruction": "复用原A底板原有门扇栅格，只转动门扇成窄缝，去掉新增短尖栏和分格；按原卡调整江砚跨门起点和40%全身/15%脚下地面，并令陈野右手纯白紧盖可辨。",
+      "card_field": "plate_image; props_zh; framing.crop_zh; people[0].posture_zh; people[1].action_zh"
+    },
+    {
+      "agent_id": "/root/review_round2_next_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_next_single.json",
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png",
+      "verdict": "fail",
+      "reason": "门口窄缝、江砚迈步、陈野左侧靠车右手持瓶及人物服装身份正确；江砚头顶约33%、鞋底65%，全身约32%，脚下空地约35%。开场构图仍未达到全身40%、脚下15%，人物过小且地面过多。",
+      "fix_instruction": "优先以同镜01_01作第三轮局部重取景，保持窄缝和当前出门动作，把江砚全身增到约40%、鞋底移到画高85%，削减脚下空地。门柱、原车及靠车陈野相对位置维持。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh"
+    }
+  ],
+  "review_zh": "江砚身份、灰蓝衣/深灰裤、陈野左车侧右手持瓶及日间A方向正确，门缝亦较首轮窄。但两扇门新增约膝高密集短尖栏，横梁分格也改变，原底板门型没有这套内嵌小栅栏，场景连续性失败。江砚全身约32%，鞋下约35%地面，仍远多于卡定15%；左脚已踏外、右脚后抬，起点仍偏后。陈野瓶盖上部受手遮挡且有蓝色区域，无法确认纯白盖，不靠猜测判正确。；门口窄缝、江砚迈步、陈野左侧靠车右手持瓶及人物服装身份正确；江砚头顶约33%、鞋底65%，全身约32%，脚下空地约35%。开场构图仍未达到全身40%、脚下15%，人物过小且地面过多。"
+}

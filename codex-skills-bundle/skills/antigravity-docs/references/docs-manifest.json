@@ -1,0 +1,580 @@
+{
+  "_meta": {
+    "generated_at": "2026-07-31",
+    "index_url": "https://antigravity.google/llms.txt",
+    "llms_sha256": "79430d26402a1bb80e1fee400ad43d1bd1cb853392c74c61ff00bd94310b5241",
+    "content_url_template": "https://antigravity.google/docs/{slug}",
+    "page_count": 81,
+    "builder_skill": "antigravity-docs-index-builder",
+    "note": "Auto-generated from antigravity.google/llms.txt (page list) plus a per-page HTML scrape (breadcrumb section, <h1> title, lead paragraph) of each server-rendered /docs/<slug> page. content_url is the page URL itself — fetch it directly, no separate asset twin. Do not hand-edit; regenerate with /antigravity-docs-index-builder."
+  },
+  "pages": [
+    {
+      "section": "Home",
+      "slug": "home",
+      "title": "Welcome to Google Antigravity",
+      "description": "Google Antigravity offers multiple product surfaces tailored to your specific development workflow. Select the interface that best fits your needs:",
+      "content_url": "https://antigravity.google/docs/home"
+    },
+    {
+      "section": "Antigravity 2.0 / Overview",
+      "slug": "overview",
+      "title": "Antigravity 2.0",
+      "description": "As we go deeper into the agent-first era, Antigravity is evolving to further empower developers. Introducing Antigravity 2.0, a standalone desktop application tailored for managing AI agents that execute complex knowledge and coding tasks.",
+      "content_url": "https://antigravity.google/docs/overview"
+    },
+    {
+      "section": "Antigravity 2.0 / Getting Started",
+      "slug": "getting-started",
+      "title": "Getting Started with Antigravity 2.0",
+      "description": "Visit antigravity.google/download to download Google Antigravity 2.0.",
+      "content_url": "https://antigravity.google/docs/getting-started"
+    },
+    {
+      "section": "Antigravity 2.0 / Build with Google",
+      "slug": "build-with-google",
+      "title": "Build with Google",
+      "description": "Antigravity 2.0 makes it seamless to build with popular Google technology stacks. We have partnered with teams across Google to create curated bundles of primitives, including Skills, MCP servers, and Editor extensions, that are pre-configured for specific ecosystems.",
+      "content_url": "https://antigravity.google/docs/build-with-google"
+    },
+    {
+      "section": "Antigravity 2.0 / Feature Overview",
+      "slug": "features",
+      "title": "Antigravity 2.0 Features",
+      "description": "In Antigravity 2.0, agents work in Projects (previously in Agent Manager, agents were strictly mapped to a single workspace folder).",
+      "content_url": "https://antigravity.google/docs/features"
+    },
+    {
+      "section": "Antigravity 2.0 / Models",
+      "slug": "models",
+      "title": "Models",
+      "description": "For the core reasoning model, Antigravity offers leading frontier models. Availability depends on your plan:",
+      "content_url": "https://antigravity.google/docs/models"
+    },
+    {
+      "section": "Antigravity 2.0 / Projects",
+      "slug": "projects",
+      "title": "Projects",
+      "description": "In Antigravity 2.0, we are transitioning from the legacy repository-centric workspace model to a more flexible and secure Project-centric model. This document outlines what Projects are, how they work, and how they differ from the original workspace structure.",
+      "content_url": "https://antigravity.google/docs/projects"
+    },
+    {
+      "section": "Antigravity 2.0 / Settings / Overview",
+      "slug": "settings",
+      "title": "Settings",
+      "description": "Antigravity 2.0 features a hierarchical settings architecture designed to give you granular control over your development environment.",
+      "content_url": "https://antigravity.google/docs/settings"
+    },
+    {
+      "section": "Antigravity 2.0 / Settings / Agent Settings",
+      "slug": "agent-settings",
+      "title": "Agent Settings",
+      "description": "Controls how the agent executes generated shell commands:",
+      "content_url": "https://antigravity.google/docs/agent-settings"
+    },
+    {
+      "section": "Antigravity 2.0 / Settings / Artifact Review",
+      "slug": "artifact-review",
+      "title": "Artifact Review",
+      "description": "When starting a new Agent conversation, you can choose between two primary execution modes that determine how changes are proposed and reviewed:",
+      "content_url": "https://antigravity.google/docs/artifact-review"
+    },
+    {
+      "section": "Antigravity 2.0 / Customizations / MCP",
+      "slug": "mcp",
+      "title": "Model Context Protocol (MCP)",
+      "description": "Antigravity supports the Model Context Protocol (MCP) , an open standard that lets AI agents and editors securely connect to local developer tools, databases, file parsers, and external remote APIs.",
+      "content_url": "https://antigravity.google/docs/mcp"
+    },
+    {
+      "section": "Antigravity 2.0 / Customizations / Skills",
+      "slug": "skills",
+      "title": "Agent Skills",
+      "description": "Skills are an open standard for extending agent capabilities. A skill is a folder containing a SKILL.md file with instructions that the agent can follow when working on specific tasks.",
+      "content_url": "https://antigravity.google/docs/skills"
+    },
+    {
+      "section": "Antigravity 2.0 / Customizations / Rules",
+      "slug": "rules-workflows",
+      "title": "Rules",
+      "description": "Rules are manually defined constraints for the Agent to follow, at both the local and global levels. Rules allow users to guide the agent to follow behaviors particular to their own use cases and style.",
+      "content_url": "https://antigravity.google/docs/rules-workflows"
+    },
+    {
+      "section": "Antigravity 2.0 / Customizations / Plugins",
+      "slug": "plugins",
+      "title": "Plugins",
+      "description": "Plugins are namespaced bundles that allow you to extend Antigravity’s capabilities by grouping skills, rules, MCP servers, and hooks into a single package.",
+      "content_url": "https://antigravity.google/docs/plugins"
+    },
+    {
+      "section": "Antigravity 2.0 / Customizations / Hooks",
+      "slug": "hooks",
+      "title": "Hooks",
+      "description": "Hooks allow you to run custom scripts or shell commands at specific points during Antigravity’s execution loop. This is powerful for enforcing custom rules, running linters, or capturing diagnostics automatically.",
+      "content_url": "https://antigravity.google/docs/hooks"
+    },
+    {
+      "section": "Antigravity 2.0 / Customizations / Sidecars",
+      "slug": "sidecars",
+      "title": "Sidecars",
+      "description": "Sidecars are background processes that run alongside Antigravity. Antigravity manages the lifecycle of sidecars, automatically launching them and restarting them if they crash or error.",
+      "content_url": "https://antigravity.google/docs/sidecars"
+    },
+    {
+      "section": "Antigravity 2.0 / Agent Capabilities / Permissions",
+      "slug": "permissions",
+      "title": "Agent Permissions",
+      "description": "Antigravity uses a robust, unified permission engine to secure your environment while enabling autonomous workflows. Every sensitive operation the Agent performs is represented as a permission resource formatted as action(target) .",
+      "content_url": "https://antigravity.google/docs/permissions"
+    },
+    {
+      "section": "Antigravity 2.0 / Agent Capabilities / Subagents",
+      "slug": "subagents",
+      "title": "Asynchronous Subagents",
+      "description": "Subagents are an excellent way to parallelize complex tasks and preserve the context of your main agent. Instead of executing every step serially, an agent can delegate tasks—such as running tests or performing extensive codebase searches—to dedicated subagents.",
+      "content_url": "https://antigravity.google/docs/subagents"
+    },
+    {
+      "section": "Antigravity 2.0 / Artifacts / Overview",
+      "slug": "artifacts",
+      "title": "Artifacts",
+      "description": "An Artifact is a structured deliverable created by the agent to accomplish its task and communicate its progress and thinking to the human user. Artifacts include rich markdown plans (Implementation Plans), code diffs, architecture diagrams, images, and browser recordings.",
+      "content_url": "https://antigravity.google/docs/artifacts"
+    },
+    {
+      "section": "Antigravity 2.0 / Artifacts / Plan",
+      "slug": "implementation-plan",
+      "title": "Implementation Plan",
+      "description": "Agent utilizes the implementation plan artifact to architect changes within your codebase to accomplish a task. These plans contain technical details on what revisions are necessary and are meant to be reviewed by the user. Below is an example plan generated by the agent.",
+      "content_url": "https://antigravity.google/docs/implementation-plan"
+    },
+    {
+      "section": "Antigravity 2.0 / Artifacts / Walkthrough",
+      "slug": "walkthrough",
+      "title": "Walkthrough",
+      "description": "Agent creates walkthrough artifacts when it has completed task implementation; this type of artifact includes a concise summary of the changes that have been made to remind the user of what has happened in the active conversation.",
+      "content_url": "https://antigravity.google/docs/walkthrough"
+    },
+    {
+      "section": "Antigravity 2.0 / Artifacts / Screenshots",
+      "slug": "screenshots",
+      "title": "Screenshots",
+      "description": "The browser subagent can take screenshots of open pages or elements on pages when it would like your review of the state of the page. This is surfaced as a tool to the agent, and you can also prompt the agent to take a screenshot of a page.",
+      "content_url": "https://antigravity.google/docs/screenshots"
+    },
+    {
+      "section": "Antigravity CLI / Overview",
+      "slug": "cli/overview",
+      "title": "Antigravity CLI Overview",
+      "description": "The Antigravity CLI is the lightweight Terminal User Interface (TUI) surface of Antigravity. It brings the same core agentic capabilities as Antigravity 2.0 (such as multi-step reasoning, multi-file editing, tool calling, and conversation history) directly to your terminal.",
+      "content_url": "https://antigravity.google/docs/cli/overview"
+    },
+    {
+      "section": "Antigravity CLI / Getting Started",
+      "slug": "cli/getting-started",
+      "title": "Getting Started with Antigravity CLI",
+      "description": "Welcome to Antigravity CLI! This guide provides a direct, high-level developer roadmap to install the client, launch the Terminal User Interface (TUI), and begin collaborating with autonomous agents.",
+      "content_url": "https://antigravity.google/docs/cli/getting-started"
+    },
+    {
+      "section": "Antigravity CLI / Installation & Auth",
+      "slug": "cli/install",
+      "title": "Installation & auth",
+      "description": "Install Antigravity CLI, configure enterprise requirements, and establish secure authenticated sessions.",
+      "content_url": "https://antigravity.google/docs/cli/install"
+    },
+    {
+      "section": "Antigravity CLI / Tutorial",
+      "slug": "cli/tutorial",
+      "title": "Antigravity CLI Tutorial",
+      "description": "Learn how to launch Antigravity CLI, collaborate with an autonomous local agent, review generated files, and execute terminal test commands.",
+      "content_url": "https://antigravity.google/docs/cli/tutorial"
+    },
+    {
+      "section": "Antigravity CLI / Using AGY CLI",
+      "slug": "cli/using",
+      "title": "Using AGY CLI",
+      "description": "Antigravity CLI provides a flexible configuration system to customize workspace behavior, safety restrictions, editor preferences, visual style, and performance.",
+      "content_url": "https://antigravity.google/docs/cli/using"
+    },
+    {
+      "section": "Antigravity CLI / Features",
+      "slug": "cli/features",
+      "title": "Antigravity CLI Features",
+      "description": "How Plugins Work Plugins are namespaced bundles that can contain skills, agents, rules, MCP servers, and hooks as a single deployable unit.",
+      "content_url": "https://antigravity.google/docs/cli/features"
+    },
+    {
+      "section": "Antigravity CLI / Gemini Migration",
+      "slug": "cli/gcli-migration",
+      "title": "Migrating from Gemini CLI",
+      "description": "Convert your legacy configurations, import Gemini CLI extensions as native plugins, adapt custom skills paths, and reformat Model Context Protocol configurations.",
+      "content_url": "https://antigravity.google/docs/cli/gcli-migration"
+    },
+    {
+      "section": "Antigravity CLI / Prompting",
+      "slug": "cli/prompting",
+      "title": "Prompting & interaction",
+      "description": "Master primary interaction patterns, multiline composition workflows, session interruption controls, and terminal media pasting.",
+      "content_url": "https://antigravity.google/docs/cli/prompting"
+    },
+    {
+      "section": "Antigravity CLI / Headless mode",
+      "slug": "cli/headless",
+      "title": "Headless mode",
+      "description": "Run Antigravity CLI non-interactively to script agent tasks, integrate with CI pipelines, and capture machine-readable output.",
+      "content_url": "https://antigravity.google/docs/cli/headless"
+    },
+    {
+      "section": "Antigravity CLI / Artifacts / Overview",
+      "slug": "cli/artifacts",
+      "title": "Reviewing artifacts",
+      "description": "Audit generated code, review implementation proposals, attach line-level feedback comments, and verify visual media assets before applying edits to your local filesystem.",
+      "content_url": "https://antigravity.google/docs/cli/artifacts"
+    },
+    {
+      "section": "Antigravity CLI / Conversations",
+      "slug": "cli/conversations",
+      "title": "Managing conversations",
+      "description": "Resume prior development threads, scope active histories to local workspaces, and fork conversations to experiment with alternate architectures.",
+      "content_url": "https://antigravity.google/docs/cli/conversations"
+    },
+    {
+      "section": "Antigravity CLI / Agent Capabilities / Choose an execution mode",
+      "slug": "cli/modes",
+      "title": "Choose an execution mode",
+      "description": "Control whether Antigravity CLI pauses to ask before modifying files or executing commands during a session.",
+      "content_url": "https://antigravity.google/docs/cli/modes"
+    },
+    {
+      "section": "Antigravity CLI / Projects",
+      "slug": "cli/projects",
+      "title": "Projects",
+      "description": "Manage projects and organize conversation sessions in the Antigravity CLI.",
+      "content_url": "https://antigravity.google/docs/cli/projects"
+    },
+    {
+      "section": "Antigravity CLI / Agent Capabilities / Subagents",
+      "slug": "cli/subagents",
+      "title": "Background tasks & subagents",
+      "description": "Delegate slow builds, multi-file code generation, and research sweeps to parallel background agents while maintaining your active programming flow.",
+      "content_url": "https://antigravity.google/docs/cli/subagents"
+    },
+    {
+      "section": "Antigravity CLI / Agent Capabilities / Sandbox",
+      "slug": "cli/sandbox",
+      "title": "Sandbox",
+      "description": "Enforce native operating system process isolation, manage execution containment boundaries, and protect your local workstation.",
+      "content_url": "https://antigravity.google/docs/cli/sandbox"
+    },
+    {
+      "section": "Antigravity CLI / Settings / Overview",
+      "slug": "cli/settings",
+      "title": "Settings, rendering & keybindings",
+      "description": "Configure persistent preferences, customize keyboard shortcuts, toggle terminal display buffers, and manage runtime CLI parameter overrides.",
+      "content_url": "https://antigravity.google/docs/cli/settings"
+    },
+    {
+      "section": "Antigravity CLI / AI Credits",
+      "slug": "cli/credits",
+      "title": "Managing AI Credits & Quotas",
+      "description": "The Antigravity CLI integrates with your subscription to monitor and manage your AI Premium credits and usage quotas.",
+      "content_url": "https://antigravity.google/docs/cli/credits"
+    },
+    {
+      "section": "Antigravity CLI / Customizations / MCP",
+      "slug": "cli/mcp",
+      "title": "Model Context Protocol (MCP)",
+      "description": "Antigravity supports the Model Context Protocol (MCP) , an open standard that lets AI agents and editors securely connect to local developer tools, databases, file parsers, and external remote APIs.",
+      "content_url": "https://antigravity.google/docs/cli/mcp"
+    },
+    {
+      "section": "Antigravity CLI / Customizations / Plugins & Skills",
+      "slug": "cli/plugins",
+      "title": "Plugins & skills",
+      "description": "Extend agent capabilities, install third-party extension bundles, package custom workflow skills, and interface with Model Context Protocol (MCP) servers.",
+      "content_url": "https://antigravity.google/docs/cli/plugins"
+    },
+    {
+      "section": "Antigravity CLI / Agent Capabilities / Permissions",
+      "slug": "cli/permissions",
+      "title": "Permissions",
+      "description": "Secure your local workstation, restrict absolute file paths, configure custom allow/deny/ask policies, and manage interactive approvals. You can also manage these rules interactively using the Permissions Command .",
+      "content_url": "https://antigravity.google/docs/cli/permissions"
+    },
+    {
+      "section": "Antigravity CLI / Customizations / Status Line",
+      "slug": "cli/statusline",
+      "title": "Status line customization",
+      "description": "Define custom scripting configurations and format dynamic JSON state payloads to customize your TUI status line.",
+      "content_url": "https://antigravity.google/docs/cli/statusline"
+    },
+    {
+      "section": "Antigravity CLI / Customizations / Window Title",
+      "slug": "cli/title",
+      "title": "Terminal title customization",
+      "description": "Configure dynamic window titles, map custom scripting configurations, and format JSON state outputs to customize terminal headers.",
+      "content_url": "https://antigravity.google/docs/cli/title"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Agents (/agents)",
+      "slug": "cli/commands/agents",
+      "title": "Agents Command (/agents)",
+      "description": "Browse, select, and switch between custom agents, or monitor active and completed background subagents directly inside an interactive TUI panel.",
+      "content_url": "https://antigravity.google/docs/cli/commands/agents"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Code Search (/codesearch)",
+      "slug": "cli/commands/codesearch",
+      "title": "Code Search Command (/codesearch)",
+      "description": "Interactively search the code in your workspace from inside the TUI, without leaving your session or interrupting the agent.",
+      "content_url": "https://antigravity.google/docs/cli/commands/codesearch"
+    },
+    {
+      "section": "Antigravity CLI / Commands / AI Credits (/credits)",
+      "slug": "cli/commands/credits",
+      "title": "AI Credits Command (/credits)",
+      "description": "View and manage your AI Premium credits interactively.",
+      "content_url": "https://antigravity.google/docs/cli/commands/credits"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Diff (/diff)",
+      "slug": "cli/commands/diff",
+      "title": "Diff Command (/diff)",
+      "description": "View and review workspace changes, commit history, and agent turn diffs interactively within the TUI.",
+      "content_url": "https://antigravity.google/docs/cli/commands/diff"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Permissions (/permissions)",
+      "slug": "cli/commands/permissions",
+      "title": "Permissions Command (/permissions)",
+      "description": "Manage your fine-grained agent permission rules interactively within the TUI.",
+      "content_url": "https://antigravity.google/docs/cli/commands/permissions"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Resume (/resume)",
+      "slug": "cli/commands/resume",
+      "title": "Resume Command (/resume)",
+      "description": "Browse, search, and resume past conversation threads, or recover your last session instantly from the command line.",
+      "content_url": "https://antigravity.google/docs/cli/commands/resume"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Status Line (/statusline)",
+      "slug": "cli/commands/statusline",
+      "title": "Status Line Command (/statusline)",
+      "description": "Toggle the TUI status line or configure a custom rendering command.",
+      "content_url": "https://antigravity.google/docs/cli/commands/statusline"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Window Title (/title)",
+      "slug": "cli/commands/title",
+      "title": "Window Title Command (/title)",
+      "description": "Configure dynamic terminal window titles interactively.",
+      "content_url": "https://antigravity.google/docs/cli/commands/title"
+    },
+    {
+      "section": "Antigravity CLI / Commands / Model Quotas (/usage, /quota)",
+      "slug": "cli/commands/usage",
+      "title": "Model Quotas (/usage)",
+      "description": "View your active model quota usage and refresh your configuration.",
+      "content_url": "https://antigravity.google/docs/cli/commands/usage"
+    },
+    {
+      "section": "Antigravity CLI / Best Practices",
+      "slug": "cli/best-practices",
+      "title": "Best practices for Antigravity CLI",
+      "description": "Master the workflows, prompt architectures, and local configuration choices to maximize agent velocity while maintaining robust control.",
+      "content_url": "https://antigravity.google/docs/cli/best-practices"
+    },
+    {
+      "section": "Antigravity CLI / Troubleshooting",
+      "slug": "cli/troubleshooting",
+      "title": "Troubleshooting",
+      "description": "Diagnose and resolve common anomalies with installation PATHs, local self-updating locks, keyring access permissions, and SSH clipboard forwarding.",
+      "content_url": "https://antigravity.google/docs/cli/troubleshooting"
+    },
+    {
+      "section": "Antigravity CLI / Reference",
+      "slug": "cli/reference",
+      "title": "CLI reference",
+      "description": "Scan scannable tables listing all TUI slash commands, default keyboard shortcuts, and JSON configuration parameters.",
+      "content_url": "https://antigravity.google/docs/cli/reference"
+    },
+    {
+      "section": "Antigravity SDK / Overview + Quick Start",
+      "slug": "sdk/overview",
+      "title": "Google Antigravity SDK",
+      "description": "The Antigravity SDK is a programmatic Python framework designed to build, test, and run autonomous AI agents. It extends the same core agent harness that powers the Antigravity CLI and Antigravity 2.0, allowing you to integrate advanced agentic capabilities directly into your…",
+      "content_url": "https://antigravity.google/docs/sdk/overview"
+    },
+    {
+      "section": "Antigravity SDK / Customizations / MCP",
+      "slug": "sdk/mcp",
+      "title": "Model Context Protocol (MCP)",
+      "description": "Antigravity supports the Model Context Protocol (MCP) , an open standard that lets AI agents and editors securely connect to local developer tools, databases, file parsers, and external remote APIs.",
+      "content_url": "https://antigravity.google/docs/sdk/mcp"
+    },
+    {
+      "section": "Antigravity IDE / Overview",
+      "slug": "ide/overview",
+      "title": "Antigravity IDE",
+      "description": "Antigravity IDE is an agentic development environment, evolving anyone to build in the agent-first era. It integrates agents directly into your development workspace, providing them the tools needed to autonomously operate across the editor, terminal, and browser—emphasizing…",
+      "content_url": "https://antigravity.google/docs/ide/overview"
+    },
+    {
+      "section": "Antigravity IDE / Getting Started",
+      "slug": "ide/getting-started",
+      "title": "Getting Started",
+      "description": "Please visit antigravity.google/download to download Antigravity IDE.",
+      "content_url": "https://antigravity.google/docs/ide/getting-started"
+    },
+    {
+      "section": "Antigravity IDE / Features / Tab",
+      "slug": "ide/tab",
+      "title": "Antigravity IDE: Tab & Navigation",
+      "description": "This guide covers the core navigation and completion tools: Supercomplete , Tab-to-Jump , and Tab-to-Import .",
+      "content_url": "https://antigravity.google/docs/ide/tab"
+    },
+    {
+      "section": "Antigravity IDE / Features / Side Panel",
+      "slug": "ide/agent-side-panel",
+      "title": "Agent Side Panel",
+      "description": "Use the panel on the right side of the editor to work directly with the agent. You can spin up new conversations, attach images, switch agent modes , and select between different models .",
+      "content_url": "https://antigravity.google/docs/ide/agent-side-panel"
+    },
+    {
+      "section": "Antigravity IDE / Features / Review Changes",
+      "slug": "ide/review-changes-editor",
+      "title": "Review Changes",
+      "description": "Once the agent has begun writing code within a conversation, you’ll see a Review Changes section within the Agent panel’s bottom toolbar .",
+      "content_url": "https://antigravity.google/docs/ide/review-changes-editor"
+    },
+    {
+      "section": "Antigravity IDE / Artifacts / Plan",
+      "slug": "ide/implementation-plan",
+      "title": "Implementation Plan",
+      "description": "Agent utilizes the implementation plan artifact to architect changes within your codebase to accomplish a task. These plans contain technical details on what revisions are necessary and are meant to be reviewed by the user. Below is an example plan generated by the agent.",
+      "content_url": "https://antigravity.google/docs/ide/implementation-plan"
+    },
+    {
+      "section": "Antigravity IDE / Artifacts / Walkthrough",
+      "slug": "ide/walkthrough",
+      "title": "Walkthrough",
+      "description": "Agent creates walkthrough artifacts when it has completed task implementation; this type of artifact includes a concise summary of the changes that have been made to remind the user of what has happened in the active conversation.",
+      "content_url": "https://antigravity.google/docs/ide/walkthrough"
+    },
+    {
+      "section": "Antigravity IDE / Artifacts / Screenshots",
+      "slug": "ide/screenshots",
+      "title": "Screenshots",
+      "description": "The browser subagent can take screenshots of open pages or elements on pages when it would like your review of the state of the page. This is surfaced as a tool to the agent, and you can also prompt the agent to take a screenshot of a page.",
+      "content_url": "https://antigravity.google/docs/ide/screenshots"
+    },
+    {
+      "section": "Antigravity IDE / Artifacts / Browser Recordings",
+      "slug": "ide/browser-recordings",
+      "title": "Browser Recordings",
+      "description": "Every time the browser subagent actuates on the Browser, it may choose to generate a recording of the agent’s actions for your review. You can view this playback, if it is available, at the bottom of the Browser step UI.",
+      "content_url": "https://antigravity.google/docs/ide/browser-recordings"
+    },
+    {
+      "section": "Antigravity IDE / Browser / Overview",
+      "slug": "ide/browser",
+      "title": "Browser Overview",
+      "description": "Google Antigravity can open, read, and actuate a local Chrome browser, enabling you to test development websites, read documentation sources, and automate a variety of browser tasks.",
+      "content_url": "https://antigravity.google/docs/ide/browser"
+    },
+    {
+      "section": "Antigravity IDE / Browser / Allowlist / Denylist",
+      "slug": "ide/allowlist-denylist",
+      "title": "Allowlist / Denylist",
+      "description": "The browser uses a two-layer security system to control which URLs can be accessed:",
+      "content_url": "https://antigravity.google/docs/ide/allowlist-denylist"
+    },
+    {
+      "section": "Antigravity IDE / Browser / Separate Chrome Profile",
+      "slug": "ide/separate-chrome-profile",
+      "title": "Separate Chrome Profile",
+      "description": "To isolate the browser from your general browsing, it operates on a separate Chrome profile .",
+      "content_url": "https://antigravity.google/docs/ide/separate-chrome-profile"
+    },
+    {
+      "section": "Antigravity IDE / Customizations / MCP",
+      "slug": "ide/mcp",
+      "title": "Model Context Protocol (MCP)",
+      "description": "Antigravity supports the Model Context Protocol (MCP) , an open standard that lets AI agents and editors securely connect to local developer tools, databases, file parsers, and external remote APIs.",
+      "content_url": "https://antigravity.google/docs/ide/mcp"
+    },
+    {
+      "section": "Antigravity IDE / Customizations / Skills",
+      "slug": "ide/skills",
+      "title": "Agent Skills",
+      "description": "Skills are an open standard for extending agent capabilities. A skill is a folder containing a SKILL.md file with instructions that the agent can follow when working on specific tasks.",
+      "content_url": "https://antigravity.google/docs/ide/skills"
+    },
+    {
+      "section": "Antigravity IDE / Customizations / Rules",
+      "slug": "ide/rules",
+      "title": "Rules",
+      "description": "Rules are manually defined constraints for the Agent to follow, at both the local and global levels. Rules allow users to guide the agent to follow behaviors particular to their own use cases and style.",
+      "content_url": "https://antigravity.google/docs/ide/rules"
+    },
+    {
+      "section": "Antigravity IDE / Customizations / Workflows",
+      "slug": "ide/workflows",
+      "title": "Workflows",
+      "description": "Workflows enable you to define a series of steps to guide the Agent through a repetitive set of tasks, such as deploying a service or responding to PR comments. These Workflows are saved as markdown files, allowing you to have an easy repeatable way to run key processes.",
+      "content_url": "https://antigravity.google/docs/ide/workflows"
+    },
+    {
+      "section": "Antigravity IDE / Customizations / Plugins",
+      "slug": "ide/plugins",
+      "title": "Plugins",
+      "description": "Plugins are namespaced bundles that allow you to extend Antigravity’s capabilities by grouping skills, rules, MCP servers, and hooks into a single package.",
+      "content_url": "https://antigravity.google/docs/ide/plugins"
+    },
+    {
+      "section": "Antigravity IDE / Customizations / Hooks",
+      "slug": "ide/hooks",
+      "title": "Hooks",
+      "description": "Hooks allow you to run custom scripts or shell commands at specific points during Antigravity’s execution loop. This is powerful for enforcing custom rules, running linters, or capturing diagnostics automatically.",
+      "content_url": "https://antigravity.google/docs/ide/hooks"
+    },
+    {
+      "section": "Antigravity IDE / Settings",
+      "slug": "ide/settings",
+      "title": "Settings",
+      "description": "Configure how the Antigravity Agent interacts with your environment, executes commands, and secures your workspace.",
+      "content_url": "https://antigravity.google/docs/ide/settings"
+    },
+    {
+      "section": "Migration / Firebase Studio Migration",
+      "slug": "firebase-studio-migration",
+      "title": "Firebase Studio Migration",
+      "description": "Antigravity is Google’s next-generation, agent-first platform. It’s designed to be the primary home for high-velocity, autonomous development workflows.",
+      "content_url": "https://antigravity.google/docs/firebase-studio-migration"
+    },
+    {
+      "section": "Enterprise",
+      "slug": "enterprise",
+      "title": "Getting Started with Antigravity and Gemini Enterprise Agent Platform",
+      "description": "Supported products: Antigravity 2.0 Antigravity CLI",
+      "content_url": "https://antigravity.google/docs/enterprise"
+    },
+    {
+      "section": "Plans",
+      "slug": "plans",
+      "title": "Plans",
+      "description": "Google Antigravity is available with terms to individual accounts derived from Google’s terms of service, and available to teams under Google Cloud terms through the Gemini Enterprise Agent Platform. To learn more, see Enterprise Get Started .",
+      "content_url": "https://antigravity.google/docs/plans"
+    },
+    {
+      "section": "FAQ",
+      "slug": "faq",
+      "title": "FAQ",
+      "description": "Google Antigravity is currently available for personal Google accounts in approved geographies. Please try using an @gmail.com email address if having challenges with Workspace Google accounts.",
+      "content_url": "https://antigravity.google/docs/faq"
+    }
+  ]
+}

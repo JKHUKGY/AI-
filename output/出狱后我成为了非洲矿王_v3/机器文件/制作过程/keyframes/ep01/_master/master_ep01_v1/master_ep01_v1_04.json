@@ -1,0 +1,37 @@
+{
+  "id": "master_ep01_v1",
+  "round": 3,
+  "candidate": 4,
+  "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-f4575c7d-c19a-479f-a778-640ff34d51a4.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+  "status": "rejected",
+  "reviewed": true,
+  "review_zh": "苏慧右侧面向画面右，近侧右肩→右袖→垂直右前臂→握包提手的右手连接清楚；腹前未展示批准的完整屈肘右前臂。四人均在、主人持续坐沙发，江砚右手箱及背空符合，但苏慧提包手仍相反。；四人、服装和江砚右手行李箱仍连续。苏慧近相机的右肩、袖、下垂前臂和提包手清楚连成一条，右手正在提包；未见近侧右臂屈肘腹前，因此不符合左包右腹的批准状态。包比机场已选参考显得较短，正面口袋也更分割。",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_supplement_single",
+      "unit_id": "master_ep01_v1",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+      "verdict": "fail",
+      "reason": "苏慧右侧面向画面右，近侧右肩→右袖→垂直右前臂→握包提手的右手连接清楚；腹前未展示批准的完整屈肘右前臂。四人均在、主人持续坐沙发，江砚右手箱及背空符合，但苏慧提包手仍相反。",
+      "fix": "近侧右臂完整屈肘横放腹前，包改由远侧左臂下垂提起，确保两手与提手没有遮挡误读。第三轮上限，不自行再生成。",
+      "fix_instruction": "同 fix。",
+      "card_field": "scene_beats[ep01_v1].blocking[苏慧].holding_zh / action_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_continuity",
+      "unit_id": "master_ep01_v1",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+      "verdict": "fail",
+      "reason": "四人、服装和江砚右手行李箱仍连续。苏慧近相机的右肩、袖、下垂前臂和提包手清楚连成一条，右手正在提包；未见近侧右臂屈肘腹前，因此不符合左包右腹的批准状态。包比机场已选参考显得较短，正面口袋也更分割。",
+      "fix": "近相机右臂明确屈肘、右手腹前；远侧左手提机场同款长形大包，保留包的单翻盖和大前袋。",
+      "card_field": "scene_beats[ep01_v1].blocking[苏慧].holding_zh / state_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    }
+  ]
+}

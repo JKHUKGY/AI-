@@ -1,0 +1,80 @@
+{
+  "agent_id": "/root/generate_keyframes_retry_b",
+  "role": "Generator B",
+  "source_jobs": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/keyframes_batch01_retry_b.json",
+  "source_sha256": "bdffe25d9e844449afcb6fd25d4e0a43b2aaa0dbe2b31c3b5f10a3c12a7d0c8e",
+  "round": 2,
+  "planned_images": 4,
+  "tool": "image_gen.imagegen",
+  "status": "completed_pending_independent_review",
+  "refs_viewed": [
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "calls": [
+    {
+      "id": "ep01_镜19",
+      "candidate": 1,
+      "status": "generated",
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-134adb1c-2bf2-41f1-83db-3d8ac0747b24.png"
+    },
+    {
+      "id": "ep01_镜19",
+      "candidate": 2,
+      "status": "generated",
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-c793371c-d20e-4411-b777-e3eb109aac7b.png"
+    },
+    {
+      "id": "ep01_镜20",
+      "candidate": 1,
+      "status": "generated",
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-b05c0a25-18a0-4047-8392-d11e1f056a0c.png"
+    },
+    {
+      "id": "ep01_镜20",
+      "candidate": 2,
+      "status": "generated",
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-b0fc03fc-8c55-4d79-9c7c-0b98bd0e8f8a.png"
+    }
+  ],
+  "files": [
+    {
+      "id": "ep01_镜19",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-134adb1c-2bf2-41f1-83db-3d8ac0747b24.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "status": "pending_review"
+    },
+    {
+      "id": "ep01_镜19",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-c793371c-d20e-4411-b777-e3eb109aac7b.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "status": "pending_review"
+    },
+    {
+      "id": "ep01_镜20",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-b05c0a25-18a0-4047-8392-d11e1f056a0c.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+      "status": "pending_review"
+    },
+    {
+      "id": "ep01_镜20",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a070aa-91db-7730-bdff-b70038aed841/exec-b0fc03fc-8c55-4d79-9c7c-0b98bd0e8f8a.png",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+      "status": "pending_review"
+    }
+  ],
+  "errors": [],
+  "updated_at": "2026-09-05T08:29:06.914555+00:00",
+  "actual_images": 4
+}

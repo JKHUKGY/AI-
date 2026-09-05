@@ -1,0 +1,34 @@
+{
+  "id": "ep01_镜02",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-1e0ea035-7ee3-424f-8b61-e88c39046064.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png",
+  "status": "pending_review",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_prison_a.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_prison_continuity.json",
+      "id": "ep01_镜02",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png",
+      "verdict": "fail",
+      "reason": "人物身份、门外红土、前景门框和右后车辆的B空间正确。陈野仍由远侧解剖右臂向江砚伸肩，近侧左臂下垂握白盖水瓶，左右职责与批准卡相反；右臂手掌又被江砚遮住，无法确认将拍未拍。头顶约13%，腿部直到膝附近，中景依旧偏宽。",
+      "fix_instruction": "以该候选保留门外位置和脸，右臂收回远侧垂拿白盖水瓶，近侧左臂抬肘伸空掌至江砚肩前；收紧上方天空和膝部至卡定5%头顶/大腿中段。",
+      "card_field": "people[1].action_zh; framing.crop_zh",
+      "spatial_annotations": {
+        "coordinate_system": "normalized x,y from top-left",
+        "chen_right_arm": "远側右肩约(0.55,0.36)沿画面向左的袖筒到(0.42,0.43)伸肩；其手被江砚遮住。",
+        "chen_left_arm": "近侧左肩(0.80,0.36)沿右侧上臂至(0.86,0.57)肘，下到(0.78,0.74)手持瓶。",
+        "bottle_bbox": [
+          0.69,
+          0.71,
+          0.87,
+          0.82
+        ]
+      }
+    }
+  ],
+  "review_zh": "人物身份、门外红土、前景门框和右后车辆的B空间正确。陈野仍由远侧解剖右臂向江砚伸肩，近侧左臂下垂握白盖水瓶，左右职责与批准卡相反；右臂手掌又被江砚遮住，无法确认将拍未拍。头顶约13%，腿部直到膝附近，中景依旧偏宽。"
+}

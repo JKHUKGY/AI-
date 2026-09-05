@@ -1,0 +1,37 @@
+{
+  "id": "ep01_镜20",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070a4-9786-7762-8eb3-85a329d97dc7/exec-2b9c6c81-8806-4a98-bbd2-5db8e11e8fdf.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_continuity.json",
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "苏慧脸、白发髻、旧白裙灰围裙与基准相符，江砚仍背橄榄包，未提前交接。明确错误有：仍沿用A的左玻璃右车道，非B紧反打；苏慧从头到长裙下段入画，属中/全身裁切而非胸上近景；右前景江砚占约半幅宽，非卡片约15%；已列present_off_frame的灰衫旅客仍在中间清楚出现。与17/19相比，母子仅在相同A环境内对调位置，场地关系跳变。",
+      "fix_instruction": "使用B紧底板控制背景左白小巴/黄出租车及右上挑檐；把苏慧胸上三分之四正面作为左中主体，画底切胸口下缘；江砚只留右边约15%的虚焦后肩发丝及包带；按已批准裁切让3旅客处于画外，母亲双手未触包。",
+      "card_field": "plate_image; camera_zh; framing.crop_zh; framing.plate_crop_zh; background_people[0].posture_zh; present_off_frame",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_single.json",
+      "id": "ep01_镜20",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+      "verdict": "fail",
+      "reason": "苏慧实际从头至腿部可见，江砚头、背、躯干、前臂和箱杆占据右侧近半幅；不符苏慧胸上近景及约15%的局部过肩。背景左侧玻璃幕墙右侧车道，仍是A主机位结构，而不是指定B反打左车队右上挑檐。卡片指定画外的灰衣旅客甲也在画面中央出现。",
+      "fix_instruction": "以B反打紧底板为机位硬约束，主帧只取身份和道具状态，不沿用A场景构图；苏慧下缘切胸口、右侧仅留虚焦肩缘和少量发丝，三旅客全部裁切外，箱与手臂为画外状态。",
+      "card_field": "cards[ep01_镜20].plate_image / framing / background_people[江砚].posture_zh / action_zh / present_off_frame",
+      "round": 1
+    }
+  ],
+  "review_zh": "苏慧脸、白发髻、旧白裙灰围裙与基准相符，江砚仍背橄榄包，未提前交接。明确错误有：仍沿用A的左玻璃右车道，非B紧反打；苏慧从头到长裙下段入画，属中/全身裁切而非胸上近景；右前景江砚占约半幅宽，非卡片约15%；已列present_off_frame的灰衫旅客仍在中间清楚出现。与17/19相比，母子仅在相同A环境内对调位置，场地关系跳变。；苏慧实际从头至腿部可见，江砚头、背、躯干、前臂和箱杆占据右侧近半幅；不符苏慧胸上近景及约15%的局部过肩。背景左侧玻璃幕墙右侧车道，仍是A主机位结构，而不是指定B反打左车队右上挑檐。卡片指定画外的灰衣旅客甲也在画面中央出现。",
+  "generator_agent_id": "/root/generate_keyframes_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_b_20.json"
+}

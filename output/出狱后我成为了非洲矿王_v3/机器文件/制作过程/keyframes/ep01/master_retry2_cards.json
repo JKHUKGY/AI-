@@ -1,0 +1,120 @@
+{
+  "scene_beats": [
+    {
+      "id": "ep01_p3",
+      "scene": "SC05",
+      "title_zh": "站位不变；江砚在镜9取盖饮水，瓶在左手、白盖在右手，之后瓶降到胸下。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "画面里严格只有江砚和陈野两个人，各出现一次。人物三视图是同一个人的不同方向，用来锁身份。全部人物位于铁门外红土上。",
+        "两人站位与门口对话一致。",
+        "江砚已经喝过一口水，左手持开口瓶，右手攥白盖。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：B宽底板从院内看铁门外的红土路，右侧为越野车、两侧白色平房，天空上部大片白、下部是水泥地。",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "blocking": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "同一人物三视图；在场景里只合成该角色一个人",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头仍收紧、嘴唇微分，准备因江砚的判断而愣住",
+          "contact_zh": null,
+          "holding_zh": "眉头仍收紧、嘴唇微分，准备因江砚的判断而愣住"
+        },
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "同一人物三视图；在场景里只合成该角色一个人",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null,
+          "holding_zh": "解剖学左手持开口透明水瓶，解剖学右手拿白瓶盖。两手在身前胸下，瓶盖和瓶体分开。"
+        }
+      ],
+      "count": 2,
+      "master_status": "pending_user_review_then_generation"
+    },
+    {
+      "id": "ep01_r2",
+      "scene": "SC03日",
+      "title_zh": "门已关、灯未开，北窗日光持续；镜36江砚坐到西侧床沿；苏慧站东南侧面对他，背包在东侧书桌、箱在床脚。结尾母亲仍在房内。",
+      "present": [
+        "江砚",
+        "苏慧"
+      ],
+      "state_zh": [
+        "南侧房门闭合在相机身后。画面左边缘只留固定墙边，原空底板伸进画面的深色活动门扇和门把手已随关门转到相机身后画外。",
+        "白天客房，南门已关闭，北窗持续照入自然光，床头灯关闭。",
+        "橄榄包放东侧桌面、深灰箱在西侧床脚；江砚在床沿，苏慧在床边东南侧。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC03日_顾家客房_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png",
+      "master_plate_read_zh": "实际看图：A日间客房，左单人床与未亮台灯、正后窗、右空桌椅，地板占下部约四成；本主帧将包放桌上、箱放床脚。",
+      "camera_zh": "相机在客房南侧门内，约1.5米高朝北窗，左床、右桌。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "坐在西侧床沿、重心下沉",
+          "action_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合",
+          "contact_zh": null,
+          "holding_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在床边东南侧，含着肩",
+          "action_zh": "双手在腹前交叠，眼神小心，准备低声说话",
+          "contact_zh": null,
+          "holding_zh": "双手在腹前交叠，眼神小心，准备低声说话"
+        }
+      ],
+      "count": 2,
+      "master_status": "pending_user_review_then_generation"
+    }
+  ],
+  "cards": []
+}

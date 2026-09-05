@@ -1,0 +1,71 @@
+{
+  "agent_id": "/root/review_keyframes_batch05_single",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜14",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "verdict": "fail",
+      "reason": "江砚神态冷静、左手开瓶右手白盖、右侧三分之四正面与陈野左过肩均正确；但头顶约21%留白，画底已到髋部，成为腰上中景；陈野前景约半幅宽，不是约15%窄过肩。与已批准5%头顶留白、胸口下缘截断的近景明确不符。",
+      "fix_instruction": "保持人物与持物，按江砚头顶约5%留白推近到胸口下缘截断；陈野仅左缘约15%虚焦后肩和头侧。胸下手部自然出画，不为保全瓶身拉宽景别。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+      "verdict": "fail",
+      "reason": "B反打方向、江砚左近背身和陈野右中前身正确；但两人明显位于门扇及门槛前的院内水泥地，违反门外谈话。江砚头顶约15%而非5%，画底接近膝部而非近端大腿中段。左手水瓶瓶口有白色封盖形态，右手又单独拿白盖；陈野右臂直垂，未呈将拍大腿起手。",
+      "fix_instruction": "将两人放在门槛南侧红土上、门扇在镜头与人物之间的两侧前景；保证江砚左手瓶口清楚敞开，唯一白盖在右手；陈野右手屈肘抬到大腿上方、左手垂下；主角头顶5%、底边截大腿中段。",
+      "card_field": [
+        "people[0].posture_zh",
+        "people[0].action_zh",
+        "people[1].action_zh",
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "scene_beats.ep01_p4.state_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+      "verdict": "pass",
+      "reason": "两人均在门外红土，门内双排房舍、左侧同款关闭车门SUV与A底板对应。江砚右中景左向侧面，左手持瓶、右手在瓶口准备复位瓶盖；陈野左近景侧背双手垂下，尚未上车，动作起点正确。身份服装吻合。两人头脚完整，江砚头到鞋底约43%接近40%，陈野因近景纵深约61%；以主行动人江砚测量，不将主体下方红土计入身高。",
+      "fix_instruction": "",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+      "verdict": "fail",
+      "reason": "四人齐全且母子向左通道离开、苏慧左手包右手扶后肩、沙发刘兰北顾瑶南均成立，人物全身约40%与构图基本吻合。但江砚画面显示左侧面，靠镜头左臂垂下握箱杆，成为左手拉箱；主卡要求右手，且原定三分之四背身被纯侧面替代。场景左侧额外出现高大黑框门洞，原底板左侧开放楼梯及靠北窄门关系被重构。",
+      "fix_instruction": "江砚身体转为三分之四背朝镜头，明确远侧右手握箱杆、近侧左手空着；保持苏慧左右手与两名坐者。沿用A底板左开放楼梯和原窄门的位置，将母子引向原通道，避免在靠镜头左墙新增高门洞。",
+      "card_field": [
+        "people[0].camera_relation",
+        "people[0].posture_zh",
+        "people[0].action_zh",
+        "framing.plate_crop_zh",
+        "plate_image"
+      ]
+    }
+  ]
+}

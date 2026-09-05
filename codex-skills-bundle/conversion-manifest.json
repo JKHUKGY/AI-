@@ -1,0 +1,720 @@
+{
+  "repository": "https://github.com/MacHu-GWU/shsk_coding_agent_docs-project.git",
+  "commit": "23dad0e0a8a61b78d99f8184920d96d15ad70c06",
+  "skill_count": 23,
+  "original_file_count": 80,
+  "skills": [
+    {
+      "name": "antigravity-docs-index-builder",
+      "original_frontmatter": {
+        "name": "antigravity-docs-index-builder",
+        "description": "Rebuild the docs-manifest.json that the antigravity-docs skill relies on, by parsing the page list from antigravity.google/llms.txt and scraping each server-rendered /docs/<slug> page for its breadcrumb, title, and lead-paragraph description. Use when Antigravity has shipped new/renamed/removed doc pages, when antigravity-docs reports a stale or missing page, or when you simply want to refresh the manifest. Manually invoked (e.g. /antigravity-docs-index-builder).",
+        "argument-hint": [
+          "--force"
+        ],
+        "allowed-tools": "Bash, Read, Write"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/antigravity-docs-index-builder/CHANGELOG.md",
+          "output": "skills/antigravity-docs-index-builder/CHANGELOG.md",
+          "sha256": "6393f429cd2392c385394465f42532ff984c297af2f7027f95e10fb9586a2d86"
+        },
+        {
+          "source": ".claude/skills/antigravity-docs-index-builder/README-cn.md",
+          "output": "skills/antigravity-docs-index-builder/README-cn.md",
+          "sha256": "ec1d1539dcb9514b13877845f6d7aab2fdf9bc50180f1ee01f5d5cea17ba6bf0"
+        },
+        {
+          "source": ".claude/skills/antigravity-docs-index-builder/SKILL.md",
+          "output": "skills/antigravity-docs-index-builder/SOURCE-SKILL.md",
+          "sha256": "7bb9e8d687ee70ba06cbfca76710827af5cd8d5ccc5a615224630f54423b5383"
+        },
+        {
+          "source": ".claude/skills/antigravity-docs-index-builder/VERSION",
+          "output": "skills/antigravity-docs-index-builder/VERSION",
+          "sha256": "998f6b887ed7a6ef44e84210d0237b715bed42ea7254f48dc418afec0a484103"
+        },
+        {
+          "source": ".claude/skills/antigravity-docs-index-builder/scripts/build_manifest.py",
+          "output": "skills/antigravity-docs-index-builder/scripts/build_manifest.py",
+          "sha256": "1d64ff32f132e47be3bf5373dfd2340bb24d415c1acc6e53c43dba68b130ff90"
+        }
+      ]
+    },
+    {
+      "name": "coding-agent-concept-mapping-builder",
+      "original_frontmatter": {
+        "name": "coding-agent-concept-mapping-builder",
+        "description": "Author and maintain the cross tool concept mapping knowledge base under .claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/. Use when adding a new concept, refreshing an existing XY-concept-name.md against current docs, or rolling the concept files up into 00-context-index.md. Grounds every claim in the claude-code-docs, codex-docs, and antigravity-docs skills and follows ref/mapping-file-standard.md.",
+        "argument-hint": [
+          "concept name or XY number"
+        ],
+        "allowed-tools": "Read, Write, Edit, WebFetch, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-concept-mapping-builder/README-cn.md",
+          "output": "skills/coding-agent-concept-mapping-builder/README-cn.md",
+          "sha256": "efd2e0acb81bcbecb21f7cd586d2828b4d3750370c67da80a7c1f2e0a03ea3e5"
+        },
+        {
+          "source": ".claude/skills/coding-agent-concept-mapping-builder/SKILL.md",
+          "output": "skills/coding-agent-concept-mapping-builder/SOURCE-SKILL.md",
+          "sha256": "95554528745d6f364d9452f122e91e2cba7a068e7255941dbc7d439832a33ec3"
+        },
+        {
+          "source": ".claude/skills/coding-agent-concept-mapping-builder/ref/concept-file-template.md",
+          "output": "skills/coding-agent-concept-mapping-builder/ref/concept-file-template.md",
+          "sha256": "cff3eec993721e7f86b2160a77c0f3523b987e113cfd214fd2a1d09bdab16e76"
+        },
+        {
+          "source": ".claude/skills/coding-agent-concept-mapping-builder/ref/mapping-file-standard.md",
+          "output": "skills/coding-agent-concept-mapping-builder/ref/mapping-file-standard.md",
+          "sha256": "dab87c34d5847e57d7d19e61775e93370967ea79616a5481d9ccfbfa6895aeff"
+        }
+      ]
+    },
+    {
+      "name": "antigravity-docs",
+      "original_frontmatter": {
+        "name": "antigravity-docs",
+        "description": "Look up authoritative, up-to-date Google Antigravity documentation covering the Antigravity 2.0 IDE, the Antigravity CLI, the SDK, agents/subagents, models, skills, rules/workflows, hooks, MCP, browser use, settings, enterprise, migration, and FAQ. Use when the user asks how an Antigravity feature works, what a config field does, how to set up the IDE/CLI/SDK/skills/MCP, when troubleshooting an Antigravity error or unexpected behavior, or when you need to cite current official docs rather than rely on training-cutoff knowledge.",
+        "argument-hint": [
+          "topic or doc title"
+        ],
+        "allowed-tools": "Read, WebFetch"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/CHANGELOG.md",
+          "output": "skills/antigravity-docs/CHANGELOG.md",
+          "sha256": "d2a2294691a4e26b099165eceae226cf0825f9c1f0ca562ddd6c491b7b404e5c"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/README-cn.md",
+          "output": "skills/antigravity-docs/README-cn.md",
+          "sha256": "ed1b7537cb7cc5249d9a036dd043f414756c76fab0e442df68a3bf10b4cfbe0b"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/README.md",
+          "output": "skills/antigravity-docs/README.md",
+          "sha256": "d46aafa14637bbbfeec748b842fb8e103071fe59c831df68ae771d4df830ef09"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/SKILL-cn.md",
+          "output": "skills/antigravity-docs/SKILL-cn.md",
+          "sha256": "4964e55737ad50b179ebb94e8346c75b0f4b8360dc78c6409a569a6052d7e0be"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/SKILL.md",
+          "output": "skills/antigravity-docs/SOURCE-SKILL.md",
+          "sha256": "4ece9b1f4f14d34949c56f7f7a7738f885f3157615c514e8a5b059aabcb4e475"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/VERSION",
+          "output": "skills/antigravity-docs/VERSION",
+          "sha256": "1725bfa6524c5265e7c171cf06568417d39b947fff49c242f03859479c82334b"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/references/docs-manifest.json",
+          "output": "skills/antigravity-docs/references/docs-manifest.json",
+          "sha256": "1218a501642f7d5250b8458b8d2c74b4e0519629801d7df099f975a3774c7718"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/references/mechanism-cn.md",
+          "output": "skills/antigravity-docs/references/mechanism-cn.md",
+          "sha256": "55a0ae9715e40bc69b176a1e90fcd4fa8e59a895ad78b523a9898297b50252b8"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/antigravity-docs/references/mechanism.md",
+          "output": "skills/antigravity-docs/references/mechanism.md",
+          "sha256": "b7886913d4f3ef02d3a3906c8ec925c48bab8b7e83793860b9fccd64952c936c"
+        }
+      ]
+    },
+    {
+      "name": "claude-code-docs",
+      "original_frontmatter": {
+        "name": "claude-code-docs",
+        "description": "Look up authoritative, up-to-date Claude Code documentation covering the CLI, settings, permissions, hooks, MCP, skills, plugins and marketplaces, subagents, agent teams, workflows, worktrees, sandboxing, channels, routines, scheduled tasks, the desktop/web/mobile/Slack/IDE surfaces, code review, the Agent SDK (Python and TypeScript), gateways, Bedrock/Vertex/Foundry deployment, enterprise admin, and troubleshooting. Use when the user asks how a Claude Code feature works, what a config field does, how to set up hooks/MCP/skills/subagents/plugins, when troubleshooting a Claude Code error or unexpected behavior, or when you need to cite current official docs rather than rely on training-cutoff knowledge. Also triggers on Chinese requests such as 查一下 Claude Code 文档、Claude Code 官方文档怎么说、Claude Code 的 hooks/MCP/skills/权限/配置 怎么用.",
+        "argument-hint": [
+          "topic or doc title"
+        ],
+        "allowed-tools": "WebFetch"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/CHANGELOG.md",
+          "output": "skills/claude-code-docs/CHANGELOG.md",
+          "sha256": "82f8a00f9bad28af4e16ee5d093b0db9741068b343a8d183958e0c1cd723fea4"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/README-cn.md",
+          "output": "skills/claude-code-docs/README-cn.md",
+          "sha256": "08e045e5735bf697b727ce36f16206a2e0658ae18ef92f18d7566373211bb308"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/README.md",
+          "output": "skills/claude-code-docs/README.md",
+          "sha256": "8a9580c63fa85c6813b192798c6716a98c97dfa6974cacd4300c6c441da03bfb"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/SKILL-cn.md",
+          "output": "skills/claude-code-docs/SKILL-cn.md",
+          "sha256": "e2f10ef972b38f41df1cdc7f30c7d5e96f0761bdbc1ef36981c5db71d746cbea"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/SKILL.md",
+          "output": "skills/claude-code-docs/SOURCE-SKILL.md",
+          "sha256": "117c00b0f363876e1f2c4f1ccba52a8a4d2dfa51b2f378b2063036c84990e8cc"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/VERSION",
+          "output": "skills/claude-code-docs/VERSION",
+          "sha256": "71015c979ccb0fc8a0be7ca0ae83046ab045cdc2c8faa09fb2f0f7e440f9b4a6"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/references/mechanism-cn.md",
+          "output": "skills/claude-code-docs/references/mechanism-cn.md",
+          "sha256": "d6d38c1c5b78abc08dff49bfe92d4420076271b652a1d99ce6295315d6cb4628"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/claude-code-docs/references/mechanism.md",
+          "output": "skills/claude-code-docs/references/mechanism.md",
+          "sha256": "492ad35db147a00ddc03957a2756c3729ec0d919c10da61ec97ce16843e0bb92"
+        }
+      ]
+    },
+    {
+      "name": "codex-docs",
+      "original_frontmatter": {
+        "name": "codex-docs",
+        "description": "Look up authoritative, up-to-date OpenAI Codex documentation covering the CLI, IDE extension, Codex app, cloud, subagents, skills, plugins and marketplaces, MCP, sandboxing, configuration, enterprise, and integrations. Use when the user asks how a Codex feature works, what a config field does, how to set up the CLI/IDE/app/cloud/skills/plugins/MCP, when troubleshooting a Codex error or unexpected behavior, or when you need to cite current official docs rather than rely on training-cutoff knowledge.",
+        "argument-hint": [
+          "topic or doc title"
+        ],
+        "allowed-tools": "WebFetch"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/CHANGELOG.md",
+          "output": "skills/codex-docs/CHANGELOG.md",
+          "sha256": "521864ae2d3572fdef2bc9f1a8a5bdce957a01a40681e13c26d5e7b84efca39a"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/README-cn.md",
+          "output": "skills/codex-docs/README-cn.md",
+          "sha256": "876a78448090452618ace18f97f93fb4cb0b4a16b451cb2b7b625524cb71489b"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/README.md",
+          "output": "skills/codex-docs/README.md",
+          "sha256": "ef358879ee049ab593b50c0645d6484e98e37f8841a34c594552ece53727aa9f"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/SKILL-cn.md",
+          "output": "skills/codex-docs/SKILL-cn.md",
+          "sha256": "e31bae60bd0407eb34011f423d8c1ba7d9a73437e82b11ab226e7b4801537dac"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/SKILL.md",
+          "output": "skills/codex-docs/SOURCE-SKILL.md",
+          "sha256": "75d12b7a1a977cdf431484db2b84df8c856459083d0127180377d8d147921732"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/VERSION",
+          "output": "skills/codex-docs/VERSION",
+          "sha256": "2d2454ef0edeb462a6ce8b25d387aaa74df08093d5cea0428a10ce55510c6326"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/references/mechanism-cn.md",
+          "output": "skills/codex-docs/references/mechanism-cn.md",
+          "sha256": "469ef60c50410a0755bef1f5d96cf752934e5e3ca9375abba5ded067f1a5c5f3"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/codex-docs/references/mechanism.md",
+          "output": "skills/codex-docs/references/mechanism.md",
+          "sha256": "d8f051eb67185338a3cfd04bb42a7519060cec7e9085e24a694c43b60aeb34e8"
+        }
+      ]
+    },
+    {
+      "name": "coding-agent-concept-mapping",
+      "original_frontmatter": {
+        "name": "coding-agent-concept-mapping",
+        "description": "Cross tool concept mapping knowledge base for AI coding agents. Use when you need to know how a project level configuration concept (project prompt, settings, skills, custom commands, hooks, MCP servers, subagents, permissions, plugins and marketplaces) corresponds across Claude Code, Codex, and Antigravity, or how to port such a setup from one tool to another.",
+        "argument-hint": [
+          "concept name"
+        ],
+        "allowed-tools": "Read"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/CHANGELOG.md",
+          "output": "skills/coding-agent-concept-mapping/CHANGELOG.md",
+          "sha256": "34a0085bdb32b43efb17ee27f98923b6bbcf76706833cba5170f0cc21d8fac1a"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/README-cn.md",
+          "output": "skills/coding-agent-concept-mapping/README-cn.md",
+          "sha256": "ce1eadbfb9a6ce2685e1c6927569994f0664940bb3c7609c0bfbae818bb59fa0"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/SKILL.md",
+          "output": "skills/coding-agent-concept-mapping/SOURCE-SKILL.md",
+          "sha256": "cbd909120eb0ca5064e818ea1f63f85f9f46c20e41be5dd5ced155cae20d4d7b"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/VERSION",
+          "output": "skills/coding-agent-concept-mapping/VERSION",
+          "sha256": "2d2454ef0edeb462a6ce8b25d387aaa74df08093d5cea0428a10ce55510c6326"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/00-context-index.md",
+          "output": "skills/coding-agent-concept-mapping/ref/00-context-index.md",
+          "sha256": "0fc1e6a596e131bde98daef772422760590d0557fe66af03ee1553ddecc1fc85"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/01-project-prompt.md",
+          "output": "skills/coding-agent-concept-mapping/ref/01-project-prompt.md",
+          "sha256": "c2fd044967cd8de96d0c7faa34ffbaf9ab3b5526dda52cb3dd6e74ad6df27466"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/02-project-settings.md",
+          "output": "skills/coding-agent-concept-mapping/ref/02-project-settings.md",
+          "sha256": "081ac113e3396b33ef361f273f76a1ae960d2d4d9646372944e761e1e3bc56bf"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/03-skills.md",
+          "output": "skills/coding-agent-concept-mapping/ref/03-skills.md",
+          "sha256": "bb3382b86ba62aebe2779bcc10f83688f0d8f1312aaca1c71ed2a1b3c3faff2c"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/04-custom-commands.md",
+          "output": "skills/coding-agent-concept-mapping/ref/04-custom-commands.md",
+          "sha256": "e6b455fbc95af59e565fee23210b22851906ac94806b46582b7ce2ee0c677a08"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/05-hooks.md",
+          "output": "skills/coding-agent-concept-mapping/ref/05-hooks.md",
+          "sha256": "bb257bcf9b0eefb2418c197adcf66ab72696941def9cddd1cdf2486c3118ee8f"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/06-mcp-servers.md",
+          "output": "skills/coding-agent-concept-mapping/ref/06-mcp-servers.md",
+          "sha256": "2b205d9ff35510ced5868c7a933322661987ef461a40dee2fbb12577af530c91"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/07-subagents.md",
+          "output": "skills/coding-agent-concept-mapping/ref/07-subagents.md",
+          "sha256": "310f5dfb8abdec15731cd6b10881790d71b926a719e01cef2e364b692ebbe35c"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/08-permissions.md",
+          "output": "skills/coding-agent-concept-mapping/ref/08-permissions.md",
+          "sha256": "7729102dd156053d0bd1a488e9955a152af8869199e80db4048361a4cb15bf98"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/coding-agent-concept-mapping/ref/09-plugins-and-marketplaces.md",
+          "output": "skills/coding-agent-concept-mapping/ref/09-plugins-and-marketplaces.md",
+          "sha256": "89ad8643bc1507cadf4616f13b97f7c463e501e2f6bde15407cd4e70e47b3083"
+        }
+      ]
+    },
+    {
+      "name": "docs-skill-builder",
+      "original_frontmatter": {
+        "name": "docs-skill-builder",
+        "description": "Build (or re-verify) an `xxx-docs` Agent Skill that looks up a vendor's official documentation on demand — by probing the site for an llms.txt/sitemap/source-repo index and a plain-text content contract, then picking the lazy-load design that maximizes recall per token. Use when asked to create a docs-lookup skill for a product (\"build a databricks-docs skill\", \"make a skill for Stripe's docs\"), to check whether an existing one has gone stale, or to work out how to query some vendor's documentation efficiently.",
+        "argument-hint": "[build|check] <target-path> for <docs URL or product> [notes]",
+        "allowed-tools": "Bash, Read, Write, Edit, WebFetch, WebSearch"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/CHANGELOG.md",
+          "output": "skills/docs-skill-builder/CHANGELOG.md",
+          "sha256": "37d865028e49e45f5c1f3f8bd68157311969e6591b146a70f05170edfc08aa44"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/README-cn.md",
+          "output": "skills/docs-skill-builder/README-cn.md",
+          "sha256": "3b2535a74b03929049258d4063818a20d1010953f907c6193d47503b854bc2a0"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/README.md",
+          "output": "skills/docs-skill-builder/README.md",
+          "sha256": "49f2dd57990214bef344e267aee42965d214fdc907337812a082ca5a9b2f65ae"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/SKILL-cn.md",
+          "output": "skills/docs-skill-builder/SKILL-cn.md",
+          "sha256": "a8a58982080984e4c3e74df327d803678bd2c6a78cdfeaf13a6268cd6e2fabbd"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/SKILL.md",
+          "output": "skills/docs-skill-builder/SOURCE-SKILL.md",
+          "sha256": "cd590a826fe1242c93ec4b8a569c9a847c7c9a85470b390fe832ec1bca85cedf"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/VERSION",
+          "output": "skills/docs-skill-builder/VERSION",
+          "sha256": "297b50f08386d3521f8fdaf2f78eb8d9d0acdf452d2e61596905fba37208c792"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/assets/docs_query.py",
+          "output": "skills/docs-skill-builder/assets/docs_query.py",
+          "sha256": "bc375b73af06bae0d4677eac21e0007277669e8fd532359706115a8463c2a6c7"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/references/mechanism-catalog.md",
+          "output": "skills/docs-skill-builder/references/mechanism-catalog.md",
+          "sha256": "ffda7a8ca49c9bbc7d369e3d262da14aff4a642b655316d3f0786129bec18ccd"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/references/skill-template.md",
+          "output": "skills/docs-skill-builder/references/skill-template.md",
+          "sha256": "a4936236bcba8413be38541869fa516cca6e6785e88968485781f2801eb6c8f8"
+        },
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/docs-skill-builder/scripts/probe_docs_source.py",
+          "output": "skills/docs-skill-builder/scripts/probe_docs_source.py",
+          "sha256": "fb17a8ecdbfc933b41db086905f51477ecf6363cf60d9b0c27e2c2503bd3a2c1"
+        }
+      ]
+    },
+    {
+      "name": "port-antigravity-to-claude-code",
+      "original_frontmatter": {
+        "name": "port-antigravity-to-claude-code",
+        "description": "Port a project's Antigravity configuration to Claude Code, keeping the Antigravity files in place. Scans the project for Antigravity config artifacts, maps each to its Claude Code equivalent using the coding-agent-concept-mapping knowledge base, and creates or edits the matching Claude Code files. Use when migrating a repo from Antigravity to Claude Code.",
+        "argument-hint": [
+          "project path"
+        ],
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-antigravity-to-claude-code/SKILL.md",
+          "output": "skills/port-antigravity-to-claude-code/SOURCE-SKILL.md",
+          "sha256": "85135dc3feb1ed23c1be5fddae75badcc571742da494aff9dc51143249fecb7f"
+        }
+      ]
+    },
+    {
+      "name": "port-antigravity-to-claude-code-checker",
+      "original_frontmatter": {
+        "name": "port-antigravity-to-claude-code-checker",
+        "description": "Read-only review of how completely a project's Antigravity configuration has been ported to Claude Code. Scans both sides, compares them against the coding-agent-concept-mapping knowledge base, and writes a gap report to tmp/review-port-antigravity-to-claude-code.md. Makes no changes to the project config. Use to audit a Antigravity to Claude Code migration.",
+        "argument-hint": [
+          "project path"
+        ],
+        "allowed-tools": "Read, Write, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-antigravity-to-claude-code-checker/SKILL.md",
+          "output": "skills/port-antigravity-to-claude-code-checker/SOURCE-SKILL.md",
+          "sha256": "5efcb68dd6a448ff73ace04de188275926b4358d13494edc8b3d15131c33dbad"
+        }
+      ]
+    },
+    {
+      "name": "port-antigravity-to-codex",
+      "original_frontmatter": {
+        "name": "port-antigravity-to-codex",
+        "description": "Port a project's Antigravity configuration to Codex, keeping the Antigravity files in place. Scans the project for Antigravity config artifacts, maps each to its Codex equivalent using the coding-agent-concept-mapping knowledge base, and creates or edits the matching Codex files. Use when migrating a repo from Antigravity to Codex.",
+        "argument-hint": [
+          "project path"
+        ],
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-antigravity-to-codex/SKILL.md",
+          "output": "skills/port-antigravity-to-codex/SOURCE-SKILL.md",
+          "sha256": "e54fce35edb9a4fa551c225c110bbf4a9aa383595206b0f6d63d7ae5de12af8f"
+        }
+      ]
+    },
+    {
+      "name": "port-antigravity-to-codex-checker",
+      "original_frontmatter": {
+        "name": "port-antigravity-to-codex-checker",
+        "description": "Read-only review of how completely a project's Antigravity configuration has been ported to Codex. Scans both sides, compares them against the coding-agent-concept-mapping knowledge base, and writes a gap report to tmp/review-port-antigravity-to-codex.md. Makes no changes to the project config. Use to audit a Antigravity to Codex migration.",
+        "argument-hint": [
+          "project path"
+        ],
+        "allowed-tools": "Read, Write, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-antigravity-to-codex-checker/SKILL.md",
+          "output": "skills/port-antigravity-to-codex-checker/SOURCE-SKILL.md",
+          "sha256": "91b11fa841979487e093321eff4bcbd6d914829c5a4d725d4493a31d647060b5"
+        }
+      ]
+    },
+    {
+      "name": "port-claude-code-to-antigravity",
+      "original_frontmatter": {
+        "name": "port-claude-code-to-antigravity",
+        "description": "Port a project's Claude Code configuration to Antigravity, keeping the Claude Code files in place. Scans the project for Claude Code config artifacts, maps each to its Antigravity equivalent using the coding-agent-concept-mapping knowledge base, and creates or edits the matching Antigravity files. Use when migrating a repo from Claude Code to Antigravity.",
+        "argument-hint": [
+          "project path"
+        ],
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-claude-code-to-antigravity/SKILL.md",
+          "output": "skills/port-claude-code-to-antigravity/SOURCE-SKILL.md",
+          "sha256": "0a18d630e74df050a12915e3afc1ef9666d099c5e7cff044fd47a67db34d1e88"
+        }
+      ]
+    },
+    {
+      "name": "port-claude-code-to-antigravity-checker",
+      "original_frontmatter": {
+        "name": "port-claude-code-to-antigravity-checker",
+        "description": "Read-only review of how completely a project's Claude Code configuration has been ported to Antigravity. Scans both sides, compares them against the coding-agent-concept-mapping knowledge base, and writes a gap report to tmp/review-port-claude-code-to-antigravity.md. Makes no changes to the project config. Use to audit a Claude Code to Antigravity migration.",
+        "argument-hint": [
+          "project path"
+        ],
+        "allowed-tools": "Read, Write, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-claude-code-to-antigravity-checker/SKILL.md",
+          "output": "skills/port-claude-code-to-antigravity-checker/SOURCE-SKILL.md",
+          "sha256": "a3d477ffbdaad508e413ed49a9798c4cca0f3a52359d446b14544236c8f0c685"
+        }
+      ]
+    },
+    {
+      "name": "port-claude-code-to-codex",
+      "original_frontmatter": {
+        "name": "port-claude-code-to-codex",
+        "description": "Port a project's Claude Code configuration to Codex, keeping the Claude Code files in place. Scans the project for Claude Code config artifacts, maps each to its Codex equivalent using the coding-agent-concept-mapping knowledge base, and creates or edits the matching Codex files. Use when migrating a repo from Claude Code to Codex.",
+        "argument-hint": [
+          "project path"
+        ],
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-claude-code-to-codex/SKILL.md",
+          "output": "skills/port-claude-code-to-codex/SOURCE-SKILL.md",
+          "sha256": "3105c8fa58ef2692a36acc6b23b26f8a5ab64bce2e945d9912516e077b0e5176"
+        }
+      ]
+    },
+    {
+      "name": "port-claude-code-to-codex-checker",
+      "original_frontmatter": {
+        "name": "port-claude-code-to-codex-checker",
+        "description": "Read-only review of how completely a project's Claude Code configuration has been ported to Codex. Scans both sides, compares them against the coding-agent-concept-mapping knowledge base, and writes a gap report to tmp/review-port-claude-code-to-codex.md. Makes no changes to the project config. Use to audit a Claude Code to Codex migration.",
+        "argument-hint": [
+          "project path"
+        ],
+        "allowed-tools": "Read, Write, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-claude-code-to-codex-checker/SKILL.md",
+          "output": "skills/port-claude-code-to-codex-checker/SOURCE-SKILL.md",
+          "sha256": "7131f55102c0587eca02c15ada52d8f5724bd5eecf64bf6e04b7b8d2fdb67348"
+        }
+      ]
+    },
+    {
+      "name": "port-codex-to-antigravity",
+      "original_frontmatter": {
+        "name": "port-codex-to-antigravity",
+        "description": "Port a project's Codex configuration to Antigravity, keeping the Codex files in place. Scans the project for Codex config artifacts, maps each to its Antigravity equivalent using the coding-agent-concept-mapping knowledge base, and creates or edits the matching Antigravity files. Use when migrating a repo from Codex to Antigravity.",
+        "argument-hint": [
+          "project path"
+        ],
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-codex-to-antigravity/SKILL.md",
+          "output": "skills/port-codex-to-antigravity/SOURCE-SKILL.md",
+          "sha256": "e8142f0c33384953e9d5bc9210dfa972b2dc9e02d96c3ce86fa2de4a4c91d5cb"
+        }
+      ]
+    },
+    {
+      "name": "port-codex-to-antigravity-checker",
+      "original_frontmatter": {
+        "name": "port-codex-to-antigravity-checker",
+        "description": "Read-only review of how completely a project's Codex configuration has been ported to Antigravity. Scans both sides, compares them against the coding-agent-concept-mapping knowledge base, and writes a gap report to tmp/review-port-codex-to-antigravity.md. Makes no changes to the project config. Use to audit a Codex to Antigravity migration.",
+        "argument-hint": [
+          "project path"
+        ],
+        "allowed-tools": "Read, Write, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-codex-to-antigravity-checker/SKILL.md",
+          "output": "skills/port-codex-to-antigravity-checker/SOURCE-SKILL.md",
+          "sha256": "c8d1fc1c29f9869573063eef5405bc44cd9d0b410e8b1da04e1a7a89035d814c"
+        }
+      ]
+    },
+    {
+      "name": "port-codex-to-claude-code",
+      "original_frontmatter": {
+        "name": "port-codex-to-claude-code",
+        "description": "Port a project's Codex configuration to Claude Code, keeping the Codex files in place. Scans the project for Codex config artifacts, maps each to its Claude Code equivalent using the coding-agent-concept-mapping knowledge base, and creates or edits the matching Claude Code files. Use when migrating a repo from Codex to Claude Code.",
+        "argument-hint": [
+          "project path"
+        ],
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-codex-to-claude-code/SKILL.md",
+          "output": "skills/port-codex-to-claude-code/SOURCE-SKILL.md",
+          "sha256": "2e5554e1eb97c0d6e2ed42fe8059a8afd94d6e2729c8bf6324ee7f4ff2b0a9c8"
+        }
+      ]
+    },
+    {
+      "name": "port-codex-to-claude-code-checker",
+      "original_frontmatter": {
+        "name": "port-codex-to-claude-code-checker",
+        "description": "Read-only review of how completely a project's Codex configuration has been ported to Claude Code. Scans both sides, compares them against the coding-agent-concept-mapping knowledge base, and writes a gap report to tmp/review-port-codex-to-claude-code.md. Makes no changes to the project config. Use to audit a Codex to Claude Code migration.",
+        "argument-hint": [
+          "project path"
+        ],
+        "allowed-tools": "Read, Write, Glob, Grep, Skill"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/coding-agent-docs/skills/port-codex-to-claude-code-checker/SKILL.md",
+          "output": "skills/port-codex-to-claude-code-checker/SOURCE-SKILL.md",
+          "sha256": "621f1dfd6522b85c256e80208e086d7f4c48ff1299490e7c317a5c6add379b03"
+        }
+      ]
+    },
+    {
+      "name": "maintain-claude-plugins",
+      "original_frontmatter": {
+        "name": "maintain-claude-plugins",
+        "description": "My personal, authoritative spec for building, developing, versioning, releasing, and wiring dependencies for my own Claude Code plugins through a split-repo plus central-marketplace setup. Use when creating a new plugin repo, laying out a plugin's .claude/skills/<name>/ folder, writing plugin.json or marketplace.json, tagging a plugin release, wiring plugin-to-plugin dependencies, authenticating private repos, or when I ask how to structure, release, or publish my Claude Code plugin."
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/maintain-claude-plugins/SKILL.md",
+          "output": "skills/maintain-claude-plugins/SOURCE-SKILL.md",
+          "sha256": "4f9edf4ba67b0641b2ede11b506535c483d6f2cae1e5c39f7ef39615decac46b"
+        },
+        {
+          "source": ".claude/skills/maintain-claude-plugins/reference/personal-plugin-marketplace-best-practices.md",
+          "output": "skills/maintain-claude-plugins/reference/personal-plugin-marketplace-best-practices.md",
+          "sha256": "8887c1b1235a26c35e1068942085cbc0ab6a607b953effea41482877402ced5e"
+        },
+        {
+          "source": ".claude/skills/maintain-claude-plugins/scripts/plugin_release.py",
+          "output": "skills/maintain-claude-plugins/scripts/plugin_release.py",
+          "sha256": "65176a793814d223ad5263173d7c3bd7aec45a6edd1202aaabb8ea63e5fd036e"
+        }
+      ]
+    },
+    {
+      "name": "port-coding-agent-skill-generator",
+      "original_frontmatter": {
+        "name": "port-coding-agent-skill-generator",
+        "description": "Generate or update the paired port and checker skills that migrate a project's configuration from one AI coding agent to another. Use when you need to (re)create a port-<source>-to-<target> doer skill and its port-<source>-to-<target>-checker review skill, for example when invoked as /port-coding-agent-skill-generator cc to cdx or /port-coding-agent-skill-generator claude code to codex.",
+        "argument-hint": "<source> to <target>",
+        "disable-model-invocation": true,
+        "allowed-tools": "Read, Write, Edit"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/port-coding-agent-skill-generator/README-cn.md",
+          "output": "skills/port-coding-agent-skill-generator/README-cn.md",
+          "sha256": "22a894308ea1c9d2d607529fa284f809989972e533722b8177e0e317e63370af"
+        },
+        {
+          "source": ".claude/skills/port-coding-agent-skill-generator/SKILL.md",
+          "output": "skills/port-coding-agent-skill-generator/SOURCE-SKILL.md",
+          "sha256": "c8c98141b4e116366de8ac0ae1753c7f91eb4bf0a0a9d47b442864da07fd8434"
+        },
+        {
+          "source": ".claude/skills/port-coding-agent-skill-generator/ref/checker-skill-template.md",
+          "output": "skills/port-coding-agent-skill-generator/ref/checker-skill-template.md",
+          "sha256": "7b81b68cd0c4a9733791f6cae06b3a6f54db7b320930f3b558a505147ebf320c"
+        },
+        {
+          "source": ".claude/skills/port-coding-agent-skill-generator/ref/port-skill-template.md",
+          "output": "skills/port-coding-agent-skill-generator/ref/port-skill-template.md",
+          "sha256": "cf32ab8c19351fe5009851bfd316952288154a85a12a69b1230b697961a54b82"
+        }
+      ]
+    },
+    {
+      "name": "py-changelog",
+      "original_frontmatter": {
+        "name": "py-changelog",
+        "description": "Maintain the release-history.rst changelog for a Python project before publishing a new version. Use when the user wants to prepare release notes, update changelog, or is about to publish/tag a new version."
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/py-changelog/SKILL.md",
+          "output": "skills/py-changelog/SOURCE-SKILL.md",
+          "sha256": "d708b04bc0e9e51dbd4ed6878e54f6f07f23e39ed6e79ee237af0c4477c58b29"
+        }
+      ]
+    },
+    {
+      "name": "write-agent-skill",
+      "original_frontmatter": {
+        "description": "Claude Code Agent Skill Author Guide"
+      },
+      "validation": "Skill is valid!",
+      "files": [
+        {
+          "source": ".claude/skills/write-agent-skill/SKILL.md",
+          "output": "skills/write-agent-skill/SOURCE-SKILL.md",
+          "sha256": "51e73fdf78474439c2e23ed8432ef2cccf203498c6577d28c4eb132f8a64ae3c"
+        },
+        {
+          "source": ".claude/skills/write-agent-skill/references/extend-claude-with-skills.md",
+          "output": "skills/write-agent-skill/references/extend-claude-with-skills.md",
+          "sha256": "7d7888fdc1416ea5d07d582d278ac416abbd69ea5c67b41fbd2be1f942d0c379"
+        }
+      ]
+    }
+  ]
+}

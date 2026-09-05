@@ -1,0 +1,10 @@
+{
+  "id": "master_ep01_r2",
+  "round": 3,
+  "candidate": 3,
+  "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-4796dd3f-701b-4bf0-835d-1543fc5e9dcd.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_03.png",
+  "status": "rejected",
+  "reviewed": true,
+  "review_zh": "左边出现带门把手的活动门扇，门仍打开，和关门后状态不符。"
+}

@@ -1,0 +1,217 @@
+{
+  "source_review": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_single.json",
+  "plans": [
+    {
+      "id": "ep01_镜21",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+      "mode": "local_reframe",
+      "crop_box": [
+        0.1169,
+        0.1495,
+        0.8395,
+        0.872
+      ],
+      "crop_box_role": "同一原图主体及背景收紧基准；不是声称纯裁切可以通过，必须补做边缘过肩局部重构。",
+      "original_size": [
+        941,
+        1672
+      ],
+      "crop_pixels_estimate": [
+        110,
+        250,
+        790,
+        1458
+      ],
+      "subject_head_bbox_normalized_estimate": [
+        0.17,
+        0.169,
+        0.552,
+        0.434
+      ],
+      "head_height_fraction_after_crop_estimate": 0.502,
+      "headroom_fraction_after_crop_estimate": 0.049,
+      "foreground_edge": "right",
+      "pure_crop_pass": false,
+      "reason": "主脸发顶约y=282、下颏约y=725；头部高443像素。主脸达50%时裁切宽约497像素，原苏慧头发最左约x=670在框右缘x=591之外；仅下方肩部可能切入，无法保留批准的鬓发边缘。",
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。 以这个编辑目标为基准约放大1.38倍并向主体脸部收紧，过肩只留边缘细弧。",
+      "preserve_zh": "保持同一张脸、原表情和视线、衬衫与肩带状态、光照和原机位背景。胸口以下动作及道具留在画外。",
+      "retained_visible_elements_zh": "江砚胸上主体、同一机位脸后方背景局部、苏慧边缘虚焦发丝后肩；低于胸口的道具无需入画。",
+      "head_bbox_pixels_estimate": [
+        166,
+        310,
+        643,
+        914
+      ],
+      "head_bbox_normalized_estimate": [
+        0.1764,
+        0.1854,
+        0.6833,
+        0.5467
+      ],
+      "zoom_estimate": 1.38,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。",
+      "prompt_variant": "tight_reframe"
+    },
+    {
+      "id": "ep01_镜23",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+      "mode": "local_reframe",
+      "crop_box": [
+        0.0,
+        0.07,
+        0.7566,
+        0.8272
+      ],
+      "crop_box_role": "同一原图主体及背景收紧基准；不是声称纯裁切可以通过，必须补做边缘过肩局部重构。",
+      "original_size": [
+        941,
+        1672
+      ],
+      "crop_pixels_estimate": [
+        0,
+        117,
+        712,
+        1383
+      ],
+      "subject_head_bbox_normalized_estimate": [
+        0.034,
+        0.11,
+        0.411,
+        0.363
+      ],
+      "head_height_fraction_after_crop_estimate": 0.5,
+      "headroom_fraction_after_crop_estimate": 0.049,
+      "foreground_edge": "right",
+      "pure_crop_pass": false,
+      "reason": "主脸发顶约y=184、下颏约y=607；苏慧发丝左界约x=720，而裁框右边仅x=476，纯裁切会完全失去母亲发丝和绝大部分过肩。原背景旅客也应随近景裁切退出，不复制到新取景内。",
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。 以这个编辑目标为基准约放大1.32倍并向主体脸部收紧，过肩只留边缘细弧。",
+      "preserve_zh": "保持同一张脸、原表情和视线、衬衫与肩带状态、光照和原机位背景。胸口以下动作及道具留在画外。",
+      "retained_visible_elements_zh": "江砚胸上主体、同一机位脸后方背景局部、苏慧边缘虚焦发丝后肩；低于胸口的道具无需入画。",
+      "head_bbox_pixels_estimate": [
+        18,
+        180,
+        552,
+        813
+      ],
+      "head_bbox_normalized_estimate": [
+        0.0191,
+        0.1077,
+        0.5866,
+        0.4862
+      ],
+      "zoom_estimate": 1.32,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。",
+      "prompt_variant": "tight_reframe"
+    },
+    {
+      "id": "ep01_镜36",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "mode": "local_reframe",
+      "crop_box": [
+        0.0319,
+        0.0975,
+        0.745,
+        0.8104
+      ],
+      "crop_box_role": "同一原图主体及背景收紧基准；不是声称纯裁切可以通过，必须补做边缘过肩局部重构。",
+      "original_size": [
+        941,
+        1672
+      ],
+      "crop_pixels_estimate": [
+        30,
+        163,
+        701,
+        1355
+      ],
+      "subject_head_bbox_normalized_estimate": [
+        0.135,
+        0.251,
+        0.487,
+        0.478
+      ],
+      "head_height_fraction_after_crop_estimate": 0.5,
+      "headroom_fraction_after_crop_estimate": 0.051,
+      "foreground_edge": "right",
+      "pure_crop_pass": false,
+      "reason": "苏慧发顶约y=420、下颏约y=800，高380像素；框右界x=498，而江砚头部左界约x=660，肩部在裁框下段也大多位于x=590以右。纯裁无法保留右缘发丝肩线。",
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。 以这个编辑目标为基准约放大1.4倍并向主体脸部收紧，过肩只留边缘细弧。",
+      "preserve_zh": "保持同一张脸、原表情和视线、衬衫与肩带状态、光照和原机位背景。胸口以下动作及道具留在画外。",
+      "retained_visible_elements_zh": "苏慧胸上主体、同一机位脸后方背景局部、江砚边缘虚焦发丝后肩；低于胸口的道具无需入画。",
+      "head_bbox_pixels_estimate": [
+        88,
+        223,
+        604,
+        819
+      ],
+      "head_bbox_normalized_estimate": [
+        0.0935,
+        0.1334,
+        0.6419,
+        0.4898
+      ],
+      "zoom_estimate": 1.4,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。",
+      "prompt_variant": "tight_reframe"
+    },
+    {
+      "id": "ep01_镜37",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "mode": "local_reframe",
+      "crop_box": [
+        0.0159,
+        0.1435,
+        0.7758,
+        0.9043
+      ],
+      "crop_box_role": "同一原图主体及背景收紧基准；不是声称纯裁切可以通过，必须补做边缘过肩局部重构。",
+      "original_size": [
+        941,
+        1672
+      ],
+      "crop_pixels_estimate": [
+        15,
+        240,
+        730,
+        1512
+      ],
+      "subject_head_bbox_normalized_estimate": [
+        0.08,
+        0.2,
+        0.444,
+        0.449
+      ],
+      "head_height_fraction_after_crop_estimate": 0.5,
+      "headroom_fraction_after_crop_estimate": 0.05,
+      "foreground_edge": "right",
+      "pure_crop_pass": false,
+      "reason": "江砚发顶约y=334、下颏約y=751，高417像素；裁框右界x=492，苏慧发丝左界在x=748附近，肩部到裁框底仍约x=550以上。纯裁后母亲基本消失，不能称过肩达标。",
+      "correction_zh": "同镜主体及相应原背景按框收紧，发顶留5%、头高约50%、胸口截止。右边缘重构一条10–15%宽虚焦发丝后肩，主体身份、朝向、视线和表情保持。 以这个编辑目标为基准约放大1.31倍并向主体脸部收紧，过肩只留边缘细弧。",
+      "preserve_zh": "保持同一张脸、原表情和视线、衬衫与肩带状态、光照和原机位背景。胸口以下动作及道具留在画外。",
+      "retained_visible_elements_zh": "江砚胸上主体、同一机位脸后方背景局部、苏慧边缘虚焦发丝后肩；低于胸口的道具无需入画。",
+      "head_bbox_pixels_estimate": [
+        51,
+        304,
+        577,
+        940
+      ],
+      "head_bbox_normalized_estimate": [
+        0.0542,
+        0.1818,
+        0.6132,
+        0.5622
+      ],
+      "zoom_estimate": 1.31,
+      "head_height_after_crop_estimate": 0.5,
+      "headroom_after_crop_estimate": 0.05,
+      "measurement_note": "人工实际view_image后估计；缩放约1.3–1.4倍即可达到50%头高，直接1.8倍可能推至65%头高而过紧。纯裁仍会损失原过肩，需边缘局部重构；不修改源卡或图片。",
+      "prompt_variant": "tight_reframe"
+    }
+  ]
+}

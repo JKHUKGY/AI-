@@ -1,0 +1,67 @@
+{
+  "agent_id": "/root/review_supplement_single",
+  "review_scope": "Reviewer A 单图原文与批准设计，独立实际看图",
+  "status": "completed",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png"
+  ],
+  "source_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜17",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+      "round": 1,
+      "verdict": "pass",
+      "reason": "江砚左侧全身侧身读地址纸，左手纸、右手扶细棱深灰硬箱、大橄榄包仍背在双肩；苏慧在右远景向左前方江砚走近，脸和身体明显小于江砚。蓝裙女旅客左远、灰衣男旅客中远、米色衬衫背包男旅客右远均存在，未遮挡主脸。左玻璃右栏杆车道的A机位、挑檐阴影与右侧热带硬光延续，头脚完整且脚下约15%余地，符合机场陌生感先于母子重逢的情节。",
+      "non_blocking_observation": "江砚实际约占画高六成，比 subject_frac 0.4 更大；仍是头脚完整、保留足够环境与纵深的全景。",
+      "fix_instruction": "",
+      "card_field": ""
+    },
+    {
+      "id": "ep01_镜18",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "指定B反打应左侧车队、右上挑檐，实际仍左玻璃幕墙右栏杆黄车的A机位；只把人物左右调换而没有换机位。近端江砚从完整头部拍到膝下，躯干、大包和箱体均大量入画，不符合局部后肩与包边入画和大腿中段切断的设计。苏慧完整脚下仍可见，并站在三名旅客前方近处，未呈现人群后方走近的纵深关系。人物与三旅客服装大体对应，但机位、裁切和纵深未通过。",
+      "fix_instruction": "以B反打底板锁定左车道右上挑檐，禁止复用A主帧背景；把江砚变成右边缘虚焦局部后肩和包边，按中景裁至近端人物大腿以上；让苏慧留左侧中远层从人群后方走近，保持朝江砚的侧面视线关系。",
+      "card_field": "cards[ep01_镜18].plate_image / framing / people[苏慧].depth / posture_zh / background_people[江砚].posture_zh"
+    },
+    {
+      "id": "ep01_镜19",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+      "verdict": "fail",
+      "reason": "实际拍到江砚大腿，完整两臂、右手拉杆和大背包均入画；顶部留空也明显超过约5%。卡片要求胸口下缘切断、看不到腰腿，实际成为半身中景，未做到批准近景。人物身份、灰蓝衬衫、左手纸右手箱及机场A背景大体一致，不能抵消景别错误。",
+      "fix_instruction": "将画面下边界绑定胸口下缘并提高主体脸肩在画面中的占比；把握行李箱等动作明确为画外继续保持的状态，参考大包只保留两条肩带，禁止为了完整展示箱包而拓宽取景。",
+      "card_field": "cards[ep01_镜19].framing.crop_zh / subject_frac / props_zh / people[江砚].action_zh",
+      "round": 1
+    },
+    {
+      "id": "ep01_镜20",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+      "verdict": "fail",
+      "reason": "苏慧实际从头至腿部可见，江砚头、背、躯干、前臂和箱杆占据右侧近半幅；不符苏慧胸上近景及约15%的局部过肩。背景左侧玻璃幕墙右侧车道，仍是A主机位结构，而不是指定B反打左车队右上挑檐。卡片指定画外的灰衣旅客甲也在画面中央出现。",
+      "fix_instruction": "以B反打紧底板为机位硬约束，主帧只取身份和道具状态，不沿用A场景构图；苏慧下缘切胸口、右侧仅留虚焦肩缘和少量发丝，三旅客全部裁切外，箱与手臂为画外状态。",
+      "card_field": "cards[ep01_镜20].plate_image / framing / background_people[江砚].posture_zh / action_zh / present_off_frame",
+      "round": 1
+    }
+  ],
+  "notes": "四张输出均实际逐张打开；未读取其他审查结论。四张底板和a1主帧本次实际打开；两张角色基准由本代理前一任务实际打开且视觉上下文仍在。",
+  "counts": {
+    "pass": 1,
+    "fail": 3,
+    "unclear": 0
+  }
+}

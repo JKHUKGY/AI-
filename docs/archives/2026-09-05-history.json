@@ -1,0 +1,455 @@
+{
+  "created_at": "2026-09-05T09:48:29.087378+00:00",
+  "repository": "/workspaces/AI-",
+  "groups": [
+    {
+      "id": "single-image-forward-test",
+      "source": "tmp/single-image-skill-forward-test",
+      "remote": "gdrive:AI-短剧归档/单图可控视频_Demo/历史验收/2026-09-05/独立前向测试",
+      "reason": "已完成的128×256、17帧独立前向测试；正式任务使用另一套15秒素材",
+      "status": "archived",
+      "files": [
+        {
+          "path": "tmp/single-image-skill-forward-test/REPORT.md",
+          "size": 4890,
+          "sha256": "c14e52e75bb2d8d4ae9cfd228cb3388c6a03919213dca44525f25c0865a88e18",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/index.html",
+          "size": 1479,
+          "sha256": "869e7ff2a45f65ff48d6cd6f32235daec76ab2655dae78c82210c017f56ebcb9",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/landmarks.json",
+          "size": 608,
+          "sha256": "fad8127f0260ee96ced7e4bc4cab68b3ca2494772cee5cb580ed74374968eff9",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/verification.json",
+          "size": 935,
+          "sha256": "7862439ba7c7119b99cd630d1c7374ff844df7f539eb89bef87bc1de7881012f",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/机器文件/camera_path.json",
+          "size": 3790,
+          "sha256": "9ab6e696c1428f4c74fad25a49bd923efffdc314c6a4ddcf630c733d919f294e",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/机器文件/depth_provenance.json",
+          "size": 632,
+          "sha256": "e2667ea91eea30bf0360dbefa25889e113667f342c1b2aff7fd6e0a1d0e8b879",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/机器文件/point_cloud_preview.json",
+          "size": 186139,
+          "sha256": "c21a4cf311f7f82b8599f1570fe601197979bfd1d1f4f92048c223daee620f34",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/素材/depth16.png",
+          "size": 34058,
+          "sha256": "97c161478ec0a577c667e867044959f05199d3e1cfc3fc717feec352db9b7dc0",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/素材/depth_control.mp4",
+          "size": 5544,
+          "sha256": "31dfba8cd6890a7de8065dc2e5b5b3e1a30939e267c15999863dd153de297ca4",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/素材/first_frame.png",
+          "size": 64470,
+          "sha256": "b93c67a3ffddc853a6c5c7637ba557b499ee5e837d30c17fe1628a6915534dbd",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/素材/original.png",
+          "size": 2583820,
+          "sha256": "bc07c026f071bf62f9d418435d28827d05aba38c24e088da0fd602f64958294b",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/素材/relative_inverse_depth.npy",
+          "size": 262272,
+          "sha256": "3d5beff3e30f94725b61b0eac5b5e9b18a7648d8787e92f65640db0196747a3e",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/素材/scene.ply",
+          "size": 70516,
+          "sha256": "9b46f9d32c4f79e557528fdc6d9a02af73423257add3eee1ac8c85d7313c5c5f",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/contact_sheet.png",
+          "size": 177946,
+          "sha256": "bed5ad8e08883c99c7695693869d41b3b1d11e54c7f21e500c2287c8bc178a0b",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/depth_000.png",
+          "size": 4550,
+          "sha256": "7af137915ab5aae93e6cbde7db53c5b2b776bdc2b175f255074c8d2c78a5b39d",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/depth_004.png",
+          "size": 4520,
+          "sha256": "d1fbab529cf7970ccf472d715a9b98c1bfe188e9e4fd136b1aa159e0334f4ddc",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/depth_008.png",
+          "size": 4366,
+          "sha256": "5df113d2d58ceaa0acbcae63a89ba14579a8b0641b500b52503dad772a4baefe",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/depth_012.png",
+          "size": 4247,
+          "sha256": "481a28047df2ac9ed6920e0f13f53fa5b65a6b415a2183691df49d0dbdcac4f1",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/depth_016.png",
+          "size": 4176,
+          "sha256": "ea0fe81cc4eee3c382a2ca745a917bd7ceecea4629ad82bcbeb1d1089e5c11a6",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/rgb_000.png",
+          "size": 64470,
+          "sha256": "b93c67a3ffddc853a6c5c7637ba557b499ee5e837d30c17fe1628a6915534dbd",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/rgb_004.png",
+          "size": 62948,
+          "sha256": "e009df50528065d635e0609b9015af388ef61a8dfe72967cbbc8bb7f8207fa9b",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/rgb_008.png",
+          "size": 62261,
+          "sha256": "f9a195f1c2d6909e3341b01196052b39df1afaf8e5fbcdd55f701add76cf5518",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/rgb_012.png",
+          "size": 61694,
+          "sha256": "85c00f3e58ec0ef28715582a2d748f0c7ed26560ebeb433507587a775a81d162",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/control_frames/rgb_016.png",
+          "size": 61295,
+          "sha256": "68a3cce04d76f6a5e99b1118cd072ba5052831137b4121e456fcc0b72afd2273",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/coverage_mask.mp4",
+          "size": 3209,
+          "sha256": "fe93ccfb5bc717c5aa9578f62df8bc7a221d2e721240098cd01933efa61aa66a",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/coverage_mask_0.png",
+          "size": 173,
+          "sha256": "9ff14ae9d929d962a9039a096b0fa84345db10e07cc835dde03cd1758d2e82c0",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/coverage_mask_16.png",
+          "size": 768,
+          "sha256": "c129a688066bf2fb264d40ee7d4ac8bcaab3d62fdfe19055d9c27214a5c75cee",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/coverage_mask_8.png",
+          "size": 902,
+          "sha256": "280ca99988147b9eb6156547846c93edc582641f05f2730aeccd52d94a3d0482",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/depth.png",
+          "size": 4550,
+          "sha256": "7af137915ab5aae93e6cbde7db53c5b2b776bdc2b175f255074c8d2c78a5b39d",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/depth_control_0.png",
+          "size": 6667,
+          "sha256": "c136890e023fe06a8f381b1972e337694bfbe1799d4702d5f0985dbda821727a",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/depth_control_16.png",
+          "size": 6201,
+          "sha256": "e3c80f3d0faad8bdc16439d81bc75e77c0f20f915e9fb8851c4c6c14a020c3df",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/depth_control_8.png",
+          "size": 6839,
+          "sha256": "976941c320634de487683826ab002c2a2beac61a7c4b4f9fa3bb68739c0b2ca4",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/reprojection_preview.mp4",
+          "size": 28318,
+          "sha256": "f3f8837918598369d12ff3cfc185ba946d06367db66782e0e0a446eaeb905a03",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/reprojection_preview_0.png",
+          "size": 59297,
+          "sha256": "bf0765985dd3ecbc3118c6746d137879a07e45c9603854d49ce1f71457b08d99",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/reprojection_preview_16.png",
+          "size": 57783,
+          "sha256": "17eddb9506cd1a65aab8efa2262c5204dfd8b7863474197b828f11c668d7f288",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/single-image-skill-forward-test/给人看/reprojection_preview_8.png",
+          "size": 59047,
+          "sha256": "601204bcb115d3acbde5f3aa4dca7b5b8244fae2e461d4d256f79c270ae04368",
+          "remove_local_after_verification": true
+        }
+      ],
+      "archive": "single-image-forward-test.tar.gz",
+      "archive_size": 3723687,
+      "archive_sha256": "90e44122e53697b47de77c5ba98db0eb0097f7bb355cde27df7e1162c10acbac",
+      "archive_md5": "fa3bc830d9a41faa9f3aa42e3f9f7af3",
+      "verified_at": "2026-09-05T09:55:38.742596+00:00",
+      "verification": "remote_size_md5_and_downloaded_sha256",
+      "remote_manifest_uploaded": true,
+      "local_files_removed": 29,
+      "local_bytes_freed": 3766907,
+      "changed_files_preserved": [],
+      "retained_text_files_restored_after_external_tmp_removal": [
+        "tmp/single-image-skill-forward-test/REPORT.md",
+        "tmp/single-image-skill-forward-test/index.html",
+        "tmp/single-image-skill-forward-test/landmarks.json",
+        "tmp/single-image-skill-forward-test/verification.json",
+        "tmp/single-image-skill-forward-test/机器文件/camera_path.json",
+        "tmp/single-image-skill-forward-test/机器文件/depth_provenance.json",
+        "tmp/single-image-skill-forward-test/机器文件/point_cloud_preview.json"
+      ]
+    },
+    {
+      "id": "single-image-preflight-5s",
+      "source": "output/单图可控视频_Demo/机器文件/preflight_5s_controls",
+      "remote": "gdrive:AI-短剧归档/单图可控视频_Demo/历史验收/2026-09-05/5秒预检",
+      "reason": "被15秒方案替代的5秒预检",
+      "status": "archived",
+      "files": [
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/camera_path.json",
+          "size": 26064,
+          "sha256": "4e549146264d2c690d12c5408acfa60ebfb852f646ce1717efd2675fe065760c",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/coverage_mask.mp4",
+          "size": 230663,
+          "sha256": "1e6c3b2c3e9ce47c48e41c47339907e39d5abb86527104982d83d11982f11382",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/depth_control.mp4",
+          "size": 316263,
+          "sha256": "9103211329433e6f38f2f52bee5a4596fa8ab433e3b6bd62cb9c77f76e908e93",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/frames/depth_030.png",
+          "size": 33437,
+          "sha256": "7b359c96b8030fdada2d776c05c7037daa219b3f0835234dcb0042ba820a66c3",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/frames/depth_060.png",
+          "size": 35801,
+          "sha256": "704a489d47edb6a2ecbb8777948fc8f45496b8be35d337fd36bb4e1db55bbac0",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/frames/depth_120.png",
+          "size": 32513,
+          "sha256": "9418ae87c546396a3d1b7a7380f6d2e4a32b213d9240547c6486bac2676db06f",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/frames/rgb_030.png",
+          "size": 802293,
+          "sha256": "e78a5e4656135b12e6967c06cf38c527b5568e72fbc2258d863128eb039e39ac",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/frames/rgb_060.png",
+          "size": 782898,
+          "sha256": "901e63cf80a7a2896c217b6fd2c72dc6781c34ed3843c35b8f212a7de9b5bb46",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/frames/rgb_120.png",
+          "size": 760448,
+          "sha256": "1f1c113f38aaa9d4643f3c98f867a1cf71582b060d1971cb7974978a7037a7d9",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/reprojection_preview.mp4",
+          "size": 2109888,
+          "sha256": "65d06efbde9615c55bc7777402edebf0ecb9b84e0ee4abe312e33f14bf253a02",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/review_control.md",
+          "size": 5236,
+          "sha256": "ef45381ce6b6de71e2bbd3c285e65c59c9f647c18e8a13c0f9842394fbe86682",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/shot_cards.json",
+          "size": 2882,
+          "sha256": "d009ab346a81a7b017c82918f1d45587509facd42ac17299205fbd2d1af90b46",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "output/单图可控视频_Demo/机器文件/preflight_5s_controls/video_jobs.json",
+          "size": 2198,
+          "sha256": "1a7748de938301106fab87e5a35378762f871f1ad879116a4f2bf536038595af",
+          "remove_local_after_verification": false
+        }
+      ],
+      "archive": "single-image-preflight-5s.tar.gz",
+      "archive_size": 5114660,
+      "archive_sha256": "a1ea56e76a7654608282abfbea363e4468fa8c81cec33c782beda4c90ba5ff81",
+      "archive_md5": "5422676742061faba82036f902d0d89b",
+      "verification": "remote_size_md5_sha256",
+      "verified_at": "2026-09-05T09:59:00.280508+00:00",
+      "drive_file_id": "1UTcMBy8rai7HqR5Z3xltOWfIF6fju9IM",
+      "remote_manifest_uploaded": true,
+      "local_files_removed": 9,
+      "local_bytes_freed": 5104204,
+      "changed_files_preserved": []
+    },
+    {
+      "id": "website-verification",
+      "source": "tmp/web-project-verification",
+      "remote": "gdrive:AI-短剧归档/网站/历史验收/2026-09-05",
+      "reason": "已上线网站的验收截图和发布快照",
+      "status": "archived",
+      "files": [
+        {
+          "path": "tmp/web-project-verification/REVIEW.md",
+          "size": 2515,
+          "sha256": "65f627f256babb4f3d341b75898ceb06e3bb45bc39bb279c2e507d9d5723c23f",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/browser.cjs",
+          "size": 6602,
+          "sha256": "38c9d4ad78c6aa06d8704eb00a12c5846da44bf6b4748dc49559027c5618ed53",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/deploy_release.py",
+          "size": 1625,
+          "sha256": "f6032fd50d3ff5293415a6fe876476c8884e5babed206844e5baa00102eecc86",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/image-approval.png",
+          "size": 229874,
+          "sha256": "7ba7368c0877324d327e7b24f1ccb09b8329104099f13be5ec90400b96e2c1b0",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/web-project-verification/live_smoke.py",
+          "size": 1632,
+          "sha256": "1a81f04a3ae991549a7d0dad105b8d61fd12030110aba6cd530d26db132c9d3d",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/mobile.png",
+          "size": 185058,
+          "sha256": "273fce6ca65d86a408c53fae259f64edce7af77b85bead1c3afa77c7763bb1e0",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/web-project-verification/prepare_release.py",
+          "size": 1380,
+          "sha256": "c262c2a451d44e5f6491701ce74f3f3394cb78b99e1c9039a8938c9ace2ae93b",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/project-setup.png",
+          "size": 124917,
+          "sha256": "1b569a9eb74852826a81e946969a7671f37230fdb4cca77954a5e63c634895d2",
+          "remove_local_after_verification": true
+        },
+        {
+          "path": "tmp/web-project-verification/real_text_smoke.py",
+          "size": 1380,
+          "sha256": "a9fcb3e579fd37a664bd8e559b85697d4c3d4f86d0d321b0abd000acd1dde4b9",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/release-manifest.json",
+          "size": 2013,
+          "sha256": "7c90aa84b4c0599249d95bf0da7f400becc7307987c4b837fba6d1f15fea45f9",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/serve.py",
+          "size": 1242,
+          "sha256": "5b37e88bb09f6dad559e23b00978fbdaf44d27234610c1bf9f4626de2b573136",
+          "remove_local_after_verification": false
+        },
+        {
+          "path": "tmp/web-project-verification/website-update.tar.gz",
+          "size": 63421,
+          "sha256": "84cff72eb45b62c7a5230f09dbfc5236e6269f60d9c829849acb646e5d15912e",
+          "remove_local_after_verification": true
+        }
+      ],
+      "archive": "website-verification.tar.gz",
+      "archive_size": 589841,
+      "archive_sha256": "71ebf876ce2db15ef22c10a069b8c902b3fd2b0b4607da7999097f74f0c273ac",
+      "archive_md5": "24866b053607f4e5eb3697dac46f4e7b",
+      "verification": "downloaded_archive_size_sha256",
+      "verified_at": "2026-09-05T10:03:48.960172+00:00",
+      "retained_text_files_restored_after_external_tmp_removal": [
+        "tmp/web-project-verification/REVIEW.md",
+        "tmp/web-project-verification/browser.cjs",
+        "tmp/web-project-verification/deploy_release.py",
+        "tmp/web-project-verification/live_smoke.py",
+        "tmp/web-project-verification/prepare_release.py",
+        "tmp/web-project-verification/real_text_smoke.py",
+        "tmp/web-project-verification/release-manifest.json",
+        "tmp/web-project-verification/serve.py"
+      ],
+      "remote_manifest_uploaded": true,
+      "local_files_removed": 0,
+      "local_bytes_freed": 0,
+      "already_missing_before_cleanup": [
+        "tmp/web-project-verification/image-approval.png",
+        "tmp/web-project-verification/mobile.png",
+        "tmp/web-project-verification/project-setup.png",
+        "tmp/web-project-verification/website-update.tar.gz"
+      ],
+      "changed_files_preserved": []
+    }
+  ]
+}

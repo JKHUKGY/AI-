@@ -1,0 +1,77 @@
+{
+  "agent_id": "/root/review_keyframes_continuity",
+  "review_scope": "独立连续性/身份/场景/道具/批准景别复核；未读取R1报告",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png"
+  ],
+  "source_files": [
+    "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/keyframe_cards_before_batch01_retry.json",
+    "output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "身份、灰蓝衬衫/旧白裙灰围裙、大橄榄包、右手深灰箱/左手地址纸、A机位左玻璃右车道均与基准一致。母亲缩到右远层，灰衫男中央、蓝裙女左、米色衫背包男右共3名旅客齐全，原文的陌生机场与走近关系成立。唯一明确不符为批准全景的主体比例：江砚头顶约画高26%，鞋底约85%，全身约占59%，明显超过卡片subject_frac=0.4。脚下约15%的留白正确。",
+      "fix_instruction": "保留已正确的身份、道具、母亲远距和三旅客；按批准全景把江砚全身调整为画高约40%，头脚完整，脚下仍留约15%，增加上部环境，不把母亲拉到前景。",
+      "card_field": "framing.subject_frac; framing.crop_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "母子身份服装与箱包未漂移，江砚右前景侧背虚焦，苏慧左侧面朝右，3旅客可见。但画面仍是A机位左玻璃墙、右车道，苏慧被移到了玻璃墙一侧，未采用批准B反打应有的左侧白小巴/黄车、右上挑檐布局。因此镜17→18只是换了母子屏幕位置，环境未反打，造成二人在场地侧别跳换。母亲全身可见，未把她误判为近端人物裁切违规；近端江砚大腿被画底截断。",
+      "fix_instruction": "核查参考装配让B反打底板控制机位，保留主帧只作身份/道具状态参考；明确左车队、右上挑檐，母亲左中远景朝右，儿子右前景侧背虚焦；保留3旅客在更远层。",
+      "card_field": "plate_image; camera_zh; framing.plate_crop_zh; background_people",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "江砚身份、衣服、包的磨旧帆布外观和左右手持物连续，母亲与旅客按present_off_frame离画合理。A机位结构正确。但批准胸上近景实际从头顶一直看到大腿，衬衫下摆、右前臂和箱拉杆完整入画；人物接近侧面而非明确的三分之四正面，两肩带也未清楚同时可见。主体头顶约12%而不是约5%，下方保留大量通道。",
+      "fix_instruction": "按批准卡重构胸上景别：底边切胸口下缘，腰腿和箱杆留在画外；脸与胸略转向相机形成三分之四正面，同时眼神仍看画面右侧，两条肩带在胸上区域清楚；地址纸仅于胸下边缘可见。保持A紧底板机位。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[0].camera_relation; beat_zh",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "苏慧脸、白发髻、旧白裙灰围裙与基准相符，江砚仍背橄榄包，未提前交接。明确错误有：仍沿用A的左玻璃右车道，非B紧反打；苏慧从头到长裙下段入画，属中/全身裁切而非胸上近景；右前景江砚占约半幅宽，非卡片约15%；已列present_off_frame的灰衫旅客仍在中间清楚出现。与17/19相比，母子仅在相同A环境内对调位置，场地关系跳变。",
+      "fix_instruction": "使用B紧底板控制背景左白小巴/黄出租车及右上挑檐；把苏慧胸上三分之四正面作为左中主体，画底切胸口下缘；江砚只留右边约15%的虚焦后肩发丝及包带；按已批准裁切让3旅客处于画外，母亲双手未触包。",
+      "card_field": "plate_image; camera_zh; framing.crop_zh; framing.plate_crop_zh; background_people[0].posture_zh; present_off_frame",
+      "proposed_file": ""
+    }
+  ],
+  "scene_review": {
+    "verdict": "fail",
+    "identity_costume_props": "四镜身份和主要服装、橄榄包与深灰箱连续；箱包未提前转移，纸条与箱杆左右手一致。",
+    "people_presence": "17/18三旅客齐全；19按裁切全在画外；20却把应在画外的灰衫旅客置于显著中景。",
+    "spatial_axis": "18与20未真正使用B反打。它们沿用A的左玻璃右车道，却交换母子左右，导致苏慧从车道侧跳到玻璃侧、江砚反向跳位。",
+    "light": "四镜均暖日光与挑檐阴影，无昼夜/色温跳变；18/20机位错误导致阴影侧与批准B板不符，属机位根因。",
+    "framing": "17完整全景但人物约59%高而非40%；19/20胸上近景均失败。18近端人物裁切大体成立，主要阻碍是错机位。",
+    "recommendation": "修正源卡/参考组合后机械装配重出，不改变已批准故事、角色与道具设计。"
+  },
+  "source_card_version": "首轮原批准卡快照；已复核与审查开始时读取字段一致，不以第二轮澄清字段追溯加严。"
+}

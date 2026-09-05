@@ -7,6 +7,7 @@ function parseHash() {
   if (parts[0] === 'p' && parts[1]) {
     const project = decodeURIComponent(parts[1]);
     const section = parts[2] || 'characters';
+    if (section === 'setup') return { name: 'setup', project };
     if (section === 'characters') return { name: 'characters', project };
     if (section === 'scenes') return { name: 'scenes', project };
     if (section === 'style') return { name: 'style', project };
@@ -23,6 +24,7 @@ function navHtml(route) {
   const items = [['#/guide', '指南', route.name === 'guide']];
   if (route.project) {
     const p = encodeURIComponent(route.project);
+    items.push([`#/p/${p}/setup`, '项目筹备', route.name === 'setup']);
     items.push([`#/p/${p}/characters`, '人物', route.name === 'characters']);
     items.push([`#/p/${p}/scenes`, '场景', route.name === 'scenes']);
     items.push([`#/p/${p}/style`, '风格简报', route.name === 'style']);
@@ -46,6 +48,7 @@ async function render() {
   app.innerHTML = '<div class="empty-hint">加载中…</div>';
   try {
     if (route.name === 'home') await Views.home(app);
+    else if (route.name === 'setup') await Views.setup(app, route.project);
     else if (route.name === 'guide') await Views.guide(app);
     else if (route.name === 'inbox') await Views.inbox(app);
     else if (route.name === 'characters') await Views.characters(app, route.project);
@@ -64,6 +67,8 @@ async function initAuthBar() {
   try {
     const me = await API.me();
     currentUser = me;
+    TaskUI.init();
+    HelpUI.init(me.username);
     document.getElementById('whoami').textContent = `已登录：${me.display_name}`;
     const logoutBtn = document.getElementById('logoutBtn');
     logoutBtn.hidden = false;

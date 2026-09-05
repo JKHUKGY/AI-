@@ -1,0 +1,59 @@
+{
+  "agent_id": "/root/review_keyframes_batch02_single",
+  "review_scope": "独立单图审查：原剧本、当前批准镜头卡、人物基准与对应机位/主帧；未读取其他审查者报告",
+  "status": "completed",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜22",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "verdict": "fail",
+      "reason": "江砚右前景背面、苏慧左侧待接和包仍在肩上的动作起点正确，背景三旅客和B向车道基本正确。但画幅下端可见江砚膝盖以下与苏慧全身双脚，中景漂为全景；江砚靠镜头可见左臂连到扶箱的手，未按右手扶箱/左手收纸。",
+      "fix_instruction": "按近端江砚大腿中段截止重新取中景；保持包仍在双肩与苏慧双手待接；江砚右手扶箱，左手在衣袋口收地址纸，明确两臂连接。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[江砚].action_zh"
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份、双肩无包带、朝母亲白发的关切目光与A向玻璃幕墙成立；但画幅从头拍至腰胯、肘部完整，脸约占画高四分之一，明显不是胸上近景，苏慧前景过肩占比过大。背景另有蓝衣/灰衣旅客进入画面，与卡的画外安排不符。低于胸口的箱和包不要求可见。",
+      "fix_instruction": "将镜头改为紧密胸像，底边切在胸口，发顶至下颏接近画高一半，母亲仅右侧窄幅白发和背肩；旅客保持画外，箱包均不为展示而拉远景别。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[苏慧].posture_zh; present_off_frame"
+    },
+    {
+      "id": "ep01_镜24",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、勉强笑意和右手抬至眼角、江砚无包带基本成立；但实际为腰上中近景，连围裙腰带、左手和包顶都入画。机位明确错为左侧玻璃幕墙与左上挑檐的A向背景，卡要求B反打紧底板的左车队、右上挑檐。背景旅客进入画面也不符合画外安排。",
+      "fix_instruction": "先确保使用SC06_B反打_紧底板并执行B机位，保留苏慧左、江砚右的正反打人物分配；取胸上紧密胸像，只保留右手眼角动作，左手箱包在画外，旅客不入此构图。",
+      "card_field": "plate_image; camera_zh; framing.crop_zh; framing.plate_crop_zh; present_off_frame"
+    },
+    {
+      "id": "ep01_镜25",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+      "verdict": "fail",
+      "reason": "全景头脚完整、江砚左近苏慧右中、侧背面朝停车区迈步、江砚双肩空且右手扶深灰箱均成立，A向玻璃/车道和日光一致。但苏慧背面画面右侧的右臂清楚连接到提登山包的手，包在身体右侧，违背本镜及交接后状态的左手提包。包体较a2主帧显著缩小，呈短款日用背包，原大登山包体积连续性不足。",
+      "fix_instruction": "保留全景和两人离开的走位；苏慧左手提同一只大橄榄色登山包于左腿旁，右手空着自然摆动，让背面左肩—左肘—左手到提手的连接清楚。用a2主帧固定包的大小、翻盖与双扣结构。",
+      "card_field": "people[苏慧].action_zh; props_zh; scene_beats[ep01_a3].state_zh"
+    }
+  ],
+  "proposed_files": [],
+  "summary": {
+    "reviewed": 4,
+    "pass": 0,
+    "fail": 4
+  }
+}

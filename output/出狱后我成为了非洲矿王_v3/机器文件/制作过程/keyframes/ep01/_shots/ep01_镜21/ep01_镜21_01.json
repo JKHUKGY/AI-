@@ -1,0 +1,32 @@
+{
+  "id": "ep01_镜21",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070e2-cdc3-7790-b6bf-ae4d36bcd673/exec-8288553b-da5e-457c-b50d-3aabf1557a25.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_edits_round2_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_a.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_continuity.json",
+      "id": "ep01_镜21",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+      "verdict": "fail",
+      "reason": "江砚脸型、灰蓝衬衫、双肩橄榄包带、朝右看母亲的克制心疼，以及左玻璃/右车道的机场A方向均延续原00和a1主帧。取景仍未完成：头顶留白约18%，发顶至下颏约36%，底边达胸袋以下；苏慧后肩在下部占约四成画宽，仍是一块明显肩背而非10%至15%的窄边。不是几百分点估算误差，脸部叙事近景和原批准胸上边界仍明显不足。",
+      "fix_instruction": "同镜局部重取景，把头顶留白压到约5%、发顶到下颏放大到约一半画高，下缘截胸口；母亲主体继续移到画外，只留右缘窄发丝及肩弧。保留双肩包带与当前表情、机场A方向。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_single.json",
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+      "verdict": "fail",
+      "reason": "身份、看母亲的方向及双肩包带保留，机场A机位成立；但发顶约18%留白而非5%，头高约36%而非约50%，胸下大片衬衫仍入画；苏慧右下肩背宽约40%，超过10–15%窄边缘。局部编辑改善了原图但未达到批准裁切。",
+      "correction_zh": "继续按计划收紧至发顶5%、头高约50%、胸口截断，保持江砚脸及包带；苏慧只保留右边界10–15%的虚焦发丝后肩窄弧，背部及手臂主体留在右框外。"
+    }
+  ],
+  "review_zh": "江砚脸型、灰蓝衬衫、双肩橄榄包带、朝右看母亲的克制心疼，以及左玻璃/右车道的机场A方向均延续原00和a1主帧。取景仍未完成：头顶留白约18%，发顶至下颏约36%，底边达胸袋以下；苏慧后肩在下部占约四成画宽，仍是一块明显肩背而非10%至15%的窄边。不是几百分点估算误差，脸部叙事近景和原批准胸上边界仍明显不足。；身份、看母亲的方向及双肩包带保留，机场A机位成立；但发顶约18%留白而非5%，头高约36%而非约50%，胸下大片衬衫仍入画；苏慧右下肩背宽约40%，超过10–15%窄边缘。局部编辑改善了原图但未达到批准裁切。"
+}

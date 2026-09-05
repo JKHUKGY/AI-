@@ -1,0 +1,32 @@
+[
+  {
+    "name": "near right boxes",
+    "xy": [
+      116,
+      166
+    ],
+    "inverse_depth": 0.37949523716807954,
+    "assumed_z": 1.5885743703140889,
+    "predicted_tail_dx": -5.183834467333449
+  },
+  {
+    "name": "middle desk front",
+    "xy": [
+      49,
+      162
+    ],
+    "inverse_depth": 0.3437003589914954,
+    "assumed_z": 1.6843513480414194,
+    "predicted_tail_dx": -4.889066989694482
+  },
+  {
+    "name": "rear wall map",
+    "xy": [
+      63,
+      86
+    ],
+    "inverse_depth": 0.25894836211720235,
+    "assumed_z": 1.9648358741936898,
+    "predicted_tail_dx": -4.191142213410607
+  }
+]

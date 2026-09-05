@@ -1,0 +1,39 @@
+{
+  "id": "ep01_镜25",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070bc-9f32-7641-bdc2-b805f6ba50f5/exec-db96f558-fe38-446d-92ef-6a2792b99c11.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_continuity.json",
+      "id": "ep01_镜25",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "母子侧背向停车区离开的关系、江砚双肩空且右手拉深灰箱、A机位与三名旅客成立。但苏慧从背面可见的右肩—右前臂—右手连贯地提橄榄包，和卡片左手提包冲突，接镜24会发生换手。江砚全身约58%画高（头顶约26%、鞋底85%），明显大于全景设计40%。",
+      "fix_instruction": "让苏慧左手提包，右手自然空垂并保持侧背走向；将主角人物尺度降至全景40%，保持头脚完整和脚下约15%地面，右手拉箱不变。",
+      "card_field": [
+        "people[1].action_zh",
+        "scene_beats[ep01_a3].state_zh",
+        "framing.subject_frac",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch02_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_single.json",
+      "id": "ep01_镜25",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+      "verdict": "fail",
+      "reason": "全景头脚完整、江砚左近苏慧右中、侧背面朝停车区迈步、江砚双肩空且右手扶深灰箱均成立，A向玻璃/车道和日光一致。但苏慧背面画面右侧的右臂清楚连接到提登山包的手，包在身体右侧，违背本镜及交接后状态的左手提包。包体较a2主帧显著缩小，呈短款日用背包，原大登山包体积连续性不足。",
+      "fix_instruction": "保留全景和两人离开的走位；苏慧左手提同一只大橄榄色登山包于左腿旁，右手空着自然摆动，让背面左肩—左肘—左手到提手的连接清楚。用a2主帧固定包的大小、翻盖与双扣结构。",
+      "card_field": "people[苏慧].action_zh; props_zh; scene_beats[ep01_a3].state_zh"
+    }
+  ],
+  "review_zh": "母子侧背向停车区离开的关系、江砚双肩空且右手拉深灰箱、A机位与三名旅客成立。但苏慧从背面可见的右肩—右前臂—右手连贯地提橄榄包，和卡片左手提包冲突，接镜24会发生换手。江砚全身约58%画高（头顶约26%、鞋底85%），明显大于全景设计40%。；全景头脚完整、江砚左近苏慧右中、侧背面朝停车区迈步、江砚双肩空且右手扶深灰箱均成立，A向玻璃/车道和日光一致。但苏慧背面画面右侧的右臂清楚连接到提登山包的手，包在身体右侧，违背本镜及交接后状态的左手提包。包体较a2主帧显著缩小，呈短款日用背包，原大登山包体积连续性不足。",
+  "generator_agent_id": "/root/generate_keyframes_batch02_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch02_b.json"
+}

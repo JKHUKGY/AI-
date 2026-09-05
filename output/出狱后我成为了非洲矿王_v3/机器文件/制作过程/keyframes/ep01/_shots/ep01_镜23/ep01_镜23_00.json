@@ -1,0 +1,38 @@
+{
+  "id": "ep01_镜23",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070bb-cf89-76b1-9bbf-6af69bacb473/exec-8f8665f6-36e2-4be2-9aa7-5c27b9ddec91.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_round3_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_continuity.json",
+      "id": "ep01_镜23",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "round": 1,
+      "verdict": "fail",
+      "reason": "江砚身份与灰蓝衬衫、无肩带、望母亲白发成立；A机位左玻璃的方向和光线连续。下边缘露到衬衫下摆/腰腹，脸仅约25%画高，母亲右前景占约45%画幅且头肩大块入镜；不符合胸上、脸约50%、过肩约15%。箱与包持手在画外，不据此判丢失。",
+      "fix_instruction": "按胸像边界重新取景：头顶约5%、脸高约50%、下边缘胸口；母亲只留右侧约15%虚焦白发与侧背肩，保持江砚双肩空。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch02_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch02_single.json",
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份、双肩无包带、朝母亲白发的关切目光与A向玻璃幕墙成立；但画幅从头拍至腰胯、肘部完整，脸约占画高四分之一，明显不是胸上近景，苏慧前景过肩占比过大。背景另有蓝衣/灰衣旅客进入画面，与卡的画外安排不符。低于胸口的箱和包不要求可见。",
+      "fix_instruction": "将镜头改为紧密胸像，底边切在胸口，发顶至下颏接近画高一半，母亲仅右侧窄幅白发和背肩；旅客保持画外，箱包均不为展示而拉远景别。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; background_people[苏慧].posture_zh; present_off_frame"
+    }
+  ],
+  "review_zh": "江砚身份与灰蓝衬衫、无肩带、望母亲白发成立；A机位左玻璃的方向和光线连续。下边缘露到衬衫下摆/腰腹，脸仅约25%画高，母亲右前景占约45%画幅且头肩大块入镜；不符合胸上、脸约50%、过肩约15%。箱与包持手在画外，不据此判丢失。；江砚身份、双肩无包带、朝母亲白发的关切目光与A向玻璃幕墙成立；但画幅从头拍至腰胯、肘部完整，脸约占画高四分之一，明显不是胸上近景，苏慧前景过肩占比过大。背景另有蓝衣/灰衣旅客进入画面，与卡的画外安排不符。低于胸口的箱和包不要求可见。",
+  "generator_agent_id": "/root/generate_keyframes_batch02_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch02_a.json"
+}

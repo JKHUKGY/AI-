@@ -1,0 +1,32 @@
+{
+  "id": "ep01_镜23",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070e2-cdc3-7790-b6bf-ae4d36bcd673/exec-d822d820-285f-48ca-bf60-1a6fd35ab87a.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_edits_round2_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_a.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_continuity.json",
+      "id": "ep01_镜23",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+      "verdict": "fail",
+      "reason": "江砚仍是基准黑短发、灰蓝衬衫、空肩无包带，向右看母亲；脸和机场玻璃背景承接本镜00与a2状态，没有包重新回肩的连戏错误。头顶留白约15%，头部约35%画高，苏慧下部肩背约四成画宽。画面保留完整胸袋以下的躯干与大块前景肩背，仍未达到已批准头部约50%、胸口截止和窄肩缘的取景。",
+      "fix_instruction": "继续同镜局部放大与上移，压掉顶空、胸袋下方躯干，把苏慧头背移到右框外，仅保留10%至15%肩缘；保留当前无包带状态、视线和原机场机位。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_single.json",
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+      "verdict": "fail",
+      "reason": "双肩空着、身份和看母亲的方向正确；但发顶约15%留白、头高约35%，完整胸袋及胸下躯干入画，右下母亲肩背近40%宽；两名背景旅客仍明显可见，与本镜画外声明不合。",
+      "correction_zh": "按本报告next_round_plans给出的同镜框收紧，发顶留5%、头高约50%、胸口截断；右缘保留10–15%虚焦发丝后肩，背景只随原画面裁取，不复制被裁出的人员或家具。"
+    }
+  ],
+  "review_zh": "江砚仍是基准黑短发、灰蓝衬衫、空肩无包带，向右看母亲；脸和机场玻璃背景承接本镜00与a2状态，没有包重新回肩的连戏错误。头顶留白约15%，头部约35%画高，苏慧下部肩背约四成画宽。画面保留完整胸袋以下的躯干与大块前景肩背，仍未达到已批准头部约50%、胸口截止和窄肩缘的取景。；双肩空着、身份和看母亲的方向正确；但发顶约15%留白、头高约35%，完整胸袋及胸下躯干入画，右下母亲肩背近40%宽；两名背景旅客仍明显可见，与本镜画外声明不合。"
+}

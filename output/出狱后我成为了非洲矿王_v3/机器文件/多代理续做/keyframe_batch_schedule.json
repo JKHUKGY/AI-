@@ -1,0 +1,62 @@
+{
+  "approved": true,
+  "max_active_units": 4,
+  "active_group": [
+    2,
+    3,
+    15,
+    16
+  ],
+  "selected": [
+    19
+  ],
+  "remaining_first_round_groups": [],
+  "blocked_shots": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "builder": "机器文件/build_keyframe_jobs.py",
+  "capped": [
+    17,
+    18,
+    20
+  ],
+  "pending_retry": [
+    34
+  ],
+  "next_groups": [
+    [
+      22,
+      24,
+      25,
+      35
+    ]
+  ],
+  "third_round_ready": [
+    9,
+    14,
+    21,
+    23,
+    36,
+    37
+  ],
+  "third_round_need_plan": [
+    1,
+    38
+  ]
+}

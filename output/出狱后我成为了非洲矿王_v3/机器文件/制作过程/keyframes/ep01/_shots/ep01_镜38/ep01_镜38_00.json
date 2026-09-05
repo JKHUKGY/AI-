@@ -1,0 +1,41 @@
+{
+  "id": "ep01_镜38",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070cf-e1e0-71c3-a8ba-e8c0bd37ee15/exec-f9dbd328-7614-4015-8bb0-c37c88c7be23.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/resume_review_room_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch03_resume_continuity.json",
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+      "verdict": "fail",
+      "reason": "江砚坐在左床沿望向母亲，表情心酸克制，衣服身份和两人留在日间房内与37连续。北窗仍是黑框日光；灯位置受人物遮挡，不据遮挡判亮灯。画面实际拍至江砚大腿、双前臂和手，头顶留白约23%，脸含发顶到下颏约20%画高，远低于卡片约50%；苏慧整个后脑、后背和腰占右半，非约15%窄边虚焦过肩。作为结尾近景，本图比37还稍松，不能满足胸上构图。",
+      "fix_instruction": "保持A机位、江砚左侧坐姿朝右看母亲及既有日光，将主体放大到头顶约5%、脸含发顶到下颏约50%画高、下边缘胸口截断；母亲仅最右约15%虚焦发丝与后肩窄边，手、腰、腿均在画框外，不改变剧情动作。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[苏慧].posture_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/resume_review_room_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch03_resume_single.json",
+      "id": "ep01_镜38",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份服装正确，坐床沿望右上母亲，神情心酸克制；日间北窗和两人所在关系可辨，无多余人物。主要问题为取景拉远至完整腰腹、前臂、手和大腿，头顶留白约23%，脸含发顶至下颏约20%；苏慧右侧大半身占画宽约一半，非批准的胸上紧像和约15%窄过肩。",
+      "fix_instruction": "保持江砚坐床沿、抬眼望母亲及颈部放松的起点，镜头收至胸口下边界，头顶留约5%，脸含发顶至下颏约占50%；母亲仅保留最右缘虚焦发丝及后肩约15%，腰、手、大腿均在画外。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    }
+  ],
+  "review_zh": "江砚坐在左床沿望向母亲，表情心酸克制，衣服身份和两人留在日间房内与37连续。北窗仍是黑框日光；灯位置受人物遮挡，不据遮挡判亮灯。画面实际拍至江砚大腿、双前臂和手，头顶留白约23%，脸含发顶到下颏约20%画高，远低于卡片约50%；苏慧整个后脑、后背和腰占右半，非约15%窄边虚焦过肩。作为结尾近景，本图比37还稍松，不能满足胸上构图。；江砚身份服装正确，坐床沿望右上母亲，神情心酸克制；日间北窗和两人所在关系可辨，无多余人物。主要问题为取景拉远至完整腰腹、前臂、手和大腿，头顶留白约23%，脸含发顶至下颏约20%；苏慧右侧大半身占画宽约一半，非批准的胸上紧像和约15%窄过肩。",
+  "generator_agent_id": "/root/resume_generate_38",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch03_resume38.json"
+}

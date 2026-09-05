@@ -1,0 +1,111 @@
+{
+  "agent_id": "/root/review_keyframes_batch05_continuity",
+  "role": "Reviewer B",
+  "review_scope": "基准身份、空间、道具和14→15→16连戏；34离场四人状态",
+  "status": "completed",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜14",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "江砚脸型、灰蓝衬衫、左瓶右白盖与陈野棕外套保持；门后院内树与建筑符合A向。但主角头顶约21%留白、下缘切到腰胯，陈野过肩占左侧接近半幅，违背5%顶空、胸下切断及约15%过肩；本镜反转近景没有落实。",
+      "fix_instruction": "保持身份、门外位置及左瓶右盖状态；按主卡裁成江砚胸上近景，头顶5%，陈野仅保留左侧15%虚焦肩缘，画外手/瓶不必强露。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "background_people[0].posture_zh"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "正反打左右转换与角色衣着正确，左手瓶/右手白盖可见。但两人明显站在门扇和门槛近相机一侧的院内水泥地，门外红土在他们身后，违背始终在门外。江砚头顶约15%顶空，非5%；陈野双臂下垂，右手未体现将拍大腿的起始姿态。瓶口呈白色封盖状，与手中又有白盖形成疑点。",
+      "fix_instruction": "在B机位保持两人位于门槛远侧红土地，门扇边框位于前景；头顶留5%并截断大腿中段；陈野右肘稍屈、右手悬在大腿前上方，左手自然垂下；瓶口明确开放、白盖仅在江砚右手。",
+      "card_field": [
+        "people[].posture_zh",
+        "framing.crop_zh",
+        "people[1].action_zh",
+        "people[0].action_zh"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "A机位左车右江砚、门外红土、正午硬光与两人身份衣着均吻合；江砚仍站原对话位置向车，不把上车终点抢先画出，持瓶手序也无可见反转。问题在全景比例：江砚头至鞋约43%，陈野约61%，近端人物明显超过40%全身目标；江砚脚下余地约29%，陈野约10%，未落实约15%脚下地面与中央偏下全景主体的组合。",
+      "fix_instruction": "保持A机位门外走位和上车前状态，按full_body约40%从头至鞋量人，缩小陈野的前景放大程度并将主体群放至脚下约15%留白的区域，保留适度近远差而非让前景人占六成画高。",
+      "card_field": [
+        "framing.subject_frac",
+        "framing.crop_zh",
+        "people[1].depth"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "四人齐全，母子朝A左侧通道，刘兰仍坐右后北段举指甲、顾瑶坐右前南段刷手机，身份衣着、吊灯泳池沙发和混合日光基本延续。苏慧近侧左手拎包、远侧右手扶肩可辨，符合卡；但江砚显示左侧面，近侧左臂一直连到握箱杆的手，箱子改由左手拉，违背右手持箱且江砚应三分之四侧背。登山包从手到包底仅约苏慧身高四分之一，比机场选定大包约三分之一身高明显缩小。",
+      "fix_instruction": "保持四人、沙发座位与离场方向，江砚再转为三分之四侧背，右臂明确连到右手箱杆，左臂空手；苏慧仍左手提包右手扶肩，将包恢复选定机场大橄榄登山包的体积和长翻盖轮廓，包底落至小腿区域。",
+      "card_field": [
+        "people[0].camera_relation",
+        "people[0].action_zh",
+        "people[1].action_zh",
+        "props_zh"
+      ],
+      "proposed_file": ""
+    }
+  ],
+  "scene_review": [
+    {
+      "scene": "SC05",
+      "shots": [
+        14,
+        15,
+        16
+      ],
+      "verdict": "fail",
+      "reason": "三镜身份、服饰、正午光和正反打左右连续；14门外→15门内→16门外造成站位跳变，15瓶口盖合疑点破坏饮后未拧盖状态。14近景裁切未落实，16前景人物比例过大。"
+    },
+    {
+      "scene": "SC01",
+      "shots": [
+        34
+      ],
+      "verdict": "fail",
+      "reason": "在场四人没有消失，沙发北刘兰南顾瑶正确，苏慧扶肩离场起点成立；江砚换成左手拉箱、登山包相对已选机场母子同道具基准缩小，需修正。"
+    }
+  ],
+  "actual_viewed_image_count": 14,
+  "source_card_note": "ep01_p5 beat blocking仍含江砚已站车门外一步的旧文字，而state_zh和镜16卡明确仍在原对话位；此次以明确镜16卡/state审查，没有把旧blocking动作终点新增为条件。",
+  "completed_at": "2026-09-05T09:20:40.396792+00:00"
+}

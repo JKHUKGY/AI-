@@ -1,0 +1,10 @@
+{
+  "id": "master_ep01_r2",
+  "round": 3,
+  "candidate": 4,
+  "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-cc6877c8-ad37-4f7d-9b5b-477cbfca4761.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_04.png",
+  "status": "alternate",
+  "reviewed": true,
+  "review_zh": "门状态和大包体积修正，人物站坐与道具位置可用；选05作为统一主帧，本张保留备选。"
+}

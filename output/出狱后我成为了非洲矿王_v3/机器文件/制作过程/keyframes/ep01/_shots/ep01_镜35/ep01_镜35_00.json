@@ -1,0 +1,42 @@
+{
+  "id": "ep01_镜35",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070c2-816b-7d02-bc43-290a5bc818a3/exec-533379ca-7184-4f3e-9fdd-44ac837c227d.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/resume_review_room_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch03_resume_continuity.json",
+      "id": "ep01_镜35",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+      "verdict": "fail",
+      "reason": "实际为近乎全身双人画面，江砚鞋底、苏慧双脚及大量地面均可见，江砚头顶留白约11%，不符中景大腿中段裁切/约5%头顶。苏慧朝右三分之四正面，近相机的右臂垂下提包，远侧左手扶门；江砚背向相机的画面左侧手扶箱，即人物左手，均与卡片规定的苏慧左手提包/右手扶门、江砚右手扶箱相反。门确实半开，左空桌右床方向及人物身份、衣服、大橄榄包和竖棱灰箱材质可衔接；没有额外行李。",
+      "fix_instruction": "保持B机位、门半开和空桌，把镜头收至江砚头顶留约5%且下缘切在大腿中段；将扶箱动作交给江砚解剖学右手；苏慧解剖学左手提大橄榄包、右手触身后门扇，手臂归属明确。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[江砚].action_zh",
+        "people[苏慧].action_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/resume_review_room_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch03_resume_single.json",
+      "id": "ep01_镜35",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+      "verdict": "fail",
+      "reason": "门半开、左桌空、右床及两人身份服装符合；但画面完整显示江砚双膝和鞋、苏慧双脚，偏全身而非卡片大腿中段截断的中景。可见江砚背面左臂接向箱杆，苏慧画左近端右臂提包、远端左手扶门，均与右手扶箱、左手提包右手扶门相反。",
+      "fix_instruction": "按人体解剖左右锁定江砚右手扶箱、苏慧左手提包右手搭门；保持半开门和空桌状态，将下边界收至江砚大腿中段，裁去膝盖和鞋。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[0].action_zh",
+        "people[1].action_zh"
+      ]
+    }
+  ],
+  "review_zh": "实际为近乎全身双人画面，江砚鞋底、苏慧双脚及大量地面均可见，江砚头顶留白约11%，不符中景大腿中段裁切/约5%头顶。苏慧朝右三分之四正面，近相机的右臂垂下提包，远侧左手扶门；江砚背向相机的画面左侧手扶箱，即人物左手，均与卡片规定的苏慧左手提包/右手扶门、江砚右手扶箱相反。门确实半开，左空桌右床方向及人物身份、衣服、大橄榄包和竖棱灰箱材质可衔接；没有额外行李。；门半开、左桌空、右床及两人身份服装符合；但画面完整显示江砚双膝和鞋、苏慧双脚，偏全身而非卡片大腿中段截断的中景。可见江砚背面左臂接向箱杆，苏慧画左近端右臂提包、远端左手扶门，均与右手扶箱、左手提包右手扶门相反。",
+  "generator_agent_id": "/root/generate_keyframes_batch03_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch03_a.json"
+}

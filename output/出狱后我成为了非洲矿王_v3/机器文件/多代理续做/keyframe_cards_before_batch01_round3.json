@@ -1,0 +1,3910 @@
+{
+  "scene_beats": [
+    {
+      "id": "ep01_p1",
+      "scene": "SC05",
+      "title_zh": "正午；铁门由刚开缝到半开；陈野从西侧车旁迎向门口。水瓶仍由陈野携带。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "正午，铁门开合阶段按本镜道具状态，陈野从西侧越野车迎接江砚；两人都在此地点。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "master_plate_read_zh": "实际看图：竖屏，中央剥皮白墙双铁门、门后两排平房和树冠；左侧沾泥越野车，天空上部大片白，红土地占下部约四成。",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "to_camera",
+          "camera_relation": "front",
+          "gaze_at": "off_down",
+          "posture_zh": "站在微开的铁门内，左脚向门槛迈出",
+          "action_zh": "双手自然垂下，眼神沉稳而冷",
+          "contact_zh": null,
+          "holding_zh": "双手自然垂下，眼神沉稳而冷"
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "身体倚在越野车侧门旁",
+          "action_zh": "右手持带白盖的冰水瓶，头转向江砚",
+          "contact_zh": null,
+          "holding_zh": "右手持带白盖的冰水瓶，头转向江砚"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "本节拍只有一至两镜且含进出或动作变化；逐镜宽底板和明确起始道具状态足够，独立主帧不增加持续状态信息。"
+    },
+    {
+      "id": "ep01_p2",
+      "scene": "SC05",
+      "title_zh": "门口对话；江砚东/靠门，陈野西/靠车。镜3水瓶由陈野右手交到江砚左手，镜5右手拧盖暂停。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "铁门半开，两人站在门外：江砚靠东侧门口、陈野靠西侧车辆。",
+        "水瓶交接完成：左手持瓶的是江砚，右手搭在瓶盖上。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：B宽底板从院内看铁门外的红土路，右侧为越野车、两侧白色平房，天空上部大片白、下部是水泥地。",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "blocking": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "同一个角色的方向参考，合成一个侧身面对江砚的陈野",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在门槛另一侧红土路上，靠门外右侧车辆；脚底距图像上缘约56%；面向画面左侧江砚",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "holding_zh": "眉头收紧、嘴唇将开，双手落在身侧"
+        },
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "同一个角色的方向参考，合成一个背对镜头的江砚",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门槛另一侧红土路上，完整身体在门洞内可见；脚底距图像上缘约60%；面对画面右侧的陈野",
+          "action_zh": "左手持冰水瓶、右手搭白瓶盖，眼神平稳",
+          "contact_zh": null,
+          "holding_zh": "背朝相机，左臂是画面左边那条手臂，它绕向胸前握住透明瓶身；右臂是画面右边那条手臂，右手在左手上方轻扶仍盖紧瓶口的白盖。"
+        }
+      ],
+      "count": 3,
+      "master_status": "capped",
+      "master_retry_spatial_notes_zh": [
+        "这是空间位置纠错。参考空底板里，铁门以内靠相机的水泥院子保持空旷。两个唯一的角色都安放在铁门后方的红土路上，人物全身轮廓集中在图像中部的门洞开口内：江砚脚底约在图像高度60%的门外红土地，陈野脚底约在图像高度56%的更远红土地。靠相机的下半部水泥地只显示空地。两人隔门望去比之前明显缩小，门柱和门扇靠相机，人物在门扇远处。",
+        "画面严格只有江砚、陈野两个人，每人各一个身体。人物参考表上的正侧背三张是同一个人的方向说明。两人脚底都落在敞开铁门外的红土道路上，门槛位于他们与镜头之间。"
+      ],
+      "master_blocker_zh": "门外空间已修正；瓶与白盖的左右手和开合状态未可靠通过，停止该主帧生成，不把候选回填成已通过主帧。",
+      "master_selected_file": "",
+      "master_review_reports": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_supplement_single.json",
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_supplement_continuity.json"
+      ],
+      "master_completed_rounds": 4
+    },
+    {
+      "id": "ep01_p3",
+      "scene": "SC05",
+      "title_zh": "站位不变；江砚在镜9取盖饮水，瓶在左手、白盖在右手，之后瓶降到胸下。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "画面里严格只有江砚和陈野两个人，各出现一次。人物三视图是同一个人的不同方向，用来锁身份。全部人物位于铁门外红土上。",
+        "两人站位与门口对话一致。",
+        "江砚已经喝过一口水，左手持开口瓶，右手攥白盖。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：B宽底板从院内看铁门外的红土路，右侧为越野车、两侧白色平房，天空上部大片白、下部是水泥地。",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "blocking": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "同一个角色的方向参考，合成一个侧身面对江砚的陈野",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在门槛另一侧红土路上，靠门外右侧车辆；脚底距图像上缘约56%；面向画面左侧江砚",
+          "action_zh": "眉头仍收紧、嘴唇微分，准备因江砚的判断而愣住",
+          "contact_zh": null,
+          "holding_zh": "眉头仍收紧、嘴唇微分，准备因江砚的判断而愣住"
+        },
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "同一个角色的方向参考，合成一个背对镜头的江砚",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门槛另一侧红土路上，完整身体在门洞内可见；脚底距图像上缘约60%；面对画面右侧的陈野",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null,
+          "holding_zh": "背朝相机，左臂是画面左边那条手臂，左手绕向胸前握开口透明瓶身；右臂是画面右边那条手臂，右手单独拿已取下的白色瓶盖。"
+        }
+      ],
+      "count": 3,
+      "master_status": "capped",
+      "master_retry_spatial_notes_zh": [
+        "这是空间位置纠错。参考空底板里，铁门以内靠相机的水泥院子保持空旷。两个唯一的角色都安放在铁门后方的红土路上，人物全身轮廓集中在图像中部的门洞开口内：江砚脚底约在图像高度60%的门外红土地，陈野脚底约在图像高度56%的更远红土地。靠相机的下半部水泥地只显示空地。两人隔门望去比之前明显缩小，门柱和门扇靠相机，人物在门扇远处。"
+      ],
+      "master_blocker_zh": "门外空间已修正；瓶与白盖的左右手和开合状态未可靠通过，停止该主帧生成，不把候选回填成已通过主帧。",
+      "master_selected_file": "",
+      "master_review_reports": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_supplement_single.json",
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_supplement_continuity.json"
+      ],
+      "master_completed_rounds": 4
+    },
+    {
+      "id": "ep01_p4",
+      "scene": "SC05",
+      "title_zh": "确认自己干；水瓶仍在江砚左手；镜15陈野拍腿一次，人物未到车边。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "两人在门口谈自己干的决定，车仍停在西侧。",
+        "江砚左手持瓶、右手拿白盖。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：两侧院内白墙平房夹住中央铁门，门外红土路向远处延伸，越野车在右；下半约四成院内水泥地，天色过曝。",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null,
+          "holding_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静"
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "右手停在大腿上方、眼睛将亮起，左手自然垂下",
+          "contact_zh": null,
+          "holding_zh": "右手停在大腿上方、眼睛将亮起，左手自然垂下"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "本节拍只有一至两镜且含进出或动作变化；逐镜宽底板和明确起始道具状态足够，独立主帧不增加持续状态信息。"
+    },
+    {
+      "id": "ep01_p5",
+      "scene": "SC05",
+      "title_zh": "江砚转到西侧越野车、副驾车门由闭到开、人坐入；陈野留在车外，车停着。",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "江砚站在门外东侧原对话位置、身体转向西侧越野车；陈野留在门外西侧。车门关闭、车辆停驻。",
+        "江砚持水瓶与瓶盖。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "master_plate_read_zh": "实际看图：竖屏，中央剥皮白墙双铁门、门后两排平房和树冠；左侧沾泥越野车，天空上部大片白，红土地占下部约四成。",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:越野车副驾门",
+          "posture_zh": "站在越野车侧门外一步",
+          "action_zh": "左手持瓶、右手握白盖准备拧回瓶口",
+          "contact_zh": null,
+          "holding_zh": "左手持瓶、右手握白盖准备拧回瓶口"
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在车旁看江砚",
+          "action_zh": "双手垂在身侧，神情振奋",
+          "contact_zh": null,
+          "holding_zh": "双手垂在身侧，神情振奋"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "本节拍只有一至两镜且含进出或动作变化；逐镜宽底板和明确起始道具状态足够，独立主帧不增加持续状态信息。"
+    },
+    {
+      "id": "ep01_a1",
+      "scene": "SC06",
+      "title_zh": "一个月前白天；母亲从接站区走近；江砚右手深灰硬壳箱、背橄榄包、左手地址纸；两人先互认，旁白读完再问候。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "state_zh": [
+        "一个月前白天，母子在机场出口互认。",
+        "江砚双肩背橄榄包、右手拉深灰箱、左手有地址纸；母亲两手空着。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC06_机场出口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：机场A宽底板左玻璃幕墙与行李推车，上方挑檐，右侧栏杆与黄出租车/白小巴，中央下方通道约半幅。",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:地址纸",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条",
+          "contact_zh": null,
+          "holding_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在远处人流后方朝江砚走近",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null,
+          "holding_zh": "双手自然垂着，目光寻找儿子，眼眶微红"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年男子、浅灰短袖、黑软箱；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "浅棕皮肤成年男子、米色衬衫、黑背包；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李"
+        }
+      ],
+      "count": 1,
+      "master_status": "selected",
+      "master_frame": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+      "master_frame_read_zh": "实看：江砚在左侧玻璃幕墙前，侧身朝右低头看左手地址纸，双肩背大橄榄帆布包，右手扶深灰四轮硬箱。苏慧在右侧中远处朝他走近；蓝裙女在左、灰衫男在中央、米色衫背包男在右，共三名旅客，挑檐与车道光线一致。"
+    },
+    {
+      "id": "ep01_a2",
+      "scene": "SC06",
+      "title_zh": "镜22背包从江砚双肩转到苏慧左手；箱仍属江砚，地址纸收进口袋。此后江砚双肩无包带。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "state_zh": [
+        "母子在机场出口说话，三名旅客仍在远处通道。",
+        "交接完成后橄榄包在苏慧左手；江砚双肩空着、右手拉箱、地址纸在衣袋。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC06_机场出口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：机场A宽底板左玻璃幕墙与行李推车，上方挑檐，右侧栏杆与黄出租车/白小巴，中央下方通道约半幅。",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发",
+          "contact_zh": null,
+          "holding_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红",
+          "contact_zh": null,
+          "holding_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年男子、浅灰短袖、黑软箱；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "浅棕皮肤成年男子、米色衬衫、黑背包；站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李"
+        }
+      ],
+      "count": 1,
+      "master_status": "selected",
+      "master_frame": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+      "master_frame_read_zh": "实看：江砚左侧三分之二正侧面朝苏慧，双肩已空，右手扶深灰竖棱四轮硬壳箱。苏慧右侧近处背向镜头，左手提大橄榄帆布登山包，包底到膝下；三名旅客依然在后方，蓝裙女左、灰衫男中、米色衫黑包男右，玻璃幕墙在左，车道在右。"
+    },
+    {
+      "id": "ep01_a3",
+      "scene": "SC06",
+      "title_zh": "母子朝停车区离开；母亲左手提包、儿子右手拖箱；人流留在机场。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "state_zh": [
+        "母子朝停车区离开；苏慧左手提包，江砚右手拖箱、双肩空着。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC06_机场出口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：左玻璃门幕墙及推车，上方水泥挑檐纵深收拢，右栏杆与黄色车队白小巴；前景地面约下半幅，阴影在左。",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "侧身准备跟着母亲离开",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋",
+          "contact_zh": null,
+          "holding_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_right",
+          "posture_zh": "侧身朝停车区，前脚正要迈出",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红",
+          "contact_zh": null,
+          "holding_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋",
+          "holding_zh": "各自持随身行李"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包",
+          "holding_zh": "各自持随身行李"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "本节拍只有一至两镜且含进出或动作变化；逐镜宽底板和明确起始道具状态足够，独立主帧不增加持续状态信息。"
+    },
+    {
+      "id": "ep01_v1",
+      "scene": "SC01",
+      "title_zh": "同日抵达客厅；江砚站西南、苏慧站其北侧；刘兰坐东侧沙发北段，顾瑶坐南段。包在苏慧左手、箱在江砚右手。主人全程坐着。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "刘兰",
+        "顾瑶"
+      ],
+      "state_zh": [
+        "跨场道具连戏：行李箱与大登山包完全照机场交包后的实拍参考，登山包高约50厘米、宽约35厘米，单翻盖和两条长竖织带、前面一个大长方形口袋；是成年人长途旅行大包，放在桌上约占桌面深度的一半。持在手里时底端在膝盖下面。行李箱深灰硬壳高55厘米、宽38厘米，细竖棱、黑色双杆和四轮。",
+        "同日白天，母子在西侧站着；刘兰坐东侧沙发北段，顾瑶坐南段，两人持续坐着。",
+        "苏慧左手提橄榄包，江砚右手扶深灰箱；玄关在南，客房通道在西。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC01_顾家别墅客厅_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：左楼梯和侧门，右沙发与电视墙，正后玻璃泳池、上方吊灯和二楼玻璃走廊；前景空石材地约下部三成。",
+      "camera_zh": "相机在客厅南侧玄关附近，约1.5米高朝北窗与泳池，左西侧楼梯、右东侧沙发。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+          ],
+          "ref_note_zh": "机场实拍身份与道具基准：该图左边蓝衬衫青年就是江砚，保持其脸、发型、灰蓝衬衫和深灰长裤；行李箱和大登山包完全复制该图的样式和大小。苏慧单独的三视图在后一张参考",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_right",
+          "posture_zh": "站在西南侧空地",
+          "action_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着",
+          "contact_zh": null,
+          "holding_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在江砚北侧半步，含肩",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前，嘴角陪笑",
+          "contact_zh": null,
+          "holding_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前，嘴角陪笑"
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧沙发北段、双腿交叠",
+          "action_zh": "右手指甲举在眼前、低眼看指甲",
+          "contact_zh": null,
+          "holding_zh": "右手指甲举在眼前、低眼看指甲"
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠东侧沙发南段",
+          "action_zh": "双手握手机在胸前、低眼看屏幕",
+          "contact_zh": null,
+          "holding_zh": "双手握手机在胸前、低眼看屏幕"
+        }
+      ],
+      "count": 2,
+      "master_status": "capped",
+      "seating": {
+        "刘兰": "东侧沙发北段",
+        "顾瑶": "东侧沙发南段"
+      },
+      "master_blocker_zh": "包的体积已修正，提包手仍需从近侧右手纠正为远侧左手，右手放腹前。",
+      "master_selected_file": "",
+      "master_review_reports": [
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_supplement_single.json",
+        "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_supplement_continuity.json"
+      ],
+      "master_completed_rounds": 3
+    },
+    {
+      "id": "ep01_v2",
+      "scene": "SC01",
+      "title_zh": "苏慧右手扶儿子后肩、左手提包，母子向西侧通道离开；刘兰和顾瑶留在原座。",
+      "present": [
+        "江砚",
+        "苏慧",
+        "刘兰",
+        "顾瑶"
+      ],
+      "state_zh": [
+        "母子向西侧客房通道离开，刘兰和顾瑶保持东侧原座位。",
+        "苏慧左手提包、右手扶儿子后肩，江砚右手拉箱。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC01_顾家别墅客厅_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "master_plate_read_zh": "实际看图：左楼梯和侧门，右沙发与电视墙，正后玻璃泳池、上方吊灯和二楼玻璃走廊；前景空石材地约下部三成。",
+      "camera_zh": "相机在客厅南侧玄关附近，约1.5米高朝北窗与泳池，左西侧楼梯、右东侧沙发。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_left",
+          "posture_zh": "侧身面向西侧门洞，右手扶箱杆",
+          "action_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着",
+          "contact_zh": null,
+          "holding_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "站在江砚北侧半步，含肩",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手已扶在江砚后肩",
+          "contact_zh": null,
+          "holding_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手已扶在江砚后肩"
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧沙发北段、双腿交叠",
+          "action_zh": "右手指甲举在眼前、低眼看指甲",
+          "contact_zh": null,
+          "holding_zh": "右手指甲举在眼前、低眼看指甲"
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠东侧沙发南段",
+          "action_zh": "双手握手机在胸前、低眼看屏幕",
+          "contact_zh": null,
+          "holding_zh": "双手握手机在胸前、低眼看屏幕"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "seating": {
+        "刘兰": "东侧沙发北段",
+        "顾瑶": "东侧沙发南段"
+      },
+      "no_master_reason_zh": "本节拍只有一至两镜且含进出或动作变化；逐镜宽底板和明确起始道具状态足够，独立主帧不增加持续状态信息。"
+    },
+    {
+      "id": "ep01_r1",
+      "scene": "SC03日",
+      "title_zh": "日间客房到达态；门半开→关，空桌→苏慧放下背包，空床脚→江砚放稳随身箱。没有预先摆入行李或专业书。",
+      "present": [
+        "江砚",
+        "苏慧"
+      ],
+      "state_zh": [
+        "白天客房，门半开、桌面为空，北窗照入自然光，床头灯关闭。",
+        "江砚带箱进房、苏慧手提背包；房内只出现他们带来的这一套行李。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC03日_顾家客房_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+      "master_plate_read_zh": "实际看图：后方半开木门、左衣挂和空桌椅，右为床脚，门右空墙；前景地面约四成，台灯在镜头后方。",
+      "camera_zh": "相机在客房北窗前，约1.5米高朝南门，左桌、右床脚。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "刚进房间，在床脚旁站立",
+          "action_zh": "右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，箱子四轮触地",
+          "contact_zh": null,
+          "holding_zh": "右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，箱子四轮触地"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在半开的门内侧，右肩靠门",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手搭在半开门的内侧准备关门",
+          "contact_zh": null,
+          "holding_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手搭在半开门的内侧准备关门"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "本节拍只有一至两镜且含进出或动作变化；逐镜宽底板和明确起始道具状态足够，独立主帧不增加持续状态信息。"
+    },
+    {
+      "id": "ep01_r2",
+      "scene": "SC03日",
+      "title_zh": "门已关、灯未开，北窗日光持续；镜36江砚坐到西侧床沿；苏慧站东南侧面对他，背包在东侧书桌、箱在床脚。结尾母亲仍在房内。",
+      "present": [
+        "江砚",
+        "苏慧"
+      ],
+      "state_zh": [
+        "跨场道具连戏：行李箱与大登山包完全照机场交包后的实拍参考，登山包高约50厘米、宽约35厘米，单翻盖和两条长竖织带、前面一个大长方形口袋；是成年人长途旅行大包，放在桌上约占桌面深度的一半。持在手里时底端在膝盖下面。行李箱深灰硬壳高55厘米、宽38厘米，细竖棱、黑色双杆和四轮。",
+        "白天客房，南门已关闭，北窗持续照入自然光，床头灯关闭。",
+        "橄榄包放东侧桌面、深灰箱在西侧床脚；江砚在床沿，苏慧在床边东南侧。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC03日_顾家客房_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png",
+      "master_plate_read_zh": "实际看图：A日间客房，左单人床与未亮台灯、正后窗、右空桌椅，地板占下部约四成；本主帧将包放桌上、箱放床脚。",
+      "camera_zh": "相机在客房南侧门内，约1.5米高朝北窗，左床、右桌。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+            "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+          ],
+          "ref_note_zh": "第一张为江砚身份三视图；第二张是机场交包实拍，只复制该图的行李箱与大登山包外观、体积和材质。按本房间的走位重排人物",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "坐在西侧床沿、重心下沉",
+          "action_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合",
+          "contact_zh": null,
+          "holding_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合"
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在床边东南侧，含着肩",
+          "action_zh": "双手在腹前交叠，眼神小心，准备低声说话",
+          "contact_zh": null,
+          "holding_zh": "双手在腹前交叠，眼神小心，准备低声说话"
+        }
+      ],
+      "count": 3,
+      "master_status": "selected",
+      "master_frame": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+      "master_frame_read_zh": "实看：白天客房，北窗在后方中间，床和床头灯在左、桌在右；左侧江砚坐在床沿，侧脸朝右看母亲；苏慧站在右侧近端、三分之二背对相机，双手身前。大橄榄帆布包直立于右桌，深灰四轮箱在左床脚，门扇已在镜头后画外。",
+      "master_retry_spatial_notes_zh": [
+        "南侧房门闭合在相机身后。画面左边缘只留固定墙边，原空底板伸进画面的深色活动门扇和门把手已随关门转到相机身后画外。"
+      ]
+    },
+    {
+      "id": "ep01_p2_handoff",
+      "scene": "SC05",
+      "title_zh": "道具交接/饮水前的起始状态",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "铁门半开，江砚左手正要接水；盖紧的冰水瓶仍在陈野右手。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：两侧院内白墙平房夹住中央铁门，门外红土路向远处延伸，越野车在右；下半约四成院内水泥地，天色过曝。",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手抬到腰前准备接冰水瓶，右手自然垂着",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "右手将盖紧的冰水瓶递向江砚左手，眉头压着火气",
+          "contact_zh": null
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "单镜道具状态转换，首帧直接以本镜起始姿态和空底板合成。"
+    },
+    {
+      "id": "ep01_p3_drink",
+      "scene": "SC05",
+      "title_zh": "道具交接/饮水前的起始状态",
+      "present": [
+        "江砚",
+        "陈野"
+      ],
+      "state_zh": [
+        "两人仍在门口原位；江砚左手持瓶、右手指搭白盖，正要取盖喝水。",
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC05_监狱门口_A主机位",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "master_plate_read_zh": "实际看图：竖屏，中央剥皮白墙双铁门、门后两排平房和树冠；左侧沾泥越野车，天空上部大片白，红土地占下部约四成。",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手持水瓶、右手指搭白盖，嘴唇闭合，准备取盖饮水",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "单镜道具状态转换，首帧直接以本镜起始姿态和空底板合成。"
+    },
+    {
+      "id": "ep01_a2_handoff",
+      "scene": "SC06",
+      "title_zh": "道具交接/饮水前的起始状态",
+      "present": [
+        "江砚",
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "state_zh": [
+        "江砚双肩仍背橄榄包、右手扶深灰箱、左手把地址纸收进衣袋；苏慧抬双手准备接包。",
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "master_plate_id": "SC06_机场出口_B反打",
+      "master_plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+      "master_plate_read_zh": "实际看图：白小巴与黄车在左后、棕榈和广告骨架居中，右上挑檐；栏杆左近向右远斜收，地面约下半幅、右侧阴影。",
+      "camera_zh": "相机在机场出口玻璃门一侧，约1.5米高反向看接站车道，左车队、右上挑檐。",
+      "blocking": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮，左手将地址纸收进衣袋，双肩仍背着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "双手抬到腰前准备接儿子的登山包，眼眶微红",
+          "contact_zh": null
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "count": 1,
+      "master_status": "pending_user_review_then_generation",
+      "no_master_reason_zh": "单镜道具状态转换，首帧直接以本镜起始姿态和空底板合成。"
+    }
+  ],
+  "cards": [
+    {
+      "id": "ep01_镜01",
+      "shot_no": 1,
+      "scene": "SC05",
+      "beat_id": "ep01_p1",
+      "tier": "S",
+      "plate_id": "SC05_监狱门口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "plate_read_zh": "实际看图：竖屏，中央剥皮白墙双铁门、门后两排平房和树冠；左侧沾泥越野车，天空上部大片白，红土地占下部约四成。",
+      "script_ref_zh": "script_source.txt 第38行「▲锈迹斑斑的铁栅栏门缓缓打开，江砚穿着一身洗得发白的衬衫走出来，半个月的羁押没磨掉他眼底的沉稳，反倒添了几分冷冽。」；script_source.txt 第39行「▲不远处的越野车旁，陈野早就靠着车门等着，看见人立刻大步迎上去，重重拍了拍他的肩膀。」——前3秒看懂江砚刚从羁押处走出，沉稳而冷冽。",
+      "beat_zh": "江砚在中部纵深铁门内，身体朝南、正面露全脸，目视门外，发白衬衫、深灰工装裤和旧帆布鞋；陈野在左前景车侧，以侧背面靠车门，视线转向江砚，二人隔着门口空地。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身在中央偏下主体区，头脚完整，脚下地面留约15%，上部保留环境，前后层清楚。",
+        "plate_crop_zh": "沿用宽底板左右结构和主要出入口，画面下方空地裁去一小部分。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "to_camera",
+          "camera_relation": "front",
+          "gaze_at": "off_down",
+          "posture_zh": "站在微开的铁门内，左脚向门槛迈出",
+          "action_zh": "双手自然垂下，眼神沉稳而冷",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "身体倚在越野车侧门旁",
+          "action_zh": "右手持带白盖的冰水瓶，头转向江砚",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "铁门在原铰链位置刚开一条供人物侧身通过的缝；门柱与围墙维持原布局"
+      ],
+      "relation_zh": "前3秒看懂江砚刚从羁押处走出，沉稳而冷冽。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。车辆沿用原底板，开场先改门扇为刚开缝状态；不新增手铐或随身塑料袋。"
+    },
+    {
+      "id": "ep01_镜02",
+      "shot_no": 2,
+      "scene": "SC05",
+      "beat_id": "ep01_p1",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "plate_read_zh": "实际看图：两侧院内白墙平房夹住中央铁门，门外红土路向远处延伸，越野车在右；下半约四成院内水泥地，天色过曝。",
+      "script_ref_zh": "script_source.txt 第39行「▲不远处的越野车旁，陈野早就靠着车门等着，看见人立刻大步迎上去，重重拍了拍他的肩膀。」——陈野一直等着，迎接有分量。",
+      "beat_zh": "江砚左前景过肩背对镜头、面向门外；陈野右中景正面偏左露大半脸，从右后方车辆向他走来，视线锁江砚；半开铁门分列边缘，红土路与越野车在纵深。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "画面上边留头顶约5%，底边把近端人物从大腿中段切断，看不到膝盖以下和脚；交接手与道具在中部。",
+        "plate_crop_zh": "取宽底板中段人物站立区域，裁去大块天空或天花、下方空地，左右机位结构保持。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "双手自然垂在身侧，衬衫洗白、目光冷静",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "已经离开车门一步，重心在前脚",
+          "action_zh": "右手垂持白盖冰水瓶，左手抬起准备拍江砚肩",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [],
+      "relation_zh": "陈野一直等着，迎接有分量。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。接镜1：陈野已离车，不能再从倚车姿态重演；车不移动。"
+    },
+    {
+      "id": "ep01_镜03",
+      "shot_no": 3,
+      "scene": "SC05",
+      "beat_id": "ep01_p2_handoff",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "plate_read_zh": "实际看图：两侧院内白墙平房夹住中央铁门，门外红土路向远处延伸，越野车在右；下半约四成院内水泥地，天色过曝。",
+      "script_ref_zh": "script_source.txt 第40行「陈野（递过一瓶冰水，语气里压着憋了许久的火气）：江老弟，你可算出来了！」——冰水和压着的火气同时交代关心。",
+      "beat_zh": "江砚左前景侧背，左手抬到腰上准备接水；陈野右中景三分之四正面，右手递出透明带凝露冰水瓶、白色瓶盖完整拧紧，脸上压着怒气；视线落在江砚脸与接水手之间。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "画面上边留头顶约5%，底边把近端人物从大腿中段切断，看不到膝盖以下和脚；交接手与道具在中部。",
+        "plate_crop_zh": "取宽底板中段人物站立区域，裁去大块天空或天花、下方空地，左右机位结构保持。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手抬到腰前准备接冰水瓶，右手自然垂着",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "右手将盖紧的冰水瓶递向江砚左手，眉头压着火气",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "冰水和压着的火气同时交代关心。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。水瓶造型在p2主帧锁定；本镜末所有权转到江砚。"
+    },
+    {
+      "id": "ep01_镜04",
+      "shot_no": 4,
+      "scene": "SC05",
+      "beat_id": "ep01_p2",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：中央铁门后为红土道路，越野车在右门扇后，左右门柱只露内缘；底部约两成是水泥/红土交界。",
+      "script_ref_zh": "script_source.txt 第41行「陈野（急切地）：这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。」——陈野说清这是顾浩设局，不是江砚犯罪。",
+      "beat_zh": "陈野右中景胸上三分之四正面，面向左前方江砚，眉头压紧，眼睛直视对方；江砚左前景只露虚焦后肩，水在裁切线下。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "左手持冰水瓶、右手搭白瓶盖，眼神平稳",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "陈野说清这是顾浩设下的陷害局。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。左前景江砚作为背景人物显式登记，不加第三人。"
+    },
+    {
+      "id": "ep01_镜05",
+      "shot_no": 5,
+      "scene": "SC05",
+      "beat_id": "ep01_p2",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：两门柱分居左右、中央铁栅栏与院内树冠占主要画面，底部约四分之一是红土与门影；车辆在裁切外。",
+      "script_ref_zh": "script_source.txt 第42行「▲江砚拧瓶盖的手顿了一下，抬眼看他，神色里没多少意外。」——听到顾浩，他的反应是证实猜想，表情没有惊讶。",
+      "beat_zh": "江砚右中景三分之四正面，身体朝左前方陈野；左手持水瓶，右手搭瓶盖停住，视线先在手上再抬向陈野；陈野左前景仅侧背肩入画，门和院内墙虚焦在后。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "prop:瓶盖",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手持水瓶、右指搭瓶盖正在轻拧，眼睛先落在瓶盖",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "听到顾浩，江砚的反应是证实猜想，表情平静。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。本镜与镜4互换屏幕左右；先停手再抬眼，不能一开始瞪眼。"
+    },
+    {
+      "id": "ep01_镜06",
+      "shot_no": 6,
+      "scene": "SC05",
+      "beat_id": "ep01_p2",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：中央铁门后为红土道路，越野车在右门扇后，左右门柱只露内缘；底部约两成是水泥/红土交界。",
+      "script_ref_zh": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。",
+      "beat_zh": "陈野右中景胸上三分之四正面，面向左前方、凝视江砚，压低眉头；江砚左前景虚焦后肩、头保持抬起听话，瓶盖状态在画外延续。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "左手持冰水瓶、右手搭白瓶盖，眼神平稳",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。"
+    },
+    {
+      "id": "ep01_镜07",
+      "shot_no": 7,
+      "scene": "SC05",
+      "beat_id": "ep01_p2",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：两门柱分居左右、中央铁栅栏与院内树冠占主要画面，底部约四分之一是红土与门影；车辆在裁切外。",
+      "script_ref_zh": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——栽赃利用了江砚下井工作的时间；他专注听而不抢话。",
+      "beat_zh": "江砚右中景胸上三分之四正面，朝左前方陈野，眼神平稳、嘴唇闭合；陈野左前景虚焦侧背肩入画，江砚双手持瓶盖在下边缘不再转动。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手持冰水瓶、右手搭白瓶盖，眼神平稳",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "栽赃利用了江砚下井工作的时间；他专注听而不抢话。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。这是带新信息的反应镜，按A生成。"
+    },
+    {
+      "id": "ep01_镜08",
+      "shot_no": 8,
+      "scene": "SC05",
+      "beat_id": "ep01_p2",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：中央铁门后为红土道路，越野车在右门扇后，左右门柱只露内缘；底部约两成是水泥/红土交界。",
+      "script_ref_zh": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——补齐藏入抽屉和匿名报警两环，观众能复述完整陷害链。",
+      "beat_zh": "陈野右中景正面偏左，盯江砚，肩膀绷住；江砚左前景虚焦后肩，始终听着。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "左手持冰水瓶、右手搭白瓶盖，眼神平稳",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "补齐藏入抽屉和匿名报警两环，观众能复述完整陷害链。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。"
+    },
+    {
+      "id": "ep01_镜09",
+      "shot_no": 9,
+      "scene": "SC05",
+      "beat_id": "ep01_p3_drink",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：两门柱分居左右、中央铁栅栏与院内树冠占主要画面，底部约四分之一是红土与门影；车辆在裁切外。",
+      "script_ref_zh": "script_source.txt 第44行「江砚（喝了口水，喉结滚动，眼神一点点冷下来）：我猜到是他。」——江砚早有判断，喝水后才平静说出。",
+      "beat_zh": "江砚右中景胸上三分之四正面，朝左前方陈野；左手持瓶、右手取下白盖，嘴唇未接瓶口；陈野左前景只露虚焦侧背肩。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手持水瓶、右手指搭白盖，嘴唇闭合，准备取盖饮水",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "江砚早有判断，喝水后才平静说出。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。先饮水后说话，瓶盖在右手不消失。"
+    },
+    {
+      "id": "ep01_镜10",
+      "shot_no": 10,
+      "scene": "SC05",
+      "beat_id": "ep01_p3",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：中央铁门后为红土道路，越野车在右门扇后，左右门柱只露内缘；底部约两成是水泥/红土交界。",
+      "script_ref_zh": "script_source.txt 第45行「陈野（愣了）：你知道？」——陈野意外于他的冷静判断。",
+      "beat_zh": "陈野右中景胸上三分之四正面，视线朝左前方江砚，眉毛从紧皱变成短暂抬起；江砚左前景虚焦背肩，水瓶已降在胸下。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头仍收紧、嘴唇微分，准备因江砚的判断而愣住",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "陈野意外于他的冷静判断。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。"
+    },
+    {
+      "id": "ep01_镜11",
+      "shot_no": 11,
+      "scene": "SC05",
+      "beat_id": "ep01_p3",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：两门柱分居左右、中央铁栅栏与院内树冠占主要画面，底部约四分之一是红土与门影；车辆在裁切外。",
+      "script_ref_zh": "script_source.txt 第46行「江砚（语气冰冷）：除了他，没人会这么针对我。」——怀疑有明确对象，他没有失控。",
+      "beat_zh": "江砚右中景胸上三分之四正面，朝左前方陈野，眼神直且冷、嘴角平直；陈野左前景侧背肩虚焦，江砚持水瓶和盖的手在裁切线下。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "怀疑有明确对象，江砚压住怒火、保持冷静。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。"
+    },
+    {
+      "id": "ep01_镜12",
+      "shot_no": 12,
+      "scene": "SC05",
+      "beat_id": "ep01_p3",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：中央铁门后为红土道路，越野车在右门扇后，左右门柱只露内缘；底部约两成是水泥/红土交界。",
+      "script_ref_zh": "script_source.txt 第47行「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——用三吨金矿与栽赃的反差说明顾家忘恩负义。",
+      "beat_zh": "陈野右中景胸上三分之四正面，朝左前方江砚，愤怒地收眉、嘴角拉紧；江砚左前景只留虚焦背肩。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "用三吨金矿与栽赃的反差说明顾家忘恩负义。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。下游按语义拆2段；不缩写台词。"
+    },
+    {
+      "id": "ep01_镜13",
+      "shot_no": 13,
+      "scene": "SC05",
+      "beat_id": "ep01_p3",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：两门柱分居左右、中央铁栅栏与院内树冠占主要画面，底部约四分之一是红土与门影；车辆在裁切外。",
+      "script_ref_zh": "script_source.txt 第48行「陈野（顿了顿，试探着问）：那咱，还回万通矿业吗？」——给去留选择留出空隙。",
+      "beat_zh": "江砚右中景胸上三分之四正面，看左前方陈野，神情逐渐沉定；陈野左前景侧背肩虚焦，问话时稍松肩。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "给去留选择留出空隙。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。"
+    },
+    {
+      "id": "ep01_镜14",
+      "shot_no": 14,
+      "scene": "SC05",
+      "beat_id": "ep01_p4",
+      "tier": "S",
+      "plate_id": "SC05_监狱门口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：两门柱分居左右、中央铁栅栏与院内树冠占主要画面，底部约四分之一是红土与门影；车辆在裁切外。",
+      "script_ref_zh": "script_source.txt 第49行「江砚（摇了摇头，语气平静笃定）：不回了，自己干。」——本场反转：主动离开顾家，决心自己创业。",
+      "beat_zh": "江砚右中景胸上三分之四正面，朝左前方陈野，视线坚定，眉头舒开一些；陈野左前景背肩虚焦。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳，取景仅保留虚焦头侧边与后肩",
+          "action_zh": "眉头收紧、嘴唇将开，双手落在身侧",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "本场反转：主动离开顾家，决心自己创业。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。保留停顿，不能演成愤怒宣战。"
+    },
+    {
+      "id": "ep01_镜15",
+      "shot_no": 15,
+      "scene": "SC05",
+      "beat_id": "ep01_p4",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+      "plate_read_zh": "实际看图：两侧院内白墙平房夹住中央铁门，门外红土路向远处延伸，越野车在右；下半约四成院内水泥地，天色过曝。",
+      "script_ref_zh": "script_source.txt 第50行「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」——陈野当即给出设备与工人的支持，二人结盟。",
+      "beat_zh": "陈野右中景三分之四正面，面对左前景侧背的江砚，眼睛亮起；右手在大腿上方将落未落；江砚左前景持水瓶，望向陈野。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于院内门槛北侧，约1.5米高看南侧门外道路，西侧车投影到画面右。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "画面上边留头顶约5%，底边把近端人物从大腿中段切断，看不到膝盖以下和脚；交接手与道具在中部。",
+        "plate_crop_zh": "取宽底板中段人物站立区域，裁去大块天空或天花、下方空地，左右机位结构保持。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "陈野",
+          "posture_zh": "站在门外靠门的一侧，肩背挺直",
+          "action_zh": "左手握开口冰水瓶停在胸下，右手攥白盖，目光冷静",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在靠车的一侧，脚下站稳",
+          "action_zh": "右手停在大腿上方、眼睛将亮起，左手自然垂下",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "陈野当即给出设备与工人的支持，二人结盟。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。水瓶始终在江砚左手；陈野不同时再拍肩。"
+    },
+    {
+      "id": "ep01_镜16",
+      "shot_no": 16,
+      "scene": "SC05",
+      "beat_id": "ep01_p5",
+      "tier": "A",
+      "plate_id": "SC05_监狱门口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+      "plate_read_zh": "实际看图：竖屏，中央剥皮白墙双铁门、门后两排平房和树冠；左侧沾泥越野车，天空上部大片白，红土地占下部约四成。",
+      "script_ref_zh": "script_source.txt 第51行「▲江砚看向他，点了点头，随即拉开车门坐进副驾。」；script_source.txt 第52行「江砚：去顾家接我妈走。」——创业前最先要做的是接母亲，动作接到上车。",
+      "beat_zh": "江砚右中景站在门外原对话位置、侧身朝左前景越野车；陈野左前景侧背看他。车侧副驾门关闭，监狱门在后方半开。江砚接下来才走向画面左侧车辆。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于门外红土路南侧，约1.5米高看北侧监狱门，西侧车在画面左。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身在中央偏下主体区，头脚完整，脚下地面留约15%，上部保留环境，前后层清楚。",
+        "plate_crop_zh": "沿用宽底板左右结构和主要出入口，画面下方空地裁去一小部分。"
+      },
+      "light_zh": "赤道正午顶光，白天空和红土地反光、门柱投硬影。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:越野车副驾门",
+          "posture_zh": "站在门外东侧原对话位置，身体已转向西侧越野车",
+          "action_zh": "左手持瓶、右手握白盖准备拧回瓶口",
+          "contact_zh": null
+        },
+        {
+          "name": "陈野",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在车旁看江砚",
+          "action_zh": "双手垂在身侧，神情振奋",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只500毫升透明冰水瓶，白色旋盖，瓶身凝露"
+      ],
+      "relation_zh": "创业前最先要做的是接母亲，动作接到上车。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。使用宽底板，不冒充车内新机位；车门与车型需在p5主帧锁定。 首帧仍在门口，江砚随后跨画面走到左侧车边；非相机越轴。"
+    },
+    {
+      "id": "ep01_镜17",
+      "shot_no": 17,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "plate_read_zh": "实际看图：左玻璃门幕墙及推车，上方水泥挑檐纵深收拢，右栏杆与黄色车队白小巴；前景地面约下半幅，阴影在左。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第56行「▲热带阳光灼人，机场出口人流混杂，各色皮肤的人穿梭往来。」；script_source.txt 第57行「▲江砚拖着一个半旧的行李箱，背着登山包，手里攥着写着地址的纸条，四处张望。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——交代闪回和身份，机场的陌生感先于重逢。",
+      "beat_zh": "江砚在左中景玻璃门外，侧身朝右前方接站区张望；右手拖半旧深灰硬壳行李箱，深橄榄色登山包仍双肩背好，左手持小纸条。苏慧在右远景人流之后朝他走来，侧面、脸很小；匿名旅客分前后层沿通道通过。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "环境全景，相机后退保持机场A角度。江砚全身高度严格为画幅高度约40%，头顶落在画高45%左右、鞋底落在85%左右，头脚完整且脚下留15%地面。天空与机场挑檐占上方大块环境，人物为较小环境中的主体。",
+        "plate_crop_zh": "完整保留A宽底板上部挑檐、左玻璃与右车道，把江砚比例缩至画高40%，保持母亲在更远层；参考主帧提供身份与道具，人物大小按本镜百分比重新安排。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:地址纸",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在远处人流后方朝江砚走近",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "relation_zh": "交代闪回和身份，机场的陌生感先于重逢。",
+      "count": 2,
+      "notes": "首轮独立审查反馈：保持批准环境全景比例或B反打机位与过肩设计，第二轮2张。"
+    },
+    {
+      "id": "ep01_镜18",
+      "shot_no": 18,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+      "plate_read_zh": "实际看图：白小巴与黄车在左后、棕榈和广告骨架居中，右上挑檐；栏杆左近向右远斜收，地面约下半幅、右侧阴影。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——把七年付出落到母亲的老态上；表叔关系保持原文。",
+      "beat_zh": "苏慧在左中远景穿白色旧布裙、侧身朝右前方的江砚走来，含肩、抬眼寻找，鬓角白发与晒黑肤色可辨；江砚右前景虚焦后肩与登山包边入画，旅客在母子之间更远层，不遮挡主脸。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机紧贴机场玻璃门一侧向外拍，镜头朝车道；画面左后方是白色小巴与黄色出租车，画面右上是挑檐底部。摄影机背后才是玻璃墙。严格依照B反打底板的场地侧别。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "中景过肩：江砚虚焦后肩和登山包右侧边缘贴着画面最右缘，身体主体在画幅右边界以外。苏慧位于左侧更远层、完整侧面朝右，保留从头到腿部的行走姿态；旅客位于更远通道。",
+        "plate_crop_zh": "取B反打宽底板的左侧白小巴和黄车以及右上挑檐作为环境，三名旅客在更远处。主帧中的玻璃墙与车道屏幕位置只用于人物道具信息，本镜空间方向严格来自B底板。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "在接站人群后方，前脚已落在通道里",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在镜头右前方，画面右边界截过后肩与包体边缘，身体大部分在画框外",
+          "action_zh": "灰蓝衬衫虚焦后肩和深橄榄包侧缘仅在右侧形成局部过肩；右手拉杆、左手纸条随身体位于画框外，目光看向更远的母亲。",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "江砚仍右手握深灰硬壳箱拉杆、左手持纸，整箱、双手及纸条位于右侧取景外；大橄榄包仅边缘在右前景可见。"
+      ],
+      "relation_zh": "把七年付出落到母亲的老态上；表叔关系保持原文。",
+      "count": 2,
+      "notes": "首轮独立审查反馈：保持批准环境全景比例或B反打机位与过肩设计，第二轮2张。"
+    },
+    {
+      "id": "ep01_镜19",
+      "shot_no": 19,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：左侧玻璃反光和推车变大、右侧栏杆与黄车，顶部挑檐与棕榈背景；下方仍约三成通道地面，可裁去留胸上人物。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第57行「▲江砚拖着一个半旧的行李箱，背着登山包，手里攥着写着地址的纸条，四处张望。」——完整交代他的学业与地质能力，不另造毕业证或校园。",
+      "beat_zh": "江砚左中景胸上三分之四正面，面朝右前方母亲，肩上两条登山包肩带清楚；左手小纸条在胸下，眼神从寻人转为确认；苏慧右前景暂在裁切外接近，背景玻璃门和阴影带。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.78,
+        "crop_zh": "竖屏胸上近景。主体的脸和双肩充满画面主体区，头顶贴近上边缘约5%；画面底边从胸口下缘横切，身体胸口以下全部落在画框外。主体脸高约占画面高度三分之一。",
+        "plate_crop_zh": "相机推进到江砚胸上距离，背景只取A紧底板的上部玻璃与挑檐虚焦色块；地面、拉杆、箱体、持纸手全部落在画框底边以下。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "off_right",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "深橄榄色登山包的两条磨白宽织带贴在双肩，江砚嘴唇闭合、眼神从寻找转为确认，视线朝画面右侧。左手纸条、右手拉杆继续保持在胸下画框外。",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [
+        "苏慧",
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "画内仅呈现双肩上的两条深橄榄色宽织带；大包主体在背后，深灰箱、拉杆和左手纸条位于胸下画框以外。"
+      ],
+      "relation_zh": "完整交代他的学业与地质能力，不另造毕业证或校园。",
+      "count": 2,
+      "notes": "首轮审查退回：保持已批准胸上近景与机位，明确画外道具状态，避免道具描述拉宽取景。第二轮2张。"
+    },
+    {
+      "id": "ep01_镜20",
+      "shot_no": 20,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：左白小巴和黄出租车填满中部背景，栏杆横斜贯前景，棕榈/骨架在后，右上挑檐；地面约下部三成。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」；script_source.txt 第58行「▲不远处，一个穿着白色旧布裙、皮肤晒得黝黑的中年女人快步走来，正是母亲苏慧。」——交代此行目的；母亲在眼前，接回家的愿望更具体。",
+      "beat_zh": "苏慧左中景胸上三分之四正面，身体朝右前方江砚，眼眶微红、嘴唇轻颤；江砚右前景留虚焦侧背肩与包带，苏慧手尚未碰背包。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机位于机场出口玻璃门这一侧，朝停车车队拍摄苏慧胸上；画面左侧背景为白小巴与黄出租车，上右侧为挑檐，遵循B反打紧底板的方向。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.78,
+        "crop_zh": "竖屏胸上近景。主体的脸和双肩充满画面主体区，头顶贴近上边缘约5%；画面底边从胸口下缘横切，身体胸口以下全部落在画框外。主体脸高约占画面高度三分之一。江砚只有虚焦后肩和后脑发丝边缘从最右侧入画，宽度严格控制在画幅右边15%。",
+        "plate_crop_zh": "相机推进至苏慧胸上，背景只取B紧底板左侧白小巴、黄色出租车和右上挑檐的虚焦局部；三名旅客及地面处在裁切范围以外。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "眼眶微红，嘴唇轻颤，视线落在儿子脸上，含肩；双手保持自然下垂在胸下画框外。",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "右侧最边缘仅一小片虚焦后肩、后脑发丝边缘进入画面，人物主体位于画面右边界之外",
+          "action_zh": "侧背肩上的深橄榄色包带贴近画面右边缘；其余包体、双手、纸条和拉杆保持在画框外，继续看向母亲。",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "画面右缘只保留江砚后肩的一小段深橄榄色包带；包体、行李箱、拉杆、纸条及双手在胸下或画面右侧取景以外。"
+      ],
+      "relation_zh": "交代此行目的；母亲在眼前，接回家的愿望更具体。",
+      "count": 2,
+      "notes": "首轮审查退回：保持已批准胸上近景与机位，明确画外道具状态，避免道具描述拉宽取景。第二轮2张。"
+    },
+    {
+      "id": "ep01_镜21",
+      "shot_no": 21,
+      "scene": "SC06",
+      "beat_id": "ep01_a1",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：左侧玻璃反光和推车变大、右侧栏杆与黄车，顶部挑檐与棕榈背景；下方仍约三成通道地面，可裁去留胸上人物。",
+      "script_ref_zh": "script_source.txt 第55行「江砚 OS：我叫江砚，高一那年父亲车祸去世，母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。我以全校第一的成绩考上夏国地质大学资源勘察专业。大学毕业的第一件事，就是飞到这里，想把母亲接回家，可我没想到，等待我们母子的，是屈辱与算计。」——完整保留旁白预告，成年回望的声线与当时的心疼画面形成张力。",
+      "beat_zh": "江砚左中景胸上三分之四正面，朝右前方母亲，目光停在她鬓边白发，脸上是心疼；苏慧右前景侧背肩及白发边缘虚焦，前后层分明。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "胸上近景，紧密胸像构图（tight bust portrait, frame ends at chest）：头顶留约5%，整张脸含发顶至下颏约占画高50%，双肩左右延伸至画框边缘，下边缘在胸口位置截断。前景过肩仅占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。 背景取人物脸后方对应高度的虚焦局部，取景在胸口高度截止，主体腰部和腹部位于画框以下。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩背好同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋；右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手持地址小纸条；目光落在母亲鬓角白发",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩，胸上镜仅保留侧背肩和发丝边缘",
+          "action_zh": "双手自然垂着，目光寻找儿子，眼眶微红",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "本镜为胸上取景，低于胸口的手、箱包和家具仍按本场状态保留在画框外；只呈现本卡脸旁动作或肩带，取景以胸口下边界为准。"
+      ],
+      "relation_zh": "完整保留旁白预告，成年回望的声线与当时的心疼画面形成张力。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。旁白原文完整在17–21镜按原序读完；不在结尾重复或截短。 已按机场首批景别漂移反馈澄清胸像边界，原剧情、人物走位与机位不变。"
+    },
+    {
+      "id": "ep01_镜22",
+      "shot_no": 22,
+      "scene": "SC06",
+      "beat_id": "ep01_a2_handoff",
+      "tier": "A",
+      "plate_id": "SC06_机场出口_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+      "plate_read_zh": "实际看图：白小巴与黄车在左后、棕榈和广告骨架居中，右上挑檐；栏杆左近向右远斜收，地面约下半幅、右侧阴影。",
+      "script_ref_zh": "script_source.txt 第59行「苏慧（眼眶一下子红了，上前接过他的背包，声音发颤）：小砚，可算到了，累不累？快跟我回家。」——苏慧声音发颤，一见面就替儿子拿行李。",
+      "beat_zh": "江砚右前景三分之四背面朝苏慧，右手扶行李箱、左手把纸条收进口袋后准备脱下背包；苏慧左中景三分之四正面，红眼抬手接包、看着江砚，栏杆与车队留在远景。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口玻璃门一侧，约1.5米高反向看接站车道，左车队、右上挑檐。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "画面上边留头顶约5%，底边把近端人物从大腿中段切断，看不到膝盖以下和脚；交接手与道具在中部。",
+        "plate_crop_zh": "取宽底板中段人物站立区域，裁去大块天空或天花、下方空地，左右机位结构保持。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮，左手将地址纸收进衣袋，双肩仍背着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "双手抬到腰前准备接儿子的登山包，眼眶微红",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "relation_zh": "苏慧声音发颤，一见面就替儿子拿行李。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。本镜结束：包在苏慧左手，江砚肩上为空；之后不能重新背包。"
+    },
+    {
+      "id": "ep01_镜23",
+      "shot_no": 23,
+      "scene": "SC06",
+      "beat_id": "ep01_a2",
+      "tier": "A",
+      "plate_id": "SC06_机场出口_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：左侧玻璃反光和推车变大、右侧栏杆与黄车，顶部挑檐与棕榈背景；下方仍约三成通道地面，可裁去留胸上人物。",
+      "script_ref_zh": "script_source.txt 第60行「江砚（看着母亲鬓角新增的白发，喉结动了动）：妈，我不累，你怎么瘦了这么多。」——儿子先注意她的消瘦，而不是旅途辛苦。",
+      "beat_zh": "江砚左中景胸上三分之四正面，朝右前方苏慧，双肩已经没有包带，目光停在母亲鬓角；苏慧右前景白发与侧背肩虚焦，背包在她左手低于裁切线。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "胸上近景，紧密胸像构图（tight bust portrait, frame ends at chest）：头顶留约5%，整张脸含发顶至下颏约占画高50%，双肩左右延伸至画框边缘，下边缘在胸口位置截断。前景过肩仅占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。 背景取人物脸后方对应高度的虚焦局部，取景在胸口高度截止，主体腰部和腹部位于画框以下。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋；目光落在母亲鬓角白发",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩，胸上镜仅保留侧背肩和发丝边缘",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "本镜为胸上取景，低于胸口的手、箱包和家具仍按本场状态保留在画框外；只呈现本卡脸旁动作或肩带，取景以胸口下边界为准。"
+      ],
+      "relation_zh": "儿子首先注意到母亲消瘦，自己的旅途疲惫显得次要。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。 已按机场首批景别漂移反馈澄清胸像边界，原剧情、人物走位与机位不变。"
+    },
+    {
+      "id": "ep01_镜24",
+      "shot_no": 24,
+      "scene": "SC06",
+      "beat_id": "ep01_a2",
+      "tier": "A",
+      "plate_id": "SC06_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：左白小巴和黄出租车填满中部背景，栏杆横斜贯前景，棕榈/骨架在后，右上挑檐；地面约下部三成。",
+      "script_ref_zh": "script_source.txt 第61行「苏慧（抹了把眼睛，强笑）：这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。」——她用解释和接风饭掩饰生活辛苦，强笑不能演成真开心。",
+      "beat_zh": "苏慧左中景胸上三分之四正面，朝右前方江砚，左手拎包在裁切线下，右手已抬在眼角旁，笑意勉强；江砚右前景虚焦背肩、无包带。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口玻璃门一侧，约1.5米高反向看接站车道，左车队、右上挑檐。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "胸上近景，紧密胸像构图（tight bust portrait, frame ends at chest）：头顶留约5%，整张脸含发顶至下颏约占画高50%，双肩左右延伸至画框边缘，下边缘在胸口位置截断。前景过肩仅占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。 背景取人物脸后方对应高度的虚焦局部，取景在胸口高度截止，主体腰部和腹部位于画框以下。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手抬到眼角旁，嘴角准备挤出笑",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "站在玻璃门外阴影边，肩背略紧，胸上镜仅保留侧背肩和发丝边缘",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "旅客甲",
+        "旅客乙",
+        "旅客丙"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "本镜为胸上取景，低于胸口的手、箱包和家具仍按本场状态保留在画框外；只呈现本卡脸旁动作或肩带，取景以胸口下边界为准。"
+      ],
+      "relation_zh": "苏慧用太阳大和接风饭的话掩饰生活辛苦，笑容勉强。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。照录原文“显的”，不擅改对白用字。 已按机场首批景别漂移反馈澄清胸像边界，原剧情、人物走位与机位不变。"
+    },
+    {
+      "id": "ep01_镜25",
+      "shot_no": 25,
+      "scene": "SC06",
+      "beat_id": "ep01_a3",
+      "tier": "B",
+      "plate_id": "SC06_机场出口_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+      "plate_read_zh": "实际看图：左玻璃门幕墙及推车，上方水泥挑檐纵深收拢，右栏杆与黄色车队白小巴；前景地面约下半幅，阴影在左。",
+      "script_ref_zh": "script_source.txt 第61行「苏慧（抹了把眼睛，强笑）：这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。」——承接“快走吧”，明确两人和全部行李一起离开。",
+      "beat_zh": "苏慧右中景侧背朝停车区走，左手拎橄榄色登山包；江砚左前景侧背跟随，右手拉深灰箱、双肩空，视线看母亲；旅客在更远处横向经过，人物不并排面对镜头。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身在中央偏下主体区，头脚完整，脚下地面留约15%，上部保留环境，前后层清楚。",
+        "plate_crop_zh": "沿用宽底板左右结构和主要出入口，画面下方空地裁去一小部分。"
+      },
+      "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "侧身准备跟着母亲离开",
+          "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_right",
+          "posture_zh": "侧身朝停车区，前脚正要迈出",
+          "action_zh": "左手提着同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在身侧，眼眶泛红",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "旅客甲",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+        },
+        {
+          "name": "旅客乙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+        },
+        {
+          "name": "旅客丙",
+          "ref_images": [],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在远处通道侧面，重心落在前脚",
+          "action_zh": "各自持随身行李",
+          "contact_zh": null,
+          "focus": "defocused",
+          "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+      ],
+      "relation_zh": "承接“快走吧”，明确两人和全部行李一起离开。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。不展示未建立的出租车内景。"
+    },
+    {
+      "id": "ep01_镜26",
+      "shot_no": 26,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_顾家别墅客厅_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "plate_read_zh": "实际看图：左楼梯和侧门，右沙发与电视墙，正后玻璃泳池、上方吊灯和二楼玻璃走廊；前景空石材地约下部三成。",
+      "script_ref_zh": "script_source.txt 第64行「▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央，沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。」——豪宅里母子局促站着，主人坐着且不抬头。",
+      "beat_zh": "江砚左前景侧背朝东侧沙发，右手拉深灰箱、双肩无包；苏慧左中景比江砚更靠北，侧面朝沙发、左手拎橄榄色包。刘兰右后景坐东侧沙发北段翘腿、侧面低眼看指甲；顾瑶右中景坐同沙发南段，身体斜向北、侧面低头刷手机。四人形成前后层，不排成合影。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅南侧玄关附近，约1.5米高朝北窗与泳池，左西侧楼梯、右东侧沙发。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身在中央偏下主体区，头脚完整，脚下地面留约15%，上部保留环境，前后层清楚。",
+        "plate_crop_zh": "沿用宽底板左右结构和主要出入口，画面下方空地裁去一小部分。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_right",
+          "posture_zh": "站在西南侧空地",
+          "action_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "off_right",
+          "posture_zh": "站在江砚北侧半步，含肩",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前，嘴角陪笑",
+          "contact_zh": null
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧沙发北段、双腿交叠",
+          "action_zh": "右手指甲举在眼前、低眼看指甲",
+          "contact_zh": null
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠东侧沙发南段",
+          "action_zh": "双手握手机在胸前、低眼看屏幕",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "母子局促站着，主人坐着、低眼各忙各的。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。A左=楼梯/西侧通道，右=沙发/电视墙；顾万通此刻未到。"
+    },
+    {
+      "id": "ep01_镜27",
+      "shot_no": 27,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_C侧机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+      "plate_read_zh": "实际看图：左玻璃窗、右电视和深色石墙，黑沙发横贯中部，左下茶几果盘；近景背景以家具为主，空地只在下缘。",
+      "script_ref_zh": "script_source.txt 第64行「▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央，沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。」——不抬头就是轻慢，不额外添加对视。",
+      "beat_zh": "相机从西侧看东；刘兰在左中景（沙发北段），身体侧向右前方，头低着、视线只在举起的指甲；顾瑶在右前景（南段）侧面对镜头、躺靠转角，目视手机。两人有纵深差，左侧窗与右侧电视墙保留。母子站在相机后方西侧、此镜画外。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅西侧沙发区，约1.5米高朝东侧电视墙，左北窗、右南侧沙发段。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取C紧底板中段黑色沙发北段和南段的座位、左窗边与右电视墙，刘兰与顾瑶的入画部分按人物字段保留。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在沙发北段、双腿交叠",
+          "action_zh": "右手举起指甲、眼皮低垂",
+          "contact_zh": null
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠沙发南段",
+          "action_zh": "双手举手机、目光落在屏幕，嘴角轻松",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [
+        "江砚",
+        "苏慧"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "刘兰只看指甲，顾瑶只看手机，冷淡表现在各自的视线落点。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。镜26已建立四人；本镜母子确实在C机位后方，不生成空泛人影。"
+    },
+    {
+      "id": "ep01_镜28",
+      "shot_no": 28,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+      "script_ref_zh": "script_source.txt 第65行「苏慧（小心翼翼地陪着笑）：刘姐，瑶瑶，小砚到了。」——介绍儿子也要小心讨认可。",
+      "beat_zh": "苏慧右中景胸上侧面偏正、面向左侧刘兰，含肩陪笑，左手拎包在裁切线下；刘兰左前景只露虚焦背肩和头部边缘，坐姿未变。江砚在苏慧右后方，只保留画面右缘一段发白衬衫；顾瑶仍在东侧沙发南段，位于左下裁切外。 本版取景确定保留左缘刘兰背肩和顾瑶的虚焦头肩窄条，二人均作为可见背景人物，不能画空座位。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取B紧底板玄关方向与右侧母子胸上区域，左缘保留刘兰背肩及顾瑶虚焦头肩对应的沙发窄条。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "off_left",
+          "posture_zh": "站在儿子北侧、侧背肩靠镜头",
+          "action_zh": "左手在裁切线下提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，嘴角撑着笑、嘴唇将开",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "off_left",
+          "posture_zh": "站在母亲右后方，画面右缘只露发白衬衫和侧脸轮廓",
+          "action_zh": "右手在裁切线下握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着、眉头轻收",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧北段，仅背肩与头侧边缘入画",
+          "action_zh": "抬右手看指甲",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "坐在东侧南段，左缘仅留虚焦头肩轮廓",
+          "action_zh": "双手持手机于胸前",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "介绍儿子也要小心讨认可。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。入画的是刘兰虚焦背肩，不是空沙发；镜28与27不是机械水平翻转，应按A定场站位投影。"
+    },
+    {
+      "id": "ep01_镜29",
+      "shot_no": 29,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_C侧机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+      "plate_read_zh": "实际看图：左玻璃窗、右电视和深色石墙，黑沙发横贯中部，左下茶几果盘；近景背景以家具为主，空地只在下缘。",
+      "script_ref_zh": "script_source.txt 第66行「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」——夸赞字面说得越慢，羞辱越明显；眼皮始终没抬。",
+      "beat_zh": "刘兰左中景胸上、三分之四正面偏右，眼睛压低只看抬在胸前的美甲，身体仍坐沙发北段；顾瑶右前景只露虚焦侧头与手机边缘。母子在西侧相机身后画外，刘兰不用正眼看他们。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅西侧沙发区，约1.5米高朝东侧电视墙，左北窗、右南侧沙发段。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取C紧底板中段黑色沙发北段和南段的座位、左窗边与右电视墙，刘兰与顾瑶的入画部分按人物字段保留。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在沙发北段、双腿交叠",
+          "action_zh": "右手举起指甲、眼皮低垂",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠沙发南段",
+          "action_zh": "双手举手机、目光落在屏幕，嘴角轻松",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "江砚",
+        "苏慧"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "刘兰眼皮低垂，慢声说出带着羞辱的反话。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。不沿用v2“扫江砚一眼”的新增动作，原文为眼皮都没抬。"
+    },
+    {
+      "id": "ep01_镜30",
+      "shot_no": 30,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+      "script_ref_zh": "script_source.txt 第66行「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」——反话让江砚难堪，但他尚未反驳。",
+      "beat_zh": "江砚右中景胸上三分之四侧面朝左、目视刘兰方向，脸上局促而克制，肩上无包带；苏慧右前景只有虚焦侧背肩。刘兰左前景背肩/发丝边缘可见，顾瑶在她之后的左侧沙发上，若沙发座位入画保留低头身影，否则明确在左下裁切外。 本版取景确定保留左缘刘兰背肩和顾瑶的虚焦头肩窄条，二人均作为可见背景人物，不能画空座位。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取B紧底板玄关方向与右侧母子胸上区域，左缘保留刘兰背肩及顾瑶虚焦头肩对应的沙发窄条。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "off_left",
+          "posture_zh": "站在西南侧，胸上入画",
+          "action_zh": "右手在裁切线下握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着、眉头轻收",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_left",
+          "posture_zh": "站在儿子北侧、侧背肩靠镜头",
+          "action_zh": "左手在裁切线下提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧北段，仅背肩与头侧边缘入画",
+          "action_zh": "抬右手看指甲",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "坐在东侧南段，左缘仅留虚焦头肩轮廓",
+          "action_zh": "双手持手机于胸前",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "反话让江砚难堪，但他尚未反驳。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。不要提前握拳或站起，他全程站着。"
+    },
+    {
+      "id": "ep01_镜31",
+      "shot_no": 31,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_C侧机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+      "plate_read_zh": "实际看图：左玻璃窗、右电视和深色石墙，黑沙发横贯中部，左下茶几果盘；近景背景以家具为主，空地只在下缘。",
+      "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」——她把江砚当着人的面当成谈资，说给母亲听。",
+      "beat_zh": "顾瑶右中景胸上三分之四侧面朝左、斜靠沙发南段，手机在胸前；刘兰在左后景沙发北段低眼看美甲、只露侧面小轮廓。顾瑶先朝西侧画外江砚扫眼，再将视线与话头转向左侧母亲。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅西侧沙发区，约1.5米高朝东侧电视墙，左北窗、右南侧沙发段。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取C紧底板中段黑色沙发北段和南段的座位、左窗边与右电视墙，刘兰与顾瑶的入画部分按人物字段保留。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠沙发南段",
+          "action_zh": "双手举手机、目光落在屏幕，嘴角轻松",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在沙发北段、双腿交叠",
+          "action_zh": "右手举起指甲、眼皮低垂",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [
+        "江砚",
+        "苏慧"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "她把江砚当着人的面当成谈资，说给母亲听。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。手机左右手握法沿用v1主帧。"
+    },
+    {
+      "id": "ep01_镜32",
+      "shot_no": 32,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "A",
+      "plate_id": "SC01_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+      "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」；script_source.txt 第68行「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——江砚受辱，母亲首先担心儿子顶嘴。",
+      "beat_zh": "江砚右中景胸上三分之四侧面朝左，眉头微蹙；苏慧右前景侧背脸朝左下的沙发区，肩膀更含。刘兰左前景保留虚焦背肩，顾瑶在左下裁切外的沙发南段接话，不能站到屋中央。 本版取景确定保留左缘刘兰背肩和顾瑶的虚焦头肩窄条，二人均作为可见背景人物，不能画空座位。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+        "plate_crop_zh": "取B紧底板玄关方向与右侧母子胸上区域，左缘保留刘兰背肩及顾瑶虚焦头肩对应的沙发窄条。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "off_left",
+          "posture_zh": "站在西南侧，胸上入画",
+          "action_zh": "右手在裁切线下握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着、眉头轻收",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_left",
+          "posture_zh": "站在儿子北侧、侧背肩靠镜头",
+          "action_zh": "左手在裁切线下提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧北段，仅背肩与头侧边缘入画",
+          "action_zh": "抬右手看指甲",
+          "contact_zh": null,
+          "focus": "defocused"
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_left",
+          "depth": "far",
+          "body_dir": "screen_right",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "坐在东侧南段，左缘仅留虚焦头肩轮廓",
+          "action_zh": "双手持手机于胸前",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "江砚受辱，母亲首先担心儿子顶嘴。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。"
+    },
+    {
+      "id": "ep01_镜33",
+      "shot_no": 33,
+      "scene": "SC01",
+      "beat_id": "ep01_v1",
+      "tier": "S",
+      "plate_id": "SC01_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+      "script_ref_zh": "script_source.txt 第68行「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——愤怒落到攥紧拉杆上，他始终没开口。",
+      "beat_zh": "江砚右手与深灰硬壳箱的黑色伸缩拉杆占画面中央近端，指节未完全收紧；背景只留虚焦米白大理石地面，裁掉沙发与所有人的脸。苏慧仍在他北侧、刘兰顾瑶仍在东侧座位，三人都在特写裁切外。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+      "framing": {
+        "shot_size": "特写",
+        "subject_frac": 0.85,
+        "crop_zh": "画面上边从右手腕切断、底边从拉杆中段切断，手和握把占高约85%，人物头和躯干位于裁切外。",
+        "plate_crop_zh": "只取B紧底板下缘的虚焦大理石地面色块，手与拉杆位于中央，家具和其他人物处于裁切外。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:行李箱拉杆",
+          "posture_zh": "身体在特写裁切之外，右手位于中央近端",
+          "action_zh": "右手五指松搭在黑色拉杆握把上，袖口露出洗白衬衫",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [
+        "苏慧",
+        "刘兰",
+        "顾瑶"
+      ],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "愤怒落到攥紧拉杆上，他始终没开口。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。使用B紧底板的地面背景范围；不是SC01的D二楼俯拍机位。"
+    },
+    {
+      "id": "ep01_镜34",
+      "shot_no": 34,
+      "scene": "SC01",
+      "beat_id": "ep01_v2",
+      "tier": "A",
+      "plate_id": "SC01_顾家别墅客厅_A主机位",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "plate_read_zh": "实际看图：左楼梯和侧门，右沙发与电视墙，正后玻璃泳池、上方吊灯和二楼玻璃走廊；前景空石材地约下部三成。",
+      "script_ref_zh": "script_source.txt 第69行「苏慧（赶紧打圆场，推着江砚往客房走）：快把行李放进去，歇会儿就开饭了，你表叔一会儿就回来。」——苏慧赶紧把儿子带离冲突，不代替他争论。",
+      "beat_zh": "江砚左前景侧背朝西侧门洞，右手握箱杆；苏慧左中景侧面，左手拎包、右手扶江砚后肩，把他引向A画面左侧楼梯旁通道。刘兰仍在右后景沙发北段看指甲；顾瑶右中景南段刷手机，位置不变。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客厅南侧玄关附近，约1.5米高朝北窗与泳池，左西侧楼梯、右东侧沙发。",
+      "framing": {
+        "shot_size": "全景",
+        "subject_frac": 0.4,
+        "crop_zh": "人物全身在中央偏下主体区，头脚完整，脚下地面留约15%，上部保留环境，前后层清楚。",
+        "plate_crop_zh": "沿用宽底板左右结构和主要出入口，画面下方空地裁去一小部分。"
+      },
+      "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "off_left",
+          "posture_zh": "侧身面向西侧门洞，右手扶箱杆",
+          "action_zh": "右手握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "center",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "江砚",
+          "posture_zh": "站在江砚北侧半步，含肩",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手已扶在江砚后肩",
+          "contact_zh": null
+        },
+        {
+          "name": "刘兰",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "far",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:美甲",
+          "posture_zh": "坐在东侧沙发北段、双腿交叠",
+          "action_zh": "右手指甲举在眼前、低眼看指甲",
+          "contact_zh": null
+        },
+        {
+          "name": "顾瑶",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "far_right",
+          "depth": "mid",
+          "body_dir": "screen_left",
+          "camera_relation": "profile",
+          "gaze_at": "prop:手机",
+          "posture_zh": "斜靠东侧沙发南段",
+          "action_zh": "双手握手机在胸前、低眼看屏幕",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+      ],
+      "relation_zh": "苏慧赶紧把儿子带离冲突，不代替他争论。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。纠正v2写反的动线：A左侧才是楼梯旁通道。左手持包，不能同时双手推人。"
+    },
+    {
+      "id": "ep01_镜35",
+      "shot_no": 35,
+      "scene": "SC03日",
+      "beat_id": "ep01_r1",
+      "tier": "A",
+      "plate_id": "SC03日_顾家客房_B反打",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+      "plate_read_zh": "实际看图：后方半开木门、左衣挂和空桌椅，右为床脚，门右空墙；前景地面约四成，台灯在镜头后方。",
+      "script_ref_zh": "script_source.txt 第70行「▲苏慧把江砚推进客房，反手带上门，才压低声音。」——门关上她才敢低声说话；时间仍是白天。",
+      "beat_zh": "江砚右前景侧背朝床边，右手拖来的箱子停在右侧床脚；苏慧左中景三分之四正面朝右前方儿子，左手仍拿包、右手搭身后半开的门。左侧书桌为空，右侧是床；日光从相机背后窗户进入，台灯关闭。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客房北窗前，约1.5米高朝南门，左桌、右床脚。",
+      "framing": {
+        "shot_size": "中景",
+        "subject_frac": 0.55,
+        "crop_zh": "画面上边留头顶约5%，底边把近端人物从大腿中段切断，看不到膝盖以下和脚；交接手与道具在中部。",
+        "plate_crop_zh": "取宽底板中段人物站立区域，裁去大块天空或天花、下方空地，左右机位结构保持。"
+      },
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "刚进房间，在床脚旁站立",
+          "action_zh": "右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，箱子四轮触地",
+          "contact_zh": null
+        },
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在半开的门内侧，右肩靠门",
+          "action_zh": "左手提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手搭在半开门的内侧准备关门",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "房门半开，东侧桌面为空，江砚带入的行李箱为房内唯一的箱子"
+      ],
+      "relation_zh": "门关上她才敢低声说话；时间仍是白天。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。箱子只由江砚带入这一只；日间空底板中不预放第二只箱。"
+    },
+    {
+      "id": "ep01_镜36",
+      "shot_no": 36,
+      "scene": "SC03日",
+      "beat_id": "ep01_r2",
+      "tier": "A",
+      "plate_id": "SC03日_顾家客房_B反打_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+      "plate_read_zh": "实际看图：中央闭合木门占大半高度、左挂钩和桌椅边、右下床脚；下缘地板约两成，门边无台灯，日间自然光。",
+      "script_ref_zh": "script_source.txt 第71行「苏慧：小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。」——她教儿子忍让，是长期寄人篱下的习惯。",
+      "beat_zh": "苏慧左中景胸上三分之四正面朝右前方江砚，门在身后已关，眉头小心地皱着、手在腹前交叠；江砚右前景侧背肩虚焦，身体正在床沿坐稳，背包已在东侧桌面，箱子在床脚，二者在下裁切外。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客房北窗前，约1.5米高朝南门，左桌、右床脚。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "胸上近景，紧密胸像构图（tight bust portrait, frame ends at chest）：头顶留约5%，整张脸含发顶至下颏约占画高50%，双肩左右延伸至画框边缘，下边缘在胸口位置截断。前景过肩仅占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。 背景取人物脸后方对应高度的虚焦局部，取景在胸口高度截止，主体腰部和腹部位于画框以下。"
+      },
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "江砚",
+          "posture_zh": "站在床边东南侧，含着肩",
+          "action_zh": "双手在腹前交叠，眼神小心，准备低声说话",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "苏慧",
+          "posture_zh": "双腿微屈、身体刚要坐到西侧床沿，取景仅保留后肩与发丝边缘",
+          "action_zh": "双手在膝前保持平衡，目视母亲",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "南侧房门已经关闭；橄榄包放在东侧桌面，深灰箱放在西侧床脚",
+        "本镜为胸上取景，低于胸口的手、箱包和家具仍按本场状态保留在画框外；只呈现本卡脸旁动作或肩带，取景以胸口下边界为准。"
+      ],
+      "relation_zh": "她教儿子忍让，是长期寄人篱下的习惯。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。背包桌面状态锁定；近景不要求看见道具，但不改变位置。 已按机场首批景别漂移反馈澄清胸像边界，原剧情、人物走位与机位不变。"
+    },
+    {
+      "id": "ep01_镜37",
+      "shot_no": 37,
+      "scene": "SC03日",
+      "beat_id": "ep01_r2",
+      "tier": "A",
+      "plate_id": "SC03日_顾家客房_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：后方黑窗框占上半，左床枕和未亮台灯，右下桌椅边缘，地板只露约一成；光为北窗日光。",
+      "script_ref_zh": "script_source.txt 第71行「苏慧：小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？你表叔这些年收留我，供你上大学，咱们得懂得感恩。」——江砚因母亲的小心而心酸，不能凭空演成已经知道后续骗局。",
+      "beat_zh": "江砚左中景胸上三分之四正面朝右前方母亲，坐在西侧床沿、双手放膝上，眼睛一直看她；苏慧右前景仅虚焦侧背肩入画。后方窗透日光、床头灯未亮，右侧桌面背包在裁切外。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客房南侧门内，约1.5米高朝北窗，左床、右桌。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "胸上近景，紧密胸像构图（tight bust portrait, frame ends at chest）：头顶留约5%，整张脸含发顶至下颏约占画高50%，双肩左右延伸至画框边缘，下边缘在胸口位置截断。前景过肩仅占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。 背景取人物脸后方对应高度的虚焦局部，取景在胸口高度截止，主体腰部和腹部位于画框以下。"
+      },
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "坐在西侧床沿、重心下沉",
+          "action_zh": "双手放在膝上，目光心酸而克制，嘴唇闭合",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在床边东南侧，含着肩，取景仅保留后肩与发丝边缘",
+          "action_zh": "双手在腹前交叠，眼神小心，准备低声说话",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "南侧房门已经关闭；橄榄包放在东侧桌面，深灰箱放在西侧床脚",
+        "本镜为胸上取景，低于胸口的手、箱包和家具仍按本场状态保留在画框外；只呈现本卡脸旁动作或肩带，取景以胸口下边界为准。"
+      ],
+      "relation_zh": "江砚因母亲的小心而心酸，听完之后准备顺从点头。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。A左江砚/B右江砚，母子对话轴清楚；原文没有此刻识破全部真相。 已按机场首批景别漂移反馈澄清胸像边界，原剧情、人物走位与机位不变。"
+    },
+    {
+      "id": "ep01_镜38",
+      "shot_no": 38,
+      "scene": "SC03日",
+      "beat_id": "ep01_r2",
+      "tier": "S",
+      "plate_id": "SC03日_顾家客房_A主机位_紧",
+      "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+      "plate_read_zh": "实际看图：后方黑窗框占上半，左床枕和未亮台灯，右下桌椅边缘，地板只露约一成；光为北窗日光。",
+      "script_ref_zh": "script_source.txt 第72行「江砚（看着母亲小心翼翼的样子，心里发酸，点了点头）：我知道了妈。」——结尾落在他为了母亲忍下屈辱，为下一集餐桌冲突留压力。",
+      "beat_zh": "江砚左中景三分之四正面朝右前方母亲，坐在床沿，心酸但克制；苏慧右前景虚焦侧背肩仍在，两人留在房间内。窗日光照亮江砚侧脸，台灯持续关闭。",
+      "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+      "camera_zh": "相机在客房南侧门内，约1.5米高朝北窗，左床、右桌。",
+      "framing": {
+        "shot_size": "近景",
+        "subject_frac": 0.68,
+        "crop_zh": "胸上近景，紧密胸像构图（tight bust portrait, frame ends at chest）：头顶留约5%，整张脸含发顶至下颏约占画高50%，双肩左右延伸至画框边缘，下边缘在胸口位置截断。前景过肩仅占一侧约15%。",
+        "plate_crop_zh": "取紧底板中部与人物胸上高度对应的背景，保持机位，只作少量边缘裁切，下方空地裁掉。 背景取人物脸后方对应高度的虚焦局部，取景在胸口高度截止，主体腰部和腹部位于画框以下。"
+      },
+      "light_zh": "北窗柔和日光照入小客房，床头台灯处于关闭状态，白天色温和亮度稳定。",
+      "people": [
+        {
+          "name": "江砚",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "left",
+          "depth": "mid",
+          "body_dir": "screen_right",
+          "camera_relation": "three_quarter_front",
+          "gaze_at": "苏慧",
+          "posture_zh": "坐在西侧床沿、重心下沉",
+          "action_zh": "双手放膝上，眼睛望着母亲，颈部放松准备轻点头",
+          "contact_zh": null
+        }
+      ],
+      "background_people": [
+        {
+          "name": "苏慧",
+          "ref_images": [
+            "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+          ],
+          "ref_note_zh": "已选角色三视图",
+          "pos_x": "right",
+          "depth": "near",
+          "body_dir": "screen_left",
+          "camera_relation": "three_quarter_back",
+          "gaze_at": "江砚",
+          "posture_zh": "站在床边东南侧，含着肩，取景仅保留后肩与发丝边缘",
+          "action_zh": "双手在腹前交叠，眼神小心，准备低声说话",
+          "contact_zh": null,
+          "focus": "defocused"
+        }
+      ],
+      "present_off_frame": [],
+      "props_zh": [
+        "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+        "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+        "南侧房门已经关闭；橄榄包放在东侧桌面，深灰箱放在西侧床脚",
+        "本镜为胸上取景，低于胸口的手、箱包和家具仍按本场状态保留在画框外；只呈现本卡脸旁动作或肩带，取景以胸口下边界为准。"
+      ],
+      "relation_zh": "结尾落在他为了母亲忍下屈辱，为下一集餐桌冲突留压力。",
+      "count": 1,
+      "notes": "阶段一待审稿；首帧取动作起点。本镜只作轻微缓推：胸上近景到肩上特写，人物/背景仍在现有裁切内。 已按机场首批景别漂移反馈澄清胸像边界，原剧情、人物走位与机位不变。"
+    }
+  ]
+}

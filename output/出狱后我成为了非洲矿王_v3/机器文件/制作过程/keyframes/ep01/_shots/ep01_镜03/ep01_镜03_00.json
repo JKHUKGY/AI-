@@ -1,0 +1,43 @@
+{
+  "id": "ep01_镜03",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-4e056f82-0962-491a-b682-6e38b49ecc56.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/resume_review_room_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch04_continuity.json",
+      "id": "ep01_镜03",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+      "verdict": "fail",
+      "reason": "江砚在左侧背、右手垂下，远侧左手张开准备接瓶，瓶仍在陈野手中且白盖盖紧，交接起点可读。陈野却用靠相机的解剖学左臂递瓶，右手垂下，与既定右手递瓶不符。右侧门扇底部及门槛在二人身后，脚下为院内铺地，相机看出去时二人落在院内而非门外。江砚头顶留约13%，画面下缘切至膝附近且陈野小腿/靴边出现，中景过宽。",
+      "fix_instruction": "江砚左手待接、右手垂下保持；把递瓶切换到陈野解剖学右手，并清晰表现右肩到右肘到瓶的归属。两人放回B机位门槛外侧红土路，门框在近端边缘；收紧到江砚头顶约5%、下缘大腿中段。",
+      "card_field": [
+        "people[陈野].action_zh",
+        "people[江砚].posture_zh",
+        "people[陈野].posture_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch04_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch04_single.json",
+      "id": "ep01_镜03",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+      "verdict": "fail",
+      "reason": "白盖封闭、递瓶起点、江砚左手待接右手下垂成立。陈野伸出的是靠相机的解剖左臂，右臂下垂，违反右手递瓶。B机位下两人位于门扇近侧院内，未在门外靠门和车侧。江砚头顶约13%，偏离5%，近端腿裁切基本符合。",
+      "fix_instruction": "陈野解剖右臂从远侧伸出递白盖瓶，左臂垂下；保持江砚左接右垂。两人移到门槛外红土上，门扇边缘位于人物近侧。头顶江砚留约5%并保留大腿中段切断。",
+      "card_field": [
+        "people[1].action_zh",
+        "people[0].posture_zh",
+        "camera_zh",
+        "framing.headroom_frac"
+      ]
+    }
+  ],
+  "review_zh": "江砚在左侧背、右手垂下，远侧左手张开准备接瓶，瓶仍在陈野手中且白盖盖紧，交接起点可读。陈野却用靠相机的解剖学左臂递瓶，右手垂下，与既定右手递瓶不符。右侧门扇底部及门槛在二人身后，脚下为院内铺地，相机看出去时二人落在院内而非门外。江砚头顶留约13%，画面下缘切至膝附近且陈野小腿/靴边出现，中景过宽。；白盖封闭、递瓶起点、江砚左手待接右手下垂成立。陈野伸出的是靠相机的解剖左臂，右臂下垂，违反右手递瓶。B机位下两人位于门扇近侧院内，未在门外靠门和车侧。江砚头顶约13%，偏离5%，近端腿裁切基本符合。",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch04_b.json"
+}

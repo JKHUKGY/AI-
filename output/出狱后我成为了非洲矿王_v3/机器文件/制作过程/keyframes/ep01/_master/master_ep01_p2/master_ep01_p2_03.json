@@ -1,0 +1,10 @@
+{
+  "id": "master_ep01_p2",
+  "round": 3,
+  "candidate": 3,
+  "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-51390715-0c5a-4066-96bf-fe589b3b7284.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+  "status": "rejected",
+  "reviewed": true,
+  "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+}

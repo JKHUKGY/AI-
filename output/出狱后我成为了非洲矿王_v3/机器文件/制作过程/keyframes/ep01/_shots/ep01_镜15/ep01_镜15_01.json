@@ -1,0 +1,47 @@
+{
+  "id": "ep01_镜15",
+  "round": 2,
+  "candidate": 1,
+  "source": "/home/codespace/.codex/generated_images/01a070ef-c220-7161-8318-bb18c74f16cc/exec-3f10b5c9-41b3-496a-9b7e-3c5fdea94e4c.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_01.png",
+  "status": "pending_review",
+  "generator_agent_id": "/root/generate_prison_round2_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_standard_round2_prison_b.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_round2_prison_continuity.json",
+      "id": "ep01_镜15",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_01.png",
+      "verdict": "fail",
+      "reason": "人物在门外红土，铁门两边前景、道路和右后越野车的B空间已正确。陈野近侧左臂下垂、远侧右肘抬起，解剖手别正确，但右手更像竖掌松垂，并未清楚表现掌心朝下将拍大腿。江砚左手瓶、右手持白色小盖的手别正确；硬错误是瓶口仍有一枚完整白盖，右手又有单独白盖，开口水瓶连戏不成立。顶空约12%，大腿中段以下仍较多，仍可收紧。",
+      "fix_instruction": "保留已正确门外B空间和双人左右手职责，只去掉江砚左手瓶口的盖并呈现透明开口，保留右手唯一白盖；陈野远侧右掌转成掌心向下悬于右腿前上方一掌处；按原卡收紧顶部和腿部。",
+      "card_field": "people[0].action_zh; people[1].action_zh; framing.crop_zh",
+      "spatial_annotations": {
+        "coordinate_system": "normalized x,y from top-left",
+        "jiang_left_bottle_bbox": [
+          0.36,
+          0.5,
+          0.43,
+          0.62
+        ],
+        "jiang_right_cap_region": [
+          0.37,
+          0.85,
+          0.4,
+          0.88
+        ],
+        "chen_right_hand": [
+          0.53,
+          0.61
+        ],
+        "chen_left_hand": [
+          0.8,
+          0.78
+        ],
+        "note": "江砚近相机右臂沿画面左中袖筒下垂到白盖，远侧左手从身体前方持瓶；陈野近相机左臂在画面最右下垂，远侧右肘位于身体左轮廓并抬掌。未按画面左右直接等同解剖手别。"
+      }
+    }
+  ],
+  "review_zh": "人物在门外红土，铁门两边前景、道路和右后越野车的B空间已正确。陈野近侧左臂下垂、远侧右肘抬起，解剖手别正确，但右手更像竖掌松垂，并未清楚表现掌心朝下将拍大腿。江砚左手瓶、右手持白色小盖的手别正确；硬错误是瓶口仍有一枚完整白盖，右手又有单独白盖，开口水瓶连戏不成立。顶空约12%，大腿中段以下仍较多，仍可收紧。"
+}

@@ -1,0 +1,122 @@
+{
+  "agent_id": "/root/image_generator_resume",
+  "role": "Generator",
+  "timestamp_utc": "2026-09-05T07:50:30.885435+00:00",
+  "status": "blocked_pending_authorization_and_final_jobs",
+  "scope": "preflight_only",
+  "job_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/jobs_master_villa_retry2.json",
+  "job_sha256": "6b4cc18f305803283182e84bedbf816a56ce9f740f50244cef75f8400f6983bf",
+  "jobs": [
+    {
+      "id": "master_ep01_v1",
+      "count": 2,
+      "reference_count": 5
+    }
+  ],
+  "available_tools": [
+    {
+      "name": "image_gen__imagegen",
+      "available": true,
+      "invoked": false,
+      "parameters": [
+        "prompt",
+        "referenced_image_paths",
+        "num_last_images_to_include"
+      ],
+      "output_directory_parameter": false
+    },
+    {
+      "name": "view_image",
+      "available": true,
+      "invoked": false
+    },
+    {
+      "name": "exec_command",
+      "available": true,
+      "invoked": true,
+      "purpose": "read instructions, stat references, write this report"
+    }
+  ],
+  "reference_limits": {
+    "referenced_image_paths": {
+      "explicit_max_in_current_schema": null,
+      "note": "当前声明为Array<string>，未声明本地路径引用张数上限；不能声称已验证后端实际上限。"
+    },
+    "num_last_images_to_include": {
+      "explicit_max": 5,
+      "applicable": false,
+      "note": "仅用于至少一张目标图无本地路径；当前五张引用均有有效本地路径，应使用referenced_image_paths，不能与此参数同时传。"
+    },
+    "current_reference_count": 5
+  },
+  "references": [
+    {
+      "job_id": "master_ep01_v1",
+      "source_path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "absolute_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "realpath": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+      "exists": true,
+      "size_bytes": 2067887,
+      "within_workspace": true
+    },
+    {
+      "job_id": "master_ep01_v1",
+      "source_path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+      "absolute_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+      "realpath": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+      "exists": true,
+      "size_bytes": 2377316,
+      "within_workspace": true
+    },
+    {
+      "job_id": "master_ep01_v1",
+      "source_path": "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+      "absolute_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+      "realpath": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+      "exists": true,
+      "size_bytes": 2258508,
+      "within_workspace": true
+    },
+    {
+      "job_id": "master_ep01_v1",
+      "source_path": "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+      "absolute_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+      "realpath": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/刘兰_三视图/刘兰_三视图_01.png",
+      "exists": true,
+      "size_bytes": 1926885,
+      "within_workspace": true
+    },
+    {
+      "job_id": "master_ep01_v1",
+      "source_path": "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+      "absolute_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+      "realpath": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+      "exists": true,
+      "size_bytes": 1741679,
+      "within_workspace": true
+    }
+  ],
+  "all_references_exist": true,
+  "reference_images_viewed": false,
+  "candidate_images_reviewed": false,
+  "blockers": [
+    {
+      "type": "write_scope",
+      "detail": "父代理说明内置imagegen默认写入/home/codespace/.codex/generated_images；当前AGENTS只允许/workspaces/AI-/内写入，工具无输出目录参数。父代理正在等待用户有限例外答复，答复前禁止生成。",
+      "default_output_path_source": "parent_task_context_not_verified_by_generation"
+    },
+    {
+      "type": "dispatch",
+      "detail": "父代理尚未下发最终jobs；当前仅获准预检。"
+    }
+  ],
+  "pre_generation_required": [
+    "收到父代理明确最终jobs与本次生成授权",
+    "确认工具输出目录有限例外已获用户授权",
+    "按最终jobs实际打开所有未看过的参考图",
+    "按最终轮次张数调用并仅返回生成产物与调用记录"
+  ],
+  "generation_calls": 0,
+  "new_candidate_files": [],
+  "permission_configuration_changed": false
+}

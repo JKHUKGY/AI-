@@ -1,0 +1,28 @@
+[
+  {
+    "id": "master_ep01_p2",
+    "prompt": "局部修正现有照片。参考图1是编辑目标。\n仅修江砚双手及必要前臂姿态：左手握透明瓶身，右手扶仍拧紧在瓶口上的白瓶盖；两只手和瓶口在身前清楚可辨。\n人物身份、发型、服装、门外站位、陈野、门柱铁门、车辆、机位和光线保持原图。\n仅修改手、必要前臂和水瓶/白盖的小区域，保留原始全画幅、人物大小与所有其他像素内容的视觉外观。对白情节不变，绝不新增人物。瓶为500毫升透明塑料瓶，白色旋盖。\n非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png"
+    ],
+    "count": 1,
+    "round": 4,
+    "candidate_start": 6,
+    "mode": "local_edit",
+    "source_card": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/prison_local_edit_proposal.json",
+    "retry_exception": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/execution_approval.json"
+  },
+  {
+    "id": "master_ep01_p3",
+    "prompt": "局部修正现有照片。参考图1是编辑目标。\n仅修江砚双手及必要前臂姿态：左手握开口透明瓶，右手单独拿已取下的白瓶盖；两只手和瓶口在身前清楚可辨。\n人物身份、发型、服装、门外站位、陈野、门柱铁门、车辆、机位和光线保持原图。\n仅修改手、必要前臂和水瓶/白盖的小区域，保留原始全画幅、人物大小与所有其他像素内容的视觉外观。对白情节不变，绝不新增人物。瓶为500毫升透明塑料瓶，白色旋盖。\n非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png"
+    ],
+    "count": 1,
+    "round": 4,
+    "candidate_start": 6,
+    "mode": "local_edit",
+    "source_card": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/prison_local_edit_proposal.json",
+    "retry_exception": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/execution_approval.json"
+  }
+]

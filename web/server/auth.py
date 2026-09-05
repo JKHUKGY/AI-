@@ -112,8 +112,7 @@ def remove_user(username):
 # ---------------- 项目可见范围（哪个账号能看哪几部剧） ----------------
 #
 # permissions.json：{用户名: {"admin": true}} 或 {用户名: {"projects": [剧名, ...]}}。
-# 默认（不在这个文件里）视为"什么项目都看不到"——新建账号必须显式授权，
-# 不能因为漏了一步配置就意外拿到"看全部"的权限。
+# 默认（不在这个文件里）不能看其他人的项目；自己通过网站创建的项目按 owner 授权。
 
 
 def load_permissions():
@@ -139,8 +138,9 @@ def allowed_projects(username):
 
 
 def can_access_project(username, project_name):
+    import projects
     allowed = allowed_projects(username)
-    return allowed is None or project_name in allowed
+    return allowed is None or project_name in allowed or projects.owner(project_name) == username
 
 
 def set_admin(username, flag):

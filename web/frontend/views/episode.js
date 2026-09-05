@@ -4,13 +4,15 @@ Views.episode = async function episode(app, project, ep) {
   const epList = await API.episodeList(project);
   const episodes = epList.episodes;
   if (!episodes.length) {
-    app.innerHTML = '<div class="empty-hint">这个项目还没有分镜表。</div>';
+    app.innerHTML = '<h1>分镜表</h1><div class="manage-episodes"></div><div class="empty-hint">还没有分镜表，新增分集后可以添加镜头。</div>';
+    ContentEditor.toolbar(app.querySelector('.manage-episodes'),project,'episode');
     return;
   }
   const currentEp = episodes.includes(ep) ? ep : episodes[0];
 
   app.innerHTML = `
     <h1>${UI.esc(project)} · 分镜表</h1>
+    <div class="manage-episodes"></div>
     <div class="pill-tabs" id="epTabs">
       ${episodes.map((n) => `<a href="#/p/${encodeURIComponent(project)}/episodes/${n}" class="${n === currentEp ? 'active' : ''}">第${n}集</a>`).join('')}
     </div>
@@ -24,12 +26,17 @@ Views.episode = async function episode(app, project, ep) {
   `;
 
   const data = await API.episode(project, currentEp);
+  ContentEditor.toolbar(app.querySelector('.manage-episodes'),project,'episode');
+  ContentEditor.toolbar(app.querySelector('.manage-episodes'),project,'shot',{episode:currentEp,header:data.header});
+  const deleteEpisode = document.createElement('button'); deleteEpisode.className = 'small delete-episode'; deleteEpisode.textContent = `删除第 ${currentEp} 集`;
+  deleteEpisode.addEventListener('click',() => ContentEditor.remove(project,{kind:'episode',episode:currentEp}));
+  app.querySelector('.manage-episodes').appendChild(deleteEpisode);
   document.getElementById('epMeta').innerHTML = `<div class="card">${data.meta_html}</div>`;
   document.getElementById('epTail').innerHTML = `<div class="card">${data.tail_html}</div>`;
 
   const header = data.header;
   const gradeIdx = header.indexOf('分级');
-  document.querySelector('.shot-table thead').innerHTML = `<tr>${header.map((h) => `<th>${UI.esc(h)}</th>`).join('')}<th>留言</th></tr>`;
+  document.querySelector('.shot-table thead').innerHTML = `<tr>${header.map((h) => `<th>${UI.esc(h)}</th>`).join('')}<th>操作</th></tr>`;
 
   const tbody = document.getElementById('shotBody');
   function renderRows(rows) {
@@ -77,6 +84,9 @@ Views.episode = async function episode(app, project, ep) {
       commentTd.querySelector('button').addEventListener('click', () => {
         UI.openCommentPanel(project, { type: 'shot', episode: currentEp, shot_no: row['镜号'] }, `第${currentEp}集 · 镜${row['镜号']}`);
       });
+      const insert = document.createElement('button'); insert.className = 'small insert-shot'; insert.textContent = '在后面插入';
+      insert.addEventListener('click',() => ContentEditor.add(project,'shot',currentEp,header,row['镜号'])); commentTd.appendChild(insert);
+      ContentEditor.deleteButton(commentTd,project,{kind:'shot',episode:currentEp,shot:row['镜号']});
       tr.appendChild(commentTd);
       tbody.appendChild(tr);
     });

@@ -1,0 +1,48 @@
+{
+  "id": "ep01_镜15",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070d9-03ce-7501-a50b-16ad17385aa5/exec-738fdfc4-3318-46b3-ab3a-65cddcc4edda.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_batch05_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_continuity.json",
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "正反打左右转换与角色衣着正确，左手瓶/右手白盖可见。但两人明显站在门扇和门槛近相机一侧的院内水泥地，门外红土在他们身后，违背始终在门外。江砚头顶约15%顶空，非5%；陈野双臂下垂，右手未体现将拍大腿的起始姿态。瓶口呈白色封盖状，与手中又有白盖形成疑点。",
+      "fix_instruction": "在B机位保持两人位于门槛远侧红土地，门扇边框位于前景；头顶留5%并截断大腿中段；陈野右肘稍屈、右手悬在大腿前上方，左手自然垂下；瓶口明确开放、白盖仅在江砚右手。",
+      "card_field": [
+        "people[].posture_zh",
+        "framing.crop_zh",
+        "people[1].action_zh",
+        "people[0].action_zh"
+      ],
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch05_single.json",
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+      "verdict": "fail",
+      "reason": "B反打方向、江砚左近背身和陈野右中前身正确；但两人明显位于门扇及门槛前的院内水泥地，违反门外谈话。江砚头顶约15%而非5%，画底接近膝部而非近端大腿中段。左手水瓶瓶口有白色封盖形态，右手又单独拿白盖；陈野右臂直垂，未呈将拍大腿起手。",
+      "fix_instruction": "将两人放在门槛南侧红土上、门扇在镜头与人物之间的两侧前景；保证江砚左手瓶口清楚敞开，唯一白盖在右手；陈野右手屈肘抬到大腿上方、左手垂下；主角头顶5%、底边截大腿中段。",
+      "card_field": [
+        "people[0].posture_zh",
+        "people[0].action_zh",
+        "people[1].action_zh",
+        "framing.crop_zh",
+        "framing.headroom_frac",
+        "scene_beats.ep01_p4.state_zh"
+      ]
+    }
+  ],
+  "review_zh": "正反打左右转换与角色衣着正确，左手瓶/右手白盖可见。但两人明显站在门扇和门槛近相机一侧的院内水泥地，门外红土在他们身后，违背始终在门外。江砚头顶约15%顶空，非5%；陈野双臂下垂，右手未体现将拍大腿的起始姿态。瓶口呈白色封盖状，与手中又有白盖形成疑点。；B反打方向、江砚左近背身和陈野右中前身正确；但两人明显位于门扇及门槛前的院内水泥地，违反门外谈话。江砚头顶约15%而非5%，画底接近膝部而非近端大腿中段。左手水瓶瓶口有白色封盖形态，右手又单独拿白盖；陈野右臂直垂，未呈将拍大腿起手。",
+  "generator_agent_id": "/root/generate_keyframes_batch05_a",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch05_a.json"
+}

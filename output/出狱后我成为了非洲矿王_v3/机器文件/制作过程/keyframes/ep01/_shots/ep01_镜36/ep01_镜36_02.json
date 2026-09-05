@@ -1,0 +1,32 @@
+{
+  "id": "ep01_镜36",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a070d3-8395-7bd3-8db5-99fa3788a352/exec-a584f9ff-55e7-41fe-a343-85602effeb2c.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+  "status": "rejected",
+  "generator_agent_id": "/root/generate_keyframes_batch04_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_edits_round2_b.json",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_edits_round2_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_continuity.json",
+      "id": "ep01_镜36",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "verdict": "fail",
+      "reason": "苏慧灰白低髻、旧白衣和灰围裙、谨慎看右侧儿子的神态，以及身后闭门的B反打、日光均正确；没有新人物、亮灯或背包回肩。下肢及手在框外，不据此要求展示坐稳动作。仍留约14%顶空，头部仅约三分之一画高，围裙胸片向下露出过多；江砚右下肩背横向占约四成画宽，未成为指定10%至15%窄边。此版虽比00紧，仍未完成批准的胸上近景。",
+      "fix_instruction": "保持苏慧身份与低声劝慰神态、闭门B方向；同镜放大并上移至约5%顶空、头部约50%，下缘截在胸口，江砚右肩和头主体移出画框只留窄虚焦边。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "agent_id": "/root/review_keyframes_batch05_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_edits_round2_single.json",
+      "id": "ep01_镜36",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "verdict": "fail",
+      "reason": "苏慧身份、神态、闭合木门与日光保留，但顶空约14%、头高约34%，未到5%顶空与头高约50%；下部仍有大块围裙，江砚右下肩背约38%宽且有明显头部侧面，超过10–15%窄虚焦边缘。",
+      "correction_zh": "按苏慧头顶5%、头高约50%真正收紧至胸口；将江砚头背主体置于右框外，只在10–15%边缘保留虚焦发丝和肩弧。"
+    }
+  ],
+  "review_zh": "苏慧灰白低髻、旧白衣和灰围裙、谨慎看右侧儿子的神态，以及身后闭门的B反打、日光均正确；没有新人物、亮灯或背包回肩。下肢及手在框外，不据此要求展示坐稳动作。仍留约14%顶空，头部仅约三分之一画高，围裙胸片向下露出过多；江砚右下肩背横向占约四成画宽，未成为指定10%至15%窄边。此版虽比00紧，仍未完成批准的胸上近景。；苏慧身份、神态、闭合木门与日光保留，但顶空约14%、头高约34%，未到5%顶空与头高约50%；下部仍有大块围裙，江砚右下肩背约38%宽且有明显头部侧面，超过10–15%窄虚焦边缘。"
+}

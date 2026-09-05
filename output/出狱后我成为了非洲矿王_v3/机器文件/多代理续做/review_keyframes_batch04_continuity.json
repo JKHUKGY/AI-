@@ -1,0 +1,84 @@
+{
+  "agent_id": "/root/resume_review_room_continuity",
+  "role": "Reviewer B / independent continuity",
+  "status": "completed",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png"
+  ],
+  "source_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/storyboard/script_source.txt"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+      "verdict": "fail",
+      "reason": "陈野确实在左侧车旁倚靠看江砚，江砚正面由门口走出，角色衣着、A机位、红土和白天空正确。但铁门已大开，中间通道明显宽于一人，不是刚开可侧身过的窄缝；江砚双脚已在门外红土侧，不能明确表现卡片门内左脚刚迈向门槛的起点。江砚头到鞋底仅约画高23%，脚下仍有约44%红土空地，远离全景主体约40%/地面约15%的要求。陈野手中瓶盖呈浅蓝色，而后镜白盖，需统一。",
+      "fix_instruction": "维持原门柱和门扇铰链，将两扇铁门只开一人侧身通过的窄缝，江砚身体仍在门内、左脚刚迈向门槛；将主体/门口相对画幅放大并减掉前景空地，使江砚头到鞋底约40%、脚下地面约15%；陈野仍倚原车门右手持白盖透明瓶。",
+      "card_field": [
+        "props_zh",
+        "people[江砚].posture_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[陈野].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜02",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png",
+      "verdict": "fail",
+      "reason": "两人角色身份与江左侧背/陈右正面、车在右方符合B反打；陈野离开车准备触肩的动作也清楚。但正面陈野抬的是解剖学右手，白盖瓶在其左手，与卡片左手准备拍肩、右手持瓶完全相反。半开门扇在二人身后、车辆更后，人物处于相机与门之间的院内侧，未站在门外。江砚头顶空约11%，底边偏低至膝附近；陈野膝以下与靴子入画，不符中景大腿中段截止。",
+      "fix_instruction": "保留B朝南机位，把二人放到门柱/门槛南侧红土路，让门扇作为近端两侧边而车辆仍在远端右；陈野右手垂持白盖瓶，左手抬向江砚肩；江砚头顶约5%，下缘切其大腿中段，收掉腿脚。",
+      "card_field": [
+        "people[陈野].action_zh",
+        "people[江砚].posture_zh",
+        "people[陈野].posture_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜03",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+      "verdict": "fail",
+      "reason": "江砚在左侧背、右手垂下，远侧左手张开准备接瓶，瓶仍在陈野手中且白盖盖紧，交接起点可读。陈野却用靠相机的解剖学左臂递瓶，右手垂下，与既定右手递瓶不符。右侧门扇底部及门槛在二人身后，脚下为院内铺地，相机看出去时二人落在院内而非门外。江砚头顶留约13%，画面下缘切至膝附近且陈野小腿/靴边出现，中景过宽。",
+      "fix_instruction": "江砚左手待接、右手垂下保持；把递瓶切换到陈野解剖学右手，并清晰表现右肩到右肘到瓶的归属。两人放回B机位门槛外侧红土路，门框在近端边缘；收紧到江砚头顶约5%、下缘大腿中段。",
+      "card_field": [
+        "people[陈野].action_zh",
+        "people[江砚].posture_zh",
+        "people[陈野].posture_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+      "verdict": "fail",
+      "reason": "江砚右侧三分之四正面朝陈野，身份衣着正确；解剖学左手握透明白盖水瓶、右手指搭盖，嘴唇闭合未接瓶口，准确呈现本卡饮水前起点。A朝北视角中监狱门和院内树/屋在背后，门外站位成立。硬伤是实际拍到腰/裤腰，头顶留白约14%，未在胸口下缘截止；陈野整块后脑和上半身占左部，底部近半幅，且肩背较清楚，不是约15%的虚焦过肩窄边。",
+      "fix_instruction": "保留身份、解剖学左手握瓶/右手搭盖及门外A方向；将持瓶两手抬到胸前作为本镜可见动作，并收紧胸上景别：江砚头顶约5%，下缘胸口下缘截止，腰腿在画外。陈野仅最左约15%虚焦头侧边与后肩，避免宽背遮住主体。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[江砚].action_zh",
+        "background_people[陈野].posture_zh"
+      ]
+    }
+  ],
+  "scene_review": {
+    "status": "fail",
+    "reason": "独立实际查看5张相关参考与4张候选共9张。人物身份、服装与监狱环境、A左车/B右车及正午光一致；但01门开幅和动作阶段偏后，02/03落在门内而09回门外，造成空间连续性错误。02/03陈野用左手持/递瓶，与卡规定右手相反；03江砚左手准备接、09左瓶右盖本身正确。四张均存在各自明确的景别/留白问题，故0通过、4失败。各节拍no_master_reason已核实，未将未通过p2/p3主帧作为本批依赖；未读取其他审查报告。",
+    "pass_count": 0,
+    "fail_count": 4,
+    "unclear_count": 0,
+    "independent_review": true,
+    "other_reviews_read": false
+  }
+}

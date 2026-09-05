@@ -4,6 +4,7 @@
 """
 import os
 import re
+import json
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUTPUT_DIR = os.path.join(REPO_ROOT, 'output')
@@ -19,6 +20,17 @@ def project_dir(name):
     if not os.path.isdir(path):
         return None
     return path
+
+
+def owner(name):
+    pdir = project_dir(name)
+    if pdir:
+        try:
+            with open(os.path.join(pdir, 'project.json'), encoding='utf-8') as f:
+                return json.load(f).get('owner')
+        except (OSError, ValueError, AttributeError):
+            pass
+    return None
 
 
 def list_episode_numbers(name):
@@ -68,6 +80,8 @@ def list_projects():
             continue
         projects.append({
             'name': name,
+            'owner': owner(name),
+            'has_setup': os.path.isfile(os.path.join(path, '_web_state', 'setup.json')),
             'has_storyboard': os.path.isdir(os.path.join(path, 'storyboard')),
             'has_assets': os.path.isdir(os.path.join(path, 'assets')),
             'has_keyframes': os.path.isdir(os.path.join(path, 'keyframes')),
@@ -205,12 +219,16 @@ def media_rel_from_manifest_path(p):
     generate_images.py 时传入的路径，可能是相对仓库根目录（'output/剧名/
     assets/...'）也可能是绝对路径，统一转换成本应用到处使用的、相对
     output/ 的媒体路径（'剧名/assets/...'），转换/校验失败返回 None。"""
-    if not p:
+    if not isinstance(p, str) or not p:
         return None
-    abs_path = p if os.path.isabs(p) else os.path.normpath(os.path.join(REPO_ROOT, p))
-    abs_path = os.path.normpath(abs_path)
-    if not abs_path.startswith(OUTPUT_DIR + os.sep):
-        return None
-    if not os.path.isfile(abs_path):
-        return None
-    return os.path.relpath(abs_path, OUTPUT_DIR).replace(os.sep, '/')
+    # 历史记录可能来自开发机 /workspaces/AI-/output/...，部署后按 output 后的
+    # 项目相对路径重新定位。仍只允许当前 output 下确实存在的文件。
+    if p.startswith(OUTPUT_DIR + os.sep):
+        rel = p[len(OUTPUT_DIR) + 1:]
+    elif p.startswith('output/'):
+        rel = p[len('output/'):]
+    elif '/output/' in p:
+        rel = p.split('/output/', 1)[1]
+    else:
+        rel = p
+    return rel if resolve_media_path(rel) else None

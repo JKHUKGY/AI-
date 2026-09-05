@@ -1,0 +1,37 @@
+{
+  "id": "ep01_镜19",
+  "round": 1,
+  "candidate": 0,
+  "source": "/home/codespace/.codex/generated_images/01a070a4-9786-7762-8eb3-85a329d97dc7/exec-68a0fd84-422f-41e8-ba0d-ad2f98a97184.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+  "status": "rejected",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_keyframes_continuity",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_continuity.json",
+      "id": "ep01_镜19",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+      "round": 1,
+      "candidate": 0,
+      "verdict": "fail",
+      "reason": "江砚身份、衣服、包的磨旧帆布外观和左右手持物连续，母亲与旅客按present_off_frame离画合理。A机位结构正确。但批准胸上近景实际从头顶一直看到大腿，衬衫下摆、右前臂和箱拉杆完整入画；人物接近侧面而非明确的三分之四正面，两肩带也未清楚同时可见。主体头顶约12%而不是约5%，下方保留大量通道。",
+      "fix_instruction": "按批准卡重构胸上景别：底边切胸口下缘，腰腿和箱杆留在画外；脸与胸略转向相机形成三分之四正面，同时眼神仍看画面右侧，两条肩带在胸上区域清楚；地址纸仅于胸下边缘可见。保持A紧底板机位。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[0].camera_relation; beat_zh",
+      "proposed_file": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_single",
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_batch01_single.json",
+      "id": "ep01_镜19",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+      "verdict": "fail",
+      "reason": "实际拍到江砚大腿，完整两臂、右手拉杆和大背包均入画；顶部留空也明显超过约5%。卡片要求胸口下缘切断、看不到腰腿，实际成为半身中景，未做到批准近景。人物身份、灰蓝衬衫、左手纸右手箱及机场A背景大体一致，不能抵消景别错误。",
+      "fix_instruction": "将画面下边界绑定胸口下缘并提高主体脸肩在画面中的占比；把握行李箱等动作明确为画外继续保持的状态，参考大包只保留两条肩带，禁止为了完整展示箱包而拓宽取景。",
+      "card_field": "cards[ep01_镜19].framing.crop_zh / subject_frac / props_zh / people[江砚].action_zh",
+      "round": 1
+    }
+  ],
+  "review_zh": "江砚身份、衣服、包的磨旧帆布外观和左右手持物连续，母亲与旅客按present_off_frame离画合理。A机位结构正确。但批准胸上近景实际从头顶一直看到大腿，衬衫下摆、右前臂和箱拉杆完整入画；人物接近侧面而非明确的三分之四正面，两肩带也未清楚同时可见。主体头顶约12%而不是约5%，下方保留大量通道。；实际拍到江砚大腿，完整两臂、右手拉杆和大背包均入画；顶部留空也明显超过约5%。卡片要求胸口下缘切断、看不到腰腿，实际成为半身中景，未做到批准近景。人物身份、灰蓝衬衫、左手纸右手箱及机场A背景大体一致，不能抵消景别错误。",
+  "generator_agent_id": "/root/generate_keyframes_b",
+  "generator_report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_keyframes_batch01_b_19.json"
+}

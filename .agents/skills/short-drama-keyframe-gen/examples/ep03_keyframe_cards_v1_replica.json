@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ep03_镜03",
+    "shot_no": 3,
+    "scene": "SC03",
+    "tier": "A",
+    "plate_id": "SC03_顾家别墅客厅_B反打",
+    "plate_image": "output/出狱后我成为了非洲矿王/assets/SC03_顾家别墅客厅_B反打/SC03_顾家别墅客厅_B反打_01.png",
+    "plate_read_zh": "豪宅挑空客厅反打机位",
+    "script_ref_zh": "「刘兰（赶紧迎上去）：怎么了这是？矿上又出问题了？」",
+    "beat_zh": "刘兰站起迎上去问，顾万通不看她。",
+    "style_anchor_zh": "非洲现代都市与矿业实景写实照片级质感，纪录片式自然光结合硬光源打光，竖屏9:16构图安全区设计，暖黄高饱和的非洲日光色调（豪宅室内场景转为冷色调奢靡灯光形成对比），高细节皮肤/服装/尘土质感，无水印无文字",
+    "camera_zh": "相机在落地窗前朝玄关方向看",
+    "framing": {
+      "shot_size": "中景(双人)"
+    },
+    "light_zh": "黄昏金光从纵深端玄关方向斜射进来",
+    "people": [
+      {
+        "name": "刘兰",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王/assets/刘兰_正面/刘兰_正面_00.png"
+        ],
+        "ref_note_zh": "正面基准图",
+        "pos_x": "left",
+        "depth": "mid",
+        "body_dir": "to_camera",
+        "camera_relation": "front",
+        "gaze_at": "顾万通",
+        "posture_zh": "刚从沙发上站起、身体明显前倾朝画面右方",
+        "action_zh": "右手捏着一只没放下的红酒杯，眉毛拧起、嘴微张正在说话"
+      },
+      {
+        "name": "顾万通",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王/assets/顾万通_得势期_正面/顾万通_得势期_正面_00.png"
+        ],
+        "ref_note_zh": "正面基准图",
+        "pos_x": "right",
+        "depth": "mid",
+        "body_dir": "to_camera",
+        "camera_relation": "front",
+        "gaze_at": "off_down",
+        "posture_zh": "站定、胸口起伏",
+        "action_zh": "脸略微转向她但视线仍朝画面外的地面"
+      }
+    ],
+    "relation_zh": "两人隔着约一步的距离、没有肢体接触",
+    "avoid_extra_zh": [
+      "两人对视（顾万通不应看向刘兰的眼睛）",
+      "刘兰站姿直立不前倾",
+      "顾万通正面朝镜头"
+    ],
+    "count": 3,
+    "notes": "照 jobs_ep03.json 原样还原的走位，故意不修正"
+  },
+  {
+    "id": "ep03_镜10",
+    "shot_no": 10,
+    "scene": "SC03",
+    "tier": "A",
+    "plate_id": "SC03_顾家别墅客厅_C侧机位",
+    "plate_image": "output/出狱后我成为了非洲矿王/assets/SC03_顾家别墅客厅_C侧机位/SC03_顾家别墅客厅_C侧机位_00.png",
+    "plate_read_zh": "豪宅挑空客厅侧机位",
+    "script_ref_zh": "「他是夏国地质大学学资源勘察的，成绩一直是第一名，说不定能帮上忙。」",
+    "beat_zh": "苏慧举荐儿子，顾万通动心，刘兰不服。",
+    "style_anchor_zh": "非洲现代都市与矿业实景写实照片级质感，纪录片式自然光结合硬光源打光，竖屏9:16构图安全区设计，暖黄高饱和的非洲日光色调（豪宅室内场景转为冷色调奢靡灯光形成对比），高细节皮肤/服装/尘土质感，无水印无文字",
+    "camera_zh": "转角沙发在画面左侧、单人皮沙发在画面右侧近端、玻璃幕墙在画面右侧至纵深端",
+    "framing": {
+      "shot_size": "中景(三人)",
+      "subject_frac": 0.42
+    },
+    "light_zh": "黄昏金光从画面右侧的玻璃幕墙斜射进来",
+    "people": [
+      {
+        "name": "刘兰",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王/assets/刘兰_正面/刘兰_正面_00.png"
+        ],
+        "ref_note_zh": "正面基准图",
+        "pos_x": "left",
+        "depth": "mid",
+        "body_dir": "to_camera",
+        "camera_relation": "front",
+        "gaze_at": "off_right",
+        "posture_zh": "站在转角沙发前，身体前倾像随时要打断",
+        "action_zh": "眉毛拧到最紧、嘴唇紧闭，握着红酒杯的手指收紧"
+      },
+      {
+        "name": "苏慧",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王/assets/苏慧_佣人期_正面/苏慧_佣人期_正面_00.png"
+        ],
+        "ref_note_zh": "正面基准图",
+        "pos_x": "center",
+        "depth": "mid",
+        "body_dir": "to_camera",
+        "camera_relation": "front",
+        "gaze_at": "off_right",
+        "posture_zh": "双手端着铝制茶盘站在矮茶几近端，下巴略微抬起、肩膀展开",
+        "action_zh": "嘴张开正在语速稍快地说话，眼睛里有一点亮光"
+      },
+      {
+        "name": "顾万通",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王/assets/顾万通_得势期_正面/顾万通_得势期_正面_00.png"
+        ],
+        "ref_note_zh": "正面基准图",
+        "pos_x": "right",
+        "depth": "mid",
+        "body_dir": "screen_left",
+        "camera_relation": "profile",
+        "gaze_at": "苏慧",
+        "posture_zh": "站在画面右侧近端、侧对镜头",
+        "action_zh": "头正缓缓转过来朝苏慧的方向、眯着的眼睛张开了一点"
+      }
+    ],
+    "relation_zh": "三人互相不接触、各站一处，构成以苏慧为焦点的三角关系",
+    "avoid_extra_zh": [
+      "苏慧低头含胸（这一镜她要抬头）",
+      "刘兰在说话（她这一镜嘴闭着）",
+      "三人贴在一起",
+      "位置左右互换"
+    ],
+    "count": 3,
+    "notes": "照 jobs_ep03.json 原样还原的走位，故意不修正"
+  }
+]

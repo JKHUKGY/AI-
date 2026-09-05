@@ -14,6 +14,7 @@ import sys
 import threading
 import time
 import uuid
+from pathlib import Path
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 GENERATE_SCRIPT = os.path.join(
@@ -30,24 +31,43 @@ def find_last_job_meta(base_dir, job_id):
     （比如某个表情图是拿角色三视图当参考生成的），不回填的话剧本家在网站上
     随手点"重新生成"会丢失这份一致性参考，跑出来的图大概率对不上脸/对不上
     场景。"""
-    manifest = os.path.join(base_dir, 'manifest.append.jsonl')
-    if not os.path.isfile(manifest):
-        return None, []
-    last = None
-    with open(manifest, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
+    context = find_job_context(base_dir, job_id)
+    return context['prompt'], context['ref_images']
+
+
+def find_job_context(base_dir, job_id):
+    """空白/仅选片的记录不能覆盖之前的完整提示词；缺失时回查同 ID 的 jobs。"""
+    records = []
+    manifest = Path(base_dir) / 'manifest.append.jsonl'
+    if manifest.is_file():
+        for line in manifest.read_text(encoding='utf-8').splitlines():
             try:
                 entry = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if entry.get('job_id') == job_id:
-                last = entry
-    if not last:
-        return None, []
-    return last.get('prompt'), list(last.get('ref_images') or [])
+            if (isinstance(entry, dict) and entry.get('job_id') == job_id
+                    and isinstance(entry.get('prompt'), str) and entry['prompt'].strip()):
+                records.append(entry)
+    if records:
+        first, last = records[0], records[-1]
+        return {'prompt': last['prompt'], 'original_prompt': first['prompt'],
+                'ref_images': last.get('ref_images') or [], 'prompt_source': manifest.name}
+    # 仅搜索当前 assets/ 或 epXX/ 的任务文件，不拿其他角色的提示词顶替。
+    for path in sorted(Path(base_dir).glob('*jobs*.json'), key=lambda p: (p.stat().st_mtime, p.name), reverse=True):
+        try:
+            entries = json.loads(path.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            continue
+        if isinstance(entries, dict):
+            entries = entries.get('jobs', [])
+        if not isinstance(entries, list):
+            continue
+        for entry in entries:
+            if (isinstance(entry, dict) and entry.get('id', entry.get('job_id')) == job_id
+                    and isinstance(entry.get('prompt'), str) and entry['prompt'].strip()):
+                return {'prompt': entry['prompt'], 'original_prompt': entry['prompt'],
+                        'ref_images': entry.get('ref_images') or [], 'prompt_source': path.name}
+    return {'prompt': None, 'original_prompt': None, 'ref_images': [], 'prompt_source': None}
 
 
 def _existing_files(job_dir, job_id):

@@ -1,0 +1,37 @@
+{
+  "id": "master_ep01_p3",
+  "round": 4,
+  "candidate": 6,
+  "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-d4513111-1f3c-4e47-b3f8-0f579b8601cc.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+  "status": "rejected",
+  "reviewed": true,
+  "review_zh": "江砚背对相机稍向右，可见近侧为人体右臂，该臂下垂，手握透明瓶且瓶身落在大腿旁；左手未在身前显露，右手也未单独拿白盖。与左手开口瓶停在胸下、右手持已取下白盖的批准状态不符。；角色、服装、门外位置和场景保持；江砚近相机一侧右臂从卷袖至手完整可见且垂下持透明瓶，瓶在腿侧，未见右手独立拿白盖。这与左手持开瓶胸下、右手拿取下白盖的批准状态冲突。",
+  "independent_reviews": [
+    {
+      "agent_id": "/root/review_supplement_single",
+      "unit_id": "master_ep01_p3",
+      "round": 4,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+      "verdict": "fail",
+      "reason": "江砚背对相机稍向右，可见近侧为人体右臂，该臂下垂，手握透明瓶且瓶身落在大腿旁；左手未在身前显露，右手也未单独拿白盖。与左手开口瓶停在胸下、右手持已取下白盖的批准状态不符。",
+      "fix": "把左肩至左肘至左手的连接和左手所握瓶身清楚展示在胸前；右臂在另一高度弯曲，右手独立可辨。p2右手扶仍盖紧瓶口的白盖；p3右手单独拿取下的白盖。已追加一轮，不自行再生成。",
+      "fix_instruction": "同 fix；需重新安排前臂可见性并保留门外站位，不能用遮挡推断通过。",
+      "card_field": "scene_beats[p3].blocking[江砚].holding_zh / action_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    },
+    {
+      "agent_id": "/root/review_supplement_continuity",
+      "unit_id": "master_ep01_p3",
+      "round": 4,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+      "verdict": "fail",
+      "reason": "角色、服装、门外位置和场景保持；江砚近相机一侧右臂从卷袖至手完整可见且垂下持透明瓶，瓶在腿侧，未见右手独立拿白盖。这与左手持开瓶胸下、右手拿取下白盖的批准状态冲突。",
+      "fix": "左臂屈肘使开瓶到胸下，右手只拿白盖并与瓶口分离；不得将瓶交到右手或降到腿旁。",
+      "card_field": "scene_beats[].blocking[江砚/苏慧].holding_zh",
+      "proposed_file": "",
+      "master_frame_read_zh": ""
+    }
+  ]
+}
