@@ -1,0 +1,1379 @@
+[
+  {
+    "id": "ep01_镜01",
+    "shot_no": 1,
+    "scene": "SC05",
+    "tier": "S",
+    "intent_zh": "前3秒看懂江砚刚从羁押处走出，沉稳而冷冽。",
+    "script_ref": "script_source.txt 第38行「▲锈迹斑斑的铁栅栏门缓缓打开，江砚穿着一身洗得发白的衬衫走出来，半个月的羁押没磨掉他眼底的沉稳，反倒添了几分冷冽。」；script_source.txt 第39行「▲不远处的越野车旁，陈野早就靠着车门等着，看见人立刻大步迎上去，重重拍了拍他的肩膀。」——前3秒看懂江砚刚从羁押处走出，沉稳而冷冽。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：前3秒看懂江砚刚从羁押处走出，沉稳而冷冽。",
+    "scene_plate": "SC05_监狱门口_A主机位",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "全身双人，江砚右中部已迈过敞开的铁门，一脚在前、低头；陈野左前景车旁，右手低持有盖水瓶。铁门不是关闭状态。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera rides a slow dolly at eye level",
+      "framing_path": "Full shot easing toward a medium shot with gate posts still at the sides",
+      "move": "A small slow push only as far as the medium composition with gate posts visible, then holds at that size"
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "Jiang continues his forward step through the already open gate, raises his chin toward Chen and stops within greeting distance. Chen turns his head toward Jiang, his right hand carrying the capped bottle low.",
+        "dialogue": null,
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501011,
+    "last_frame": null,
+    "source_duration_sec": 4.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A8推镜终点限定景别后停住；A9朝向漂移用可见对手视线约束仅为待验证方案，不声称措辞能修好。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜02",
+    "shot_no": 2,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野一直等着，迎接有分量。",
+    "script_ref": "script_source.txt 第39行「▲不远处的越野车旁，陈野早就靠着车门等着，看见人立刻大步迎上去，重重拍了拍他的肩膀。」——陈野一直等着，迎接有分量。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野一直等着，迎接有分量。",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚左前景侧背，陈野右侧面对他；陈野左掌已抬起接近江砚肩，右手低持有盖水瓶。拍肩尚未完成。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "Chen completes one firm pat with his raised left palm on Jiang's shoulder, then lowers that hand. Jiang settles his feet facing Chen; Chen's right hand carries the capped bottle beside his hip.",
+        "dialogue": null,
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501021,
+    "last_frame": null,
+    "source_duration_sec": 4.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜03",
+    "shot_no": 3,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "冰水和压着的火气同时交代关心。",
+    "script_ref": "script_source.txt 第40行「陈野（递过一瓶冰水，语气里压着憋了许久的火气）：江老弟，你可算出来了！」——冰水和压着的火气同时交代关心。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：冰水和压着的火气同时交代关心。",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "陈野右侧右臂已伸出递有盖水瓶；江砚左前景左掌在瓶下摊开，右臂垂下。瓶尚在陈野手中。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.041667
+        ],
+        "motion_en": "As Chen speaks, Jiang closes his open left fingers around the offered bottle. Chen releases it and draws his right hand back; Jiang brings his right fingertips to the white cap and glances down at it.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "江老弟，你可算出来了！",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.041667,
+    "fps": 24,
+    "num_frames": 121,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501031,
+    "last_frame": null,
+    "source_duration_sec": 5.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜04_u1",
+    "shot_no": 4,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野说清这是顾浩设局，不是江砚犯罪。",
+    "script_ref": "script_source.txt 第41行「陈野（急切地）：这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。」——陈野说清这是顾浩设局，不是江砚犯罪。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野说清这是顾浩设局，不是江砚犯罪。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_01.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "陈野右侧胸上近景，眉间收紧、嘴微张，江砚左缘虚化肩头；手和水瓶在画外。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.041667
+        ],
+        "motion_en": "Chen's brows draw together as his lips articulate the opening clause; his gaze stays on Jiang at the left edge. He ends with a short breath through parted lips.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "这阵子我查明白了，",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.041667,
+    "fps": 24,
+    "num_frames": 121,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501041,
+    "last_frame": null,
+    "source_duration_sec": 10.0,
+    "end_state_zh": "陈野仍看江砚，开场句说完短换气、嘴微张，手在画外。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜04",
+    "unit_index": [
+      1,
+      2
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜04_u2",
+    "shot_no": 4,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野说清这是顾浩设局，不是江砚犯罪。",
+    "script_ref": "script_source.txt 第41行「陈野（急切地）：这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。」——陈野说清这是顾浩设局，不是江砚犯罪。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野说清这是顾浩设局，不是江砚犯罪。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/tail_frames/ep01_镜04_u1.png",
+    "first_frame_from": "ep01_镜04_u1:last",
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "已实际打开04_u1最后一帧：陈野右侧胸上近景，嘴已闭合，眉内端略抬、神色担忧，看向左前景江砚；双手画外，棕衫灰黑颈巾、铁门与红土背景保持。下一句直接由闭口状态开口，不重复前探/转头。",
+    "first_frame_state_basis": "observed_generated_tail",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.375
+        ],
+        "motion_en": "Chen's jaw advances slightly as he identifies the culprit, then settles; his eyes remain on Jiang while his lips finish the accusation.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "你这事根本就是顾浩那小子给你做的局。",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.375,
+    "fps": 24,
+    "num_frames": 129,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501042,
+    "last_frame": null,
+    "source_duration_sec": 10.0,
+    "end_state_zh": "陈野说完指控收口，保持对江砚视线。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。 已实际查看前段最后一帧后续接；尾帧审阅记录见 tail_reviews。",
+    "readiness": {
+      "status": "tail_reviewed_for_trial",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜04",
+    "unit_index": [
+      2,
+      2
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜05",
+    "shot_no": 5,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "听到顾浩，他的反应是证实猜想，表情没有惊讶。",
+    "script_ref": "script_source.txt 第42行「▲江砚拧瓶盖的手顿了一下，抬眼看他，神色里没多少意外。」——听到顾浩，他的反应是证实猜想，表情没有惊讶。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：听到顾浩，他的反应是证实猜想，表情没有惊讶。",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚右侧近景，低头看瓶盖，右手指已捏住白盖、左手持瓶；盖仍扣在瓶口。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "Jiang's right fingertips give the cap a small partial twist, then stop with the cap still seated. His eyes lift toward Chen and his mouth remains closed. His left hand supports the bottle.",
+        "dialogue": null,
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501051,
+    "last_frame": null,
+    "source_duration_sec": 4.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜06_u1",
+    "shot_no": 6,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。",
+    "script_ref": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_02.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "陈野右侧近景，认真看向左侧江砚，嘴微张；双手在裁切外。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.041667
+        ],
+        "motion_en": "Chen's lips move evenly as he names the accomplice; his head inclines a few degrees toward Jiang and then steadies.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "他和本地矿商马库斯俩人串通好，",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.041667,
+    "fps": 24,
+    "num_frames": 121,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501061,
+    "last_frame": null,
+    "source_duration_sec": 10.0,
+    "end_state_zh": "陈野说完同谋身份，头略向前，嘴在分句间停顿。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜06",
+    "unit_index": [
+      1,
+      2
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜06_u2",
+    "shot_no": 6,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。",
+    "script_ref": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：说明同谋身份和伪造合同这一环；不提前演成当场犯罪闪回。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/tail_frames/ep01_镜06_u1.png",
+    "first_frame_from": "ep01_镜06_u1:last",
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "已实际打开06_u1最后一帧：陈野右侧胸上近景，嘴闭合、略低眉，直视左前景江砚，头略前倾但稳定；棕衫、深灰颈巾和铁栅栏未换，双手画外。下一段从该闭口状态继续说伪造合同，不重做靠近动作。",
+    "first_frame_state_basis": "observed_generated_tail",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.041667
+        ],
+        "motion_en": "Chen's brows lower as his lips form the words about the forged signature; his head stays directed toward Jiang and settles at the clause break.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "伪造了签你英文名的交易合同，",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.041667,
+    "fps": 24,
+    "num_frames": 121,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501062,
+    "last_frame": null,
+    "source_duration_sec": 10.0,
+    "end_state_zh": "陈野说完伪造合同，眉低、头朝江砚、双手画外。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。 已实际查看前段最后一帧后续接；尾帧审阅记录见 tail_reviews。",
+    "readiness": {
+      "status": "tail_reviewed_for_trial",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜06",
+    "unit_index": [
+      2,
+      2
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜07",
+    "shot_no": 7,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "栽赃利用了江砚下井工作的时间；他专注听而不抢话。",
+    "script_ref": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——栽赃利用了江砚下井工作的时间；他专注听而不抢话。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：栽赃利用了江砚下井工作的时间；他专注听而不抢话。",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚右侧闭嘴听，右手指停在白瓶盖上，瓶下部裁出画面；盖未取下。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          7.708333
+        ],
+        "motion_en": "Jiang's eyes settle on Chen and his eyelids close and open once. His fingertips rest on the seated bottle cap and his lips remain closed as he listens.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "拿了新矿的高品位矿样，趁你下井查工作的功夫，",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": false
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 7.708333,
+    "fps": 24,
+    "num_frames": 185,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501071,
+    "last_frame": null,
+    "source_duration_sec": 8.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜08",
+    "shot_no": 8,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "补齐藏入抽屉和匿名报警两环，观众能复述完整陷害链。",
+    "script_ref": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——补齐藏入抽屉和匿名报警两环，观众能复述完整陷害链。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：补齐藏入抽屉和匿名报警两环，观众能复述完整陷害链。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "陈野右侧较宽反打，江砚左前景双手与有盖瓶可见；持瓶/拧盖手序与05、07存在已知差异，按本图保留并登记剪辑风险。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          7.041667
+        ],
+        "motion_en": "Chen leans his shoulders slightly toward Jiang while his lips finish the account of planting evidence and calling the police, then settles upright. Jiang maintains the bottle and cap grip visible in the opening image.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "偷偷塞进你办公室抽屉，转头就匿名报了警。",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 7.041667,
+    "fps": 24,
+    "num_frames": 169,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501081,
+    "last_frame": null,
+    "source_duration_sec": 7.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 07→08瓶与盖的手序有已选图差异；保持08实图，剪辑需用面部切点遮开换手，效果待视频验证。不得镜像翻图。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜09",
+    "shot_no": 9,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "江砚早有判断，喝水后才平静说出。",
+    "script_ref": "script_source.txt 第44行「江砚（喝了口水，喉结滚动，眼神一点点冷下来）：我猜到是他。」——江砚早有判断，喝水后才平静说出。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：江砚早有判断，喝水后才平静说出。",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚右侧近景，闭嘴、喉部可见，双手和瓶均在下边界外；尚未在喝水。瓶盖未开仅由07/08接续推定，不是本图可见事实。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          2.5
+        ],
+        "motion_en": "Below the lower crop Jiang's right fingers finish unscrewing the cap; his left hand raises the open bottle into view until its rim touches his lips. A faint cap-thread click precedes the lift.",
+        "dialogue": null,
+        "sfx_en": "Light dry wind and distant road noise"
+      },
+      {
+        "t": [
+          2.5,
+          5
+        ],
+        "motion_en": "Jiang tilts the bottle for one small sip, lowers it beneath the crop and swallows, his throat moving once. His gaze settles on Chen at the left edge.",
+        "dialogue": null
+      },
+      {
+        "t": [
+          5,
+          7.708333
+        ],
+        "motion_en": "Jiang's lips form the short answer with a level jaw, then close; his eyes remain on Chen.",
+        "dialogue": {
+          "speaker": "江砚",
+          "text_zh": "我猜到是他。",
+          "delivery_en": "Jiang speaks in Mandarin Chinese with a low steady young male voice, measured and restrained",
+          "pace": "slow",
+          "onscreen": true
+        }
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 7.708333,
+    "fps": 24,
+    "num_frames": 185,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501091,
+    "last_frame": null,
+    "source_duration_sec": 5.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 拧盖起点在画外；视频需实际看到瓶入口、吞咽和瓶退出，喝完才说话。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜10",
+    "shot_no": 10,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野意外于他的冷静判断。",
+    "script_ref": "script_source.txt 第45行「陈野（愣了）：你知道？」——陈野意外于他的冷静判断。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野意外于他的冷静判断。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "陈野右侧反打，嘴微张、惊讶；江砚左前景背影与已开盖的瓶口可见。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "Chen's eyebrows lift and his chin draws back a fraction as his lips form the short question; his mouth settles slightly open. Jiang holds the uncapped bottle low in the left foreground.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "你知道？",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501101,
+    "last_frame": null,
+    "source_duration_sec": 4.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜11",
+    "shot_no": 11,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "怀疑有明确对象，他没有失控。",
+    "script_ref": "script_source.txt 第46行「江砚（语气冰冷）：除了他，没人会这么针对我。」——怀疑有明确对象，他没有失控。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：怀疑有明确对象，他没有失控。",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚右侧近景，嘴微张、冷静看陈野，左缘为陈野虚化肩头，手和瓶在画外。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.041667
+        ],
+        "motion_en": "Jiang's eyes narrow slightly toward Chen and his lips shape the short answer with a level jaw. His lips close at the end; his shoulders remain settled.",
+        "dialogue": {
+          "speaker": "江砚",
+          "text_zh": "除了他，没人会这么针对我。",
+          "delivery_en": "Jiang speaks in Mandarin Chinese with a low steady young male voice, measured and restrained",
+          "pace": "slow",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.041667,
+    "fps": 24,
+    "num_frames": 121,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501111,
+    "last_frame": null,
+    "source_duration_sec": 5.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜12_u1",
+    "shot_no": 12,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "用三吨金矿与栽赃的反差说明顾家忘恩负义。",
+    "script_ref": "script_source.txt 第47行「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——用三吨金矿与栽赃的反差说明顾家忘恩负义。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：用三吨金矿与栽赃的反差说明顾家忘恩负义。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "陈野右侧中景双臂放低，江砚左前景左手持开盖水瓶、右手低持白盖。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          6.041667
+        ],
+        "motion_en": "Chen's jaw tightens and his shoulders rise slightly with an indignant breath as he speaks, then lower. Jiang's left hand holds the uncapped bottle and his right holds the white cap low.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "这兔崽子也太缺德了！",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 6.041667,
+    "fps": 24,
+    "num_frames": 145,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501121,
+    "last_frame": null,
+    "source_duration_sec": 12.0,
+    "end_state_zh": "陈野说完斥骂，肩落回、双手低；江砚左瓶右盖。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜12",
+    "unit_index": [
+      1,
+      2
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜12_u2",
+    "shot_no": 12,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "用三吨金矿与栽赃的反差说明顾家忘恩负义。",
+    "script_ref": "script_source.txt 第47行「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——用三吨金矿与栽赃的反差说明顾家忘恩负义。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：用三吨金矿与栽赃的反差说明顾家忘恩负义。",
+    "scene_plate": "SC05_监狱门口_B反打_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/tail_frames/ep01_镜12_u1.png",
+    "first_frame_from": "ep01_镜12_u1:last",
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "已实际打开12_u1最后一帧：陈野右侧中景，嘴已合拢、眉间收紧，面向左前江砚；两臂低垂，左腿前没有额外手势。江砚前景左手透明开盖塑料水瓶、右手低持白盖，铁门红土与衣服一致。下一段继续指责，不重复侧转。",
+    "first_frame_state_basis": "observed_generated_tail",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          7.375
+        ],
+        "motion_en": "Chen's lips articulate the contrast between the gold discovery and the betrayal, his brows pressing inward. He ends with his jaw set, both hands low. Jiang keeps bottle and cap in their respective hands.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 7.375,
+    "fps": 24,
+    "num_frames": 177,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501122,
+    "last_frame": null,
+    "source_duration_sec": 12.0,
+    "end_state_zh": "陈野说完金矿与背叛，颌部收紧、双手低。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。 已实际查看前段最后一帧后续接；尾帧审阅记录见 tail_reviews。",
+    "readiness": {
+      "status": "tail_reviewed_for_trial",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜12",
+    "unit_index": [
+      2,
+      2
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜13",
+    "shot_no": 13,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "给去留选择留出空隙。",
+    "script_ref": "script_source.txt 第48行「陈野（顿了顿，试探着问）：那咱，还回万通矿业吗？」——给去留选择留出空隙。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：给去留选择留出空隙。",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚右侧近景，嘴闭合，认真看左侧陈野；双手裁出画面。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "Jiang's eyes stay on Chen, his chin dips slightly during the pause before the question, then steadies. His lips remain closed throughout the off-screen question.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "那咱，还回万通矿业吗？",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "slow",
+          "onscreen": false
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501131,
+    "last_frame": null,
+    "source_duration_sec": 4.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 13→14近似同机位；用问句后的停顿接单次摇头，不新增推镜。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜14",
+    "shot_no": 14,
+    "scene": "SC05",
+    "tier": "S",
+    "intent_zh": "本场反转：主动离开顾家，决心自己创业。",
+    "script_ref": "script_source.txt 第49行「江砚（摇了摇头，语气平静笃定）：不回了，自己干。」——本场反转：主动离开顾家，决心自己创业。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：本场反转：主动离开顾家，决心自己创业。",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "江砚右侧胸上近景，朝左看陈野，嘴闭合，神色沉着；与13角度近似，尚未摇头。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady chest-up close-up retaining the partner at the frame edge",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          0.8
+        ],
+        "motion_en": "Jiang turns his head a few degrees left and right once, then settles facing Chen.",
+        "dialogue": null,
+        "sfx_en": "Light dry wind and distant road noise"
+      },
+      {
+        "t": [
+          0.8,
+          4.041667
+        ],
+        "motion_en": "Jiang's lips articulate the decision evenly, then close as his gaze remains steady on Chen.",
+        "dialogue": {
+          "speaker": "江砚",
+          "text_zh": "不回了，自己干。",
+          "delivery_en": "Jiang speaks in Mandarin Chinese with a low steady young male voice, measured and restrained",
+          "pace": "slow",
+          "onscreen": true
+        }
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501141,
+    "last_frame": null,
+    "source_duration_sec": 4.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false,
+      "trial_only_A1_risk_accepted": true
+    },
+    "known_limit": {
+      "item": "A1：本项目旧LTX管线中，带台词的克制/混合表情易收敛成通用笑容",
+      "evidence": ".agents/skills/short-drama-video-gen/references/model_capability_ledger.md A1，旧版ep01镜14/18多轮实测；不是本批生成结果。",
+      "decision": "用户要求本批试生成；先接受distilled单轮试片用于观察，保留原表演目标，不将错误笑容判作通过。现有卷缺DFR必需detailing LoRA，不为此试片额外下载未验证路线；若命中A1记录失败并交用户看样，不重复堆词重试。"
+    },
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜15_u1",
+    "shot_no": 15,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野当即给出设备与工人的支持，二人结盟。",
+    "script_ref": "script_source.txt 第50行「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」——陈野当即给出设备与工人的支持，二人结盟。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野当即给出设备与工人的支持，二人结盟。",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "双人反打，陈野右侧双臂低垂，眼神开始明亮，尚未拍腿；江砚左前景左手开盖瓶、右手白盖。",
+    "first_frame_state_basis": "observed_selected_image",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "Chen's eyes widen; his right palm strikes his own thigh once as he gives the opening exclamation, then rests against the thigh. Jiang listens with bottle in his left hand and white cap in his right.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "好！我就等你这句话呢！",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501151,
+    "last_frame": null,
+    "source_duration_sec": 12.0,
+    "end_state_zh": "陈野已拍过一次大腿，右掌留在腿侧；江砚左瓶右盖。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "prepared_for_export_review",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜15",
+    "unit_index": [
+      1,
+      3
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜15_u2",
+    "shot_no": 15,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野当即给出设备与工人的支持，二人结盟。",
+    "script_ref": "script_source.txt 第50行「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」——陈野当即给出设备与工人的支持，二人结盟。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野当即给出设备与工人的支持，二人结盟。",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/tail_frames/ep01_镜15_u1.png",
+    "first_frame_from": "ep01_镜15_u1:last",
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "已实际打开15_u1最后一帧：江砚在左侧面对陈野，左手低持已开盖透明塑料水瓶，右手低持白瓶盖；陈野在右侧严肃看着江砚，双手已经落到腿旁，右掌自然垂在大腿旁而非抬起待拍，嘴微张。后续继续对话，右手只在腿旁安放，不重复拍腿。",
+    "first_frame_state_basis": "observed_generated_tail",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.041667
+        ],
+        "motion_en": "With his right palm resting on his thigh, Chen's shoulders lean forward slightly as his lips offer equipment and workers; he settles at the clause break.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "设备、工人我都能搞到，",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 4.041667,
+    "fps": 24,
+    "num_frames": 97,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501152,
+    "last_frame": null,
+    "source_duration_sec": 12.0,
+    "end_state_zh": "陈野已承诺设备工人，右掌仍在腿侧；不得再拍腿。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。 已实际查看前段最后一帧后续接；尾帧审阅记录见 tail_reviews。",
+    "readiness": {
+      "status": "tail_reviewed_for_trial",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜15",
+    "unit_index": [
+      2,
+      3
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  },
+  {
+    "id": "ep01_镜15_u3",
+    "shot_no": 15,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "陈野当即给出设备与工人的支持，二人结盟。",
+    "script_ref": "script_source.txt 第50行「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」——陈野当即给出设备与工人的支持，二人结盟。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野当即给出设备与工人的支持，二人结盟。",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "first_frame": null,
+    "first_frame_from": "ep01_镜15_u2:last",
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "计划接续状态（上一段视频尚未生成，需抽尾帧后实际核对）：陈野已承诺设备工人，右掌仍在腿侧；不得再拍腿。",
+    "first_frame_state_basis": "planned_previous_tail",
+    "camera_en": {
+      "position": "From the gate side looking past Jiang on the left toward Chen on the road",
+      "rig": "The camera is locked off at eye level",
+      "framing_path": "A steady medium two-person composition with the existing hands and props visible",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          5.041667
+        ],
+        "motion_en": "Chen's chin lifts a fraction as he voices their plan; his lips finish firmly and close. His right hand remains resting at his thigh while Jiang brings the cap nearer the bottle neck.",
+        "dialogue": {
+          "speaker": "陈野",
+          "text_zh": "咱自己找矿自己干，不受他顾家的鸟气！",
+          "delivery_en": "Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic",
+          "pace": "normal",
+          "onscreen": true
+        },
+        "sfx_en": "Light dry wind and distant road noise"
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 5.041667,
+    "fps": 24,
+    "num_frames": 121,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501153,
+    "last_frame": null,
+    "source_duration_sec": 12.0,
+    "end_state_zh": "陈野说完结盟收口；江砚左手持瓶，右手瓶盖靠近瓶口供16拧上。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
+    "readiness": {
+      "status": "waiting_previous_tail",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜15",
+    "unit_index": [
+      3,
+      3
+    ],
+    "handoff_zh": "首段按已选图起点继续；下一镜按其已选首帧切入。短语拆段严格承接尾帧，查看 first_frame_from 与 end_state_zh。"
+  }
+]

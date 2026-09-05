@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ep01_镜15_u1",
+    "shot_no": 15,
+    "scene": "SC05",
+    "shot_card_id": "ep01_镜15_u1",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "prompt_lang": "en",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+    "first_frame_strength": 1.0,
+    "first_frame_from": null,
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "陈野：\"好！我就等你这句话呢！\"",
+    "prompt": "From the gate side looking past Jiang on the left toward Chen on the road. The camera is locked off at eye level. A steady medium two-person composition with the existing hands and props visible. Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel.\n\nChen's eyes widen; his right palm strikes his own thigh once as he gives the opening exclamation, then rests against the thigh. Jiang listens with bottle in his left hand and white cap in his right. Chen speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic: \"好！我就等你这句话呢！\". Light dry wind and distant road noise.\n\nThroughout the shot, the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight.\n\nPhotorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition.",
+    "negative_prompt": "(ltx_pipelines.distilled 没有 --negative-prompt 参数，此字段不会被发送，仅为兼容旧 schema 保留。想排除的东西请在镜头卡里改写成正向陈述，见 video_prompt_guide.md「否定→正向改写表」)",
+    "duration_sec": 4.0417,
+    "fps": 24,
+    "num_frames": 97,
+    "aspect_ratio": "9:16",
+    "width": 576,
+    "height": 1024,
+    "seed": 90501151,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。"
+  }
+]

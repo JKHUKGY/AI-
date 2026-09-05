@@ -1,0 +1,2009 @@
+{
+  "project": "出狱后我成为了非洲矿王_v3",
+  "remote": "gdrive:AI-短剧归档/出狱后我成为了非洲矿王_v3/历史候选/2026-09-05",
+  "protected": [
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_E仰拍/SC01_顾家别墅客厅_E仰拍_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_E仰拍_紧/SC01_顾家别墅客厅_E仰拍_紧_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01夜_顾家别墅客厅_A主机位/SC01夜_顾家别墅客厅_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_A主机位_紧/SC03_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_B反打_紧/SC03_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_A主机位/SC03日_顾家客房_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_A主机位_紧/SC03日_顾家客房_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_B反打_紧/SC03日_顾家客房_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04外_板房门外_A主机位/SC04外_板房门外_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04夜_矿场板房办公室_A主机位/SC04夜_矿场板房办公室_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04夜_矿场板房办公室_D细节/SC04夜_矿场板房办公室_D细节_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC08_丛林山路_A主机位/SC08_丛林山路_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC08_丛林山路_B反打/SC08_丛林山路_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC08_断崖_D细节/SC08_断崖_D细节_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC09_野外营地_A主机位/SC09_野外营地_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC09_野外营地_B反打/SC09_野外营地_B反打_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10_矿场会议室_A主机位/SC10_矿场会议室_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10_矿场会议室_B反打/SC10_矿场会议室_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10_矿场会议室_C侧机位/SC10_矿场会议室_C侧机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10_矿场会议室_D细节/SC10_矿场会议室_D细节_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10压抑版_矿场会议室_A主机位/SC10压抑版_矿场会议室_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10压抑版_矿场会议室_B反打/SC10压抑版_矿场会议室_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10压抑版_矿场会议室_C侧机位/SC10压抑版_矿场会议室_C侧机位_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10压抑版_矿场会议室_D细节/SC10压抑版_矿场会议室_D细节_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC11_矿场开采工作面_A主机位/SC11_矿场开采工作面_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC11_矿场开采工作面_B反打/SC11_矿场开采工作面_B反打_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC12_矿场仓库_A主机位/SC12_矿场仓库_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC12_矿场仓库_B反打/SC12_矿场仓库_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC13_顾家书房_A主机位/SC13_顾家书房_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC13_顾家书房_B反打/SC13_顾家书房_B反打_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC14_顾家别墅门外_A主机位/SC14_顾家别墅门外_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/律师_三视图/律师_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/矿场技术员_三视图/矿场技术员_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/陈野_三视图/陈野_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾浩_三视图/顾浩_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/马库斯_三视图/马库斯_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_01.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_02.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_03.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+    "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png"
+  ],
+  "files": [
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_02.png",
+      "remote": "待处理图片/第01集/master_ep01_p2_02.png",
+      "size": 2265468,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p2_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+      "remote": "待处理图片/第01集/master_ep01_p2_06.png",
+      "size": 2193130,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p2_06.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_01.png",
+      "remote": "待处理图片/第01集/master_ep01_p2_01.png",
+      "size": 2331466,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p2_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_04.png",
+      "remote": "待处理图片/第01集/master_ep01_p2_04.png",
+      "size": 2348952,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p2_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_00.png",
+      "remote": "待处理图片/第01集/master_ep01_p2_00.png",
+      "size": 2233801,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p2_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png",
+      "remote": "待处理图片/第01集/master_ep01_p2_05.png",
+      "size": 2273214,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p2_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+      "remote": "待处理图片/第01集/master_ep01_p3_06.png",
+      "size": 2068192,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p3_06.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_04.png",
+      "remote": "待处理图片/第01集/master_ep01_p3_04.png",
+      "size": 2218703,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p3_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png",
+      "remote": "待处理图片/第01集/master_ep01_p3_05.png",
+      "size": 2172019,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p3_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_02.png",
+      "remote": "待处理图片/第01集/master_ep01_p3_02.png",
+      "size": 2339871,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p3_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_01.png",
+      "remote": "待处理图片/第01集/master_ep01_p3_01.png",
+      "size": 2311135,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p3_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_00.png",
+      "remote": "待处理图片/第01集/master_ep01_p3_00.png",
+      "size": 2339141,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_p3_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_03.png",
+      "remote": "待处理图片/第01集/master_ep01_r2_03.png",
+      "size": 2042894,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_r2_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_00.png",
+      "remote": "待处理图片/第01集/master_ep01_r2_00.png",
+      "size": 2085539,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_r2_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_02.png",
+      "remote": "待处理图片/第01集/master_ep01_r2_02.png",
+      "size": 2057656,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_r2_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_01.png",
+      "remote": "待处理图片/第01集/master_ep01_r2_01.png",
+      "size": 2054302,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_r2_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_04.png",
+      "remote": "待处理图片/第01集/master_ep01_r2_04.png",
+      "size": 2071896,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_r2_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_00.png",
+      "remote": "待处理图片/第01集/master_ep01_v1_00.png",
+      "size": 2140984,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_v1_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+      "remote": "待处理图片/第01集/master_ep01_v1_04.png",
+      "size": 2138857,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_v1_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_02.png",
+      "remote": "待处理图片/第01集/master_ep01_v1_02.png",
+      "size": 2121626,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_v1_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+      "remote": "待处理图片/第01集/master_ep01_v1_05.png",
+      "size": 2154407,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_v1_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_01.png",
+      "remote": "待处理图片/第01集/master_ep01_v1_01.png",
+      "size": 2060947,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集/master_ep01_v1_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜11_05.png",
+      "size": 2010023,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜11_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜11_01.png",
+      "size": 2147736,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜11_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜11_00.png",
+      "size": 2090828,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜11_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜11_02.png",
+      "size": 2243562,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜11_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜11_04.png",
+      "size": 2061149,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜11_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜23_04.png",
+      "size": 1914366,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜23_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜23_02.png",
+      "size": 1948277,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜23_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜23_05.png",
+      "size": 2061270,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜23_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜23_00.png",
+      "size": 2037532,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜23_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜23_01.png",
+      "size": 2017738,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜23_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜24_05.png",
+      "size": 2282519,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜24_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜24_02.png",
+      "size": 2245328,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜24_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜24_00.png",
+      "size": 2249777,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜24_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜24_01.png",
+      "size": 2167346,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜24_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜24_03.png",
+      "size": 2252997,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜24_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜25_05.png",
+      "size": 2390447,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜25_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜25_01.png",
+      "size": 2426394,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜25_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜25_03.png",
+      "size": 2381917,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜25_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜25_02.png",
+      "size": 2464167,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜25_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜25_00.png",
+      "size": 2495820,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜25_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜37_04.png",
+      "size": 1943965,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜37_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜37_02.png",
+      "size": 1999842,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜37_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜37_00.png",
+      "size": 1953045,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜37_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜37_03.png",
+      "size": 1991819,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜37_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜37_01.png",
+      "size": 2037553,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜37_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜38_04.png",
+      "size": 1821780,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜38_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜38_00.png",
+      "size": 1886697,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜38_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜38_02.png",
+      "size": 1884648,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜38_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜38_05.png",
+      "size": 1813818,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜38_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜38_03.png",
+      "size": 1856419,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜38_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜10_04.png",
+      "size": 2303440,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜10_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜10_05.png",
+      "size": 2293901,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜10_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜10_03.png",
+      "size": 2284463,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜10_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜10_01.png",
+      "size": 2253385,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜10_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜10_02.png",
+      "size": 2305975,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜10_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜04_05.png",
+      "size": 2121037,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜04_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜04_02.png",
+      "size": 2087865,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜04_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜04_00.png",
+      "size": 2059816,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜04_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜04_03.png",
+      "size": 2166037,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜04_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜04_04.png",
+      "size": 2155014,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜04_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜21_00.png",
+      "size": 1983335,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜21_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜21_01.png",
+      "size": 1957560,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜21_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜21_02.png",
+      "size": 1914957,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜21_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜21_03.png",
+      "size": 1999578,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜21_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜21_05.png",
+      "size": 1933972,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜21_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜26_01.png",
+      "size": 2131439,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜26_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜26_03.png",
+      "size": 2170810,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜26_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜26_02.png",
+      "size": 2145677,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜26_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜26_05.png",
+      "size": 2157611,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜26_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜26_04.png",
+      "size": 2132949,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜26_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜34_04.png",
+      "size": 2096273,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜34_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜34_03.png",
+      "size": 2078414,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜34_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜34_02.png",
+      "size": 2100392,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜34_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜34_00.png",
+      "size": 2178017,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜34_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜34_01.png",
+      "size": 2174275,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜34_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜15_00.png",
+      "size": 2268933,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜15_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜15_03.png",
+      "size": 2253286,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜15_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜15_02.png",
+      "size": 2240627,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜15_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜15_01.png",
+      "size": 2241178,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜15_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜15_05.png",
+      "size": 2145104,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜15_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜03_01.png",
+      "size": 2403077,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜03_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜03_02.png",
+      "size": 2316512,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜03_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜03_03.png",
+      "size": 2178140,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜03_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜03_00.png",
+      "size": 2298685,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜03_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜03_05.png",
+      "size": 2132843,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜03_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜19_01.png",
+      "size": 2320559,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜19_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜19_00.png",
+      "size": 2118148,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜19_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜29_00.png",
+      "size": 1822919,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜29_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜09_01.png",
+      "size": 2165116,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜09_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜09_00.png",
+      "size": 2177712,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜09_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜09_02.png",
+      "size": 2158282,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜09_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜09_04.png",
+      "size": 2120505,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜09_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜09_05.png",
+      "size": 2119352,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜09_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜30_04.png",
+      "size": 1900828,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜30_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜30_01.png",
+      "size": 1877147,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜30_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜30_05.png",
+      "size": 1901447,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜30_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜30_00.png",
+      "size": 1826910,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜30_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜30_03.png",
+      "size": 1933541,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜30_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜31_02.png",
+      "size": 1912262,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜31_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜31_00.png",
+      "size": 1860179,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜31_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜31_01.png",
+      "size": 1893104,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜31_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜31_05.png",
+      "size": 1821209,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜31_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜31_04.png",
+      "size": 1834999,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜31_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜28_04.png",
+      "size": 2095098,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜28_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜28_03.png",
+      "size": 2105899,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜28_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜28_00.png",
+      "size": 1973931,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜28_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜28_02.png",
+      "size": 1975244,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜28_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜28_05.png",
+      "size": 2059544,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜28_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜17_00.png",
+      "size": 2374611,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜17_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜17_05.png",
+      "size": 2457042,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜17_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜17_04.png",
+      "size": 2371095,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜17_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜17_02.png",
+      "size": 2376098,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜17_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜17_01.png",
+      "size": 2370814,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜17_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜12_01.png",
+      "size": 2141183,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜12_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜12_05.png",
+      "size": 2156909,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜12_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜12_04.png",
+      "size": 2158505,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜12_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜12_02.png",
+      "size": 2133052,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜12_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜12_03.png",
+      "size": 2158591,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜12_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜13_03.png",
+      "size": 2177371,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜13_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜13_05.png",
+      "size": 2205027,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜13_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜13_02.png",
+      "size": 2283526,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜13_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜13_00.png",
+      "size": 2189642,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜13_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜13_01.png",
+      "size": 2235564,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜13_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜07_01.png",
+      "size": 2178423,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜07_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜07_05.png",
+      "size": 2118005,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜07_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜07_00.png",
+      "size": 2120091,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜07_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜07_03.png",
+      "size": 2093118,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜07_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜07_04.png",
+      "size": 2109486,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜07_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜35_02.png",
+      "size": 1997064,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜35_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜35_01.png",
+      "size": 2058586,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜35_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜35_00.png",
+      "size": 2042706,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜35_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜35_03.png",
+      "size": 1927474,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜35_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜35_04.png",
+      "size": 1914997,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜35_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜18_02.png",
+      "size": 2082278,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜18_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜18_00.png",
+      "size": 2160798,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜18_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜18_05.png",
+      "size": 2020696,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜18_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜18_03.png",
+      "size": 1992710,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜18_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜18_01.png",
+      "size": 2149856,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜18_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜32_05.png",
+      "size": 2180343,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜32_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜32_04.png",
+      "size": 2086291,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜32_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜32_01.png",
+      "size": 1998440,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜32_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜32_03.png",
+      "size": 2179509,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜32_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜32_02.png",
+      "size": 2046519,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜32_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜14_04.png",
+      "size": 2177763,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜14_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜14_05.png",
+      "size": 2241787,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜14_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜14_02.png",
+      "size": 2233626,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜14_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜14_00.png",
+      "size": 2221139,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜14_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜14_01.png",
+      "size": 2285489,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜14_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜05_05.png",
+      "size": 2228107,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜05_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜05_03.png",
+      "size": 2195279,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜05_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜05_01.png",
+      "size": 2256206,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜05_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜05_04.png",
+      "size": 2216605,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜05_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜05_00.png",
+      "size": 2142181,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜05_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜02_00.png",
+      "size": 2239053,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜02_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜02_01.png",
+      "size": 2198675,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜02_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜02_05.png",
+      "size": 2171414,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜02_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜02_02.png",
+      "size": 2314729,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜02_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜02_03.png",
+      "size": 2123801,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜02_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜22_01.png",
+      "size": 2172199,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜22_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜22_04.png",
+      "size": 2273951,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜22_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜22_02.png",
+      "size": 2352894,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜22_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜22_05.png",
+      "size": 2114610,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜22_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜22_00.png",
+      "size": 2188655,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜22_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜33_02.png",
+      "size": 1704694,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜33_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜33_04.png",
+      "size": 1773140,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜33_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜33_05.png",
+      "size": 1677429,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜33_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜33_00.png",
+      "size": 1927020,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜33_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜33_01.png",
+      "size": 1758175,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜33_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜06_05.png",
+      "size": 2366127,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜06_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜06_00.png",
+      "size": 2075051,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜06_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜06_03.png",
+      "size": 2304716,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜06_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜06_04.png",
+      "size": 2364375,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜06_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜06_01.png",
+      "size": 2250009,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜06_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜27_00.png",
+      "size": 1908550,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜27_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜27_02.png",
+      "size": 1938300,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜27_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜27_05.png",
+      "size": 1864085,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜27_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜27_03.png",
+      "size": 1874455,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜27_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜27_04.png",
+      "size": 1863478,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜27_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜08_04.png",
+      "size": 2037294,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜08_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜08_02.png",
+      "size": 2108411,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜08_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜08_03.png",
+      "size": 2091045,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜08_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜08_01.png",
+      "size": 2044488,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜08_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜08_05.png",
+      "size": 2147352,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜08_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_03.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜36_03.png",
+      "size": 2113663,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜36_03.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜36_01.png",
+      "size": 2069396,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜36_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜36_05.png",
+      "size": 2172335,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜36_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜36_02.png",
+      "size": 2212804,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜36_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜36_04.png",
+      "size": 2153692,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜36_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜20_01.png",
+      "size": 2141300,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜20_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜20_02.png",
+      "size": 2013201,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜20_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜20_04.png",
+      "size": 2174461,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜20_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜20_00.png",
+      "size": 2026664,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜20_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜20_05.png",
+      "size": 2182747,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜20_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜16_04.png",
+      "size": 2385376,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜16_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜16_05.png",
+      "size": 2426198,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜16_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜16_00.png",
+      "size": 2621528,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜16_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜16_02.png",
+      "size": 2476103,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜16_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜16_01.png",
+      "size": 2697043,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜16_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜01_00.png",
+      "size": 2672540,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜01_00.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜01_02.png",
+      "size": 2451640,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜01_02.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_04.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜01_04.png",
+      "size": 2481975,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜01_04.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜01_01.png",
+      "size": 2561264,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜01_01.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_05.png",
+      "remote": "待处理图片/第01集_关键帧/ep01_镜01_05.png",
+      "size": 2522205,
+      "remove_local": true,
+      "pending_link": "output/出狱后我成为了非洲矿王_v3/给人看/03_待处理图片/第01集_关键帧/ep01_镜01_05.png"
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC11_矿场开采工作面_B反打/SC11_矿场开采工作面_B反打_00.png",
+      "remote": "未选历史候选/assets/SC11_矿场开采工作面_B反打/SC11_矿场开采工作面_B反打_00.png",
+      "size": 3062405,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_01.png",
+      "remote": "未选历史候选/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_01.png",
+      "size": 1975764,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC02_顾家餐厅_A主机位/SC02_顾家餐厅_A主机位_02.png",
+      "size": 1995202,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/矿场技术员_三视图/矿场技术员_三视图_00.png",
+      "remote": "未选历史候选/assets/矿场技术员_三视图/矿场技术员_三视图_00.png",
+      "size": 2110234,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/矿场技术员_三视图/矿场技术员_三视图_02.png",
+      "remote": "未选历史候选/assets/矿场技术员_三视图/矿场技术员_三视图_02.png",
+      "size": 2021363,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_00.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_00.png",
+      "size": 2141536,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_01.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_B反打/SC01_顾家别墅客厅_B反打_01.png",
+      "size": 2105365,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_E仰拍/SC01_顾家别墅客厅_E仰拍_00.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_E仰拍/SC01_顾家别墅客厅_E仰拍_00.png",
+      "size": 2165148,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_E仰拍/SC01_顾家别墅客厅_E仰拍_02.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_E仰拍/SC01_顾家别墅客厅_E仰拍_02.png",
+      "size": 1973004,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_02.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_02.png",
+      "size": 2317871,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_01.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_D细节/SC01_顾家别墅客厅_D细节_01.png",
+      "size": 2309769,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_01.png",
+      "remote": "未选历史候选/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_01.png",
+      "size": 1588721,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_02.png",
+      "remote": "未选历史候选/assets/SC03_顾家客房_B反打/SC03_顾家客房_B反打_02.png",
+      "size": 1512375,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_02.png",
+      "remote": "未选历史候选/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_02.png",
+      "size": 1981786,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_01.png",
+      "remote": "未选历史候选/assets/SC07_顾家厨房_B反打/SC07_顾家厨房_B反打_01.png",
+      "size": 1915597,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_02.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_02.png",
+      "size": 2226579,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_00.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_C侧机位/SC01_顾家别墅客厅_C侧机位_00.png",
+      "size": 2174189,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_00.png",
+      "remote": "未选历史候选/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_00.png",
+      "size": 2123408,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_02.png",
+      "remote": "未选历史候选/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_02.png",
+      "size": 2090259,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_02.png",
+      "remote": "未选历史候选/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_02.png",
+      "size": 1959770,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_00.png",
+      "remote": "未选历史候选/assets/顾万通_得势期_三视图/顾万通_得势期_三视图_00.png",
+      "size": 1899641,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_00.png",
+      "remote": "未选历史候选/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_00.png",
+      "size": 1766331,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_02.png",
+      "remote": "未选历史候选/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_02.png",
+      "size": 1678226,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾瑶_三视图/顾瑶_三视图_01.png",
+      "remote": "未选历史候选/assets/顾瑶_三视图/顾瑶_三视图_01.png",
+      "size": 1659340,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾瑶_三视图/顾瑶_三视图_02.png",
+      "remote": "未选历史候选/assets/顾瑶_三视图/顾瑶_三视图_02.png",
+      "size": 1756106,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_01.png",
+      "remote": "未选历史候选/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_01.png",
+      "size": 2245356,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_02.png",
+      "remote": "未选历史候选/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_02.png",
+      "size": 2102069,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC09_野外营地_B反打/SC09_野外营地_B反打_00.png",
+      "remote": "未选历史候选/assets/SC09_野外营地_B反打/SC09_野外营地_B反打_00.png",
+      "size": 2231664,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_01.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_01.png",
+      "size": 2596937,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_A主机位/SC04_矿场板房办公室_A主机位_02.png",
+      "size": 2527821,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/陈野_三视图/陈野_三视图_02.png",
+      "remote": "未选历史候选/assets/陈野_三视图/陈野_三视图_02.png",
+      "size": 1893590,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/陈野_三视图/陈野_三视图_01.png",
+      "remote": "未选历史候选/assets/陈野_三视图/陈野_三视图_01.png",
+      "size": 2143861,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_01.png",
+      "remote": "未选历史候选/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_01.png",
+      "size": 2163420,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_02.png",
+      "remote": "未选历史候选/assets/SC02_顾家餐厅_C侧机位/SC02_顾家餐厅_C侧机位_02.png",
+      "size": 2033301,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_01.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_01.png",
+      "size": 2547025,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_02.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_D细节/SC04_矿场板房办公室_D细节_02.png",
+      "size": 2445740,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/刘兰_三视图/刘兰_三视图_00.png",
+      "remote": "未选历史候选/assets/刘兰_三视图/刘兰_三视图_00.png",
+      "size": 1805971,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/刘兰_三视图/刘兰_三视图_02.png",
+      "remote": "未选历史候选/assets/刘兰_三视图/刘兰_三视图_02.png",
+      "size": 1874133,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10压抑版_矿场会议室_C侧机位/SC10压抑版_矿场会议室_C侧机位_00.png",
+      "remote": "未选历史候选/assets/SC10压抑版_矿场会议室_C侧机位/SC10压抑版_矿场会议室_C侧机位_00.png",
+      "size": 1944778,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10压抑版_矿场会议室_C侧机位/SC10压抑版_矿场会议室_C侧机位_01.png",
+      "remote": "未选历史候选/assets/SC10压抑版_矿场会议室_C侧机位/SC10压抑版_矿场会议室_C侧机位_01.png",
+      "size": 1926819,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_01.png",
+      "remote": "未选历史候选/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_01.png",
+      "size": 2476770,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_02.png",
+      "remote": "未选历史候选/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_02.png",
+      "size": 2616197,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_01.png",
+      "remote": "未选历史候选/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_01.png",
+      "size": 1929376,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC07_顾家厨房_A主机位/SC07_顾家厨房_A主机位_02.png",
+      "size": 2209262,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_00.png",
+      "remote": "未选历史候选/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_00.png",
+      "size": 2339530,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_02.png",
+      "size": 2393430,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_01.png",
+      "remote": "未选历史候选/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_01.png",
+      "size": 2563951,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_02.png",
+      "size": 2366976,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_00.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_00.png",
+      "size": 2390894,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_02.png",
+      "size": 2059049,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_01.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_01.png",
+      "size": 2740443,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_02.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_C侧机位/SC04_矿场板房办公室_C侧机位_02.png",
+      "size": 2545225,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/江砚_初来期_三视图/江砚_初来期_三视图_01.png",
+      "remote": "未选历史候选/assets/江砚_初来期_三视图/江砚_初来期_三视图_01.png",
+      "size": 1891169,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/江砚_初来期_三视图/江砚_初来期_三视图_00.png",
+      "remote": "未选历史候选/assets/江砚_初来期_三视图/江砚_初来期_三视图_00.png",
+      "size": 1892351,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC10_矿场会议室_C侧机位/SC10_矿场会议室_C侧机位_00.png",
+      "remote": "未选历史候选/assets/SC10_矿场会议室_C侧机位/SC10_矿场会议室_C侧机位_00.png",
+      "size": 2204394,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_02.png",
+      "remote": "未选历史候选/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_02.png",
+      "size": 2099077,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_01.png",
+      "remote": "未选历史候选/assets/SC02_顾家餐厅_B反打/SC02_顾家餐厅_B反打_01.png",
+      "size": 2150193,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC13_顾家书房_B反打/SC13_顾家书房_B反打_00.png",
+      "remote": "未选历史候选/assets/SC13_顾家书房_B反打/SC13_顾家书房_B反打_00.png",
+      "size": 2256386,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾浩_三视图/顾浩_三视图_01.png",
+      "remote": "未选历史候选/assets/顾浩_三视图/顾浩_三视图_01.png",
+      "size": 2004830,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/顾浩_三视图/顾浩_三视图_02.png",
+      "remote": "未选历史候选/assets/顾浩_三视图/顾浩_三视图_02.png",
+      "size": 1885607,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_01.png",
+      "remote": "未选历史候选/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_01.png",
+      "size": 1557201,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_02.png",
+      "remote": "未选历史候选/assets/SC03_顾家客房_A主机位/SC03_顾家客房_A主机位_02.png",
+      "size": 1607841,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC01_顾家别墅客厅_E仰拍_紧/SC01_顾家别墅客厅_E仰拍_紧_00.png",
+      "remote": "未选历史候选/assets/SC01_顾家别墅客厅_E仰拍_紧/SC01_顾家别墅客厅_E仰拍_紧_00.png",
+      "size": 1721945,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_02.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_02.png",
+      "size": 2519327,
+      "remove_local": true,
+      "pending_link": null
+    },
+    {
+      "source": "output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_01.png",
+      "remote": "未选历史候选/assets/SC04_矿场板房办公室_B反打/SC04_矿场板房办公室_B反打_01.png",
+      "size": 2527807,
+      "remove_local": true,
+      "pending_link": null
+    }
+  ]
+}

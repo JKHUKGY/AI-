@@ -1,0 +1,81 @@
+[
+  {
+    "id": "ep01_镜16_u2",
+    "shot_no": 16,
+    "scene": "SC05",
+    "tier": "A",
+    "intent_zh": "创业前最先要做的是接母亲，动作接到上车。",
+    "script_ref": "script_source.txt 第51行「▲江砚看向他，点了点头，随即拉开车门坐进副驾。」；script_source.txt 第52行「江砚：去顾家接我妈走。」——创业前最先要做的是接母亲，动作接到上车。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：创业前最先要做的是接母亲，动作接到上车。",
+    "scene_plate": "SC05_副驾侧_待补机位",
+    "first_frame": null,
+    "first_frame_from": null,
+    "first_frame_strength": 1.0,
+    "first_frame_state_zh": "待补首帧，尚未生成或看图，不是观察结论。补帧设计需求：车外副驾侧中景，江砚站在关闭的副驾门旁，左手持已盖瓶、右手靠近门把；门与车窗内座椅可见，陈野在门外对话方向。",
+    "first_frame_state_basis": "missing_supplemental_image",
+    "camera_en": {
+      "position": "Outside the SUV passenger side, facing Jiang and the passenger doorway with Chen beside it",
+      "rig": "The camera is locked off at seated eye level",
+      "framing_path": "A medium view retaining the passenger door and seat",
+      "move": null
+    },
+    "subject_lock_en": "Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel",
+    "props_en": [
+      "bottle",
+      "cap",
+      "paper",
+      "backpack",
+      "suitcase",
+      "handle",
+      "phone",
+      "door",
+      "tear"
+    ],
+    "beats": [
+      {
+        "t": [
+          0,
+          4.2
+        ],
+        "motion_en": "Jiang pulls the passenger door open with his right hand, bends his knees and lowers himself onto the visible seat. His left hand carries the capped bottle low; the door remains open.",
+        "dialogue": null,
+        "sfx_en": "Light dry wind and distant road noise"
+      },
+      {
+        "t": [
+          4.2,
+          7.708333
+        ],
+        "motion_en": "Seated Jiang turns his head slightly toward Chen beside the open doorway and his lips form the request, then close.",
+        "dialogue": {
+          "speaker": "江砚",
+          "text_zh": "去顾家接我妈走。",
+          "delivery_en": "Jiang speaks in Mandarin Chinese with a low steady young male voice, measured and restrained",
+          "pace": "slow",
+          "onscreen": true
+        }
+      }
+    ],
+    "preserve_en": "the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight",
+    "style_tail_en": "Photorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition",
+    "duration_sec": 7.708333,
+    "fps": 24,
+    "num_frames": 185,
+    "width": 576,
+    "height": 1024,
+    "seed": 90501162,
+    "last_frame": null,
+    "source_duration_sec": 8.0,
+    "end_state_zh": "本段最后动作达成后停留，供后段接续；具体结束态见本卡最后一拍 motion_en。",
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 镜16第二段仅条件草案，缺副驾首帧，禁止提交；不是上一段尾帧直接续接。 原分镜上车动作被拆为走到车旁+副驾补机位；u2缺首帧。保留坐下后说原台词，不改为站着说。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。",
+    "readiness": {
+      "status": "blocked_missing_first_frame",
+      "video_generated": false
+    },
+    "unit_of": "ep01_镜16",
+    "unit_index": [
+      2,
+      2
+    ],
+    "required_first_frame_zh": "沿用江砚/陈野/车辆身份和正午光，补副驾车门与座椅可读的机位；生成后实际看图，再填写 first_frame 与状态，并重装配。"
+  }
+]

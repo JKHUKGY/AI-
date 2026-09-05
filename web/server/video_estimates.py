@@ -15,7 +15,7 @@ def methodology():
         'cold_start':{'status':'pending','cached_minutes':None,'first_download_minutes':None},
         'scope':'分段耗时与冷启动待测试。显卡库存与价格由 RunPod API 实时查询。',
         'recommendation':{'gpu':'A100','test_gpu':'A100','basis':'项目方提供的参考速度，具体以实际任务为准',
-                          'generated_video_seconds':60,'generation_minutes':[10,20],
+                          'generated_video_seconds':60,'generation_minutes':[30,30],
                           'excludes_cold_start':True,'duration_scope':'多个镜头累计视频时长',
                           'batch_advice':'先积攒待生成任务，再集中开卡批量制作，减少重复冷启动。'},
     }

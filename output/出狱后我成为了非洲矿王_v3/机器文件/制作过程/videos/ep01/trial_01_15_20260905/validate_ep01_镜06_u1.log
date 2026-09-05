@@ -1,0 +1,4 @@
+（同目录找到 shot_cards.json，20 张卡，会核对 prompt 是否一致）
+共校验 1 条 job
+
+未发现阻塞性问题，可以进入 ltx_ssh_submit.py --dry-run 验证。

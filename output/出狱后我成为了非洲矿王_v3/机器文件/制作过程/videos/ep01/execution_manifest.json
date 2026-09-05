@@ -1,0 +1,574 @@
+{
+  "scope": "preparation_only",
+  "production_batch_ready": false,
+  "blocking_reasons": [
+    "ep01_镜16_u2 缺副驾补机位首帧；未进入 video_jobs.json。",
+    "11 个续段须先生成前段、看尾帧、回填镜头卡再装配。",
+    "命中 A1 的混合表情台词镜须先通过替代管线预检和小样；本包未验证 DFR 效果。"
+  ],
+  "units": [
+    {
+      "id": "ep01_镜01",
+      "shot_no": 1,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜02",
+      "shot_no": 2,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜03",
+      "shot_no": 3,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜04_u1",
+      "shot_no": 4,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜04_u2",
+      "shot_no": 4,
+      "duration_sec": 5.375,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜04_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜05",
+      "shot_no": 5,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜06_u1",
+      "shot_no": 6,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜06_u2",
+      "shot_no": 6,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜06_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜07",
+      "shot_no": 7,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜08",
+      "shot_no": 8,
+      "duration_sec": 7.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜09",
+      "shot_no": 9,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜10",
+      "shot_no": 10,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜11",
+      "shot_no": 11,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜12_u1",
+      "shot_no": 12,
+      "duration_sec": 6.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜12_u2",
+      "shot_no": 12,
+      "duration_sec": 7.375,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜12_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜13",
+      "shot_no": 13,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜14",
+      "shot_no": 14,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜15_u1",
+      "shot_no": 15,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜15_u2",
+      "shot_no": 15,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜15_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜15_u3",
+      "shot_no": 15,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜15_u2:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜16_u1",
+      "shot_no": 16,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜16_u2",
+      "shot_no": 16,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "blocked_missing_first_frame",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": false
+    },
+    {
+      "id": "ep01_镜17",
+      "shot_no": 17,
+      "duration_sec": 6.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜18_u1",
+      "shot_no": 18,
+      "duration_sec": 6.375,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜18_u2",
+      "shot_no": 18,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜18_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜19",
+      "shot_no": 19,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜20",
+      "shot_no": 20,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜21",
+      "shot_no": 21,
+      "duration_sec": 7.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜22",
+      "shot_no": 22,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜23",
+      "shot_no": 23,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜24_u1",
+      "shot_no": 24,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜24_u2",
+      "shot_no": 24,
+      "duration_sec": 6.708333,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": "ep01_镜24_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜25",
+      "shot_no": 25,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜26",
+      "shot_no": 26,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜27",
+      "shot_no": 27,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜28",
+      "shot_no": 28,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜29_u1",
+      "shot_no": 29,
+      "duration_sec": 4.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜29_u2",
+      "shot_no": 29,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": "ep01_镜29_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜30",
+      "shot_no": 30,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜31_u1",
+      "shot_no": 31,
+      "duration_sec": 6.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜31_u2",
+      "shot_no": 31,
+      "duration_sec": 5.708333,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": "ep01_镜31_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜32",
+      "shot_no": 32,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜33",
+      "shot_no": 33,
+      "duration_sec": 4.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜34",
+      "shot_no": 34,
+      "duration_sec": 7.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜35",
+      "shot_no": 35,
+      "duration_sec": 7.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜36_u1",
+      "shot_no": 36,
+      "duration_sec": 6.375,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜36_u2",
+      "shot_no": 36,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": "ep01_镜36_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜37_u1",
+      "shot_no": 37,
+      "duration_sec": 5.708333,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜37_u2",
+      "shot_no": 37,
+      "duration_sec": 4.708333,
+      "readiness": {
+        "status": "waiting_previous_tail",
+        "video_generated": false
+      },
+      "first_frame_from": "ep01_镜37_u1:last",
+      "included_in_video_jobs": true
+    },
+    {
+      "id": "ep01_镜38",
+      "shot_no": 38,
+      "duration_sec": 5.041667,
+      "readiness": {
+        "status": "prepared_for_export_review",
+        "video_generated": false,
+        "pipeline_gate": "A1_requires_alternative_pipeline_preflight_and_pilot"
+      },
+      "first_frame_from": null,
+      "included_in_video_jobs": true
+    }
+  ]
+}

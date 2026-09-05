@@ -18,6 +18,7 @@ web/server/
   ai_prompt.py   通过服务器已登录的 Codex CLI，结合历史原文和当前版本改写绘图提示词
   prompt_history.py 同任务的旧提示词、Codex 草稿和手动版本
   prompt_tasks.py  后台文字任务及结果持久化，重复请求复用正在运行的任务
+  skill_catalog.py / skill_api.py  14 个仓库 Skills 的版本目录、真实模型加载自检、方案审批及管理员副本执行
   generation_control.py  取消生成、进程组终止及结果提交互斥
   help_chat.py / help_server.py  使用帮助问答及独立服务
   help_history.py       私有 SQLite 问答存档、对话归属、管理员筛选分页
@@ -38,6 +39,7 @@ web/frontend/
   content-editor.js     新增表单、删除确认与回收站公共组件
   views/home.js         项目列表首页与新建项目/剧本导入
   views/setup.js        文字筹备进度、文件预览、图片审批与租卡待办
+  views/skills.js       制作 Skills 入口、关键帧两种模式、调用记录及产物链接
   views/guide.js        指南与内置解释助手的置顶入口
   views/help-history.js 管理员查看服务器保存的助手问答
   views/style-bible.js  画风圣经查看

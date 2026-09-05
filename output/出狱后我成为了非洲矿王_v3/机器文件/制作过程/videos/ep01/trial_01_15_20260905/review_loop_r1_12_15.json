@@ -1,0 +1,61 @@
+{
+  "reviewer": "/root/review_r1_last",
+  "basis": "实际原剧本第47-50行、人物设定及实际抽帧；未读 root visual_reviews.json",
+  "review_status": "partial_waiting_14_15",
+  "reviews": [
+    {
+      "id": "ep01_镜12_u1",
+      "round": 1,
+      "verdict": "pass",
+      "mandatory_retry": false,
+      "reason_zh": "陈野眉间收紧、怒斥口型与沉脸收尾符合原剧本对忘恩负义的不忿；江砚保持左手透明塑料瓶、右手白盖，脸衣与铁门背景稳定。",
+      "optional_polish": "中前段侧转和后段前倾可略收小，属于愤慨表演而非必须返工。",
+      "evidence": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜12_u1/contact.jpg"
+      ],
+      "audio_review": "not_listened; dialogue correctness and exact sync unverified",
+      "fix_instruction": null
+    },
+    {
+      "id": "ep01_镜12_u2",
+      "round": 1,
+      "verdict": "pass",
+      "mandatory_retry": false,
+      "reason_zh": "从前段收口尾帧继续，陈野持续愤慨说话后收口，身体略前倾；左前景江砚仍低持瓶盖，背景及人物未见明显畸变，支持讲述三吨金矿与背叛的情节。",
+      "optional_polish": "前倾稍大，可保留直率表演。",
+      "evidence": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜12_u2/contact.jpg"
+      ],
+      "audio_review": "not_listened; dialogue correctness and exact sync unverified",
+      "fix_instruction": null
+    },
+    {
+      "id": "ep01_镜13",
+      "round": 1,
+      "verdict": "pass",
+      "mandatory_retry": false,
+      "reason_zh": "江砚闭嘴听问句，短暂向下看后回到陈野，眉眼沉稳；五张抽帧没有替画外陈野开口，构图与身份稳定，停顿具有去留思考含义。",
+      "optional_polish": null,
+      "evidence": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜13/contact.jpg"
+      ],
+      "audio_review": "not_listened; dialogue correctness and exact sync unverified",
+      "fix_instruction": null
+    },
+    {
+      "id": "ep01_镜14",
+      "round": 1,
+      "verdict": "pass",
+      "mandatory_retry": false,
+      "reason_zh": "0-1秒密集抽帧可见头部从朝左经过近正面向右，再回到左侧陈野，构成摇头拒绝；后续说话时眉眼平稳，最后收口，没有变成开怀笑，支持原剧本平静笃定自己干的决定。脸部衣服铁门保持一致。",
+      "optional_polish": "摇头幅度与机位漂移稍大，尚可理解为拒绝动作；无需仅为微幅字面偏差返工。",
+      "evidence": [
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜14/contact.jpg",
+        "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜14/reviewer_dense/first_second.jpg"
+      ],
+      "audio_review": "not_listened; dialogue correctness and exact sync unverified",
+      "fix_instruction": null
+    }
+  ],
+  "updated_at": 1788629285.0551844
+}

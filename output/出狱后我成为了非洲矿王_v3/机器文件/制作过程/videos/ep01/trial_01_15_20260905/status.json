@@ -1,0 +1,13 @@
+{
+  "status": "error",
+  "started_at": 1788631739.8157964,
+  "total_units": 20,
+  "completed": 18,
+  "pod_id": "i1mdtadbn5g0ux",
+  "current_unit": "ep01_镜15_u2",
+  "phase": "stopping",
+  "updated_at": 1788631742.4617758,
+  "error": "Command '['ssh', '-p', '19014', '-i', '/home/codespace/.ssh/id_ed25519', 'root@216.81.151.3', 'mkdir -p /workspace/ltx_jobs/v3_ep01_01_15_20260905']' returned non-zero exit status 255.",
+  "gpu_teardown_exit_code": 0,
+  "finished_at": 1788631742.4617686
+}

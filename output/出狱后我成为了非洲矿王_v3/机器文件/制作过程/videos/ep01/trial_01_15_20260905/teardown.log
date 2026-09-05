@@ -1,0 +1,5 @@
+[teardown] 平台=runpod 实例=i1mdtadbn5g0ux 动作=terminate
+[teardown] 理由: RunPod + 有 Network Volume（vr1dk0uvnx），terminate 不影响卷上的模型权重，且能连磁盘费一起省掉
+[teardown] runpod terminate 返回: {}
+[teardown] ✅ 已确认停止计费（http_status=404）
+[teardown] Network Volume vr1dk0uvnx 未被触碰，下次挂同一个卷建新 Pod 即可，不用重新下载权重。

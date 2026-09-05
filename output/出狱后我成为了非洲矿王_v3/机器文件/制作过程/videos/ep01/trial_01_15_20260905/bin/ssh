@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/ssh -o 'UserKnownHostsFile=/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/videos/ep01/trial_01_15_20260905/known_hosts' -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=20 -o ServerAliveCountMax=3 -o ConnectTimeout=15 -o BatchMode=yes "$@"

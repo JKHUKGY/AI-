@@ -1,0 +1,326 @@
+[
+  {
+    "id": "ep01_镜01",
+    "started_at": 1788627018.3459735,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜01.mp4",
+    "seconds": 201.11,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜01.mp4",
+    "sha256": "1c33d78a824c1b34c6f8656be4a26b9ca0b8c071e679bd7d830f1bf02ffe4a67",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜01/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜02",
+    "started_at": 1788627332.1541862,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜02.mp4",
+    "seconds": 73.44,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜02.mp4",
+    "sha256": "a151c3f52c624cc6db749bf220bd181cfea00ef593da1441550587d894605c64",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜02/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜03",
+    "started_at": 1788627425.9442258,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜03.mp4",
+    "seconds": 75.68,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜03.mp4",
+    "sha256": "328c85bb82a3641846959b8827839f6da2b00b7f258842162ef4520f868053f4",
+    "video_frames": 121,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜03/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜04_u1",
+    "started_at": 1788627521.9406374,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜04_u1.mp4",
+    "seconds": 74.64,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜04_u1.mp4",
+    "sha256": "453af4ffed5317521474c19513b6f807c6348ae2170cee5a65ba08d0ed456bb7",
+    "video_frames": 121,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜04_u1/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜04_u2",
+    "started_at": 1788627655.0504766,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜04_u2.mp4",
+    "seconds": 73.47,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜04_u2.mp4",
+    "sha256": "647cd1dfd6515b64be8ea043e5b8fb7f06d904c73414602c5553d49d7bdbf524",
+    "video_frames": 129,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜04_u2/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜05",
+    "started_at": 1788627748.852411,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜05.mp4",
+    "seconds": 74.84,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜05.mp4",
+    "sha256": "e3fead457bb889b953043028e46b237d1cd65d3b4d45ce1b95d27e21603afa23",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜05/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜06_u1",
+    "started_at": 1788627842.0676053,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜06_u1.mp4",
+    "seconds": 73.16,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜06_u1.mp4",
+    "sha256": "16d2d174254ae09943303ca3b638a29122086f6e4395cfb03315b90b71a7b0dc",
+    "video_frames": 121,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜06_u1/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜06_u2",
+    "started_at": 1788627975.7911844,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜06_u2.mp4",
+    "seconds": 73.3,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜06_u2.mp4",
+    "sha256": "52448c0572620ab0781d1bab1817f69809c7bcaa06d5801e4684031654d38e91",
+    "video_frames": 121,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜06_u2/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜07",
+    "started_at": 1788628069.4597006,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜07.mp4",
+    "seconds": 80.64,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜07.mp4",
+    "sha256": "188d03eb68cfba4104dd698903e9c058ae4f413385cce8562b9cfadd32f46630",
+    "video_frames": 185,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜07/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜08",
+    "started_at": 1788628164.4166417,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜08.mp4",
+    "seconds": 78.94,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜08.mp4",
+    "sha256": "7bb60092a4a619673d277108fa8b3aaa93770fc56e1695bc33c9222a1460c159",
+    "video_frames": 169,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜08/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜09",
+    "started_at": 1788628257.6905305,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜09.mp4",
+    "seconds": 79.75,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜09.mp4",
+    "sha256": "60474fa0cc9acb1acf0192c73e66a82a7200cc1d37ec4b1a2203efe6d795261d",
+    "video_frames": 185,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜09/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜10",
+    "started_at": 1788628351.7596736,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜10.mp4",
+    "seconds": 71.37,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜10.mp4",
+    "sha256": "fbd070d14c36796565f6c624ef0dbb925dca9d53dd8f18db0409495eba228a29",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜10/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜11",
+    "started_at": 1788628449.5813992,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜11.mp4",
+    "seconds": 75.01,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜11.mp4",
+    "sha256": "b05e2a058530c3eb9ec7d5d086a7b4a3f9cc94458aa1826dca0e32c4bff4e712",
+    "video_frames": 121,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜11/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜12_u1",
+    "started_at": 1788628545.084536,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜12_u1.mp4",
+    "seconds": 77.83,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜12_u1.mp4",
+    "sha256": "b8ebe56ff380c39b8204384df5c8072e9e1af0b3718ff1f692f4205cae70f6fc",
+    "video_frames": 145,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜12_u1/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜12_u2",
+    "started_at": 1788628890.2610285,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜12_u2.mp4",
+    "seconds": 80.59,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜12_u2.mp4",
+    "sha256": "df3e860ecbd675df92390dc9df819cc23f40b17da3633738ec14ab2ee2edc945",
+    "video_frames": 177,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜12_u2/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜13",
+    "started_at": 1788628985.1491141,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜13.mp4",
+    "seconds": 70.74,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜13.mp4",
+    "sha256": "6d6631c2318b36838059e4f7dddef4f0963c3ca99356899096e15ad9f4e86102",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜13/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜14",
+    "started_at": 1788629080.2325718,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜14.mp4",
+    "seconds": 71.16,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜14.mp4",
+    "sha256": "a6687b29c09e421233d0046bde62b2d575f91ea252ea6f8d985be2759b918803",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜14/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  },
+  {
+    "id": "ep01_镜15_u1",
+    "started_at": 1788629173.9260402,
+    "status": "done",
+    "output": "/workspace/ltx_jobs/v3_ep01_01_15_20260905/ep01_镜15_u1.mp4",
+    "seconds": 68.83,
+    "local_video": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜15_u1.mp4",
+    "sha256": "3090eea8d7f9b688a9b8151d1110323fba946f32535c7e090b5bc496c8f156a4",
+    "video_frames": 97,
+    "resolution": [
+      576,
+      1024
+    ],
+    "audio_stream_present": true,
+    "contact_sheet": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜15_u1/contact.jpg",
+    "visual_review": "pending",
+    "speech_content_review": "pending"
+  }
+]

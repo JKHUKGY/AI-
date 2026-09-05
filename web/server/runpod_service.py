@@ -17,6 +17,7 @@ from router import ApiError
 
 ACTIVE = ('creating', 'unknown', 'running', 'stopping')
 IDLE_SECONDS = 600
+MAX_MINUTES = 300
 _locks = {}
 _guard = threading.Lock()
 
@@ -141,7 +142,7 @@ def preview(username, project, body):
         raise ApiError(503, '管理员尚未启用租卡并配置运行镜像与 SSH 公钥')
     minutes = body.get('minutes')
     maximum = body.get('max_usd')
-    if type(minutes) is not int or not 5 <= minutes <= config.get('gpu_max_minutes', 60):
+    if type(minutes) is not int or not 5 <= minutes <= min(config.get('gpu_max_minutes', MAX_MINUTES), MAX_MINUTES):
         raise ApiError(400, '租用时长超出管理员允许范围')
     if type(maximum) not in (int, float) or not math.isfinite(maximum) or not 0 < maximum <= config.get('gpu_max_usd', 10):
         raise ApiError(400, '预算超出管理员允许范围')

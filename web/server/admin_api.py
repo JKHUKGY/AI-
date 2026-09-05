@@ -148,8 +148,8 @@ def register(router):
             if key in ('gpu_enabled','video_ready'):
                 if type(value) is not bool: raise ApiError(400,'开关配置需为布尔值')
             elif key in ('smtp_port','gpu_max_minutes'):
-                limit=65535 if key=='smtp_port' else 240
-                if type(value) is not int or not 1<=value<=limit: raise ApiError(400,'端口或时长不合法')
+                limit=65535 if key=='smtp_port' else runpod.MAX_MINUTES
+                if type(value) is not int or not (1 if key=='smtp_port' else 5)<=value<=limit: raise ApiError(400,'端口或时长不合法')
             elif key=='gpu_max_usd':
                 if type(value) not in (float,int) or not 0<value<=100: raise ApiError(400,'租卡预算上限需为 0–100 美元')
             elif not isinstance(value,str) or len(value)>4000 or '\r' in value or '\n' in value:
@@ -179,7 +179,7 @@ def register(router):
                 'h3_paused':bool(config.get('h3_paused')), 'video_ready':bool(config.get('video_ready')) and not config.get('h3_paused',False), 'video_allowed':auth.is_admin(ctx.username) or store.account(ctx.username)['features']['video'],
                 'mail_configured':notifications.configured(), 'notification_email':notifications.GPU_RECIPIENT, 'idle_seconds':runpod.IDLE_SECONDS,
                 'enabled':bool(config.get('gpu_enabled')), 'allowed':auth.is_admin(ctx.username) or bool(store.account(ctx.username)['gpu_allowed']),
-                'max_minutes':config.get('gpu_max_minutes',60),'max_usd':config.get('gpu_max_usd',10)}
+                'max_minutes':min(config.get('gpu_max_minutes',runpod.MAX_MINUTES),runpod.MAX_MINUTES),'max_usd':config.get('gpu_max_usd',10)}
 
     @router.get(r'/api/gpu/monitor')
     def gpu_monitor_report(ctx, params):

@@ -1,0 +1,931 @@
+{
+  "summary": {
+    "episode": "ep01",
+    "scope": "prompt_preparation_only",
+    "original_shots": 38,
+    "compiled_units": 49,
+    "conditional_draft_units": 1,
+    "planned_total_units": 50,
+    "selected_first_frames_viewed_and_existing": 38,
+    "unmaterialized_tail_dependencies": 11,
+    "original_script_dialogue_lines": 21,
+    "original_dialogue_exact_match": true,
+    "source_duration_sec": 253.0,
+    "planned_generation_duration_sec": 275.417,
+    "compiled_generation_duration_sec": 267.708,
+    "lint_errors": 0,
+    "lint_warnings": 11,
+    "max_estimated_prompt_tokens": 446,
+    "tokenizer_check": "heuristic_only_no_local_Gemma_tokenizer",
+    "all_jobs_identical_to_card_builder": true,
+    "video_generation_started": false,
+    "gpu_requested": false,
+    "production_batch_ready": false,
+    "resolution": [
+      576,
+      1024
+    ],
+    "fps": 24
+  },
+  "warnings": [
+    "[ep01_镜04_u2] 首帧还没落地，声明来自 `ep01_镜04_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜06_u2] 首帧还没落地，声明来自 `ep01_镜06_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜12_u2] 首帧还没落地，声明来自 `ep01_镜12_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜15_u2] 首帧还没落地，声明来自 `ep01_镜15_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜15_u3] 首帧还没落地，声明来自 `ep01_镜15_u2:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜18_u2] 首帧还没落地，声明来自 `ep01_镜18_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜24_u2] 首帧还没落地，声明来自 `ep01_镜24_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜29_u2] 首帧还没落地，声明来自 `ep01_镜29_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜31_u2] 首帧还没落地，声明来自 `ep01_镜31_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜36_u2] 首帧还没落地，声明来自 `ep01_镜36_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段",
+    "[ep01_镜37_u2] 首帧还没落地，声明来自 `ep01_镜37_u1:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段"
+  ],
+  "dialogue_by_shot": [
+    {
+      "shot_no": 1,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 2,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 3,
+      "exact_match": true,
+      "text_zh": "江老弟，你可算出来了！"
+    },
+    {
+      "shot_no": 4,
+      "exact_match": true,
+      "text_zh": "这阵子我查明白了，你这事根本就是顾浩那小子给你做的局。"
+    },
+    {
+      "shot_no": 5,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 6,
+      "exact_match": true,
+      "text_zh": "他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，"
+    },
+    {
+      "shot_no": 7,
+      "exact_match": true,
+      "text_zh": "拿了新矿的高品位矿样，趁你下井查工作的功夫，"
+    },
+    {
+      "shot_no": 8,
+      "exact_match": true,
+      "text_zh": "偷偷塞进你办公室抽屉，转头就匿名报了警。"
+    },
+    {
+      "shot_no": 9,
+      "exact_match": true,
+      "text_zh": "我猜到是他。"
+    },
+    {
+      "shot_no": 10,
+      "exact_match": true,
+      "text_zh": "你知道？"
+    },
+    {
+      "shot_no": 11,
+      "exact_match": true,
+      "text_zh": "除了他，没人会这么针对我。"
+    },
+    {
+      "shot_no": 12,
+      "exact_match": true,
+      "text_zh": "这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！"
+    },
+    {
+      "shot_no": 13,
+      "exact_match": true,
+      "text_zh": "那咱，还回万通矿业吗？"
+    },
+    {
+      "shot_no": 14,
+      "exact_match": true,
+      "text_zh": "不回了，自己干。"
+    },
+    {
+      "shot_no": 15,
+      "exact_match": true,
+      "text_zh": "好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！"
+    },
+    {
+      "shot_no": 16,
+      "exact_match": true,
+      "text_zh": "去顾家接我妈走。"
+    },
+    {
+      "shot_no": 17,
+      "exact_match": true,
+      "text_zh": "我叫江砚，高一那年父亲车祸去世，"
+    },
+    {
+      "shot_no": 18,
+      "exact_match": true,
+      "text_zh": "母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，一去就是七年。"
+    },
+    {
+      "shot_no": 19,
+      "exact_match": true,
+      "text_zh": "我以全校第一的成绩考上夏国地质大学资源勘察专业。"
+    },
+    {
+      "shot_no": 20,
+      "exact_match": true,
+      "text_zh": "大学毕业的第一件事，就是飞到这里，想把母亲接回家，"
+    },
+    {
+      "shot_no": 21,
+      "exact_match": true,
+      "text_zh": "可我没想到，等待我们母子的，是屈辱与算计。"
+    },
+    {
+      "shot_no": 22,
+      "exact_match": true,
+      "text_zh": "小砚，可算到了，累不累？快跟我回家。"
+    },
+    {
+      "shot_no": 23,
+      "exact_match": true,
+      "text_zh": "妈，我不累，你怎么瘦了这么多。"
+    },
+    {
+      "shot_no": 24,
+      "exact_match": true,
+      "text_zh": "这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。"
+    },
+    {
+      "shot_no": 25,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 26,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 27,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 28,
+      "exact_match": true,
+      "text_zh": "刘姐，瑶瑶，小砚到了。"
+    },
+    {
+      "shot_no": 29,
+      "exact_match": true,
+      "text_zh": "哟，来了啊，听你妈说你是名牌大学毕业？"
+    },
+    {
+      "shot_no": 30,
+      "exact_match": true,
+      "text_zh": "我们家可小，委屈你大学生了。"
+    },
+    {
+      "shot_no": 31,
+      "exact_match": true,
+      "text_zh": "妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？"
+    },
+    {
+      "shot_no": 32,
+      "exact_match": true,
+      "text_zh": "别回头住不惯，再闹着要回去。"
+    },
+    {
+      "shot_no": 33,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 34,
+      "exact_match": true,
+      "text_zh": "快把行李放进去，歇会儿就开饭了，你表叔一会儿就回来。"
+    },
+    {
+      "shot_no": 35,
+      "exact_match": true,
+      "text_zh": ""
+    },
+    {
+      "shot_no": 36,
+      "exact_match": true,
+      "text_zh": "小砚，在人家里住着，多一事不如少一事，别跟她们顶嘴，啊？"
+    },
+    {
+      "shot_no": 37,
+      "exact_match": true,
+      "text_zh": "你表叔这些年收留我，供你上大学，咱们得懂得感恩。"
+    },
+    {
+      "shot_no": 38,
+      "exact_match": true,
+      "text_zh": "我知道了妈。"
+    }
+  ],
+  "speech_timing": [
+    {
+      "unit": "ep01_镜03",
+      "text": "江老弟，你可算出来了！",
+      "characters": 9,
+      "pace": "normal",
+      "minimum_sec": 3.05,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜04_u1",
+      "text": "这阵子我查明白了，",
+      "characters": 8,
+      "pace": "normal",
+      "minimum_sec": 2.8,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜04_u2",
+      "text": "你这事根本就是顾浩那小子给你做的局。",
+      "characters": 17,
+      "pace": "normal",
+      "minimum_sec": 5.05,
+      "allocated_sec": 5.375,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜06_u1",
+      "text": "他和本地矿商马库斯俩人串通好，",
+      "characters": 14,
+      "pace": "normal",
+      "minimum_sec": 4.3,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜06_u2",
+      "text": "伪造了签你英文名的交易合同，",
+      "characters": 13,
+      "pace": "normal",
+      "minimum_sec": 4.05,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜07",
+      "text": "拿了新矿的高品位矿样，趁你下井查工作的功夫，",
+      "characters": 20,
+      "pace": "normal",
+      "minimum_sec": 5.8,
+      "allocated_sec": 7.708,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜08",
+      "text": "偷偷塞进你办公室抽屉，转头就匿名报了警。",
+      "characters": 18,
+      "pace": "normal",
+      "minimum_sec": 5.3,
+      "allocated_sec": 7.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜09",
+      "text": "我猜到是他。",
+      "characters": 5,
+      "pace": "slow",
+      "minimum_sec": 2.467,
+      "allocated_sec": 2.708,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜10",
+      "text": "你知道？",
+      "characters": 3,
+      "pace": "normal",
+      "minimum_sec": 1.55,
+      "allocated_sec": 4.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜11",
+      "text": "除了他，没人会这么针对我。",
+      "characters": 11,
+      "pace": "slow",
+      "minimum_sec": 4.467,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜12_u1",
+      "text": "这兔崽子也太缺德了！",
+      "characters": 9,
+      "pace": "normal",
+      "minimum_sec": 3.05,
+      "allocated_sec": 6.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜12_u2",
+      "text": "你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！",
+      "characters": 25,
+      "pace": "normal",
+      "minimum_sec": 7.05,
+      "allocated_sec": 7.375,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜13",
+      "text": "那咱，还回万通矿业吗？",
+      "characters": 9,
+      "pace": "slow",
+      "minimum_sec": 3.8,
+      "allocated_sec": 4.042,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜14",
+      "text": "不回了，自己干。",
+      "characters": 6,
+      "pace": "slow",
+      "minimum_sec": 2.8,
+      "allocated_sec": 3.242,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜15_u1",
+      "text": "好！我就等你这句话呢！",
+      "characters": 9,
+      "pace": "normal",
+      "minimum_sec": 3.05,
+      "allocated_sec": 4.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜15_u2",
+      "text": "设备、工人我都能搞到，",
+      "characters": 9,
+      "pace": "normal",
+      "minimum_sec": 3.05,
+      "allocated_sec": 4.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜15_u3",
+      "text": "咱自己找矿自己干，不受他顾家的鸟气！",
+      "characters": 16,
+      "pace": "normal",
+      "minimum_sec": 4.8,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜17",
+      "text": "我叫江砚，高一那年父亲车祸去世，",
+      "characters": 14,
+      "pace": "normal",
+      "minimum_sec": 4.3,
+      "allocated_sec": 6.042,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜18_u1",
+      "text": "母亲为了供我读书，远赴非洲投奔我远房表叔顾万通，",
+      "characters": 22,
+      "pace": "normal",
+      "minimum_sec": 6.3,
+      "allocated_sec": 6.375,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜18_u2",
+      "text": "一去就是七年。",
+      "characters": 6,
+      "pace": "normal",
+      "minimum_sec": 2.3,
+      "allocated_sec": 5.042,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜19",
+      "text": "我以全校第一的成绩考上夏国地质大学资源勘察专业。",
+      "characters": 23,
+      "pace": "normal",
+      "minimum_sec": 6.55,
+      "allocated_sec": 7.708,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜20",
+      "text": "大学毕业的第一件事，就是飞到这里，想把母亲接回家，",
+      "characters": 22,
+      "pace": "normal",
+      "minimum_sec": 6.3,
+      "allocated_sec": 7.708,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜21",
+      "text": "可我没想到，等待我们母子的，是屈辱与算计。",
+      "characters": 18,
+      "pace": "normal",
+      "minimum_sec": 5.3,
+      "allocated_sec": 7.042,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜22",
+      "text": "小砚，可算到了，累不累？",
+      "characters": 9,
+      "pace": "slow",
+      "minimum_sec": 3.8,
+      "allocated_sec": 3.9,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜22",
+      "text": "快跟我回家。",
+      "characters": 5,
+      "pace": "slow",
+      "minimum_sec": 2.467,
+      "allocated_sec": 2.608,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜23",
+      "text": "妈，我不累，你怎么瘦了这么多。",
+      "characters": 12,
+      "pace": "slow",
+      "minimum_sec": 4.8,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜24_u1",
+      "text": "这边太阳大，显的，快走吧，",
+      "characters": 10,
+      "pace": "slow",
+      "minimum_sec": 4.133,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜24_u2",
+      "text": "你表叔家都等着呢，特意给你做了接风饭。",
+      "characters": 17,
+      "pace": "slow",
+      "minimum_sec": 6.467,
+      "allocated_sec": 6.708,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜28",
+      "text": "刘姐，瑶瑶，小砚到了。",
+      "characters": 8,
+      "pace": "slow",
+      "minimum_sec": 3.467,
+      "allocated_sec": 4.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜29_u1",
+      "text": "哟，来了啊，",
+      "characters": 4,
+      "pace": "slow",
+      "minimum_sec": 2.133,
+      "allocated_sec": 3.508,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜29_u2",
+      "text": "听你妈说你是名牌大学毕业？",
+      "characters": 12,
+      "pace": "slow",
+      "minimum_sec": 4.8,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜30",
+      "text": "我们家可小，委屈你大学生了。",
+      "characters": 12,
+      "pace": "slow",
+      "minimum_sec": 4.8,
+      "allocated_sec": 5.042,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜31_u1",
+      "text": "妈，人家好不容易从国内来，",
+      "characters": 11,
+      "pace": "slow",
+      "minimum_sec": 4.467,
+      "allocated_sec": 4.842,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜31_u2",
+      "text": "不得好好见识见识非洲的好日子？",
+      "characters": 14,
+      "pace": "slow",
+      "minimum_sec": 5.467,
+      "allocated_sec": 5.708,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜32",
+      "text": "别回头住不惯，再闹着要回去。",
+      "characters": 12,
+      "pace": "slow",
+      "minimum_sec": 4.8,
+      "allocated_sec": 5.042,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜34",
+      "text": "快把行李放进去，歇会儿就开饭了，你表叔一会儿就回来。",
+      "characters": 23,
+      "pace": "normal",
+      "minimum_sec": 6.55,
+      "allocated_sec": 7.708,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜36_u1",
+      "text": "小砚，在人家里住着，多一事不如少一事，",
+      "characters": 16,
+      "pace": "slow",
+      "minimum_sec": 6.133,
+      "allocated_sec": 6.375,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜36_u2",
+      "text": "别跟她们顶嘴，啊？",
+      "characters": 7,
+      "pace": "slow",
+      "minimum_sec": 3.133,
+      "allocated_sec": 5.042,
+      "onscreen": true
+    },
+    {
+      "unit": "ep01_镜37_u1",
+      "text": "你表叔这些年收留我，供你上大学，",
+      "characters": 14,
+      "pace": "slow",
+      "minimum_sec": 5.467,
+      "allocated_sec": 5.708,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜37_u2",
+      "text": "咱们得懂得感恩。",
+      "characters": 7,
+      "pace": "slow",
+      "minimum_sec": 3.133,
+      "allocated_sec": 4.708,
+      "onscreen": false
+    },
+    {
+      "unit": "ep01_镜38",
+      "text": "我知道了妈。",
+      "characters": 5,
+      "pace": "slow",
+      "minimum_sec": 2.467,
+      "allocated_sec": 3.842,
+      "onscreen": true
+    }
+  ],
+  "first_frame_manifest": [
+    {
+      "shot_no": 1,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+      "sha256": "786e764ce082cfe4118c4d93690400600507260e507f1c0390d0e296adcbfe10",
+      "bytes": 2552716,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+      "sha256": "fcf4ed8bd2bbab19f4bd6dab587fb7250e1c554a04a86384f793f9e432532aaf",
+      "bytes": 2243118,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 3,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+      "sha256": "be00f2cadbb100f49f47a319dba3d26aba51e9a16d7b0df0be845cc3a3ca6650",
+      "bytes": 2172760,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 4,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_01.png",
+      "sha256": "9a14c6bc94df1ddf01b15cc99327a251c34ef0c502f9aa8bf66160b68b8491f7",
+      "bytes": 2135532,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 5,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png",
+      "sha256": "f290b8772c8327c5a723683abffc28221c8f0c9ca80aea6940a83d7ecd3d9401",
+      "bytes": 2286988,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 6,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_02.png",
+      "sha256": "467d4e3759022d83f1f80cd8e8d815833f73ecc02782ef042ae14df92290f7d5",
+      "bytes": 2348831,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 7,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+      "sha256": "e7f86949871f6397083ca0682d2b10746d474a12f585b936f5d6ac3312603068",
+      "bytes": 2161644,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 8,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+      "sha256": "e7735079c27e4127a12d0b9288c129e9ce1231b56aa9b2dcd0221fd7a47ad042",
+      "bytes": 2029934,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 9,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+      "sha256": "543f638e439d9459c784b22a5febd66a7f016e733b4abb637a8b8602c49ff442",
+      "bytes": 2151331,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 10,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+      "sha256": "78ccba2de6c69b96fee8942878f51d1a0ca809a2bf77e98b26a22959c6386d71",
+      "bytes": 2140565,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 11,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+      "sha256": "fe894f1c427f16da53362a0f9b14aeaeb41c5cbeb332a61f9b64b1248c659812",
+      "bytes": 1924089,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 12,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+      "sha256": "c699ce02fc8f75cde0ccecd881e36b6cd1cdb5ecfca98612f31581d1b989db4f",
+      "bytes": 2052562,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 13,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+      "sha256": "fd8430d56fbd9d0379f5ea625c6c7366c7edfa24d79c7a19a6c30b5b2bce742a",
+      "bytes": 2230388,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 14,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+      "sha256": "5353043d0b3aa1b996cdbcffe4070963c381a58fbee19dcef08db20d539a699e",
+      "bytes": 2254324,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 15,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+      "sha256": "22f3103489dbb1d1eac4bd180348714a0171e8748c8544e9737c78de8ec02142",
+      "bytes": 2234233,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 16,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+      "sha256": "05316f273895e03f1e2bcb50d3f33ee717414749c0f28f0146196f62b404b6b4",
+      "bytes": 2376510,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 17,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_03.png",
+      "sha256": "dd175746db5cd6dd596a6baf287c5b2cd696006eca6f0d5f47ee7726e15412ac",
+      "bytes": 2491020,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 18,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_04.png",
+      "sha256": "d885ef2f72212b05cc574dd384094bf51bfd123f02513acc395670868e553f9b",
+      "bytes": 2123786,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 19,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+      "sha256": "0067932285c78284eb72afaa76145267b5e2dcd9d545a8dd808c1f64e7a79386",
+      "bytes": 2229442,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 20,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_03.png",
+      "sha256": "e8d4315bd855aa8bf0f94739d8fcee71a9b969e42736c74ce964e5b72e2b7d93",
+      "bytes": 2250347,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 21,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+      "sha256": "03052d0c643032737923a9b85ebaaf5d58685755fc2c3b5ca960c614f2690f56",
+      "bytes": 1922006,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 22,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+      "sha256": "8a3f2b3a92d37b1f675939c9609a7ca22b971babe41c50dc74ea462f9bfe21c5",
+      "bytes": 2178205,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 23,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+      "sha256": "50c66c5330f698f8e6fd64b4b6afdb4c155e26458166b8564dc447a34899f0e8",
+      "bytes": 1925324,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 24,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+      "sha256": "36a5df02d8199ba63e34d7d116cfa6c10419f73117c7250c6e8f0e4d780a2b02",
+      "bytes": 2238585,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 25,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+      "sha256": "b594139c08aa8fb584f5b57949ba6ab91048e89c498a040c3789e59901a986cb",
+      "bytes": 2354188,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 26,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+      "sha256": "7639fc980b745cbe895768fe4ee1205d9019f652c45f364bc56fcf3ccad44c41",
+      "bytes": 2150679,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 27,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+      "sha256": "336264941de8d2b5e083ffee396ff5fa021659edda77d82db23e2c3023ed6d1c",
+      "bytes": 1893082,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 28,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+      "sha256": "bc52fe51e6a778e304f3dda94f3aa999d336ac0d77aae04a895e24f7953bfd99",
+      "bytes": 2022206,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 29,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_01.png",
+      "sha256": "1d281d0f72d39fbd8564362815346b45d5093a27b3b1d7da4230f785da9c4a0c",
+      "bytes": 1938623,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 30,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_02.png",
+      "sha256": "51a26111dbc872aa90a64c83b017b52b2fcc9faf4e4257bdd3ead89e43ffffcf",
+      "bytes": 1899887,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 31,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+      "sha256": "c2749d00a801d78c60d068b7a8bf85cd93846ea9abb5d2d2df6ec299d9844a9b",
+      "bytes": 1853225,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 32,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+      "sha256": "4957344e9c91e4c9f0212e0f937a27c02dff95366bc7bd9e039c61f035b6102e",
+      "bytes": 2007673,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 33,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_03.png",
+      "sha256": "f6f9a6c16fb04a730abab37bc5bd4a8c8d8e0da0da30231b5eea08352252762d",
+      "bytes": 1694513,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 34,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+      "sha256": "d66e6a2fa1ce12b8611959e4e940445982d1952ff0f44106c67a8542902ded01",
+      "bytes": 2047851,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 35,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+      "sha256": "efd4b49a51a8f3d4032b08649974f5058dc3d5cebfd0e14fc81f3b0afa30765e",
+      "bytes": 1904032,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 36,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+      "sha256": "240e0d7293d12654e43f0d78948240c88ad537aea79ee0957b0c6f07840db11b",
+      "bytes": 2004271,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 37,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+      "sha256": "6f525555a4a987deea256a762086f85658dbc0aaff73bb9f5fc2048049b7e0b3",
+      "bytes": 2084416,
+      "viewed_during_preparation": true
+    },
+    {
+      "shot_no": 38,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+      "sha256": "65c1dae3575afc6dd6d332b54bf763bbf1ca8012fe2bef85467b853483a786ac",
+      "bytes": 1931975,
+      "viewed_during_preparation": true
+    }
+  ],
+  "tail_dependencies": [
+    {
+      "unit": "ep01_镜04_u2",
+      "previous_unit": "ep01_镜04_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜06_u2",
+      "previous_unit": "ep01_镜06_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜12_u2",
+      "previous_unit": "ep01_镜12_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜15_u2",
+      "previous_unit": "ep01_镜15_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜15_u3",
+      "previous_unit": "ep01_镜15_u2",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜18_u2",
+      "previous_unit": "ep01_镜18_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜24_u2",
+      "previous_unit": "ep01_镜24_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜29_u2",
+      "previous_unit": "ep01_镜29_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜31_u2",
+      "previous_unit": "ep01_镜31_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜36_u2",
+      "previous_unit": "ep01_镜36_u1",
+      "status": "not_generated"
+    },
+    {
+      "unit": "ep01_镜37_u2",
+      "previous_unit": "ep01_镜37_u1",
+      "status": "not_generated"
+    }
+  ]
+}

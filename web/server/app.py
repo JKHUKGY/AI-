@@ -39,6 +39,7 @@ import control_store
 import admin_api
 import operations
 import video_jobs
+import skill_api
 from router import ApiError, Ctx, Router
 
 mimetypes.add_type('application/javascript', '.js')
@@ -51,6 +52,7 @@ CONTENT_DIR = os.path.join(WEB_DIR, 'content')
 router = Router()
 admin_api.register(router)
 video_jobs.register(router)
+skill_api.register(router)
 
 
 @router.post(r'/api/help/question')
@@ -1084,7 +1086,7 @@ class Handler(BaseHTTPRequestHandler):
                         feature = ('create' if path == '/api/projects' else
                                    'image' if '/regenerate' in path else
                                    'video' if '/generation/' in path or path.startswith('/api/video/') else
-                                   'text' if any(s in path for s in ('/setup/start','/prompt_tasks','/ai_rewrite_prompt')) else
+                                   'text' if any(s in path for s in ('/setup/start','/prompt_tasks','/ai_rewrite_prompt','/skills/')) else
                                    'help' if path == '/api/help/question' else
                                    'edit' if project_name and '/gpu/' not in path else None)
                         if feature: control_store.require_feature(username,feature)

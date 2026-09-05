@@ -17,10 +17,10 @@ const TaskUI = (() => {
     [...tasks].reverse().slice(0, 40).forEach(task => {
       const row = document.createElement('div'); row.className = 'task-row';
       const title = document.createElement('span');
-      title.textContent = `${task.project} · ${task.target.job_id} · ${{prompt:'提示词',image:'图片',setup:'文字文件'}[task.kind]} · ${labels[task.status] || task.status}`;
+      title.textContent = `${task.project} · ${task.target.job_id} · ${task.target.type === 'skill' ? 'Skill' : {prompt:'提示词',image:'图片',setup:'文字文件'}[task.kind]} · ${labels[task.status] || task.status}`;
       const link = document.createElement('a');
       const target = task.target;
-      const route = task.kind === 'setup' ? 'setup' : target.type === 'keyframe' ? `keyframes/${target.episode}` : (target.job_id.startsWith('SC') ? 'scenes' : 'characters');
+      const route = target.type === 'skill' ? 'skills' : task.kind === 'setup' ? 'setup' : target.type === 'keyframe' ? `keyframes/${target.episode}` : (target.job_id.startsWith('SC') ? 'scenes' : 'characters');
       link.href = `#/p/${encodeURIComponent(task.project)}/${route}`; link.textContent = '打开项目';
       row.append(title, link);
       if (task.status === 'running') {

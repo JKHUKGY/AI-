@@ -1,0 +1,18 @@
+catalog 14; starting real model loading probes
+{"skill": "index", "status": "done"}
+{"skill": "short-drama-scout", "status": "done"}
+{"skill": "short-drama-storyboard", "status": "done"}
+{"skill": "short-drama-image-gen", "status": "done"}
+{"skill": "loop-picture-generation", "status": "done"}
+{"skill": "short-drama-keyframe-gen", "status": "done"}
+{"skill": "short-drama-video-gen", "status": "done"}
+{"skill": "short-drama-ltx-export", "status": "done"}
+{"skill": "short-drama-ltx-generate", "status": "done"}
+{"skill": "loop-video-generation", "status": "done"}
+{"skill": "short-drama-internal-test", "status": "done"}
+{"skill": "single-image-video-control", "status": "done"}
+{"skill": "minimax-h3-export", "status": "done"}
+{"skill": "minimax-h3-generate", "status": "done"}
+preview done
+execution done
+artifacts 1

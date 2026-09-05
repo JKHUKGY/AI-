@@ -98,7 +98,7 @@ class ControlTests(unittest.TestCase):
         self.assertNotIn('source',meta)
         self.assertNotIn('MiniMax',json.dumps(meta))
         self.assertEqual(meta['recommendation']['gpu'],'A100')
-        self.assertEqual(meta['recommendation']['generation_minutes'],[10,20])
+        self.assertEqual(meta['recommendation']['generation_minutes'],[30,30])
         self.assertTrue(meta['recommendation']['excludes_cold_start'])
         self.assertIn('项目方',meta['recommendation']['basis'])
 
@@ -219,6 +219,18 @@ class ControlTests(unittest.TestCase):
         self.assertEqual(help_history.listing(username='admin')['records'],[])
         self.assertEqual(help_history.listing(conversation_id='d'*32)['records'],[])
         with self.assertRaises(ApiError):help_history.listing(before='invalid')
+
+    def test_rental_five_hour_limit_and_custom_duration(self):
+        self.call('/api/admin/settings',{'gpu_max_minutes':300})
+        for invalid in (301,4,True):
+            with self.assertRaises(ApiError):self.call('/api/admin/settings',{'gpu_max_minutes':invalid})
+        with patch.object(gpu,'catalog',return_value=[{'id':'test','name':'Test','hourly_usd':.5,'available':True}]):
+            for minutes in (5,95,300):
+                row=gpu.preview('writer','demo',{'gpu_id':'test','minutes':minutes,'max_usd':10})
+                self.assertEqual(row['minutes'],minutes)
+                self.assertAlmostEqual(row['estimated_usd'],(.5+50*.1/720)*minutes/60,places=4)
+            with self.assertRaises(ApiError):gpu.preview('writer','demo',{'gpu_id':'test','minutes':301,'max_usd':10})
+        self.assertEqual(self.call('/api/gpu',method='GET')['max_minutes'],300)
 
     def test_disabled_session_never_revives(self):
         cookie=auth.make_session_cookie_value('writer')

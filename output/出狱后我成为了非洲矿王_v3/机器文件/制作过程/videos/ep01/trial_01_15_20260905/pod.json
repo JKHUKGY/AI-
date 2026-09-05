@@ -1,0 +1,21 @@
+{
+  "id": "i1mdtadbn5g0ux",
+  "name": "ltx25-v3-ep01-shots01-15",
+  "desiredStatus": "RUNNING",
+  "costPerHr": 1.59,
+  "networkVolumeId": "vr1dk0uvnx",
+  "publicIp": "",
+  "portMappings": null,
+  "machine": {
+    "dataCenterId": "US-KS-2",
+    "diskThroughputMBps": 2575,
+    "gpuTypeId": "NVIDIA A100 80GB PCIe",
+    "location": "US",
+    "maxDownloadSpeedMbps": 4817,
+    "maxUploadSpeedMbps": 2924,
+    "secureCloud": true,
+    "supportPublicIp": true,
+    "reservedCountVersion": 142036
+  },
+  "local_created_at": "2026-09-05T16:43:46.382210+00:00"
+}

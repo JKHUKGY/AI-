@@ -76,9 +76,9 @@ Views.admin = async function(app) {
     e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;
     try{await API.control('POST','/api/admin/users',Object.fromEntries(new FormData(e.target)));await Views.admin(app);}catch(err){UI.toast(err.message,'error');}finally{button.disabled=false;}
   };
-  const fields=[['mail_to','管理员邮箱','email'],['mail_from','发信邮箱','email'],['smtp_host','SMTP 服务器','text'],['smtp_port','SMTP 端口','number'],['smtp_user','SMTP 登录账号','text'],['smtp_password','SMTP 授权码 / 密码','password'],['runpod_api_key','RunPod API Key','password'],['gpu_image','RunPod 运行镜像','text'],['gpu_public_key','SSH 公钥（非私钥）','text'],['gpu_max_minutes','每次最长租用分钟数（最多 240）','number'],['gpu_max_usd','每次美元预算上限（最多 100）','number']];
+  const fields=[['mail_to','管理员邮箱','email'],['mail_from','发信邮箱','email'],['smtp_host','SMTP 服务器','text'],['smtp_port','SMTP 端口','number'],['smtp_user','SMTP 登录账号','text'],['smtp_password','SMTP 授权码 / 密码','password'],['runpod_api_key','RunPod API Key','password'],['gpu_image','RunPod 运行镜像','text'],['gpu_public_key','SSH 公钥（非私钥）','text'],['gpu_max_minutes','每次最长租用分钟数（最多 300，即 5 小时）','number'],['gpu_max_usd','每次美元预算上限（最多 100）','number']];
   const settings=app.querySelector('.admin-settings'), config=data.settings;
-  settings.innerHTML=fields.map(([key,label,type])=>`<label>${esc(label)}<input name="${key}" type="${type}" step="${key==='gpu_max_usd'?'0.01':'1'}" value="${type==='password'?'':esc(String(config[key]??({smtp_port:465,gpu_max_minutes:60,gpu_max_usd:10}[key]??'')))}" placeholder="${type==='password'&&config[key+'_configured']?'已设置；留空保留原值':''}" autocomplete="off"></label>`).join('')+
+  settings.innerHTML=fields.map(([key,label,type])=>`<label>${esc(label)}<input name="${key}" type="${type}" step="${key==='gpu_max_usd'?'0.01':'1'}" value="${type==='password'?'':esc(String(config[key]??({smtp_port:465,gpu_max_minutes:300,gpu_max_usd:10}[key]??'')))}" placeholder="${type==='password'&&config[key+'_configured']?'已设置；留空保留原值':''}" autocomplete="off"></label>`).join('')+
     `<label>SMTP 加密<select name="smtp_security"><option value="ssl">SSL</option><option value="starttls">STARTTLS</option></select></label>
     <label><input name="gpu_enabled" type="checkbox" ${config.gpu_enabled?'checked':''}>启用网站租卡</label>
     <label><input name="video_ready" type="checkbox" ${config.video_ready?'checked':''} ${config.h3_paused?'disabled':''}>${config.h3_paused?'视频生成通道已暂时停用；':''}运行镜像已提供视频生成服务</label>
@@ -125,8 +125,8 @@ Views.gpu = async function(app,project) {
     <section class="card gpu-catalog"></section>
     <div class="card"><h2>新建租卡任务</h2>${!data.enabled?'<p>管理员尚未启用租卡，请联系管理员配置。</p>':!data.allowed?'<p>你的账号尚未获准租卡，请联系管理员。</p>':`
     <form class="rent-form control-form"><label>项目<select name="project" required>${projects.projects.map(p=>`<option value="${esc(p.name)}">${esc(p.name)}</option>`).join('')}</select></label>
-    <label>显卡<select name="gpu_id" required><option value="">加载实时报价…</option></select></label><label>租用分钟数<input name="minutes" type="number" min="5" max="${data.max_minutes}" value="${Math.min(30,data.max_minutes)}" required></label>
-    <label>美元预算上限<input name="max_usd" type="number" min="0.01" step="0.01" max="${data.max_usd}" value="${data.max_usd}" required></label><button class="primary">预览租卡方案</button></form>`}<div class="rental-preview"></div></div>
+    <label>显卡<select name="gpu_id" required><option value="">加载实时报价…</option></select></label><label>最长租赁时间<select class="rental-duration-preset">${[30,60,120,180,240,300].filter(n=>n<=data.max_minutes).map(n=>`<option value="${n}">${n<60?n+' 分钟':n/60+' 小时'}</option>`).join('')}<option value="custom">自定义分钟数</option></select></label><label>自定义最长租赁时间（分钟）<input name="minutes" type="number" min="5" max="${data.max_minutes}" value="${Math.min(30,data.max_minutes)}" required></label>
+    <p>可自行设置 5–${data.max_minutes} 分钟，到达所选时长自动关闭；连续空闲 10 分钟也会提前关闭。调整时长后请重新预览费用。</p><label>美元预算上限<input name="max_usd" type="number" min="0.01" step="0.01" max="${data.max_usd}" value="${data.max_usd}" required></label><button class="primary">预览租卡方案</button></form>`}<div class="rental-preview"></div></div>
     <div class="card"><h2>租卡记录</h2><button class="refresh-rentals">刷新记录</button><div class="rental-list"></div></div>`;
   async function refresh(){const current=await API.control('GET','/api/gpu'); if(!app.querySelector('.rental-list'))return; app.querySelector('.rental-list').innerHTML=ControlUI.rentals(current.rentals);ControlUI.bindStops(app,refresh);}
   app.querySelector('.refresh-rentals').onclick=()=>refresh().catch(e=>UI.toast(e.message,'error'));
@@ -136,6 +136,11 @@ Views.gpu = async function(app,project) {
   await Views.gpuCatalog(app,data,form);
   if(!form)return;
   if(project && projects.projects.some(p=>p.name===project))form.elements.project.value=project;
+  const preset=form.querySelector('.rental-duration-preset');
+  preset.value=[...preset.options].some(o=>o.value===form.elements.minutes.value)?form.elements.minutes.value:'custom';
+  preset.onchange=()=>{if(preset.value!=='custom')form.elements.minutes.value=preset.value;else form.elements.minutes.focus();app.querySelector('.rental-preview').replaceChildren();};
+  form.elements.minutes.addEventListener('input',()=>{preset.value='custom';app.querySelector('.rental-preview').replaceChildren();});
+  form.elements.max_usd.addEventListener('input',()=>app.querySelector('.rental-preview').replaceChildren());
   form.onsubmit=async e=>{
     e.preventDefault();const button=form.querySelector('button');button.disabled=true;
     try{

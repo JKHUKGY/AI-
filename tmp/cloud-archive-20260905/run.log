@@ -1,0 +1,7 @@
+2026/09/05 15:44:20 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/05 15:51:47 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/05 15:51:53 NOTICE: Google drive root 'AI-短剧归档/出狱后我成为了非洲矿王_v3/历史候选/2026-09-05': 0 differences found
+2026/09/05 15:51:53 NOTICE: Google drive root 'AI-短剧归档/出狱后我成为了非洲矿王_v3/历史候选/2026-09-05': 270 matching files
+2026/09/05 15:51:53 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/09/05 15:51:58 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+{"status": "archived", "count": 270, "files_removed": 270, "MiB_freed": 550.1862602233887, "remote": "gdrive:AI-短剧归档/出狱后我成为了非洲矿王_v3/历史候选/2026-09-05"}

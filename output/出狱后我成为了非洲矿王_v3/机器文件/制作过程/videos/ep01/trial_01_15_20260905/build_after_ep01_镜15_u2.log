@@ -1,0 +1,12 @@
+
+共处理 20 张镜头卡（正文语言 en）
+
+5 条提示（不阻塞，建议人工确认）:
+  WARN: [ep01_镜04_u2] `first_frame` 和 `first_frame_from` 同时有值，提交时用的是 `first_frame`；确认它就是 `first_frame_from` 指的那一帧
+  WARN: [ep01_镜06_u2] `first_frame` 和 `first_frame_from` 同时有值，提交时用的是 `first_frame`；确认它就是 `first_frame_from` 指的那一帧
+  WARN: [ep01_镜12_u2] `first_frame` 和 `first_frame_from` 同时有值，提交时用的是 `first_frame`；确认它就是 `first_frame_from` 指的那一帧
+  WARN: [ep01_镜15_u2] `first_frame` 和 `first_frame_from` 同时有值，提交时用的是 `first_frame`；确认它就是 `first_frame_from` 指的那一帧
+  WARN: [ep01_镜15_u3] 首帧还没落地，声明来自 `ep01_镜15_u2:last`——必须先把上一段生成出来、抽出尾帧、把路径填回 `first_frame`，才能提交这一段
+
+已写出 20 条 job → /workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/video_jobs.json
+未发现阻塞性问题。

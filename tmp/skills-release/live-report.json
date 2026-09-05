@@ -1,0 +1,275 @@
+{
+  "website": "https://scriptwriter-jia.northcentralus.cloudapp.azure.com",
+  "project": "Skills调用测试_20260905",
+  "probes": [
+    {
+      "skill": "index",
+      "status": "done",
+      "task_id": "e0171c9d9c3345d89d51242823e08b8e",
+      "version": "2e04d85d9480dcfd29691b8bb0e2c247fafd9877843f0a9084e9ef5d72b3d53e",
+      "result": {
+        "prompt": "- Skill 名称：`index`\n- 核心输入：待定位的问题类型或已知线索，例如文件路径、剧名/集号/镜号、网站资源、实时进度或历史决策\n- 产物：命中分支中的最小必要定位结果，通常是相关文件路径、资源入口或进度快照\n- 文档特有约束：\n  1. 一次只展开一条命中的索引分支，拿到目标路径后即停止，避免扫描整个仓库。\n  2. 网址、IP 和线上状态必须先验证再引用；查询本身不得触发生成、租用显卡或修改服务。\n\n这里只验证 `index` skill 的加载与调用规划，不操作文件、不生成图片、不租用显卡，也不实际执行项目流水线。",
+        "scope": "probe",
+        "proposal": "608c150abe38465491568398fe8ac7ed",
+        "skill": "index",
+        "version": "2e04d85d9480dcfd29691b8bb0e2c247fafd9877843f0a9084e9ef5d72b3d53e"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-scout",
+      "status": "done",
+      "task_id": "57374c5fa376434e8df2b309af18290b",
+      "version": "e1ad0edc22f9a196c06d19bf97a98237c145a872847b7074ce80a1b6260b0844",
+      "result": {
+        "prompt": "- Skill 名称：`short-drama-scout`\n- 版本：`e1ad0edc22f9a196c06d19bf97a98237c145a872847b7074ce80a1b6260b0844`\n- 核心输入：用户提供的短剧方向、关键词、结构化选题大纲或完整原创故事；也可在无指定方向时自主选题。本次项目素材为“小雨从父亲留下的信封中发现一张旧矿场地图”，并包含 3 集、每集约 30 秒、写实电影质感、竖屏 9:16 等参数。\n- 主要产物：原创故事信息、人物小传、整体故事线、12–15 集（或用户指定集数）的分集大纲，以及 TikTok 发布建议；每集可包含开场 3 秒钩子、核心冲突、结尾硬钩子、建议时长和可选分镜要点。\n- 文档特有约束 1：每集前 3 秒必须出现具体的冲突画面、爆炸性台词或悬念提问，结尾必须设置可直接推动观众追更的硬钩子。\n- 文档特有约束 2：只借鉴不受版权保护的题材套路；人物姓名、具体情节和台词必须原创，不得照抄现有影视剧或小说。\n\n这里只验证 `short-drama-scout` 的加载与调用规划，不实际生成短剧、不操作文件、不生成图片，也不租用显卡。",
+        "scope": "probe",
+        "proposal": "9e8dea6aa8924dab859c92b25c483cb9",
+        "skill": "short-drama-scout",
+        "version": "e1ad0edc22f9a196c06d19bf97a98237c145a872847b7074ce80a1b6260b0844"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-storyboard",
+      "status": "done",
+      "task_id": "5dff320fbc4a454893ca60e4a4c52f9a",
+      "version": "dadb4a4aa1a5e6ca9ef46abfcaf83128f6eaac99c3afa1ed7fcd4afa53b6569e",
+      "result": {
+        "prompt": "Skill 名称：short-drama-storyboard  \n版本：dadb4a4aa1a5e6ca9ef46abfcaf83128f6eaac99c3afa1ed7fcd4afa53b6569e  \n模式：user_choice\n\n核心输入：故事全文或分集大纲；目标集数与单集时长；画幅；预算紧张程度；是否开启逐步确认模式。本次已提供 3 集、每集 30 秒、竖屏 9:16、写实电影质感，以及“旧书店取信封、发现旧矿场地图”的剧情素材。\n\n产物：风格与叙事基调简报、人物与场景资产清单、人物形象设计提示词、按机位组织的场景背景提示词、逐集逐镜分镜表、成本与遗漏项检查记录；若开启过逐步确认模式，还包括确认记录。\n\n两条该文档特有约束：\n\n1. 场景不能只设计一张通用底板：须按重要度配置 A 主机位、B 反打、C 侧机位、D 细节；B/C/D 必须参考已选定的 A 主机位图，并据真实图像记录空间关系。\n2. 每镜必须标注 S/A/B/C 生成分级：B 级仍需低动作、短时长的图生视频生成；只有不承载新台词或新情节信息的 C 级镜头才可零成本复用旧素材。\n\n本次仅验证 skill 已准确加载及调用规划，不执行分镜制作、不操作文件、不生成图片，也不租用显卡。",
+        "scope": "probe",
+        "proposal": "f148ee89848e462eaaf4477f6f2a75fb",
+        "skill": "short-drama-storyboard",
+        "version": "dadb4a4aa1a5e6ca9ef46abfcaf83128f6eaac99c3afa1ed7fcd4afa53b6569e"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-image-gen",
+      "status": "done",
+      "task_id": "845ca61ac49f4e0e88bef11b305cb0a3",
+      "version": "2b9956135d66dae051b5201309745fd896beef0427f25ddf8431a25c90adda01",
+      "result": {
+        "prompt": "- Skill 名称：`short-drama-image-gen`\n- 核心输入：优先读取上游生成的 `characters.md`、`scenes.md`；也可接收用户直接提供的图片提示词。当前仅有 `project.json` 和 `source/script.txt`，尚未提供角色/场景档案。\n- 主要产物：角色三视图、按“场景 × 时段 × 机位”生成的场景基准图、生成记录 `manifest.append.jsonl`，以及最终入选资产清单 `selected.md`。\n- 文档特有约束：\n  1. 实际出图批次必须交由 `loop-picture-generation` 执行，并累计使用至少四个不同的真实 subagent；生成者不得审查自己的图片，主代理也不能替代生成或独立审查。\n  2. 每个 job 首轮默认生成 1 张；不合格后按 `1 → 2 → 3` 张阶梯重试，最多三轮。角色三视图必须整版验收，不能拆取其中合格视角拼用。\n\n这里只验证 skill 已按指定名称与版本加载并完成调用前规划；未操作文件、未生成图片，也未租用显卡。",
+        "scope": "probe",
+        "proposal": "a538193652fe4fe5b1eaa4cf71717f4c",
+        "skill": "short-drama-image-gen",
+        "version": "2b9956135d66dae051b5201309745fd896beef0427f25ddf8431a25c90adda01"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-keyframe-gen",
+      "status": "done",
+      "task_id": "45e2f92d1d094154bba6cf3a34de9756",
+      "version": "c2f014f3971d4518a01e5ea98639574ec55d12ef6a69116400628e3a273c41f8",
+      "result": {
+        "prompt": "- Skill 名称：`short-drama-keyframe-gen`\n- 版本：`c2f014f3971d4518a01e5ea98639574ec55d12ef6a69116400628e3a273c41f8`\n- 模式：`user_choice`（用户选择）\n\n核心输入：\n\n- 分集分镜表 `ep0X.md`\n- 人物与场景基准图登记表 `selected.md`\n- `characters.md` 与 `scenes.md`，尤其是场景空间关系\n- `style_bible.md` 中的画风锚点原句\n- 本次需要处理的具体集数\n\n主要产物：\n\n- 场次节拍与逐镜源卡 `keyframe_cards.json`\n- 机械装配的主帧、逐镜生成任务 JSON\n- 供用户确认的提示词审阅表 `keyframe_prompts_ep0X.md`\n- 获批后生成的场次主帧和逐镜候选图\n- 独立审查、选图及连戏复核记录\n- 最终逐镜首帧清单 `keyframes.md`\n\n两条特有约束：\n\n1. 首次出图前必须先完成源卡、机械装配、lint 和审阅表，并停下来等待用户明确确认；提示词只能通过修改源卡重新装配，不能手改派生产物。\n2. 每个节拍的全部在场人物，必须被逐镜完整分配到 `people[]`、`background_people[]` 或 `present_off_frame[]`；近景/特写还必须使用对应的 `_紧` 底板，否则校验报错。\n\n这里只验证该 skill 已准确加载并规划调用；未操作文件、未生成图片，也未租用显卡。",
+        "scope": "probe",
+        "proposal": "a0e5603d4e61436eb4127dcc75a4a311",
+        "skill": "short-drama-keyframe-gen",
+        "version": "c2f014f3971d4518a01e5ea98639574ec55d12ef6a69116400628e3a273c41f8"
+      },
+      "error": null
+    },
+    {
+      "skill": "loop-picture-generation",
+      "status": "done",
+      "task_id": "82cdc305f11140c3879dd7cb910e823f",
+      "version": "b10194f0b761d85e4ed3dc1e96dae6ce937241b18e9c42678716c689e2dc90a9",
+      "result": {
+        "prompt": "- Skill 名称：`loop-picture-generation`\n- 版本：`b10194f0b761d85e4ed3dc1e96dae6ce937241b18e9c42678716c689e2dc90a9`\n- 模式：`user_choice`\n\n- 核心输入：已批准的角色、场景、场次主帧或逐镜关键帧任务；剧本/档案原文；源卡及版本；完整提示词；参考图；依赖关系；已有候选、轮次与审查历史。\n- 产物：生成候选图及调用记录、各独立 Reviewer 的审查报告、任务队列与代理名册记录，以及最终的 `selected.md` 或 `keyframes.md`；同时维护“给人看”和“机器文件”两类入口。\n\n- 特有约束一：每个获准出图批次必须至少有四个真实且不同的 subagent 实质参与；通常为两名 Generator 和两名 Reviewer，单一生成 unit 则为一名 Generator 和三名 Reviewer。主代理、工具调用或同一代理切换身份均不能计数。\n- 特有约束二：每个 unit 严格采用三轮上限，生成数量依次为 1、2、3 张；第三轮仍未通过须标记为 `capped`，`selected_file` 留空，且不得通过更换代理或重建队列清零轮次。\n\n这里只验证该 skill 的加载与调用规划；未操作文件、未生成图片、未租用显卡，也未实际启动 subagent。",
+        "scope": "probe",
+        "proposal": "539e6dca66ce4c7483ed70ee3f48582e",
+        "skill": "loop-picture-generation",
+        "version": "b10194f0b761d85e4ed3dc1e96dae6ce937241b18e9c42678716c689e2dc90a9"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-video-gen",
+      "status": "done",
+      "task_id": "1de624e3c3544e10ae2fa840b40523ee",
+      "version": "c88141da541031d26b01492d6d47ee94b6e4e5660b58eb34bffc313122e62137",
+      "result": {
+        "prompt": "- Skill 名称：`short-drama-video-gen`\n- 核心输入：`keyframes.md`、对应的 `ep0X.md` 分镜表、`characters.md` / `scenes.md`，以及补充人物参考图的 `selected.md`\n- 产物：结构化镜头卡 `shot_cards.json`，以及由 `build_prompt.py` 机械装配的 `video_jobs.json` 和 `prompts/*.txt`\n- 两条特有约束：\n  1. 提示词禁止手写；只能修改镜头卡字段，再由 `build_prompt.py` 装配并校验。\n  2. 本 skill 只产出提示词和任务清单，不调用视频生成 API、不租显卡；自建 LTX-2.5 的实际执行必须交给 `short-drama-ltx-export` 与 `short-drama-ltx-generate`。\n\n这里只验证 `short-drama-video-gen`（版本 `c88141da541031d26b01492d6d47ee94b6e4e5660b58eb34bffc313122e62137`，模式 `user_choice`）已被正确加载调用；未操作文件、未生成图片、未租用显卡或实际生成视频。",
+        "scope": "probe",
+        "proposal": "d90b559c796f4641b198b24e77a50915",
+        "skill": "short-drama-video-gen",
+        "version": "c88141da541031d26b01492d6d47ee94b6e4e5660b58eb34bffc313122e62137"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-ltx-export",
+      "status": "done",
+      "task_id": "7a7fd22190fe4e61bcde5dcb85f1e630",
+      "version": "397c2c55577ab3030b5d20968a9a9f39614272fd8604c0596385cd76372b77d9",
+      "result": {
+        "prompt": "- Skill 名称：`short-drama-ltx-export`\n- 指定版本：`397c2c55577ab3030b5d20968a9a9f39614272fd8604c0596385cd76372b77d9`\n- 核心输入：同一集目录下的 `shot_cards.json`、由其装配生成的 `video_jobs.json`；同时参考 `keyframes.md`、`assets/selected.md`，以及已有的 `ltx_remote_config.json`。\n- 产物：通过校验、可供 LTX 提交脚本消费的 `video_jobs.json`，确认或生成的 `ltx_remote_config.json`，以及 `ltx_ssh_submit.py --dry-run` 验证结果。\n- 文档特有约束：\n  1. 必须同时具备镜头卡和装配出的任务 JSON，并校验二者一致；不能从旧版 `video_jobs.md` 自行抠字段，也不能手改 JSON 绕过镜头卡。\n  2. 本 skill 只服务 LTX-2.5 且仅执行提交前校验和 dry-run，不真正连接远程机器或生成视频；若使用 MiniMax-H3，必须转到 `minimax-h3-export`。\n\n本次仅验证 skill 内容已正确加载并识别其调用规划；未操作文件、未生成图片、未租用显卡，也未执行实际校验或提交。",
+        "scope": "probe",
+        "proposal": "c988fac73eca44e7ad58b4ec05d6fc44",
+        "skill": "short-drama-ltx-export",
+        "version": "397c2c55577ab3030b5d20968a9a9f39614272fd8604c0596385cd76372b77d9"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-ltx-generate",
+      "status": "done",
+      "task_id": "720465ac7914400396443beb5d36db32",
+      "version": "fc488b5b2feefc6b53b76d364cf1d7c80f3514972df08756cf33ce27172ccdf9",
+      "result": {
+        "prompt": "Skill 名称：`short-drama-ltx-generate`\n\n核心输入：\n\n- 经 `short-drama-ltx-export` 校验通过的 `video_jobs.json`\n- `ltx_remote_config.json`，且其中 `model` 应为 `\"ltx-2.5\"`\n\n产物：\n\n- LTX-2.5 生成的视频文件\n- 下载至本地的生成结果及抽帧验收结果\n- 回填到 `video_jobs.md` 的成片路径\n\n两条该文档特有约束：\n\n1. GPU 渠道仅允许使用 RunPod；模型权重应保存在与 Pod 生命周期分离的 Network Volume 中。\n2. 生成结束须立即执行自动或手动关卡，并轮询确认停止计费；删除 Network Volume 必须获得用户明确授权。\n\n这里只验证 skill 已按指定名称和版本加载并完成调用前识别，不操作文件、不生成图片、不租用显卡，也不实际执行视频生成。",
+        "scope": "probe",
+        "proposal": "6968b072d6c1448794e6fc82acfb91da",
+        "skill": "short-drama-ltx-generate",
+        "version": "fc488b5b2feefc6b53b76d364cf1d7c80f3514972df08756cf33ce27172ccdf9"
+      },
+      "error": null
+    },
+    {
+      "skill": "loop-video-generation",
+      "status": "done",
+      "task_id": "af807f581aa44da8becd332ef768874d",
+      "version": "04fbacdf01d969ef3c9d30bd499de21bf756c856781d8b6642f7fa50baf51b40",
+      "result": {
+        "prompt": "Skill 名称：`loop-video-generation`\n\n核心输入：\n\n- 已校验的 `video_jobs.json` 和 `ltx_remote_config.json`\n- 待处理镜头范围及对应镜头卡、首尾关键帧、生成参数\n- 原剧本 `source/script.txt` 中对应情节，作为 `script_ref`：小雨向旧书店店主索取父亲留下的信封，并从中发现旧矿场地图\n\n产物：\n\n- `output/<故事名>/videos/ep0X/units_queue.json`\n- 各镜头生成视频、抽取帧及逐轮审查记录\n- 最终选用文件、通过/封顶状态和批次汇总报告\n\n两条该文档特有约束：\n\n1. Reviewer 必须依据原剧本 `script_ref` 审查情节与情绪，不能用已经参与生成的分镜表“画面描述”作为唯一验收标准。\n2. 默认单显卡严格逐镜串行；单镜最多 3 轮 L1、最多 1 次 L2，且 L2 不重置 L1 轮数。首帧结构性不合适时必须回关键帧层重出图，并重新填写 `first_frame_state_zh`。\n\n这里只验证 `loop-video-generation` skill 已正确加载并可被调用；未操作文件、未生成图片、未租用或调用显卡。",
+        "scope": "probe",
+        "proposal": "22a14a7622af4e7e9219d2c044cda3d2",
+        "skill": "loop-video-generation",
+        "version": "04fbacdf01d969ef3c9d30bd499de21bf756c856781d8b6642f7fa50baf51b40"
+      },
+      "error": null
+    },
+    {
+      "skill": "single-image-video-control",
+      "status": "done",
+      "task_id": "72b7ac2527904a01915581b12bb8b127",
+      "version": "4a944b6364c1540276645f7964eb95b12b9e4d1b8b1931846d3d8fea9fad9d17",
+      "result": {
+        "prompt": "- Skill 名称：`single-image-video-control`\n- 版本：`4a944b6364c1540276645f7964eb95b12b9e4d1b8b1931846d3d8fea9fad9d17`\n- 核心输入：单张参考图，以及按目标选配的深度、2.5D/3D场景、骨架或运动轨迹控制；真实推理还需模型/checkpoint、提示词、种子、帧率、帧数和分辨率等配置。\n- 主要产物：原图与准备后的首帧、相对深度、彩色点云、相机路径、深度控制视频、几何重投影预览、覆盖缺口掩膜、来源与参数记录；若获授权执行模型，还包括 A/B 实际视频、审查结果、可行性报告和离线观看入口。\n- 文档特有约束 1：2.5D 最近邻补洞仅属于预览填充，不能声称恢复了被遮挡的隐藏几何。\n- 文档特有约束 2：Generator 与 Reviewer 必须独立，不能由同一个 agent 假扮生成和审查两个角色。\n\n这里只验证该 skill 已按指定名称、版本和 `user_choice` 模式加载调用；未操作文件、未生成图片、未启动或租用显卡，也未执行视频模型推理。",
+        "scope": "probe",
+        "proposal": "9d0017ebce1744408998350e7efef341",
+        "skill": "single-image-video-control",
+        "version": "4a944b6364c1540276645f7964eb95b12b9e4d1b8b1931846d3d8fea9fad9d17"
+      },
+      "error": null
+    },
+    {
+      "skill": "short-drama-internal-test",
+      "status": "done",
+      "task_id": "931d7cbdceac486395c0ad41a04cd1cb",
+      "version": "a64f1856eb7dbae1008df6bfd34d36690927fc12b46dc0a13d5d7c83ad72c39e",
+      "result": {
+        "prompt": "- Skill 名称：`short-drama-internal-test`\n- 版本：`a64f1856eb7dbae1008df6bfd34d36690927fc12b46dc0a13d5d7c83ad72c39e`\n- 模式：`user_choice`\n\n核心输入：\n\n- 项目：`Skills调用测试_20260905`\n- 规格：3 集、单集 30 秒、写实电影质感、竖屏 9:16\n- 故事原文：小雨进入旧书店，向店主索取父亲留下的信封，并从中发现一张旧矿场地图。\n- 审批设置：`manual_media_approval: true`\n- 未指定具体生产范围时，默认测试 `ep01` 的三个相邻镜头，视频通道为 LTX。\n\n主要产物：\n\n- 故事、分镜及设定：剧本/梗概、`style_bible.md`、`characters.md`、`scenes.md`、`storyboard/ep01.md`\n- 生成任务及成果：素材 jobs、`assets/selected.md`、关键帧卡、`keyframes.md`、`shot_cards.json`、`video_jobs.json` 或 `h3_jobs.json`\n- 测试记录：`_test/run.json`、`_test/approvals/<gate_id>.md`、`_test/report.md`\n- 获批并实际执行后才可能产生图片、视频及测试预览。\n\n两条该文档特有约束：\n\n1. 每批实际出图前都必须进入 G1；每批租用/启动 GPU 或提交视频生成前都必须进入 G2。需先展示具体方案并等待用户针对当前批次明确同意，系统审批、历史同意或“跑完整流程”均不能替代。\n2. 每个获准的图片批次至少须由四个真实且不同的 subagent 独立审查，主代理不计入；能力不足时必须标记阻塞，不能由同一代理扮演多个角色。\n\n本次仅验证该 skill 的准确加载与调用规划；未操作文件、未生成图片、未租用 GPU，也未执行任何实际制作阶段。",
+        "scope": "probe",
+        "proposal": "270a6e2e401f43a1bbf072d0dcfcf7aa",
+        "skill": "short-drama-internal-test",
+        "version": "a64f1856eb7dbae1008df6bfd34d36690927fc12b46dc0a13d5d7c83ad72c39e"
+      },
+      "error": null
+    },
+    {
+      "skill": "minimax-h3-export",
+      "status": "done",
+      "task_id": "065a736f6f9f4dbcbf5301fa67e2c095",
+      "version": "fb20dbd8d36396e79104eddfa819c482022bd13d02a05a960eee5e3bd946592b",
+      "result": {
+        "prompt": "- Skill 名称：`minimax-h3-export`\n- 核心输入：`output/<故事名>/videos/ep0X/shot_cards.json`\n- 主要产物：符合 H3 `ref2va` 六段结构化提示词的 `h3_jobs.json`\n- 两条文档特有约束：\n  1. `num_frames` 必须吸附为 `17n+5`，并以吸附后的时长校验是否落在 4–15 秒。\n  2. 提示词必须依次包含六段：`subject_definitions`、`summary`、`retention_analysis`、`detailed_description`、`overall_soundscape`、`non_diegetic_music`。\n\n这里只验证 `minimax-h3-export` skill 已被准确加载并可调用；未操作文件、未生成图片、未租用显卡，也未执行实际装配或提交。",
+        "scope": "probe",
+        "proposal": "8dbf7bf3c44f41d18ce195b48224169b",
+        "skill": "minimax-h3-export",
+        "version": "fb20dbd8d36396e79104eddfa819c482022bd13d02a05a960eee5e3bd946592b"
+      },
+      "error": null
+    },
+    {
+      "skill": "minimax-h3-generate",
+      "status": "done",
+      "task_id": "4584c4befc5b41428b149ee25680abff",
+      "version": "9c0e1a1611ffa42b2a6156a0df97164ccfe13748f99ef7deadde2aca741a7d5a",
+      "result": {
+        "prompt": "Skill 名称：`minimax-h3-generate`  \n版本：`9c0e1a1611ffa42b2a6156a0df97164ccfe13748f99ef7deadde2aca741a7d5a`\n\n核心输入：\n\n- 经 `minimax-h3-export` 产出并校验通过的 `h3_jobs.json`\n- `h3_remote_config.json`\n\n产物：\n\n- MiniMax-H3 生成的 MP4 视频\n- 自建通道的任务状态与下载结果；官方云 API 通道另写 `h3_cloud_results.json`\n\n两条该文档特有约束：\n\n1. 必须先选择生成通道：自建 SGLang、官方云 API 或 MiniMax Design，不能默认租用显卡；云 API 和 Design 不支持 seed。\n2. H3 原生输出 32kHz 立体声，验收必须同时听审台词、音色和声音表现，不能只检查抽帧画面。\n\n这里只验证 skill 的准确加载与调用规划；未操作文件、未生成图片、未租用显卡，也未执行视频生成。",
+        "scope": "probe",
+        "proposal": "b05cbbd6f4944582bd85d685ef7bbe56",
+        "skill": "minimax-h3-generate",
+        "version": "9c0e1a1611ffa42b2a6156a0df97164ccfe13748f99ef7deadde2aca741a7d5a"
+      },
+      "error": null
+    }
+  ],
+  "catalog_count": 14,
+  "preview": {
+    "id": "3ffa9300eb57434d9d53abd3c291c830",
+    "kind": "prompt",
+    "target": {
+      "type": "skill",
+      "job_id": "故事选题与大纲",
+      "skill": "short-drama-scout",
+      "operation": "preview",
+      "proposal": "e29a7632f7204c63b78c5445c3d2bfc6"
+    },
+    "author": "junzhenj",
+    "status": "done",
+    "created_at": 1788623826.445591,
+    "result": {
+      "prompt": "已准确加载 `short-drama-scout` skill。\n\n- 版本：`e1ad0edc22f9a196c06d19bf97a98237c145a872847b7074ce80a1b6260b0844`\n- 模式：`user_choice`\n- 当前阶段：执行前规划\n- 本次不联网、不操作文件、不生成图片或视频、不租赁显卡\n\n具体执行方案：\n\n1. 仅读取项目副本中的 `project.json` 与 `source/script.txt`。\n2. 以“小雨进入旧书店—取得父亲留下的信封—发现旧矿场地图”为唯一故事起点，原创补全人物动机、矿场秘密及三集反转；不引入其他项目素材或现成作品情节。\n3. 按竖屏写实电影质感设计三集中文大纲。暂按每集约 30 秒规划，每集聚焦一个冲突点。\n4. 每集至少包含：\n\n   - 集标题\n   - 开场 3 秒钩子\n   - 核心冲突\n   - 结尾悬念\n   - 建议时长\n\n5. 节奏拟定为：\n\n   - 第 1 集：小雨取得信封，地图暴露异常标记。\n   - 第 2 集：小雨追查地图，发现父亲失踪可能并非意外。\n   - 第 3 集：矿场秘密被揭开，同时留下可继续扩展的最终反转。\n\n6. 经用户确认关键选择后，执行阶段只在项目副本内生成：\n   `output/Skills调用测试_20260905/story-outline.md`\n7. 不创建或修改其他文件，不访问其他项目。该任务不需要显卡；若后续另行制作媒体，租赁应通过网站已有入口完成。\n\n预期产物是一份 Markdown 文档，包含故事信息、主要人物简述、三集完整大纲，以及每集明确的开场钩子、冲突和悬念。内容将保持原创、适合 TikTok 竖屏快节奏表达，并遵守内容合规要求。\n\n当前缺少或尚未明确的输入：\n\n- `duration: 30` 是“每集 30 秒”还是“三集总计 30 秒”。\n- 故事基调：现实悬疑、轻奇幻或家庭秘密。\n- 第 3 集需要完整闭环，还是保留续集入口。\n- 是否需要附加人物小传、整体故事线和简短分镜要点；用户硬性要求目前只覆盖三集核心大纲。\n\n执行前需要用户决定：\n\n1. 时长口径：建议选择“每集约 30 秒”。\n2. 故事基调：建议选择“现实悬疑”，最符合旧书店、信封和矿场地图的现有素材。\n3. 结局方式：建议选择“揭开核心秘密，同时保留一个轻度续集钩子”。\n4. 输出详细度：建议加入简短人物小传和整体故事线，但不展开完整分镜或逐句台词。\n\n以上仅为执行方案与产物预期，尚未生成或保存 `story-outline.md`。",
+      "scope": "preview",
+      "proposal": "e29a7632f7204c63b78c5445c3d2bfc6",
+      "skill": "short-drama-scout",
+      "version": "e1ad0edc22f9a196c06d19bf97a98237c145a872847b7074ce80a1b6260b0844"
+    },
+    "finished_at": 1788623843.7401822
+  },
+  "duplicate_execution_same_task": true,
+  "execution": {
+    "id": "4fca25203fbd44699671963328df3bc6",
+    "kind": "prompt",
+    "target": {
+      "type": "skill",
+      "job_id": "故事选题与大纲",
+      "skill": "short-drama-scout",
+      "operation": "execute",
+      "proposal": "e29a7632f7204c63b78c5445c3d2bfc6"
+    },
+    "author": "junzhenj",
+    "status": "done",
+    "created_at": 1788623844.6200595,
+    "result": {
+      "prompt": "已完成并保存三集原创中文故事大纲：\n\n[story-outline.md](/home/deploy/AI-/output/Skills调用测试_20260905/_web_state/skill_runs/e29a7632f7204c63b78c5445c3d2bfc6/workspace/output/Skills调用测试_20260905/story-outline.md)\n\n实际执行：\n\n- 仅读取 `project.json`、`source/script.txt` 及所需 Skill 模板。\n- 采用现实悬疑、每集约 30 秒、核心秘密闭环并保留轻度续集钩子。\n- 每集均含开场 3 秒钩子、核心冲突、结尾悬念和建议时长。\n- 未联网、未生成图片或视频、未租赁显卡、未修改其他文件。\n\n测试证据：检测到 3 集、3 个开场钩子、3 个核心冲突、3 个结尾悬念，文件非空。当前已按 `user_choice` 模式停在第一组候选，等待后续修改指令。工作区并非 Git 仓库，因此无法提供 Git 状态证据。",
+      "scope": "execution",
+      "proposal": "e29a7632f7204c63b78c5445c3d2bfc6",
+      "artifacts": [
+        "Skills调用测试_20260905/_web_state/skill_runs/e29a7632f7204c63b78c5445c3d2bfc6/workspace/output/Skills调用测试_20260905/story-outline.md"
+      ]
+    },
+    "finished_at": 1788623927.858477
+  },
+  "artifact_count": 1,
+  "artifact_checks": [
+    {
+      "path": "Skills调用测试_20260905/_web_state/skill_runs/e29a7632f7204c63b78c5445c3d2bfc6/workspace/output/Skills调用测试_20260905/story-outline.md",
+      "bytes": 5085,
+      "sha256": "6f5723d8675dcb5ca8c30d4c977614ebb40d1d78b950dd531678301a45e7e847",
+      "https_match": true
+    }
+  ],
+  "deployed_versions": {
+    "index": "2e04d85d9480dcfd29691b8bb0e2c247fafd9877843f0a9084e9ef5d72b3d53e",
+    "short-drama-scout": "e1ad0edc22f9a196c06d19bf97a98237c145a872847b7074ce80a1b6260b0844",
+    "short-drama-storyboard": "dadb4a4aa1a5e6ca9ef46abfcaf83128f6eaac99c3afa1ed7fcd4afa53b6569e",
+    "short-drama-image-gen": "2b9956135d66dae051b5201309745fd896beef0427f25ddf8431a25c90adda01",
+    "short-drama-keyframe-gen": "c2f014f3971d4518a01e5ea98639574ec55d12ef6a69116400628e3a273c41f8",
+    "loop-picture-generation": "b10194f0b761d85e4ed3dc1e96dae6ce937241b18e9c42678716c689e2dc90a9",
+    "short-drama-video-gen": "c88141da541031d26b01492d6d47ee94b6e4e5660b58eb34bffc313122e62137",
+    "short-drama-ltx-export": "397c2c55577ab3030b5d20968a9a9f39614272fd8604c0596385cd76372b77d9",
+    "short-drama-ltx-generate": "fc488b5b2feefc6b53b76d364cf1d7c80f3514972df08756cf33ce27172ccdf9",
+    "loop-video-generation": "04fbacdf01d969ef3c9d30bd499de21bf756c856781d8b6642f7fa50baf51b40",
+    "single-image-video-control": "4a944b6364c1540276645f7964eb95b12b9e4d1b8b1931846d3d8fea9fad9d17",
+    "short-drama-internal-test": "a64f1856eb7dbae1008df6bfd34d36690927fc12b46dc0a13d5d7c83ad72c39e",
+    "minimax-h3-export": "fb20dbd8d36396e79104eddfa819c482022bd13d02a05a960eee5e3bd946592b",
+    "minimax-h3-generate": "9c0e1a1611ffa42b2a6156a0df97164ccfe13748f99ef7deadde2aca741a7d5a"
+  },
+  "original_test_script_unchanged": true
+}

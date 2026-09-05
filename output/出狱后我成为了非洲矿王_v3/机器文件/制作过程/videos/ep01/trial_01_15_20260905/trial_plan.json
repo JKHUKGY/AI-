@@ -1,0 +1,28 @@
+{
+  "authorization": "用户明确请求生成第1—15镜，使用RunPod与LTX-2.5",
+  "created_at_utc": "2026-09-05T16:53:47.605965+00:00",
+  "shot_range": [
+    1,
+    15
+  ],
+  "unit_count": 20,
+  "planned_seconds": 103.833338,
+  "resolution": [
+    576,
+    1024
+  ],
+  "mode": "single_round_trial_with_visual_review",
+  "pipeline": "ltx_pipelines.distilled",
+  "A1_shot14": "单轮试片观察；保留原情绪标准，不自动多轮修词",
+  "pod_id": "i1mdtadbn5g0ux",
+  "network_volume_id": "vr1dk0uvnx",
+  "pod_actual_rate_usd_per_hour": 1.59,
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "model_version_checked": "checkpoint declares 2.5.0",
+  "weights": "existing volume weights reused",
+  "serial_dependencies": 5,
+  "model_load_strategy": "skill ltx_batch.py adapted to an audited request inbox, one pipeline instance",
+  "teardown": "run_trial finally + separate teardown guard session + idle watchdog; only this Pod, retain volume",
+  "review_scope": "decoded visual frames and stream/volume checks; spoken content and syllable sync require listening",
+  "export": "15 first-wave jobs validated; each dependency recompiled and validated after real tail review"
+}

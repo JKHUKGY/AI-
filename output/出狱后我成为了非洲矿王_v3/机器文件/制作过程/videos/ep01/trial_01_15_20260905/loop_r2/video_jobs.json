@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ep01_镜02",
+    "shot_no": 2,
+    "scene": "SC05",
+    "shot_card_id": "ep01_镜02",
+    "scene_plate": "SC05_监狱门口_B反打",
+    "prompt_lang": "en",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+    "first_frame_strength": 1.0,
+    "first_frame_from": null,
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "",
+    "prompt": "From the gate side looking past Jiang on the left toward Chen on the road. The camera is locked off on a fixed tripod at the original eye-level position, with constant focal length and the original crop throughout. The original medium two-person crop remains constant; both heads retain the opening image scale. Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel.\n\nChen's raised left palm touches Jiang's shoulder once and returns beside his own thigh. Jiang stands at his opening floor position, facing Chen. The bottle rests in Chen's right hand at hip height. Light dry wind and distant road noise.\n\nThroughout the shot, the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight.\n\nPhotorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition.",
+    "negative_prompt": "(ltx_pipelines.distilled 没有 --negative-prompt 参数，此字段不会被发送，仅为兼容旧 schema 保留。想排除的东西请在镜头卡里改写成正向陈述，见 video_prompt_guide.md「否定→正向改写表」)",
+    "duration_sec": 4.0417,
+    "fps": 24,
+    "num_frames": 97,
+    "aspect_ratio": "9:16",
+    "width": 576,
+    "height": 1024,
+    "seed": 90701021,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 用户2026-09-05明确要求1—15镜试生成；接用户后续指示进入独立审查修正循环；首轮计入最多三轮。"
+  },
+  {
+    "id": "ep01_镜07",
+    "shot_no": 7,
+    "scene": "SC05",
+    "shot_card_id": "ep01_镜07",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "prompt_lang": "en",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+    "first_frame_strength": 1.0,
+    "first_frame_from": null,
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "陈野：\"拿了新矿的高品位矿样，趁你下井查工作的功夫，\"",
+    "prompt": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang. The camera is locked off on a fixed tripod at the original eye-level position, with constant focal length and the original crop throughout. A steady chest-up close-up retaining the partner at the frame edge. The visible listener Jiang Yan wears a faded blue shirt and faces Chen Ye, whose voice comes from behind the camera.\n\n0-7.70833s: Jiang listens to Chen beside the camera, keeping his lips gently together. He blinks once and presses his fingertips lightly against the bottle cap, then rests in that listening pose. Only Chen, standing behind the camera, speaks in Mandarin Chinese with a rough medium-low male voice, direct and emphatic; Jiang is the silent visible listener: \"拿了新矿的高品位矿样，趁你下井查工作的功夫，\". The voice comes from off-screen while the person visible in frame keeps their lips closed and still. Light dry wind and distant road noise.\n\nThroughout the shot, the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight; Jiang maintains gently closed lips and a relaxed still jaw throughout Chen's off-screen speech.\n\nPhotorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition.",
+    "negative_prompt": "(ltx_pipelines.distilled 没有 --negative-prompt 参数，此字段不会被发送，仅为兼容旧 schema 保留。想排除的东西请在镜头卡里改写成正向陈述，见 video_prompt_guide.md「否定→正向改写表」)",
+    "duration_sec": 7.7083,
+    "fps": 24,
+    "num_frames": 185,
+    "aspect_ratio": "9:16",
+    "width": 576,
+    "height": 1024,
+    "seed": 90701071,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；接用户后续指示进入独立审查修正循环；首轮计入最多三轮。"
+  },
+  {
+    "id": "ep01_镜09",
+    "shot_no": 9,
+    "scene": "SC05",
+    "shot_card_id": "ep01_镜09",
+    "scene_plate": "SC05_监狱门口_A主机位_紧",
+    "prompt_lang": "en",
+    "first_frame": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "first_frame_strength": 1.0,
+    "first_frame_from": null,
+    "last_frame": null,
+    "ref_images": [],
+    "dialogue": "江砚：\"我猜到是他。\"",
+    "prompt": "From the red-dirt road toward the open prison gate, looking past Chen toward Jiang. The camera is locked off at eye level. A steady chest-up close-up retaining the partner at the frame edge. Jiang Yan in a faded blue shirt faces Chen Ye in a brown work shirt and dark neck towel.\n\n0-2.5s: Below the crop Jiang finishes loosening the white screw cap. His left hand lifts a clear ribbed plastic water bottle filled with colorless water into view, bringing its short transparent neck to his lips. Light dry wind and distant road noise.\n\n2.5-5s: Jiang takes one small sip from the clear plastic water bottle, lowers it below the crop and swallows once. His eyes settle on Chen's visible face and his mouth rests level.\n\n5-7.70833s: Jiang's lips form the short answer with a level jaw, then close; his eyes remain on Chen. Jiang speaks in Mandarin Chinese with a low steady young male voice, measured and restrained: \"我猜到是他。\".\n\nThroughout the shot, the visible faces, hairstyles and clothing match the first frame; the scene remains the same open rusted prison gate, peeling walls and red-dirt road under hard midday sunlight; The drinking prop is a clear ribbed PET water bottle with colorless water and a short transparent neck throughout the lift, sip and lowering.\n\nPhotorealistic modern African mining drama, natural skin and fabric texture, restrained performance, vertical composition.",
+    "negative_prompt": "(ltx_pipelines.distilled 没有 --negative-prompt 参数，此字段不会被发送，仅为兼容旧 schema 保留。想排除的东西请在镜头卡里改写成正向陈述，见 video_prompt_guide.md「否定→正向改写表」)",
+    "duration_sec": 7.7083,
+    "fps": 24,
+    "num_frames": 185,
+    "aspect_ratio": "9:16",
+    "width": 576,
+    "height": 1024,
+    "seed": 90701091,
+    "platform_recommend": [
+      "LTX-2.5 (self-hosted)"
+    ],
+    "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 拧盖起点在画外；视频需实际看到瓶入口、吞咽和瓶退出，喝完才说话。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；接用户后续指示进入独立审查修正循环；首轮计入最多三轮。"
+  }
+]

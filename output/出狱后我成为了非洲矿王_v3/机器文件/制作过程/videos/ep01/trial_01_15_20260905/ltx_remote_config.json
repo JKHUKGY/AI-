@@ -1,0 +1,27 @@
+{
+  "model": "ltx-2.5",
+  "platform": "runpod",
+  "instance_id": "i1mdtadbn5g0ux",
+  "network_volume_id": "vr1dk0uvnx",
+  "ssh_host": "root@216.81.151.3",
+  "ssh_port": 19014,
+  "ssh_key": "/home/codespace/.ssh/id_ed25519",
+  "runpod_config": "/workspaces/AI-/.claude/skills/short-drama-ltx-generate/runpod_config.json",
+  "remote_repo_dir": "/workspace/LTX-2",
+  "remote_work_dir": "/workspace/ltx_jobs/v3_ep01_01_15_20260905",
+  "pipeline_module": "ltx_pipelines.distilled",
+  "python_bin": ".venv/bin/python",
+  "pipeline_extra_args": [
+    "--transformer-path",
+    "models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+    "--text-encoder-path",
+    "models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+    "--spatial-upsampler-path",
+    "models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors",
+    "--video-vae-path",
+    "models/ltx-2.5/vae/ltx-2.5-video-vae-conv-bf16.safetensors",
+    "--audio-vae-path",
+    "models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors"
+  ],
+  "cost_per_hr_usd": 1.59
+}

@@ -3,7 +3,7 @@ Views.gpuCatalog = async function(app, data, form) {
   const box=app.querySelector('.gpu-catalog'), {esc}=ControlUI;
   if(!data.allowed){box.innerHTML='<p>管理员授予租卡权限后可查询实时机型。</p>';return;}
   box.innerHTML=`<h2>实时可用显卡与测试状态</h2>${data.h3_paused?'<p class="notice">视频生成通道已暂停，冷启动与各时长的详细耗时待测试。</p>':''}<p>RunPod Secure Cloud · 单卡 · 50 GB 容器盘要求。库存随时变化，查询有货不代表已预留；预览租卡时会再次查询。</p>
-    <div class="notice a100-recommendation"><strong>推荐使用 A100，测试用例也以 A100 为基准。</strong><p>按项目方提供的参考速度：排除冷启动时间后，生成累计约 1 分钟视频，大约需要 10–20 分钟。这里指多个镜头的累计视频时长，实际耗时以任务为准。</p><p>考虑到冷启动需要额外等待，建议先积攒一批待生成的视频任务，再集中开启显卡批量制作，减少重复启动的等待与成本。批量生成前请准备好参考素材、确认任务，并预留足够的租期与预算。</p></div>
+    <div class="notice a100-recommendation"><strong>推荐使用 A100，测试用例也以 A100 为基准。</strong><p>按项目方提供的参考速度：排除冷启动时间后，生成累计约 1 分钟视频，大约需要 30 分钟。这里指多个镜头的累计视频时长，实际耗时以任务为准。</p><p>考虑到冷启动需要额外等待，建议先积攒一批待生成的视频任务，再集中开启显卡批量制作，减少重复启动的等待与成本。批量生成前请准备好参考素材、确认任务，并预留足够的租期与预算。</p></div>
     <div class="toolbar"><button class="refresh-catalog" type="button">刷新实时库存</button><label><input type="checkbox" class="available-only" checked>只看当前有单卡库存</label></div>
     <p class="catalog-time" role="status">正在查询 RunPod…</p>
     <div class="catalog-table"></div><div class="catalog-estimate" role="status"></div>
@@ -51,7 +51,7 @@ Views.gpuCatalog = async function(app, data, form) {
         if(available.some(g=>g.id===selected))form.elements.gpu_id.value=selected;
         form.querySelector('button').disabled=!available.length;
       }
-      box.querySelector('.estimate-method').innerHTML='<p>微调的视频模型推荐使用 A100，测试用例以 A100 为基准。项目方提供的速度参考为：排除冷启动后，生成累计约 1 分钟视频需 10–20 分钟。冷启动以及 5、10、15 秒任务的详细耗时仍待测试，不按比例自动推算。</p><p>价格来自 RunPod API，表内为 GPU 起价，磁盘等费用另计，完整预算见租卡预览。库存未知、没有单卡或无有效报价的机型不能直接选择。</p>';
+      box.querySelector('.estimate-method').innerHTML='<p>微调的视频模型推荐使用 A100，测试用例以 A100 为基准。项目方提供的速度参考为：排除冷启动后，生成累计约 1 分钟视频需约 30 分钟。冷启动以及 5、10、15 秒任务的详细耗时仍待测试，不按比例自动推算。</p><p>价格来自 RunPod API，表内为 GPU 起价，磁盘等费用另计，完整预算见租卡预览。库存未知、没有单卡或无有效报价的机型不能直接选择。</p>';
       draw();
     }catch(error){
       snapshot=null;status.textContent='实时查询失败：'+error.message+'。请重试；旧库存与报价已停止使用。';
