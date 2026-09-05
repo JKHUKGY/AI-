@@ -1,0 +1,45 @@
+{
+  "consumerUserId": "user_3IlJFnsxNKzGb9ZC2fo6mfIf81i",
+  "containerDiskInGb": 50,
+  "costPerHr": 1.59,
+  "createdAt": "2026-09-05 18:13:41.217 +0000 UTC",
+  "desiredStatus": "RUNNING",
+  "env": {
+    "PUBLIC_KEY": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGTG4ALNa3YfXsOJdYnett450baNO5aqfKQsq0RKI6hx codespace-vastai"
+  },
+  "gpuCount": 1,
+  "id": "a8asy21qd23mqm",
+  "imageName": "runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04",
+  "lastStartedAt": "2026-09-05 18:13:41.211 +0000 UTC",
+  "lastStatusChange": "Rented by User: Sat Sep 05 2026 18:13:41 GMT+0000 (Coordinated Universal Time)",
+  "machine": {
+    "dataCenterId": "US-KS-2",
+    "diskThroughputMBps": 6542,
+    "gpuTypeId": "NVIDIA A100-SXM4-80GB",
+    "location": "US",
+    "maxDownloadSpeedMbps": 3014,
+    "maxUploadSpeedMbps": 1837,
+    "secureCloud": true,
+    "supportPublicIp": true,
+    "reservedCountVersion": 180489
+  },
+  "machineId": "lhodzmnozdj7",
+  "memoryInGb": 251,
+  "name": "ltx25-v3-ep01-finish-loop",
+  "networkVolume": {
+    "dataCenterId": "US-KS-2",
+    "id": "vr1dk0uvnx",
+    "name": "ltx2-weights",
+    "size": 300
+  },
+  "networkVolumeId": "vr1dk0uvnx",
+  "ports": [
+    "22/tcp"
+  ],
+  "publicIp": "",
+  "templateId": "",
+  "vcpuCount": 16,
+  "volumeInGb": 0,
+  "volumeMountPath": "/workspace",
+  "local_created_at": 1788632021.608215
+}

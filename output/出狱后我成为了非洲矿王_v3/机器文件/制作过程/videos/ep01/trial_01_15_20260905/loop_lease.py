@@ -6,8 +6,11 @@ token=ops.load_token(R/'.claude/skills/short-drama-ltx-generate/runpod_config.js
 body={'name':'ltx25-v3-ep01-finish-loop','imageName':'runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04','gpuTypeIds':['NVIDIA A100 80GB PCIe'],'cloudType':'SECURE','containerDiskInGb':50,'ports':['22/tcp'],'env':{'PUBLIC_KEY':Path('/home/codespace/.ssh/id_ed25519.pub').read_text().strip()},'networkVolumeId':'vr1dk0uvnx','volumeMountPath':'/workspace'}
 pod=None;watch=None;started=time.time()
 try:
- for attempt in range(10):
-  pod=ops.rest_call(token,'POST','/pods',body)
+ for attempt in range(20):
+  body['gpuTypeIds']=[['NVIDIA A100 80GB PCIe','NVIDIA A100-SXM4-80GB'][attempt%2]]
+  try: pod=ops.rest_call(token,'POST','/pods',body)
+  except Exception as e:
+   print('API transient',repr(e),flush=True);time.sleep(15);continue
   if 'error' not in pod: break
   print('capacity retry',attempt+1,json.dumps(pod),flush=True);pod=None;time.sleep(20)
  if not pod: raise RuntimeError('No A100 available')
