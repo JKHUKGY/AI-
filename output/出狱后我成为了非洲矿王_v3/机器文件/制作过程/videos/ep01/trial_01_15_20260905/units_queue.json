@@ -954,12 +954,27 @@
     "round_count": 1,
     "generation_count": 1,
     "l2_count": 0,
-    "status": "awaiting_r1_review",
+    "status": "test_visual_reviewed",
     "final_confirmed": false,
     "test_only": true,
     "audio_review": "not_listened",
-    "selected_test_file": null,
-    "history": []
+    "selected_test_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜15_u1.mp4",
+    "history": [
+      {
+        "round": 1,
+        "seed": 90501151,
+        "video_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜15_u1.mp4",
+        "frames_dir": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜15_u1",
+        "verdict": "pass",
+        "action_class": "retain_visual_result",
+        "reason": [
+          "密集首秒抽帧证实0.4秒右手抬起、0.6秒陈野俯身右掌落向自己大腿、0.8秒起身，确有一次拍腿；随后抬眼积极应答，支持原剧本结盟表态。人物面貌衣服场景稳定，江砚仍持透明水瓶。五等分帧未捕获拍腿接触，已用密集帧补核。"
+        ],
+        "fix_instruction": null,
+        "defect_window": null,
+        "review_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_loop_r1_12_15.json"
+      }
+    ]
   },
   {
     "id": "ep01_镜15_u2",
