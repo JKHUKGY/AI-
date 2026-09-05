@@ -6,8 +6,11 @@ import uuid
 
 import ai_prompt
 import state
+import generation_control
 
 _slots = threading.BoundedSemaphore(2)
+_controls = {}
+_guard = threading.Lock()
 
 
 def path(pdir):
@@ -18,7 +21,7 @@ def list_tasks(pdir):
     return state.load(path(pdir)).get('tasks', [])
 
 
-def start(pdir, target, username, run):
+def start(pdir, target, username, run, commit=None):
     filename = path(pdir)
     Path(filename).parent.mkdir(parents=True, exist_ok=True)
     with state._lock_for(filename):
@@ -37,21 +40,56 @@ def start(pdir, target, username, run):
         except Exception:
             _slots.release()
             raise
+        control = generation_control.Control()
+        control.username = username
+        with _guard:
+            _controls[(filename, task['id'])] = control
+    def finish(update):
+        def mutate(data):
+            entry = next(t for t in data['tasks'] if t['id'] == task['id'])
+            if entry['status'] == 'running':
+                entry.update(update, finished_at=time.time())
+        state._mutate(filename, mutate)
     def work():
         try:
-            result = run()
-            update = {'status': 'done', 'result': result}
+            with generation_control.activate(control):
+                result = run()
+                with generation_control.guard():
+                    if commit:
+                        result = commit(result)
+                    finish({'status': 'done', 'result': result})
+                    control.finished = True
+        except generation_control.Cancelled:
+            finish({'status':'cancelled'})
         except Exception as exc:
-            update = {'status': 'failed', 'error': str(exc) if isinstance(exc, (ValueError, RuntimeError)) or hasattr(exc, 'status') else '文字任务失败，请重试'}
-        try:
-            def finish(data):
-                entry = next(t for t in data['tasks'] if t['id'] == task['id'])
-                entry.update(update, finished_at=time.time())
-            state._mutate(filename, finish)
+            with control.lock:
+                if not control.cancelled:
+                    finish({'status': 'failed', 'error': str(exc) if isinstance(exc, (ValueError, RuntimeError)) or hasattr(exc, 'status') else '文字任务失败，请重试'})
+                    control.finished = True
         finally:
             _slots.release()
+            with _guard:
+                _controls.pop((filename, task['id']), None)
+            control.done.set()
     threading.Thread(target=work, daemon=True).start()
     return dict(task)
+
+
+def cancel(pdir, identifier):
+    filename = path(pdir)
+    with _guard:
+        control = _controls.get((filename, identifier))
+    if control:
+        with control.lock:
+            if control.cancel():
+                def mark(data):
+                    task = next(t for t in data['tasks'] if t['id'] == identifier)
+                    task.update(status='cancelled', finished_at=time.time())
+                    task.pop('result', None)
+                    task.pop('error', None)
+                state._mutate(filename, mark)
+        control.done.wait(5)
+    return next((t for t in list_tasks(pdir) if t['id'] == identifier), None)
 
 
 def recover(output_dir):

@@ -18,15 +18,19 @@ const API = (() => {
   }
   const enc = encodeURIComponent;
   return {
+    control: req,
     projects: () => req('GET', '/api/projects'),
     contentChange: (p, action, body) => req('POST', `/api/projects/${enc(p)}/content/${action}`, body),
     contentTrash: (p) => req('GET', `/api/projects/${enc(p)}/content/trash`),
     helpQuestion: (body) => req('POST', '/api/help/question', body),
     tasks: () => req('GET', '/api/tasks'),
     startPromptTask: (p, body) => req('POST', `/api/projects/${enc(p)}/prompt_tasks`, body),
+    cancelTask: (task) => req('POST', `/api/projects/${enc(task.project)}/${task.kind === 'setup' ? 'setup' :
+      task.kind === 'prompt' ? `prompt_tasks/${enc(task.id)}` : `regenerate/${enc(task.token)}`}/cancel`, {}),
     createProject: (body) => req('POST', '/api/projects', body),
     setup: (p) => req('GET', `/api/projects/${enc(p)}/setup`),
     startSetup: (p) => req('POST', `/api/projects/${enc(p)}/setup/start`, {}),
+    cancelSetup: (p) => req('POST', `/api/projects/${enc(p)}/setup/cancel`, {}),
     setupFile: (p, path) => req('GET', `/api/projects/${enc(p)}/setup/file?path=${enc(path)}`),
     guide: () => req('GET', '/api/guide'),
 

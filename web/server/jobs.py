@@ -15,6 +15,7 @@ import threading
 import time
 import uuid
 from pathlib import Path
+import generation_control
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 GENERATE_SCRIPT = os.path.join(
@@ -98,7 +99,12 @@ def start_regenerate(out_dir, job_id, prompt, count, ref_images, log_dir):
     log_file = open(log_path, 'w', encoding='utf-8')
 
     cmd = [sys.executable, GENERATE_SCRIPT, tmp_jobs_path, '--out-dir', out_dir]
-    proc = subprocess.Popen(cmd, stdout=log_file, stderr=subprocess.STDOUT, cwd=REPO_ROOT)
+    try:
+        proc = subprocess.Popen(cmd, stdout=log_file, stderr=subprocess.STDOUT, cwd=REPO_ROOT,
+                                start_new_session=True)
+    except Exception:
+        log_file.close()
+        raise
 
     with _registry_lock:
         _registry[token] = {
@@ -109,6 +115,8 @@ def start_regenerate(out_dir, job_id, prompt, count, ref_images, log_dir):
             'job_id': job_id,
             'before': before,
             'started_at': time.time(),
+            'lock': threading.RLock(),
+            'cancelled': False,
         }
     return token
 
@@ -118,6 +126,23 @@ def get_status(token):
         entry = _registry.get(token)
     if not entry:
         return None
+    with entry['lock']:
+        return _status(token, entry)
+
+
+def cancel(token):
+    with _registry_lock:
+        entry = _registry.get(token)
+    if not entry:
+        return None
+    with entry['lock']:
+        if entry['proc'].poll() is None:
+            generation_control.stop_process(entry['proc'])
+            entry['cancelled'] = True
+        return _status(token, entry)
+
+
+def _status(token, entry):
 
     proc = entry['proc']
     ret = proc.poll()
@@ -135,7 +160,7 @@ def get_status(token):
         now = _existing_files(entry['job_dir'], entry['job_id'])
         new_files = sorted(now - entry['before'])
 
-    status = 'running' if running else ('done' if ret == 0 else 'failed')
+    status = 'cancelled' if entry['cancelled'] else ('running' if running else ('done' if ret == 0 else 'failed'))
     return {
         'token': token,
         'job_id': entry['job_id'],

@@ -1,0 +1,29 @@
+{
+  "agent_id": "/root/resume_generator_a",
+  "role": "Generator A",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/standard_round2_h.json",
+  "source_job_sha256": "705588e0116bec6d23b7bd68c27c586bbbf75e04fa63f281051ae18829967558",
+  "records": [
+    {
+      "id": "ep01_镜25",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a07107-75a5-7aa0-afa7-d8d2075d92dc/exec-12aecae3-ec40-4b9a-9f20-2e7937c2dbac.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+      "status": "pending_review",
+      "sha256": "b25426dd4b2602b2cb7cb402bcebcb9aac14dd3451b92ba92eaa281dc9e150de"
+    }
+  ],
+  "errors": [],
+  "refs_viewed": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "mode": "standard_multi_reference_generation",
+  "prompt_unchanged": true,
+  "calls": 1,
+  "actual_generated": 1
+}

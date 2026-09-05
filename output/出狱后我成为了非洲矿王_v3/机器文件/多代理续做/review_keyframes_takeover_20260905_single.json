@@ -1,0 +1,38 @@
+{
+  "agent_id": "/root/continue_review_single",
+  "review_scope": "single",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png"
+  ],
+  "reference_note": "角色与底板已在本代理前一审计实际view_image，本次实际打开05；未读取03/04的新审查或图像。",
+  "review_basis": [
+    "keyframes/ep01/keyframe_cards.json: ep01_镜34.script_ref_zh及people批准动作",
+    "机器文件/多代理续做/resume_shot34_round3_plan.json"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜34",
+      "round": 3,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+      "verdict": "fail",
+      "reason": "母子仍在画面左侧向原楼梯通道走，江砚三分之四背面、苏慧侧面右手扶后肩左手拎橄榄包，右侧刘兰看指甲与顾瑶看手机保留，剧情方向成立。但江砚近相机左肩—卷袖左肘—横向前臂连续可见，左手仍压握加长箱杆的上端（约画面x15%、y53%）；身体右后缘的远侧右手仍在髋旁空垂（约x28%、y57%）。只是抬高了原左手与拉杆，没有完成远侧右手持杆、左手空手屈胸的批准纠正。箱仍在近侧前方，远侧右肩—右肘—右手持杆连线不存在。",
+      "fix_instruction": "已第三轮到限，保留此差异，不自动开启第四轮。若后续采用新授权修正方案，应将近侧左手与箱杆完全分开、空手移到胸前，远侧右肩肘腕形成可见连续前伸持杆关系，箱在前方偏远侧。",
+      "card_field": [
+        "people[name=江砚].action_zh",
+        "people[name=江砚].posture_zh"
+      ]
+    }
+  ],
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜34",
+      "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+      "remaining_difference": "本报告只复核05，不对未审03/04作全轮排名；05仍左手持杆、右手空垂，不通过，不能登记为最终选图。"
+    }
+  ]
+}

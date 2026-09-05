@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/resume_r2",
+  "unit_id": "ep01_镜25",
+  "round": 3,
+  "review_scope": "continuity",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_05.png"
+  ],
+  "source_card_sha256": "7de58c4736e803ad6fa7424ac0177c7dd17782ca2e729f1a05902a252f8dc921",
+  "created_at": "2026-09-05T11:21:19.675890+00:00",
+  "images": [
+    {
+      "id": "ep01_镜25",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_03.png",
+      "verdict": "fail",
+      "reason": "A机位左玻璃右车道、三旅客、人物服装、母左包右手空垂、儿子右箱空肩及离开方向均保持。但江砚全身约35%（发顶47%、脚底82%），母亲约22%，比卡江砚约40%、母稍小的构图缩小过多，母子纵深距离亦偏大。",
+      "fix_instruction": "已第三轮到限，不继续生成；若后续获准修订，保留动作与机位，将母子在宽景中的尺度调回卡片要求。",
+      "card_field": "framing.subject_frac; framing.crop_zh; people[1].depth"
+    },
+    {
+      "id": "ep01_镜25",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+      "verdict": "pass",
+      "reason": "A机位、白天光、服装、单一箱包、三旅客及母子离开节拍连续；母左手提包右手空垂、儿子右手箱且双肩空可确认。江砚全身约37%（发顶44%、脚底81%-82%），母亲略小且领先，接近卡中约40%的全景，保留明显上部环境及完整头脚。脚下约18%-19%比约15%略多，记录为近似构图偏差，未改变批准景别和连戏意图。",
+      "fix_instruction": "无需连戏修正；脚下留白的近似偏差已显式记录，由主代理合并独立审查结论。",
+      "card_field": "framing.subject_frac; framing.crop_zh; people[1].depth"
+    },
+    {
+      "id": "ep01_镜25",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_05.png",
+      "verdict": "fail",
+      "reason": "角色、服装、A机位日光、三旅客及左右手道具归属仍连续。江砚发顶约50%、脚底83%，全身仅约33%，较卡40%缩小，头顶已落到画高中线，母子在机场建筑下显著偏小。",
+      "fix_instruction": "已第三轮到限，不继续生成；若后续获准修订，按头顶45%、鞋底85%恢复江砚40%全身。",
+      "card_field": "framing.subject_frac; framing.crop_zh; people[1].depth"
+    }
+  ],
+  "proposed_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png"
+}

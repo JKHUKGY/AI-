@@ -1,0 +1,23 @@
+{
+  "status": "done",
+  "step": "文字基础文件已完成；图片与租卡等待单独审批",
+  "completed": 2,
+  "total": 2,
+  "files": [
+    "README.md",
+    "assets/jobs_initial.json",
+    "assets/selected.md",
+    "keyframes/README.md",
+    "production_plan.md",
+    "project.json",
+    "source/script.txt",
+    "storyboard/characters.md",
+    "storyboard/ep01.md",
+    "storyboard/outline.md",
+    "storyboard/scenes.md",
+    "storyboard/style_bible.md",
+    "videos/README.md"
+  ],
+  "error": null,
+  "updated_at": "2026-09-05T10:08:51"
+}

@@ -1,0 +1,417 @@
+[
+  {
+    "id": "ep01_a1_主帧",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-b48130e4-447a-4bee-84a2-194155c68e2a.png",
+    "round": 1,
+    "candidate": 0,
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "reviewed": true,
+    "status": "selected",
+    "review_zh": "母子身份、交包前后状态、三位旅客及机场空间通过；用交包后图固定后续大登山包和箱子的外观。"
+  },
+  {
+    "id": "ep01_a2_主帧",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-c883aba7-8d5e-48c0-93fa-0733642124e4.png",
+    "round": 1,
+    "candidate": 0,
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "reviewed": true,
+    "status": "selected",
+    "review_zh": "母子身份、交包前后状态、三位旅客及机场空间通过；用交包后图固定后续大登山包和箱子的外观。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-7a31e8f1-f218-41e9-b9a6-a8b0865d4018.png",
+    "round": 1,
+    "candidate": 0,
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_00.png",
+    "reviewed": true,
+    "status": "rejected",
+    "review_zh": "两位角色各重复一次，变成四人；且落在铁门内侧，拒绝。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "round": 2,
+    "candidate": 1,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-c6dcecbc-8f6c-4fc3-b81a-8fde6e5d1771.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_01.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "重复人物修正，但仍站在铁门内侧；瓶与盖的持握/开合状态亦未可靠符合卡片，拒绝。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "round": 2,
+    "candidate": 2,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-f38bf414-83d1-4b95-8340-640a2c9dd91d.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_02.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "重复人物修正，但仍站在铁门内侧；瓶与盖的持握/开合状态亦未可靠符合卡片，拒绝。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "round": 3,
+    "candidate": 3,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-51390715-0c5a-4066-96bf-fe589b3b7284.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "round": 3,
+    "candidate": 4,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-f890d285-02ac-4ee6-9cf3-13619ea9015a.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_04.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "round": 3,
+    "candidate": 5,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-180308d3-5ef3-4bdb-b80c-5c1f101a7353.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_05.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+  },
+  {
+    "id": "master_ep01_p3",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-9528ae9d-18aa-4d8a-870d-15755ca3f253.png",
+    "round": 1,
+    "candidate": 0,
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_00.png",
+    "reviewed": true,
+    "status": "rejected",
+    "review_zh": "两位角色各重复一次，变成四人；且落在铁门内侧，拒绝。"
+  },
+  {
+    "id": "master_ep01_p3",
+    "round": 2,
+    "candidate": 1,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-ebadfd9e-8eee-48c8-9501-af79ccf4a0c7.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_01.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "重复人物修正，但仍站在铁门内侧；瓶与盖的持握/开合状态亦未可靠符合卡片，拒绝。"
+  },
+  {
+    "id": "master_ep01_p3",
+    "round": 2,
+    "candidate": 2,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-c808afc5-5924-40b5-8644-00b7c4ff6dbe.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_02.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "重复人物修正，但仍站在铁门内侧；瓶与盖的持握/开合状态亦未可靠符合卡片，拒绝。"
+  },
+  {
+    "id": "master_ep01_p3",
+    "round": 3,
+    "candidate": 3,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-ea3a2ce4-8d8d-4c40-9b87-10cdd963c4a4.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+  },
+  {
+    "id": "master_ep01_p3",
+    "round": 3,
+    "candidate": 4,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-c8430dab-eed2-41e1-a758-c40c24d3679f.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_04.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+  },
+  {
+    "id": "master_ep01_p3",
+    "round": 3,
+    "candidate": 5,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-a7514d71-f533-4907-a0b6-e397ec0ee565.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_05.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+  },
+  {
+    "id": "master_ep01_r2",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-1fe7c5af-94c1-45d0-b40b-975c705c80c0.png",
+    "round": 1,
+    "candidate": 0,
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_00.png",
+    "reviewed": true,
+    "status": "rejected",
+    "review_zh": "左边出现带门把手的活动门扇，门仍打开，和关门后状态不符。"
+  },
+  {
+    "id": "master_ep01_r2",
+    "round": 2,
+    "candidate": 1,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-a906dddb-4063-4b4b-a5fc-e3cbbcf33fe0.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_01.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "单张门状态已修正，但跨场对照登山包缩成小包；场次验收退回。"
+  },
+  {
+    "id": "master_ep01_r2",
+    "round": 2,
+    "candidate": 2,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-7d1aabe5-8a19-4fc9-8872-3c34d1043eb9.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_02.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "单张门状态已修正，但跨场对照登山包缩成小包；场次验收退回。"
+  },
+  {
+    "id": "master_ep01_r2",
+    "round": 3,
+    "candidate": 3,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-4796dd3f-701b-4bf0-835d-1543fc5e9dcd.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_03.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "左边出现带门把手的活动门扇，门仍打开，和关门后状态不符。"
+  },
+  {
+    "id": "master_ep01_r2",
+    "round": 3,
+    "candidate": 4,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-cc6877c8-ad37-4f7d-9b5b-477cbfca4761.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_04.png",
+    "status": "alternate",
+    "reviewed": true,
+    "review_zh": "门状态和大包体积修正，人物站坐与道具位置可用；选05作为统一主帧，本张保留备选。"
+  },
+  {
+    "id": "master_ep01_r2",
+    "round": 3,
+    "candidate": 5,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-8093bc8c-2252-4341-b803-a4b5193dee18.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_r2/master_ep01_r2_05.png",
+    "status": "selected",
+    "reviewed": true,
+    "review_zh": "日间客房，门扇已移到镜后画外，左侧江砚坐床沿、右侧苏慧站立；大登山包在右桌、深灰四轮箱在床脚；与机场道具参考一致性通过。"
+  },
+  {
+    "id": "master_ep01_v1",
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-3ca51fb7-b0a9-4802-b070-e93860f19282.png",
+    "round": 1,
+    "candidate": 0,
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_00.png",
+    "reviewed": true,
+    "status": "rejected",
+    "review_zh": "四人及房间布局通过，跨场对照登山包明显缩小，退回。"
+  },
+  {
+    "id": "master_ep01_v1",
+    "round": 2,
+    "candidate": 1,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-6fa56750-a4d3-4291-b0c3-82fe0b036526.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_01.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "大登山包体积及箱子修正、四人俱在；但苏慧近侧右臂垂下提包、远侧手未可靠呈现左手提包，与卡片左手提包/右手腹前不符，待第三轮。"
+  },
+  {
+    "id": "master_ep01_v1",
+    "round": 2,
+    "candidate": 2,
+    "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-bced2ae7-dd7c-4413-8217-93974431e565.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_02.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "大登山包体积及箱子修正、四人俱在；但苏慧近侧右臂垂下提包、远侧手未可靠呈现左手提包，与卡片左手提包/右手腹前不符，待第三轮。"
+  },
+  {
+    "id": "master_ep01_p2",
+    "round": 4,
+    "candidate": 6,
+    "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-cb0a636a-0e41-4652-9267-c67c01f91463.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "门外两人站位、陈野靠车及人物服装保留；江砚身前只清楚看见近侧弯曲手臂和一只小瓶，远侧手与瓶口重叠且被躯干遮挡，不能追踪到两只手各自从肩肘连接至瓶身和白盖；白盖是否仍拧紧亦不足以确认。；角色各一人、灰蓝衬衫/棕外衫及门外红土位置、右侧越野车和正午光可对应参考。江砚胸前仅清晰见一侧屈肘和瓶，另一只手及扶盖接触关系被遮挡，不能确认人体左手握瓶、右手扶仍拧紧白盖。",
+    "independent_reviews": [
+      {
+        "agent_id": "/root/review_supplement_single",
+        "unit_id": "master_ep01_p2",
+        "round": 4,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+        "verdict": "unclear",
+        "reason": "门外两人站位、陈野靠车及人物服装保留；江砚身前只清楚看见近侧弯曲手臂和一只小瓶，远侧手与瓶口重叠且被躯干遮挡，不能追踪到两只手各自从肩肘连接至瓶身和白盖；白盖是否仍拧紧亦不足以确认。",
+        "fix": "把左肩至左肘至左手的连接和左手所握瓶身清楚展示在胸前；右臂在另一高度弯曲，右手独立可辨。p2右手扶仍盖紧瓶口的白盖；p3右手单独拿取下的白盖。已追加一轮，不自行再生成。",
+        "fix_instruction": "同 fix；需重新安排前臂可见性并保留门外站位，不能用遮挡推断通过。",
+        "card_field": "scene_beats[p2].blocking[江砚].holding_zh / action_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      },
+      {
+        "agent_id": "/root/review_supplement_continuity",
+        "unit_id": "master_ep01_p2",
+        "round": 4,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_06.png",
+        "verdict": "unclear",
+        "reason": "角色各一人、灰蓝衬衫/棕外衫及门外红土位置、右侧越野车和正午光可对应参考。江砚胸前仅清晰见一侧屈肘和瓶，另一只手及扶盖接触关系被遮挡，不能确认人体左手握瓶、右手扶仍拧紧白盖。",
+        "fix": "让左前臂与右前臂在轮廓上分开，右手在瓶口白盖处，左手在瓶身中段；保留两人的门外位置。",
+        "card_field": "scene_beats[].blocking[江砚/苏慧].holding_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      }
+    ]
+  },
+  {
+    "id": "master_ep01_p3",
+    "round": 4,
+    "candidate": 6,
+    "source": "/home/codespace/.codex/generated_images/01a0709e-0933-73a2-92bc-95b26d21cb32/exec-d4513111-1f3c-4e47-b3f8-0f579b8601cc.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "江砚背对相机稍向右，可见近侧为人体右臂，该臂下垂，手握透明瓶且瓶身落在大腿旁；左手未在身前显露，右手也未单独拿白盖。与左手开口瓶停在胸下、右手持已取下白盖的批准状态不符。；角色、服装、门外位置和场景保持；江砚近相机一侧右臂从卷袖至手完整可见且垂下持透明瓶，瓶在腿侧，未见右手独立拿白盖。这与左手持开瓶胸下、右手拿取下白盖的批准状态冲突。",
+    "independent_reviews": [
+      {
+        "agent_id": "/root/review_supplement_single",
+        "unit_id": "master_ep01_p3",
+        "round": 4,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+        "verdict": "fail",
+        "reason": "江砚背对相机稍向右，可见近侧为人体右臂，该臂下垂，手握透明瓶且瓶身落在大腿旁；左手未在身前显露，右手也未单独拿白盖。与左手开口瓶停在胸下、右手持已取下白盖的批准状态不符。",
+        "fix": "把左肩至左肘至左手的连接和左手所握瓶身清楚展示在胸前；右臂在另一高度弯曲，右手独立可辨。p2右手扶仍盖紧瓶口的白盖；p3右手单独拿取下的白盖。已追加一轮，不自行再生成。",
+        "fix_instruction": "同 fix；需重新安排前臂可见性并保留门外站位，不能用遮挡推断通过。",
+        "card_field": "scene_beats[p3].blocking[江砚].holding_zh / action_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      },
+      {
+        "agent_id": "/root/review_supplement_continuity",
+        "unit_id": "master_ep01_p3",
+        "round": 4,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_06.png",
+        "verdict": "fail",
+        "reason": "角色、服装、门外位置和场景保持；江砚近相机一侧右臂从卷袖至手完整可见且垂下持透明瓶，瓶在腿侧，未见右手独立拿白盖。这与左手持开瓶胸下、右手拿取下白盖的批准状态冲突。",
+        "fix": "左臂屈肘使开瓶到胸下，右手只拿白盖并与瓶口分离；不得将瓶交到右手或降到腿旁。",
+        "card_field": "scene_beats[].blocking[江砚/苏慧].holding_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      }
+    ]
+  },
+  {
+    "id": "master_ep01_v1",
+    "round": 3,
+    "candidate": 3,
+    "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-a6b6fef7-125a-498a-afe7-1e9836fe300e.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "四人在场且刘兰坐右后沙发看指甲、顾瑶坐右近沙发看手机，江砚左近背侧身右手扶同式硬箱；但苏慧面向画面右，相机看到右侧及少量背部，其近侧右肩、右袖和下垂右臂清楚连到提包手，腹前手来自远侧左臂。实际右手提包、左手腹前，与批准的左手包右手腹前相反。；四人在场：江砚左近扶深灰竖棱箱，苏慧中间，刘兰与顾瑶坐右侧沙发；身份、服装、房间和白天光可对应基准，大橄榄包外形大小基本连续。但苏慧近相机右臂从肩袖到下垂前臂及握包手连成一线，另一手在腹前，是右手提包/左手腹前，和批准左右手相反。",
+    "independent_reviews": [
+      {
+        "agent_id": "/root/review_supplement_single",
+        "unit_id": "master_ep01_v1",
+        "round": 3,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+        "verdict": "fail",
+        "reason": "四人在场且刘兰坐右后沙发看指甲、顾瑶坐右近沙发看手机，江砚左近背侧身右手扶同式硬箱；但苏慧面向画面右，相机看到右侧及少量背部，其近侧右肩、右袖和下垂右臂清楚连到提包手，腹前手来自远侧左臂。实际右手提包、左手腹前，与批准的左手包右手腹前相反。",
+        "fix": "保持站位和全部背景，交换苏慧左右手动作：近侧右前臂完整屈肘横在腹前，远侧左臂下垂提包，包置远侧左腿。第三轮已到上限，不自行继续出图。",
+        "fix_instruction": "同 fix；可见右前臂须横在腹前而不是垂下握包。",
+        "card_field": "scene_beats[ep01_v1].blocking[苏慧].holding_zh / action_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      },
+      {
+        "agent_id": "/root/review_supplement_continuity",
+        "unit_id": "master_ep01_v1",
+        "round": 3,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+        "verdict": "fail",
+        "reason": "四人在场：江砚左近扶深灰竖棱箱，苏慧中间，刘兰与顾瑶坐右侧沙发；身份、服装、房间和白天光可对应基准，大橄榄包外形大小基本连续。但苏慧近相机右臂从肩袖到下垂前臂及握包手连成一线，另一手在腹前，是右手提包/左手腹前，和批准左右手相反。",
+        "fix": "苏慧近相机右前臂需屈肘横在腹前，远侧左臂垂下提包；保留四人、道具尺寸及陈设。",
+        "card_field": "scene_beats[].blocking[江砚/苏慧].holding_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      }
+    ]
+  },
+  {
+    "id": "master_ep01_v1",
+    "round": 3,
+    "candidate": 5,
+    "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-84fcd757-d3f8-4895-a451-e22cdfe1b09f.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "角色混淆：左中站着的苏慧之外，右后沙发看指甲的女人也穿米白旧布裙和灰围裙、盘灰黑发，呈现第二个苏慧；右近沙发看手机者穿刘兰蓝灰色长吊带裙，批准的顾瑶白色背心和浅裙不见。苏慧近侧右臂仍下垂提包，左手在腹前，持包左右也未修正。；苏慧仍以近相机右手提包。另有严重身份/座位串位：远侧沙发出现第二位灰发盘发、白裙灰围裙的苏慧；近侧沙发是蓝灰长裙刘兰在看手机；白上衣米短裙的顾瑶消失。虽总数四人，四个批准身份没有齐全；近景中央黑色单椅也从底板消失。",
+    "independent_reviews": [
+      {
+        "agent_id": "/root/review_supplement_single",
+        "unit_id": "master_ep01_v1",
+        "round": 3,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+        "verdict": "fail",
+        "reason": "角色混淆：左中站着的苏慧之外，右后沙发看指甲的女人也穿米白旧布裙和灰围裙、盘灰黑发，呈现第二个苏慧；右近沙发看手机者穿刘兰蓝灰色长吊带裙，批准的顾瑶白色背心和浅裙不见。苏慧近侧右臂仍下垂提包，左手在腹前，持包左右也未修正。",
+        "fix": "重新在源卡明确四个不同身份与座位绑定：右后沙发必须刘兰蓝灰长吊带裙，右近沙发必须顾瑶白色背心浅短裙，苏慧只能站西侧出现一次；苏慧近侧右臂腹前、远侧左手包。三轮已到上限，不能直接再生成。",
+        "fix_instruction": "同 fix。",
+        "card_field": "scene_beats[ep01_v1].blocking[刘兰/顾瑶].ref_images / posture_zh；blocking[苏慧].holding_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      },
+      {
+        "agent_id": "/root/review_supplement_continuity",
+        "unit_id": "master_ep01_v1",
+        "round": 3,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_05.png",
+        "verdict": "fail",
+        "reason": "苏慧仍以近相机右手提包。另有严重身份/座位串位：远侧沙发出现第二位灰发盘发、白裙灰围裙的苏慧；近侧沙发是蓝灰长裙刘兰在看手机；白上衣米短裙的顾瑶消失。虽总数四人，四个批准身份没有齐全；近景中央黑色单椅也从底板消失。",
+        "fix": "严格每人一个：远侧沙发仅蓝灰绸长裙刘兰看指甲，近侧沙发仅白上衣米短裙顾瑶看手机，苏慧只站在母子区且左手提包右手腹前；恢复底板中央黑色单椅。",
+        "card_field": "scene_beats[ep01_v1].present / blocking / master_plate_image",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      }
+    ]
+  },
+  {
+    "id": "master_ep01_v1",
+    "round": 3,
+    "candidate": 4,
+    "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-f4575c7d-c19a-479f-a778-640ff34d51a4.png",
+    "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+    "status": "rejected",
+    "reviewed": true,
+    "review_zh": "苏慧右侧面向画面右，近侧右肩→右袖→垂直右前臂→握包提手的右手连接清楚；腹前未展示批准的完整屈肘右前臂。四人均在、主人持续坐沙发，江砚右手箱及背空符合，但苏慧提包手仍相反。；四人、服装和江砚右手行李箱仍连续。苏慧近相机的右肩、袖、下垂前臂和提包手清楚连成一条，右手正在提包；未见近侧右臂屈肘腹前，因此不符合左包右腹的批准状态。包比机场已选参考显得较短，正面口袋也更分割。",
+    "independent_reviews": [
+      {
+        "agent_id": "/root/review_supplement_single",
+        "unit_id": "master_ep01_v1",
+        "round": 3,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+        "verdict": "fail",
+        "reason": "苏慧右侧面向画面右，近侧右肩→右袖→垂直右前臂→握包提手的右手连接清楚；腹前未展示批准的完整屈肘右前臂。四人均在、主人持续坐沙发，江砚右手箱及背空符合，但苏慧提包手仍相反。",
+        "fix": "近侧右臂完整屈肘横放腹前，包改由远侧左臂下垂提起，确保两手与提手没有遮挡误读。第三轮上限，不自行再生成。",
+        "fix_instruction": "同 fix。",
+        "card_field": "scene_beats[ep01_v1].blocking[苏慧].holding_zh / action_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      },
+      {
+        "agent_id": "/root/review_supplement_continuity",
+        "unit_id": "master_ep01_v1",
+        "round": 3,
+        "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_04.png",
+        "verdict": "fail",
+        "reason": "四人、服装和江砚右手行李箱仍连续。苏慧近相机的右肩、袖、下垂前臂和提包手清楚连成一条，右手正在提包；未见近侧右臂屈肘腹前，因此不符合左包右腹的批准状态。包比机场已选参考显得较短，正面口袋也更分割。",
+        "fix": "近相机右臂明确屈肘、右手腹前；远侧左手提机场同款长形大包，保留包的单翻盖和大前袋。",
+        "card_field": "scene_beats[ep01_v1].blocking[苏慧].holding_zh / state_zh",
+        "proposed_file": "",
+        "master_frame_read_zh": ""
+      }
+    ]
+  }
+]

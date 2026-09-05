@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜15",
+    "prompt": "Edit this same photograph. 仅将江砚右手白盖缩小至与左手透明瓶颈匹配的旋盖，拇指食指自然捏住，保持瓶口开放。仅调整陈野远侧解剖右前臂和手掌，空右掌朝下悬在右大腿正前上方约一掌距离，近侧左臂保持自然垂下。眼神轻微亮起。取景小幅收紧使江砚发顶留5%，下缘切大腿中段。\n保留两人身份服装、左手持瓶/右手唯一白盖、B反打纵深和右后车；不添加拍肩动作。\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/resume_prison_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第50行「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」——陈野当即给出设备与工人的支持，二人结盟。"
+  },
+  {
+    "id": "ep01_镜16",
+    "prompt": "Edit this same photograph. 保留背景取景与车辆门柱，局部调整两个人物而非整体放大：江砚完整全身约40%画高，发顶约45%、鞋底约85%，在右侧原对话位置侧身朝左车；陈野左侧全身缩至约45%，发顶约40%、鞋底约85%，保留半步纵深。恢复人物移动后原红土背景和落地阴影。江砚左手持开放透明瓶，右手拇指食指拿匹配瓶口的唯一白盖停在瓶口上方准备拧回，手不合并。\n保持角色身份、衣服、陈野侧背与江砚朝左侧面、车门关闭、监狱门半开、原正午光，不提前走到车边。\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/resume_prison_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第51行「▲江砚看向他，点了点头，随即拉开车门坐进副驾。」；script_source.txt 第52行「江砚：去顾家接我妈走。」——创业前最先要做的是接母亲，动作接到上车。"
+  }
+]

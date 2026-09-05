@@ -1,0 +1,75 @@
+{
+  "agent_id": "/root/resume_review_single",
+  "review_scope": "single_edit_recommendations",
+  "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+  "basis": "实际打开第二轮六张原图及四张参考，按script_ref_zh与批准卡判定；仅供第三轮最小同镜编辑，非通过登记。",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png"
+  ],
+  "plans": [
+    {
+      "id": "ep01_镜02",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png",
+      "observations_zh": "两版均为陈野解剖左手持水、右手伸肩，与批准卡相反；02版江砚发顶留白约13%，下缘接近膝，尚未做到5%顶空/大腿中段裁切。",
+      "correction_zh": "保留同图脸、服装、B反打背景、左右走位及视线。仅重绘陈野双臂：远侧解剖右臂垂下，右手握白盖冰水瓶；近侧解剖左肘抬起，空左手伸向江砚肩但尚未落下。肩肘腕连接清楚。温和收紧取景，让江砚发顶留5%且下缘切大腿中段，两人手和瓶完整。",
+      "card_field": [
+        "people[1].action_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh"
+      ],
+      "preserve_zh": "江砚过肩背面、陈野三分之四正面、红土路、右后越野车、窄门框、白盖透明水瓶与原光。",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only"
+    },
+    {
+      "id": "ep01_镜15",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+      "observations_zh": "02版瓶已开口且盖在江砚右手，比01版双盖状态更适合编辑；但白盖约大于瓶径，明显不匹配瓶口，陈野右掌弯曲竖垂于腰旁未形成向下将拍大腿姿态，江砚顶空约10%。",
+      "correction_zh": "仅将江砚右手白盖缩小至与左手透明瓶颈匹配的旋盖，拇指食指自然捏住，保持瓶口开放。仅调整陈野远侧解剖右前臂和手掌，空右掌朝下悬在右大腿正前上方约一掌距离，近侧左臂保持自然垂下。眼神轻微亮起。取景小幅收紧使江砚发顶留5%，下缘切大腿中段。",
+      "card_field": [
+        "people[0].action_zh",
+        "people[1].action_zh",
+        "framing.crop_zh"
+      ],
+      "preserve_zh": "保留两人身份服装、左手持瓶/右手唯一白盖、B反打纵深和右后车；不添加拍肩动作。",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only"
+    },
+    {
+      "id": "ep01_镜16",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png",
+      "observations_zh": "02版A机位与转向正确。江砚头脚约36%画高、鞋底约69%，脚下约31%空地；陈野约54%画高、鞋底约86%，两人远近差超过批准的半步。白盖不足以确认。",
+      "correction_zh": "保留背景取景与车辆门柱，局部调整两个人物而非整体放大：江砚完整全身约40%画高，发顶约45%、鞋底约85%，在右侧原对话位置侧身朝左车；陈野左侧全身缩至约45%，发顶约40%、鞋底约85%，保留半步纵深。恢复人物移动后原红土背景和落地阴影。江砚左手持开放透明瓶，右手拇指食指拿匹配瓶口的唯一白盖停在瓶口上方准备拧回，手不合并。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[0].posture_zh",
+        "people[1].posture_zh",
+        "people[0].action_zh"
+      ],
+      "preserve_zh": "保持角色身份、衣服、陈野侧背与江砚朝左侧面、车门关闭、监狱门半开、原正午光，不提前走到车边。",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only"
+    },
+    {
+      "id": "ep01_镜03",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_02.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "只收紧这张照片的取景为双人中景：江砚完整发顶上方仅留5%画高，画面底边切在两人大腿中段。将两人连同背景等比例放大，以江砚为构图主体；门槛、鞋靴和小腿均裁到框外。两人交接水瓶的手完整保留在胸腰之间。",
+      "preserve_zh": "保持同一瞬间、人物身份、衣服、门外位置和原B反打背景：陈野远侧解剖右手持唯一白盖透明冰水瓶向前递，近侧空左臂垂下；江砚远侧左手张开尚未接触瓶身，近侧右手自然垂下。保留原表情、视线、右后越野车和日光。",
+      "basis_reports": [
+        "review_keyframes_resume_20260905_single.json",
+        "review_keyframes_resume_20260905_continuity.json"
+      ]
+    }
+  ]
+}

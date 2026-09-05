@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-09-05T10:44:48.900589+00:00",
+  "scope": "ep01 resume preflight and independent audit",
+  "new_image_calls": 0,
+  "generation_ownership": "Other persisted runtime is actively creating candidates and updating reports; await user clarification before new generation.",
+  "existing_generator_agent_id": "/root/resume_generator_a",
+  "verified_existing_candidate": "ep01_镜38_05.png",
+  "agents": [
+    {
+      "agent_id": "/root/continue_gen38",
+      "role": "candidate/provenance preflight",
+      "report": "generator_continue_20260905_38.json",
+      "new_images": 0
+    },
+    {
+      "agent_id": "/root/continue_review_single",
+      "role": "independent audit single",
+      "report": "independent_audit_continue_20260905_single.json"
+    },
+    {
+      "agent_id": "/root/continue_review_continuity",
+      "role": "independent audit continuity",
+      "report": "independent_audit_continue_20260905_continuity.json"
+    }
+  ],
+  "shared_queue_mutations_paused": true,
+  "rounds_preserved": true,
+  "confirmed_external_activity": [
+    "generator_resume_20260905_room38.json added candidate05 during this turn",
+    "generator_resume_20260905_shot34_round3.json created during this turn"
+  ],
+  "audit_status": {
+    "independent_audit_continue_20260905_single.json": true,
+    "independent_audit_continue_20260905_continuity.json": true
+  }
+}

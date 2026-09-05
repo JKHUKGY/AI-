@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-05",
+  "user_approval": "ok; approved_for_generation remains valid",
+  "phase": "keyframes_independent_units",
+  "image_count": 28,
+  "tool_attempts": 30,
+  "pre_generation_rejections": 2,
+  "rejection_reason": "referenced_image_paths at most 5; reduced villa refs using approved airport image for Jiang identity and props, then resubmitted",
+  "counts": {
+    "selected": 3,
+    "alternate": 1,
+    "rejected": 24
+  },
+  "selected_master_beats": [
+    "ep01_a1",
+    "ep01_a2",
+    "ep01_r2"
+  ],
+  "blocked_after_3_rounds": [
+    "ep01_p2",
+    "ep01_p3",
+    "ep01_v1"
+  ],
+  "needs_retry_round3": [],
+  "keyframes_completed": 3,
+  "keyframes_planned": 38,
+  "pending_tools": 0,
+  "next_step": "本批可执行镜头已完成全部允许轮次；18镜和3项主帧到限未通过，17镜依赖阻塞。先解决到限项的设计与修复方案，未通过图片不能交视频。",
+  "keyframe_units_blocked": 17,
+  "keyframe_image_count": 123,
+  "keyframe_counts": {
+    "rejected": 118,
+    "selected": 3,
+    "alternate": 2
+  },
+  "keyframe_unit_counts": {
+    "capped": 18,
+    "blocked_dependency": 17,
+    "passed": 3
+  },
+  "total_image_count": 151,
+  "last_updated_at": "2026-09-05T11:24:13.386796+00:00",
+  "active_generation": false
+}

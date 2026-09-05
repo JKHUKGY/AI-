@@ -1,0 +1,16 @@
+{
+  "web/server/app.py": "749c261fd03a0848d3d5bdb5c12394dbe667e373b624f42051f00f006320c667",
+  "web/server/ai_prompt.py": "4e84e354dca6d0c326f8e1ba00812fa0d9a38e3b9653c986f14a7e151f808eb3",
+  "web/server/generation_control.py": "716d846f2acda62b3e11e02f8a35e968ad70d335c17427f052d32863df025bc1",
+  "web/server/prompt_tasks.py": "b80d096a28f32899b43cebdf1162c49d0ac4eed1f5ada1e2889ea91604778920",
+  "web/server/project_setup.py": "1069668ba02f5f541aaf794558ddabe0d50b20ab1c3a007ac434e8b822a78530",
+  "web/server/content_editor.py": "9de7344d9abd0576183618807a8afab618718ecadce4eda7d606e2962f01d13d",
+  "web/server/jobs.py": "416a77428c3437919a2ff22891d4a56a95e0665c28d425f3edfcdf7f5c588207",
+  "web/server/state.py": "95df3b6279d6b2950e064456453d392e806a63413765a0e92a14190cf93420bf",
+  "web/frontend/api.js": "b966c024837943b040dbf878faa986195762162bf541c2597e6ef59a937013f5",
+  "web/frontend/shared.js": "6eff86981f07efdebbd31b9de24fd3efb58a98344eb975c79153464e55b2ade9",
+  "web/frontend/tasks.js": "21eafac910fe2fdcc6b7640b1e5724fa3f83dba44b563ca345ebe1e6113277ca",
+  "web/frontend/views/setup.js": "273a90a574d8f13854b2a36789bfe2eeb5bb38cff12929f137d290d91b1e4c55",
+  "web/content/guide.md": "bacc7c43b067e486a81bab2062c52584a5d2ad228a98c6ecb0e38b93e3e08c47",
+  "web/README.md": "968b95d3d51db0f4061946589cc7a9a8d2e86bb79904254a60c8ddaebc8cd9d9"
+}

@@ -1,0 +1,33 @@
+{
+  "agent_id": "/root/generator_b_room_recovered",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/standard_round2_g.json",
+  "refs_viewed": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+  ],
+  "records": [
+    {
+      "id": "ep01_镜22",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a07123-74c3-7b30-8575-dab36be9eb28/exec-ee33b402-c03f-4a4c-8b5f-f8ce203dfd53.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+      "status": "pending_review",
+      "sha256": "cf8b3be9cc0ed57d6d96a2e6f29fd4f34c91d84914622477c6b1ffc0438a5cf0"
+    },
+    {
+      "id": "ep01_镜22",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a07123-74c3-7b30-8575-dab36be9eb28/exec-0448c847-9bbe-4af7-ad0c-da70a4b9d520.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png",
+      "status": "pending_review",
+      "sha256": "2394b1e2588ee303f9c67cc01abe96ff7b547d8a723ae1fdc95d528d7abc9977"
+    }
+  ],
+  "errors": []
+}

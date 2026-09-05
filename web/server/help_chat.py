@@ -62,7 +62,21 @@ def answer(username, body):
             raise ApiError(429, '上一条问题还在回答，请稍候')
         _active.add(username)
     try:
-        result = ai_prompt.run_text(query, timeout=90, model=MODEL)
+        import control_store
+        import generation_control
+        use=control_store.reserve(username,body.get('project') or '', 'help')
+        control_store.started(use['id'])
+        control=generation_control.Control(); control.username=username
+        try:
+            with generation_control.activate(control):
+                result = ai_prompt.run_text(query, timeout=90, model=MODEL)
+            control_store.settle(use['id'],'done')
+        except generation_control.Cancelled:
+            control_store.settle(use['id'],'cancelled')
+            raise ApiError(403,'账号已停用，本次回答已终止')
+        except Exception:
+            control_store.settle(use['id'],'failed')
+            raise
         return {'answer': result, 'model': MODEL}
     except ai_prompt.BusyError as exc:
         raise ApiError(429, '帮助助手正忙，请稍后重试') from exc

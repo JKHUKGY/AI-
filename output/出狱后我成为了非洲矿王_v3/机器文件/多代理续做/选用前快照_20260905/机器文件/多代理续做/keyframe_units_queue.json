@@ -1,0 +1,1787 @@
+[
+  {
+    "id": "ep01_镜01",
+    "shot_no": 1,
+    "beat_id": "ep01_p1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_05.png"
+    ],
+    "active_round": 3,
+    "generator_agent_id": "/root/generate_keyframes_batch04_b",
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generate_38"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/review_keyframes_batch04_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_round2_next_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_continuity",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+    "best_candidate_difference": "主体垂直位置/脚下空地、跨门脚位不合格。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜01",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+        "remaining_difference": "主体垂直位置/脚下空地、跨门脚位不合格。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_20260905_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜02",
+    "shot_no": 2,
+    "beat_id": "ep01_p1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_05.png"
+    ],
+    "active_round": 3,
+    "generator_agent_id": "/root/generate_keyframes_batch04_b",
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generate_38"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/review_keyframes_batch04_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_prison_round2_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_continuity",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+    "best_candidate_difference": "手位正确但13%顶空和近膝裁切不合格。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜02",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+        "remaining_difference": "手位正确但13%顶空和近膝裁切不合格。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_20260905_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜03",
+    "shot_no": 3,
+    "beat_id": "ep01_p2_handoff",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_keyframes_batch04_b",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/review_keyframes_batch04_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b",
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_continuity",
+          "/root/resume_review_single",
+          "/root/review_edits_round2_continuity",
+          "/root/review_prison_round2_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_continuity",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+    "best_candidate_difference": "右手递水/左手待接正确，仍11%顶空和近膝裁切不符中景。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜03",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+        "remaining_difference": "右手递水/左手待接正确，仍11%顶空和近膝裁切不符中景。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_20260905_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜04",
+    "shot_no": 4,
+    "beat_id": "ep01_p2",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p2",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜05",
+    "shot_no": 5,
+    "beat_id": "ep01_p2",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p2",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜06",
+    "shot_no": 6,
+    "beat_id": "ep01_p2",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p2",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜07",
+    "shot_no": 7,
+    "beat_id": "ep01_p2",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p2",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜08",
+    "shot_no": 8,
+    "beat_id": "ep01_p2",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p2",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜09",
+    "shot_no": 9,
+    "beat_id": "ep01_p3_drink",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/resume_generator_a",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/review_keyframes_batch04_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_edits_09_14"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_round2_next_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_continuity",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "best_candidate_difference": "江砚发型脸型、洗白衬衫、朝画左三分之四正面、冷静闭嘴神态与基准和09_02一致；胸上裁切及约7%顶空保留，左下肩片缩为约17%—19%窄弧。但09_02原左侧虚焦头侧边全部变成背景铁栏/院景，只余肩片，未保持卡片“虚焦头侧边与后肩”，亦超出仅改肩片范围。A紧底板审查时缺失；瓶盖双手胸下画外，其左右手状态不足以确认，未以必须入画作为新增要求。；可见项通过：身份服装、原文所需冷静克制神态、胸上裁切、主体方向和视线保持；陈野虚焦肩片满足边缘前景设计。已实际补看恢复的A紧底板，准确机位/门柱栏杆/院景及光线相符。手瓶盖处胸下画外，不能直接确认，未凭空断言其状态。",
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜10",
+    "shot_no": 10,
+    "beat_id": "ep01_p3",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p3",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜11",
+    "shot_no": 11,
+    "beat_id": "ep01_p3",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p3",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜12",
+    "shot_no": 12,
+    "beat_id": "ep01_p3",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p3",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜13",
+    "shot_no": 13,
+    "beat_id": "ep01_p3",
+    "status": "blocked_dependency",
+    "dependency": "ep01_p3",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜14",
+    "shot_no": 14,
+    "beat_id": "ep01_p4",
+    "status": "passed",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/resume_generator_a",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch05_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch05_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_edits_09_14"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_round2_next_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_continuity",
+          "/root/resume_review_single"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜15",
+    "shot_no": 15,
+    "beat_id": "ep01_p4",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_prison_round2_b",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch05_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch05_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_prison_round2_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_prison_round2_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+    "best_candidate_difference": "右手将拍腿起点未做出、取景过宽，不能selected。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+        "remaining_difference": "远侧右臂下垂、拍腿动作起点未成立；下缘较原卡偏低。",
+        "id": "ep01_镜15",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+        "agent_id": "/root/continuity_b2_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch2_continuity.json"
+      },
+      {
+        "id": "ep01_镜15",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+        "remaining_difference": "右手将拍腿起点未做出、取景过宽，不能selected。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch2_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜16",
+    "shot_no": 16,
+    "beat_id": "ep01_p5",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_prison_round2_b",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch05_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_prison_round2_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_prison_round2_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+    "best_candidate_difference": "人物脚下约29%空地、陈野仍过大，比例/纵深未达到批准要求。最佳候选不等于通过。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+        "remaining_difference": "陈野比例及两人纵深不合原卡；江砚右手/白盖处条纹失真，独立白盖不足以确认。",
+        "id": "ep01_镜16",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+        "agent_id": "/root/continuity_b2_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch2_continuity.json"
+      },
+      {
+        "id": "ep01_镜16",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+        "remaining_difference": "人物脚下约29%空地、陈野仍过大，比例/纵深未达到批准要求。最佳候选不等于通过。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch2_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜17",
+    "shot_no": 17,
+    "beat_id": "ep01_a1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_05.png"
+    ],
+    "generator_agent_id": "/root/generate_villa_round3",
+    "active_round": 3,
+    "generation_in_progress": false,
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_03.png",
+    "best_candidate_difference": "全身约49%，头顶约31%，未到40%环境远全景；不是通过图。",
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_villa_round3"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_supplement_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_villa_round3"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_keyframes_retry_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_villa_round3"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_retry_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜18",
+    "shot_no": 18,
+    "beat_id": "ep01_a1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_05.png"
+    ],
+    "generator_agent_id": "/root/generate_villa_round3",
+    "active_round": 3,
+    "generation_in_progress": false,
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_04.png",
+    "best_candidate_difference": "B方向与三名旅客成立，但右缘江砚仍约40%大块头肩躯干；不是通过图。",
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_villa_round3"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_supplement_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_villa_round3"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_keyframes_retry_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_round3_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_retry_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜19",
+    "shot_no": 19,
+    "beat_id": "ep01_a1",
+    "status": "passed",
+    "dependency": null,
+    "completed_rounds": 2,
+    "selected_file": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png"
+    ],
+    "active_round": 2,
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_supplement_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜19/ep01_镜19_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_retry_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_keyframes_retry_single"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜20",
+    "shot_no": 20,
+    "beat_id": "ep01_a1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_03.png",
+    "best_candidate_difference": "脸约32%、露至腹部且江砚大幅过肩；不是通过图。",
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_supplement_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_retry_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_continuity",
+          "/root/review_keyframes_retry_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_round3_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_retry_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜21",
+    "shot_no": 21,
+    "beat_id": "ep01_a1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_edits_round2_a",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_villa_round3"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_retry_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_edits_round2_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+    "best_candidate_difference": "主体顶空偏大，前景母亲肩/发构图不合，不能selected。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜21",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+        "remaining_difference": "主体顶空偏大，前景母亲肩/发构图不合，不能selected。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch2_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜22",
+    "shot_no": 22,
+    "beat_id": "ep01_a2_handoff",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_05.png"
+    ],
+    "active_round": 3,
+    "generator_agent_id": "/root/generate_keyframes_batch02_a",
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch02_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch02_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generator_b_room_recovered"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continue_review_continuity",
+          "/root/continue_review_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/takeover_generator_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_r1",
+          "/root/resume_r2"
+        ]
+      }
+    ],
+    "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+    "best_candidate_difference": "左右手动作和B背景较接近设计，但头顶留白约15%与画底至膝附近未满足5%留白、大腿中段裁切；仅作最接近候选，不是通过或最终选图。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜22",
+        "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+        "remaining_difference": "03的左右手和机位最接近卡片，但头顶留白及身体截断不合批准中景，包表面拉链/织带形制有差异；仅为到限备选，不是通过图。",
+        "agent_id": "/root/resume_r2",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_22_round3_continuity.json"
+      },
+      {
+        "id": "ep01_镜22",
+        "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+        "remaining_difference": "左右手动作和B背景较接近设计，但头顶留白约15%与画底至膝附近未满足5%留白、大腿中段裁切；仅作最接近候选，不是通过或最终选图。",
+        "agent_id": "/root/resume_r1",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_22_round3_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜23",
+    "shot_no": 23,
+    "beat_id": "ep01_a2",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_05.png"
+    ],
+    "active_round": 3,
+    "generator_agent_id": "/root/generate_edits_round2_a",
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch02_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch02_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_edits_round2_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/resume_review_single"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+    "best_candidate_difference": "母亲肩片仅6%底角，主体略过大，未复原批准过肩构图。最佳候选不等于通过。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜23",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+        "remaining_difference": "母亲肩片仅6%底角，主体略过大，未复原批准过肩构图。最佳候选不等于通过。",
+        "agent_id": "/root/resume_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch2_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜24",
+    "shot_no": 24,
+    "beat_id": "ep01_a2",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_05.png"
+    ],
+    "active_round": 3,
+    "generator_agent_id": "/root/generate_keyframes_batch02_b",
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch02_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch02_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/continue_gen38"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_r1",
+          "/root/resume_r2"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_g2_35"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_r1",
+          "/root/resume_r2"
+        ]
+      }
+    ],
+    "external_pending_call": "旧Generator 10:49:52 image_gen调用，未重发",
+    "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+    "best_candidate_difference": "右手、情绪、B背景、头顶留白与窄前景肩已较接近，头部仍约41%画高、画底胸下，未达到约50%头高的上胸近景；只是最接近候选，不是通过。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜24",
+        "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+        "remaining_difference": "04右手/表情/机位连续且头顶最接近，但头部约40%而非50%，下截仍偏低，右肩略宽；仅到限备选，不代表通过。",
+        "agent_id": "/root/resume_r2",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_24_round3_continuity.json"
+      },
+      {
+        "id": "ep01_镜24",
+        "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+        "remaining_difference": "右手、情绪、B背景、头顶留白与窄前景肩已较接近，头部仍约41%画高、画底胸下，未达到约50%头高的上胸近景；只是最接近候选，不是通过。",
+        "agent_id": "/root/resume_r1",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_24_round3_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜25",
+    "shot_no": 25,
+    "beat_id": "ep01_a3",
+    "status": "passed",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_05.png"
+    ],
+    "active_round": 3,
+    "generator_agent_id": "/root/generate_keyframes_batch02_b",
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch02_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch02_single",
+          "/root/review_keyframes_round3_continuity"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continue_review_single",
+          "/root/resume_r2"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/continue_gen38"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_r1",
+          "/root/resume_r2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜26",
+    "shot_no": 26,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜27",
+    "shot_no": 27,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜28",
+    "shot_no": 28,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜29",
+    "shot_no": 29,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜30",
+    "shot_no": 30,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜31",
+    "shot_no": 31,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜32",
+    "shot_no": 32,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜33",
+    "shot_no": 33,
+    "beat_id": "ep01_v1",
+    "status": "blocked_dependency",
+    "dependency": "ep01_v1",
+    "completed_rounds": 0,
+    "selected_file": "",
+    "candidates": [],
+    "active_round": 0,
+    "generation_in_progress": false
+  },
+  {
+    "id": "ep01_镜34",
+    "shot_no": 34,
+    "beat_id": "ep01_v2",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_keyframes_batch05_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/single_b3_recovered"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continue_review_single",
+          "/root/continuity_b2_recovered",
+          "/root/single_b3_recovered"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+    "best_candidate_difference": "本报告只复核05，不对未审03/04作全轮排名；05仍左手持杆、右手空垂，不通过，不能登记为最终选图。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+        "remaining_difference": "左手拉箱而非右手；建议第三轮仅编辑双臂和箱杆连接。",
+        "id": "ep01_镜34",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+        "agent_id": "/root/continuity_b2_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch3_continuity.json"
+      },
+      {
+        "id": "ep01_镜34",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+        "remaining_difference": "本报告只复核05，不对未审03/04作全轮排名；05仍左手持杆、右手空垂，不通过，不能登记为最终选图。",
+        "agent_id": "/root/continue_review_single",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_takeover_20260905_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜35",
+    "shot_no": 35,
+    "beat_id": "ep01_r1",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch03_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/resume_review_room_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/continue_gen38"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continue_review_continuity",
+          "/root/continue_review_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_g2_35"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_r1",
+          "/root/resume_r2"
+        ]
+      }
+    ],
+    "generator_agent_id": "/root/continue_gen38",
+    "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+    "best_candidate_difference": "主要左右手与持物动作已修正，仍露出江砚膝下腿和大量地板，未到大腿中段裁切。05仅为最接近候选，不是通过。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "id": "ep01_镜35",
+        "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+        "remaining_difference": "05左右手和门/箱包归属正确，人物身体结构正常；但取景仍宽至膝下，未达到批准大腿中段中景。仅到限备选，不能登记通过。",
+        "agent_id": "/root/resume_r2",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_35_round3_continuity.json"
+      },
+      {
+        "id": "ep01_镜35",
+        "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+        "remaining_difference": "主要左右手与持物动作已修正，仍露出江砚膝下腿和大量地板，未到大腿中段裁切。05仅为最接近候选，不是通过。",
+        "agent_id": "/root/resume_r1",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_35_round3_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  },
+  {
+    "id": "ep01_镜36",
+    "shot_no": 36,
+    "beat_id": "ep01_r2",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_keyframes_batch04_b",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch03_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/resume_review_room_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generator_b_room_recovered"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/single_b3_recovered"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_04.png",
+    "best_candidate_difference": "面颈胸皮肤重复浮雕纹路明显，与角色基准不一致。",
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_04.png",
+        "remaining_difference": "面颈胸皮肤重复浮雕纹路明显，与角色基准不一致。",
+        "id": "ep01_镜36",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_04.png",
+        "agent_id": "/root/continuity_b2_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch3_continuity.json"
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜37",
+    "shot_no": 37,
+    "beat_id": "ep01_r2",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_keyframes_batch04_b",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch02_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/resume_review_room_single",
+          "/root/review_keyframes_batch02_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_keyframes_batch05_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generator_b_room_recovered"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/single_b3_recovered"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+    "best_candidate_difference": "第三轮三张右下肩片仍过宽；05最接近但未通过。",
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+        "remaining_difference": "母亲右下肩片最宽约30%，未达10%至15%的窄过肩。",
+        "id": "ep01_镜37",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+        "agent_id": "/root/continuity_b2_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch3_continuity.json"
+      },
+      {
+        "id": "ep01_镜37",
+        "highest_round": 3,
+        "verdict": "capped",
+        "proposed_file": "",
+        "selected_file": "",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+        "reason": "第三轮三张右下肩片仍过宽；05最接近但未通过。",
+        "remaining_difference": "第三轮三张右下肩片仍过宽；05最接近但未通过。",
+        "agent_id": "/root/single_b3_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch3_single.json"
+      }
+    ]
+  },
+  {
+    "id": "ep01_镜38",
+    "shot_no": 38,
+    "beat_id": "ep01_r2",
+    "status": "capped",
+    "dependency": null,
+    "completed_rounds": 3,
+    "selected_file": "",
+    "candidates": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_03.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_04.png",
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_05.png"
+    ],
+    "active_round": 3,
+    "generation_in_progress": false,
+    "generator_agent_id": "/root/generate_keyframes_batch04_b",
+    "history": [
+      {
+        "round": 1,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_00.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generate_38"
+        ],
+        "reviewer_agent_ids": [
+          "/root/resume_review_room_continuity",
+          "/root/resume_review_room_single"
+        ]
+      },
+      {
+        "round": 2,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_02.png"
+        ],
+        "generator_agent_ids": [
+          "/root/generate_keyframes_batch04_b"
+        ],
+        "reviewer_agent_ids": [
+          "/root/review_edits_round2_continuity",
+          "/root/review_round2_next_single"
+        ]
+      },
+      {
+        "round": 3,
+        "files": [
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_03.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_04.png",
+          "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_05.png"
+        ],
+        "generator_agent_ids": [
+          "/root/resume_generator_a"
+        ],
+        "reviewer_agent_ids": [
+          "/root/continuity_b2_recovered",
+          "/root/single_b3_recovered"
+        ]
+      }
+    ],
+    "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+    "best_candidate_difference": "第三轮三张明显偏远，头高约32%至33%，含上腹且前景肩片过宽；已实看旧01比新三张接近但仍非通过。本次不修改旧审查结论。",
+    "reviewer_best_candidate_recommendations": [
+      {
+        "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_05.png",
+        "remaining_difference": "取景仍偏宽，头高仅约32%，露腹襟/肘附近，肩片也偏宽。",
+        "id": "ep01_镜38",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_05.png",
+        "agent_id": "/root/continuity_b2_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch3_continuity.json"
+      },
+      {
+        "id": "ep01_镜38",
+        "highest_round": 3,
+        "verdict": "capped",
+        "proposed_file": "",
+        "selected_file": "",
+        "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+        "reason": "第三轮三张明显偏远，头高约32%至33%，含上腹且前景肩片过宽；已实看旧01比新三张接近但仍非通过。本次不修改旧审查结论。",
+        "remaining_difference": "第三轮三张明显偏远，头高约32%至33%，含上腹且前景肩片过宽；已实看旧01比新三张接近但仍非通过。本次不修改旧审查结论。",
+        "agent_id": "/root/single_b3_recovered",
+        "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/review_keyframes_resume_batch3_single.json"
+      }
+    ],
+    "best_candidate_usage": "仅供查看，未通过全部独立审查，禁止作为已选首帧"
+  }
+]

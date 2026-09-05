@@ -6,12 +6,14 @@ Views.setup = async function setup(app, project) {
     <div class="card"><h2>文字基础文件</h2><p class="setup-progress" role="status">正在加载…</p>
       <progress class="setup-meter" max="1" value="0"></progress>
       <p class="setup-error notice error" hidden></p><button class="primary setup-start" hidden>开始生成文字文件</button>
+      <button class="setup-cancel" hidden>终止生成</button>
       <p class="muted">文字生成在后台进行，关闭页面不会停止。未完成时可回来继续；已完成的文件不会被重写。</p>
       <div class="setup-files"></div></div>
     <div class="card setup-document" hidden><h2 class="document-title"></h2><pre></pre><button class="close-document">收起</button></div>
     <div class="card"><h2>图片审批</h2><p>每项任务需先检查完整提示词、参考图与张数，再明确批准。后续关键帧图片也使用同样的审批流程。</p><div class="setup-image-tasks"></div></div>
     <div class="card"><h2>视频与租卡审批</h2><p class="setup-gpu"></p></div>`;
   const start = app.querySelector('.setup-start');
+  const stop = app.querySelector('.setup-cancel');
   const error = app.querySelector('.setup-error');
   let active = false;
   let fileSignature = '';
@@ -46,7 +48,9 @@ Views.setup = async function setup(app, project) {
       app.querySelector('.setup-progress').textContent = `${s.step}（${s.completed}/${s.total}）`;
       const meter = app.querySelector('.setup-meter'); meter.max = s.total; meter.value = s.completed;
       error.hidden = !s.error; error.textContent = s.error || '';
-      start.hidden = active || s.status === 'done';
+      start.hidden = active || s.status === 'done' || s.can_resume === false;
+      stop.hidden = !['running', 'failed', 'interrupted'].includes(s.status);
+      if (s.can_resume === false) app.querySelector('.setup-progress').textContent += ' · 已改为手动编辑，不再自动补写旧规划';
       start.textContent = s.status === 'ready' ? '开始生成文字文件' : '继续生成未完成的文字';
       app.querySelector('.setup-gpu').textContent = data.gpu.message;
       const files = JSON.stringify(s.files);
@@ -102,6 +106,12 @@ Views.setup = async function setup(app, project) {
     try { await API.startSetup(project); await refresh(); }
     catch (err) { error.hidden = false; error.textContent = err.message; }
     finally { start.disabled = false; }
+  });
+  stop.addEventListener('click', async () => {
+    stop.disabled = true; stop.textContent = '正在终止…';
+    try { await API.cancelSetup(project); await refresh(); await TaskUI.refresh(); }
+    catch (err) { error.hidden = false; error.textContent = err.message; }
+    finally { stop.disabled = false; stop.textContent = '终止生成'; }
   });
   await refresh();
 };

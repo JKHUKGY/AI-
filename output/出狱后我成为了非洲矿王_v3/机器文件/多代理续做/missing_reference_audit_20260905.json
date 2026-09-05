@@ -1,0 +1,51 @@
+[
+  {
+    "id": "SC01_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；玄关居后、沙发左前景；沙发入画必须交代刘兰顾瑶。"
+  },
+  {
+    "id": "SC01_C侧机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；左窗、右电视墙、沙发横贯；人物按座位填入，禁止生成空沙发。"
+  },
+  {
+    "id": "SC03_A主机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03_A主机位_紧/SC03_A主机位_紧_00.png",
+    "status": "historical_candidate",
+    "evidence": "v2/keyframes/ep01/keyframe_cards.json 既有使用路径",
+    "note": "尚未重新验收；夜景不能用于第1集日内戏。"
+  },
+  {
+    "id": "SC03_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC03_B反打_紧/SC03_B反打_紧_00.png",
+    "status": "historical_candidate",
+    "evidence": "v2/keyframes/ep01/keyframe_cards.json 既有使用路径",
+    "note": "尚未重新验收；夜景不能用于第1集日内戏。"
+  },
+  {
+    "id": "SC05_监狱门口_A主机位_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；剥皮门柱、院内平房/树冠保留，车在裁切外。"
+  },
+  {
+    "id": "SC05_监狱门口_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；门外红土路、右侧越野车保留。"
+  },
+  {
+    "id": "SC06_B反打_紧",
+    "path": "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "status": "selected",
+    "evidence": "2026-09-05 接续实际看图验收",
+    "note": "本批看图；栏杆、左侧黄出租车/白小巴、棕榈/广告骨架保留。"
+  }
+]

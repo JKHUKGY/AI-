@@ -1,0 +1,41 @@
+{
+  "agent_id": "/root/resume_r2",
+  "unit_id": "ep01_镜25",
+  "round": 2,
+  "review_scope": "continuity",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png"
+  ],
+  "source_card_sha256": "826f74cc5f2342fef43b11256c5b5d715db81ab47b0e962ae9c05e45eb442454",
+  "created_at": "2026-09-05T11:16:53.754883+00:00",
+  "images": [
+    {
+      "id": "ep01_镜25",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+      "verdict": "fail",
+      "reason": "A机位左玻璃右车道、阴影和人物服饰身份连续；母左手提同一类大橄榄包、右手空垂，儿子右手拉深灰箱且双肩空，母领先儿子向停车区走的情节成立。江砚发顶约画高29%、脚底85%，全身约56%，明显超过批准40%；母亲约42%，前后层存在但主角整体未按卡缩小。",
+      "fix_instruction": "以本图为同镜编辑基底，仅将取景拉远，主角江砚头脚完整高度约40%，脚底约85%，上方保留机场环境；保留母左手提包右手空垂、儿子右手箱、两人侧背朝停车区的步态和三名远景旅客。",
+      "card_field": "framing.subject_frac; framing.crop_zh; framing.plate_crop_zh"
+    },
+    {
+      "id": "ep01_镜25",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png",
+      "verdict": "fail",
+      "reason": "A机位、日光、服饰、箱包归属基本连续；江砚右手箱、母左手包可见。江砚发顶约33%、脚底84%，全身约51%，超过40%；母亲头转向左侧江砚，未按卡看右侧停车区。她的空右手局部被身体遮住，不足以确认全部手指及与包间距，不据此断言换手。",
+      "fix_instruction": "拉远到江砚全身40%并保留脚下15%；母亲保持领先和侧背迈步，头与视线朝画面右侧停车区，空右手自然垂于右腿旁。",
+      "card_field": "framing.subject_frac; people[1].gaze_at; people[1].body_dir"
+    }
+  ],
+  "proposed_file": "",
+  "recommended_next_base": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+  "standard_note": "按当前已批准动作：苏慧左手包、右手空垂；不添加右手贴胸要求。02为主代理回收的工具产物，本报告只判断实际图像，不证明缺失的工具返回日志。"
+}

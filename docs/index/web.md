@@ -12,7 +12,9 @@ web/server/
   ai_prompt.py   通过服务器已登录的 Codex CLI，结合历史原文和当前版本改写绘图提示词
   prompt_history.py 同任务的旧提示词、Codex 草稿和手动版本
   prompt_tasks.py  后台文字任务及结果持久化，重复请求复用正在运行的任务
+  generation_control.py  取消生成、进程组终止及结果提交互斥
   help_chat.py / help_server.py  Luna 使用帮助问答及独立服务
+  content_editor.py       角色/场景/分集/镜头增删、删除预览、编号保留与回收站恢复
   project_setup.py 导入剧本、后台生成文字基础文件与断点续跑；不执行媒体或租卡
   approvals.py   图片任务预览快照与手动审批，重复确认不重复启动
   router.py      极简路由层：正则路径匹配 + method 分发
@@ -26,6 +28,7 @@ web/frontend/
   index.html, app.js, api.js, shared.js, style.css   页面骨架/路由/API封装/公共组件/样式
   tasks.js              全站任务栏与刷新恢复，独立于当前页面
   help.js               侧边使用帮助对话、当前页面指引与常见问题
+  content-editor.js     新增表单、删除确认与回收站公共组件
   views/home.js         项目列表首页与新建项目/剧本导入
   views/setup.js        文字筹备进度、文件预览、图片审批与租卡待办
   views/guide.js        渲染 content/guide.md 给剧本家看的操作指南

@@ -1,0 +1,71 @@
+{
+  "agent_id": "/root/resume_r1",
+  "unit_id": "ep01_镜22",
+  "round": 3,
+  "review_scope": "single",
+  "independent_review": true,
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_05.png"
+  ],
+  "source_basis": "当前源卡ep01_镜22及ep01_a2_handoff场次节拍；原文第59行母亲红眼上前接包；实际打开B机场底板和两名角色三视图。未读取其他审查报告。",
+  "images": [
+    {
+      "id": "ep01_镜22",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+      "verdict": "fail",
+      "reason": "B反打背景已成立：黄车在左、挑檐在右上、栏杆向右远收；人物身份服装、母左子右纵深和接包起始状态可辨。江砚近侧左臂抬到胸袋并有纸条、远侧手落在箱杆，左右动作较接近源卡，远侧前臂被躯干遮挡部分不作臆断。未通过的是景别：江砚头顶留白约15%，画底落到膝附近而非大腿中段，天空留量显著大于指定5%头顶空隙。",
+      "fix_instruction": "已达第三轮上限，保留候选并登记差异，不再执行第四轮。若后续另行修订方案，先以03为保留基础将发顶移到画高约5%、底边收紧到大腿中段；04/05还需恢复左手胸袋、右手箱杆的身体连线。",
+      "card_field": [
+        "framing.headroom_frac",
+        "framing.crop_zh",
+        "framing.plate_crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜22",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_04.png",
+      "verdict": "fail",
+      "reason": "B反打场景、角色外观与背包仍双肩背着的起始状态成立，苏慧伸双手接包。但江砚靠相机、从左肩连续向下的左臂握箱杆，胸袋边的手来自远侧右臂，与左手收纸、右手扶箱相反。头顶留白约16%，画底逼近膝部，未达到5%留白与大腿中段裁切。",
+      "fix_instruction": "已达第三轮上限，保留候选并登记差异，不再执行第四轮。若后续另行修订方案，先以03为保留基础将发顶移到画高约5%、底边收紧到大腿中段；04/05还需恢复左手胸袋、右手箱杆的身体连线。",
+      "card_field": [
+        "framing.headroom_frac",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[0].action_zh",
+        "people[0].contact_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜22",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_05.png",
+      "verdict": "fail",
+      "reason": "B反打场景、母子站位、服装与抬手接包节拍成立。江砚近侧左肩—左肘—左手明确连续连接箱杆，右手在胸袋捏纸，仍把指定左右动作调换。头顶留白约21%，画底到膝附近，天空明显过多，未达到大腿中段中景及5%头顶留白。",
+      "fix_instruction": "已达第三轮上限，保留候选并登记差异，不再执行第四轮。若后续另行修订方案，先以03为保留基础将发顶移到画高约5%、底边收紧到大腿中段；04/05还需恢复左手胸袋、右手箱杆的身体连线。",
+      "card_field": [
+        "framing.headroom_frac",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "people[0].action_zh",
+        "people[0].contact_zh"
+      ]
+    }
+  ],
+  "proposed_file": "",
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜22",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+      "remaining_difference": "左右手动作和B背景较接近设计，但头顶留白约15%与画底至膝附近未满足5%留白、大腿中段裁切；仅作最接近候选，不是通过或最终选图。"
+    }
+  ]
+}

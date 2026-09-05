@@ -1,0 +1,12 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜24",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Create a much tighter UPPER-CHEST close-up of the woman. Place her hair crown at 5% down from the top and her chin at 55%, so her complete head occupies HALF the image height. Cut the bottom edge across her upper chest. Move the blurred young man almost entirely beyond the right edge: retain only a narrow shoulder/hair sliver inside the rightmost 10–15% of the frame, including at the bottom corner. Also switch the woman’s raised hand: raise her anatomical RIGHT arm from the shoulder on image-left and gently touch her RIGHT eye’s outer corner, on image-left, with her RIGHT fingers. Her anatomical LEFT arm on image-right hangs down toward the backpack outside the crop. Preserve two natural arms and hands.",
+      "preserve_zh": "Preserve the exact woman’s identity, gray hair bun, moist eyes, restrained strained smile, gaze toward her son on screen-right, old cream blouse and gray apron. Keep the established B reverse camera direction with soft white minibus and yellow taxi fragments behind her, palms, canopy at upper-right and the same tropical daylight. The backpack remains in her lowered left hand outside the close-up, the young man’s shoulders remain bare."
+    }
+  ]
+}

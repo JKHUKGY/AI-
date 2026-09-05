@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜24",
+    "prompt": "Edit this same photograph. Create a much tighter UPPER-CHEST close-up of the woman. Place her hair crown at 5% down from the top and her chin at 55%, so her complete head occupies HALF the image height. Cut the bottom edge across her upper chest. Move the blurred young man almost entirely beyond the right edge: retain only a narrow shoulder/hair sliver inside the rightmost 10–15% of the frame, including at the bottom corner. Also switch the woman’s raised hand: raise her anatomical RIGHT arm from the shoulder on image-left and gently touch her RIGHT eye’s outer corner, on image-left, with her RIGHT fingers. Her anatomical LEFT arm on image-right hangs down toward the backpack outside the crop. Preserve two natural arms and hands.\nPreserve the exact woman’s identity, gray hair bun, moist eyes, restrained strained smile, gaze toward her son on screen-right, old cream blouse and gray apron. Keep the established B reverse camera direction with soft white minibus and yellow taxi fragments behind her, palms, canopy at upper-right and the same tropical daylight. The backpack remains in her lowered left hand outside the close-up, the young man’s shoulders remain bare.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/takeover_24_round3_edit_plan.json",
+    "script_ref_zh": "script_source.txt 第61行「苏慧（抹了把眼睛，强笑）：这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。」——她用解释和接风饭掩饰生活辛苦，强笑不能演成真开心。"
+  }
+]

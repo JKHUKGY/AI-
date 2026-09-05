@@ -1,0 +1,23 @@
+{
+  "status": "cancelled",
+  "step": "已终止自动生成，已保存文件保留，可手动编辑",
+  "completed": 1,
+  "total": 2,
+  "files": [
+    "README.md",
+    "assets/jobs_initial.json",
+    "assets/selected.md",
+    "keyframes/README.md",
+    "production_plan.md",
+    "project.json",
+    "source/script.txt",
+    "storyboard/characters.md",
+    "storyboard/outline.md",
+    "storyboard/scenes.md",
+    "storyboard/style_bible.md",
+    "videos/README.md"
+  ],
+  "error": null,
+  "updated_at": "2026-09-05T10:28:19",
+  "cancel_structure_revision": 0
+}

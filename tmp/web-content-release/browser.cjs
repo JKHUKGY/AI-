@@ -1,0 +1,58 @@
+const {chromium} = require('/tmp/web-reference-browser/node_modules/playwright');
+const assert = require('node:assert/strict');
+const root='/workspaces/AI-/tmp/web-content-release';
+(async()=>{
+ const browser=await chromium.launchPersistentContext(root+'/profile',{executablePath:'/home/codespace/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome',headless:true,viewport:{width:1300,height:950},args:['--no-sandbox']});
+ try {
+  const page=await browser.newPage(); const errors=[]; page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('http://127.0.0.1:18009');
+  const name='增删验收'+Date.now(), prefix='/api/projects/'+encodeURIComponent(name);
+  await page.evaluate(async({name})=>{
+   await API.createProject({name,script:'小雨推开旧书店的门。小雨说：“我来取父亲留下的信。”店主从柜台下取出一个信封。',duration:15});
+   await API.startSetup(name);
+  },{name});
+  await page.waitForFunction(async name=>(await API.setup(name)).setup.status==='done',name);
+  const route=section=>'http://127.0.0.1:18009/#/p/'+encodeURIComponent(name)+'/'+section;
+  await page.goto(route('characters'));
+  await page.getByRole('button',{name:'＋ 新增角色',exact:true}).click();
+  await page.locator('[name="名称"]').fill('阿云'); await page.locator('[name="描述"]').fill('年轻邮递员，蓝色外套，完整三视图提示词。');
+  await page.locator('.content-submit').click();
+  await page.waitForFunction(()=>document.querySelector('#charList')?.textContent.includes('阿云'));
+  const character=page.locator('.figure-block').filter({has:page.locator('h2').filter({hasText:'阿云'})});
+  assert.equal(await character.locator('.regen-toggle').count(),1);
+  await character.locator('.delete-content').click();
+  await page.locator('.content-dialog').waitFor();
+  assert.match(await page.locator('.content-dialog').textContent(),/已有图片/);
+  await page.locator('.content-delete-confirm').click();
+  await page.waitForFunction(()=>!document.querySelector('#charList')?.textContent.includes('阿云'));
+  await page.locator('.open-trash').click(); await page.locator('.restore-item').click();
+  await page.waitForFunction(()=>document.querySelector('#charList')?.textContent.includes('阿云'));
+  await page.locator('.content-cancel').click();
+  await page.goto(route('scenes')); await page.getByRole('button',{name:'＋ 新增场景',exact:true}).click();
+  await page.locator('[name="名称"]').fill('码头'); await page.locator('[name="描述"]').fill('清晨码头空景，远处起重机。'); await page.locator('.content-submit').click();
+  await page.waitForFunction(()=>document.querySelector('#sceneList')?.textContent.includes('码头'));
+  await page.goto(route('episodes/1')); await page.getByRole('button',{name:'＋ 新增分集',exact:true}).click();
+  await page.locator('[name="名称"]').fill('新的旅程'); await page.locator('.content-submit').click();
+  await page.waitForFunction(()=>location.hash.endsWith('/episodes/2'));
+  await page.getByRole('button',{name:'＋ 新增镜头',exact:true}).click();
+  await page.locator('[name="画面描述"]').fill('阿云来到码头'); await page.locator('[name="场景编号"]').fill('SC02'); await page.locator('.content-submit').click();
+  await page.waitForFunction(()=>document.querySelectorAll('#shotBody tr').length===1);
+  await page.locator('.insert-shot').click(); await page.locator('[name="画面描述"]').fill('阿云回头'); await page.locator('.content-submit').click();
+  await page.waitForFunction(()=>document.querySelectorAll('#shotBody tr').length===2);
+  await page.locator('#shotBody tr').first().locator('.delete-content').click(); await page.locator('.content-delete-confirm').click();
+  await page.waitForFunction(()=>document.querySelectorAll('#shotBody tr').length===1);
+  assert.equal(await page.locator('#shotBody tr td').first().textContent(),'2');
+  await page.locator('.delete-episode').click(); await page.locator('.content-delete-confirm').click();
+  await page.waitForFunction(()=>!document.querySelector('#epTabs')?.textContent.includes('第2集'));
+  await page.locator('.open-trash').first().click();
+  await page.locator('.trash-row').filter({has:page.locator('span').filter({hasText:/^第 2 集$/})}).locator('.restore-item').click();
+  await page.waitForFunction(()=>document.querySelector('#epTabs')?.textContent.includes('第2集'));
+  await page.locator('.content-cancel').click();
+  await page.goto(route('characters')); await page.screenshot({path:root+'/characters.png',fullPage:true});
+  await page.getByRole('button',{name:'＋ 新增角色',exact:true}).click(); await page.setViewportSize({width:390,height:844});
+  await page.screenshot({path:root+'/mobile-add.png'});
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+  assert.deepEqual(errors,[]);
+  console.log('PASS: add character/scene/episode/shot, insert, delete preview, stable shot IDs, trash restore, blank episode, new image panel, mobile');
+ } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

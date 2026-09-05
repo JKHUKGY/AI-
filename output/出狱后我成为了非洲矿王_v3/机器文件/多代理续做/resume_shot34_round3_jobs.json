@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜34",
+    "prompt": "Edit this same photograph. 把靠相机的左手从拉杆释放，左肘弯曲、空左手到胸前；原垂下的远端右臂向前伸，右肩—右肘—右手清楚连续，右手握拉杆，箱体移至身体前方偏远侧，保留深灰细竖棱四轮外观。\n其余完整保留：江砚侧背朝左全身步态与衣服，母亲侧面右手扶后肩左手提同一大包，两坐者身份原座与动作，原开放楼梯窄门、北窗泳池、沙发、吊灯、全景机位及光照。\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/resume_shot34_round3_plan.json",
+    "script_ref_zh": "script_source.txt 第69行「苏慧（赶紧打圆场，推着江砚往客房走）：快把行李放进去，歇会儿就开饭了，你表叔一会儿就回来。」——苏慧赶紧把儿子带离冲突，不代替他争论。"
+  }
+]

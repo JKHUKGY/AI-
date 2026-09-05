@@ -1,0 +1,112 @@
+{
+  "id": "ep01_镜22",
+  "shot_no": 22,
+  "scene": "SC06",
+  "beat_id": "ep01_a2_handoff",
+  "tier": "A",
+  "plate_id": "SC06_机场出口_B反打",
+  "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+  "plate_read_zh": "实际看图：白小巴与黄车在左后、棕榈和广告骨架居中，右上挑檐；栏杆左近向右远斜收，地面约下半幅、右侧阴影。",
+  "script_ref_zh": "script_source.txt 第59行「苏慧（眼眶一下子红了，上前接过他的背包，声音发颤）：小砚，可算到了，累不累？快跟我回家。」——苏慧声音发颤，一见面就替儿子拿行李。",
+  "beat_zh": "江砚右前景三分之四背面朝苏慧，右手扶行李箱、左手把纸条收进口袋后准备脱下背包；苏慧左中景三分之四正面，红眼抬手接包、看着江砚，栏杆与车队留在远景。",
+  "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+  "camera_zh": "相机在机场出口玻璃门一侧，约1.5米高反向看接站车道，左车队、右上挑檐。",
+  "framing": {
+    "shot_size": "中景",
+    "subject_frac": 0.55,
+    "crop_zh": "画面上边留头顶约5%，底边把近端人物从大腿中段切断，看不到膝盖以下和脚；交接手与道具在中部。",
+    "plate_crop_zh": "取宽底板中段人物站立区域，裁去大块天空或天花、下方空地，左右机位结构保持。",
+    "subject_measurement": "cropped",
+    "headroom_frac": 0.05,
+    "primary_subject": "江砚"
+  },
+  "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+  "people": [
+    {
+      "name": "江砚",
+      "ref_images": [
+        "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+        "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png"
+      ],
+      "ref_note_zh": "第一张为江砚角色三视图，第二张为已选机场交包前主帧，仅用于同一个人的服装、左右持物和大箱包外观；本镜机位与走位按B底板和卡片",
+      "pos_x": "right",
+      "depth": "near",
+      "body_dir": "screen_left",
+      "camera_relation": "three_quarter_back",
+      "gaze_at": "苏慧",
+      "posture_zh": "站在玻璃门外阴影边，肩背略紧",
+      "action_zh": "身体朝画面左侧，靠相机的左肘抬到胸前，左手把小纸条收进左胸衣袋。远侧右臂向身体前方伸出，右手握深灰硬壳箱的黑拉杆，右前臂与近侧抬起的左肘在轮廓上明确分开。大橄榄登山包仍背在双肩。",
+      "contact_zh": null
+    },
+    {
+      "name": "苏慧",
+      "ref_images": [
+        "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+      ],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "left",
+      "depth": "mid",
+      "body_dir": "screen_right",
+      "camera_relation": "three_quarter_front",
+      "gaze_at": "江砚",
+      "posture_zh": "站在接站通道靠停车区一侧，含着肩",
+      "action_zh": "双手抬到腰前准备接儿子的登山包，眼眶微红",
+      "contact_zh": null
+    }
+  ],
+  "background_people": [
+    {
+      "name": "旅客甲",
+      "ref_images": [],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "center",
+      "depth": "far",
+      "body_dir": "screen_right",
+      "camera_relation": "profile",
+      "gaze_at": "off_right",
+      "posture_zh": "站在远处通道侧面，重心落在前脚",
+      "action_zh": "各自持随身行李",
+      "contact_zh": null,
+      "focus": "defocused",
+      "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+    },
+    {
+      "name": "旅客乙",
+      "ref_images": [],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "far_left",
+      "depth": "far",
+      "body_dir": "screen_right",
+      "camera_relation": "profile",
+      "gaze_at": "off_right",
+      "posture_zh": "站在远处通道侧面，重心落在前脚",
+      "action_zh": "各自持随身行李",
+      "contact_zh": null,
+      "focus": "defocused",
+      "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+    },
+    {
+      "name": "旅客丙",
+      "ref_images": [],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "far_right",
+      "depth": "far",
+      "body_dir": "screen_right",
+      "camera_relation": "profile",
+      "gaze_at": "off_right",
+      "posture_zh": "站在远处通道侧面，重心落在前脚",
+      "action_zh": "各自持随身行李",
+      "contact_zh": null,
+      "focus": "defocused",
+      "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+    }
+  ],
+  "present_off_frame": [],
+  "props_zh": [
+    "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+    "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+  ],
+  "relation_zh": "苏慧声音发颤，一见面就替儿子拿行李。",
+  "count": 2,
+  "notes": "阶段一待审稿；首帧取动作起点。本镜结束：包在苏慧左手，江砚肩上为空；之后不能重新背包。 项目装配澄清：明确头顶留白5%与身体截断边界优先，原subject_frac保留为原稿景别标签；避免把近景/中景人物顶空机械算成22%至45%。 第二轮2张：结合两名独立审查修正裁切、过肩和人体左右连线；保持原文动作起点。"
+}

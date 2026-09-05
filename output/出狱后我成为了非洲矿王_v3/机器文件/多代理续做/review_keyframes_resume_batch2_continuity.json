@@ -1,0 +1,182 @@
+{
+  "agent_id": "/root/continuity_b2_recovered",
+  "review_scope": "continuity",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位/SC05_监狱门口_A主机位_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位_紧/SC06_机场出口_A主机位_紧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_03.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_05.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_04.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_05.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_03.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_05.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_04.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_05.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_03.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "人物身份、浅蓝衬衫/棕外套灰巾、B反打左江右陈与右后越野车均连贯，江砚左手开放水瓶及右手独立白盖保留。陈野远侧右臂接近伸直、手掌指尖向下垂在体侧，与近侧左臂同为下垂，未形成右掌朝下悬在右大腿前上方的拍腿起点；下缘仍到江砚膝部附近，未达原卡大腿中段裁切。",
+      "fix_instruction": "本镜已三轮到限，勿再生成；若后续另行授权修改，需将陈野远侧右肘弯起并让空右掌掌面朝下停于右大腿前上方，保持左臂下垂；收紧下边界到江砚大腿中段。",
+      "card_field": [
+        "people[1].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "人物身份、浅蓝衬衫/棕外套灰巾、B反打左江右陈与右后越野车均连贯，江砚左手开放水瓶及右手独立白盖保留。陈野远侧右臂接近伸直、手掌指尖向下垂在体侧，与近侧左臂同为下垂，未形成右掌朝下悬在右大腿前上方的拍腿起点；下缘仍到江砚膝部附近，未达原卡大腿中段裁切。",
+      "fix_instruction": "本镜已三轮到限，勿再生成；若后续另行授权修改，需将陈野远侧右肘弯起并让空右掌掌面朝下停于右大腿前上方，保持左臂下垂；收紧下边界到江砚大腿中段。",
+      "card_field": [
+        "people[1].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_05.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "人物身份、浅蓝衬衫/棕外套灰巾、B反打左江右陈与右后越野车均连贯，江砚左手开放水瓶及右手独立白盖保留。陈野远侧右臂接近伸直、手掌指尖向下垂在体侧，与近侧左臂同为下垂，未形成右掌朝下悬在右大腿前上方的拍腿起点；下缘仍到江砚膝部附近，未达原卡大腿中段裁切。",
+      "fix_instruction": "本镜已三轮到限，勿再生成；若后续另行授权修改，需将陈野远侧右肘弯起并让空右掌掌面朝下停于右大腿前上方，保持左臂下垂；收紧下边界到江砚大腿中段。",
+      "card_field": [
+        "people[1].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "A机位门柱、半开铁门、左车及人物服装身份连贯，两人均在门外且江砚尚未上车。陈野仍约54%画高，江砚约39%画高而鞋底在画高约71%至72%；陈野鞋底约86%，两人脚线相差约14%画高，仍是明显前后距离，未形成卡片两人脚下约15%、半步纵深关系。右手与瓶口紧邻处呈重复细条纹状，独立白盖不足以确认。",
+      "fix_instruction": "已三轮到限，勿继续生成。若以后重新授权修改，应按framing.crop_zh局部调整人物比例和落地点，陈野约45%、江砚约40%、鞋底均约85%；恢复自然右手拇食指及匹配瓶口的单一白盖。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[0].action_zh",
+        "people[1].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_04.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "A机位门柱、半开铁门、左车及人物服装身份连贯，两人均在门外且江砚尚未上车。陈野仍约54%画高，江砚约39%画高而鞋底在画高约71%至72%；陈野鞋底约86%，两人脚线相差约14%画高，仍是明显前后距离，未形成卡片两人脚下约15%、半步纵深关系。右手举至胸上方，手指及掌缘呈重复条纹状，独立白盖不足以确认。",
+      "fix_instruction": "已三轮到限，勿继续生成。若以后重新授权修改，应按framing.crop_zh局部调整人物比例和落地点，陈野约45%、江砚约40%、鞋底均约85%；恢复自然右手拇食指及匹配瓶口的单一白盖。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[0].action_zh",
+        "people[1].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_05.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "A机位门柱、半开铁门、左车及人物服装身份连贯，两人均在门外且江砚尚未上车。陈野仍约54%画高，江砚约39%画高而鞋底在画高约71%至72%；陈野鞋底约86%，两人脚线相差约14%画高，仍是明显前后距离，未形成卡片两人脚下约15%、半步纵深关系。右手前出现与小瓶颈不匹配的大片灰白网纹状物，无法读为唯一白色小旋盖。",
+      "fix_instruction": "已三轮到限，勿继续生成。若以后重新授权修改，应按framing.crop_zh局部调整人物比例和落地点，陈野约45%、江砚约40%、鞋底均约85%；恢复自然右手拇食指及匹配瓶口的单一白盖。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[0].action_zh",
+        "people[1].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_03.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "江砚发型、五官、浅蓝衬衫与双肩橄榄包带和a1主帧连贯，保持交接前背包状态；玻璃在左、暖挑檐在上、右侧车道虚景及阴影肤色一致，手、箱、地址纸和旅客位于紧景画外有据，不要求补出。主体头高约58%，近景已成立，但右缘只残留少量灰发及肤色边，右下角没有卡片要求的苏慧后肩弧线，过肩空间标记未完整保留。",
+      "fix_instruction": "已到第三轮；如后续另行授权，仅恢复画面右下10%至15%宽虚焦后肩弧线，保持主体脸及肩带。",
+      "card_field": [
+        "background_people[0].posture_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+      "round": 3,
+      "verdict": "pass",
+      "reason": "江砚发型、五官、浅蓝衬衫与双肩橄榄包带和a1主帧连贯，保持交接前背包状态；玻璃在左、暖挑檐在上、右侧车道虚景及阴影肤色一致，手、箱、地址纸和旅客位于紧景画外有据，不要求补出。胸上裁切，头部约54%画高，发顶留白约8%，处于近景合理误差；右缘灰发/肤色边和右下极窄后肩提供前景标记，主体表情及朝母亲的视线清楚。",
+      "fix_instruction": "无需修改。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_05.png",
+      "round": 3,
+      "verdict": "pass",
+      "reason": "江砚发型、五官、浅蓝衬衫与双肩橄榄包带和a1主帧连贯，保持交接前背包状态；玻璃在左、暖挑檐在上、右侧车道虚景及阴影肤色一致，手、箱、地址纸和旅客位于紧景画外有据，不要求补出。胸上裁切，头部约50%画高；头顶留白约11%略多、右下后肩稍宽，但面部仍显著主导且母亲仅以虚焦灰发后肩占边，前后层及心疼表情成立。",
+      "fix_instruction": "无需修改。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+      "round": 3,
+      "verdict": "pass",
+      "reason": "江砚身份、发型、衬衫与a2主帧和同镜编辑源一致，双肩无包带，与21镜背包在肩及22镜交接后的状态区分明确。视线朝右前景母亲，表情关注；左玻璃结构、檐下肤色及暖日光延续。手、箱包、地址纸均在胸上裁切之外，背景局部虚焦人影未形成额外人物叙事。头顶约4%留白、头高约55%，胸上裁切；母亲右缘灰发侧后轮廓与右下浅色肩弧可读，主体面部及眼神清晰。",
+      "fix_instruction": "无需修改。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_04.png",
+      "round": 3,
+      "verdict": "pass",
+      "reason": "江砚身份、发型、衬衫与a2主帧和同镜编辑源一致，双肩无包带，与21镜背包在肩及22镜交接后的状态区分明确。视线朝右前景母亲，表情关注；左玻璃结构、檐下肤色及暖日光延续。手、箱包、地址纸均在胸上裁切之外，背景局部虚焦人影未形成额外人物叙事。头顶约5%留白、头高约55%，右缘灰发及肤色窄边、最右下很小浅色肩缘仍可见；前景宽度比10%至15%目标偏窄，但没有人物位置或视线连戏矛盾。",
+      "fix_instruction": "无需修改。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_05.png",
+      "round": 3,
+      "verdict": "pass",
+      "reason": "江砚身份、发型、衬衫与a2主帧和同镜编辑源一致，双肩无包带，与21镜背包在肩及22镜交接后的状态区分明确。视线朝右前景母亲，表情关注；左玻璃结构、檐下肤色及暖日光延续。手、箱包、地址纸均在胸上裁切之外，背景局部虚焦人影未形成额外人物叙事。头顶约6%留白、头高约54%，下缘在胸口；母亲右边缘头发及肤色轮廓、右下浅色肩缘连续，脸部主导。",
+      "fix_instruction": "无需修改。",
+      "card_field": []
+    }
+  ],
+  "status": "complete",
+  "reference_basis": "独立实看原图high、基准三视图、指定底板、机场a1/a2主帧与同镜编辑源；仅使用15/16/21/23源卡和相关scene_beats、script_ref_zh。未读取另一新审查报告。",
+  "proposed_files": {
+    "ep01_镜15": "",
+    "ep01_镜16": "",
+    "ep01_镜21": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+    "ep01_镜23": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png"
+  },
+  "best_candidates": {
+    "ep01_镜15": {
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+      "remaining_difference": "远侧右臂下垂、拍腿动作起点未成立；下缘较原卡偏低。"
+    },
+    "ep01_镜16": {
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+      "remaining_difference": "陈野比例及两人纵深不合原卡；江砚右手/白盖处条纹失真，独立白盖不足以确认。"
+    }
+  }
+}

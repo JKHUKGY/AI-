@@ -1,0 +1,54 @@
+{
+  "agent_id": "/root/continuity_b2_recovered",
+  "review_scope": "continuity",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "四人身份服装和位置、苏慧右扶后肩左提大橄榄包、刘兰北段看指甲和顾瑶南段看手机、房间楼梯/池景/吊灯/沙发及光线均连贯；全身朝左离场成立。近相机左臂伸下握拉杆，右手未握杆。因此机场以来右手拉箱的持物连续性仍未落实。",
+      "fix_instruction": "第三轮到限，停止本镜生成；保留最佳候选及右手未拉箱这一明确差异。",
+      "card_field": [
+        "people[0].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "四人身份服装和位置、苏慧右扶后肩左提大橄榄包、刘兰北段看指甲和顾瑶南段看手机、房间楼梯/池景/吊灯/沙发及光线均连贯；全身朝左离场成立。近相机左臂伸下握拉杆，右手未握杆。因此机场以来右手拉箱的持物连续性仍未落实。",
+      "fix_instruction": "第三轮到限，停止本镜生成；保留最佳候选及右手未拉箱这一明确差异。",
+      "card_field": [
+        "people[0].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "四人身份服装和位置、苏慧右扶后肩左提大橄榄包、刘兰北段看指甲和顾瑶南段看手机、房间楼梯/池景/吊灯/沙发及光线均连贯；全身朝左离场成立。近相机左肘虽抬起，左手仍压在升高的拉杆把手上；远侧右臂在身体后下方空垂，未接到箱杆。因此机场以来右手拉箱的持物连续性仍未落实。",
+      "fix_instruction": "第三轮到限，停止本镜生成；保留最佳候选及右手未拉箱这一明确差异。",
+      "card_field": [
+        "people[0].action_zh"
+      ]
+    }
+  ],
+  "status": "in_progress",
+  "reference_basis": "沿用本代理已实际看过的角色、机场主帧、客厅底板和34编辑源；新增原图逐张view_image high。未读新单图报告。"
+}

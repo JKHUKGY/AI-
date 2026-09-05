@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜35",
+    "prompt": "Edit this same photograph. Make two precise changes. (1) Swap the woman’s hand actions: her anatomical RIGHT arm, starting at the shoulder on image-left, bends across her chest and her RIGHT palm touches the door at shoulder height. Her anatomical LEFT arm, starting at the shoulder on image-right, hangs down holding the existing olive backpack by its top handle on her far left side. Show both arm-to-hand connections clearly. She looks up toward her son on image-right. (2) Move the framing closer: place the young man’s crown 5% below the top edge and cut the bottom edge across his MID-THIGHS, with his hands and suitcase handle visible. The final frame contains his head to mid-thigh only.\nPreserve the young man exactly: right foreground three-quarter back, left hand touching his chest, right hand holding the existing suitcase handle. Preserve both identities, worn clothing, the same single suitcase and single olive backpack, half-open door, desk on left, bed on right, daylight, and the original entering-room moment.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/takeover_35_round3_edit_plan.json",
+    "script_ref_zh": "script_source.txt 第70行「▲苏慧把江砚推进客房，反手带上门，才压低声音。」——门关上她才敢低声说话；时间仍是白天。"
+  }
+]

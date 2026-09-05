@@ -1,0 +1,110 @@
+{
+  "id": "ep01_镜25",
+  "shot_no": 25,
+  "scene": "SC06",
+  "beat_id": "ep01_a3",
+  "tier": "B",
+  "plate_id": "SC06_机场出口_A主机位",
+  "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+  "plate_read_zh": "实际看图：左玻璃门幕墙及推车，上方水泥挑檐纵深收拢，右栏杆与黄色车队白小巴；前景地面约下半幅，阴影在左。",
+  "script_ref_zh": "script_source.txt 第61行「苏慧（抹了把眼睛，强笑）：这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。」——承接“快走吧”，明确两人和全部行李一起离开。",
+  "beat_zh": "苏慧右中景侧背朝停车区走，左手拎橄榄色登山包；江砚左前景侧背跟随，右手拉深灰箱、双肩空，视线看母亲；旅客在更远处横向经过，人物不并排面对镜头。",
+  "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+  "camera_zh": "相机在机场出口接站通道，约1.5米高沿玻璃幕墙朝到达出口侧拍，左玻璃、右车道。",
+  "framing": {
+    "shot_size": "全景",
+    "subject_frac": 0.4,
+    "crop_zh": "人物全身在中央偏下主体区，头脚完整，脚下地面留约15%，上部保留环境，前后层清楚。",
+    "plate_crop_zh": "沿用宽底板左右结构和主要出入口，画面下方空地裁去一小部分。",
+    "subject_measurement": "full_body"
+  },
+  "light_zh": "白天热带阳光，挑檐下阴影与车道硬光并存，肤色按角色基准保持。",
+  "people": [
+    {
+      "name": "江砚",
+      "ref_images": [
+        "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+      ],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "left",
+      "depth": "near",
+      "body_dir": "screen_right",
+      "camera_relation": "three_quarter_back",
+      "gaze_at": "苏慧",
+      "posture_zh": "侧身准备跟着母亲离开",
+      "action_zh": "双肩空着，右手扶同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮的拉杆，左手自然垂下，地址纸在衣袋",
+      "contact_zh": null
+    },
+    {
+      "name": "苏慧",
+      "ref_images": [
+        "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+        "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png"
+      ],
+      "ref_note_zh": "第一张是苏慧角色三视图，第二张是已选机场交包后主帧，仅提供同一只大登山包、深灰箱与人物外观；本镜走位朝向和取景按卡",
+      "pos_x": "right",
+      "depth": "mid",
+      "body_dir": "screen_right",
+      "camera_relation": "three_quarter_back",
+      "gaze_at": "off_right",
+      "posture_zh": "侧身朝停车区，前脚正要迈出",
+      "action_zh": "近相机的右臂自然落在右腿外侧，空右手五指放松张开，手与登山包之间留清楚空隙。远侧左臂下垂，左手紧握大橄榄登山包顶部提手，包挂在左腿远侧，包底低于膝盖。继续侧背面朝停车区准备迈步。",
+      "contact_zh": null
+    }
+  ],
+  "background_people": [
+    {
+      "name": "旅客甲",
+      "ref_images": [],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "center",
+      "depth": "far",
+      "body_dir": "screen_right",
+      "camera_relation": "profile",
+      "gaze_at": "off_right",
+      "posture_zh": "站在远处通道侧面，重心落在前脚",
+      "action_zh": "各自持随身行李",
+      "contact_zh": null,
+      "focus": "defocused",
+      "appearance_zh": "深色皮肤成年男子、浅灰短袖、黑软箱"
+    },
+    {
+      "name": "旅客乙",
+      "ref_images": [],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "far_left",
+      "depth": "far",
+      "body_dir": "screen_right",
+      "camera_relation": "profile",
+      "gaze_at": "off_right",
+      "posture_zh": "站在远处通道侧面，重心落在前脚",
+      "action_zh": "各自持随身行李",
+      "contact_zh": null,
+      "focus": "defocused",
+      "appearance_zh": "深色皮肤成年女子、蓝连衣裙、米色手袋"
+    },
+    {
+      "name": "旅客丙",
+      "ref_images": [],
+      "ref_note_zh": "已选角色三视图",
+      "pos_x": "far_right",
+      "depth": "far",
+      "body_dir": "screen_right",
+      "camera_relation": "profile",
+      "gaze_at": "off_right",
+      "posture_zh": "站在远处通道侧面，重心落在前脚",
+      "action_zh": "各自持随身行李",
+      "contact_zh": null,
+      "focus": "defocused",
+      "appearance_zh": "浅棕皮肤成年男子、米色衬衫、黑背包"
+    }
+  ],
+  "present_off_frame": [],
+  "props_zh": [
+    "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+    "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋"
+  ],
+  "relation_zh": "承接“快走吧”，明确两人和全部行李一起离开。",
+  "count": 2,
+  "notes": "阶段一待审稿；首帧取动作起点。不展示未建立的出租车内景。 项目装配澄清：全景40%测量从头顶到鞋底，脚下留白另计。 第二轮2张：结合两名独立审查修正裁切、过肩和人体左右连线；保持原文动作起点。"
+}

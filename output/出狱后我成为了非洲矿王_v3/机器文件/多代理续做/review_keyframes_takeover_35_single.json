@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/continue_review_single",
+  "review_scope": "single",
+  "review_basis": [
+    "keyframe_cards.json镜35的script_ref_zh、批准动作及裁切",
+    "scene_beats ep01_r1",
+    "B客房底板",
+    "两角色三视图和ep01_a2主帧仅作服装箱包参考"
+  ],
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "reference_note": "本次逐张view_image两候选、B底板、交包后主帧；角色三视图本代理前序已实际打开。未读取其他reviewer新报告。",
+  "images": [
+    {
+      "id": "ep01_镜35",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_01.png",
+      "verdict": "fail",
+      "reason": "客房白天、半开木门、左空桌椅与挂钩、右床脚符合B底板；只有母子和一套箱包。江砚右前景三分之四背面看母亲，近侧左手在胸前、远侧右手握箱杆，双臂分离可辨，符合本轮江砚手序要求。苏慧的近相机右肩—右袖—右腕直下接到包提手，画面右方抬起扶门的是她的左手；扶门手握住门边，接触可见。江砚发顶约7%尚接近要求，但画底已露到鞋，双膝小腿都在画内，母亲双脚和箱轮也完整可见。因此苏慧手序与批准的右手扶门/左手提包相反，景别也未在近端江砚大腿中段截断。原文入房准备关门的起始节拍成立，不因门尚未关上判错。",
+      "fix_instruction": "第三轮保持现有B机位、日光、江砚正确双臂、唯一箱包与半开门。调整苏慧站位/上身转向使右肩靠门，近侧右肘抬起、右手在肩高扶门，远侧左手垂下提同包；两条臂到门/包的连线明确可见。重取中景使江砚发顶留约5%、画底截在大腿中段，膝脚与箱轮在裁切外仍按状态保留，不能为了展示整箱再放宽取景。",
+      "card_field": [
+        "people[name=苏慧].posture_zh",
+        "people[name=苏慧].action_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜35",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_02.png",
+      "verdict": "fail",
+      "reason": "客房白天、半开木门、左空桌椅与挂钩、右床脚符合B底板；只有母子和一套箱包。江砚右前景三分之四背面看母亲，近侧左手在胸前、远侧右手握箱杆，双臂分离可辨，符合本轮江砚手序要求。苏慧的近相机右肩—右袖—右腕直下接到包提手，画面右方抬起按门的是她的左手，左手掌与门接触清楚。江砚发顶约6%接近要求，但画底到小腿近脚踝，膝盖以下长段仍在框内，母亲全身与箱轮可见。因此苏慧手序与批准的右手扶门/左手提包相反，景别也未在近端江砚大腿中段截断。原文入房准备关门的起始节拍成立，不因门尚未关上判错。",
+      "fix_instruction": "第三轮保持现有B机位、日光、江砚正确双臂、唯一箱包与半开门。调整苏慧站位/上身转向使右肩靠门，近侧右肘抬起、右手在肩高扶门，远侧左手垂下提同包；两条臂到门/包的连线明确可见。重取中景使江砚发顶留约5%、画底截在大腿中段，膝脚与箱轮在裁切外仍按状态保留，不能为了展示整箱再放宽取景。",
+      "card_field": [
+        "people[name=苏慧].posture_zh",
+        "people[name=苏慧].action_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh"
+      ]
+    }
+  ],
+  "capped_recommendation": [],
+  "preferred_retry_base": "02的门上手掌接触较直观，但两张都必须纠正苏慧手别和景别；江砚已纠正的右手持箱应保留。"
+}

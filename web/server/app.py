@@ -35,6 +35,9 @@ import prompt_tasks
 import help_chat
 import content_editor
 import state
+import control_store
+import admin_api
+import operations
 from router import ApiError, Ctx, Router
 
 mimetypes.add_type('application/javascript', '.js')
@@ -45,6 +48,7 @@ FRONTEND_DIR = os.path.join(WEB_DIR, 'frontend')
 CONTENT_DIR = os.path.join(WEB_DIR, 'content')
 
 router = Router()
+admin_api.register(router)
 
 
 @router.post(r'/api/help/question')
@@ -124,7 +128,7 @@ def api_projects(ctx, params):
     all_projects = projects.list_projects()
     if allowed is None:
         return {'projects': all_projects}
-    return {'projects': [p for p in all_projects if p['name'] in allowed or p.get('owner') == ctx.username]}
+    return {'projects': [p for p in all_projects if auth.can_access_project(ctx.username,p['name'])]}
 
 
 @router.post(r'/api/projects')
@@ -135,6 +139,12 @@ def api_create_project(ctx, params):
         raise ApiError(409, '同名项目已存在，请换一个项目名；不会覆盖旧项目')
     except ValueError as exc:
         raise ApiError(400, str(exc))
+    # 显式项目权限的账号新建项目后，将新项目加入本人权限。
+    if not auth.is_admin(ctx.username):
+        with control_store.user_lock('_accounts'):
+            perms=auth.load_permissions()
+            if 'projects' in perms.get(ctx.username,{}):
+                auth.set_projects(ctx.username,auth.allowed_projects(ctx.username)+[name])
     return {'name': name}
 
 
@@ -144,9 +154,12 @@ def api_setup(ctx, params):
     progress = project_setup.status(pdir)
     if not progress:
         return {'setup': None}
+    progress['files'] = sorted({rel for rel in progress.get('files', []) if os.path.isfile(os.path.join(pdir, rel))}
+        | {'storyboard/' + f for f in os.listdir(os.path.join(pdir, 'storyboard')) if f.endswith('.md')})
     tasks_path = os.path.join(pdir, 'assets', 'jobs_initial.json')
     tasks = json.loads(_read_text(tasks_path)) if os.path.isfile(tasks_path) else []
     tasks = [t for t in tasks if not content_editor.disabled(pdir, t['id'], 'asset', None)]
+    progress['can_resume'] = project_setup.can_resume(pdir)
     return {'setup': progress, 'metadata': project_setup.metadata(pdir), 'image_tasks': tasks,
             'gpu': {'status': 'needs_plan', 'message': '尚未授权租卡。先完成基准图、关键帧和视频镜头卡，再提交机型、单价、预计时长、预算上限与关机方案供用户审批。'}}
 
@@ -154,7 +167,13 @@ def api_setup(ctx, params):
 @router.post(r'/api/projects/(?P<name>[^/]+)/setup/start')
 def api_setup_start(ctx, params):
     try:
-        return {'setup': project_setup.start(_project_or_404(params['name']))}
+        pdir=_project_or_404(params['name'])
+        old=project_setup.status(pdir)
+        result=project_setup.start(pdir,ctx.username)
+        if old and old['status'] not in ('running','done') and result['status'] in ('running','done'):
+            use=control_store.reserve(ctx.username,params['name'],'setup')
+            control_store.started(use['id'],params['name'])
+        return {'setup':result}
     except ai_prompt.BusyError as exc:
         raise ApiError(429, str(exc))
     except ValueError as exc:
@@ -166,9 +185,17 @@ def api_setup_file(ctx, params):
     pdir = _project_or_404(params['name'])
     progress = project_setup.status(pdir) or {}
     rel = ctx.query_one('path')
-    if not rel or rel not in progress.get('files', []):
+    if not rel or rel not in (api_setup(ctx, params).get('setup') or {}).get('files', []) or not os.path.isfile(os.path.join(pdir, rel)):
         raise ApiError(404, '该文字文件不在项目基础文件清单中')
     return {'path': rel, 'text': _read_text(os.path.join(pdir, rel))}
+
+
+@router.post(r'/api/projects/(?P<name>[^/]+)/setup/cancel')
+def api_setup_cancel(ctx, params):
+    try:
+        return {'setup': project_setup.cancel(_project_or_404(params['name']))}
+    except ValueError as exc:
+        raise ApiError(400, str(exc))
 
 
 # ---------------- characters / scenes / style bible ----------------
@@ -688,7 +715,7 @@ def api_last_prompt(ctx, params):
 
 
 @router.post(r'/api/projects/(?P<name>[^/]+)/ai_rewrite_prompt')
-def api_ai_rewrite_prompt(ctx, params):
+def api_ai_rewrite_prompt(ctx, params, persist=True):
     """结合选定历史原文改写提示词并保存文字版本，不触发图片生成。"""
     name = params['name']
     pdir = _project_or_404(name)
@@ -731,9 +758,16 @@ def api_ai_rewrite_prompt(ctx, params):
         raise ApiError(429, str(e))
     except RuntimeError as e:
         raise ApiError(502, f'Codex 写提示词失败：{e}')
-    history_path, history_key = _history_location(pdir, job_id, kind, episode)
-    version = prompt_history.save(history_path, history_key, new_prompt, 'Codex 全新生成' if mode == 'fresh' else 'Codex 改写', ctx.username)
-    return {'prompt': new_prompt, 'provider': 'codex', 'mode': mode, 'prompt_source': None if mode == 'fresh' else context['prompt_source'], 'version': version}
+    result = {'prompt': new_prompt, 'provider': 'codex', 'mode': mode,
+              'prompt_source': None if mode == 'fresh' else context['prompt_source']}
+    return _save_prompt_result(pdir, body, ctx.username, result) if persist else result
+
+
+def _save_prompt_result(pdir, body, username, result):
+    history_path, history_key = _history_location(pdir, body['job_id'], body.get('kind', 'asset'), body.get('episode'))
+    version = prompt_history.save(history_path, history_key, result['prompt'],
+        'Codex 全新生成' if result['mode'] == 'fresh' else 'Codex 改写', username)
+    return {**result, 'version': version}
 
 
 @router.post(r'/api/projects/(?P<name>[^/]+)/prompt_tasks')
@@ -747,12 +781,24 @@ def api_start_prompt_task(ctx, params):
             or not 1 <= len(body['instruction'].strip()) <= 4000):
         raise ApiError(400, '请选择生成方式并填写 1–4000 字描述')
     try:
-        task = prompt_tasks.start(_project_or_404(params['name']),
+        pdir = _project_or_404(params['name'])
+        task = prompt_tasks.start(pdir,
             {'type': kind, 'job_id': jid, 'episode': int(ep) if kind == 'keyframe' else None},
-            ctx.username, lambda: api_ai_rewrite_prompt(ctx, params))
+            ctx.username, lambda: api_ai_rewrite_prompt(ctx, params, persist=False),
+            commit=lambda result: _save_prompt_result(pdir, body, ctx.username, result))
+        use=control_store.reserve(ctx.username,params['name'],'prompt',identifier='prompt:'+task['id'])
+        control_store.started(use['id'],task['id'])
         return {'task': task}
     except ai_prompt.BusyError as exc:
         raise ApiError(429, str(exc))
+
+
+@router.post(r'/api/projects/(?P<name>[^/]+)/prompt_tasks/(?P<identifier>[^/]+)/cancel')
+def api_cancel_prompt_task(ctx, params):
+    task = prompt_tasks.cancel(_project_or_404(params['name']), params['identifier'])
+    if task is None:
+        raise ApiError(404, '找不到当前项目的这个任务')
+    return {'task': task}
 
 
 @router.get(r'/api/tasks')
@@ -761,6 +807,10 @@ def api_tasks(ctx, params):
     for project in api_projects(ctx, {})['projects']:
         name = project['name']
         pdir = _project_or_404(name)
+        setup = project_setup.status(pdir)
+        if setup and setup['status'] == 'running':
+            result.append({'id': 'setup', 'kind': 'setup', 'project': name, 'status': 'running',
+                           'target': {'job_id': '项目筹备', 'type': 'setup'}, 'step': setup.get('step')})
         result.extend({**t, 'project': name} for t in prompt_tasks.list_tasks(pdir))
         for entry in state.list_regen_jobs(_state_path(name)):
             if entry.get('kind') != 'image' or not entry.get('token'):
@@ -809,7 +859,9 @@ def api_regenerate_preview(ctx, params):
         raise ApiError(400, '提示词需为 1–30000 字')
     payload = {'job_id': job_id, 'kind': kind, 'episode': episode, 'prompt': prompt,
                'count': count, 'ref_images': ref_images_rel}
-    return {'approval': approvals.preview(pdir, payload, ctx.username)}
+    approval=approvals.preview(pdir,payload,ctx.username)
+    approval['credits']=count*control_store.PRICES['image']
+    return {'approval':approval}
 
 
 @router.post(r'/api/projects/(?P<name>[^/]+)/regenerate')
@@ -832,10 +884,18 @@ def api_regenerate(ctx, params):
                     raise ValueError('这个图片任务已经在运行，请在顶部任务栏查看进度')
         out_dir = _out_dir_for_kind(pdir, kind, episode)
         refs = _reference_paths(name, payload['ref_images'])
-        token = jobs.start_regenerate(out_dir, job_id, payload['prompt'], payload['count'], refs, projects.web_state_logs_dir(name))
+        folder=os.path.join(out_dir,job_id)
+        detail={'folder':os.path.relpath(folder,pdir),'before':sorted(jobs._existing_files(folder,job_id)), 'job_id':job_id}
+        usage=control_store.reserve(ctx.username,name,'image',payload['count'],identifier='image:'+body['approval_id'],detail=detail)
+        try:
+            token = jobs.start_regenerate(out_dir, job_id, payload['prompt'], payload['count'], refs, projects.web_state_logs_dir(name))
+        except Exception:
+            control_store.settle(usage['id'],'failed')
+            raise
+        control_store.started(usage['id'],token)
         state.add_regen_job(_state_path(name), target={'type': kind, 'job_id': job_id, 'episode': episode},
-                            note='用户已明确批准此提示词、参考图和张数', status='running', token=token, kind='image')
-        return {'token': token, 'used_ref_images': payload['ref_images']}
+                            note='用户已明确批准此提示词、参考图和张数', status='running', token=token, kind='image',author=ctx.username)
+        return {'token': token, 'used_ref_images': payload['ref_images'],'credits_held':payload['count']*10}
     try:
         return approvals.execute(pdir, body['approval_id'], ctx.username, submit)
     except ValueError as e:
@@ -852,12 +912,27 @@ def api_regenerate_status(ctx, params):
     status = jobs.get_status(params['token'])
     if not status:
         raise ApiError(404, '找不到这个任务（服务重启后进行中任务的记录会丢失）')
-    if status['status'] in ('done', 'failed'):
+    if status['status'] in ('done', 'failed', 'cancelled'):
         try:
-            state.update_regen_job(_state_path(name), params['token'], status=status['status'])
+            state.update_regen_job(_state_path(name), record['id'], status=status['status'])
         except ValueError:
             pass
     return status
+
+
+@router.post(r'/api/projects/(?P<name>[^/]+)/regenerate/(?P<token>[^/]+)/cancel')
+def api_cancel_regenerate(ctx, params):
+    name = params['name']
+    _project_or_404(name)
+    record = next((t for t in state.list_regen_jobs(_state_path(name))
+                   if t.get('kind') == 'image' and t.get('token') == params['token']), None)
+    if not record:
+        raise ApiError(404, '找不到当前项目的这个任务')
+    status = jobs.cancel(params['token'])
+    if status is None:
+        raise ApiError(409, '该任务已无法追踪，请刷新后检查任务状态')
+    state.update_regen_job(_state_path(name), record['id'], **{k: v for k, v in status.items() if k != 'job_id'})
+    return {'task': {**record, **status}}
 
 
 # ---------------- auth ----------------
@@ -868,6 +943,7 @@ def api_me(ctx, params):
         'username': ctx.username,
         'display_name': auth.display_name(ctx.username),
         'is_admin': auth.is_admin(ctx.username),
+        'account': control_store.account(ctx.username),
     }
 
 
@@ -934,6 +1010,7 @@ class Handler(BaseHTTPRequestHandler):
         if not auth.verify_password(username, password):
             self._send_json(401, {'error': '用户名或密码错误'})
             return
+        control_store.audit(username,'login')
         cookie_value = auth.make_session_cookie_value(username)
         payload = json.dumps({'ok': True, 'display_name': auth.display_name(username)}, ensure_ascii=False).encode('utf-8')
         self.send_response(200)
@@ -968,6 +1045,11 @@ class Handler(BaseHTTPRequestHandler):
         if not username:
             self._send_json(401, {'error': '未登录或登录已过期，请重新登录'})
             return
+        if method != 'GET':
+            origin=self.headers.get('Origin')
+            if origin and urlparse(origin).netloc != self.headers.get('Host'):
+                self._send_json(403,{'error':'请求来源不合法'})
+                return
 
         handler, params = router.match(method, path)
         if not handler:
@@ -986,11 +1068,22 @@ class Handler(BaseHTTPRequestHandler):
         ctx = Ctx(query, body_bytes, self.headers)
         ctx.username = username
         try:
-            if method == 'PATCH' and project_name:
-                with content_editor.lock(_project_or_404(project_name)):
-                    result = handler(ctx, params)
+            control_store.touch(username)
+            if path.startswith('/api/admin/'):
+                admin_api.require_admin(username)
+                result=handler(ctx,params)
+            elif method != 'GET':
+                with control_store.user_lock(username):
+                    control_store.ensure_enabled(username)
+                    if project_name and not auth.can_access_project(username,project_name):
+                        raise ApiError(403,'项目权限已被撤销')
+                    if method=='PATCH' and project_name:
+                        with content_editor.lock(_project_or_404(project_name)):
+                            result=handler(ctx,params)
+                    else:
+                        result=handler(ctx,params)
             else:
-                result = handler(ctx, params)
+                result=handler(ctx,params)
             self._send_json(200, result)
         except ApiError as e:
             self._send_json(e.status, {'error': e.message})
@@ -1088,6 +1181,7 @@ class Server(ThreadingHTTPServer):
 def main():
     project_setup.recover_interrupted()
     prompt_tasks.recover(projects.OUTPUT_DIR)
+    operations.start()
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--host', default='0.0.0.0', help='默认监听所有网卡，方便局域网访问')
     ap.add_argument('--port', type=int, default=8000)

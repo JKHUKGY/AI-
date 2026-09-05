@@ -1,0 +1,55 @@
+{
+  "agent_id": "/root/resume_r1",
+  "unit_id": "ep01_镜24",
+  "round": 2,
+  "review_scope": "single",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png"
+  ],
+  "source_basis": "独立核对当前源卡、ep01_a2交包后状态和已实读原文第61行；实际打开待审图、B紧底板、母亲三视图及交包主帧，未读取其他新审查报告。",
+  "images": [
+    {
+      "id": "ep01_镜24",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+      "verdict": "fail",
+      "reason": "头顶空隙约18%，笑容略偏舒展露齿，掩饰辛苦的强笑感较弱。两图共同硬问题：苏慧画面右侧、对应自身左肩的手抬在眼旁，画面左侧自身右臂向下，抹眼左右手反了。画框露到腰腹与大段上臂，头部高约25%画高，不是指定胸上近景/50%头高；右侧江砚肩背主体占约30%–40%，超出10%–15%窄肩缘。B车道背景的左白小巴、黄出租车及右上檐、衣着和包已离肩状态成立。框外左手持包不能凭本图确认，未据此另判缺包。",
+      "fix_instruction": "以02为同镜编辑基础，保留苏慧五官、灰发盘髻、旧白裙灰围裙、眼眶湿润的克制勉强笑、B机位白小巴黄车和日光。把苏慧画面左侧右肩连接的右臂抬起、右手贴右眼外角，左臂垂向框外持包；重新取景至胸口，发顶距上缘5%、头部含发顶至下颏约占画高50%；江砚主体移到右侧画外，仅留10%–15%宽的虚焦后肩边缘且无包带。",
+      "card_field": [
+        "people[0].action_zh",
+        "people[0].contact_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜24",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png",
+      "verdict": "fail",
+      "reason": "头顶空隙约10%，湿眼与收紧嘴角较贴近勉强笑，可保留表情。两图共同硬问题：苏慧画面右侧、对应自身左肩的手抬在眼旁，画面左侧自身右臂向下，抹眼左右手反了。画框露到腰腹与大段上臂，头部高约25%画高，不是指定胸上近景/50%头高；右侧江砚肩背主体占约30%–40%，超出10%–15%窄肩缘。B车道背景的左白小巴、黄出租车及右上檐、衣着和包已离肩状态成立。框外左手持包不能凭本图确认，未据此另判缺包。",
+      "fix_instruction": "以02为同镜编辑基础，保留苏慧五官、灰发盘髻、旧白裙灰围裙、眼眶湿润的克制勉强笑、B机位白小巴黄车和日光。把苏慧画面左侧右肩连接的右臂抬起、右手贴右眼外角，左臂垂向框外持包；重新取景至胸口，发顶距上缘5%、头部含发顶至下颏约占画高50%；江砚主体移到右侧画外，仅留10%–15%宽的虚焦后肩边缘且无包带。",
+      "card_field": [
+        "people[0].action_zh",
+        "people[0].contact_zh",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    }
+  ],
+  "proposed_file": "",
+  "edit_base_recommendation": {
+    "id": "ep01_镜24",
+    "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png",
+    "reason": "02的湿眼与克制嘴角较贴近强笑，B背景正确。仅作纠错基础，不是通过。",
+    "minimal_correction": "以02为同镜编辑基础，保留苏慧五官、灰发盘髻、旧白裙灰围裙、眼眶湿润的克制勉强笑、B机位白小巴黄车和日光。把苏慧画面左侧右肩连接的右臂抬起、右手贴右眼外角，左臂垂向框外持包；重新取景至胸口，发顶距上缘5%、头部含发顶至下颏约占画高50%；江砚主体移到右侧画外，仅留10%–15%宽的虚焦后肩边缘且无包带。"
+  }
+}

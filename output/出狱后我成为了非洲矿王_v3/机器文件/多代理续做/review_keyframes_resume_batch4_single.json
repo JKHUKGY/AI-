@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/single_b3_recovered",
+  "review_scope": "single",
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_03.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "实看03原图并对照同镜目标02、A机位底板与四人基准。母子仍按剧情朝左离场，母亲右手扶肩左手提包，东侧两人原座动作保持；房间结构和全景比例也基本保持。局部编辑未修复核心差异：靠相机的左肩—左肘—左手清楚连续，左手仍握箱杆，左臂没有弯到胸前；远侧右臂未形成握杆连接。",
+      "fix_instruction": "第三轮到限，不再生成；记录左右持箱状态未达，等同轮05到图完成比较。",
+      "card_field": [
+        "people[name=江砚].action_zh",
+        "people[name=江砚].posture_zh"
+      ],
+      "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+      "remaining_difference": "仍左手拉箱；02仍是已实看候选中便于明确识别双臂的保留候选，不等于通过。05尚待审。",
+      "proposed_file": ""
+    },
+    {
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_04.png",
+      "round": 3,
+      "verdict": "fail",
+      "reason": "实看04原图并对照同镜目标02、A机位底板与四人基准。母子仍按剧情朝左离场，母亲右手扶肩左手提包，东侧两人原座动作保持；房间结构和全景比例也基本保持。局部编辑未修复核心差异：靠相机的左肩—左肘—左手清楚连续，左手仍握箱杆，左臂没有弯到胸前；远侧右臂未形成握杆连接。",
+      "fix_instruction": "第三轮到限，不再生成；记录左右持箱状态未达，等同轮05到图完成比较。",
+      "card_field": [
+        "people[name=江砚].action_zh",
+        "people[name=江砚].posture_zh"
+      ],
+      "best_candidate": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_02.png",
+      "remaining_difference": "仍左手拉箱；02仍是已实看候选中便于明确识别双臂的保留候选，不等于通过。05尚待审。",
+      "proposed_file": ""
+    }
+  ]
+}

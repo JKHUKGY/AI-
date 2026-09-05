@@ -56,6 +56,7 @@ output/<剧名>/
     setup.json / foundation.json  网站文字筹备进度与恢复断点
     prompt_history.json    按图片任务保存的手动/Codex 文字版本
     prompt_tasks.json      后台文字任务状态与结果，换页/刷新后可恢复
+    content.json           结构新增记录、删除预览和回收站原文（角色/场景/分集/镜头）
     approvals.json         图片预览快照、审批人及执行状态
     review.json            剧本家在协作网站上的评论/入选标记/编辑审计记录（**要提交**）
     logs/                  重新生成子进程临时日志（已 gitignore，不提交）

@@ -10,12 +10,9 @@
                   cookie 签名。这个文件丢了等于所有人的登录 cookie 失效，
                   换了它也一样——都只是逼所有人重新登录，不会丢用户数据。
 
-会话是无状态签名 cookie（不是服务端 session 表），格式：
-    <用户名>:<过期时间戳>:<hmac签名>
-好处是重启服务不会让所有人掉线（cookie 在浏览器那边不受影响），
-坏处是没法"服务端主动踢人下线"——如果要撤销某个人的访问，得改密码
-（旧 cookie 里的用户名对得上签名依然有效，直到过期），这是当前的已知
-限制，不是公网长期票据系统的替代品。
+会话使用签名 cookie，格式：<用户名>:<过期时间戳>:<会话版本>:<签名>。
+每次请求核实账号启用状态和会话版本；停用或重置密码使旧票据立即失效。
+兼容尚未被撤销的旧版 cookie，重启不会强制所有正常账号退出。
 """
 import hashlib
 import hmac
@@ -23,6 +20,7 @@ import json
 import os
 import secrets
 import time
+import control_store
 from http.cookies import SimpleCookie
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
@@ -140,7 +138,8 @@ def allowed_projects(username):
 def can_access_project(username, project_name):
     import projects
     allowed = allowed_projects(username)
-    return allowed is None or project_name in allowed or projects.owner(project_name) == username
+    explicit = 'projects' in load_permissions().get(username, {})
+    return allowed is None or project_name in allowed or (not explicit and projects.owner(project_name) == username)
 
 
 def set_admin(username, flag):
@@ -185,7 +184,7 @@ def verify_password(username, password):
         return False
     users = load_users()
     entry = users.get(username)
-    if not entry:
+    if not entry or not control_store.account(username)['enabled']:
         # 用户名不存在也算一次失败，避免用响应时间/次数差异被拿来枚举用户名
         _record_failure(username)
         return False
@@ -201,7 +200,8 @@ def display_name(username):
 
 def make_session_cookie_value(username, ttl=SESSION_TTL_SECONDS):
     expiry = int(time.time()) + ttl
-    payload = f'{username}:{expiry}'
+    version = control_store.account(username)['session_version']
+    payload = f'{username}:{expiry}:{version}'
     sig = hmac.new(get_secret_key().encode('utf-8'), payload.encode('utf-8'), hashlib.sha256).hexdigest()
     return f'{payload}:{sig}'
 
@@ -210,10 +210,11 @@ def verify_session_cookie_value(value):
     if not value:
         return None
     parts = value.split(':')
-    if len(parts) != 3:
+    if len(parts) not in (3, 4):
         return None
-    username, expiry_str, sig = parts
-    payload = f'{username}:{expiry_str}'
+    username, expiry_str, sig = parts[0], parts[1], parts[-1]
+    version = parts[2] if len(parts) == 4 else '0'
+    payload = ':'.join(parts[:-1])
     expected = hmac.new(get_secret_key().encode('utf-8'), payload.encode('utf-8'), hashlib.sha256).hexdigest()
     if not hmac.compare_digest(expected, sig):
         return None
@@ -224,6 +225,9 @@ def verify_session_cookie_value(value):
     if expiry < time.time():
         return None
     if username not in load_users():
+        return None
+    account = control_store.account(username)
+    if not account['enabled'] or str(account['session_version']) != version:
         return None
     return username
 

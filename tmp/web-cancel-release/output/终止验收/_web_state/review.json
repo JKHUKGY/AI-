@@ -1,0 +1,25 @@
+{
+  "comments": [],
+  "selections": {},
+  "regen_jobs": [
+    {
+      "id": "c8143c5416fc",
+      "token": "ee519b901c36",
+      "kind": "image",
+      "target": {
+        "type": "asset",
+        "job_id": "小雨_三视图",
+        "episode": null
+      },
+      "note": "用户已明确批准此提示词、参考图和张数",
+      "status": "cancelled",
+      "requested_at": "2026-09-05T10:28:19",
+      "returncode": -9,
+      "log_tail": "",
+      "new_files": [],
+      "started_at": 1788604099.3586426,
+      "updated_at": "2026-09-05T10:28:19"
+    }
+  ],
+  "edits": []
+}

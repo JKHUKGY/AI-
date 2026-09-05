@@ -1,0 +1,56 @@
+{
+  "agent_id": "/root/resume_r2",
+  "unit_id": "ep01_镜35",
+  "round": 3,
+  "review_scope": "continuity",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png"
+  ],
+  "source_card_sha256": "7de58c4736e803ad6fa7424ac0177c7dd17782ca2e729f1a05902a252f8dc921",
+  "created_at": "2026-09-05T11:18:42.984888+00:00",
+  "images": [
+    {
+      "id": "ep01_镜35",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+      "verdict": "fail",
+      "reason": "室内B机位左空桌右床脚、半开门、白天光连续；江砚左手胸/右手箱，苏慧近侧右臂抬起向门、远侧左手包已基本修正。但画底到江砚膝下，显示苏慧完整双脚和大段地板，未执行大腿中段截断。母亲右手与门的实际掌面接触不充分清晰。",
+      "fix_instruction": "第三轮到限，不再自动生成。后续若获准重设计，保留05已修正的四只手和道具归属，发顶留5%，下边缘严格截江砚大腿中段，箱下部和膝下移到画外。04须先消除额外手臂，不能直接选用。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[1].action_zh; people[1].contact_zh"
+    },
+    {
+      "id": "ep01_镜35",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+      "verdict": "fail",
+      "reason": "室内B机位和白天光保持，江砚左胸右箱保持；苏慧画面中同时出现抬起扶门的手、躯干右边空垂的一只手，以及画面左下提包的一只额外手，构成三手/多肢，不能连戏使用。仍露江砚膝下及苏慧全脚，未收紧中景。",
+      "fix_instruction": "第三轮到限，不再自动生成。后续若获准重设计，保留05已修正的四只手和道具归属，发顶留5%，下边缘严格截江砚大腿中段，箱下部和膝下移到画外。04须先消除额外手臂，不能直接选用。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[1].action_zh; people[1].contact_zh"
+    },
+    {
+      "id": "ep01_镜35",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+      "verdict": "fail",
+      "reason": "室内空间、门半开、左空桌、白天光保持；苏慧右臂横胸接门、左臂下垂提包，江砚左手胸右手箱，手位符合当前卡。包与箱外观整体延续。画底仍到江砚膝下，苏慧头脚全身、地板与箱身大部都入镜，不符合大腿中段裁切。",
+      "fix_instruction": "第三轮到限，不再自动生成。后续若获准重设计，保留05已修正的四只手和道具归属，发顶留5%，下边缘严格截江砚大腿中段，箱下部和膝下移到画外。04须先消除额外手臂，不能直接选用。",
+      "card_field": "framing.crop_zh; framing.plate_crop_zh; people[1].action_zh; people[1].contact_zh"
+    }
+  ],
+  "proposed_file": "",
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜35",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+      "remaining_difference": "05左右手和门/箱包归属正确，人物身体结构正常；但取景仍宽至膝下，未达到批准大腿中段中景。仅到限备选，不能登记通过。"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import subprocess
 import tempfile
 import threading
 from pathlib import Path
+import generation_control
 
 CODEX_TIMEOUT_SECONDS = 120
 MAX_PROMPT_CHARS = 30000
@@ -106,10 +107,15 @@ def run_text(query, timeout=CODEX_TIMEOUT_SECONDS, schema=None, model=None):
                 schema_path.write_text(json.dumps(schema), encoding='utf-8')
                 cmd[2:2] = ['--output-schema', str(schema_path)]
             try:
-                proc = subprocess.run(
-                    cmd, input=query, capture_output=True, text=True, encoding='utf-8',
-                    timeout=timeout, cwd=workdir,
-                )
+                control = generation_control.current()
+                if control:
+                    proc = control.run(cmd, input=query, text=True, encoding='utf-8',
+                                       timeout=timeout, cwd=workdir)
+                else:
+                    proc = subprocess.run(
+                        cmd, input=query, capture_output=True, text=True, encoding='utf-8',
+                        timeout=timeout, cwd=workdir,
+                    )
             except FileNotFoundError:
                 raise RuntimeError('服务器找不到 Codex CLI，请管理员安装或设置 CODEX_BIN') from None
             except subprocess.TimeoutExpired:

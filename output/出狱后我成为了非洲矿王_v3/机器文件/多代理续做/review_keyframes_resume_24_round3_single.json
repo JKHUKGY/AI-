@@ -1,0 +1,66 @@
+{
+  "agent_id": "/root/resume_r1",
+  "unit_id": "ep01_镜24",
+  "round": 3,
+  "review_scope": "single",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_05.png"
+  ],
+  "source_basis": "已独立核对更新后的镜24源卡与第61行原文；实际看三张第三轮图及前述参考，未读取其他新审查报告。比例为实看估值，不作为逐像素严格等式；因仍保留大段胸下/完整肘部且头部尺度不足，属于景别未达设计。",
+  "images": [
+    {
+      "id": "ep01_镜24",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_03.png",
+      "verdict": "fail",
+      "reason": "苏慧头顶留白约11%，头部高度约38%，下方仍保留大段围裙胸下和完整弯肘，未收成指定上胸裁切、约50%头高。江砚右下肩边最宽约22%，仍超10%–15%。右肩—右臂—右手已在画面左侧连续接到本人右眼角，修正了第二轮左右手；湿眼与收敛嘴角符合掩饰辛苦的勉强笑，人物服装/盘髻与B背景白小巴、黄车、棕榈及右上挑檐成立，未把框外箱包误判为遗失。",
+      "fix_instruction": "第三轮已用满，停止自动追加。保留04为最接近候选，登记尚需更紧的上胸裁切和头部尺度；保持已正确的右手眼角、苦笑、B背景与右缘窄肩。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "framing.headroom_frac",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜24",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+      "verdict": "fail",
+      "reason": "三张中最接近：头顶留白约6%，江砚右缘约13%–15%宽，均接近目标；但发顶至下颏约41%画高，低于约50%，画底仍在围裙胸下，整个弯肘及较长上身保留，未到指定上胸截断。右肩—右臂—右手已在画面左侧连续接到本人右眼角，修正了第二轮左右手；湿眼与收敛嘴角符合掩饰辛苦的勉强笑，人物服装/盘髻与B背景白小巴、黄车、棕榈及右上挑檐成立，未把框外箱包误判为遗失。",
+      "fix_instruction": "第三轮已用满，停止自动追加。保留04为最接近候选，登记尚需更紧的上胸裁切和头部尺度；保持已正确的右手眼角、苦笑、B背景与右缘窄肩。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜24",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_05.png",
+      "verdict": "fail",
+      "reason": "苏慧头顶留白约13%，头部高度约42%，下部仍保留较长围裙胸下，未到指定5%头顶、约50%头高和上胸裁切；江砚右缘肩边约15%，已接近目标。右肩—右臂—右手已在画面左侧连续接到本人右眼角，修正了第二轮左右手；湿眼与收敛嘴角符合掩饰辛苦的勉强笑，人物服装/盘髻与B背景白小巴、黄车、棕榈及右上挑檐成立，未把框外箱包误判为遗失。",
+      "fix_instruction": "第三轮已用满，停止自动追加。保留04为最接近候选，登记尚需更紧的上胸裁切和头部尺度；保持已正确的右手眼角、苦笑、B背景与右缘窄肩。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "framing.headroom_frac"
+      ]
+    }
+  ],
+  "proposed_file": "",
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜24",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+      "remaining_difference": "右手、情绪、B背景、头顶留白与窄前景肩已较接近，头部仍约41%画高、画底胸下，未达到约50%头高的上胸近景；只是最接近候选，不是通过。"
+    }
+  ]
+}

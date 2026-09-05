@@ -1,0 +1,27 @@
+{
+  "agent_id": "/root/resume_generator_a",
+  "role": "Generator A",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/standard_round2_prison_a.json",
+  "source_job_sha256": "5dcf21efbcbee4d14b19b1c1c0d95a61003b7e740e3acc82a4a4d837a1be8c27",
+  "records": [
+    {
+      "id": "ep01_镜03",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a07107-75a5-7aa0-afa7-d8d2075d92dc/exec-5745704b-0c2e-4b87-b280-548562ffff56.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_02.png",
+      "status": "pending_review"
+    }
+  ],
+  "errors": [],
+  "refs_viewed": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打/SC05_监狱门口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "calls": 1,
+  "actual_generated": 1,
+  "prompt_unchanged": true,
+  "sha256": "a1a669c942f3435c0b83bd947c48a5d760a752700358b5baec417101acbd8adc"
+}

@@ -1,0 +1,54 @@
+{
+  "agent_id": "/root/continue_review_single",
+  "review_scope": "single",
+  "review_basis": [
+    "keyframe_cards.json:ep01_镜22.script_ref_zh 第59行苏慧上前接包原文",
+    "keyframe_cards.json:ep01_a2_handoff 起始状态",
+    "批准镜22走位/手序/裁切字段及B机位底板"
+  ],
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "reference_note": "本次逐张view_image两候选、B底板、机场交包前主帧；两位角色三视图在本代理前序任务已实际看过。未用其他审查代替观察。",
+  "images": [
+    {
+      "id": "ep01_镜22",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+      "verdict": "fail",
+      "reason": "苏慧在左侧抬双手接包、目视儿子；江砚在右侧，橄榄包仍在肩背而非已经交出，符合ep01_a2_handoff的交包前起始时刻。角色服装及大箱包基本延续参考。江砚近侧左肩—左肘—左腕连到箱杆，远侧手抬在胸前肩带附近，左右手序反了；该胸前手被肩带/身体部分遮挡，不能确认在把纸收进左胸衣袋。江砚几乎完整侧脸，背部被包遮住，不是卡片只露少许颊轮廓的三分之四背面。头顶约18%空白，膝盖、小腿和鞋入画，是近乎全身取景，未在大腿中段截断。两张背景均沿用交包前A主帧的左侧玻璃立面/左上挑檐、右侧明亮车道与广告架，未还原指定B底板右上挑檐、左侧车队及栏杆左近向右远的空间关系。",
+      "fix_instruction": "可进入第三轮：保持包仍在双肩、苏慧双手准备接包的起始节拍；先按指定B底板重建机位（右上挑檐、左车队），江砚右近三分之四背面朝左。将近侧左肘抬胸、左手把地址纸收进左胸袋；远侧右肩肘腕独立前伸并握箱杆。以江砚发顶留约5%、画底截在大腿中段重取中景，膝以下出框；角色/箱包参考只锁外观，不复制A主帧的机位。",
+      "card_field": [
+        "people[name=江砚].action_zh",
+        "people[name=江砚].camera_relation",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "plate_image",
+        "camera_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜22",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png",
+      "verdict": "fail",
+      "reason": "苏慧在左侧抬双手接包、目视儿子；江砚在右侧，橄榄包仍在肩背而非已经交出，符合ep01_a2_handoff的交包前起始时刻。角色服装及大箱包基本延续参考。江砚三分之四背面朝左成立，但近侧左肩—左袖—左前臂连续下伸，左手明确握箱杆；远侧手在胸前肩带旁露出，仍未实现左手收纸、远侧右手扶箱。头顶约14%留白，双膝、小腿和两鞋完整入画，未在大腿中段截断。两张背景均沿用交包前A主帧的左侧玻璃立面/左上挑檐、右侧明亮车道与广告架，未还原指定B底板右上挑檐、左侧车队及栏杆左近向右远的空间关系。",
+      "fix_instruction": "可进入第三轮：保持包仍在双肩、苏慧双手准备接包的起始节拍；先按指定B底板重建机位（右上挑檐、左车队），江砚右近三分之四背面朝左。将近侧左肘抬胸、左手把地址纸收进左胸袋；远侧右肩肘腕独立前伸并握箱杆。以江砚发顶留约5%、画底截在大腿中段重取中景，膝以下出框；角色/箱包参考只锁外观，不复制A主帧的机位。",
+      "card_field": [
+        "people[name=江砚].action_zh",
+        "people[name=江砚].camera_relation",
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "plate_image",
+        "camera_zh"
+      ]
+    }
+  ],
+  "capped_recommendation": [],
+  "preferred_retry_base": "ep01_镜22_02人物背向较01接近；两张背景机位、手序、景别均须修正，不能仅裁图称通过。"
+}

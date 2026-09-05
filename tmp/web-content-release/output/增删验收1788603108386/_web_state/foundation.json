@@ -1,0 +1,27 @@
+{
+  "style_bible": "写实暖光，竖屏9:16；按原剧本叙事。",
+  "style_anchor": "写实暖光，竖屏9:16",
+  "synopsis": "小雨到书店领取父亲的信。",
+  "characters": [
+    {
+      "name": "小雨",
+      "profile": "来取信的女儿；服装为制作建议。",
+      "prompt": "小雨，三视图，朴素外套"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SC01",
+      "name": "旧书店",
+      "description": "入口与柜台位置为规划。",
+      "prompt": "旧书店空景"
+    }
+  ],
+  "episodes": [
+    {
+      "number": 1,
+      "title": "来信",
+      "summary": "按原文取信"
+    }
+  ]
+}

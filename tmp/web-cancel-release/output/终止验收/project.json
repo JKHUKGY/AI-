@@ -1,0 +1,9 @@
+{
+  "name": "终止验收",
+  "owner": "browser-test",
+  "episodes": 1,
+  "duration": 15,
+  "style": "写实电影质感，竖屏9:16",
+  "created_at": "2026-09-05T10:27:08",
+  "manual_media_approval": true
+}

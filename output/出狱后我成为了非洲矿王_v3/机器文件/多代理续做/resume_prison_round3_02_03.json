@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜02",
+    "prompt": "Edit this same photograph. 保留同图脸、服装、B反打背景、左右走位及视线。仅重绘陈野双臂：远侧解剖右臂垂下，右手握白盖冰水瓶；近侧解剖左肘抬起，空左手伸向江砚肩但尚未落下。肩肘腕连接清楚。温和收紧取景，让江砚发顶留5%且下缘切大腿中段，两人手和瓶完整。\n江砚过肩背面、陈野三分之四正面、红土路、右后越野车、窄门框、白盖透明水瓶与原光。\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/resume_prison_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第39行「▲不远处的越野车旁，陈野早就靠着车门等着，看见人立刻大步迎上去，重重拍了拍他的肩膀。」——陈野一直等着，迎接有分量。"
+  },
+  {
+    "id": "ep01_镜03",
+    "prompt": "Edit this same photograph. 只收紧这张照片的取景为双人中景：江砚完整发顶上方仅留5%画高，画面底边切在两人大腿中段。将两人连同背景等比例放大，以江砚为构图主体；门槛、鞋靴和小腿均裁到框外。两人交接水瓶的手完整保留在胸腰之间。\n保持同一瞬间、人物身份、衣服、门外位置和原B反打背景：陈野远侧解剖右手持唯一白盖透明冰水瓶向前递，近侧空左臂垂下；江砚远侧左手张开尚未接触瓶身，近侧右手自然垂下。保留原表情、视线、右后越野车和日光。\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/resume_prison_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第40行「陈野（递过一瓶冰水，语气里压着憋了许久的火气）：江老弟，你可算出来了！」——冰水和压着的火气同时交代关心。"
+  }
+]

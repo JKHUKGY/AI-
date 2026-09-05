@@ -126,7 +126,7 @@ def add_edit(path, file_rel, field, old_value, new_value, row_key=None):
     return _mutate(path, fn)
 
 
-def add_regen_job(path, target, note=None, status='pending', token=None, kind='image'):
+def add_regen_job(path, target, note=None, status='pending', token=None, kind='image', author=None):
     def fn(data):
         entry = {
             'id': new_id(),
@@ -136,6 +136,7 @@ def add_regen_job(path, target, note=None, status='pending', token=None, kind='i
             'note': note,
             'status': status,
             'requested_at': _now(),
+            'author': author,
         }
         data['regen_jobs'].append(entry)
         return entry
@@ -146,6 +147,8 @@ def update_regen_job(path, job_id, **fields):
     def fn(data):
         for j in data['regen_jobs']:
             if j['id'] == job_id or j.get('token') == job_id:
+                if j.get('status') == 'cancelled':
+                    return j  # 终止前发出的旧轮询响应不能重新激活任务。
                 j.update(fields)
                 j['updated_at'] = _now()
                 return j

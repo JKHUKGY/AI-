@@ -1,0 +1,47 @@
+{
+  "comments": [],
+  "selections": {},
+  "regen_jobs": [],
+  "edits": [],
+  "tasks": [
+    {
+      "id": "28da82c6f06c4ebc8a624c681100e542",
+      "kind": "prompt",
+      "target": {
+        "type": "asset",
+        "job_id": "小雨_三视图",
+        "episode": null
+      },
+      "author": "browser-test",
+      "status": "cancelled",
+      "created_at": 1788604048.7561088,
+      "finished_at": 1788604049.038542
+    },
+    {
+      "id": "f0c34acc1c9843c88856f76e2593e3ad",
+      "kind": "prompt",
+      "target": {
+        "type": "asset",
+        "job_id": "小雨_三视图",
+        "episode": null
+      },
+      "author": "browser-test",
+      "status": "cancelled",
+      "created_at": 1788604097.597024,
+      "finished_at": 1788604097.9885452
+    },
+    {
+      "id": "3a235bc671ef42afa0d7b02fed764650",
+      "kind": "prompt",
+      "target": {
+        "type": "asset",
+        "job_id": "小雨_三视图",
+        "episode": null
+      },
+      "author": "browser-test",
+      "status": "cancelled",
+      "created_at": 1788604098.4934394,
+      "finished_at": 1788604098.692165
+    }
+  ]
+}

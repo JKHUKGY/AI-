@@ -1,0 +1,44 @@
+{
+  "comments": [],
+  "selections": {},
+  "regen_jobs": [],
+  "edits": [],
+  "approvals": [
+    {
+      "id": "8c817d31d2f34248b1b09c0fa24e215b",
+      "type": "image",
+      "status": "running",
+      "payload": {
+        "job_id": "小雨_三视图",
+        "kind": "asset",
+        "episode": null,
+        "prompt": "写实暖光，竖屏9:16\n小雨，三视图，朴素外套\n同一角色正面、侧面、背面三视图合并在一张图，外貌服装保持一致。",
+        "count": 1,
+        "ref_images": []
+      },
+      "requested_by": "browser-test",
+      "created_at": 1788604099.173298,
+      "approved_by": "browser-test",
+      "approved_at": 1788604099.3568776,
+      "result": {
+        "token": "ee519b901c36",
+        "used_ref_images": []
+      }
+    },
+    {
+      "id": "fd39738c7f774ccf9624dc632c976555",
+      "type": "image",
+      "status": "pending",
+      "payload": {
+        "job_id": "小雨_三视图",
+        "kind": "asset",
+        "episode": null,
+        "prompt": "写实暖光，竖屏9:16\n小雨，三视图，朴素外套\n同一角色正面、侧面、背面三视图合并在一张图，外貌服装保持一致。",
+        "count": 1,
+        "ref_images": []
+      },
+      "requested_by": "browser-test",
+      "created_at": 1788604099.5870066
+    }
+  ]
+}

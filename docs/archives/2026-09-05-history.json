@@ -244,7 +244,8 @@
         "tmp/single-image-skill-forward-test/机器文件/camera_path.json",
         "tmp/single-image-skill-forward-test/机器文件/depth_provenance.json",
         "tmp/single-image-skill-forward-test/机器文件/point_cloud_preview.json"
-      ]
+      ],
+      "local_text_files_missing_at_final_check": []
     },
     {
       "id": "single-image-preflight-5s",
@@ -342,7 +343,13 @@
       "remote_manifest_uploaded": true,
       "local_files_removed": 9,
       "local_bytes_freed": 5104204,
-      "changed_files_preserved": []
+      "changed_files_preserved": [],
+      "local_text_files_missing_at_final_check": [
+        "output/单图可控视频_Demo/机器文件/preflight_5s_controls/camera_path.json",
+        "output/单图可控视频_Demo/机器文件/preflight_5s_controls/review_control.md",
+        "output/单图可控视频_Demo/机器文件/preflight_5s_controls/shot_cards.json",
+        "output/单图可控视频_Demo/机器文件/preflight_5s_controls/video_jobs.json"
+      ]
     },
     {
       "id": "website-verification",
@@ -449,7 +456,17 @@
         "tmp/web-project-verification/project-setup.png",
         "tmp/web-project-verification/website-update.tar.gz"
       ],
-      "changed_files_preserved": []
+      "changed_files_preserved": [],
+      "local_text_files_missing_at_final_check": [
+        "tmp/web-project-verification/REVIEW.md",
+        "tmp/web-project-verification/browser.cjs",
+        "tmp/web-project-verification/deploy_release.py",
+        "tmp/web-project-verification/live_smoke.py",
+        "tmp/web-project-verification/prepare_release.py",
+        "tmp/web-project-verification/real_text_smoke.py",
+        "tmp/web-project-verification/release-manifest.json",
+        "tmp/web-project-verification/serve.py"
+      ]
     }
   ]
 }

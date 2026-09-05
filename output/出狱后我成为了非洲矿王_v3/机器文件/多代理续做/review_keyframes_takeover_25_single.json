@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/continue_review_single",
+  "review_scope": "single",
+  "review_basis": [
+    "keyframe_cards.json ep01_镜25 script_ref_zh第61行快走吧",
+    "当前批准源卡framing全身40%、脚下约15%及人物动作",
+    "机场A底板、角色三视图、已选交包后主帧"
+  ],
+  "source_card_note": "任务消息称苏慧右手贴胸，但实际读取当前源卡为近侧右臂自然垂下、空右手放松，与包留间隙；按当前源卡审查，不新增贴胸要求，已通知root。",
+  "provenance_note": "已读取recovered_tool_output_25_02_20260905.json；02视作恢复的同轮第二候选，不宣称存在已丢失的原调用日志。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_A主机位/SC06_机场出口_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+  ],
+  "reference_note": "候选与A底板本次实际view_image；同代理前序已实际看两角色和交包后主帧。比例为人工画幅估计。",
+  "images": [
+    {
+      "id": "ep01_镜25",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+      "verdict": "fail",
+      "reason": "A机位左玻璃、右车道与日光阴影延续；江砚左近、苏慧右中，侧背向停车区，母亲先迈步且儿子跟随。江砚右手拉深灰箱、左手空垂、双肩空；苏慧左手提橄榄包、右手空垂且与包有间隙，符合当前卡片。四肢及两人头脚完整，携全部行李离开故事正确。但江砚发顶约28.5%、鞋底约85%，全身约56.5%画高，明显超过批准40%；脚下约15%已经合适，不能单纯通过裁去地面修正人物比例。",
+      "fix_instruction": "第三轮优先以01同镜局部调整人物尺度/纵深和对应投影，使江砚头脚占画高约40%、鞋底约85%、头顶约45%；苏慧仍在他右前方中景且先走，完整保留正确左手包/右手空垂、江砚右手箱和A机位背景。保持脚下约15%。",
+      "card_field": [
+        "framing.subject_frac",
+        "framing.crop_zh",
+        "people[name=江砚].depth"
+      ]
+    },
+    {
+      "id": "ep01_镜25",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png",
+      "verdict": "fail",
+      "reason": "A机场机位、服装与同套箱包可辨；江砚右手持箱、左手空垂、双肩空，苏慧左手提包成立。江砚发顶约33%、鞋底约84%，全身约51%画高，高于批准40%；脚下约16%已接近要求。苏慧虽身体背向前方，头却转向画面左侧江砚，能见左侧面朝儿子，未落实当前gaze_at off_right的朝停车区视线；她的远侧右手被身体遮挡，不足以确认卡片要求空右手放松且与包留清楚间隙。",
+      "fix_instruction": "第三轮若用02，先将母亲头部转回画面右侧停车区、保留三分之四背面，明确露出空右手和包的分离；江砚全身缩至约40%画高且鞋底保持85%左右。保留母亲左手包、儿子右手箱以及A机位结构。01较适合同镜修正底图。",
+      "card_field": [
+        "framing.subject_frac",
+        "framing.crop_zh",
+        "people[name=苏慧].gaze_at",
+        "people[name=苏慧].action_zh"
+      ]
+    }
+  ],
+  "capped_recommendation": [],
+  "preferred_retry_base": "ep01_镜25_01，当前手序、离开视线和步态成立；优先只修全景主体比例。"
+}

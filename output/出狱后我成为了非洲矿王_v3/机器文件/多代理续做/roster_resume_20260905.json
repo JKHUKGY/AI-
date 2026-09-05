@@ -1,0 +1,67 @@
+{
+  "required_distinct_subagents": 4,
+  "peak_running_subagents": 3,
+  "authorization": "沿用execution_approval.json及2026-09-05用户继续生成指令",
+  "scope": "第1集剩余获准轮次；01第三轮已到限，03第二轮已补齐，当前02/03/09/14第三轮",
+  "agents": [
+    {
+      "agent_id": "/root/resume_generator_a",
+      "role": "Generator A",
+      "deliverables": [
+        "generator_resume_20260905_a.json"
+      ]
+    },
+    {
+      "agent_id": "/root/resume_generator_b",
+      "role": "Generator B",
+      "deliverables": [
+        "generator_resume_20260905_b.json"
+      ]
+    },
+    {
+      "agent_id": "/root/resume_review_single",
+      "role": "Reviewer A 单图",
+      "deliverables": [
+        "review_keyframes_resume_20260905_single.json"
+      ]
+    },
+    {
+      "agent_id": "/root/resume_review_continuity",
+      "role": "Reviewer B 连戏",
+      "deliverables": [
+        "review_keyframes_resume_20260905_continuity.json"
+      ]
+    },
+    {
+      "agent_id": "/root/continuity_b2_recovered",
+      "role": "Reviewer B 连戏（旧审查代理上下文丢失后接替）",
+      "deliverables": [
+        "review_keyframes_resume_batch2_continuity.json"
+      ]
+    },
+    {
+      "agent_id": "/root/generator_b_room_recovered",
+      "role": "Generator B 接替已丢失rollout代理",
+      "deliverables": [
+        "generator_resume_20260905_room_36_37.json"
+      ]
+    },
+    {
+      "agent_id": "/root/single_b3_recovered",
+      "role": "Reviewer A 单图接替丢失rollout",
+      "deliverables": [
+        "review_keyframes_resume_batch3_single.json"
+      ]
+    }
+  ],
+  "status": "batch3_generation_and_review",
+  "four_agent_requirement_met": true,
+  "actual_distinct_subagents_with_deliverables": 4,
+  "external_runtime_event": "磁盘空间外部释放后旧R2与root rollout无法加载；fork_turns=none成功启动新独立审查者，不清零轮次。",
+  "active_unit_ids": [
+    "ep01_镜34",
+    "ep01_镜36",
+    "ep01_镜37",
+    "ep01_镜38"
+  ]
+}

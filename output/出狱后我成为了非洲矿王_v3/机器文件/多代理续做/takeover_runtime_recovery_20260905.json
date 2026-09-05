@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-05T11:05:16.297372+00:00",
+  "old_agent": "/root/generator_b_room_recovered",
+  "agent_lookup_result": "live agent path not found",
+  "last_pending_call_at": "2026-09-05T10:49:52Z",
+  "unit": "ep01_镜24",
+  "original_round": 2,
+  "original_candidates": [
+    1,
+    2
+  ],
+  "existing_candidates": [
+    0
+  ],
+  "last_registered_original_generation": "ep01_镜22 candidate02",
+  "old_generated_output_directory_checked": true,
+  "new_output_for_pending_call_found": false,
+  "decision": "旧代理不可恢复；原轮次只补缺失01/02，不重做已落盘镜号；先前调用作为无返回的技术中断记录。"
+}

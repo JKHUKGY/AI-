@@ -1,0 +1,15 @@
+{
+  "id": "ep01_镜25",
+  "round": 2,
+  "candidate": 2,
+  "source": "/home/codespace/.codex/generated_images/01a07107-75a5-7aa0-afa7-d8d2075d92dc/exec-f808bd8f-43fc-4c97-aeb8-18d0eb9982c1.png",
+  "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_02.png",
+  "sha256": "0f7a4cefc2d8e72f167cbdbf3c3d8ba660382ff8b6a7fc1334ad8816b5ddbe74",
+  "generator_agent_id": "/root/resume_generator_a",
+  "status": "pending_review",
+  "recovered_by": "/root",
+  "recovery_time": "2026-09-05T11:04:30.449148+00:00",
+  "provenance_note": "原生成者运行目录中紧随已登记25_01之后的唯一PNG；实际打开确认A机场机位、母子侧背离开及母亲持包，匹配本轮镜25而非客房镜35。按同一任务缺少的第二张恢复；原会话日志曾删除，未虚构丢失的工具返回事件。",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/standard_round2_h.json",
+  "source_job_sha256": "705588e0116bec6d23b7bd68c27c586bbbf75e04fa63f281051ae18829967558"
+}

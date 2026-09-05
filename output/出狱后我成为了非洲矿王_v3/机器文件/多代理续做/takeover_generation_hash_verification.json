@@ -1,0 +1,41 @@
+{
+  "new_image_count": 16,
+  "reports": [
+    {
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_takeover_20260905_22.json",
+      "agent_id": "/root/takeover_generator_b",
+      "records": 3,
+      "hashes_valid": true
+    },
+    {
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_takeover_20260905_24.json",
+      "agent_id": "/root/continue_gen38",
+      "records": 2,
+      "hashes_valid": true
+    },
+    {
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_takeover_20260905_24_round3.json",
+      "agent_id": "/root/resume_g2_35",
+      "records": 3,
+      "hashes_valid": true
+    },
+    {
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_takeover_20260905_25_round3.json",
+      "agent_id": "/root/continue_gen38",
+      "records": 3,
+      "hashes_valid": true
+    },
+    {
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_takeover_20260905_35.json",
+      "agent_id": "/root/continue_gen38",
+      "records": 2,
+      "hashes_valid": true
+    },
+    {
+      "report": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/generator_takeover_20260905_35_round3.json",
+      "agent_id": "/root/resume_g2_35",
+      "records": 3,
+      "hashes_valid": true
+    }
+  ]
+}

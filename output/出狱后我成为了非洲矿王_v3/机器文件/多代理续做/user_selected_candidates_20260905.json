@@ -1,0 +1,223 @@
+{
+  "authorized_by": "user",
+  "user_instruction": "你从这三轮上限的图片选择一个吧，每个都选一个放到已选图片",
+  "selected_by": "/root",
+  "selected_at": "2026-09-05T12:05:39.961152+00:00",
+  "selection_basis": "user_requested_best_available",
+  "scope": "18个到限逐镜关键帧及3个到限场次主帧，各选一张；不新增生成",
+  "selections": [
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜01",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+      "sha256": "786e764ce082cfe4118c4d93690400600507260e507f1c0390d0e296adcbfe10",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "主体垂直位置/脚下空地、跨门脚位不合格。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜02",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+      "sha256": "fcf4ed8bd2bbab19f4bd6dab587fb7250e1c554a04a86384f793f9e432532aaf",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "手位正确但13%顶空和近膝裁切不合格。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜03",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+      "sha256": "be00f2cadbb100f49f47a319dba3d26aba51e9a16d7b0df0be845cc3a3ca6650",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "右手递水/左手待接正确，仍11%顶空和近膝裁切不符中景。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜09",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+      "sha256": "543f638e439d9459c784b22a5febd66a7f016e733b4abb637a8b8602c49ff442",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "江砚发型脸型、洗白衬衫、朝画左三分之四正面、冷静闭嘴神态与基准和09_02一致；胸上裁切及约7%顶空保留，左下肩片缩为约17%—19%窄弧。但09_02原左侧虚焦头侧边全部变成背景铁栏/院景，只余肩片，未保持卡片“虚焦头侧边与后肩”，亦超出仅改肩片范围。A紧底板审查时缺失；瓶盖双手胸下画外，其左右手状态不足以确认，未以必须入画作为新增要求。；可见项通过：身份服装、原文所需冷静克制神态、胸上裁切、主体方向和视线保持；陈野虚焦肩片满足边缘前景设计。已实际补看恢复的A紧底板，准确机位/门柱栏杆/院景及光线相符。手瓶盖处胸下画外，不能直接确认，未凭空断言其状态。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜15",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+      "sha256": "22f3103489dbb1d1eac4bd180348714a0171e8748c8544e9737c78de8ec02142",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "右手将拍腿起点未做出、取景过宽，不能selected。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜16",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+      "sha256": "05316f273895e03f1e2bcb50d3f33ee717414749c0f28f0146196f62b404b6b4",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "人物脚下约29%空地、陈野仍过大，比例/纵深未达到批准要求。最佳候选不等于通过。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜17",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜17/ep01_镜17_03.png",
+      "sha256": "dd175746db5cd6dd596a6baf287c5b2cd696006eca6f0d5f47ee7726e15412ac",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "全身约49%，头顶约31%，未到40%环境远全景；不是通过图。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜18",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜18/ep01_镜18_04.png",
+      "sha256": "d885ef2f72212b05cc574dd384094bf51bfd123f02513acc395670868e553f9b",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "B方向与三名旅客成立，但右缘江砚仍约40%大块头肩躯干；不是通过图。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜20",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜20/ep01_镜20_03.png",
+      "sha256": "e8d4315bd855aa8bf0f94739d8fcee71a9b969e42736c74ce964e5b72e2b7d93",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "脸约32%、露至腹部且江砚大幅过肩；不是通过图。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜21",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜21/ep01_镜21_04.png",
+      "sha256": "03052d0c643032737923a9b85ebaaf5d58685755fc2c3b5ca960c614f2690f56",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "主体顶空偏大，前景母亲肩/发构图不合，不能selected。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜22",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_03.png",
+      "sha256": "8a3f2b3a92d37b1f675939c9609a7ca22b971babe41c50dc74ea462f9bfe21c5",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "左右手动作和B背景较接近设计，但头顶留白约15%与画底至膝附近未满足5%留白、大腿中段裁切；仅作最接近候选，不是通过或最终选图。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜23",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜23/ep01_镜23_03.png",
+      "sha256": "50c66c5330f698f8e6fd64b4b6afdb4c155e26458166b8564dc447a34899f0e8",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "母亲肩片仅6%底角，主体略过大，未复原批准过肩构图。最佳候选不等于通过。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜24",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_04.png",
+      "sha256": "36a5df02d8199ba63e34d7d116cfa6c10419f73117c7250c6e8f0e4d780a2b02",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "右手、情绪、B背景、头顶留白与窄前景肩已较接近，头部仍约41%画高、画底胸下，未达到约50%头高的上胸近景；只是最接近候选，不是通过。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜34",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+      "sha256": "d66e6a2fa1ce12b8611959e4e940445982d1952ff0f44106c67a8542902ded01",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "本报告只复核05，不对未审03/04作全轮排名；05仍左手持杆、右手空垂，不通过，不能登记为最终选图。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜35",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+      "sha256": "efd4b49a51a8f3d4032b08649974f5058dc3d5cebfd0e14fc81f3b0afa30765e",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "主要左右手与持物动作已修正，仍露出江砚膝下腿和大量地板，未到大腿中段裁切。05仅为最接近候选，不是通过。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜36",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜36/ep01_镜36_00.png",
+      "sha256": "240e0d7293d12654e43f0d78948240c88ad537aea79ee0957b0c6f07840db11b",
+      "selection_reason": "实际比较00、02、04后选00：脸部皮肤最自然，母子关系、闭门与日光清楚，优先保留人物表现。",
+      "known_issues": "取景偏宽、头顶空白与前景江砚肩背偏多；选00避免后续编辑候选更明显的皮肤浮雕纹路。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜37",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜37/ep01_镜37_05.png",
+      "sha256": "6f525555a4a987deea256a762086f85658dbc0aaff73bb9f5fc2048049b7e0b3",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "第三轮三张右下肩片仍过宽；05最接近但未通过。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "keyframe",
+      "id": "ep01_镜38",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png",
+      "sha256": "65c1dae3575afc6dd6d332b54bf763bbf1ca8012fe2bef85467b853483a786ac",
+      "selection_reason": "依据已有独立审查的最佳候选建议并实际复看，优先保留人物、剧情动作与空间连贯，按用户要求选用。",
+      "known_issues": "第三轮三张明显偏远，头高约32%至33%，含上腹且前景肩片过宽；已实看旧01比新三张接近但仍非通过。本次不修改旧审查结论。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "master",
+      "id": "master_ep01_p2",
+      "beat_id": "ep01_p2",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+      "sha256": "f0bcc79bbfdd8f4dbad52974443983d7dbedd62bc16549c3f965640e14cadfbe",
+      "selection_reason": "已实际查看。监狱主帧保留门外双人站位与一致机位；别墅03四人身份齐全、箱包和客厅关系完整。按用户要求从到限候选中选用。",
+      "known_issues": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "master",
+      "id": "master_ep01_p3",
+      "beat_id": "ep01_p3",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
+      "sha256": "87490de2f7ba207b2bbe53a50ab85a3bbf32f99adcac4f666496455270fc3b98",
+      "selection_reason": "已实际查看。监狱主帧保留门外双人站位与一致机位；别墅03四人身份齐全、箱包和客厅关系完整。按用户要求从到限候选中选用。",
+      "known_issues": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    },
+    {
+      "kind": "master",
+      "id": "master_ep01_v1",
+      "beat_id": "ep01_v1",
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+      "sha256": "00c06ed140acd12376fbf2cf67649d2a032daa07e72c6bc3baba36d9bcf85dc3",
+      "selection_reason": "已实际查看。监狱主帧保留门外双人站位与一致机位；别墅03四人身份齐全、箱包和客厅关系完整。按用户要求从到限候选中选用。",
+      "known_issues": "四人在场且刘兰坐右后沙发看指甲、顾瑶坐右近沙发看手机，江砚左近背侧身右手扶同式硬箱；但苏慧面向画面右，相机看到右侧及少量背部，其近侧右肩、右袖和下垂右臂清楚连到提包手，腹前手来自远侧左臂。实际右手提包、左手腹前，与批准的左手包右手腹前相反。；四人在场：江砚左近扶深灰竖棱箱，苏慧中间，刘兰与顾瑶坐右侧沙发；身份、服装、房间和白天光可对应基准，大橄榄包外形大小基本连续。但苏慧近相机右臂从肩袖到下垂前臂及握包手连成一线，另一手在腹前，是右手提包/左手腹前，和批准左右手相反。",
+      "review_status": "failed",
+      "visually_inspected_by": "/root"
+    }
+  ]
+}

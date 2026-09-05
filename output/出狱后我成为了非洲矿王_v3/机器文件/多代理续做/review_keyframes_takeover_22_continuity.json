@@ -1,0 +1,40 @@
+{
+  "agent_id": "/root/continue_review_continuity",
+  "review_scope": "continuity",
+  "unit_id": "ep01_镜22",
+  "round": 2,
+  "inspected_files": [
+    "output/出狱后我成为了非洲矿王_v3/assets/SC06_机场出口_B反打/SC06_机场出口_B反打_00.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a1_主帧/ep01_a1_主帧_00.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+    "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜22",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_01.png",
+      "verdict": "fail",
+      "reason": "已选身份的黑短发灰蓝衬衫、苏慧灰白低髻白裙灰围裙可辨；橄榄大包仍背在江砚双肩，苏慧双手分开在身前准备接包，未提前把包交走；母子对望关系成立，热带白天及挑檐阴影仍连续。三名指定旅客均可见。主要失败：画面左为长玻璃立面、右为车道与栏杆、挑檐从左上延伸，实际复制了已选机场A主帧的空间，未实现批准B反打应有的左车队/右上挑檐；主角清楚可见的近侧左臂下伸抓箱杆，另一手在胸前抓肩带，左右持物与批准状态相反，小纸条收进左胸衣袋动作没有明确证据。01江砚更接近侧面，左耳及面部轮廓较完整，未充分做到三分之四背面；发顶上约18%空区，膝以下及鞋底也进入画面，景别偏宽。",
+      "fix_instruction": "核查实际传入 plate_image 确为 SC06_机场出口_B反打_00.png；保持批准 B 机位，framing.plate_crop_zh 明确仅见左后白小巴/黄车、中央棕榈及广告架、右上挑檐和从左近到右远的栏杆，玻璃立面位于相机身后。people[江砚].ref_note_zh 限制机场主帧仅供衣装箱包，必要时用已选角色和道具局部引用防止复制主帧空间。people[江砚].action_zh 明确近侧左肩—抬起左肘—左手—左胸衣袋连续可见，小纸条末端从左指尖进入衣袋；远侧右肩—右前臂—右手连接箱杆，近侧左手全程不在箱杆处。framing.crop_zh 保持发顶约5%和下边缘切近端大腿中段，删除膝以下取景。完成源卡修正后机械装配，不能手改派生提示词。",
+      "card_field": "plate_image; framing.plate_crop_zh; framing.crop_zh; people[江砚].ref_note_zh; people[江砚].action_zh; people[江砚].camera_relation"
+    },
+    {
+      "id": "ep01_镜22",
+      "round": 2,
+      "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜22/ep01_镜22_02.png",
+      "verdict": "fail",
+      "reason": "已选身份的黑短发灰蓝衬衫、苏慧灰白低髻白裙灰围裙可辨；橄榄大包仍背在江砚双肩，苏慧双手分开在身前准备接包，未提前把包交走；母子对望关系成立，热带白天及挑檐阴影仍连续。三名指定旅客均可见。主要失败：画面左为长玻璃立面、右为车道与栏杆、挑檐从左上延伸，实际复制了已选机场A主帧的空间，未实现批准B反打应有的左车队/右上挑檐；主角清楚可见的近侧左臂下伸抓箱杆，另一手在胸前抓肩带，左右持物与批准状态相反，小纸条收进左胸衣袋动作没有明确证据。02江砚三分之四背面比01清楚，但左手拉箱也因此更明确；发顶上约14%空区，母子鞋子和完整箱轮均可见，仍是全身宽景，未在近端大腿中段截止。",
+      "fix_instruction": "核查实际传入 plate_image 确为 SC06_机场出口_B反打_00.png；保持批准 B 机位，framing.plate_crop_zh 明确仅见左后白小巴/黄车、中央棕榈及广告架、右上挑檐和从左近到右远的栏杆，玻璃立面位于相机身后。people[江砚].ref_note_zh 限制机场主帧仅供衣装箱包，必要时用已选角色和道具局部引用防止复制主帧空间。people[江砚].action_zh 明确近侧左肩—抬起左肘—左手—左胸衣袋连续可见，小纸条末端从左指尖进入衣袋；远侧右肩—右前臂—右手连接箱杆，近侧左手全程不在箱杆处。framing.crop_zh 保持发顶约5%和下边缘切近端大腿中段，删除膝以下取景。完成源卡修正后机械装配，不能手改派生提示词。",
+      "card_field": "plate_image; framing.plate_crop_zh; framing.crop_zh; people[江砚].ref_note_zh; people[江砚].action_zh; people[江砚].camera_relation"
+    }
+  ],
+  "proposed_file": "",
+  "capped_recommendation": [],
+  "notes": [
+    "仅审指定第二轮01/02；实际view_image打开两候选、B底板、已选交包前机场主帧及两位角色三视图；依据ep01_a2_handoff及script_ref_zh，不读取其他Reviewer报告。",
+    "包仍在儿子身上符合本镜首帧动作起点，不因尚未完成交包而判失败。"
+  ]
+}

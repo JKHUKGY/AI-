@@ -163,6 +163,15 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 button.primary:hover { filter: brightness(1.08); }
 button.small { padding: 3px 9px; font-size: 12px; }
 button:disabled { opacity: .5; cursor: default; }
+.control-form { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; margin: 16px 0; }
+.control-form > label { display: flex; flex-direction: column; gap: 6px; flex: 1 1 240px; min-width: 0; }
+.control-form input, .control-form select { max-width: 100%; width: 100%; box-sizing: border-box; padding: 8px; }
+.control-form input[type=checkbox] { width: auto; align-self: flex-start; }
+.control-user { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 12px; }
+.control-projects { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; overflow-wrap: anywhere; }
+.control-table { overflow-x: auto; max-width: 100%; }
+.control-table td { vertical-align: top; min-width: 90px; }
+.control-user input, .control-user button { max-width: 100%; box-sizing: border-box; }
 
 .figure-block {
   border: 1px solid var(--line);
@@ -275,6 +284,7 @@ button:disabled { opacity: .5; cursor: default; }
 
 .editable-section { margin: 8px 0 16px; }
 .editable-section .view-mode { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.editable-section .content-html { width: 100%; min-width: 0; overflow-wrap: anywhere; }
 .editable-section .edit-mode { display: flex; flex-direction: column; gap: 8px; }
 .editable-section .edit-textarea { width: 100%; min-height: 220px; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 6px; white-space: pre; }
 .editable-section .edit-status { font-size: 12px; color: #b3392c; }

@@ -55,9 +55,14 @@
     "candidate": 3,
     "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-51390715-0c5a-4066-96bf-fe589b3b7284.png",
     "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
-    "status": "rejected",
+    "status": "selected",
     "reviewed": true,
-    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。",
+    "review_status": "failed",
+    "selection_basis": "user_requested_best_available",
+    "selection_reason": "已实际查看。监狱主帧保留门外双人站位与一致机位；别墅03四人身份齐全、箱包和客厅关系完整。按用户要求从到限候选中选用。",
+    "known_issues": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。",
+    "selection_authorization": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/user_selected_candidates_20260905.json"
   },
   {
     "id": "master_ep01_p2",
@@ -115,9 +120,14 @@
     "candidate": 3,
     "source": "/home/codespace/.codex/generated_images/01a0701d-1cf5-7cd2-8606-f434a783e62a/exec-ea3a2ce4-8d8d-4c40-9b87-10cdd963c4a4.png",
     "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
-    "status": "rejected",
+    "status": "selected",
     "reviewed": true,
-    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。"
+    "review_zh": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。",
+    "review_status": "failed",
+    "selection_basis": "user_requested_best_available",
+    "selection_reason": "已实际查看。监狱主帧保留门外双人站位与一致机位；别墅03四人身份齐全、箱包和客厅关系完整。按用户要求从到限候选中选用。",
+    "known_issues": "已修正到铁门外，人物缩小；水瓶/瓶盖的左右手与开合状态仍错误或无法从画面可靠确认，不能作为已验收道具状态主帧。三轮到限。",
+    "selection_authorization": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/user_selected_candidates_20260905.json"
   },
   {
     "id": "master_ep01_p3",
@@ -309,7 +319,7 @@
     "candidate": 3,
     "source": "/home/codespace/.codex/generated_images/01a0709d-d54d-7482-85e9-06663fe1a09f/exec-a6b6fef7-125a-498a-afe7-1e9836fe300e.png",
     "path": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
-    "status": "rejected",
+    "status": "selected",
     "reviewed": true,
     "review_zh": "四人在场且刘兰坐右后沙发看指甲、顾瑶坐右近沙发看手机，江砚左近背侧身右手扶同式硬箱；但苏慧面向画面右，相机看到右侧及少量背部，其近侧右肩、右袖和下垂右臂清楚连到提包手，腹前手来自远侧左臂。实际右手提包、左手腹前，与批准的左手包右手腹前相反。；四人在场：江砚左近扶深灰竖棱箱，苏慧中间，刘兰与顾瑶坐右侧沙发；身份、服装、房间和白天光可对应基准，大橄榄包外形大小基本连续。但苏慧近相机右臂从肩袖到下垂前臂及握包手连成一线，另一手在腹前，是右手提包/左手腹前，和批准左右手相反。",
     "independent_reviews": [
@@ -338,7 +348,12 @@
         "proposed_file": "",
         "master_frame_read_zh": ""
       }
-    ]
+    ],
+    "review_status": "failed",
+    "selection_basis": "user_requested_best_available",
+    "selection_reason": "已实际查看。监狱主帧保留门外双人站位与一致机位；别墅03四人身份齐全、箱包和客厅关系完整。按用户要求从到限候选中选用。",
+    "known_issues": "四人在场且刘兰坐右后沙发看指甲、顾瑶坐右近沙发看手机，江砚左近背侧身右手扶同式硬箱；但苏慧面向画面右，相机看到右侧及少量背部，其近侧右肩、右袖和下垂右臂清楚连到提包手，腹前手来自远侧左臂。实际右手提包、左手腹前，与批准的左手包右手腹前相反。；四人在场：江砚左近扶深灰竖棱箱，苏慧中间，刘兰与顾瑶坐右侧沙发；身份、服装、房间和白天光可对应基准，大橄榄包外形大小基本连续。但苏慧近相机右臂从肩袖到下垂前臂及握包手连成一线，另一手在腹前，是右手提包/左手腹前，和批准左右手相反。",
+    "selection_authorization": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/user_selected_candidates_20260905.json"
   },
   {
     "id": "master_ep01_v1",

@@ -106,7 +106,7 @@ chosen=[x for x in assets if x['status']=='selected']
 chosen_masters=[x for x in masters if x['status']=='selected']
 labels={'ep01_p2':'监狱饮水前主帧','ep01_p3':'监狱饮水后主帧','ep01_v1':'别墅主帧','ep01_r2':'客房主帧'}
 todo=status.get('blocked_after_3_rounds',[])+status.get('needs_retry_round3',[])
-todo_text='、'.join(labels.get(x,x) for x in todo) or '暂无记录中的待处理主帧'
+todo_text='、'.join(labels.get(x,x) for x in todo) or '主帧已全部选定'
 video_count=len(list((PROJECT/'videos').rglob('*.mp4')))
 shot_count=status['keyframes_completed']
 progress_text=f'场次主帧已选{len(chosen_masters)}/6张；逐镜关键帧{shot_count}/38张；现有视频文件{video_count}个。'
@@ -132,19 +132,19 @@ for x in masters:
     source=ROOT/x['path']
     picked=x['status']=='selected'
     category='场次主帧' if picked else '待处理'
-    label='备选' if x['status']=='alternate' else ('已选' if picked else ('待审查' if x['status']=='pending_review' else '未通过'))
+    label='已选（按用户要求）' if picked and x.get('selection_basis')=='user_requested_best_available' else ('备选' if x['status']=='alternate' else ('已选' if picked else ('待审查' if x['status']=='pending_review' else '未通过')))
     dest=HUMAN/('02_已选图片/第01集_场次主帧' if picked else '03_待处理图片/第01集')/source.name
     alias(dest,source)
     images.append({'title':x['id']+f' · 候选{x["candidate"]:02d}', 'path':dest,'group':category,
-                   'note':x.get('review_zh',''),'status':label})
+                   'note':('选用说明：'+x.get('selection_reason','')+' 原审查记录：' if x.get('selection_basis')=='user_requested_best_available' else '')+x.get('review_zh',''),'status':label})
 
 for x in shots:
     source=ROOT/x['path']; picked=x['status']=='selected'
     category='逐镜关键帧' if picked else '待处理'
-    label='已选' if picked else ('待审查' if x['status']=='pending_review' else '未通过')
+    label='已选（按用户要求）' if picked and x.get('selection_basis')=='user_requested_best_available' else ('已选' if picked else ('待审查' if x['status']=='pending_review' else '未通过'))
     dest=HUMAN/('02_已选图片/第01集_关键帧' if picked else '03_待处理图片/第01集_关键帧')/source.name
     alias(dest,source)
-    images.append({'title':x['id']+f' · 候选{x["candidate"]:02d}', 'path':dest,'group':category,'note':x.get('review_zh',''),'status':label})
+    images.append({'title':x['id']+f' · 候选{x["candidate"]:02d}', 'path':dest,'group':category,'note':('选用说明：'+x.get('selection_reason','')+' 原审查记录：' if x.get('selection_basis')=='user_requested_best_available' else '')+x.get('review_zh',''),'status':label})
 if (PROJECT/'keyframes/ep01/keyframes.md').exists():
     copy_document('keyframes/ep01/keyframes.md','05_审阅与验收/第01集_关键帧登记.md')
 
@@ -158,9 +158,13 @@ write_view('进度.md',f'''# 当前制作进度
 - 第1集：38镜分镜文本已完成，预计253秒。
 - 场次主帧：已选 {len(chosen_masters)}/6 张。
 - 逐镜关键帧：{shot_count}/38 张；现有视频文件{video_count}个。
-- 当前待处理：{todo_text}。具体问题见验收记录。
+- 选用依据：独立审查通过 {status.get('keyframes_review_passed', shot_count)} 镜；按用户要求择优选用 {status.get('keyframes_selected_by_user', 0)} 镜。
+- 尚未生成：{status.get('keyframe_unit_counts', {}).get('ready_for_generation', 0)} 镜。
+- 关键帧候选：{status.get('keyframe_image_count', len(shots))} 张；到限未通过 {status.get('keyframe_unit_counts', {}).get('capped', 0)} 镜；依赖主帧阻塞 {status.get('keyframe_unit_counts', {}).get('blocked_dependency', 0)} 镜。
+- 主帧待处理：{todo_text}。具体问题见验收记录。
+- 下一步：{status.get('next_step', '以关键帧登记为准')}。
 
-[查看图片验收记录](05_审阅与验收/第01集_图片验收记录.md)。历史已选资产与本轮新生成主帧分开统计。
+[查看关键帧登记](05_审阅与验收/第01集_关键帧登记.md) · [查看主帧验收记录](05_审阅与验收/第01集_图片验收记录.md)。历史已选资产与本轮新生成主帧分开统计。
 ''')
 
 navigation='''# 《出狱后我成为了非洲矿王》v3 · 阅读入口
@@ -189,7 +193,7 @@ page='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="view
 <title>非洲矿王 v3 · 分镜与图片</title><style>
 :root{font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;color:#262d2c;background:#f4f3ef}body{margin:0}header,main{max-width:1380px;margin:auto;padding:28px}h1{font-size:clamp(25px,4vw,42px);margin:8px 0}h2{margin-top:0}p{line-height:1.7}.sub{color:#64706a}nav,.tools{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}a{color:#276150}button,.link{padding:10px 16px;border:1px solid #d5d9d4;border-radius:8px;background:white;color:#264c40;text-decoration:none;font:inherit;cursor:pointer}button.active{background:#264c40;color:#fff}.stats{display:flex;flex-wrap:wrap;gap:15px}.stats div{background:#fff;border-radius:12px;padding:18px 24px;min-width:170px}.stats strong{font-size:27px;display:block}.notice{border-left:4px solid #a7763b;background:#fff6e6;padding:12px 18px;margin:20px 0}section{margin:20px 0 45px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #00000009}.card img{width:100%;height:320px;object-fit:contain;background:#e8e7e2}.card>div{padding:16px}.card h3{font-size:16px;overflow-wrap:anywhere}.card p{font-size:13px;color:#66706a}.badge{font-size:12px;color:#55725e}input{padding:10px 12px;border:1px solid #cbd2ca;border-radius:8px;min-width:240px;font:inherit}.sheet{overflow:auto;background:white;border-radius:12px;padding:22px}.sheet table{border-collapse:collapse;min-width:950px;font-size:14px}.sheet td,.sheet th{border:1px solid #dfe3dc;padding:11px;vertical-align:top;min-width:90px}.sheet th{background:#e8eee8;position:sticky;top:0}.sheet table:last-of-type td:nth-child(6){min-width:280px}.sheet table:last-of-type td:nth-child(10){min-width:200px}.sheet td:nth-child(n+11),.sheet th:nth-child(n+11){display:none}.sheet.full td,.sheet.full th{display:table-cell}.sheet code{white-space:normal}.empty{padding:24px;color:#66706a}[hidden]{display:none!important}footer{padding:24px;color:#64706a}
 </style><header><div class="sub">制作阅读页 · 第1集</div><h1>出狱后我成为了非洲矿王 <small>v3</small></h1><p class="sub">分镜、图片和当前进度集中在这里。点击图片可打开原尺寸文件。</p>
-<div class="stats"><div><strong>38 镜</strong>分镜文本完成 · 预计253秒</div><div><strong>MASTER_COUNT / 6</strong>场次主帧已选</div><div><strong>SHOT_COUNT / 38</strong>逐镜关键帧已通过审查</div></div>
+<div class="stats"><div><strong>38 镜</strong>分镜文本完成 · 预计253秒</div><div><strong>MASTER_COUNT / 6</strong>场次主帧已选</div><div><strong>SHOT_COUNT / 38</strong>逐镜关键帧已选</div></div>
 <nav><a class="link" href="#story">看分镜</a><a class="link" href="#pictures">看图片</a><a class="link" href="04_%E8%AE%BE%E5%AE%9A/">看设定</a><a class="link" href="05_%E5%AE%A1%E9%98%85%E4%B8%8E%E9%AA%8C%E6%94%B6/">审阅与验收</a><a class="link" href="%E8%BF%9B%E5%BA%A6.md">当前进度</a></nav>
 <div class="notice">主帧还剩3项待处理：监狱饮水前／后水瓶持握、别墅提包手。未通过图片单列；当前没有完成的逐镜关键帧或视频。</div></header><main>
 <section id="pictures"><h2>图片</h2><div class="tools" id="filters"><button class="active" data-filter="已选">全部已选</button><button data-filter="人物">人物</button><button data-filter="场景">场景</button><button data-filter="场次主帧">第1集主帧</button><button data-filter="逐镜关键帧">第1集关键帧</button><button data-filter="待处理">待处理图片</button><input id="search" type="search" placeholder="查找角色、场景或镜号" aria-label="查找图片"></div><p id="count" class="sub" aria-live="polite"></p><div class="grid">CARDS</div></section>
@@ -197,7 +201,7 @@ page='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="view
 <footer>已选图片保留历史／本轮验收依据。场次主帧与逐镜关键帧分别统计。</footer></main><script>
 let filter='已选';const cards=[...document.querySelectorAll('.card')];function update(){const q=document.querySelector('#search').value.toLowerCase();let n=0;for(const c of cards){const ok=(filter==='已选'?c.dataset.group!=='待处理':c.dataset.group===filter)&&c.dataset.search.toLowerCase().includes(q);c.hidden=!ok;if(ok)n++}document.querySelector('#count').textContent=`当前显示 ${n} 张图片`;}document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));update()}));document.querySelector('#search').addEventListener('input',update);document.querySelector('#columns').addEventListener('click',e=>{const full=document.querySelector('.sheet').classList.toggle('full');e.target.textContent=full?'收起技术列':'显示全部18列'});update();
 </script></html>'''
-page=page.replace('主帧还剩3项待处理：监狱饮水前／后水瓶持握、别墅提包手。未通过图片单列；当前没有完成的逐镜关键帧或视频。',html.escape('待处理：'+todo_text+'。未通过图片单列。'+progress_text))
+page=page.replace('主帧还剩3项待处理：监狱饮水前／后水瓶持握、别墅提包手。未通过图片单列；当前没有完成的逐镜关键帧或视频。',html.escape(todo_text+'。已选含按用户要求择优选用的候选，原审查记录保留。'+progress_text))
 page=page.replace('MASTER_COUNT',str(len(chosen_masters))).replace('SHOT_COUNT',str(shot_count)).replace('CARDS',''.join(cards)).replace('STORY',md.render(story))
 if (HUMAN/'子代理进度.md').exists(): page=page.replace('</nav>', '<a class="link" href="'+relative_url(HUMAN/'子代理进度.md')+'">子代理进度</a></nav>', 1)
 write_view('阅读首页.html',page)

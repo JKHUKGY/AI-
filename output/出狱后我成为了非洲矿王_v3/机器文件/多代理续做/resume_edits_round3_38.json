@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜38",
+    "prompt": "Edit this same photograph. 对现有胸像做小幅取景修正：江砚完整头部从发顶到下颏约50%画高，发顶只留5%空间，下缘仍截在胸口。约1.2倍温和收紧江砚及相应原背景。最主要局部修正是把右下苏慧灰白衣肩片往右框外移，在任何高度最宽只伸入画宽15%，露少量灰白鬓发与虚焦肩缘，空出区域恢复为同机位客房背景。\n保留江砚同一脸、心酸而顺从的克制神态、视线朝母亲上方、坐姿、无肩带衬衫、白天北窗A方向和原光照；手腿与箱包仍在画外。\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜38/ep01_镜38_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/same_unit_final_plans_01_38.json",
+    "script_ref_zh": "script_source.txt 第72行「江砚（看着母亲小心翼翼的样子，心里发酸，点了点头）：我知道了妈。」——结尾落在他为了母亲忍下屈辱，为下一集餐桌冲突留压力。"
+  }
+]

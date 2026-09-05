@@ -1,0 +1,12 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜25",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe this airport departure into a wider full shot. Place the mother and son farther along the same walkway while preserving their current poses and relative positions. The young man’s FULL BODY from hair crown to shoe sole must measure 40% of the final image height: crown at approximately 45% down from the top, shoe soles at approximately 85%. Leave 15% floor below his feet. The mother remains ahead of him on the right and is slightly smaller in perspective. Extend the same airport architecture naturally to occupy the upper half. Match the perspective of the three more distant travellers.",
+      "preserve_zh": "Preserve the exact mother and son identities, clothes and departing direction. The son is on the left in three-quarter back view, looking toward his mother, RIGHT hand pulling the same dark gray suitcase, LEFT hand relaxed down, shoulders bare. The mother is ahead on the right, looking toward the parking area on screen-right, LEFT hand carrying the same olive backpack, RIGHT hand relaxed empty. Preserve the three background travellers and luggage, glass terminal on left, canopy above, railing and yellow cars on right, tropical daylight and photographic texture."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "web/server/app.py": "4242b4149da98bd793b65b38210f6e3351c856b52e56ae42e086828dbc7d706d",
+  "web/server/content_editor.py": "68537c77ea75a0332f8d5a7de0e00d0cadb18c7bbc31344157488172053eb863",
+  "web/frontend/api.js": "23ef68ced29999996c50cfd8a1c849b07a810520eb11c2037e25b51b1145b59a",
+  "web/frontend/index.html": "2f0fb31bb68f3c34efca97df27574c13061a3dbed3cd8ff3e4e5bb8ee9619f9e",
+  "web/frontend/content-editor.js": "4e5935c21c38e4841e11b87764f437bc2dc96aea765fc0a1dc15d526b7532f9c",
+  "web/frontend/views/characters.js": "b429c6e266d2b774a03ed651d99b81937f8f0b6e2e277bfbe658f58c7e8976ff",
+  "web/frontend/views/scenes.js": "99f9c4956b5260f9d282535315e0accc604f5ca2efc33a660c7704cd39c37a3e",
+  "web/frontend/views/episode.js": "68b1998aa4f85df1159052fa5d5b6ece729e47428bbe8ba357a60f213fc34ffe",
+  "web/frontend/style.css": "053aa6e7051db1b19cfb1ce273be3a707f25fe7f2ed40057d4227ef9c09578a9",
+  "web/content/guide.md": "ffd8922b1cdfc036903dde604fb0dda9f2b367b73d9758de529b409473309cfc",
+  "web/README.md": "9e81125a33526459a5c140a8b6409292199dbf5e4c53e1a126fedc5fa0aee654"
+}

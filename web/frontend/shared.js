@@ -185,7 +185,7 @@ const UI = (() => {
         <p class="muted">本次将使用服务器的 Codex 图片额度。此审批不包含租显卡或视频生成。</p>
         <div class="toolbar"><button class="primary approve-image" disabled>批准并生成</button><button class="cancel-approval">取消</button></div>
       </div>`;
-      overlay.querySelector('.approval-summary').textContent = `${payload.job_id} · ${payload.count} 张图片 · ${payload.ref_images.length} 张参考图`;
+      overlay.querySelector('.approval-summary').textContent = `${payload.job_id} · ${payload.count} 张图片 · ${payload.ref_images.length} 张参考图 · 冻结 ${approval.credits ?? payload.count*10} 积分，成功每张扣 10，未完成部分退回`;
       overlay.querySelector('.approval-prompt').textContent = payload.prompt;
       payload.ref_images.forEach((path) => {
         const img = document.createElement('img');
@@ -239,6 +239,7 @@ const UI = (() => {
             <div class="toolbar">
               <label>生成张数 <input type="number" min="1" max="6" value="1" style="width:52px"></label>
               <button class="primary small go-regen" disabled>预览并审批图片生成</button>
+              <button class="small stop-generation" hidden>终止生成</button>
             </div>
             <div class="regen-used-refs" hidden></div>
             <div class="regen-status" hidden></div>
@@ -258,6 +259,14 @@ const UI = (() => {
         try { draft = JSON.parse(localStorage.getItem(draftKey) || '{}'); } catch {}
         let pendingSubmit = false;
         let taskBusy = false;
+        let runningTasks = [];
+        const stopGeneration = regenPanel.querySelector('.stop-generation');
+        stopGeneration.addEventListener('click', async () => {
+          stopGeneration.disabled = true; stopGeneration.textContent = '正在终止…';
+          try { for (const task of runningTasks) await TaskUI.cancel(task); }
+          catch (err) { UI.toast(err.message, 'error'); }
+          finally { stopGeneration.disabled = false; stopGeneration.textContent = '终止生成'; }
+        });
         const appliedImages = new Set(jobData.files || []);
         function saveDraft() {
           draft = {...draft, prompt: textarea.value, instruction: regenPanel.querySelector('.ai-instruction').value,
@@ -471,11 +480,19 @@ const UI = (() => {
           const textTask = texts.at(-1);
           const images = matching.filter(t => t.kind === 'image');
           const imageTask = images.at(-1);
+          runningTasks = matching.filter(t => t.status === 'running');
+          stopGeneration.hidden = !runningTasks.length;
           setBusy(matching.some(t => t.status === 'running'));
           if (textTask) {
             const box = regenPanel.querySelector('.ai-write-status'); box.hidden = false;
             box.textContent = textTask.status === 'running' ? 'Codex 正在后台写提示词，换页或刷新后可继续查看。'
+              : textTask.status === 'cancelled' ? '已终止，原编辑内容保留，可重新生成。'
               : textTask.status === 'done' ? '提示词已完成并保存在历史版本和顶部任务栏。' : (textTask.error || '文字任务未完成');
+            if (textTask.status !== 'running' && draft.pendingTask === textTask.id && textTask.status !== 'done') {
+              draft.pendingTask = null;
+              // 换页时历史内容可能仍在加载，不用尚为空的表单覆盖原草稿。
+              try { localStorage.setItem(draftKey, JSON.stringify(draft)); } catch {}
+            }
             if (textTask.status === 'done' && draft.appliedTask !== textTask.id
                 && (!draft.editedAt || draft.editedAt <= textTask.created_at || draft.pendingTask === textTask.id)) {
               textarea.value = textTask.result.prompt;
@@ -487,6 +504,7 @@ const UI = (() => {
           if (imageTask) {
             const box = regenPanel.querySelector('.regen-status'); box.hidden = false;
             box.textContent = imageTask.status === 'running' ? '图片正在后台生成，切换页面不会停止任务。'
+              : imageTask.status === 'cancelled' ? '已终止，已保存图片保留，可重新审批生成。'
               : imageTask.status === 'done' ? '图片生成已完成。' : (imageTask.error || '图片生成失败，请检查任务记录。');
             for (const fname of imageTask.new_files || []) {
               const rel = `${project}/${opts.baseDirHint}/${jobId}/${fname}`;

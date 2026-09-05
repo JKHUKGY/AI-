@@ -4,6 +4,7 @@ function parseHash() {
   if (parts.length === 0) return { name: 'home' };
   if (parts[0] === 'guide') return { name: 'guide' };
   if (parts[0] === 'inbox') return { name: 'inbox' };
+  if (['admin','usage','gpu'].includes(parts[0])) return {name:parts[0]};
   if (parts[0] === 'p' && parts[1]) {
     const project = decodeURIComponent(parts[1]);
     const section = parts[2] || 'characters';
@@ -35,8 +36,10 @@ function navHtml(route) {
   // 反馈汇总是跨剧的管理视角，普通剧本家账号只能看到自己被授权的那几部剧，
   // 汇总页对他们意义不大，只给管理员账号看。
   if (currentUser && currentUser.is_admin) {
+    items.push(['#/admin','管理员管理',route.name==='admin']);
     items.push(['#/inbox', '反馈汇总', route.name === 'inbox']);
   }
+  items.push(['#/usage','我的积分',route.name==='usage'],['#/gpu','租显卡',route.name==='gpu']);
   items.push(['#/', '切换项目', route.name === 'home']);
   return items.map(([href, label, active]) => `<a href="${href}" class="${active ? 'active' : ''}">${UI.esc(label)}</a>`).join('');
 }
@@ -48,6 +51,7 @@ async function render() {
   app.innerHTML = '<div class="empty-hint">加载中…</div>';
   try {
     if (route.name === 'home') await Views.home(app);
+    else if (['admin','usage','gpu'].includes(route.name)) await Views[route.name](app);
     else if (route.name === 'setup') await Views.setup(app, route.project);
     else if (route.name === 'guide') await Views.guide(app);
     else if (route.name === 'inbox') await Views.inbox(app);

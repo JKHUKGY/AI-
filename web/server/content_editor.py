@@ -36,8 +36,8 @@ def _save(root, data):
 
 def _ready(root):
     p = Path(root) / '_web_state/setup.json'
-    if p.is_file() and json.loads(p.read_text()).get('status') != 'done':
-        raise ApiError(409, '自动筹备尚未完成，请先在“项目筹备”完成或继续文字生成，再增删结构。已有文字仍可编辑。')
+    if p.is_file() and json.loads(p.read_text()).get('status') not in ('done', 'cancelled'):
+        raise ApiError(409, '请先在“项目筹备”完成或终止自动生成，再增删结构。已有文字仍可编辑。')
 
 
 def _file(root, kind, episode=None):
@@ -155,6 +155,7 @@ def add(root, body, username):
                 matches = [i for i,r in enumerate(table['rows']) if r['镜号'] == after]
                 if not matches: raise ApiError(409, '插入位置已变化，请刷新')
                 index = table['start'] + matches[0] + 1
+            if index and not lines[index-1].endswith('\n'): lines[index-1] += '\n'
             lines.insert(index, md_tables._render_row(table['header'],row) + '\n')
             new = ''.join(lines)
             result = {'episode':episode,'shot':row['镜号']}
@@ -241,6 +242,7 @@ def restore(root, identifier, username):
             if not table: raise ApiError(409,'请先恢复所属分集')
             if table['header']!=entry['header'] or any(r['镜号']==entry['key'] for r in table['rows']): raise ApiError(409,'镜号或表格结构冲突，不能覆盖恢复')
             lines=old.splitlines(keepends=True); index=table['start']+min(entry['position'],len(table['rows']))
+            if index and not lines[index-1].endswith('\n'): lines[index-1] += '\n'
             lines.insert(index,md_tables._render_row(table['header'],entry['row'])+'\n'); new=''.join(lines)
         else:
             matcher=CHAR if entry['kind']=='character' else SCENE
@@ -257,5 +259,7 @@ def disabled(root, job_id, kind, episode):
         if kind=='asset' and e['kind'] in ('character','scene') and (job_id==e['key'] or job_id.startswith(e['key']+'_')): return True
         if kind=='keyframe' and e.get('episode')==int(episode):
             if e['kind']=='episode': return True
-            if e['kind']=='shot' and re.sub(r'\D','',e['key']) == re.sub(r'\D','',job_id.split('_镜')[-1]): return True
+            if e['kind']=='shot':
+                left, right = re.sub(r'\D','',e['key']), re.sub(r'\D','',job_id.split('_镜')[-1])
+                if left and right and int(left)==int(right): return True
     return False

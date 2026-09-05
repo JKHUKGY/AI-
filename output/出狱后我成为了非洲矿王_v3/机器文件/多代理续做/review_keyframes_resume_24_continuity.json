@@ -1,0 +1,40 @@
+{
+  "agent_id": "/root/resume_r2",
+  "unit_id": "ep01_镜24",
+  "round": 2,
+  "review_scope": "continuity",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png"
+  ],
+  "source_card_sha256": "7de58c4736e803ad6fa7424ac0177c7dd17782ca2e729f1a05902a252f8dc921",
+  "created_at": "2026-09-05T11:18:42.983848+00:00",
+  "images": [
+    {
+      "id": "ep01_镜24",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_01.png",
+      "verdict": "fail",
+      "reason": "B紧反打左白小巴、黄色车与右上挑檐正确，服装和肤色持续；苏慧抬起的是画面右侧、身体解剖左臂，左手触眼角，与交包后左手持包/右手抹眼角矛盾。发顶约18%，头部高度约28%，下方见腰腹及空垂手臂；右前景江砚肩背占幅约42%，远大于10%-15%。笑容露齿较松，掩饰辛苦的勉强感不如02明确。",
+      "fix_instruction": "以02为同镜编辑基底保留脸、克制笑容、B车道背景。把抹眼动作改为解剖右臂抬起到右眼角，左手持包状态保留于胸口裁切线下。取景收紧到发顶5%、头高约50%、画底截胸口；江砚主体移到画框右外，只留10%-15%虚焦肩缘和少量发丝。",
+      "card_field": "people[0].action_zh; framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜24",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png",
+      "verdict": "fail",
+      "reason": "B紧反打左白小巴、黄色车与右上挑檐正确，服装和肤色持续；苏慧抬起的是画面右侧、身体解剖左臂，左手触眼角，与交包后左手持包/右手抹眼角矛盾。发顶约11%，头部高度约27%，画底露腰腹；右前景头侧和肩背约35%，明显超过窄肩10%-15%。眼湿与收敛嘴角较符合强笑。",
+      "fix_instruction": "以02为同镜编辑基底保留脸、克制笑容、B车道背景。把抹眼动作改为解剖右臂抬起到右眼角，左手持包状态保留于胸口裁切线下。取景收紧到发顶5%、头高约50%、画底截胸口；江砚主体移到画框右外，只留10%-15%虚焦肩缘和少量发丝。",
+      "card_field": "people[0].action_zh; framing.crop_zh; framing.headroom_frac; background_people[0].posture_zh"
+    }
+  ],
+  "proposed_file": "",
+  "recommended_next_base": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜24/ep01_镜24_02.png"
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06df4-0472-7401-8ec4-8574ea8cb664/exec-9765cb97-f881-42af-aebb-d78cbc9bc9ba.png",
+    "original_destination": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "session": "/home/codespace/.codex/sessions/2026/09/04/rollout-2026-09-04T19-45-03-01a06df4-0472-7401-8ec4-8574ea8cb664.jsonl",
+    "exists": true,
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "sha256": "4ca0ce5a4f5b7d1fff77e6f8ca052f002482602d3cbcd6025bd153dcbefb9c7b",
+    "original_symlink": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_B反打_紧"
+  },
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06df2-a807-7e31-aa36-5454d1b852c4/exec-804d2444-f5ed-4ae7-a096-9b14973befb8.png",
+    "original_destination": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/SC03_B反打_紧/SC03_B反打_紧_00.png",
+    "session": "/home/codespace/.codex/sessions/2026/09/04/rollout-2026-09-04T19-43-34-01a06df2-a807-7e31-aa36-5454d1b852c4.jsonl",
+    "exists": true,
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC03_B反打_紧/SC03_B反打_紧_00.png",
+    "sha256": "1f54723ea7805d4c4ad18009f1b5b171c1c842219d83513b428e27bbd4b8be49",
+    "original_symlink": "../../../../出狱后我成为了非洲矿王_v2/assets/SC03_B反打_紧"
+  },
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06df0-8ff9-7351-8ef9-67d137af9b48/exec-59d42117-d2bc-4cde-b8b4-f5e67d3c1958.png",
+    "original_destination": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v2/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "session": "/home/codespace/.codex/sessions/2026/09/04/rollout-2026-09-04T19-41-17-01a06df0-8ff9-7351-8ef9-67d137af9b48.jsonl",
+    "exists": true,
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC06_B反打_紧/SC06_B反打_紧_00.png",
+    "sha256": "79a991c2e1b214df1766f4db18dac4eb54ef5712a35f91199487f836edbfb5c7",
+    "original_symlink": "../../../../出狱后我成为了非洲矿王_v2/assets/SC06_B反打_紧"
+  },
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06def-9283-7102-ad97-9154dbd48eec/exec-c3166cc2-5448-4b4e-9f1b-24eead5a204f.png",
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "sha256": "db080ccd96271c03b2a7dcc29c3f377e501bf23d286ab47168506d45210893bd",
+    "original_symlink": null,
+    "provenance": "2026-09-04 session 01a06def-9283-7102-ad97-9154dbd48eec exact original cp destination"
+  },
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06def-92c3-7a51-98df-396c355cf158/exec-15bafd08-0807-4979-b677-37fdb81da8eb.png",
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "sha256": "3db465e345393f6c442d05c7de8516c3972045dabf5a60835ac8373a4faabbb5",
+    "original_symlink": "../../../../出狱后我成为了非洲矿王_v2/assets/SC05_监狱门口_B反打_紧",
+    "provenance": "2026-09-04 session 01a06def-92c3-7a51-98df-396c355cf158 exact original cp destination"
+  },
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06df6-4467-7ff3-998a-ad58f6d79826/exec-b19d6842-154f-404d-ae1c-42b71cb4e145.png",
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC03_A主机位_紧/SC03_A主机位_紧_00.png",
+    "sha256": "143a48c9ba1eb2809938bda600143f8bf2f6dc0231350d0f687f2955e1ab6cd8",
+    "original_symlink": "../../../../出狱后我成为了非洲矿王_v2/assets/SC03_A主机位_紧",
+    "provenance": "2026-09-04 session 01a06df6-4467-7ff3-998a-ad58f6d79826 exact original cp destination"
+  },
+  {
+    "source": "/home/codespace/.codex/generated_images/01a06df2-fbff-7393-b063-1bb5c089e39e/exec-5d17421b-1982-4716-b774-be2611096583.png",
+    "destination": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "sha256": "0aef4fd567d0e29bc25bd9a5ab299ca1aa92682caf425c995fce618e38b08dce",
+    "original_symlink": "../../../../出狱后我成为了非洲矿王_v2/assets/SC01_C侧机位_紧",
+    "provenance": "2026-09-04 session 01a06df2-fbff-7393-b063-1bb5c089e39e exact original cp destination"
+  }
+]

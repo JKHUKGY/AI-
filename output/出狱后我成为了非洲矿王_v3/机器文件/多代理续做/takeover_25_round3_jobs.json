@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜25",
+    "prompt": "Edit this same photograph. Reframe this airport departure into a wider full shot. Place the mother and son farther along the same walkway while preserving their current poses and relative positions. The young man’s FULL BODY from hair crown to shoe sole must measure 40% of the final image height: crown at approximately 45% down from the top, shoe soles at approximately 85%. Leave 15% floor below his feet. The mother remains ahead of him on the right and is slightly smaller in perspective. Extend the same airport architecture naturally to occupy the upper half. Match the perspective of the three more distant travellers.\nPreserve the exact mother and son identities, clothes and departing direction. The son is on the left in three-quarter back view, looking toward his mother, RIGHT hand pulling the same dark gray suitcase, LEFT hand relaxed down, shoulders bare. The mother is ahead on the right, looking toward the parking area on screen-right, LEFT hand carrying the same olive backpack, RIGHT hand relaxed empty. Preserve the three background travellers and luggage, glass terminal on left, canopy above, railing and yellow cars on right, tropical daylight and photographic texture.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜25/ep01_镜25_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/takeover_25_round3_edit_plan.json",
+    "script_ref_zh": "script_source.txt 第61行「苏慧（抹了把眼睛，强笑）：这边太阳大，显的，快走吧，你表叔家都等着呢，特意给你做了接风饭。」——承接“快走吧”，明确两人和全部行李一起离开。"
+  }
+]

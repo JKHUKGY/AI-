@@ -1,0 +1,69 @@
+{
+  "agent_id": "/root/resume_r1",
+  "unit_id": "ep01_镜35",
+  "round": 3,
+  "review_scope": "single",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC03日_顾家客房_B反打/SC03日_顾家客房_B反打_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png"
+  ],
+  "source_basis": "当前源卡ep01_镜35，原文第70行先入房再带门；此前独立读取ep01_r1节拍，实际看B日间客房、双方三视图及已选机场交包主帧。未读取其他审查报告。",
+  "images": [
+    {
+      "id": "ep01_镜35",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_03.png",
+      "verdict": "fail",
+      "reason": "苏慧右肩—右肘—右掌贴门及远侧左手提包已可辨，眼睛朝儿子。头顶留白约8%。江砚左手胸前、右手箱杆已保留；B客房左空桌右床、半开门和自然日光符合起始节拍，服装及箱包外观基本延续。裁切仍不合格：江砚双膝及膝下小腿进入画面、苏慧全身脚和较多地板可见，未做到源卡要求的画底截江砚大腿中段、箱身下部和地板出框。",
+      "fix_instruction": "第三轮已到上限，停止本镜自动追加。保留05作最接近候选，差异登记为尚需收紧到江砚大腿中段并将头顶空隙靠近5%；04的额外手臂/手不可用于交付。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "framing.headroom_frac"
+      ]
+    },
+    {
+      "id": "ep01_镜35",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_04.png",
+      "verdict": "fail",
+      "reason": "苏慧出现额外提包手：正常右臂抬手贴门、左臂在画面右侧下垂且左手空着，画面左侧裙边又多出第三只握包手，未见合理肩臂连接，属于明显肢体合成错误。头顶留白约8%。江砚左手胸前、右手箱杆已保留；B客房左空桌右床、半开门和自然日光符合起始节拍，服装及箱包外观基本延续。裁切仍不合格：江砚双膝及膝下小腿进入画面、苏慧全身脚和较多地板可见，未做到源卡要求的画底截江砚大腿中段、箱身下部和地板出框。",
+      "fix_instruction": "第三轮已到上限，停止本镜自动追加。保留05作最接近候选，差异登记为尚需收紧到江砚大腿中段并将头顶空隙靠近5%；04的额外手臂/手不可用于交付。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "framing.headroom_frac",
+        "people[1].action_zh",
+        "people[1].contact_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜35",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+      "verdict": "fail",
+      "reason": "苏慧右臂横过胸前、右掌贴门，左臂下垂连接包顶提手已正确，双臂与道具关系较清楚，眼睛朝儿子。江砚头顶留白约7%。江砚左手胸前、右手箱杆已保留；B客房左空桌右床、半开门和自然日光符合起始节拍，服装及箱包外观基本延续。裁切仍不合格：江砚双膝及膝下小腿进入画面、苏慧全身脚和较多地板可见，未做到源卡要求的画底截江砚大腿中段、箱身下部和地板出框。",
+      "fix_instruction": "第三轮已到上限，停止本镜自动追加。保留05作最接近候选，差异登记为尚需收紧到江砚大腿中段并将头顶空隙靠近5%；04的额外手臂/手不可用于交付。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "framing.headroom_frac"
+      ]
+    }
+  ],
+  "proposed_file": "",
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜35",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜35/ep01_镜35_05.png",
+      "remaining_difference": "主要左右手与持物动作已修正，仍露出江砚膝下腿和大量地板，未到大腿中段裁切。05仅为最接近候选，不是通过。"
+    }
+  ]
+}

@@ -7,39 +7,39 @@
   "pre_generation_rejections": 2,
   "rejection_reason": "referenced_image_paths at most 5; reduced villa refs using approved airport image for Jiang identity and props, then resubmitted",
   "counts": {
-    "selected": 3,
-    "alternate": 1,
-    "rejected": 24
+    "selected": 6,
+    "rejected": 21,
+    "alternate": 1
   },
   "selected_master_beats": [
     "ep01_a1",
     "ep01_a2",
-    "ep01_r2"
-  ],
-  "blocked_after_3_rounds": [
     "ep01_p2",
     "ep01_p3",
+    "ep01_r2",
     "ep01_v1"
   ],
+  "blocked_after_3_rounds": [],
   "needs_retry_round3": [],
-  "keyframes_completed": 1,
+  "keyframes_completed": 21,
   "keyframes_planned": 38,
   "pending_tools": 0,
-  "next_step": "已生成补图5张均未通过两位独立审查；继续不依赖未通过主帧的21镜，机场17–20已派发。",
-  "keyframe_units_blocked": 17,
-  "keyframe_image_count": 60,
+  "next_step": "已按用户要求选用到限候选；17镜尚未生成，主帧依赖已解除，后续可装配生成。",
+  "keyframe_units_blocked": 0,
+  "keyframe_image_count": 123,
   "keyframe_counts": {
-    "rejected": 53,
-    "pending_review": 6,
-    "selected": 1
+    "rejected": 100,
+    "selected": 21,
+    "alternate": 2
   },
   "keyframe_unit_counts": {
-    "needs_retry": 13,
-    "pending_review": 2,
-    "generating": 2,
-    "blocked_dependency": 17,
-    "capped": 3,
-    "passed": 1
+    "selected_by_user": 18,
+    "ready_for_generation": 17,
+    "passed": 3
   },
-  "total_image_count": 88
+  "total_image_count": 151,
+  "last_updated_at": "2026-09-05T12:07:39.069823+00:00",
+  "active_generation": false,
+  "keyframes_review_passed": 3,
+  "keyframes_selected_by_user": 18
 }
