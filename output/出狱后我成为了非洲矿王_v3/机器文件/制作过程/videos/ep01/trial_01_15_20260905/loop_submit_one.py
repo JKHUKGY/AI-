@@ -24,7 +24,8 @@ req={'id':remoteid,'argv':args};request=D/('request_'+remoteid+'.json');request.
 exists=ssh("pgrep -af '[l]tx_batch_worker.py /workspace/ltx_jobs/v3_ep01_loop_20260905' || true").strip()
 if not exists:
  m.upload(cfg,str(request),remote+'/initial_request.json');m.upload(cfg,str(T/'ltx_batch_worker.py'),remote+'/ltx_batch_worker.py')
- ssh('rm -f '+remote+'/STOP; cd /workspace/LTX-2 && setsid nohup .venv/bin/python -u '+remote+'/ltx_batch_worker.py '+remote+' > '+remote+'/worker.log 2>&1 < /dev/null &',30)
+ launch='import subprocess;from pathlib import Path;Path('+repr(remote+'/STOP')+').unlink(missing_ok=True);p=subprocess.Popen('+repr(['/workspace/LTX-2/.venv/bin/python','-u',remote+'/ltx_batch_worker.py',remote])+',cwd="/workspace/LTX-2",stdin=subprocess.DEVNULL,stdout=open('+repr(remote+'/worker.log')+',"w"),stderr=subprocess.STDOUT,start_new_session=True);print(p.pid)'
+ ssh('python3 -c '+shlex.quote(launch),30)
 # Atomic queueing, resume existing result if interrupted.
 resultpath=remote+'/results/'+remoteid+'.json';read='python3 -c '+shlex.quote('from pathlib import Path;p=Path('+repr(resultpath)+');print(p.read_text() if p.exists() else "{}")')
 result=json.loads(ssh(read))

@@ -743,15 +743,30 @@
     ],
     "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
     "script_ref": "script_source.txt 第47行「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——用三吨金矿与栽赃的反差说明顾家忘恩负义。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：用三吨金矿与栽赃的反差说明顾家忘恩负义。",
-    "round_count": 0,
+    "round_count": 1,
     "generation_count": 1,
     "l2_count": 0,
-    "status": "awaiting_r1_review",
+    "status": "test_visual_reviewed",
     "final_confirmed": false,
     "test_only": true,
     "audio_review": "not_listened",
-    "selected_test_file": null,
-    "history": []
+    "selected_test_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜12_u1.mp4",
+    "history": [
+      {
+        "round": 1,
+        "seed": 90501121,
+        "video_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜12_u1.mp4",
+        "frames_dir": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜12_u1",
+        "verdict": "pass",
+        "action_class": "retain_visual_result",
+        "reason": [
+          "陈野眉间收紧、怒斥口型与沉脸收尾符合原剧本对忘恩负义的不忿；江砚保持左手透明塑料瓶、右手白盖，脸衣与铁门背景稳定。"
+        ],
+        "fix_instruction": null,
+        "defect_window": null,
+        "review_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_loop_r1_12_15.json"
+      }
+    ]
   },
   {
     "id": "ep01_镜12_u2",
@@ -780,15 +795,30 @@
     ],
     "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。 已实际查看前段最后一帧后续接；尾帧审阅记录见 tail_reviews。",
     "script_ref": "script_source.txt 第47行「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——用三吨金矿与栽赃的反差说明顾家忘恩负义。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：用三吨金矿与栽赃的反差说明顾家忘恩负义。",
-    "round_count": 0,
+    "round_count": 1,
     "generation_count": 1,
     "l2_count": 0,
-    "status": "awaiting_r1_review",
+    "status": "test_visual_reviewed",
     "final_confirmed": false,
     "test_only": true,
     "audio_review": "not_listened",
-    "selected_test_file": null,
-    "history": []
+    "selected_test_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜12_u2.mp4",
+    "history": [
+      {
+        "round": 1,
+        "seed": 90501122,
+        "video_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜12_u2.mp4",
+        "frames_dir": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜12_u2",
+        "verdict": "pass",
+        "action_class": "retain_visual_result",
+        "reason": [
+          "从前段收口尾帧继续，陈野持续愤慨说话后收口，身体略前倾；左前景江砚仍低持瓶盖，背景及人物未见明显畸变，支持讲述三吨金矿与背叛的情节。"
+        ],
+        "fix_instruction": null,
+        "defect_window": null,
+        "review_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_loop_r1_12_15.json"
+      }
+    ]
   },
   {
     "id": "ep01_镜13",
@@ -817,15 +847,30 @@
     ],
     "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 13→14近似同机位；用问句后的停顿接单次摇头，不新增推镜。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
     "script_ref": "script_source.txt 第48行「陈野（顿了顿，试探着问）：那咱，还回万通矿业吗？」——给去留选择留出空隙。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：给去留选择留出空隙。",
-    "round_count": 0,
+    "round_count": 1,
     "generation_count": 1,
     "l2_count": 0,
-    "status": "awaiting_r1_review",
+    "status": "test_visual_reviewed",
     "final_confirmed": false,
     "test_only": true,
     "audio_review": "not_listened",
-    "selected_test_file": null,
-    "history": []
+    "selected_test_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜13.mp4",
+    "history": [
+      {
+        "round": 1,
+        "seed": 90501131,
+        "video_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜13.mp4",
+        "frames_dir": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜13",
+        "verdict": "pass",
+        "action_class": "retain_visual_result",
+        "reason": [
+          "江砚闭嘴听问句，短暂向下看后回到陈野，眉眼沉稳；五张抽帧没有替画外陈野开口，构图与身份稳定，停顿具有去留思考含义。"
+        ],
+        "fix_instruction": null,
+        "defect_window": null,
+        "review_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_loop_r1_12_15.json"
+      }
+    ]
   },
   {
     "id": "ep01_镜14",
@@ -854,15 +899,30 @@
     ],
     "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
     "script_ref": "script_source.txt 第49行「江砚（摇了摇头，语气平静笃定）：不回了，自己干。」——本场反转：主动离开顾家，决心自己创业。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：本场反转：主动离开顾家，决心自己创业。",
-    "round_count": 0,
+    "round_count": 1,
     "generation_count": 1,
     "l2_count": 0,
-    "status": "awaiting_r1_review",
+    "status": "test_visual_reviewed",
     "final_confirmed": false,
     "test_only": true,
     "audio_review": "not_listened",
-    "selected_test_file": null,
-    "history": []
+    "selected_test_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜14.mp4",
+    "history": [
+      {
+        "round": 1,
+        "seed": 90501141,
+        "video_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/clips/ep01_镜14.mp4",
+        "frames_dir": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_frames/ep01_镜14",
+        "verdict": "pass",
+        "action_class": "retain_visual_result",
+        "reason": [
+          "0-1秒密集抽帧可见头部从朝左经过近正面向右，再回到左侧陈野，构成摇头拒绝；后续说话时眉眼平稳，最后收口，没有变成开怀笑，支持原剧本平静笃定自己干的决定。脸部衣服铁门保持一致。"
+        ],
+        "fix_instruction": null,
+        "defect_window": null,
+        "review_file": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/videos/ep01/trial_01_15_20260905/review_loop_r1_12_15.json"
+      }
+    ]
   },
   {
     "id": "ep01_镜15_u1",
@@ -891,7 +951,7 @@
     ],
     "notes": "仅提示词准备；576×1024测试档，正式档待测试后再出。台词逐字保留；英文正文由技能脚本装配。 A5跨镜同角色声线需听审；文字声线声明不保证音色一致，必要时统一后期配音但保持原台词。 用户2026-09-05明确要求1—15镜试生成；本批为单轮试片，质量问题记录后反馈，不自动进入多轮重做。",
     "script_ref": "script_source.txt 第50行「陈野（眼睛一下子亮了，狠狠一拍大腿）：好！我就等你这句话呢！设备、工人我都能搞到，咱自己找矿自己干，不受他顾家的鸟气！」——陈野当即给出设备与工人的支持，二人结盟。\n角色依据：江砚24岁、地质专业优等生，内敛孝顺；陈野讲义气且直率；苏慧48岁、长期寄人篱下而谨慎；刘兰傲慢、顾瑶轻视穷亲戚。监狱段江砚已遭背叛，机场至客房是初到非洲闪回，不预演后续知情。\n验收标准：陈野当即给出设备与工人的支持，二人结盟。",
-    "round_count": 0,
+    "round_count": 1,
     "generation_count": 1,
     "l2_count": 0,
     "status": "awaiting_r1_review",
