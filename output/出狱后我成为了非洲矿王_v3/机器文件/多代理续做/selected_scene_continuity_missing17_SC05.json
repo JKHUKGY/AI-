@@ -1,0 +1,233 @@
+{
+  "agent_id": "/root/resume_r2",
+  "review_scope": "selected_scene_continuity",
+  "scene": "SC05",
+  "status": "complete",
+  "outcome": "selected_images_preserved_with_known_issues",
+  "created_at": "2026-09-05T14:40:17.937632+00:00",
+  "queue_sha256": "b98a471cf559b26d92a2ccb6a67a9293732f117904429698e0a7368561384eec",
+  "source_card_sha256": "75e7bd6e439a22b8cfc0f0467ead79010c8adcd922f6a65a2f83cb1132638203",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_generation.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png"
+  ],
+  "method": "按队列选图逐张实际查看01—16并前后对照，结合原剧本38—52行、scene_beats p1/p2/p3/p4/p5及交接/饮水子beat、p2/p3主帧。此前已实际查看角色和A/B底板。只记录剪辑连续性，不更改原单图fail、到限择优或已选路径，不启动第四轮，不以小百分比容差返工。",
+  "selected_sequence": [
+    {
+      "id": "ep01_镜01",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜01/ep01_镜01_03.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚从门口出来，陈野在车侧持盖紧瓶，人物身份与服装可延续；陈野右手瓶。"
+    },
+    {
+      "id": "ep01_镜02",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜02/ep01_镜02_04.png",
+      "actual_viewed": true,
+      "continuity_observation": "B反打陈野迎接/拍肩起点，瓶仍陈野右手，基本动作接01；皮肤和衣料刻纹较重。"
+    },
+    {
+      "id": "ep01_镜03",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜03/ep01_镜03_04.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野右手递盖紧瓶，江砚远侧左手准备接，交接方向可接02；交接完成尚需视频。"
+    },
+    {
+      "id": "ep01_镜04",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_01.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野向左急切解释、江砚左侧听，瓶画外；B道路方向连续，陈野皮肤偏刻纹。"
+    },
+    {
+      "id": "ep01_镜05",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚左手瓶/右手盖、低眼暂停，符合未饮水阶段，脸较自然。"
+    },
+    {
+      "id": "ep01_镜06",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_02.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野B机位继续解释，背景门外道路成立；较05反打皮肤刻纹加重。"
+    },
+    {
+      "id": "ep01_镜07",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚抬眼安静听，白盖仍在瓶口，右手搭盖；与05动作顺接。"
+    },
+    {
+      "id": "ep01_镜08",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野继续解释完整陷害链；江砚近侧右袖接右前臂握瓶、远侧左手搭盖，和前后批准左右手不一致。"
+    },
+    {
+      "id": "ep01_镜09",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚胸像冷静，瓶盖完全画外；此帧不能证明饮水已经发生或未发生，原剧本开盖/喝水必须由视频表现。"
+    },
+    {
+      "id": "ep01_镜10",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野微分嘴唇惊讶，开口瓶局部在左前景，饮水后开合状态可接；握瓶手臂受遮挡，左右不作确定判定。"
+    },
+    {
+      "id": "ep01_镜11",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚冷静回答近景、瓶盖画外；衣服较13/14平顺。"
+    },
+    {
+      "id": "ep01_镜12",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野不忿，江砚左手开口瓶/右手白盖分离可辨；与15同状态，但反衬08的换手。"
+    },
+    {
+      "id": "ep01_镜13",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚静听试探问题，胸像与画外持物成立；衬衣重复花纹明显。"
+    },
+    {
+      "id": "ep01_镜14",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+      "actual_viewed": true,
+      "continuity_observation": "江砚表态自己干，同A机位与13脸部构图很近；头发、衬衣/皮肤刻纹变化会使直切跳动明显。"
+    },
+    {
+      "id": "ep01_镜15",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜15/ep01_镜15_04.png",
+      "actual_viewed": true,
+      "continuity_observation": "陈野准备给支持，右手近大腿、江砚左瓶右盖清楚；这是拍腿前静帧，不把未完成拍腿判成缺动作。"
+    },
+    {
+      "id": "ep01_镜16",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜16/ep01_镜16_03.png",
+      "actual_viewed": true,
+      "continuity_observation": "A宽景江砚朝西侧车辆、陈野在左车边，副驾开门上车尚未发生；白盖及取盖手远小，不能可靠判断是否重新拧回。人物距离比15明显扩大，进车方向需在运动段交代。"
+    }
+  ],
+  "stable_elements": [
+    "江砚黑短发灰蓝衬衣深裤、陈野短发胡须褐外衫灰背心深毛巾的身份与基本服装保持，没有人物重复或换人。",
+    "全场为暖日光、红土地、剥落白墙、锈铁门及同类越野车；未出现昼夜突变。",
+    "A机位看院内树/平房，B机位看门外道路/车辆，反打背景方向总体连续；B中车在右、A中车在左属相机反向投影。",
+    "交接前瓶在陈野，之后瓶在江砚；05/07/08盖仍在瓶口，10/12/15见开口瓶，宏观开合阶段符合镜09喝水分界。"
+  ],
+  "issues": [
+    {
+      "id": "SC05_PROP_HAND_08",
+      "affected_shots": [
+        "ep01_镜05",
+        "ep01_镜07",
+        "ep01_镜08",
+        "ep01_镜12",
+        "ep01_镜15"
+      ],
+      "type": "visible_prop_hand_continuity",
+      "confidence": "high",
+      "observation": "08江砚近侧右臂沿卷袖与前臂连到握瓶手，远侧左手搭白盖；05/07为右手搭盖、左手瓶，12/15为右手独立白盖、左手开口瓶。08可见换手，剧本未安排换手。",
+      "edit_impact": "直接切入08的宽画面时水瓶换手可见；不是瓶子归属换人。",
+      "handling": "保留到限选择及原记录，下游承接时标为已有可见误差；不新增关键帧轮次。",
+      "classification": "scene_comparison_confirmation"
+    },
+    {
+      "id": "SC05_STYLE_JUMPS",
+      "affected_shots": [
+        "ep01_镜02",
+        "ep01_镜03",
+        "ep01_镜04",
+        "ep01_镜06",
+        "ep01_镜08",
+        "ep01_镜09",
+        "ep01_镜10",
+        "ep01_镜11",
+        "ep01_镜12",
+        "ep01_镜13",
+        "ep01_镜14",
+        "ep01_镜15"
+      ],
+      "type": "appearance_texture",
+      "confidence": "high",
+      "observation": "编辑候选02/03/04/06中陈野脸胸、09/13/14江砚脸颈与衬衣有刻纹/重复花纹；08/10/12较自然，11衬衣也较平顺。同人物反打重现时纹理强度与光泽明显变化。",
+      "edit_impact": "会被看成皮肤/衣料细节跳变；硬光方向仍属于同一正午场景。",
+      "handling": "属于已审到限的画质已知问题，保留选图；视频与剪辑验收时关注放大/锐化是否进一步突出。",
+      "classification": "known_issue_crosscut_effect"
+    },
+    {
+      "id": "SC05_FRAMING_RHYTHM",
+      "affected_shots": [
+        "ep01_镜07",
+        "ep01_镜08",
+        "ep01_镜09",
+        "ep01_镜10",
+        "ep01_镜11",
+        "ep01_镜12",
+        "ep01_镜13",
+        "ep01_镜14"
+      ],
+      "type": "shot_scale_edit_rhythm",
+      "confidence": "high",
+      "observation": "陈野08/10/12使用较宽的自然首轮图，江砚09/11/13/14为胸像近景。13→14又是同机位、相近脸部大小和位置。",
+      "edit_impact": "宽近交替可用于叙事，但13→14直切更容易形成跳切；不是身份/轴线错误。",
+      "handling": "保持原镜头选择，后续按试探问句和回答节拍衔接；仅记录剪辑风险，不据景别约数开新轮。",
+      "classification": "accepted_selection_tradeoff"
+    },
+    {
+      "id": "SC05_ACTION_BRIDGES",
+      "affected_shots": [
+        "ep01_镜03",
+        "ep01_镜09",
+        "ep01_镜15",
+        "ep01_镜16"
+      ],
+      "type": "downstream_motion_handoff",
+      "confidence": "high",
+      "observation": "03为递瓶接触前，09为脸胸像看不见瓶，15为拍腿前，16仍站门口且车门未开；均为批准动作起点而不是动作完成证据。",
+      "edit_impact": "只剪静态选图会缺交接、饮水、拍腿和上车这些动作；16比15人物间距更大，移动需有时间。",
+      "handling": "由既定视频步骤承接动作和空间移动，尤其09完成喝水后再接10，16走向画面左车并开副驾。此项不是要求再出图。",
+      "classification": "downstream_required_action"
+    },
+    {
+      "id": "SC05_MASTER_PROP_UNCERTAINTY",
+      "affected_shots": [
+        "master_ep01_p2",
+        "master_ep01_p3"
+      ],
+      "type": "existing_master_known_issue",
+      "confidence": "high",
+      "observation": "两个已选主帧均保留门外双人/车侧基本关系，但瓶盖左右和开合状态原已标错误或不可可靠确认；本次实看人物极小，不能拿它推翻具体beat的左瓶右盖要求。",
+      "edit_impact": "主帧可定空间，不能作为道具动作已经验收的依据。",
+      "handling": "保持用户到限选用决定和原master_known_issues，具体镜按scene_beats描述延续。",
+      "classification": "existing_known_issue"
+    }
+  ],
+  "uncertainties": [
+    "10握瓶臂受前景遮挡，不能确定左右手，未强判反手。",
+    "16瓶盖手部太小且有遮挡，未宣称重新拧盖；后续动作保持开口瓶/分离白盖或交代收纳。"
+  ],
+  "new_generation_requested": false,
+  "selection_modified": false,
+  "prior_verdicts_modified": false
+}

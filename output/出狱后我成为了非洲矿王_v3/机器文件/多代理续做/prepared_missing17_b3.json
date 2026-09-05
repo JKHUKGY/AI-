@@ -1,0 +1,18 @@
+{
+  "agent_id": "/root/resume_g2_35",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_round1_b3.json",
+  "source_job_sha256": "0d289149dfbe8e29c229c3d21c2ac0dc89c7e512dea8019e1dec905f6191fc5e",
+  "inspected_references": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+  ],
+  "targets_confirmed_absent": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_00.png"
+  ],
+  "imagegen_calls": 0
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜27",
+    "prompt": "Edit this same photograph. Repose the OLDER woman on the LEFT so her torso and face point RIGHT toward the younger woman. Her nose must point toward the center of the image, not toward the left border. Keep her eyes lowered to her own raised RIGHT-hand fingernails, held in front of her on the center side. Keep the YOUNGER woman on the RIGHT facing LEFT toward the center, looking down at her phone in both hands. Tighten to a two-person chest-up frame with both whole heads, fingernails and phone visible, little empty space above their hair.\nKeep both women's exact identities, blue-gray satin dress and white top, their seats, the sofa and the black-marble/window camera direction. Both women remain clear main subjects. Preserve the cleared seating/table area and natural photographic material textures.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch3_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第64行「▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央，沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。」——不抬头就是轻慢，不额外添加对视。"
+  },
+  {
+    "id": "ep01_镜28",
+    "prompt": "Edit this same photograph. Make a tight chest-up reaction portrait of the gray-haired mother in the beige shirt and apron. Place her complete hair crown near the top with about 5% headroom and crop the bottom directly beneath her chest. Reduce the brown-haired woman in blue-gray at the left foreground to a narrow blurred head-and-shoulder sliver along that edge. Keep the younger woman with her phone at the far-left background edge and the son's blurred side face and blue-gray shoulder at the far-right edge.\nPreserve all FOUR distinct identities and their positions. Keep the mother's tentative polite smile, the son's tense listening expression, the other two women's indifferent attention, the same entrance camera direction, daylight and natural skin/clothing. Preserve the repaired brown-haired foreground woman's identity.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch3_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第65行「苏慧（小心翼翼地陪着笑）：刘姐，瑶瑶，小砚到了。」——介绍儿子也要小心讨认可。"
+  }
+]

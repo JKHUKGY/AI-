@@ -1,0 +1,20 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜05",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png",
+      "mode": "local_reframe",
+      "prompt_variant": "edge_only",
+      "correction_zh": "Reduce ONLY the blurred brown shoulder in the bottom-left and along the left edge. Move the listener farther off the LEFT edge so that his remaining blurred hair and shoulder form a slim strip no wider than 15% of the final image width, including the bottom-left corner. Replace the excess shoulder area with the naturally continuing prison background or the already-present young man where appropriate. Keep the original narrow blurred head edge along the upper-left.",
+      "preserve_zh": "Keep the young man’s exact face, eye direction, closed lips, gray-blue shirt, left hand on bottle and right fingers on attached white cap, background camera direction and light. The current close-up and top margin remain."
+    },
+    {
+      "id": "ep01_镜07",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+      "mode": "local_reframe",
+      "prompt_variant": "edge_only",
+      "correction_zh": "Reduce ONLY the blurred brown shoulder in the bottom-left and along the left edge. Move the listener farther off the LEFT edge so that his remaining blurred hair and shoulder form a slim strip no wider than 15% of the final image width, including the bottom-left corner. Replace the excess shoulder area with the naturally continuing prison background or the already-present young man where appropriate. Keep the original narrow blurred head edge along the upper-left.",
+      "preserve_zh": "Keep the young man’s exact face, eye direction, closed lips, gray-blue shirt, left hand on bottle and right fingers on attached white cap, background camera direction and light. The current close-up and top margin remain."
+    }
+  ]
+}

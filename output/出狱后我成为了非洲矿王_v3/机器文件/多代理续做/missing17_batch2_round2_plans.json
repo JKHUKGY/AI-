@@ -1,0 +1,41 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜08",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe as a tight chest-up reaction close-up of the bearded man in the brown jacket and gray scarf. Enlarge this sharp person strongly: his hair crown is 5% below the top edge, and the lower edge cuts directly beneath his chest. His waist, belt and trousers are outside the frame. Move the blurred young blue-gray-shirted listener to the extreme left edge, retaining just a narrow sliver of the back of his head and shoulder within the leftmost 15% of the image, including the bottom-left corner.",
+      "preserve_zh": "Preserve both identities, the exact expression, eye direction, head angle, clothes, natural skin and original background direction. Keep the same moment of dialogue. Hands and bottle retain their original action below the chest crop; do not raise them into the picture."
+    },
+    {
+      "id": "ep01_镜10",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe as a tight chest-up reaction close-up of the bearded man in the brown jacket and gray scarf. Enlarge this sharp person strongly: his hair crown is 5% below the top edge, and the lower edge cuts directly beneath his chest. His waist, belt and trousers are outside the frame. Move the blurred young blue-gray-shirted listener to the extreme left edge, retaining just a narrow sliver of the back of his head and shoulder within the leftmost 15% of the image, including the bottom-left corner.",
+      "preserve_zh": "Preserve both identities, the exact expression, eye direction, head angle, clothes, natural skin and original background direction. Keep the same moment of dialogue. Hands and bottle retain their original action below the chest crop; do not raise them into the picture."
+    },
+    {
+      "id": "ep01_镜11",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe as a tight chest-up reaction close-up of the young clean-shaven man in the faded blue-gray shirt. Enlarge this sharp person strongly: his hair crown is 5% below the top edge, and the lower edge cuts directly beneath his chest. His waist, belt and trousers are outside the frame. Move the blurred brown-jacketed bearded listener to the extreme left edge, retaining just a narrow sliver of the back of his head and shoulder within the leftmost 15% of the image, including the bottom-left corner.",
+      "preserve_zh": "Preserve both identities, the exact expression, eye direction, head angle, clothes, natural skin and original background direction. Keep the same moment of dialogue. Hands and bottle retain their original action below the chest crop; do not raise them into the picture."
+    },
+    {
+      "id": "ep01_镜12",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe as a tight chest-up reaction close-up of the bearded man in the brown jacket and gray scarf. Enlarge this sharp person strongly: his hair crown is 5% below the top edge, and the lower edge cuts directly beneath his chest. His waist, belt and trousers are outside the frame. Move the blurred young blue-gray-shirted listener to the extreme left edge, retaining just a narrow sliver of the back of his head and shoulder within the leftmost 15% of the image, including the bottom-left corner.",
+      "preserve_zh": "Preserve both identities, the exact expression, eye direction, head angle, clothes, natural skin and original background direction. Keep the same moment of dialogue. Hands and bottle retain their original action below the chest crop; do not raise them into the picture."
+    }
+  ],
+  "status": "dual_review_feedback_merged",
+  "review_sources": [
+    "review_keyframes_missing17_batch2_single.json",
+    "review_keyframes_missing17_batch2_continuity.json"
+  ]
+}

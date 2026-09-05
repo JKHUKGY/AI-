@@ -1,0 +1,12 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜31",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_01.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Zoom in strongly for a portrait close-up of the younger woman on the RIGHT. Frame only her full head, neck, shoulders and chest: her hair crown almost touches the upper border and the LOWER BORDER cuts directly across her chest. Retain a small blurred portion of the older woman’s head and shoulder on the LEFT background.",
+      "preserve_zh": "Keep the younger woman’s downward eyes, relaxed mouth, exact face, hair and white clothing; keep the older woman’s downward gaze and blue-gray clothing. Preserve the natural photographic skin, same sofa, window and lighting."
+    }
+  ]
+}

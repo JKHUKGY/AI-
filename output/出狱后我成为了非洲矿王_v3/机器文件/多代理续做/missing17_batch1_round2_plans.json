@@ -1,0 +1,36 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜04",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜04/ep01_镜04_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe this same photograph as a tight head-and-chest close-up of the middle-aged man in the brown overshirt. Move the framing strongly closer. His crown sits just 5% below the top edge. The BOTTOM edge cuts across his CHEST, just below the collar area. The sharp man dominates the right 85% of the image. Move the blurred listener almost entirely off the LEFT edge, keeping only a narrow, out-of-focus sliver of hair and rear shoulder within the leftmost 15%, including the bottom-left corner.",
+      "preserve_zh": "Keep his urgent furrowed brow, slightly opening lips and eye contact toward the young man off-left. His hands stay down outside the close-up. Preserve his exact identity, natural facial texture, clothing, existing eye direction, prison gate camera direction, background structures and midday light. Preserve the single original moment and only change framing and the foreground edge."
+    },
+    {
+      "id": "ep01_镜05",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe this same photograph as a tight head-and-chest close-up of the young man in the gray-blue shirt. Move the framing strongly closer. His crown sits just 5% below the top edge. The BOTTOM edge cuts across his CHEST, just below the collar area. The sharp man dominates the right 85% of the image. Move the blurred listener almost entirely off the LEFT edge, keeping only a narrow, out-of-focus sliver of hair and rear shoulder within the leftmost 15%, including the bottom-left corner.",
+      "preserve_zh": "Keep his calm closed mouth and downward gaze at the bottle-cap action. Preserve his LEFT hand holding the bottle and RIGHT fingers on the attached cap; these remain at the lower crop edge or outside it according to the close-up. Preserve his exact identity, natural facial texture, clothing, existing eye direction, prison gate camera direction, background structures and midday light. Preserve the single original moment and only change framing and the foreground edge."
+    },
+    {
+      "id": "ep01_镜06",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜06/ep01_镜06_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe this same photograph as a tight head-and-chest close-up of the middle-aged man in the brown overshirt. Move the framing strongly closer. His crown sits just 5% below the top edge. The BOTTOM edge cuts across his CHEST, just below the collar area. The sharp man dominates the right 85% of the image. Move the blurred listener almost entirely off the LEFT edge, keeping only a narrow, out-of-focus sliver of hair and rear shoulder within the leftmost 15%, including the bottom-left corner.",
+      "preserve_zh": "Keep his urgent furrowed brow, slightly opening lips and eye contact toward the young man off-left. His hands stay down outside the close-up. Preserve his exact identity, natural facial texture, clothing, existing eye direction, prison gate camera direction, background structures and midday light. Preserve the single original moment and only change framing and the foreground edge."
+    },
+    {
+      "id": "ep01_镜07",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_00.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe this same photograph as a tight head-and-chest close-up of the young man in the gray-blue shirt. Move the framing strongly closer. His crown sits just 5% below the top edge. The BOTTOM edge cuts across his CHEST, just below the collar area. The sharp man dominates the right 85% of the image. Move the blurred listener almost entirely off the LEFT edge, keeping only a narrow, out-of-focus sliver of hair and rear shoulder within the leftmost 15%, including the bottom-left corner.",
+      "preserve_zh": "Keep his calm closed mouth and steady gaze toward his listener on screen-left. Preserve his LEFT hand holding the bottle and RIGHT fingers on the attached cap; these remain at the lower crop edge or outside it according to the close-up. Preserve his exact identity, natural facial texture, clothing, existing eye direction, prison gate camera direction, background structures and midday light. Preserve the single original moment and only change framing and the foreground edge."
+    }
+  ]
+}

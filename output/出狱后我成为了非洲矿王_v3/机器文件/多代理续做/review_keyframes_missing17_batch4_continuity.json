@@ -1,0 +1,88 @@
+{
+  "agent_id": "/root/resume_r2",
+  "review_scope": "continuity",
+  "batch": "missing17_batch4",
+  "status": "complete",
+  "created_at": "2026-09-05T14:36:13.319988+00:00",
+  "source_card_sha256": "dc6e50f258c5c955dc67cd15d6f7bc8853c9a68eddc4a3256525eea5895b8405",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png"
+  ],
+  "standard_note": "与已实看角色/SC01 C底板、v1主帧及原剧本66—67行对照。5%/15%为约数，不以小估算差单独判fail；检查实质景别、前后层、身份与人物入画。31卡首帧明确仍看手机，原文抬眼/转向为后续运动，不要求静帧已完成整段台词。",
+  "images": [
+    {
+      "id": "ep01_镜29",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_00.png",
+      "verdict": "fail",
+      "reason": "刘兰身份、蓝灰缎裙、低眼只看自身右手美甲，与剧本眼皮不抬的轻慢状态相符；顾瑶右侧低眼双手手机、箱包没有错置入画，C机位左窗右电视墙连续。但刘兰成为左近前景大主体、顾瑶位于右后完整坐姿，反于卡的刘兰较远/顾瑶右近虚焦边缘的前后关系。刘兰几乎正对镜头且取景包含腰、交叠裙腿，顾瑶同样露裙腿，实质是双人坐姿中景，未实现批准刘兰胸像加顾瑶右缘。",
+      "fix_instruction": "保留刘兰身份、自然肤质、右手举甲和始终低眼；按C机位恢复刘兰左较远、顾瑶右近的层次，刘兰朝右偏三分之四正面，胸口下缘裁切，顾瑶仅在右缘留虚焦侧头/手机边缘，箱包与母子继续画外。",
+      "card_field": [
+        "people[0].depth",
+        "people[0].camera_relation",
+        "background_people[0].depth",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜31",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_00.png",
+      "verdict": "fail",
+      "reason": "顾瑶身份与白衣米裙、双手手机及低眼作为本卡批准起点成立；刘兰左后低眼看右手甲，C机位关系可对应。主要错误是额外把本应位于相机后方画外的母子画在两侧近前：左边出现苏慧米白衣、手与橄榄包，右边出现江砚袖口、持箱手和箱子。虽然箱包仍有人持、归属未错，却改变了卡规定的出入画与空间关系。顾瑶入画到腰臀和大腿、刘兰露躯干裙腿，实质中景，未实现顾瑶胸像与刘兰左后小轮廓。",
+      "fix_instruction": "保留顾瑶自然脸型、手机双手和准备抬眼的动作起点；让母子及箱包回到C机位身后画外，不改变屋内实际站位。取景收为顾瑶右侧胸口下缘近景，刘兰仅左后虚焦侧面小轮廓，保留她低眼看甲，后续视频再完成顾瑶抬眼与话头转母亲。",
+      "card_field": [
+        "present_off_frame",
+        "beat_zh",
+        "framing.crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜30",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_00.png",
+      "verdict": "fail",
+      "reason": "四个角色身份均正确，江砚灰蓝衬衫双肩无包带、目光克制朝左；刘兰左近长卷发蓝裙、顾瑶左后手机、母亲右近米白衣发髻和B玄关方向成立。但江砚画面右侧可沿自身左肩袖连接左前臂到扶箱手，自身右手在画面左侧空垂，实为左手箱，违背源卡右手箱。取景露江砚腰腿与整箱、母亲大片背部和包、刘兰大片躯干，实质是中景，不是批准胸像与窄边缘。",
+      "fix_instruction": "保留四人身份、位置投影和江砚克制表情；明确江砚自身右手扶同箱，左手自然垂下。按胸口下缘收成近景，母亲只留右侧虚焦头肩，左缘留刘兰近头肩与顾瑶远头肩，手和箱包留在裁切线下，不再为确认道具扩大景别。",
+      "card_field": [
+        "people[0].action_zh",
+        "framing.crop_zh",
+        "background_people[0].posture_zh",
+        "background_people[1].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜32",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+      "verdict": "fail",
+      "reason": "四人身份及B玄关方向正确，江砚右手扶箱、母亲左手提大橄榄包可辨，主人仍坐在左侧，江砚轻收眉不反驳符合受辱起点。实质问题为景别：江砚露到腰腿和拉杆，母亲近景大片背身与大包、刘兰大片头肩、顾瑶完整躯干及裙腿入画，仍是多人中景，未实现江砚胸像与边缘人物的镜头任务。当前肤质较自然，无须为轻微百分比偏差额外修补。",
+      "fix_instruction": "保留已正确的持物左右、四人身份与受辱克制表情，只收成江砚胸口下缘近景；母亲在右近保留侧背头肩，刘兰左近和顾瑶左远只留可辨虚焦边缘。箱包和持物手自然在画外，维持同一房间的站坐位置。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[0].posture_zh",
+        "people[1].posture_zh",
+        "background_people[0].posture_zh",
+        "background_people[1].posture_zh"
+      ]
+    }
+  ],
+  "proposed_file": "",
+  "pending_images": []
+}

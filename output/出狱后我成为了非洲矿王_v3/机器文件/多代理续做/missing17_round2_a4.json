@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜29",
+    "prompt": "Edit this same photograph. Reframe this into a chest-up close-up of the older woman on the LEFT, looking down at her raised RIGHT-hand fingernails. Correct the depth: the younger woman belongs CLOSER to the camera, as a blurred partial head and shoulder with a phone edge at the far RIGHT edge. The older woman is farther behind her, sharp and dominant. Bring the top border close above the older woman’s full hair crown; cut the bottom at her lower chest.\nKeep the same two women, their exact faces, brown hairstyles, blue-gray satin dress and white top, relaxed downward gazes, black sofa, window and television wall. Keep their bodies turned toward each other. Preserve natural photographic skin and fabric.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch4_round2_plans_a.json",
+    "script_ref_zh": "script_source.txt 第66行「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」——夸赞字面说得越慢，羞辱越明显；眼皮始终没抬。"
+  },
+  {
+    "id": "ep01_镜31",
+    "prompt": "Edit this same photograph. Crop in to a chest-up close-up of the younger woman on the RIGHT looking at her phone. Remove the out-of-frame visitors currently intruding at the left and right foreground edges, including their luggage; those edges show the sofa and room instead. Retain the older woman as a small blurred seated figure behind her on the LEFT, looking at her nails. Place the younger woman’s full hair crown near the top; cut the bottom at her lower chest.\nPreserve both seated women’s exact identities, expressions, eye directions, hairstyles and clothes. Keep the younger woman’s phone and hands naturally posed at chest level, the same black sofa and room direction, and realistic skin.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch4_round2_plans_a.json",
+    "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」——她把江砚当着人的面当成谈资，说给母亲听。"
+  }
+]

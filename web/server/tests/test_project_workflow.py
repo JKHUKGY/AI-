@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import app
 import approvals
 import auth
+import control_store
 import project_setup as setup
 import projects
 import prompt_history
@@ -47,6 +48,9 @@ class WorkflowTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        private = patch.object(auth, 'DATA_DIR', str(self.root / '_accounts'))
+        private.start(); self.addCleanup(private.stop)
+        control_store.allocate('owner',1000,'test','fixture-credits')
         for p in (patch.object(projects, 'OUTPUT_DIR', str(self.root)),
                   patch.object(setup, '_capacity', threading.BoundedSemaphore(2)),
                   patch.object(setup, '_active', set())):

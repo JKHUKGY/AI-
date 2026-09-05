@@ -1,0 +1,20 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜30",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Tighten this photograph into a chest-up reaction close-up of the young man. Place his complete hair crown near the top border and cut the bottom border at his lower chest. Keep the gray-haired mother’s side-back head and shoulder along the RIGHT edge. At the far LEFT edge retain only narrow blurred partial heads and shoulders of the brown-haired woman and, behind her, the younger woman. The young man’s face is the dominant subject.",
+      "preserve_zh": "Preserve all four identities, the young man’s restrained closed-mouth expression and leftward gaze, the mother’s bun and beige clothing, the left women’s brown hair and blue-gray/white clothing, and the entrance-door camera direction. Keep natural skin and fabric texture."
+    },
+    {
+      "id": "ep01_镜32",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Tighten this photograph into a chest-up reaction close-up of the young man. Place his complete hair crown near the top border and cut the bottom border at his lower chest. Keep the gray-haired mother’s side-back head and shoulder along the RIGHT edge. At the far LEFT edge retain only narrow blurred partial heads and shoulders of the brown-haired woman and, behind her, the younger woman. The young man’s face is the dominant subject.",
+      "preserve_zh": "Preserve all four identities, the young man’s restrained closed-mouth expression and leftward gaze, the mother’s bun and beige clothing, the left women’s brown hair and blue-gray/white clothing, and the entrance-door camera direction. Keep natural skin and fabric texture."
+    }
+  ]
+}

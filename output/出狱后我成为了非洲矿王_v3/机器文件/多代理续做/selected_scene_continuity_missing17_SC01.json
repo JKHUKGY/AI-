@@ -1,0 +1,195 @@
+{
+  "agent_id": "/root/resume_r2",
+  "review_scope": "selected_scene_continuity",
+  "scene": "SC01",
+  "created_at": "2026-09-05T15:05:04.851829+00:00",
+  "status": "complete",
+  "reviewed_selected_count": 9,
+  "reviewed_provisional_count": 0,
+  "source_card_sha256": "3969025af47a84a76a5708f42baa641b20d5d19a1019b5095d0c60f9915def9a",
+  "queue_snapshot_note": "26_00、27_01、28_01、29_01、30_02、31_03、32_00、34_05按此前queue现选完成整场复核；root最终确认33_03获两独立审查通过并选用，本次仅更新33，其他8张不重做。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_generation.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png"
+  ],
+  "method": "按26至34顺序逐图实际查看，并实际回看v1主帧，对照scene_beats v1/v2及原剧本64至69行。此报告只做整场衔接记录，不覆盖任何单图判定、不改变选图，不再启动生成。百分比约数不成为新增返工标准。",
+  "sequence": [
+    {
+      "id": "ep01_镜26",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+      "selection_state": "selected",
+      "observed": "A全景四人齐，母子左站、女主人右坐，房间与v1主帧一致。母亲可见右手包为既有保留问题。"
+    },
+    {
+      "id": "ep01_镜27",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+      "selection_state": "selected",
+      "observed": "C机位刘兰左、顾瑶右，均清晰且看美甲/手机；母子在框外，人物身份成立。既有侧向及偏宽差异保留。"
+    },
+    {
+      "id": "ep01_镜28",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+      "selection_state": "selected",
+      "observed": "B门厅反打，母亲清晰陪笑，江砚右后、刘兰左前与顾瑶左后身份无复制；衣物纹理和偏宽为保留差异。"
+    },
+    {
+      "id": "ep01_镜29",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_01.png",
+      "selection_state": "selected",
+      "observed": "C机位刘兰清晰看右手美甲，顾瑶右近虚焦；低眼、不理人的剧情成立。技术拦截后现有候选择优，非三轮到限。"
+    },
+    {
+      "id": "ep01_镜30",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_02.png",
+      "selection_state": "selected",
+      "observed": "B反打江砚清晰朝左沉默，母亲右缘，两女主人左侧；手与箱包在画外，不能凭不可见判换手。偏宽保留。"
+    },
+    {
+      "id": "ep01_镜31",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+      "selection_state": "selected",
+      "observed": "C机位顾瑶胸像低头为抬眼开口前起点，刘兰左后虚焦；双女主身份连贯，母子在框外。"
+    },
+    {
+      "id": "ep01_镜32",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+      "selection_state": "selected",
+      "observed": "B较宽反打四人齐，江砚可见自身右手箱、母亲自身左手包；沉默受辱、母亲担忧可读。"
+    },
+    {
+      "id": "ep01_镜33",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_03.png",
+      "selection_state": "selected",
+      "observed": "最终33_03已实际查看：同一右手松搭黑色握把，四指自然下垂，尚未环扣收紧；双杆、虚焦米白地面和手部特写连续。由32右手箱接入，后续视频完成攥紧，再由母亲打圆场引出34离场。"
+    },
+    {
+      "id": "ep01_镜34",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜34/ep01_镜34_05.png",
+      "selection_state": "selected",
+      "observed": "A全景母子朝左楼梯旁通道，母亲扶肩引离，女主人留右侧座位。与26建筑主关系稳定；箱把可见近侧手带来动作匹配风险。"
+    }
+  ],
+  "overall_assessment": "身份、四人在场与主客关系、A/B/C空间锚点和同日白天光线可以组成连续客厅戏。需要剪辑避让的是手持道具左右变化、镜34箱把动作匹配、景别及材质跳变。最终33_03松搭右手起点明确，已完成单镜更新；全9张整场记录完成，保留历史单图判定与到限选图，不重开生成。",
+  "stable_continuity": [
+    {
+      "topic": "人物身份与剧情",
+      "finding": "江砚蓝灰旧衬衫、苏慧灰发髻米白衣灰围裙、刘兰棕卷发灰蓝缎裙、顾瑶浅棕长发白针织保持可辨。母子站着、两位主人持续坐着，无现选图新增人物复制。"
+    },
+    {
+      "topic": "场景机位",
+      "finding": "26/34的A全景保持左楼梯、右沙发电视墙、北窗泳池和吊灯。28/30/32的B反打保持南玄关门；27/29/31的C机位保留左窗右深石墙。不能以反打后沙发换画面侧判房间错误。"
+    },
+    {
+      "topic": "光线",
+      "finding": "全组保持暖日光与室内混合光，没有日夜跳变。A地面较硬、C人脸较柔、B反打较亮可由朝向和取景解释；仍需输出时统一白平衡与反差。"
+    },
+    {
+      "topic": "情节起点",
+      "finding": "31低头及33手未完成发力均需依靠后续动作讲出抬眼讥讽/攥紧；单帧不承担整段动作完成。34扶肩朝通道的离场意图清楚。"
+    }
+  ],
+  "known_retained_issues": [
+    {
+      "issue_id": "SC01_K01",
+      "shots": [
+        "ep01_镜26",
+        "ep01_镜32"
+      ],
+      "topic": "母亲持包左右手",
+      "evidence": "v1主帧和26可见母亲近侧自身右手提包、另一手腹前；32可见自身左手包。批准持续状态要求左手包，26为已保留错误。",
+      "editing_hint": "26用短建立镜，不给持包手长时间强调；通过27至31的对话覆盖到32，避免把26母亲手部与32手部做连续动作匹配。勿水平翻转画面解决，房间和其他人物会一并反向。"
+    },
+    {
+      "issue_id": "SC01_K02",
+      "shots": [
+        "ep01_镜27",
+        "ep01_镜28",
+        "ep01_镜29",
+        "ep01_镜30",
+        "ep01_镜32"
+      ],
+      "topic": "景别与主次偏宽",
+      "evidence": "27双人显示腰腿；28/29/30较批准胸像包含较长衣襟；32为明显多人物中景。27刘兰朝向较批准侧向有差异。均保留既有选择与原fail，29为技术拦截后择优。",
+      "editing_hint": "用台词重音和反应节奏组织27—28—29—30—31，31真近景作讥讽重点；32较宽可作为受辱后母子同框反应，再切33细节。不要将相似角度较宽画面反复短切造成跳剪。"
+    },
+    {
+      "issue_id": "SC01_K03",
+      "shots": [
+        "ep01_镜28",
+        "ep01_镜29",
+        "ep01_镜30",
+        "ep01_镜31",
+        "ep01_镜32"
+      ],
+      "topic": "纹理与摄影质感",
+      "evidence": "28母亲围裙和衣物装饰纹理较明显；29皮肤局部强化；30衬衫与面颈比32自然较宽版更有人工细纹。31总体较自然。强弱变化在来回切时比单看更明显。",
+      "editing_hint": "统一肤色、反差与锐度，避免再加清晰度或强锐化；不要对纹理较重区域做长时间数字推近。调色只能缓和，不能消除已生成的面料花纹。"
+    }
+  ],
+  "new_scene_level_findings": [
+    {
+      "issue_id": "SC01_N01",
+      "shots": [
+        "ep01_镜32",
+        "ep01_镜33",
+        "ep01_镜34"
+      ],
+      "topic": "右手箱到离场画面手臂衔接",
+      "evidence": "32明确自身右手握箱；最终33_03也是右手。34面向左的三分之四背身中，可见近相机左臂弯到箱把位置，远侧右手没有清楚呈现持把动作；直接由右手特写切34会放大左右手不连贯风险。",
+      "certainty": "34存在肢体遮挡；报告只记录可见近侧手与源卡远侧右手设计不符的风险，不宣称其隐藏右手的精确姿态。",
+      "prior_status": "本角色此前未对34_05留下独立单图条目，此处为本次整场关联发现，不覆盖其既有选择或历史判定。",
+      "editing_hint": "33完成攥紧后由母亲打圆场台词/扶肩引出34的离场全景，强调母亲与行进方向，避免箱把特写直接匹配34手部；保留现选，不重开到限。"
+    },
+    {
+      "issue_id": "SC01_N02",
+      "shots": [
+        "ep01_镜26",
+        "ep01_镜27",
+        "ep01_镜34"
+      ],
+      "topic": "顾瑶膝上白色小包的附属道具变化",
+      "evidence": "26和v1主帧顾瑶膝上有白色小包；27膝部清楚入画仅短裙和手机，34膝上亦未见小包。主剧情道具是手机，白包消失不改变剧情但可见。",
+      "severity": "low",
+      "editing_hint": "将26当短建立镜；中间多镜对话已可容纳未展示的随手移包，不做顾瑶膝部的连续动作匹配或补台词强调小包。"
+    },
+    {
+      "issue_id": "SC01_N03",
+      "shots": [
+        "ep01_镜32",
+        "ep01_镜33"
+      ],
+      "topic": "最终33松搭到攥紧的动作承接",
+      "evidence": "最终33_03已替换旧拟选：四指自然下垂，与拇指留出空间，明确是松搭起点；32右手搭箱到33同一右手细节连续。静态图仍需后续视频完成攥紧。",
+      "editing_hint": "视频从33_03松搭开始逐渐收紧，保持同一右手和握把；随后以母亲打圆场声音引入34扶肩离场。无需再改关键帧。",
+      "status": "resolved_by_final_selection",
+      "resolution": "root最终选33_03；本角色已实际查看并pass，其他8张未重审。"
+    }
+  ],
+  "final_shot33_update": {
+    "required": false,
+    "status": "complete",
+    "selected_path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_03.png",
+    "review_verdict": "pass",
+    "selection_authority": "root确认两名独立审查均pass后选用",
+    "updated_at": "2026-09-05T15:07:57.573169+00:00",
+    "scope": "仅替换33及与32/34的衔接文字，其他8张既有整场检查不变。"
+  },
+  "actions_taken": {
+    "generated_images": false,
+    "changed_queue": false,
+    "changed_original_verdicts": false,
+    "reopened_capped_units": false
+  },
+  "completed_at": "2026-09-05T15:07:57.572901+00:00"
+}

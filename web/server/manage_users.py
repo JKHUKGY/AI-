@@ -22,6 +22,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import auth
+import control_store
 
 
 def _prompt_password():
@@ -54,6 +55,7 @@ def cmd_passwd(args):
         sys.exit(1)
     password = _prompt_password()
     auth.add_user(args.username, password, users[args.username].get('display_name'))
+    control_store.set_enabled(args.username, bool(control_store.account(args.username)['enabled']))
     print(f'已更新 {args.username} 的密码。')
 
 

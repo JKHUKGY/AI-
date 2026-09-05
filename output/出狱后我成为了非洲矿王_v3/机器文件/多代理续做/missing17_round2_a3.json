@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜13",
+    "prompt": "Edit this same photograph. Make a tight chest-up close-up of the young man in blue-gray, hair crown 5% below the top and lower border directly beneath his chest. Keep only a thin blurred sliver of the older man's head and brown shoulder along the outermost LEFT 15%, including the lower-left corner. Correct the young man's hand assignment: his OWN LEFT hand holds the OPEN transparent bottle, his OWN RIGHT hand holds the separate white cap. The hands stay at their original low height, below this chest-up crop.\nKeep both identities, the young man's calm closed-mouth listening expression, his gaze towards the older man and the prison courtyard camera direction. Preserve natural skin pores and plain woven cotton.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch3_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第48行「陈野（顿了顿，试探着问）：那咱，还回万通矿业吗？」——给去留选择留出空隙。"
+  },
+  {
+    "id": "ep01_镜26",
+    "prompt": "Edit this same photograph. Correct the standing gray-haired mother's arms. Her OWN LEFT hand, on her far side, carries the olive canvas bag beside her left thigh. Her OWN RIGHT hand, on her near side, rests empty across her abdomen. Keep the bag suspended from her left hand. The young man's right hand continues holding the suitcase handle. Keep all four people full-body and in their original places, with the young man's head-to-shoes height about 40% of the image and about 15% floor below his shoes.\nPreserve the four identities, facial expressions and seating/standing positions. The two women remain seated on the right sofa, the older one examining her right-hand nails and the younger one looking at her phone. Keep the villa, staircase, doorways, lighting, clothes and luggage designs identical.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch3_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第64行「▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央，沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。」——豪宅里母子局促站着，主人坐着且不抬头。"
+  }
+]

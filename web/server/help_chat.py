@@ -5,6 +5,7 @@ import threading
 
 import ai_prompt
 import auth
+import help_history
 import projects
 from router import ApiError
 
@@ -12,7 +13,7 @@ MODEL = 'gpt-5.6-luna'
 GUIDE = Path(__file__).resolve().parents[1] / 'content/guide.md'
 PAGES = {'home':'项目首页', 'setup':'项目筹备', 'characters':'人物', 'scenes':'场景',
          'style':'风格简报', 'episode':'分镜表', 'keyframes':'关键帧', 'videos':'视频',
-         'guide':'使用指南', 'inbox':'反馈汇总'}
+         'production':'视频制作中心', 'help-history':'助手对话记录', 'guide':'使用指南', 'inbox':'反馈汇总', 'admin':'管理员管理', 'gpu':'租显卡', 'usage':'我的积分'}
 _active = set()
 _lock = threading.Lock()
 
@@ -61,7 +62,9 @@ def answer(username, body):
         if username in _active:
             raise ApiError(429, '上一条问题还在回答，请稍候')
         _active.add(username)
+    entry=None
     try:
+        entry=help_history.begin(username,body,MODEL)
         import control_store
         import generation_control
         use=control_store.reserve(username,body.get('project') or '', 'help')
@@ -70,6 +73,7 @@ def answer(username, body):
         try:
             with generation_control.activate(control):
                 result = ai_prompt.run_text(query, timeout=90, model=MODEL)
+            help_history.finish(entry['id'],result,'done')
             control_store.settle(use['id'],'done')
         except generation_control.Cancelled:
             control_store.settle(use['id'],'cancelled')
@@ -77,11 +81,14 @@ def answer(username, body):
         except Exception:
             control_store.settle(use['id'],'failed')
             raise
-        return {'answer': result, 'model': MODEL}
+        return {'answer': result, 'model': MODEL, 'conversation_id':entry['conversation_id'], 'record_id':entry['id']}
     except ai_prompt.BusyError as exc:
         raise ApiError(429, '帮助助手正忙，请稍后重试') from exc
     except RuntimeError as exc:
         raise ApiError(502, '帮助助手暂时无法回答：' + str(exc)) from exc
     finally:
-        with _lock:
-            _active.discard(username)
+        try:
+            if entry:help_history.finish(entry['id'],status='failed')
+        finally:
+            with _lock:
+                _active.discard(username)

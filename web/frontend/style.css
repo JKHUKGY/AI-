@@ -91,6 +91,13 @@ main {
   margin-bottom: 16px;
 }
 
+.production-entry { border-left: 4px solid var(--accent); }
+.production-entry h2 { margin-top: 0; }
+.action-link { display: inline-block; padding: 8px 14px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; }
+.action-link.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.production-status { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.production-status .card { margin: 0; }
+
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -401,3 +408,10 @@ video.preview { max-width: 260px; border-radius: 8px; display: block; margin: 6p
 .nav-btn.next { right: 4px; }
 .lightbox-caption { margin: 10px 0 2px; font-size: 14px; line-height: 1.55; }
 .lightbox-panel { max-width: 620px; }
+
+.gpu-monitor-card {border-top:1px solid var(--border, #ddd);padding:16px 0;}
+.gpu-metrics {display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;}
+.gpu-metric {display:grid;gap:6px;}
+.gpu-metric strong {font-size:1.4rem;}
+.gpu-metric meter {width:100%;}
+.gpu-monitor .toolbar h2 {margin:0;}

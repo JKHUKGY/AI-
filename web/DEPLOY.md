@@ -170,9 +170,9 @@ sudo certbot --nginx -d scriptwriter-jia.eastasia.cloudapp.azure.com   # 自动�
 
 ## 已知边界（部署后仍然成立，见 `README.md`）
 
-- 没有"服务端强制踢人下线"，撤销权限只能改密码。
+- 管理员停用账号立即撤销全部登录并停止任务。
 - 登录限流按用户名、5 分钟 8 次，够小团队用，不是防大规模攻击的方案。
-- 视频没有一键重新生成，只登记待办。
+- 视频实际生成需要已准备的 H3 任务和带模型服务的显卡镜像；意见按钮只登记待办。
 
 ## 学生额度别花超了
 
@@ -180,3 +180,22 @@ Azure for Students 是一次性 $100 额度，`B1s` 24 小时跑一个月大概�
 `B2s` 大概一二十美元，正常不会很快用完，但建议在门户里"成本管理 + 计费"
 下面设一个预算提醒（比如花到 $50、$80 各提醒一次邮件），免得额度用尽后
 服务被自动停掉都不知道。
+
+## 点数管理与独立关卡服务
+
+安装 `web/deploy/scriptwriter-gpu-watchdog.service` 并 `enable --now`。
+主网站服务设置 `Environment=SCRIPTWRITER_EXTERNAL_WATCHDOG=1`，避免重复后台线程。
+重启主站和帮助服务，使其共用新的账号启用/会话撤销规则。默认数据原地兼容升级。
+点数配置和凭证写在 `web/server/data/`，部署代码时不要覆盖该目录。
+
+管理员 `#/admin` 中配置 RunPod Key 和运行镜像；使用专用 SSH 密钥对，私钥为
+`web/server/data/gpu_ed25519`，公钥填写到“SSH 公钥”。基础租卡与 H3 镜像就绪是两个独立开关。
+SMTP 可使用 Azure 的 `smtp.azurecomm.net:587` / STARTTLS。按照
+[微软 SMTP 身份配置说明](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-smtp/smtp-authentication)
+创建 Email Communication Services 和域名、连接 Communication Services、建立 SMTP 身份。
+发件地址用已验证域名的 MailFrom，密码用 Entra 应用客户端密钥。不要使用 Azure 门户登录密码。
+保存后通过“发送测试邮件”验证，查看收件箱及管理员队列状态。
+
+首次上线仅执行替身测试及只读页面验收，不通过真正租卡或生成来测试扣点。
+`python3 -m unittest discover -s web/server/tests -q` 覆盖权限、并发扣点、退款、重复审批、
+无任务十分钟回收、忙时保护、最长租期、关卡确认、邮件失败重试和视频结果不明不重复提交。

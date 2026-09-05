@@ -1,0 +1,58 @@
+{
+  "scope": "short-drama-keyframe-gen",
+  "claude_updated": true,
+  "codex_applied": false,
+  "reason": "Current session marks .agents read-only; no attempt to bypass",
+  "files": [
+    {
+      "file": "SKILL.md",
+      "claude_updated": "/workspaces/AI-/.claude/skills/short-drama-keyframe-gen/SKILL.md",
+      "codex_target_read_only": "/workspaces/AI-/.agents/skills/short-drama-keyframe-gen/SKILL.md",
+      "codex_original_sha256": "a6f9e25af82a3d6b1a0f9d316f5fd18cbad0bab5d82d9a6f35668c78cc7b8ad4",
+      "codex_preview_sha256": "73049213ebe420079e2d925426728d1c4127b8755589067c0e85f8be0e2cae5b"
+    },
+    {
+      "file": "references/generation_modes.md",
+      "claude_updated": "/workspaces/AI-/.claude/skills/short-drama-keyframe-gen/references/generation_modes.md",
+      "codex_target_read_only": "/workspaces/AI-/.agents/skills/short-drama-keyframe-gen/references/generation_modes.md",
+      "codex_original_sha256": null,
+      "codex_preview_sha256": "1b70ac216121159a82f351484d09bb306eba8a51d7b09db0d849f57ab136b5dd"
+    },
+    {
+      "file": "references/keyframe_card_schema.md",
+      "claude_updated": "/workspaces/AI-/.claude/skills/short-drama-keyframe-gen/references/keyframe_card_schema.md",
+      "codex_target_read_only": "/workspaces/AI-/.agents/skills/short-drama-keyframe-gen/references/keyframe_card_schema.md",
+      "codex_original_sha256": "2e68494a58a864c518b07bad1481642cf2af3aba4780ccc8b66178ff25249234",
+      "codex_preview_sha256": "b7945b63066acfa9df73acc988d4047098241e3dcc094b91f2c68eb98088dae7"
+    },
+    {
+      "file": "references/keyframe_review_checklist.md",
+      "claude_updated": "/workspaces/AI-/.claude/skills/short-drama-keyframe-gen/references/keyframe_review_checklist.md",
+      "codex_target_read_only": "/workspaces/AI-/.agents/skills/short-drama-keyframe-gen/references/keyframe_review_checklist.md",
+      "codex_original_sha256": "0b5d208c9da8a2ab8cb54d4bb4ecf5ab85b980e2104d6a27b1e14d43beb52009",
+      "codex_preview_sha256": "44149b79644e42062daeb183783376443fb7ac44ddf610999df326c4a42a6382"
+    },
+    {
+      "file": "references/review_quality.md",
+      "claude_updated": "/workspaces/AI-/.claude/skills/short-drama-keyframe-gen/references/review_quality.md",
+      "codex_target_read_only": "/workspaces/AI-/.agents/skills/short-drama-keyframe-gen/references/review_quality.md",
+      "codex_original_sha256": null,
+      "codex_preview_sha256": "9f6da03b5cd3280b6386f496310f58738e97b8613e684949be3c3667a242ab22"
+    },
+    {
+      "file": "references/web_review_flow.md",
+      "claude_updated": "/workspaces/AI-/.claude/skills/short-drama-keyframe-gen/references/web_review_flow.md",
+      "codex_target_read_only": "/workspaces/AI-/.agents/skills/short-drama-keyframe-gen/references/web_review_flow.md",
+      "codex_original_sha256": null,
+      "codex_preview_sha256": "81578d22c60ae9b4b2721092e1baab2200c909a62d32db30c081b269ee9514fc"
+    }
+  ],
+  "validation": {
+    "claude_quick_validate": "passed",
+    "codex_preview_quick_validate": "passed",
+    "codex_git_apply_check": "passed_read_only_check",
+    "missing_markdown_targets": [],
+    "independent_behavior_evaluation": "behavior-evaluation.json",
+    "last_clarification": "Replaced broad every-image-two-reviewers sentence with explicit R1/R2 scope; all final selections still require complete independent review."
+  }
+}

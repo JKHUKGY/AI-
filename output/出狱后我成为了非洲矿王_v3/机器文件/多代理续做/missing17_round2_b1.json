@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜05",
+    "prompt": "Edit this same photograph. Reframe this same photograph as a tight head-and-chest close-up of the young man in the gray-blue shirt. Move the framing strongly closer. His crown sits just 5% below the top edge. The BOTTOM edge cuts across his CHEST, just below the collar area. The sharp man dominates the right 85% of the image. Move the blurred listener almost entirely off the LEFT edge, keeping only a narrow, out-of-focus sliver of hair and rear shoulder within the leftmost 15%, including the bottom-left corner.\nKeep his calm closed mouth and downward gaze at the bottle-cap action. Preserve his LEFT hand holding the bottle and RIGHT fingers on the attached cap; these remain at the lower crop edge or outside it according to the close-up. Preserve his exact identity, natural facial texture, clothing, existing eye direction, prison gate camera direction, background structures and midday light. Preserve the single original moment and only change framing and the foreground edge.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch1_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第42行「▲江砚拧瓶盖的手顿了一下，抬眼看他，神色里没多少意外。」——听到顾浩，他的反应是证实猜想，表情没有惊讶。"
+  },
+  {
+    "id": "ep01_镜07",
+    "prompt": "Edit this same photograph. Reframe this same photograph as a tight head-and-chest close-up of the young man in the gray-blue shirt. Move the framing strongly closer. His crown sits just 5% below the top edge. The BOTTOM edge cuts across his CHEST, just below the collar area. The sharp man dominates the right 85% of the image. Move the blurred listener almost entirely off the LEFT edge, keeping only a narrow, out-of-focus sliver of hair and rear shoulder within the leftmost 15%, including the bottom-left corner.\nKeep his calm closed mouth and steady gaze toward his listener on screen-left. Preserve his LEFT hand holding the bottle and RIGHT fingers on the attached cap; these remain at the lower crop edge or outside it according to the close-up. Preserve his exact identity, natural facial texture, clothing, existing eye direction, prison gate camera direction, background structures and midday light. Preserve the single original moment and only change framing and the foreground edge.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch1_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——栽赃利用了江砚下井工作的时间；他专注听而不抢话。"
+  }
+]

@@ -179,7 +179,7 @@ status.update(keyframes_completed=sum(bool(x.get('selected_file')) for x in queu
               keyframe_image_count=len(candidates), keyframe_counts=dict(Counter(x['status'] for x in candidates)),
               keyframe_unit_counts=dict(Counter(x['status'] for x in queue)),
               total_image_count=len(candidates) + status['image_count'],
-              next_step='已按用户要求选用到限候选；17镜尚未生成，主帧依赖已解除，后续可装配生成。' if user_selections else '继续有剩余轮次的独立镜头；已到限主帧及其依赖保持阻塞。')
+              next_step=(f"已选{sum(bool(x.get('selected_file')) for x in queue)}/38镜；继续补齐剩余{sum(not bool(x.get('selected_file')) for x in queue)}镜的生成、审查和选图，已有用户选图保留。" if any(not x.get('selected_file') for x in queue) else '38镜已各选一张，关键帧图库已齐，可衔接视频镜头卡。'))
 write(KF / 'generation_status.json', status)
 cards = {x['id']: x for x in read(KF / 'keyframe_cards.json')['cards']}
 labels = {'passed': '审查通过／已选', 'selected_by_user': '已选／按用户要求择优', 'ready_for_generation': '尚未生成／主帧已就绪', 'needs_retry': '未通过，待修正', 'pending_review': '待独立审查', 'capped': '到限未通过'}

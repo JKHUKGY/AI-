@@ -21,25 +21,24 @@
   ],
   "blocked_after_3_rounds": [],
   "needs_retry_round3": [],
-  "keyframes_completed": 21,
+  "keyframes_completed": 38,
   "keyframes_planned": 38,
   "pending_tools": 0,
-  "next_step": "已按用户要求选用到限候选；17镜尚未生成，主帧依赖已解除，后续可装配生成。",
+  "next_step": "38镜已各选一张，关键帧图库已齐，可衔接视频镜头卡。",
   "keyframe_units_blocked": 0,
-  "keyframe_image_count": 123,
+  "keyframe_image_count": 221,
   "keyframe_counts": {
-    "rejected": 100,
-    "selected": 21,
-    "alternate": 2
+    "rejected": 177,
+    "selected": 38,
+    "alternate": 6
   },
   "keyframe_unit_counts": {
-    "selected_by_user": 18,
-    "ready_for_generation": 17,
-    "passed": 3
+    "selected_by_user": 33,
+    "passed": 5
   },
-  "total_image_count": 151,
-  "last_updated_at": "2026-09-05T12:07:39.069823+00:00",
-  "active_generation": false,
-  "keyframes_review_passed": 3,
-  "keyframes_selected_by_user": 18
+  "total_image_count": 249,
+  "last_updated_at": "2026-09-05T15:08:36.180285+00:00",
+  "active_generation": [],
+  "keyframes_review_passed": 5,
+  "keyframes_selected_by_user": 33
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜05",
+    "prompt": "Make ONE localized edit to this photo. Reduce ONLY the blurred brown shoulder in the bottom-left and along the left edge. Move the listener farther off the LEFT edge so that his remaining blurred hair and shoulder form a slim strip no wider than 15% of the final image width, including the bottom-left corner. Replace the excess shoulder area with the naturally continuing prison background or the already-present young man where appropriate. Keep the original narrow blurred head edge along the upper-left.\nPreserve the sharp main person exactly: same face, expression, eye direction, hairstyle, clothes, scale and position. Preserve the current framing, lighting, and background camera direction. Keep 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜05/ep01_镜05_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch1_round3_plans_b.json",
+    "script_ref_zh": "script_source.txt 第42行「▲江砚拧瓶盖的手顿了一下，抬眼看他，神色里没多少意外。」——听到顾浩，他的反应是证实猜想，表情没有惊讶。"
+  },
+  {
+    "id": "ep01_镜07",
+    "prompt": "Make ONE localized edit to this photo. Reduce ONLY the blurred brown shoulder in the bottom-left and along the left edge. Move the listener farther off the LEFT edge so that his remaining blurred hair and shoulder form a slim strip no wider than 15% of the final image width, including the bottom-left corner. Replace the excess shoulder area with the naturally continuing prison background or the already-present young man where appropriate. Keep the original narrow blurred head edge along the upper-left.\nPreserve the sharp main person exactly: same face, expression, eye direction, hairstyle, clothes, scale and position. Preserve the current framing, lighting, and background camera direction. Keep 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch1_round3_plans_b.json",
+    "script_ref_zh": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——栽赃利用了江砚下井工作的时间；他专注听而不抢话。"
+  }
+]

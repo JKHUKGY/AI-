@@ -1,5 +1,7 @@
 # 流水线定位
 
+当前用户决定（2026-09-05）：MiniMax H3 方法暂时停用。后续任务不采用 H3 导出或生成通道，等待用户明确恢复；保留文件供恢复使用。
+
 下列 skill 名相对宿主根目录：Codex `.agents/skills/`；Claude `.claude/skills/`。
 知道环节就直接读该 skill 的 `SKILL.md`；只找内部脚本/规范时才打开最后一列的分类表。
 

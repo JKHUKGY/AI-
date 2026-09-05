@@ -1,0 +1,17 @@
+{
+  "agent_id": "/root/missing17_ga",
+  "role": "Generator A",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_round1_a5.json",
+  "source_job_sha256": "69f5b6797790aadd62c67fed748217f7fdac6882137aef3d6ee8cb17861c055f",
+  "records": [
+    {
+      "id": "ep01_镜33",
+      "round": 1,
+      "candidate": 0,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-34bb4820-935f-4cc3-bfd1-cad37b914120.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png",
+      "sha256": "af305c238cee095703d01f973aef34b4285d9f9383dc498587fa23ae1fc1e8f8"
+    }
+  ],
+  "errors": []
+}

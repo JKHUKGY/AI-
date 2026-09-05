@@ -26,6 +26,8 @@ def execute(pdir, approval_id, username, submit):
         entry = next((e for e in data.get('approvals', []) if e['id'] == approval_id), None)
         if not entry:
             raise ValueError('需要先预览本次图片任务，再明确审批')
+        if entry.get('requested_by') != username:
+            raise ValueError('只能确认本人预览的任务')
         if entry['status'] == 'running':
             return entry['result']
         if entry['status'] != 'pending' or time.time() - entry['created_at'] > 86400:

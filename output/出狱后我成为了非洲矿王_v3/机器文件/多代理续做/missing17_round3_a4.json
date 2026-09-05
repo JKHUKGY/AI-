@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜31",
+    "prompt": "Edit this same photograph. Zoom in strongly for a portrait close-up of the younger woman on the RIGHT. Frame only her full head, neck, shoulders and chest: her hair crown almost touches the upper border and the LOWER BORDER cuts directly across her chest. Retain a small blurred portion of the older woman’s head and shoulder on the LEFT background.\nKeep the younger woman’s downward eyes, relaxed mouth, exact face, hair and white clothing; keep the older woman’s downward gaze and blue-gray clothing. Preserve the natural photographic skin, same sofa, window and lighting.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_01.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch4_round3_plans_a.json",
+    "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」——她把江砚当着人的面当成谈资，说给母亲听。"
+  }
+]

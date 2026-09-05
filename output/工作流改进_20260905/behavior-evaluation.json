@@ -1,0 +1,181 @@
+{
+  "evaluation_type": "independent_forward_test",
+  "scope": "只依据目标 SKILL.md 及 generation_modes.md、review_quality.md、web_review_flow.md 作模拟行为判断；未运行真实生成、审查或网站操作。",
+  "cases": [
+    {
+      "id": "A",
+      "workflow_mode": "user_choice",
+      "next_action": "立即交付镜1原图、两份独审汇总、最佳推荐及具体修正方案，将镜1持久化为 awaiting_user 并释放运行槽；继续调度其余依赖齐全的7镜首轮。",
+      "wait_for_user": "镜1返工需要等待；整批其余独立首轮不等待。",
+      "additional_images": {
+        "shot_1": 0,
+        "other_shots_total_max": 7,
+        "per_other_shot": 1,
+        "boundary": "只执行已批准首轮；最多4个依赖齐全的active unit，并遵守宿主代理与调用并发限制。"
+      },
+      "review_status": "镜1 failed；其余新候选各自 pending，审完后按事实更新。",
+      "selection_status": "镜1 unselected，不把推荐或用户沉默记作采用；其余镜首图审查齐后也回到用户选择。",
+      "reason": "新网页批次未指定模式默认 user_choice；首轮授权不包含自动修复，即使已有major证据和可执行方案。"
+    },
+    {
+      "id": "B",
+      "workflow_mode": "managed",
+      "next_action": "立即选择第2轮第一张通过图，取消未提交的第二张余量；调度剩余两镜的已批准首轮。",
+      "wait_for_user": false,
+      "additional_images": {
+        "current_shot": 0,
+        "remaining_two_shots_total_max": 2,
+        "boundary": "预算2张是上限，题设未表示固定张数的历史批准；不得为用完轮内预算提交第二张。"
+      },
+      "review_status": "当前候选 passed，保留所有独立pass报告。",
+      "selection_status": "当前镜 selected，selection_basis记录全部必需独审通过，generation_state为done；整场复核状态另行保留。",
+      "reason": "已有managed模式持续有效；全部必需独审pass触发立即选图和取消未提交余量，独立镜首轮优先继续。"
+    },
+    {
+      "id": "C",
+      "workflow_mode": "user_choice",
+      "steps": [
+        {
+          "step": 1,
+          "event": "首次按推荐修改请求",
+          "state": "原子核对归属、proposal和审批快照、源卡/候选/selection/mode版本及预算；登记decision与提交记录，进入generating。",
+          "new_image_calls": "默认1次、1张，且仅执行展示过的方案；若该proposal另有明确requested_count则以其授权和预算为界。",
+          "selection": "保留先前选择状态，不因批准修改直接选中未来结果。"
+        },
+        {
+          "step": 2,
+          "event": "同一按钮请求重复到达",
+          "state": "以相同幂等decision ID返回首次任务及其当前状态。",
+          "new_image_calls": 0,
+          "selection": "不变。"
+        },
+        {
+          "step": 3,
+          "event": "用户改选另一候选",
+          "state": "若候选必需独审完整，且已确认其主要差异，则采用该候选、递增selection_version、取消未提交修改计划；首次在途生成尽可能取消。若该候选未审齐则只能preselected，待审查后确认新出现的主要问题。",
+          "new_image_calls": 0,
+          "selection": "已审且合格用selected；已审failed且用户接受差异用selected_by_user；未审齐用preselected。"
+        },
+        {
+          "step": 4,
+          "event": "首次请求创建的生成迟到返回",
+          "state": "校验来源、落盘归档为新候选，记录实际产图与费用，并完成必需独立审查；保留旧请求版本与当前选择版本的区别。",
+          "new_image_calls": 0,
+          "selection": "绝不覆盖用户后来选中的候选，也不由迟到审查反向覆盖选择；新候选独立保存pending至passed/failed。"
+        }
+      ],
+      "wait_for_user": "已明确采用且审查完整的另一候选无需重问；若只是预选且新增主要问题，等待用户确认该新问题。迟到结果不自动触发新返工。",
+      "additional_images": {
+        "default_total_max": 1,
+        "boundary": "重复请求和迟到回调均不增加额度；提交前扣账/登记，重启不得重复提交。"
+      },
+      "review_status": "各候选保留其独立技术判定；选图不改判定。",
+      "selection_status": "使用最新有效selection_version，迟到旧任务只增加候选。",
+      "reason": "web_review_flow要求幂等与版本校验、用户选择优先于旧生成结果。"
+    },
+    {
+      "id": "D",
+      "workflow_mode": "managed",
+      "next_action": "保留原2G2R分工，停止当前镜进一步生成，比较较早自然候选与后续候选，列明肤质退化和构图/剧情代价，标needs_decision。已有完整审查不重做；若之后选图只补受影响邻镜连戏。",
+      "wait_for_user": "按最保守且有明确授权边界的解释，需要决定提前停止后的采用：已有授权文字仅为到限替选最佳，当前第三轮预算未用尽，不能自动扩展为任何提前停止均替选。",
+      "additional_images": {
+        "immediate": 0,
+        "boundary": "不为凑完第3轮补图，不新增批次或改成1G3R，不开第4轮；如用户要求新方案，仍只能在既有方案快照规则及剩余三轮总预算内判断可执行性。"
+      },
+      "review_status": "保留所有既有技术报告；若已有报告判failed则仍failed，不能把最佳候选改成passed。",
+      "selection_status": "unselected，最佳候选只是推荐；若已有更宽泛的提前停止择优授权才可依据该授权选择并记录来源。",
+      "reason": "连续退化要求提前停止而不是用完预算；但skill没有明确把提前无改进停机等同到限，授权不能自扩展。",
+      "fact_limit": "题面未明确肤质恶化的严重度、目标缺陷是否改善。若两次仅minor肤质变化且主要目标确有改善，现文严格触发条件并不确定；应使用已有独审的退化证据判断，不能仅凭任何皮肤差异自动认定major。"
+    },
+    {
+      "id": "E",
+      "next_action": "记录用户明确采用主帧及其已知问题和下游影响，回填真实master_frame和已按图记录的master_frame_read_zh，重新装配逐镜任务并lint；校验通过后解除实际依赖，调度已获准下游镜。",
+      "wait_for_user": false,
+      "additional_images": {
+        "master_frame": 0,
+        "downstream": "仅可执行原已批准镜号、轮次和张数；题面未提供数量，不能给出数值额度。若只确认采用主帧而从未批准下游出图，应先完成装配并取得下游首次授权。"
+      },
+      "review_status": "主帧 failed，保留全量技术报告和known_issues，不要求Reviewer反改pass。",
+      "selection_status": "主帧 selected_by_user，selection_basis记录本次已明确接受差异与下游影响；依赖绑定该主帧选择版本。",
+      "reason": "主帧已经审完且用户已选，满足解除依赖条件；对相同已接受问题不重复确认。"
+    }
+  ],
+  "ambiguities_and_conflicts": [
+    {
+      "severity": "major",
+      "location": "generation_modes.md：每张图的交付顺序、managed无改进停止、达到第三轮仍失败",
+      "issue": "到限择优授权是否覆盖无改进提前停止未定义；达到第三轮仍失败又可能被理解成第三轮第一张失败即到限，而每轮最多3张允许轮内继续。D因此不能唯一推导自动选择还是needs_decision。",
+      "suggestion": "明确终止原因与授权范围：budget_exhausted、no_improvement、severe_regression分别是否受已有fallback授权覆盖；把到限定义为不能合法增加候选，而非仅进入第三轮。"
+    },
+    {
+      "severity": "major",
+      "location": "SKILL.md 第1.5节‘通过后才回填’与第7节；generation_modes.md 状态与选图",
+      "issue": "正文前部通过后才回填容易被读成必须技术passed，后部却允许已审failed主帧被用户采用后解除依赖。E需依更具体的模式/选图规范解释。",
+      "suggestion": "将前部通过后改成必需独审齐全且已选定，包括用户明确接受failed及下游影响。"
+    },
+    {
+      "severity": "major",
+      "location": "web_review_flow.md 幂等decision与同一修改按钮双击验收",
+      "issue": "规范确保同一decision重复不提交，但只说同一proposal按钮双击时，前端若每次生成新decision ID，未明确proposal只消费一次或唯一约束。版本未变且预算仍足时可能产生两个有效decision。",
+      "suggestion": "明确重复点击共享稳定decision ID，并在服务端为同一proposal执行建立原子唯一约束；真实再试一张必须创建新的授权动作。"
+    },
+    {
+      "severity": "minor",
+      "location": "generation_modes.md 无改进停止；review_quality.md 摄影和材质",
+      "issue": "连续两次皮肤恶化不必然等同连续两次目标缺陷未缓解，且最新更严重退化的比较基准不够明确。D缺少严重度时可能被不同执行者判成继续或停止。",
+      "suggestion": "要求分别记录target_improvement与regression_severity，并规定对最佳既有候选比较以及触发提前停机的阈值。"
+    },
+    {
+      "severity": "minor",
+      "location": "SKILL.md 第5.5节；generation_modes.md 轮次预算及已有运行批次",
+      "issue": "已有运行批次按原记录处理可能被误读为所有旧批次都必须凑满轮内2/3张，而非仅保护明确固定张数授权和既有计数。B可按预算上限正确处理，但措辞可更清楚。",
+      "suggestion": "明确旧批次沿用其计数与明确授权，只有明确固定张数记录才例外；单纯预算2张仍达标即停。"
+    },
+    {
+      "severity": "minor",
+      "location": "SKILL.md 第5节 generate_images.py jobs_ep0X.json 示例",
+      "issue": "整集jobs直接传给生成脚本的示例可能引导绕过逐图count=1、每镜依赖、active上限及幂等提交调度。",
+      "suggestion": "在示例前标明只能由调度器提交当前已授权且依赖齐全的单次子集，完整清单不是一次性实际提交授权。"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "finding": "D：提前停止与到限择优授权边界",
+      "status": "resolved",
+      "evidence": "generation_modes.md 新增“提前停不等于到限”，明确仅有到限择优授权不能覆盖尚有额度的无改进或退化停止；到限定义为第三轮允许额度或明确更小限额耗尽。",
+      "next_behavior": "D 提前停机后 needs_decision，新增调用 0，保留推荐、不得最终选定；保持原 2G2R 分工。只有另有任何停止均择优等授权时才自动采用。",
+      "scope_note": "本次只复核授权边界，不重判原案例退化严重度。"
+    },
+    {
+      "finding": "主帧必须技术通过才能回填的措辞冲突",
+      "status": "resolved",
+      "evidence": "SKILL.md 第 1.5 节现明确主帧独审并选定后回填，既包括全部技术通过，也包括用户看过差异后明确采用；与第 7 节和模式规范一致。",
+      "next_behavior": "已审 failed 主帧在用户明确接受差异和下游影响后，可保存 selected_by_user，保留 failed 和 known_issues，回填真实路径、重装配 lint 后解除实际依赖，不重复确认。"
+    },
+    {
+      "finding": "同一 proposal 双击产生不同 decision ID 时重复提交",
+      "status": "resolved_at_contract_level",
+      "evidence": "web_review_flow.md 已要求项目+镜号+proposal_id 服务端唯一占用，并把占用、预算预留和任务创建放入跨进程可见原子事务；被消费 proposal 不可再次生成。",
+      "next_behavior": "相同或不同 decision ID 重复执行同一 proposal 都不新增调用；同方案再试必须创建有新候选槽位和剩余额度的新 proposal，并获得用户批准。",
+      "scope_note": "这是文档契约复核；没有验证网站后端已实现这些事务。"
+    }
+  ],
+  "recheck": {
+    "scope": "仅复核三个指定问题及新增 R1/R2 审查分工；未重新运行其他案例、生成工具、真实图片审查或网站测试。",
+    "reviewer_scope_verdict": "最终选图全部必需独审的保证仍然成立，真实审查范围也有明确保留要求。",
+    "reviewer_scope_reason": [
+      "R1 实际检查每张新候选；R2 检查拟选图、作为修正依据的最佳候选及有分歧的图。",
+      "只有 R1 明确淘汰且未进入推荐的其他图可保留单审，并必须标明真实审查范围。不能把未安排 R2 的淘汰候选写成两份独审已齐。",
+      "用户后来选择单审候选时必须补 R2；最终选图必须完成全部必需独审，起始只有一镜的批次还需 R3。",
+      "同一图全部必需 Reviewer pass 才能称技术通过；failed 图获用户采用仍保留原判定。",
+      "下一修正方案必须等依据候选的独立反馈齐全，不能凭 R1 单审偏好开始反复重画。"
+    ],
+    "wording_followup": {
+      "severity": "minor",
+      "location": "generation_modes.md：每张图的交付顺序",
+      "issue": "较前位置仍一概写“每张图…两名 Reviewer 各自实际看图”，与后文允许明确淘汰候选仅 R1 单审有字面冲突；后文具体分工足以解释，但执行者可能仍为所有弃图补 R2，抵消节约。",
+      "suggestion": "在交付顺序处标明按下文审查范围派发，拟选、修正依据及分歧候选完成必需独审后才进入最终推荐/决定。"
+    },
+    "validation": "原 JSON 保留历史评估；追加 resolved_findings 与 recheck。"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜08",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_02.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Tighten this into a chest-up portrait: the main man's hair crown sits 5% below the top border and the bottom border crosses directly beneath the pectoral muscles. Keep the blurred listener visibly present along the far LEFT as a thin sliver of head AND shoulder, within the outermost 15% width at every height. Restore realistic photographic skin and plain woven cloth: remove the artificial engraved, embossed and swirling surface patterns while retaining ordinary natural pores, wrinkles and fabric weave.",
+      "preserve_zh": "Keep the exact two identities, facial features, expression, eye direction, head angle, hairstyle, clothing colors and camera direction. The dialogue moment stays unchanged. Keep the listener visibly present as that thin edge sliver; the rest of his body is outside the frame. Hands and bottle stay at their original height below the crop."
+    },
+    {
+      "id": "ep01_镜10",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_02.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Tighten this into a chest-up portrait: the main man's hair crown sits 5% below the top border and the bottom border crosses directly beneath the pectoral muscles. Keep the blurred listener visibly present along the far LEFT as a thin sliver of head AND shoulder, within the outermost 15% width at every height. Restore realistic photographic skin and plain woven cloth: remove the artificial engraved, embossed and swirling surface patterns while retaining ordinary natural pores, wrinkles and fabric weave.",
+      "preserve_zh": "Keep the exact two identities, facial features, expression, eye direction, head angle, hairstyle, clothing colors and camera direction. The dialogue moment stays unchanged. Keep the listener visibly present as that thin edge sliver; the rest of his body is outside the frame. Hands and bottle stay at their original height below the crop."
+    },
+    {
+      "id": "ep01_镜11",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_01.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Tighten this into a chest-up portrait: the main man's hair crown sits 5% below the top border and the bottom border crosses directly beneath the pectoral muscles. Keep the blurred listener visibly present along the far LEFT as a thin sliver of head AND shoulder, within the outermost 15% width at every height. Restore realistic photographic skin and plain woven cloth: remove the artificial engraved, embossed and swirling surface patterns while retaining ordinary natural pores, wrinkles and fabric weave.",
+      "preserve_zh": "Keep the exact two identities, facial features, expression, eye direction, head angle, hairstyle, clothing colors and camera direction. The dialogue moment stays unchanged. Keep the listener visibly present as that thin edge sliver; the rest of his body is outside the frame. Hands and bottle stay at their original height below the crop."
+    },
+    {
+      "id": "ep01_镜12",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_01.png",
+      "mode": "local_reframe",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Tighten this into a chest-up portrait: the main man's hair crown sits 5% below the top border and the bottom border crosses directly beneath the pectoral muscles. Keep the blurred listener visibly present along the far LEFT as a thin sliver of head AND shoulder, within the outermost 15% width at every height. Restore realistic photographic skin and plain woven cloth: remove the artificial engraved, embossed and swirling surface patterns while retaining ordinary natural pores, wrinkles and fabric weave.",
+      "preserve_zh": "Keep the exact two identities, facial features, expression, eye direction, head angle, hairstyle, clothing colors and camera direction. The dialogue moment stays unchanged. Keep the listener visibly present as that thin edge sliver; the rest of his body is outside the frame. Hands and bottle stay at their original height below the crop."
+    }
+  ],
+  "review_sources": [
+    "review_keyframes_missing17_batch2_round2_single.json",
+    "review_keyframes_missing17_batch2_round2_continuity.json"
+  ]
+}

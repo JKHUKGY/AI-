@@ -1,0 +1,41 @@
+{
+  "agent_id": "/root/missing17_ga",
+  "role": "Generator A",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_round2_a3.json",
+  "source_job_sha256": "cb502b714bf21599a23fb141f2b7d6897bc5dae1434a31791342f3c4ba7e58c9",
+  "records": [
+    {
+      "id": "ep01_镜13",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-7b14b37c-bd79-4f79-b8f6-530cdaa83443.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_01.png",
+      "sha256": "d6dcd3f1fda8553d1f569258e116361a64a2205a036b47f389e3978e4c754dd6"
+    },
+    {
+      "id": "ep01_镜13",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-b6d72514-70b9-4f32-a4bc-58269dc29f54.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_02.png",
+      "sha256": "1f75cc41d7f5c041a4815ba0fc96ca8c6caf4d33dcb2b4310c8aaddf3ed13de3"
+    },
+    {
+      "id": "ep01_镜26",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-1725253a-51b1-4dce-b997-9e8886bf0bf0.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_01.png",
+      "sha256": "8aa5d1f70996e038f139b0294be5fdd71589f8b908f6834eae2b748fc06dfead"
+    },
+    {
+      "id": "ep01_镜26",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-d01137bb-5316-4d10-861e-884b8d4c2cc0.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_02.png",
+      "sha256": "e58fdc08dd4d169184c5b47c094fa779e26fbec33645b6925085eb29663f667c"
+    }
+  ],
+  "errors": []
+}

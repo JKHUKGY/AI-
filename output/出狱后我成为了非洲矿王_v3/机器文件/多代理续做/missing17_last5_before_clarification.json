@@ -1,0 +1,403 @@
+[
+  {
+    "id": "ep01_镜29",
+    "shot_no": 29,
+    "scene": "SC01",
+    "beat_id": "ep01_v1",
+    "tier": "A",
+    "plate_id": "SC01_C侧机位_紧",
+    "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "plate_read_zh": "实际看图：左玻璃窗、右电视和深色石墙，黑沙发横贯中部，左下茶几果盘；近景背景以家具为主，空地只在下缘。",
+    "script_ref_zh": "script_source.txt 第66行「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」——夸赞字面说得越慢，羞辱越明显；眼皮始终没抬。",
+    "beat_zh": "刘兰左中景胸上、三分之四正面偏右，眼睛压低只看抬在胸前的美甲，身体仍坐沙发北段；顾瑶右前景只露虚焦侧头与手机边缘。母子在西侧相机身后画外，刘兰不用正眼看他们。",
+    "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "camera_zh": "相机在客厅西侧沙发区，约1.5米高朝东侧电视墙，左北窗、右南侧沙发段。",
+    "framing": {
+      "shot_size": "近景",
+      "subject_frac": 0.68,
+      "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+      "plate_crop_zh": "取C紧底板中段黑色沙发北段和南段的座位、左窗边与右电视墙，刘兰与顾瑶的入画部分按人物字段保留。",
+      "subject_measurement": "cropped",
+      "headroom_frac": 0.05,
+      "primary_subject": "刘兰"
+    },
+    "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+    "people": [
+      {
+        "name": "刘兰",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "left",
+        "depth": "far",
+        "body_dir": "screen_right",
+        "camera_relation": "three_quarter_front",
+        "gaze_at": "prop:美甲",
+        "posture_zh": "坐在沙发北段、双腿交叠",
+        "action_zh": "右手举起指甲、眼皮低垂",
+        "contact_zh": null
+      }
+    ],
+    "background_people": [
+      {
+        "name": "顾瑶",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "right",
+        "depth": "mid",
+        "body_dir": "screen_left",
+        "camera_relation": "three_quarter_front",
+        "gaze_at": "prop:手机",
+        "posture_zh": "斜靠沙发南段",
+        "action_zh": "双手举手机、目光落在屏幕，嘴角轻松",
+        "contact_zh": null,
+        "focus": "defocused"
+      }
+    ],
+    "present_off_frame": [
+      "江砚",
+      "苏慧"
+    ],
+    "props_zh": [
+      "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+      "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+      "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+    ],
+    "relation_zh": "刘兰眼皮低垂，慢声说出带着羞辱的反话。",
+    "count": 1,
+    "notes": "阶段一待审稿；首帧取动作起点。不沿用v2“扫江砚一眼”的新增动作，原文为眼皮都没抬。 缺失17镜补做：保留批准设计，裁切模式澄清头顶5%与胸口下缘优先，旧subject_frac只作景别标签；首轮1张。 参考策略澄清：近景直接引用批准紧机位底板和角色基准；选中主帧仍通过scene_beats提供在场和道具状态，但其宽景图片不作为本镜取景参考，避免完整身体构图重复扩散。",
+    "reference_strategy": "plate_only"
+  },
+  {
+    "id": "ep01_镜30",
+    "shot_no": 30,
+    "scene": "SC01",
+    "beat_id": "ep01_v1",
+    "tier": "A",
+    "plate_id": "SC01_B反打_紧",
+    "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+    "script_ref_zh": "script_source.txt 第66行「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」——反话让江砚难堪，但他尚未反驳。",
+    "beat_zh": "江砚右中景胸上三分之四侧面朝左、目视刘兰方向，脸上局促而克制，肩上无包带；苏慧右前景只有虚焦侧背肩。刘兰左前景背肩/发丝边缘可见，顾瑶在她之后的左侧沙发上，若沙发座位入画保留低头身影，否则明确在左下裁切外。 本版取景确定保留左缘刘兰背肩和顾瑶的虚焦头肩窄条，二人均作为可见背景人物，不能画空座位。",
+    "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+    "framing": {
+      "shot_size": "近景",
+      "subject_frac": 0.68,
+      "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+      "plate_crop_zh": "取B紧底板玄关方向与右侧母子胸上区域，左缘保留刘兰背肩及顾瑶虚焦头肩对应的沙发窄条。",
+      "subject_measurement": "cropped",
+      "headroom_frac": 0.05,
+      "primary_subject": "江砚"
+    },
+    "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+    "people": [
+      {
+        "name": "江砚",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "right",
+        "depth": "mid",
+        "body_dir": "screen_left",
+        "camera_relation": "three_quarter_front",
+        "gaze_at": "off_left",
+        "posture_zh": "站在西南侧，胸上入画",
+        "action_zh": "右手在裁切线下握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着、眉头轻收",
+        "contact_zh": null
+      }
+    ],
+    "background_people": [
+      {
+        "name": "苏慧",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "far_right",
+        "depth": "near",
+        "body_dir": "screen_left",
+        "camera_relation": "three_quarter_back",
+        "gaze_at": "off_left",
+        "posture_zh": "站在儿子北侧、侧背肩靠镜头",
+        "action_zh": "左手在裁切线下提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前",
+        "contact_zh": null,
+        "focus": "defocused"
+      },
+      {
+        "name": "刘兰",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "left",
+        "depth": "near",
+        "body_dir": "screen_right",
+        "camera_relation": "three_quarter_back",
+        "gaze_at": "prop:美甲",
+        "posture_zh": "坐在东侧北段，仅背肩与头侧边缘入画",
+        "action_zh": "抬右手看指甲",
+        "contact_zh": null,
+        "focus": "defocused"
+      },
+      {
+        "name": "顾瑶",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+        ],
+        "ref_note_zh": "已选顾瑶角色三视图，仅提供左缘虚焦头肩的身份与衣着",
+        "pos_x": "far_left",
+        "depth": "far",
+        "body_dir": "screen_right",
+        "camera_relation": "profile",
+        "gaze_at": "prop:手机",
+        "posture_zh": "坐在东侧南段，左缘仅留虚焦头肩轮廓",
+        "action_zh": "双手持手机于胸前",
+        "contact_zh": null,
+        "focus": "defocused",
+        "appearance_zh": "已选主帧中的顾瑶：年轻中国女子、浅棕长发、白色无袖上衣、浅米色短裙；本镜只呈左缘虚焦头肩轮廓"
+      }
+    ],
+    "present_off_frame": [],
+    "props_zh": [
+      "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+      "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+      "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+    ],
+    "relation_zh": "反话让江砚难堪，但他尚未反驳。",
+    "count": 1,
+    "notes": "阶段一待审稿；首帧取动作起点。不要提前握拳或站起，他全程站着。 缺失17镜补做：保留批准设计，裁切模式澄清头顶5%与胸口下缘优先，旧subject_frac只作景别标签；首轮1张。 参考策略澄清：近景直接引用批准紧机位底板和角色基准；选中主帧仍通过scene_beats提供在场和道具状态，但其宽景图片不作为本镜取景参考，避免完整身体构图重复扩散。",
+    "reference_strategy": "plate_only"
+  },
+  {
+    "id": "ep01_镜31",
+    "shot_no": 31,
+    "scene": "SC01",
+    "beat_id": "ep01_v1",
+    "tier": "A",
+    "plate_id": "SC01_C侧机位_紧",
+    "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "plate_read_zh": "实际看图：左玻璃窗、右电视和深色石墙，黑沙发横贯中部，左下茶几果盘；近景背景以家具为主，空地只在下缘。",
+    "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」——她把江砚当着人的面当成谈资，说给母亲听。",
+    "beat_zh": "顾瑶右中景胸上三分之四侧面朝左、斜靠沙发南段，手机在胸前；刘兰在左后景沙发北段低眼看美甲、只露侧面小轮廓。顾瑶先朝西侧画外江砚扫眼，再将视线与话头转向左侧母亲。",
+    "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "camera_zh": "相机在客厅西侧沙发区，约1.5米高朝东侧电视墙，左北窗、右南侧沙发段。",
+    "framing": {
+      "shot_size": "近景",
+      "subject_frac": 0.68,
+      "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+      "plate_crop_zh": "取C紧底板中段黑色沙发北段和南段的座位、左窗边与右电视墙，刘兰与顾瑶的入画部分按人物字段保留。",
+      "subject_measurement": "cropped",
+      "headroom_frac": 0.05,
+      "primary_subject": "顾瑶"
+    },
+    "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+    "people": [
+      {
+        "name": "顾瑶",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "right",
+        "depth": "mid",
+        "body_dir": "screen_left",
+        "camera_relation": "three_quarter_front",
+        "gaze_at": "prop:手机",
+        "posture_zh": "斜靠沙发南段",
+        "action_zh": "双手举手机、目光落在屏幕，嘴角轻松",
+        "contact_zh": null
+      }
+    ],
+    "background_people": [
+      {
+        "name": "刘兰",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "left",
+        "depth": "far",
+        "body_dir": "screen_right",
+        "camera_relation": "three_quarter_front",
+        "gaze_at": "prop:美甲",
+        "posture_zh": "坐在沙发北段、双腿交叠",
+        "action_zh": "右手举起指甲、眼皮低垂",
+        "contact_zh": null,
+        "focus": "defocused"
+      }
+    ],
+    "present_off_frame": [
+      "江砚",
+      "苏慧"
+    ],
+    "props_zh": [
+      "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+      "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+      "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+    ],
+    "relation_zh": "她把江砚当着人的面当成谈资，说给母亲听。",
+    "count": 1,
+    "notes": "阶段一待审稿；首帧取动作起点。手机左右手握法沿用v1主帧。 缺失17镜补做：保留批准设计，裁切模式澄清头顶5%与胸口下缘优先，旧subject_frac只作景别标签；首轮1张。 参考策略澄清：近景直接引用批准紧机位底板和角色基准；选中主帧仍通过scene_beats提供在场和道具状态，但其宽景图片不作为本镜取景参考，避免完整身体构图重复扩散。",
+    "reference_strategy": "plate_only"
+  },
+  {
+    "id": "ep01_镜32",
+    "shot_no": 32,
+    "scene": "SC01",
+    "beat_id": "ep01_v1",
+    "tier": "A",
+    "plate_id": "SC01_B反打_紧",
+    "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+    "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」；script_source.txt 第68行「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——江砚受辱，母亲首先担心儿子顶嘴。",
+    "beat_zh": "江砚右中景胸上三分之四侧面朝左，眉头微蹙；苏慧右前景侧背脸朝左下的沙发区，肩膀更含。刘兰左前景保留虚焦背肩，顾瑶在左下裁切外的沙发南段接话，不能站到屋中央。 本版取景确定保留左缘刘兰背肩和顾瑶的虚焦头肩窄条，二人均作为可见背景人物，不能画空座位。",
+    "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+    "framing": {
+      "shot_size": "近景",
+      "subject_frac": 0.68,
+      "crop_zh": "画面上边留头顶约5%，底边把主体从胸口下缘切断，看不到腰腿和脚；前景过肩只占一侧约15%。",
+      "plate_crop_zh": "取B紧底板玄关方向与右侧母子胸上区域，左缘保留刘兰背肩及顾瑶虚焦头肩对应的沙发窄条。",
+      "subject_measurement": "cropped",
+      "headroom_frac": 0.05,
+      "primary_subject": "江砚"
+    },
+    "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+    "people": [
+      {
+        "name": "江砚",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "right",
+        "depth": "mid",
+        "body_dir": "screen_left",
+        "camera_relation": "three_quarter_front",
+        "gaze_at": "off_left",
+        "posture_zh": "站在西南侧，胸上入画",
+        "action_zh": "右手在裁切线下握同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮拉杆，双肩空着、眉头轻收",
+        "contact_zh": null
+      },
+      {
+        "name": "苏慧",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "far_right",
+        "depth": "near",
+        "body_dir": "screen_left",
+        "camera_relation": "three_quarter_back",
+        "gaze_at": "off_left",
+        "posture_zh": "站在儿子北侧、侧背肩靠镜头",
+        "action_zh": "左手在裁切线下提同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋，右手在腹前",
+        "contact_zh": null
+      }
+    ],
+    "background_people": [
+      {
+        "name": "刘兰",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "left",
+        "depth": "near",
+        "body_dir": "screen_right",
+        "camera_relation": "three_quarter_back",
+        "gaze_at": "prop:美甲",
+        "posture_zh": "坐在东侧北段，仅背肩与头侧边缘入画",
+        "action_zh": "抬右手看指甲",
+        "contact_zh": null,
+        "focus": "defocused"
+      },
+      {
+        "name": "顾瑶",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png"
+        ],
+        "ref_note_zh": "已选顾瑶角色三视图，仅提供左缘虚焦头肩的身份与衣着",
+        "pos_x": "far_left",
+        "depth": "far",
+        "body_dir": "screen_right",
+        "camera_relation": "profile",
+        "gaze_at": "prop:手机",
+        "posture_zh": "坐在东侧南段，左缘仅留虚焦头肩轮廓",
+        "action_zh": "双手持手机于胸前",
+        "contact_zh": null,
+        "focus": "defocused",
+        "appearance_zh": "已选主帧中的顾瑶：年轻中国女子、浅棕长发、白色无袖上衣、浅米色短裙；本镜只呈左缘虚焦头肩轮廓"
+      }
+    ],
+    "present_off_frame": [],
+    "props_zh": [
+      "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+      "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+      "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+    ],
+    "relation_zh": "江砚受辱，母亲首先担心儿子顶嘴。",
+    "count": 1,
+    "notes": "阶段一待审稿；首帧取动作起点。 缺失17镜补做：保留批准设计，裁切模式澄清头顶5%与胸口下缘优先，旧subject_frac只作景别标签；首轮1张。 参考策略澄清：近景直接引用批准紧机位底板和角色基准；选中主帧仍通过scene_beats提供在场和道具状态，但其宽景图片不作为本镜取景参考，避免完整身体构图重复扩散。",
+    "reference_strategy": "plate_only"
+  },
+  {
+    "id": "ep01_镜33",
+    "shot_no": 33,
+    "scene": "SC01",
+    "beat_id": "ep01_v1",
+    "tier": "S",
+    "plate_id": "SC01_B反打_紧",
+    "plate_image": "output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "plate_read_zh": "实际看图：后方中央玄关双门，左侧可见餐厅开口，右边柜和圆镜；沙发在左，茶几果盘中部、软凳近端；底部被家具占据。",
+    "script_ref_zh": "script_source.txt 第68行「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——愤怒落到攥紧拉杆上，他始终没开口。",
+    "beat_zh": "江砚右手与深灰硬壳箱的黑色伸缩拉杆占画面中央近端，指节未完全收紧；背景只留虚焦米白大理石地面，裁掉沙发与所有人的脸。苏慧仍在他北侧、刘兰顾瑶仍在东侧座位，三人都在特写裁切外。",
+    "style_anchor_zh": "非洲现代矿业实景写实短剧质感，photorealistic，纪录片式自然光结合硬光源，\n竖屏9:16构图安全区，赤道暖黄高饱和日光与豪宅室内冷调灯光形成对比，\n皮肤、棉麻布料、抛光石材、锈蚀金属与红土尘埃的质感清晰可见，无水印无文字",
+    "camera_zh": "相机在客厅北侧窗前，约1.5米高朝南侧玄关，左东侧沙发、右西侧母子。",
+    "framing": {
+      "shot_size": "特写",
+      "subject_frac": 0.85,
+      "crop_zh": "画面上边从右手腕切断、底边从拉杆中段切断，手和握把占高约85%，人物头和躯干位于裁切外。",
+      "plate_crop_zh": "只取B紧底板下缘的虚焦大理石地面色块，手与拉杆位于中央，家具和其他人物处于裁切外。",
+      "subject_measurement": "detail",
+      "detail_subject_zh": "江砚右手与行李箱拉杆握把"
+    },
+    "light_zh": "北窗暖日光与室内冷调灯混合，大理石反光保持。",
+    "people": [
+      {
+        "name": "江砚",
+        "ref_images": [
+          "output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png"
+        ],
+        "ref_note_zh": "已选角色三视图",
+        "pos_x": "center",
+        "depth": "near",
+        "body_dir": "screen_left",
+        "camera_relation": "profile",
+        "gaze_at": "prop:行李箱拉杆",
+        "posture_zh": "身体在特写裁切之外，右手位于中央近端",
+        "action_zh": "右手五指松搭在黑色拉杆握把上，袖口露出洗白衬衫",
+        "contact_zh": null
+      }
+    ],
+    "background_people": [],
+    "present_off_frame": [
+      "苏慧",
+      "刘兰",
+      "顾瑶"
+    ],
+    "props_zh": [
+      "同一只半旧深灰硬壳行李箱，竖向细棱、黑色拉杆和四个黑轮",
+      "同一只深橄榄色帆布登山包，磨白织带、两只暗银搭扣、翻盖前袋",
+      "刘兰位于东侧沙发北段，顾瑶位于南段，两人始终坐着；母子在西侧，门洞位于A机位的左侧"
+    ],
+    "relation_zh": "愤怒落到攥紧拉杆上，他始终没开口。",
+    "count": 1,
+    "notes": "阶段一待审稿；首帧取动作起点。使用B紧底板的地面背景范围；不是SC01的D二楼俯拍机位。 缺失17镜补做：保留批准设计，裁切模式澄清头顶5%与胸口下缘优先，旧subject_frac只作景别标签；首轮1张。"
+  }
+]

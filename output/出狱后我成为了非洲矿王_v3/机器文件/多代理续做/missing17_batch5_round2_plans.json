@@ -1,0 +1,12 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜33",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png",
+      "mode": "crop",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Make a tight insert close-up of this SAME RIGHT HAND on the BLACK LUGGAGE HANDLE. The upper border cuts across the wrist just above the hand. The lower border cuts through the two rods just below the handle. The hand and horizontal grip dominate the frame. Only softly blurred marble floor appears around them.",
+      "preserve_zh": "Preserve the exact same anatomically natural right hand, finger positions, relaxed initial grip, realistic skin, black horizontal handle and twin rods, same daylight and portrait orientation. The torso, suitcase body, long forearm and long lower rods are outside this much tighter crop."
+    }
+  ]
+}

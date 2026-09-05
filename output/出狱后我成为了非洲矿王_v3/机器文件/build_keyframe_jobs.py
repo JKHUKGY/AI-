@@ -21,6 +21,11 @@ def anchor_of(card, beat):
     strategy=card.get('reference_strategy')
     if strategy is None:
         return _original_anchor(card, beat)
+    if strategy=='plate_only':
+        plate=card.get('plate_image')
+        if not plate:
+            raise ValueError('plate_only requires the approved camera plate')
+        return plate, None, 'plate'
     if strategy!='plate_plus_master':
         raise ValueError(f"Unsupported reference_strategy: {strategy}")
     plate=card.get('plate_image'); master=(beat or {}).get('master_frame')
@@ -42,6 +47,12 @@ def build_prompt(card, beat=None):
         if mode=='full_body':
             replacement=(f"画面里最靠前的完整人物从头顶到鞋底的全身高度占画幅高度约"
                          f"{round(float(framing['subject_frac'])*100)}%")
+        elif mode=='detail':
+            detail=framing.get('detail_subject_zh')
+            if not detail:
+                raise ValueError('Detail framing must name its visible subject')
+            replacement=(f"画面中特写主体{detail}的可见高度占画幅高度约"
+                         f"{round(float(framing['subject_frac'])*100)}%，上下边界按下述局部裁切")
         elif mode=='cropped':
             headroom=float(framing['headroom_frac'])
             if not 0<=headroom<=0.2:

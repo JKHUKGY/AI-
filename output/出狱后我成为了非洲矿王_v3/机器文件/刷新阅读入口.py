@@ -228,7 +228,7 @@ write_view('阅读首页.html',page)
 - 目录迁移记录.json：移动记录及原文件校验数量。
 
 旧路径由项目根目录的兼容链接保留；更新源文件后运行本目录的刷新阅读入口.py，刷新给人看的文档与图库。
-给人看中的Markdown和HTML是阅读副本；图片引用同一原图，不复制大图片，不把失败候选列为已选。
+给人看中的Markdown和HTML是阅读副本；图片引用同一原图，不复制大图片，仅将独立审查通过或用户明确要求择优选用的候选列为已选，并保留审查结论。
 ''')
 build_record=MACHINE/'阅读入口构建记录.json'
 old_build=json.loads(build_record.read_text()) if build_record.exists() else {}

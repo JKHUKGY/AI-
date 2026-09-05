@@ -1,0 +1,12 @@
+{
+  "id": "ep01_镜29",
+  "reason": "tool_output_moderation_blocked_twice",
+  "actual_images_by_round": {
+    "1": 1,
+    "2": 1
+  },
+  "zero_image_errors": 2,
+  "no_further_generation": true,
+  "selection": "ep01_镜29_01.png",
+  "not_a_third_round_cap": true
+}

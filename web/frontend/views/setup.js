@@ -11,7 +11,8 @@ Views.setup = async function setup(app, project) {
       <div class="setup-files"></div></div>
     <div class="card setup-document" hidden><h2 class="document-title"></h2><pre></pre><button class="close-document">收起</button></div>
     <div class="card"><h2>图片审批</h2><p>每项任务需先检查完整提示词、参考图与张数，再明确批准。后续关键帧图片也使用同样的审批流程。</p><div class="setup-image-tasks"></div></div>
-    <div class="card"><h2>视频与租卡审批</h2><p class="setup-gpu"></p></div>`;
+    <div class="card"><h2>租显卡 / 生成视频</h2><p>先检查视频任务和生成服务是否准备好，再确认租卡费用及生成点数。</p>
+      <div class="toolbar"><a class="action-link primary" href="#/production?project=${encodeURIComponent(project)}">进入视频制作中心</a><a class="action-link" href="#/p/${encodeURIComponent(project)}/videos/1">查看视频任务</a><a class="action-link" href="#/gpu?project=${encodeURIComponent(project)}">租用 / 关闭显卡</a></div></div>`;
   const start = app.querySelector('.setup-start');
   const stop = app.querySelector('.setup-cancel');
   const error = app.querySelector('.setup-error');
@@ -40,7 +41,6 @@ Views.setup = async function setup(app, project) {
       if (!stillHere()) return;
       if (!data.setup) {
         app.querySelector('.setup-progress').textContent = '此项目已有内容，可通过人物、场景和分镜页面继续制作。';
-        app.querySelector('.setup-gpu').textContent = '所有图片需逐次审批。视频制作仍需准备具体方案后单独审批。';
         return;
       }
       const s = data.setup;
@@ -52,7 +52,6 @@ Views.setup = async function setup(app, project) {
       stop.hidden = !['running', 'failed', 'interrupted'].includes(s.status);
       if (s.can_resume === false) app.querySelector('.setup-progress').textContent += ' · 已改为手动编辑，不再自动补写旧规划';
       start.textContent = s.status === 'ready' ? '开始生成文字文件' : '继续生成未完成的文字';
-      app.querySelector('.setup-gpu').textContent = data.gpu.message;
       const files = JSON.stringify(s.files);
       if (files !== fileSignature) {
         fileSignature = files;

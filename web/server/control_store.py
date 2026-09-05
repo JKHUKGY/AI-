@@ -12,6 +12,7 @@ from router import ApiError
 _locks = {}
 _guard = threading.Lock()
 PRICES = {'image': 10, 'video': 300}
+FEATURES = {'create':'创建项目', 'edit':'编辑与反馈', 'text':'文字生成', 'image':'图片生成', 'video':'视频生成', 'help':'使用帮助'}
 
 
 def user_lock(username):
@@ -40,6 +41,7 @@ def db():
         CREATE TABLE IF NOT EXISTS outbox(id TEXT PRIMARY KEY, usage_id TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending',
           attempts INTEGER NOT NULL DEFAULT 0, next_try REAL NOT NULL DEFAULT 0, error TEXT, sent_at REAL);
         CREATE TABLE IF NOT EXISTS settings(key TEXT PRIMARY KEY, value TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS features(username TEXT PRIMARY KEY, value TEXT NOT NULL DEFAULT '{}');
         CREATE TABLE IF NOT EXISTS rentals(id TEXT PRIMARY KEY, username TEXT NOT NULL, project TEXT NOT NULL,
           status TEXT NOT NULL, pod_id TEXT, detail TEXT NOT NULL, created_at REAL NOT NULL, expires_at REAL NOT NULL,
           updated_at REAL NOT NULL);
@@ -63,7 +65,23 @@ def account(username):
     with db() as c:
         result = _account(c, username)
         result['held'] = c.execute("SELECT COALESCE(SUM(quantity*unit_cost),0) FROM usage WHERE username=? AND status IN ('reserved','running','unknown')", (username,)).fetchone()[0]
+        flags = c.execute('SELECT value FROM features WHERE username=?',(username,)).fetchone()
+        result['features'] = {key:True for key in FEATURES} | (json.loads(flags['value']) if flags else {})
         return result
+
+
+def require_feature(username, feature):
+    import auth
+    ensure_enabled(username)
+    if not auth.is_admin(username) and not account(username)['features'].get(feature,True):
+        raise ApiError(403, f'管理员已禁止该账号使用{FEATURES[feature]}')
+
+
+def set_features(username, flags):
+    if not isinstance(flags,dict) or set(flags)-set(FEATURES) or any(type(v) is not bool for v in flags.values()):
+        raise ApiError(400,'功能权限不合法')
+    with db() as c:
+        c.execute('INSERT OR REPLACE INTO features VALUES (?,?)',(username,json.dumps(flags)))
 
 
 def ensure_enabled(username):
@@ -98,6 +116,8 @@ def allocate(username, delta, actor, request_id):
 
 
 def reserve(username, project, kind, quantity=1, identifier=None, detail=None):
+    if kind in ('image','video'):
+        require_feature(username,kind)
     if type(quantity) is not int or not 1 <= quantity <= 100:
         raise ApiError(400, '生成数量不合法')
     identifier = identifier or uuid.uuid4().hex
@@ -125,8 +145,15 @@ def reserve(username, project, kind, quantity=1, identifier=None, detail=None):
 def started(identifier, ref=None):
     with db() as c:
         changed = c.execute("UPDATE usage SET status='running', ref=? WHERE id=? AND status='reserved'", (ref, identifier)).rowcount
-        if changed:
+        kind = c.execute('SELECT kind FROM usage WHERE id=?', (identifier,)).fetchone()
+        if changed and kind and kind['kind'] == 'mail_test':
             c.execute('INSERT OR IGNORE INTO outbox(id,usage_id) VALUES (?,?)', ('start:' + identifier, identifier))
+
+
+def gpu_notification(identifier):
+    """仅在实例确认存在之后入队，每次开卡恰好一条通知。"""
+    with db() as c:
+        c.execute('INSERT OR IGNORE INTO outbox(id,usage_id) VALUES (?,?)', ('start:' + identifier, identifier))
 
 
 def settle(identifier, status, completed=0):
@@ -153,7 +180,7 @@ def audit(username, kind, project='', detail=None):
 
 def settings():
     with db() as c:
-        return {r['key']: json.loads(r['value']) for r in c.execute('SELECT * FROM settings')}
+        return {'mail_to': 'j18210070075@gmail.com', **{r['key']: json.loads(r['value']) for r in c.execute('SELECT * FROM settings')}}
 
 
 def save_settings(values):

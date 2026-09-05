@@ -10,6 +10,7 @@ import jobs
 import projects
 import project_setup
 import prompt_tasks
+import video_jobs
 
 
 def reconcile(recover=False):
@@ -45,15 +46,18 @@ def reconcile(recover=False):
 def start():
     reconcile(recover=True)
     def work():
-        last_gpu=0
+        last_video=0
         while True:
             try:
                 reconcile()
-                notifications.deliver_one()
-                if time.time()-last_gpu>=15:
-                    runpod_service.tick(); last_gpu=time.time()
+                if time.time()-last_video>=10:
+                    video_jobs.tick(); last_video=time.time()
             except Exception:
                 # 不输出第三方错误正文，避免邮件授权码/API Key 泄漏。
                 pass
             time.sleep(2)
     threading.Thread(target=work,daemon=True).start()
+    import os
+    if os.environ.get('SCRIPTWRITER_EXTERNAL_WATCHDOG') != '1':
+        from gpu_watchdog import start_threads
+        start_threads()

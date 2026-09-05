@@ -1,0 +1,217 @@
+{
+  "agent_id": "/root/resume_r1",
+  "review_scope": "single",
+  "batch": "missing17_batch2_round3",
+  "source_basis": "已独立阅读当前卡与原剧本；沿用本代理实看两角色、A/B紧底板及前后已选镜，逐张实际打开候选；不新增头部50%标准，不读取另一审查报告。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframes.md",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜08",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_03.png",
+      "verdict": "fail",
+      "reason": "陈野收眉讲述和B机位、身份服装保留，主体已更紧；头顶约8%接近但偏多，左侧江砚只剩黑发片段且肩缘几乎完全消失。更明显的问题是面颊、额头、脖颈及发际出现熔蜡/线刻般人工纹理，毛巾与衬衣也呈重复雕纹，第三轮未恢复自然摄影质感。",
+      "fix_instruction": "三轮到限不再追加，待同镜03/04/05齐后从六张中优先人物表情和自然质感择优，保留差异记录。",
+      "card_field": [
+        "style_anchor_zh",
+        "framing.crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜11",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+      "verdict": "pass",
+      "reason": "江砚眼神冷静直指陈野，微分嘴唇可承接冰冷台词；身份发型与灰蓝衬衫、A机位门内背景成立。胸像已形成，头顶约7%、前景陈野窄发侧与后肩大部分宽约10%至15%、仅最底肩弧接近20%，整体已接近原卡约数要求，不按像素硬等式追加门槛。衬衫重复雕纹明显减轻为自然棉布褶皱，皮肤较陈野雕纹候选自然，未见妨碍叙事的结构错误。",
+      "fix_instruction": "本审查可用，交另一独立审查结果合并；无需再为本候选新增50%头高或补出框外水瓶。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜08",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_04.png",
+      "verdict": "fail",
+      "reason": "陈野讲述神态与B场景保留。头顶约9%、胸下衣物仍较长，江砚只剩左缘头部片段及最底极小肩角，未形成原设计窄过肩。额头、面颊、脖颈有蜡面及密集刻线，发际像刻出的花纹，毛巾重复雕纹仍明显，质感修复没有达到原写实风格。",
+      "fix_instruction": "已达第三轮，不追加；待05完成后从六张中优先自然人物与剧情择优，未通过原因持续保留。",
+      "card_field": [
+        "style_anchor_zh",
+        "framing.crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜08",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_05.png",
+      "verdict": "fail",
+      "reason": "陈野向左严肃讲话、B机位道路与门柱及人物身份正确；额头、脸颊、胡须和颈部仍有明显蜡质雕刻纹，毛巾/衣料重复刻纹也未恢复自然材质。顶空仍约10%，左缘几乎只剩头侧碎片，后肩提示很弱。",
+      "fix_instruction": "第三轮已到限，记录剩余差异并从本镜六图择优，不追加生成。",
+      "card_field": [
+        "style_anchor_zh",
+        "crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜10",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_03.png",
+      "verdict": "fail",
+      "reason": "陈野微张嘴的错愕反应符合“你知道？”；B道路背景和人物位置正确，肩缘已收窄、胸部裁切接近要求。但额头、面颊、颈胸皮肤出现显著蜡质雕纹及重复纹理，毛巾亦有刻画感，未达到原写实材质要求。",
+      "fix_instruction": "已到第三轮；择优时优先自然面部与剧情，保留雕纹缺陷记录。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜10",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_04.png",
+      "verdict": "fail",
+      "reason": "错愕表情、左右人物关系与B背景符合源卡，左肩窄条和胸口裁切已接近原构图；皮肤额头、脸颊及颈胸仍明显蜡质/雕纹化，毛巾重复纹理不自然。",
+      "fix_instruction": "已到第三轮，保持判定并待六图择优，不追加标准或生成。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜11",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_04.png",
+      "verdict": "fail",
+      "reason": "江砚冷眼向左、嘴微张符合冰冷回应，A机位院落正确，脸与衬衫较自然；左下陈野后肩仍约占画宽30%，超过源卡约15%的窄过肩要求。",
+      "fix_instruction": "第三轮到限，择优时保留原窄肩要求；本图仅剩左下过肩过宽较突出。",
+      "card_field": [
+        "crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜11",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_05.png",
+      "verdict": "pass",
+      "reason": "江砚身份、冷静而冰冷的向左视线与微张嘴符合原台词；A院落背景正确。胸口下缘裁切、约6%顶空和左缘头侧/后肩窄条符合近似构图，肩部底端约17%–18%不构成明显偏差。面部与衬衫恢复自然皮肤及棉布纹理。",
+      "fix_instruction": "无需修正；供另一独立审查与总控选图。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜10",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_05.png",
+      "verdict": "fail",
+      "reason": "陈野微张嘴、困惑注视江砚符合“你知道？”反应，B道路背景正确；额头、双颊、颈胸均有明显不自然蜡亮雕纹，毛巾和背心也呈重复雕刻花纹。顶空约10%，胸下保留偏多。",
+      "fix_instruction": "第三轮到限，不追加生成；从本镜六图优先选择自然人物与剧情完整的候选，并保留构图差异记录。",
+      "card_field": [
+        "style_anchor_zh",
+        "crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜12",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_03.png",
+      "verdict": "fail",
+      "reason": "陈野皱眉不忿、面对左缘江砚符合原剧本，B机位道路背景正确，顶空约5%；脸颊额头颈部有明显蜡质雕纹，毛巾/背心也有刻纹，左下肩最宽约23%仍稍宽。",
+      "fix_instruction": "第三轮到限，不追加生成；从本镜六图优先选择自然人物与剧情完整的候选，并保留构图差异记录。",
+      "card_field": [
+        "style_anchor_zh",
+        "crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜12",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_04.png",
+      "verdict": "fail",
+      "reason": "不忿的皱眉与对话关系正确，B背景正确，约7%顶空、左缘窄肩已接近原构图；额头脸颊和颈部仍有显著雕刻纹理与蜡亮感，毛巾及衣料重复刻纹影响写实质感。",
+      "fix_instruction": "第三轮到限，不追加生成；从本镜六图优先选择自然人物与剧情完整的候选，并保留构图差异记录。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜12",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_05.png",
+      "verdict": "fail",
+      "reason": "陈野皱眉、紧嘴准备不忿讲话符合台词，B背景与人物身份正确，顶空约5%；面部及颈部仍明显雕纹化、衣料出现重复刻纹，左下江砚后肩约26%仍超过约15%的窄肩要求。",
+      "fix_instruction": "第三轮到限，不追加生成；从本镜六图优先选择自然人物与剧情完整的候选，并保留构图差异记录。",
+      "card_field": [
+        "style_anchor_zh",
+        "crop_zh"
+      ]
+    }
+  ],
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜08",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+      "selection_reason": "六张均已实看；00人物肤质和棉布自然，严肃讲述及人物关系完整。后续候选虽然变紧，雕纹逐步加重，优先保住人物与剧情。",
+      "remaining_difference": "00仍为较宽中景，见腰腹，顶空约21%，左前景江砚占幅约半幅；不满足原胸口下缘、约5%顶空和15%窄肩要求，原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜10",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+      "selection_reason": "六张均已实看；00的错愕表情、人物身份、自然肤质与B空间最好保留。后续候选雕纹明显，因此优先00。",
+      "remaining_difference": "00仍见腰带/腰腹，顶空约20%，左前景较宽约半幅，尚不符合原近景裁切和窄肩要求；原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜11",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_05.png",
+      "selection_reason": "六张均已实看；05在冷回应表情、自然脸部和棉布质感、约5%顶空与窄过肩之间最均衡，单图判定pass。",
+      "remaining_difference": "无实质单图差异；顶空约6%、肩底约17%–18%属于约值可接受范围，仍须独立连戏审查。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜12",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+      "selection_reason": "六张均已实看；00保留自然脸部、愤懑反应、正确瓶/盖状态及B空间，优先于新图紧构图但蜡质雕纹明显。",
+      "remaining_difference": "00景别过宽，见腰腹/腿部，顶空约13%，左前景近半幅；不符合胸口下缘与约15%窄肩，原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    }
+  ],
+  "pending_count": 0,
+  "complete": true,
+  "proposed_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_05.png"
+  ]
+}

@@ -13,6 +13,9 @@ import prompt_tasks
 import jobs
 import state
 import runpod_service as runpod
+import video_estimates
+import gpu_monitor
+import help_history
 from router import ApiError
 
 SECRET_FIELDS = {'runpod_api_key','smtp_password'}
@@ -62,6 +65,11 @@ def stop_user(username, project=None):
 
 
 def register(router):
+    @router.get(r'/api/admin/help-conversations')
+    def help_conversations(ctx, params):
+        require_admin(ctx.username)
+        return help_history.listing(ctx.query_one('username',''),ctx.query_one('conversation_id',''),ctx.query_one('before'))
+
     @router.get(r'/api/admin/overview')
     def overview(ctx, params):
         require_admin(ctx.username)
@@ -70,7 +78,7 @@ def register(router):
             ledger = [dict(row) for row in c.execute('SELECT * FROM ledger ORDER BY created_at DESC LIMIT 200')]
         return {'users':users(), 'projects':[p['name'] for p in projects.list_projects()], 'usage':store.usage(),
                 'totals':totals, 'ledger':ledger, 'settings':safe_settings(), 'mail':notifications.status(),
-                'rentals':[runpod.public(r) for r in runpod.list_rentals()], 'prices':store.PRICES}
+                'rentals':[runpod.public(r) for r in runpod.list_rentals()], 'prices':store.PRICES, 'features':store.FEATURES}
 
     @router.post(r'/api/admin/users')
     def create_user(ctx, params):
@@ -109,14 +117,16 @@ def register(router):
                 auth.add_user(username,password,auth.display_name(username))
                 store.set_enabled(username,bool(store.account(username)['enabled']))
             else:
-                names=body.get('projects'); gpu=body.get('gpu_allowed')
+                names=body.get('projects'); gpu=body.get('gpu_allowed'); flags=body.get('features',store.account(username)['features'])
                 if not isinstance(names,list) or any(not isinstance(p,str) or not projects.project_dir(p) for p in names) or type(gpu) is not bool:
                     raise ApiError(400,'项目列表或租卡权限不合法')
                 if auth.is_admin(username):
                     raise ApiError(400,'管理员保留全部项目权限；此处只分配普通账号')
+                store.set_features(username,flags)
                 previous={p['name'] for p in projects.list_projects() if auth.can_access_project(username,p['name'])}
                 auth.set_projects(username,names)
                 with store.db() as c:
+                    store._account(c,username)
                     c.execute('UPDATE accounts SET gpu_allowed=? WHERE username=?',(int(gpu),username))
                 for removed in previous-set(names):
                     threading.Thread(target=stop_user,args=(username,removed),daemon=True).start()
@@ -130,6 +140,8 @@ def register(router):
     def update_settings(ctx, params):
         require_admin(ctx.username); body=ctx.json()
         if not isinstance(body,dict) or set(body)-SETTINGS_FIELDS: raise ApiError(400,'不支持的配置字段')
+        if body.get('video_ready') is True and store.settings().get('h3_paused'):
+            raise ApiError(409,'视频生成通道已暂时停用，恢复通道后才可启用')
         clean={}
         for key,value in body.items():
             if key in SECRET_FIELDS and value=='': continue
@@ -164,13 +176,23 @@ def register(router):
     def gpu_list(ctx, params):
         config=store.settings()
         return {'rentals':[runpod.public(r) for r in runpod.list_rentals(None if auth.is_admin(ctx.username) else ctx.username)],
+                'h3_paused':bool(config.get('h3_paused')), 'video_ready':bool(config.get('video_ready')) and not config.get('h3_paused',False), 'video_allowed':auth.is_admin(ctx.username) or store.account(ctx.username)['features']['video'],
+                'mail_configured':notifications.configured(), 'notification_email':notifications.GPU_RECIPIENT, 'idle_seconds':runpod.IDLE_SECONDS,
                 'enabled':bool(config.get('gpu_enabled')), 'allowed':auth.is_admin(ctx.username) or bool(store.account(ctx.username)['gpu_allowed']),
                 'max_minutes':config.get('gpu_max_minutes',60),'max_usd':config.get('gpu_max_usd',10)}
+
+    @router.get(r'/api/gpu/monitor')
+    def gpu_monitor_report(ctx, params):
+        return gpu_monitor.report(ctx.username)
 
     @router.get(r'/api/gpu/catalog')
     def gpu_catalog(ctx, params):
         if not auth.is_admin(ctx.username) and not store.account(ctx.username)['gpu_allowed']: raise ApiError(403,'没有租卡权限')
-        return {'gpus':runpod.catalog()}
+        rows=runpod.catalog()
+        for row in rows:
+            row['estimates']={str(steps):video_estimates.generation(row['name'],steps) for steps in (20,50)}
+        return {'gpus':rows, 'queried_at':time.time(), 'cloud':'SECURE', 'gpu_count':1,
+                'methodology':video_estimates.methodology()}
 
     @router.post(r'/api/projects/(?P<name>[^/]+)/gpu/preview')
     def gpu_preview(ctx, params):

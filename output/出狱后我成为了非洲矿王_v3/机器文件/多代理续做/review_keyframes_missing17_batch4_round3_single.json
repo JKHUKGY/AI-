@@ -1,0 +1,181 @@
+{
+  "agent_id": "/root/resume_r1",
+  "review_scope": "single",
+  "batch": "missing17_batch4_round3",
+  "source_basis": "原剧本第66–67行、当前源卡和ep01_v1状态；C紧机位、角色三视图及已实看主帧。按实质景别与叙事判断，约5%/15%非精确容差。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜31",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+      "verdict": "pass",
+      "reason": "顾瑶身份、服装、向下看画外手机的动作起点与C机位正确，刘兰左后虚焦小轮廓仍在，母子与箱包未入画。已是完整头颈肩胸的近景，腰裙在画外；人物皮肤与白上衣总体自然，未出现改变材质的显著雕纹。手机双手及刘兰美甲手随胸像取景在画外，不要求为验手拉宽。",
+      "fix_instruction": "无需修正；可供独立连戏审查与总控择优。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜31",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_04.png",
+      "verdict": "pass",
+      "reason": "顾瑶身份、白色上衣、低头看画外手机的首帧动作正确，左后刘兰虚焦轮廓可辨，C空间且母子箱包画外。完整头颈肩胸近景成立，腰裙出画；脸部与衣料总体自然。画外手机/手部不要求额外入画核查。",
+      "fix_instruction": "无需修正，供总控结合独立连戏审查择优。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜31",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_05.png",
+      "verdict": "pass",
+      "reason": "顾瑶身份、白色上衣、低头看画外手机的首帧动作正确，左后刘兰虚焦轮廓可辨，C空间且母子箱包画外。完整头颈肩胸近景成立，腰裙出画；脸部与衣料总体自然。画外手机/手部不要求额外入画核查。",
+      "fix_instruction": "无需修正，供总控结合独立连戏审查择优。",
+      "card_field": []
+    },
+    {
+      "id": "ep01_镜30",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_03.png",
+      "verdict": "fail",
+      "reason": "江砚身份、克制沉默、四人在场边缘与B玄关正确，胸像取景成立，手物在画外不可核查。脸颊高光出现重复旋纹/蜡质雕线，颈部刻线明显，衬衫布料亦有重复图案，偏离原自然写实皮肤棉布。",
+      "fix_instruction": "三轮到限，保留质量差异并从本镜六图择优，不追加轮次。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜30",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_04.png",
+      "verdict": "fail",
+      "reason": "江砚身份、克制沉默、四人在场边缘与B玄关正确，胸像取景成立，手物在画外不可核查。脸颊高光出现重复旋纹/蜡质雕线，颈部刻线明显，衬衫布料亦有重复图案，偏离原自然写实皮肤棉布。",
+      "fix_instruction": "三轮到限，保留质量差异并从本镜六图择优，不追加轮次。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜30",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_05.png",
+      "verdict": "fail",
+      "reason": "江砚身份、克制沉默、四人在场边缘与B玄关正确，胸像取景成立，手物在画外不可核查。脸颊高光出现重复旋纹/蜡质雕线，颈部刻线明显，衬衫布料亦有重复图案，偏离原自然写实皮肤棉布。",
+      "fix_instruction": "三轮到限，保留质量差异并从本镜六图择优，不追加轮次。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜32",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_03.png",
+      "verdict": "fail",
+      "reason": "江砚沉默轻蹙眉与母亲右缘侧背反应、B空间、胸像取景成立；画外手物不可核查。面颊高光呈明显同心旋纹和蜡质雕线，颈部刻线，衬衫整片重复图案比上一轮更突出，原自然写实材质未恢复。",
+      "fix_instruction": "第三轮到限，保留材质缺陷并从六张已看候选择优，不追加生成。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜32",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_04.png",
+      "verdict": "fail",
+      "reason": "江砚沉默轻蹙眉与母亲右缘侧背反应、B空间、胸像取景成立；画外手物不可核查。面颊高光呈明显同心旋纹和蜡质雕线，颈部刻线，衬衫整片重复图案比上一轮更突出，原自然写实材质未恢复。",
+      "fix_instruction": "第三轮到限，保留材质缺陷并从六张已看候选择优，不追加生成。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜32",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_05.png",
+      "verdict": "fail",
+      "reason": "江砚沉默轻蹙眉与母亲右缘侧背反应、B空间、胸像取景成立；画外手物不可核查。面颊高光呈明显同心旋纹和蜡质雕线，颈部刻线，衬衫整片重复图案比上一轮更突出，原自然写实材质未恢复。",
+      "fix_instruction": "第三轮到限，保留材质缺陷并从六张已看候选择优，不追加生成。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    }
+  ],
+  "pending_count": 0,
+  "complete": true,
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜30",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_01.png",
+      "selection_reason": "六图均已实看。01四人身份与沉默反应完整，手箱在画外，无00可见左手箱错误；面部与衣料较第三轮旋纹明显者自然。",
+      "remaining_difference": "仍保留胸口下长段腹部衣襟，左右前景偏宽；原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜32",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+      "selection_reason": "六图均已实看。00皮肤衣料最自然，四人身份、右箱左包及B空间均清楚；之后更紧图的旋纹不断增重。",
+      "remaining_difference": "00仍为中景，腰裤、箱包与母亲大段躯干入画，原胸像景别未达；原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    }
+  ],
+  "proposed_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_05.png"
+  ],
+  "best_available_recommendation": [
+    {
+      "id": "ep01_镜30",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_01.png",
+      "selection_reason": "六图均已实看。01四人身份与沉默反应完整，手箱在画外，无00可见左手箱错误；面部与衣料较第三轮旋纹明显者自然。",
+      "remaining_difference": "仍保留胸口下长段腹部衣襟，左右前景偏宽；原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜31",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_03.png",
+      "selection_reason": "六图均实看。03已实现自然人物胸像、二人正确身份与画外母子；03/04/05均单审pass，03可用。",
+      "remaining_difference": "无实质单图差异；手机双手随胸像裁切在画外，仍由后续运动承接抬眼。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜32",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png",
+      "selection_reason": "六图均已实看。00皮肤衣料最自然，四人身份、右箱左包及B空间均清楚；之后更紧图的旋纹不断增重。",
+      "remaining_difference": "00仍为中景，腰裤、箱包与母亲大段躯干入画，原胸像景别未达；原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    }
+  ]
+}

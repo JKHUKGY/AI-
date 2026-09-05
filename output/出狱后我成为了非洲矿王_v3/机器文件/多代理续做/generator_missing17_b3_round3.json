@@ -1,0 +1,67 @@
+{
+  "agent_id": "/root/resume_g2_35",
+  "role": "generator",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_round3_b3.json",
+  "source_job_sha256": "afb3a36a31831912dcde30cd8cf37b43d99bee505888372bc595273a09541f6e",
+  "records": [
+    {
+      "id": "ep01_镜27",
+      "round": 3,
+      "candidate": 3,
+      "source": "/home/codespace/.codex/generated_images/01a07145-60f6-7911-aa16-b2c1480bc4d0/exec-d7a25069-7222-4513-ba7c-a932d7e4773e.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_03.png",
+      "sha256": "9e2fd06abd93e45820e87dc1e69692ecc6d337f98f772b04744ff8999a8d868a"
+    },
+    {
+      "id": "ep01_镜27",
+      "round": 3,
+      "candidate": 4,
+      "source": "/home/codespace/.codex/generated_images/01a07145-60f6-7911-aa16-b2c1480bc4d0/exec-80dcc06a-971b-4c5a-b767-223fd3aa4673.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_04.png",
+      "sha256": "d093570d99a7ab9911dc95b6f330c4b8476e5e7e615dedd54b5d1572e523c5cb"
+    },
+    {
+      "id": "ep01_镜27",
+      "round": 3,
+      "candidate": 5,
+      "source": "/home/codespace/.codex/generated_images/01a07145-60f6-7911-aa16-b2c1480bc4d0/exec-f379704a-4720-4893-ab27-26426ab60094.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_05.png",
+      "sha256": "0c3f700168bf0df1d61e936bc43511b27ec85709203a3e7944b9fe87c5ef0b8a"
+    },
+    {
+      "id": "ep01_镜28",
+      "round": 3,
+      "candidate": 3,
+      "source": "/home/codespace/.codex/generated_images/01a07145-60f6-7911-aa16-b2c1480bc4d0/exec-38fcc98a-ac19-4e81-beec-adc8c19f00b3.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_03.png",
+      "sha256": "efb5e2e1d927b6da16a740f0420abccfe49af2699b44f7411dc8e8e05e3f8ff3"
+    },
+    {
+      "id": "ep01_镜28",
+      "round": 3,
+      "candidate": 4,
+      "source": "/home/codespace/.codex/generated_images/01a07145-60f6-7911-aa16-b2c1480bc4d0/exec-8d0ffeee-27a4-49d8-8a65-1b7ad4b4549b.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_04.png",
+      "sha256": "12c0d4c1593b5e676484d60c2a7d5c431dd09fc53f90fd8c277e3315525b83ae"
+    },
+    {
+      "id": "ep01_镜28",
+      "round": 3,
+      "candidate": 5,
+      "source": "/home/codespace/.codex/generated_images/01a07145-60f6-7911-aa16-b2c1480bc4d0/exec-8409b0d2-11db-4c2f-814e-ee5a4c87fd7d.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_05.png",
+      "sha256": "6843d4223eb9e9cfe3aec897a68bd741619d84848e363ae4092f9f26d4ddce6e"
+    }
+  ],
+  "errors": [
+    {
+      "id": "ep01_镜28",
+      "candidate": 5,
+      "stage": "orchestration_before_imagegen",
+      "message": "Resume cleared functions store; first exec failed reading missing cached job before invoking imagegen. Reloaded unchanged source job then made one successful imagegen call.",
+      "generated_images": 0,
+      "resolved": true
+    }
+  ],
+  "resume_note": "Before interruption only target absence check for 28_05 was run; imagegen had not been invoked. Default output directory newest file matched archived 28_04. Resumed sole missing candidate 28_05; no extra round or duplicate generation."
+}

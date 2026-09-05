@@ -1,0 +1,40 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜13",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_01.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Crop in strongly to a chest-up reaction close-up of the young man. Put the complete hair crown close to the top border with about 5% headroom. Put the bottom border directly across his chest. The sharp face is the focus; retain a thin blurred sliver of the older man's head and shoulder along the far LEFT edge.",
+      "preserve_zh": "Preserve the young man's calm closed-mouth listening expression, exact identity, eye direction and head angle. Keep the same courtyard camera direction, warm daylight, blue-gray shirt and natural photographic appearance."
+    },
+    {
+      "id": "ep01_镜26",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Swap the standing mother's two arm poses. The arm that currently hangs straight down holding the olive bag must instead bend, with its EMPTY hand resting across her abdomen. The arm that currently crosses her abdomen must instead lower and HOLD THE BAG. This puts the bag in her own LEFT hand and the empty hand at her abdomen on her own RIGHT. Keep her head, torso and feet in exactly the same places.",
+      "preserve_zh": "Change only the mother's arm/hand poses and the bag's attachment to her left hand. Preserve her identity, beige clothes, apron and full-size olive bag. Preserve the other three people, their poses, the suitcase, the room, lighting and wide full-body framing."
+    },
+    {
+      "id": "ep01_镜27",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Repose the OLDER woman on the LEFT so her torso and face point RIGHT toward the younger woman. Her nose must point toward the center of the image, not toward the left border. Keep her eyes lowered to her own raised RIGHT-hand fingernails, held in front of her on the center side. Keep the YOUNGER woman on the RIGHT facing LEFT toward the center, looking down at her phone in both hands. Tighten to a two-person chest-up frame with both whole heads, fingernails and phone visible, little empty space above their hair.",
+      "preserve_zh": "Keep both women's exact identities, blue-gray satin dress and white top, their seats, the sofa and the black-marble/window camera direction. Both women remain clear main subjects. Preserve the cleared seating/table area and natural photographic material textures."
+    },
+    {
+      "id": "ep01_镜28",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Make a tight chest-up reaction portrait of the gray-haired mother in the beige shirt and apron. Place her complete hair crown near the top with about 5% headroom and crop the bottom directly beneath her chest. Reduce the brown-haired woman in blue-gray at the left foreground to a narrow blurred head-and-shoulder sliver along that edge. Keep the younger woman with her phone at the far-left background edge and the son's blurred side face and blue-gray shoulder at the far-right edge.",
+      "preserve_zh": "Preserve all FOUR distinct identities and their positions. Keep the mother's tentative polite smile, the son's tense listening expression, the other two women's indifferent attention, the same entrance camera direction, daylight and natural skin/clothing. Preserve the repaired brown-haired foreground woman's identity."
+    }
+  ],
+  "review_sources": [
+    "review_keyframes_missing17_batch3_round2_single.json",
+    "review_keyframes_missing17_batch3_round2_continuity.json"
+  ]
+}

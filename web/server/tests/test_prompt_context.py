@@ -7,6 +7,8 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import app
+import auth
+import control_store
 import jobs
 import projects
 from router import ApiError, Ctx
@@ -17,6 +19,9 @@ class ContextTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        private = patch.object(auth,'DATA_DIR',str(self.root / '_accounts'))
+        private.start(); self.addCleanup(private.stop)
+        control_store.allocate('tester',1000,'test','fixture-credits')
         self.project = self.root / '测试剧'
         self.assets = self.project / 'assets'
         self.assets.mkdir(parents=True)

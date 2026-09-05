@@ -1,0 +1,29 @@
+{
+  "agent_id": "/root/resume_r1",
+  "review_scope": "single",
+  "batch": "missing17_batch5_round1",
+  "source_basis": "原剧本第68行、当前镜33源卡与ep01_v1道具状态；B底板及江砚三视图已实际核对。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜33",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png",
+      "verdict": "fail",
+      "reason": "右手解剖与五指数量可辨，黑双杆握把、深灰硬箱和衬衫材质成立，其他三人未入画。但画面包含整段前臂、胸腹衣摆、大片裤腿、完整伸缩杆及箱体上部，手和握把只在中央较小一段，并非批准腕部至拉杆中段的手部大特写；五指也已环握较紧，首帧松搭到再攥紧的动作余量偏小。",
+      "fix_instruction": "保留当前右手与同款握把，收紧到上缘腕部/下缘拉杆中段，躯干裤腿箱体主体出画，只留虚焦地面；五指自然松搭握把，留后续攥紧动作余量。",
+      "card_field": [
+        "framing.crop_zh",
+        "people[江砚].action_zh"
+      ]
+    }
+  ],
+  "complete": true,
+  "pending_count": 0
+}

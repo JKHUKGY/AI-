@@ -1,9 +1,11 @@
 """独立帮助服务：不重启或占用主网站的生成任务进程。"""
 import argparse
 import json
+from urllib.parse import urlparse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import auth
+import control_store
 import help_chat
 from router import ApiError, Ctx
 
@@ -23,11 +25,16 @@ class Handler(BaseHTTPRequestHandler):
         if self.path != '/api/help/question':
             self.reply(404, {'error':'未知接口'})
             return
+        origin = self.headers.get('Origin')
+        if origin and urlparse(origin).netloc != self.headers.get('Host'):
+            self.reply(403, {'error':'请求来源不合法'})
+            return
         username = auth.username_from_headers(self.headers)
         if not username:
             self.reply(401, {'error':'请先登录'})
             return
         try:
+            control_store.require_feature(username,'help')
             length = int(self.headers.get('Content-Length', '0'))
             if not 0 < length <= 256000:
                 raise ApiError(413, '问题或对话记录过长')

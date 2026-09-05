@@ -1,0 +1,34 @@
+{
+  "agent_id": "/root/resume_r2",
+  "review_scope": "continuity",
+  "batch": "missing17_batch5",
+  "status": "complete",
+  "created_at": "2026-09-05T14:57:04.317884+00:00",
+  "source_card_sha256": "baeaaf350efeaa5f138586c9a311ed35f98483900fd21bf628bcf0461e297f5d",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png"
+  ],
+  "standard_note": "独立实际看图，首帧是动作起点；约数小偏差不单独判错。未读其他独立审查报告。",
+  "images": [
+    {
+      "id": "ep01_镜33",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png",
+      "verdict": "fail",
+      "reason": "可辨为自身右手搭握黑色箱把，旧蓝灰袖、深灰硬壳箱与黑色双杆关系一致，手部自然。实质不符是上沿切在前臂以上，右侧纳入大片衣襟裤腿，下方含几乎整段伸缩杆及箱体；手与握把仅占中部小块，景别仍是箱子与身体局部，未形成要求的手部特写。未完全攥紧符合动作起点，不判该项错误。",
+      "fix_instruction": "以本图做紧裁/局部编辑：上沿切腕、下沿切握把下方一小段拉杆，手与握把成为压倒性主体；右侧衣襟裤腿与底部箱体移出裁切。保留右手自然姿态、黑色握把和双杆及虚焦米白地面，不需提前把手攥到极限。",
+      "card_field": [
+        "framing",
+        "people[江砚].action",
+        "props",
+        "scene_beat"
+      ]
+    }
+  ],
+  "best_edit_base": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png"
+}

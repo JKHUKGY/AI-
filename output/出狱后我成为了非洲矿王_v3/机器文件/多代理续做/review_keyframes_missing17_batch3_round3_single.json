@@ -1,0 +1,218 @@
+{
+  "agent_id": "/root/resume_r1",
+  "review_scope": "single",
+  "batch": "missing17_batch3_round3",
+  "source_basis": "原剧本第48及64–65行、当前源卡/scene_beats、角色三视图与各机位底板；镜27按双清晰主体，不把顾瑶缩成15%肩缘。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_顾家别墅客厅_A主机位/SC01_顾家别墅客厅_A主机位_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_C侧机位_紧/SC01_C侧机位_紧_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_04.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_05.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜13",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_03.png",
+      "verdict": "fail",
+      "reason": "江砚沉定看陈野、身份及A院落背景正确；已达到胸上近景、少量顶空与窄过肩，手及瓶盖在画外不可核查，不据此判错。衬衫全幅出现明显重复刻花/地图状纹理，已改变基准素色棉布质感；脸颈也有刻线感，未符合原写实自然材质。",
+      "fix_instruction": "第三轮到限，保留真实判定并待六图择优；不因几百分点构图差异追加生成，择优关注自然人物及衣料。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜13",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_04.png",
+      "verdict": "fail",
+      "reason": "江砚身份、沉定反应、A院落以及胸上近景成立；顶部与肩缘小幅约数差异不构成失败，画外持物不可核查。衬衫从素色棉布变成遍布重复几何刻花的纹样，脸颈有塑蜡刻线感，原自然写实材质未恢复。",
+      "fix_instruction": "第三轮已到限；保留实质差异记录，待本镜六图齐后给最可用候选建议，不追加轮次或精确比例标准。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜27",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_03.png",
+      "verdict": "fail",
+      "reason": "刘兰已向右下看指甲、顾瑶向左下看手机，两人身份及箱包画外正确。但刘兰清晰可见由自身左肩连到弯起左臂看左手指甲，右手放膝上，与源卡右手美甲相反。画面仍露裙腰、大腿及膝部，上部大块环境，实质仍为双人中景而非胸口下缘近景。",
+      "fix_instruction": "第三轮已到限；保留实质差异记录，待本镜六图齐后给最可用候选建议，不追加轮次或精确比例标准。",
+      "card_field": [
+        "people[刘兰].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜13",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_05.png",
+      "verdict": "fail",
+      "reason": "沉定反应、A背景和胸上近景成立，画外双手不可核查；衣领、胸前与口袋仍遍布地图状重复刻花纹理，脸颈有明显蜡质刻线感，未恢复原自然棉布/皮肤质感。",
+      "fix_instruction": "第三轮到限，保留原实质差异并从六图择优，不增加轮次。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜26",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_03.png",
+      "verdict": "fail",
+      "reason": "四人站坐关系、A客厅、全景比例及江砚右箱保持。苏慧近侧右肩袖连接下垂握包手，远侧左手仍在腹前，仍然右包左腹前，未纠正批准的自身左包右腹前。",
+      "fix_instruction": "第三轮到限，保留原实质差异并从六图择优，不增加轮次。",
+      "card_field": [
+        "people[苏慧].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜26",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_04.png",
+      "verdict": "fail",
+      "reason": "身份、人物层次、A机位全景及箱包归属正确。苏慧面向右，近侧右臂沿袖口下垂到提包手，另一手在腹前；持物左右仍与批准相反。",
+      "fix_instruction": "第三轮到限，保留原实质差异并从六图择优，不增加轮次。",
+      "card_field": [
+        "people[苏慧].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜27",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_04.png",
+      "verdict": "fail",
+      "reason": "刘兰向右下看指甲、顾瑶向左下看手机，身份与箱包画外符合剧情。但刘兰举起的是自身左臂左手，右手仍在膝前，与右手美甲相反；底边保留腰裙、两人大腿及膝部，仍是中景而非胸口下缘近景。",
+      "fix_instruction": "第三轮到限，保留实质差异并从本镜六图择优，不追加轮次。",
+      "card_field": [
+        "people[刘兰].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜27",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_05.png",
+      "verdict": "fail",
+      "reason": "两女性身份及各看各的视线明确，箱包画外正确；刘兰左肩接上弯起的左手看指甲，右手放膝上，手位仍反。画面保留两人腰裙、大腿与膝部，上部环境较多，实质未收紧为双人胸上近景。",
+      "fix_instruction": "第三轮到限，保留实质差异并从本镜六图择优，不追加轮次。",
+      "card_field": [
+        "people[刘兰].action_zh",
+        "framing.crop_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜28",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_03.png",
+      "verdict": "fail",
+      "reason": "四人身份已正确，母亲陪笑、B玄关空间、顾瑶手机与刘兰棕卷发前景可辨；母子持物手在画外不可核查。胸部近景已建立，几百分点边缘宽度本身不构成失败；但苏慧额头、面颊和颈部出现强烈蜡亮雕线，米白衣与围裙遍布重复地图状刻纹，写实自然材质明显受损。",
+      "fix_instruction": "第三轮到限，保留实质差异并从本镜六图择优，不追加轮次。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜26",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_05.png",
+      "verdict": "fail",
+      "reason": "四人身份、全景环境、主人低头不理会及江砚右箱正确；苏慧仍由近相机的右肩、右袖和下垂右臂连续接到提包手，另一手在腹前，仍是右包左腹前。",
+      "fix_instruction": "第三轮到限，保留实质差异并从全六图择优，不追加生成。",
+      "card_field": [
+        "people[苏慧].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜28",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_04.png",
+      "verdict": "fail",
+      "reason": "苏慧陪笑及三名边缘人物身份、B玄关和胸部近景关系成立，画外持物不可核查；但面部额头/双颊/颈部蜡亮刻线与衣料、围裙大范围重复雕纹极为明显，破坏原写实自然质感。",
+      "fix_instruction": "第三轮到限，保留实质差异并从全六图择优，不追加生成。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜28",
+      "round": 3,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_05.png",
+      "verdict": "fail",
+      "reason": "四人身份、陪笑介绍动作、B机位玄关以及胸部近景成立，未见持物手，不为验手拉宽。苏慧额头、脸颊、颈胸出现明显蜡质雕线，米白衣/围裙重复刻花纹理仍未改善，写实质感受损。",
+      "fix_instruction": "第三轮到限；保留fail并择优已有六图，不追加生成。",
+      "card_field": [
+        "style_anchor_zh"
+      ]
+    }
+  ],
+  "pending_count": 0,
+  "complete": true,
+  "capped_recommendation": [
+    {
+      "id": "ep01_镜13",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_00.png",
+      "selection_reason": "六图均实看。00的面部与衣料最自然，反应、身份及A空间准确；之后近景候选衣料与面部刻纹加重，优先自然人物。",
+      "remaining_difference": "00仍为较宽中景，前景肩大，并清楚右瓶左盖，与批准左瓶右盖相反；原fail不变。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜26",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+      "selection_reason": "六图均实看。六张均未纠正母亲反手；00保留自然原始材质、完整大包形制尺寸及四人关系，综合最可用。",
+      "remaining_difference": "苏慧仍自身右手提包、左手在腹前，与批准左手包/右腹前相反；四人身份、主人坐着和母子站着、A全景及江砚右箱成立，原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜27",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_01.png",
+      "selection_reason": "六图均实看。01两人自然、看指甲/手机与箱包画外正确；02两人朝向皆反，03–05虽刘兰转向右但改成左手且材质刻画加重。",
+      "remaining_difference": "01刘兰仍朝左，且取景露腰裙腿膝，宽于批准双人侧面胸上近景；原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    },
+    {
+      "id": "ep01_镜28",
+      "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_01.png",
+      "selection_reason": "六图均实看。01已经恢复四人身份且苏慧陪笑清楚；00复制错人物，03–05近景虽改善但脸和衣料雕纹严重，01综合更可用。",
+      "remaining_difference": "01仍是较宽中景，刘兰前景肩大、江砚半身与箱子过多入画，并可见江砚左手箱；母亲持包手在画外不可核查。存在轻度编辑纹理，原fail保持。",
+      "all_six_inspected": true,
+      "selection_only": true
+    }
+  ],
+  "framing_interpretation": "比例是约数，不因几百分点差异单独判fail；实质景别、身份、可见手位朝向与原写实材质按源卡审查。择优并不改写技术判定。"
+}

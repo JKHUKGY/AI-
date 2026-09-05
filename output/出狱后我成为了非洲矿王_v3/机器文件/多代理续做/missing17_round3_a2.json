@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜08",
+    "prompt": "Edit this same photograph. Tighten this into a chest-up portrait: the main man's hair crown sits 5% below the top border and the bottom border crosses directly beneath the pectoral muscles. Keep the blurred listener visibly present along the far LEFT as a thin sliver of head AND shoulder, within the outermost 15% width at every height. Restore realistic photographic skin and plain woven cloth: remove the artificial engraved, embossed and swirling surface patterns while retaining ordinary natural pores, wrinkles and fabric weave.\nKeep the exact two identities, facial features, expression, eye direction, head angle, hairstyle, clothing colors and camera direction. The dialogue moment stays unchanged. Keep the listener visibly present as that thin edge sliver; the rest of his body is outside the frame. Hands and bottle stay at their original height below the crop.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch2_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第43行「陈野：他和本地矿商马库斯俩人串通好，伪造了签你英文名的交易合同，拿了新矿的高品位矿样，趁你下井查工作的功夫，偷偷塞进你办公室抽屉，转头就匿名报了警。」——补齐藏入抽屉和匿名报警两环，观众能复述完整陷害链。"
+  },
+  {
+    "id": "ep01_镜10",
+    "prompt": "Edit this same photograph. Tighten this into a chest-up portrait: the main man's hair crown sits 5% below the top border and the bottom border crosses directly beneath the pectoral muscles. Keep the blurred listener visibly present along the far LEFT as a thin sliver of head AND shoulder, within the outermost 15% width at every height. Restore realistic photographic skin and plain woven cloth: remove the artificial engraved, embossed and swirling surface patterns while retaining ordinary natural pores, wrinkles and fabric weave.\nKeep the exact two identities, facial features, expression, eye direction, head angle, hairstyle, clothing colors and camera direction. The dialogue moment stays unchanged. Keep the listener visibly present as that thin edge sliver; the rest of his body is outside the frame. Hands and bottle stay at their original height below the crop.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_02.png"
+    ],
+    "count": 3,
+    "generation_round": 3,
+    "candidate_start": 3,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch2_round3_plans.json",
+    "script_ref_zh": "script_source.txt 第45行「陈野（愣了）：你知道？」——陈野意外于他的冷静判断。"
+  }
+]

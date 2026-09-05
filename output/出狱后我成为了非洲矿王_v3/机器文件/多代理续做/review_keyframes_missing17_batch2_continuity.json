@@ -1,0 +1,64 @@
+{
+  "agent_id": "/root/resume_r2",
+  "review_scope": "continuity",
+  "batch": "missing17_batch2",
+  "status": "complete",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p2/master_ep01_p2_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_p3/master_ep01_p3_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png"
+  ],
+  "source_card_sha256": "1592cd256c63d08c70c684347ede7093f88188324907742b35b4777659e18c2b",
+  "created_at": "2026-09-05T13:10:23.648980+00:00",
+  "images": [
+    {
+      "id": "ep01_镜08",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+      "verdict": "fail",
+      "reason": "陈野短发胡须、灰毛巾褐外衣、江砚灰蓝衬衫保持；陈野右侧看向左前江砚严肃说明，B机位朝红土路与右侧车，延续前段位置。江砚瓶盖盖紧，符合镜09饮水前状态。发顶约21%，画面露陈野腰带、垂手和大腿，江砚左前景躯干約40%，明显偏离胸口下缘、顶空5%、窄肩15%。",
+      "fix_instruction": "同图收紧为胸像：主角发顶约5%，画底截在胸口下缘；左前景对手身体退到框外但保留约15%虚焦侧背肩与少量发丝，含左下角不超窄边。保留本图双方视线、人物服饰、表情起点和A/B背景；水瓶/盖随胸像裁切自然位于下框外，按beat延续开合与左右手，不扩大景别展示道具。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; framing.plate_crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜10",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+      "verdict": "fail",
+      "reason": "陈野身份服饰与前镜连贯，面向江砚嘴微张/眉稍松可支持即将愣住；B红土路与右后车辆保持。江砚手中瓶已开口，符合喝过后状态；白盖握持区遮挡，不足以确认但不判为消失。陈野发顶约20%，画底到腰带/胯，左前景躯干约40%，取景偏宽。",
+      "fix_instruction": "同图收紧为胸像：主角发顶约5%，画底截在胸口下缘；左前景对手身体退到框外但保留约15%虚焦侧背肩与少量发丝，含左下角不超窄边。保留本图双方视线、人物服饰、表情起点和A/B背景；水瓶/盖随胸像裁切自然位于下框外，按beat延续开合与左右手，不扩大景别展示道具。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; framing.plate_crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜11",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+      "verdict": "fail",
+      "reason": "江砚身份和灰蓝衬衫与已选镜09连续，冷静直看陈野、不失控的情绪成立，A向院内铁门与墙树正确。左手开口瓶明确，右手盖被陈野躯干遮挡，不足以确认，按批准裁切不另要求入画。发顶約18%，下缘露下摆及裤腿，陈野左前景约55%，明显不是胸口下缘近景。",
+      "fix_instruction": "同图收紧为胸像：主角发顶约5%，画底截在胸口下缘；左前景对手身体退到框外但保留约15%虚焦侧背肩与少量发丝，含左下角不超窄边。保留本图双方视线、人物服饰、表情起点和A/B背景；水瓶/盖随胸像裁切自然位于下框外，按beat延续开合与左右手，不扩大景别展示道具。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; framing.plate_crop_zh; background_people[0].posture_zh"
+    },
+    {
+      "id": "ep01_镜12",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+      "verdict": "fail",
+      "reason": "陈野身份衣服与B道路机位连续，微皱眉、嘴将开体现不忿的动作起点；江砚背肩在左，开口瓶与独立白盖两件可见，承接饮水后状态。陈野发顶约13%，下缘到大腿且手、腰带全露，江砚前景约45%，胸口下缘/15%过肩未落实。",
+      "fix_instruction": "同图收紧为胸像：主角发顶约5%，画底截在胸口下缘；左前景对手身体退到框外但保留约15%虚焦侧背肩与少量发丝，含左下角不超窄边。保留本图双方视线、人物服饰、表情起点和A/B背景；水瓶/盖随胸像裁切自然位于下框外，按beat延续开合与左右手，不扩大景别展示道具。",
+      "card_field": "framing.crop_zh; framing.headroom_frac; framing.plate_crop_zh; background_people[0].posture_zh"
+    }
+  ],
+  "proposed_file": "",
+  "standard_note": "与当前卡、已选镜07/09和p2/p3主帧核对。主帧已被用户择优接受，不重新阻塞；无新增头高50%标准。框外瓶盖状态按beat延续，不要求为确认它而扩大取景。"
+}

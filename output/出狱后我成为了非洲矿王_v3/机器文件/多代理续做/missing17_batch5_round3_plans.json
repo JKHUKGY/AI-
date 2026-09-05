@@ -1,0 +1,12 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜33",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Make one localized edit to the RIGHT HAND: relax and UNCURL the fingers from the closed grip. The heel of the palm rests lightly on TOP of the black handle. The four fingers drape loosely down the FRONT of the grip, with fingertips visibly released from its underside. The thumb rests loosely alongside. This is the relaxed starting pose just before the fingers close into a tight grip.",
+      "preserve_zh": "Keep the same anatomically natural right hand and wrist, hand scale and position, black handle geometry and twin rods, softly blurred marble floor, natural skin texture and lighting. Preserve this tight insert close-up exactly; only the finger pose changes."
+    }
+  ]
+}

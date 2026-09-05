@@ -1,0 +1,61 @@
+{
+  "agent_id": "/root/missing17_ga",
+  "role": "Generator A",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_round2_a4.json",
+  "source_job_sha256": "df97b5e2c3f21e3699cee80bc7e913dfe587cb0a3bb6853e40df7e01f9aead9f",
+  "records": [
+    {
+      "id": "ep01_镜31",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-ed1bcc6b-3530-4c24-9315-d020b503ff23.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_01.png",
+      "sha256": "246cc5284827fbc53847de2420ee4ef2ed6b4efd5197e93f5dee13a57c80ff23"
+    },
+    {
+      "id": "ep01_镜31",
+      "round": 2,
+      "candidate": 2,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-e64fdbbd-a8e6-4c46-a96f-792f45e85bfd.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_02.png",
+      "sha256": "48402e8b2b7948fe7aaf770a652b8d74e64c593a504bbf39ab5389eb29e37bfd"
+    },
+    {
+      "id": "ep01_镜29",
+      "round": 2,
+      "candidate": 1,
+      "source": "/home/codespace/.codex/generated_images/01a0718d-83e5-76f2-8c9e-a7c260533315/exec-0e46f78a-aa88-4f80-9fbc-8add6b0b53de.png",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_01.png",
+      "sha256": "1d281d0f72d39fbd8564362815346b45d5093a27b3b1d7da4230f785da9c4a0c"
+    }
+  ],
+  "errors": [
+    {
+      "id": "ep01_镜29",
+      "round": 2,
+      "candidate": 1,
+      "tool": "image_gen__imagegen",
+      "error": "http 400 moderation_blocked",
+      "moderation_stage": "output",
+      "categories": [
+        "sexual"
+      ],
+      "request_id": "a819787c-e4c8-485a-944d-10d178ac7453",
+      "actual_images": 0
+    },
+    {
+      "id": "ep01_镜29",
+      "round": 2,
+      "candidate": 2,
+      "tool": "image_gen__imagegen",
+      "error": "http 400 moderation_blocked",
+      "moderation_stage": "output",
+      "categories": [
+        "sexual"
+      ],
+      "request_id": "c321c273-4a8c-4e08-8600-37a10cc64213",
+      "actual_images": 0,
+      "action": "stop_unit_after_repeated_output_block"
+    }
+  ]
+}

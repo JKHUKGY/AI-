@@ -1,0 +1,54 @@
+{
+  "agent_id": "/root/resume_r2",
+  "review_scope": "continuity",
+  "batch": "missing17_batch5_round2",
+  "status": "complete",
+  "created_at": "2026-09-05T15:00:20.199911+00:00",
+  "source_card_sha256": "e6f8c8ba24441ed5e00040550f9e563caff610ad6c4388420f3c565ea0ca9c71",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/ep01_a2_主帧/ep01_a2_主帧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_02.png"
+  ],
+  "inspection_note": "01、02本次均实际查看；源卡、原剧本与既知参考沿用本角色已实际检查内容。未读另一新审查报告。",
+  "images": [
+    {
+      "id": "ep01_镜33",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+      "verdict": "pass",
+      "reason": "自身右手、四指搭握与右侧拇指的解剖关系自然；黑色握把、双伸缩杆及虚焦米白地面延续，躯干、箱体和他人均在框外。手和握把横向占据画面核心，已经形成明确手部特写。下方拉杆留量仍较大、上方有一段腕部，但不实质改变手部动作的叙事景别，未按85%约数逐点苛判。静态搭握是随后攥紧的起点，不要求提前完成动作。",
+      "fix_instruction": "无需返工。后续运动由当前自然搭握逐渐收紧，保持同一右手、黑色握把和双杆，不增加躯干或箱体。",
+      "card_field": [
+        "framing",
+        "people[江砚].action",
+        "props",
+        "scene_beat"
+      ]
+    },
+    {
+      "id": "ep01_镜33",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_02.png",
+      "verdict": "pass",
+      "reason": "同一自身右手自然搭握黑色握把，五指数量、关节和拇指绕握关系清楚；双杆向下延伸，背景仅虚焦米白地面，无人物或箱体侵入。手与握把已是明确特写，左端握把轻微切边不妨碍动作读懂。皮肤自然，未要求动作起点提前完成攥紧。",
+      "fix_instruction": "无需返工；保持该手和握把，后续仅渐进收紧手指。选用上更倾向01，其握把左右端保留较完整。",
+      "card_field": [
+        "framing",
+        "people[江砚].action",
+        "props",
+        "scene_beat"
+      ]
+    }
+  ],
+  "pending_images": [],
+  "best_available_recommendation": {
+    "id": "ep01_镜33",
+    "best_candidate": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+    "selected_candidate_verdict": "pass",
+    "remaining_difference": "下方双杆留量较多，但手部特写成立，非实质失败。"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "agent_id": "/root/resume_r1",
+  "review_scope": "single",
+  "batch": "missing17_batch2",
+  "source_basis": "已读取镜08/10/11/12当前源卡、plate_only参考策略与原剧本第43/45/46/47行；当前已选前后镜07_02（本代理前任务实看）、09_03、14_03已实际核对。沿用本代理实看过的A/B紧底板和两角色基准。等待首轮候选，未落盘不判fail；不增加头部50%要求。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframes.md",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_B反打_紧/SC05_监狱门口_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜07/ep01_镜07_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜09/ep01_镜09_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜14/ep01_镜14_03.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜08",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜08/ep01_镜08_00.png",
+      "verdict": "fail",
+      "reason": "陈野身份服装、收眉讲述与左侧江砚对话关系成立；B机位门外红土及右车局部成立。仍生成中景而非近景：陈野顶空约21%、画底近膝，上身腰带裤子都可见；左江砚完整后脑、肩背和持瓶手占幅最多约半幅，不符合胸口下缘裁切/约5%顶空/约15%窄肩。",
+      "fix_instruction": "保持本图正确身份、表情、对白起始状态和A/B机位，单独重取胸口下缘近景、头顶约5%和左缘约15%虚焦后肩；低位手/瓶自然落在裁切外，不能为了强调手位再扩大取景。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜11",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png",
+      "verdict": "fail",
+      "reason": "江砚冷静直视陈野、克制嘴角、A机位铁门及院内建筑、角色服装成立；左手持开口水瓶可见，右手盖被前景挡住不足确认，不单独判错。但顶空约18%、画底到裤腰，完整腰腹进入，左陈野后脑与大块肩背最多超过半幅，未达到原卡胸口下缘、5%顶空和15%窄肩。",
+      "fix_instruction": "保持本图正确身份、表情、对白起始状态和A/B机位，单独重取胸口下缘近景、头顶约5%和左缘约15%虚焦后肩；低位手/瓶自然落在裁切外，不能为了强调手位再扩大取景。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜10",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜10/ep01_镜10_00.png",
+      "verdict": "fail",
+      "reason": "陈野对着左侧江砚嘴唇微分、眉眼短暂停顿，意外反应可读；身份、服装与B机位红土路/右车局部一致。开口瓶在江砚身前，白盖手被挡不足确认，不单独判错。构图仍是露腰腿中景：陈野顶空约20%，腰带及裤子明确入画；江砚左侧整个头肩躯干近半幅，不是约5%顶空、胸口下缘及约15%窄肩。",
+      "fix_instruction": "保留陈野的停顿意外神态、身份和B背景，仅收紧到胸口下缘、约5%顶空与左侧约15%虚焦后肩；瓶及白盖手按胸下状态落到画外。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜12",
+      "round": 1,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png",
+      "verdict": "fail",
+      "reason": "陈野收眉不忿、目光朝江砚、服装身份及B门外红土/右车方向成立。江砚持开口瓶与独立白盖可见，延续喝水后状态。构图仍显著偏宽：陈野头顶留白约13%，画底到膝附近，腰带、裤子和双手露出；左江砚整个后脑肩背及手横向占幅约半幅，未达到胸口下缘、约5%顶空及约15%过肩。",
+      "fix_instruction": "保留陈野不忿神态、原人物道具和B机位，只重取胸口下缘近景、头顶约5%、左缘约15%虚焦后肩；水瓶与白盖按原胸下状态随裁切留在框外。",
+      "card_field": [
+        "framing.crop_zh",
+        "framing.plate_crop_zh",
+        "background_people[0].posture_zh"
+      ]
+    }
+  ],
+  "pending_ids": [],
+  "complete": true
+}

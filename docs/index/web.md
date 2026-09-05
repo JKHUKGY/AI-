@@ -7,13 +7,20 @@
 ```
 web/server/
   app.py         服务入口 + 各 API handler 注册
-  auth.py        登录鉴权与会话
+  auth.py        登录鉴权、停用检查与可撤销会话
+  control_store.py / admin_api.py  账号功能权限、点数事务账本、用量与服务配置
+  runpod_service.py / gpu_watchdog.py  RunPod 报价审批、十分钟空闲回收与独立守护
+  notifications.py / operations.py   邮件重试队列及生成结算
+  gpu_monitor.py  只读 RunPod 遥测与账号隔离，刷新不续租或开关实例
+  video_estimates.py  冷启动与视频耗时状态（当前统一待测试）
+  video_jobs.py   H3 视频审批、SSH 隧道提交、恢复轮询、下载扣点
   manage_users.py 用户管理命令
   ai_prompt.py   通过服务器已登录的 Codex CLI，结合历史原文和当前版本改写绘图提示词
   prompt_history.py 同任务的旧提示词、Codex 草稿和手动版本
   prompt_tasks.py  后台文字任务及结果持久化，重复请求复用正在运行的任务
   generation_control.py  取消生成、进程组终止及结果提交互斥
-  help_chat.py / help_server.py  Luna 使用帮助问答及独立服务
+  help_chat.py / help_server.py  使用帮助问答及独立服务
+  help_history.py       私有 SQLite 问答存档、对话归属、管理员筛选分页
   content_editor.py       角色/场景/分集/镜头增删、删除预览、编号保留与回收站恢复
   project_setup.py 导入剧本、后台生成文字基础文件与断点续跑；不执行媒体或租卡
   approvals.py   图片任务预览快照与手动审批，重复确认不重复启动
@@ -31,18 +38,23 @@ web/frontend/
   content-editor.js     新增表单、删除确认与回收站公共组件
   views/home.js         项目列表首页与新建项目/剧本导入
   views/setup.js        文字筹备进度、文件预览、图片审批与租卡待办
-  views/guide.js        渲染 content/guide.md 给剧本家看的操作指南
+  views/guide.js        指南与内置解释助手的置顶入口
+  views/help-history.js 管理员查看服务器保存的助手问答
   views/style-bible.js  画风圣经查看
   views/characters.js   人物立绘查看+选片
   views/scenes.js       场景图查看+选片
   views/episode.js      分镜表查看+在线编辑
   views/keyframes.js    关键帧图查看+重新生成
-  views/videos.js       视频清单查看
+  views/videos.js / views/video-generation.js  视频清单、已准备 H3 任务审批与生成
+  views/control.js      管理员、点数与租显卡页面
+  views/gpu-monitor.js  显卡监控、15 秒自动查询与手动刷新
+  views/gpu-catalog.js  RunPod 实时库存、价格和 5/10/15 秒视频耗时
+  views/production.js   视频制作中心：项目分集入口、生成服务与租卡就绪状态
   views/inbox.js        剧本家反馈收件箱
 web/content/guide.md    渲染给剧本家看的指南正文（改这个文件即可改指南内容）
 ```
 
 后端 API 惯例：项目数据只从 `output/<剧名>/` 现有文件读取/回写，不额外存数据库；
-新项目归创建者所有；文字筹备只写文件。图片须预览后手动审批才实际生成，对视频与租卡只登记待办不执行。
+新项目归创建者所有；文字筹备只写文件。图片、H3 视频与租卡均先预览再明确审批；生成扣点，租卡另计真实费用。
 
 网址、账号、Azure / Codespace 运维：读当前宿主 index 的 `references/resources.md`，再选对应资源页。

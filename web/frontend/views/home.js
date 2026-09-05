@@ -4,6 +4,8 @@ Views.home = async function home(app) {
   const { projects } = await API.projects();
   app.innerHTML = `
     <h1>选择一个项目</h1>
+    <section class="card production-entry"><h2>租显卡 / 生成视频</h2><p>进入制作中心，查看视频任务是否准备好、租用显卡或手动关卡。</p>
+      <div class="toolbar"><a class="action-link primary" href="#/production">进入视频制作中心</a><a class="action-link" href="#/gpu">租用 / 关闭显卡</a></div></section>
     <button class="primary" id="newProjectBtn">＋ 新建项目</button>
     <form class="card new-project-form" id="newProjectForm" hidden>
       <h2>从剧本开始</h2>

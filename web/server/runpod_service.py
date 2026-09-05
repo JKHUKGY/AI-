@@ -5,20 +5,44 @@ import re
 import threading
 import time
 import uuid
+from contextlib import contextmanager
+from pathlib import Path
+import fcntl
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 import auth
 import control_store as store
+import notifications
 from router import ApiError
 
 ACTIVE = ('creating', 'unknown', 'running', 'stopping')
+IDLE_SECONDS = 600
 _locks = {}
 _guard = threading.Lock()
 
 
-def lock(identifier):
+@contextmanager
+def lock(identifier, blocking=True):
     with _guard:
-        return _locks.setdefault(identifier, threading.RLock())
+        local = _locks.setdefault(identifier, threading.RLock())
+    if not local.acquire(blocking=blocking):
+        yield False
+        return
+    try:
+        directory = Path(auth.DATA_DIR) / 'gpu_locks'
+        directory.mkdir(parents=True, exist_ok=True)
+        with (directory / (identifier + '.lock')).open('a') as handle:
+            try:
+                fcntl.flock(handle, fcntl.LOCK_EX | (0 if blocking else fcntl.LOCK_NB))
+            except BlockingIOError:
+                yield False
+                return
+            try:
+                yield True
+            finally:
+                fcntl.flock(handle, fcntl.LOCK_UN)
+    finally:
+        local.release()
 
 
 def request(method, path, body=None, graphql=False):
@@ -45,14 +69,27 @@ def request(method, path, body=None, graphql=False):
 
 def catalog():
     result = request('POST', '', {'query': '''query { gpuTypes { id displayName memoryInGb secureCloud
-      lowestPrice(input:{gpuCount:1}) { uninterruptablePrice stockStatus } } }'''}, graphql=True)
+      lowestPrice(input:{gpuCount:1,secureCloud:true,minDisk:50}) {
+        uninterruptablePrice stockStatus availableGpuCounts } } }'''}, graphql=True)
+    if not isinstance(result.get('data', {}).get('gpuTypes'), list):
+        raise ApiError(502, 'RunPod 未返回有效机型目录，请刷新重试')
     rows = []
     for gpu in result.get('data', {}).get('gpuTypes', []):
-        price = (gpu.get('lowestPrice') or {}).get('uninterruptablePrice')
-        if gpu.get('secureCloud') and isinstance(price, (float, int)) and price > 0:
+        quote = gpu.get('lowestPrice') or {}
+        price = quote.get('uninterruptablePrice')
+        valid_price = type(price) in (float, int) and math.isfinite(price) and price > 0
+        stock = str(quote.get('stockStatus') or 'unknown').lower()
+        counts = quote.get('availableGpuCounts')
+        # Production API can return null here even with stockStatus=High.
+        # The price query already specifies gpuCount=1; use its status when
+        # counts is omitted, but honour an explicit list excluding one card.
+        single_available = counts is None or (isinstance(counts, list) and 1 in counts)
+        if gpu.get('secureCloud'):
             rows.append({'id':gpu['id'], 'name':gpu['displayName'], 'memory_gb':gpu['memoryInGb'],
-                         'hourly_usd':price, 'stock':(gpu.get('lowestPrice') or {}).get('stockStatus')})
-    return sorted(rows, key=lambda g:g['hourly_usd'])
+                         'hourly_usd':price if valid_price else None, 'stock':stock,
+                         'available':valid_price and stock in ('high','medium','low') and single_available,
+                         'available_gpu_counts':counts})
+    return sorted(rows, key=lambda g:(not g['available'], g['hourly_usd'] or float('inf')))
 
 
 def get(identifier):
@@ -77,10 +114,13 @@ def save(identifier, **fields):
 def public(row):
     result = {k:v for k,v in row.items() if k != 'detail'}
     detail = row['detail']
-    for key in ('gpu','hourly_usd','max_usd','minutes','estimated_usd','runtime','error','last_checked','cost_estimate_usd','stop_requested','ssh_host','ssh_port','video_ready'):
+    for key in ('gpu','hourly_usd','max_usd','minutes','estimated_usd','runtime','error','last_checked','cost_estimate_usd','stop_requested','ssh_host','ssh_port','video_ready','idle_since','stop_reason'):
         if key in detail:
             result[key] = detail[key]
     result['elapsed_seconds'] = max(0, (detail.get('ended_at') or time.time())-row['created_at']) if row['status'] != 'preview' else 0
+    result['idle_seconds'] = IDLE_SECONDS
+    result['idle_deadline'] = detail.get('idle_since',row['created_at']) + IDLE_SECONDS
+    result['notification_email'] = notifications.GPU_RECIPIENT
     return result
 
 
@@ -92,6 +132,8 @@ def list_rentals(username=None):
 
 def preview(username, project, body):
     store.ensure_enabled(username)
+    if not auth.can_access_project(username, project):
+        raise ApiError(403, '没有权限访问这个项目')
     config = store.settings()
     if not auth.is_admin(username) and not store.account(username)['gpu_allowed']:
         raise ApiError(403, '管理员尚未授予租卡权限')
@@ -106,6 +148,8 @@ def preview(username, project, body):
     gpu = next((g for g in catalog() if g['id'] == body.get('gpu_id')), None)
     if not gpu:
         raise ApiError(400, '机型不存在或当前无报价，请重新选择')
+    if not gpu.get('available'):
+        raise ApiError(409, '该机型当前没有可确认的单卡库存，请刷新实时机型后重新选择')
     # 容器盘采用明确展示的保守费用预算；实际账单由 RunPod 计费。
     rate = gpu['hourly_usd'] + 50 * .1 / 720
     estimate = rate * minutes / 60
@@ -115,8 +159,7 @@ def preview(username, project, body):
     payload = {'name':'sw-'+identifier, 'imageName':config['gpu_image'], 'gpuTypeIds':[gpu['id']], 'gpuCount':1,
                'cloudType':'SECURE', 'containerDiskInGb':50, 'volumeInGb':0, 'ports':['22/tcp'],
                'env':{'PUBLIC_KEY':config['gpu_public_key']}, 'interruptible':False}
-    if config.get('video_ready'):
-        payload['ports'].append('30011/http')
+    # H3 只经 SSH 隧道访问，不向公网开放无鉴权的视频接口。
     detail = {'gpu':gpu, 'hourly_usd':rate, 'estimated_usd':round(estimate,4), 'max_usd':maximum,
               'minutes':minutes, 'body':payload, 'video_ready':bool(config.get('video_ready'))}
     now = time.time()
@@ -142,11 +185,15 @@ def start(username, identifier, approved):
             return public(row)
         if row['expires_at'] < time.time():
             raise ApiError(409, '报价已过期，请重新预览')
+        if not notifications.configured():
+            raise ApiError(503, '请管理员先配置发件服务；每次启动显卡必须发送邮件通知')
         with store.db() as c:
             active = c.execute("SELECT id FROM rentals WHERE username=? AND status IN ('creating','unknown','running','stopping')", (username,)).fetchone()
             if active:
                 raise ApiError(409, '该账号已有租卡任务，请先释放当前显卡')
             c.execute("UPDATE rentals SET status='creating',expires_at=?,created_at=? WHERE id=?", (time.time()+row['detail']['minutes']*60, time.time(), identifier))
+        detail = row['detail']; detail['idle_since'] = time.time()
+        save(identifier, detail=detail)
         store.reserve(username, row['project'], 'gpu', identifier=identifier, detail={'gpu':row['detail']['gpu']['name']})
         store.started(identifier, identifier)
         threading.Thread(target=_create, args=(identifier,), daemon=True).start()
@@ -161,6 +208,7 @@ def _create(identifier):
             if not re.fullmatch(r'[a-zA-Z0-9_-]+', str(result.get('id',''))):
                 raise ApiError(502, 'RunPod 未返回有效实例编号，正在核实')
             save(identifier, pod_id=result['id'], status='running')
+            store.gpu_notification(identifier)
             _sync(identifier)
         except Exception:
             latest = get(identifier)
@@ -198,6 +246,7 @@ def _sync(identifier):
             save(identifier, detail=detail)
             return
         save(identifier, pod_id=match['id']); row = get(identifier)
+    store.gpu_notification(identifier)
     try:
         pod = request('GET', '/pods/'+row['pod_id'])
     except ApiError as exc:
@@ -206,11 +255,19 @@ def _sync(identifier):
         detail.update(ended_at=time.time(), error=None, last_checked=time.time())
         save(identifier, status='terminated', detail=detail)
         store.settle(identifier, 'done')
+        import video_jobs
+        video_jobs.rental_stopped(identifier)
         return
     rate = float(pod.get('adjustedCostPerHr') or pod.get('costPerHr') or detail['hourly_usd'])
     detail.update(hourly_usd=rate, last_checked=time.time(), cost_estimate_usd=round(rate*(time.time()-row['created_at'])/3600,4),
                   ssh_host=pod.get('publicIp'), ssh_port=(pod.get('portMappings') or {}).get('22'))
-    must_stop = (detail.get('stop_requested') or time.time() >= row['expires_at'] or not store.account(row['username'])['enabled']
+    busy = has_tasks(identifier)
+    if busy:
+        detail['idle_since'] = time.time()
+    idle = time.time() - detail.get('idle_since',row['created_at']) >= IDLE_SECONDS
+    if idle and not busy:
+        detail['stop_reason'] = '连续 10 分钟没有待处理或运行中的任务'
+    must_stop = (detail.get('stop_requested') or (idle and not busy) or time.time() >= row['expires_at'] or not store.account(row['username'])['enabled']
                  or rate * detail['minutes']/60 > detail['max_usd'] or not auth.can_access_project(row['username'], row['project']))
     detail['error'] = None
     save(identifier, detail=detail, status='stopping' if must_stop else 'running')
@@ -226,17 +283,29 @@ def _sync(identifier):
 
 
 def tick():
-    for row in list_rentals():
-        if row['status'] not in ACTIVE:
-            continue
-        task_lock = lock(row['id'])
-        if not task_lock.acquire(blocking=False):
-            continue
-        try:
-            _sync(row['id'])
-        except Exception:
-            latest = get(row['id']); detail = latest['detail']
-            detail['error'] = 'RunPod 状态暂时无法核实，后台将重试；可能仍在计费'
-            save(row['id'], detail=detail)
-        finally:
-            task_lock.release()
+    with store.db() as c:
+        active_ids = [r['id'] for r in c.execute("SELECT id FROM rentals WHERE status IN ('creating','unknown','running','stopping')")]
+    for identifier in active_ids:
+        row = get(identifier)
+        with lock(row['id'], blocking=False) as acquired:
+            if not acquired:
+                continue
+            try:
+                _sync(row['id'])
+            except Exception:
+                latest = get(row['id']); detail = latest['detail']
+                detail['error'] = 'RunPod 状态暂时无法核实，后台将重试；可能仍在计费'
+                save(row['id'], detail=detail)
+
+
+def has_tasks(identifier):
+    with store.db() as c:
+        rows = c.execute("SELECT detail FROM usage WHERE kind='video' AND status IN ('reserved','running','unknown')")
+        return any(json.loads(r['detail']).get('rental_id') == identifier for r in rows)
+
+
+def task_activity(identifier):
+    """只供服务端接受/完成任务调用，浏览器轮询不能延长租期。调用者持 rental 锁。"""
+    row = get(identifier)
+    detail = row['detail']; detail['idle_since'] = time.time()
+    save(identifier, detail=detail)

@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/resume_r1",
+  "review_scope": "single",
+  "batch": "missing17_batch5_round2",
+  "source_basis": "原剧本第68行、当前镜33源卡与ep01_v1道具状态；B底板及江砚三视图已实际核对。",
+  "inspected_files": [
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/制作过程/storyboard/script_source.txt",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC01_B反打_紧/SC01_B反打_紧_00.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+    "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_02.png"
+  ],
+  "images": [
+    {
+      "id": "ep01_镜33",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_01.png",
+      "verdict": "fail",
+      "reason": "手与黑色双杆握把已经成为特写主体，背景为虚焦地面，躯干/箱体/他人已裁掉，右手五指及握把解剖接触自然，材质可用；不因杆段占幅约数单独判错。但四指已完整环扣握把下方、拇指内扣，仍是闭合握姿，与当前首帧“五指松搭”的明确动作起点不符。",
+      "fix_instruction": "保留自然右手与同款握把、现有特写及地面，仅让指尖/指节稍放松，五指松搭握把而非完整环扣，留下一步攥紧动作；勿为比例调整扩大画面。",
+      "card_field": [
+        "people[江砚].action_zh"
+      ]
+    },
+    {
+      "id": "ep01_镜33",
+      "round": 2,
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_02.png",
+      "verdict": "fail",
+      "reason": "手与黑色双杆握把已经成为特写主体，背景为虚焦地面，躯干/箱体/他人已裁掉，右手五指及握把解剖接触自然，材质可用；不因杆段占幅约数单独判错。但四指已完整环扣握把下方、拇指内扣，仍是闭合握姿，与当前首帧“五指松搭”的明确动作起点不符。",
+      "fix_instruction": "保留自然右手与同款握把、现有特写及地面，仅让指尖/指节稍放松，五指松搭握把而非完整环扣，留下一步攥紧动作；勿为比例调整扩大画面。",
+      "card_field": [
+        "people[江砚].action_zh"
+      ]
+    }
+  ],
+  "pending_count": 0,
+  "complete": true,
+  "next_round_recommendation": [
+    {
+      "id": "ep01_镜33",
+      "base_image": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_02.png",
+      "reason": "手部特写成立且更集中，右手解剖和自然材质可保留。",
+      "minimal_fix_instruction": "仅把四指/拇指闭合环握放松为五指松搭，保留腕手比例和握把几何。",
+      "card_field": [
+        "people[江砚].action_zh"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜13",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Make a tight chest-up close-up of the young man in blue-gray, hair crown 5% below the top and lower border directly beneath his chest. Keep only a thin blurred sliver of the older man's head and brown shoulder along the outermost LEFT 15%, including the lower-left corner. Correct the young man's hand assignment: his OWN LEFT hand holds the OPEN transparent bottle, his OWN RIGHT hand holds the separate white cap. The hands stay at their original low height, below this chest-up crop.",
+      "preserve_zh": "Keep both identities, the young man's calm closed-mouth listening expression, his gaze towards the older man and the prison courtyard camera direction. Preserve natural skin pores and plain woven cotton.",
+      "identity_references": []
+    },
+    {
+      "id": "ep01_镜26",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Correct the standing gray-haired mother's arms. Her OWN LEFT hand, on her far side, carries the olive canvas bag beside her left thigh. Her OWN RIGHT hand, on her near side, rests empty across her abdomen. Keep the bag suspended from her left hand. The young man's right hand continues holding the suitcase handle. Keep all four people full-body and in their original places, with the young man's head-to-shoes height about 40% of the image and about 15% floor below his shoes.",
+      "preserve_zh": "Preserve the four identities, facial expressions and seating/standing positions. The two women remain seated on the right sofa, the older one examining her right-hand nails and the younger one looking at her phone. Keep the villa, staircase, doorways, lighting, clothes and luggage designs identical.",
+      "identity_references": []
+    },
+    {
+      "id": "ep01_镜27",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Create a tight TWO-PERSON chest-up shot of the same seated women. Keep the older woman on the LEFT and younger woman on the RIGHT. Rotate the older woman's torso and head to face SCREEN RIGHT in profile, eyes lowered toward her own raised RIGHT-hand fingernails. Rotate the younger woman to face SCREEN LEFT in profile, eyes lowered to the phone held with both hands. Show both complete heads and their chest-up actions; the older woman's hair crown is 5% below the top. The suitcase and olive backpack are being held by the unseen visitors elsewhere in the room: remove the mistakenly placed suitcase beside the sofa and backpack on the coffee table.",
+      "preserve_zh": "Preserve the two female identities, older woman's blue-gray satin dress and wavy brown hair, younger woman's white top and light skirt, sofa positions, black marble TV wall and window camera direction. Reference 2 gives the older woman's identity. Both women are clear main subjects, not foreground shoulder slivers.",
+      "identity_references": [
+        "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+      ]
+    },
+    {
+      "id": "ep01_镜28",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Replace ONLY the mistaken woman in the LEFT foreground with LIU LAN from reference 2: wavy brown hair, bare shoulders and a blue-gray satin dress, seen from the back/side while seated examining her raised right-hand nails. The gray-haired woman in beige and apron at center-right is SU HUI and remains the single standing mother. Tighten to a chest-up close-up of Su Hui, hair crown 5% below the top, lower edge beneath her chest. Keep Liu Lan's blurred head and shoulder as a thin LEFT 15% edge sliver; retain the young woman with phone at the far-left edge and the blue-gray-shirted son's blurred side face and shoulder at the far-right edge.",
+      "preserve_zh": "Preserve Su Hui's tentative polite smile and eye line, the son's tense listening expression, the far-left young woman's identity and phone, and the villa entrance camera direction. Keep all FOUR distinct people. The mother's left hand holds her bag and the son's right hand holds the suitcase below the chest crop. Preserve natural photographic skin and cloth.",
+      "identity_references": [
+        "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+      ]
+    }
+  ],
+  "review_sources": [
+    "review_keyframes_missing17_batch3_single.json",
+    "review_keyframes_missing17_batch3_continuity.json"
+  ]
+}

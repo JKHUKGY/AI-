@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ep01_镜27",
+    "prompt": "Edit this same photograph. Create a tight TWO-PERSON chest-up shot of the same seated women. Keep the older woman on the LEFT and younger woman on the RIGHT. Rotate the older woman's torso and head to face SCREEN RIGHT in profile, eyes lowered toward her own raised RIGHT-hand fingernails. Rotate the younger woman to face SCREEN LEFT in profile, eyes lowered to the phone held with both hands. Show both complete heads and their chest-up actions; the older woman's hair crown is 5% below the top. The suitcase and olive backpack are being held by the unseen visitors elsewhere in the room: remove the mistakenly placed suitcase beside the sofa and backpack on the coffee table.\nPreserve the two female identities, older woman's blue-gray satin dress and wavy brown hair, younger woman's white top and light skirt, sofa positions, black marble TV wall and window camera direction. Reference 2 gives the older woman's identity. Both women are clear main subjects, not foreground shoulder slivers.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜27/ep01_镜27_00.png",
+      "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch3_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第64行「▲独栋别墅装修奢华，江砚跟着苏慧进门，局促地站在客厅中央，沙发上表婶刘兰翘着二郎腿做美甲，表妹顾瑶刷着手机，连头都没抬。」——不抬头就是轻慢，不额外添加对视。"
+  },
+  {
+    "id": "ep01_镜28",
+    "prompt": "Edit this same photograph. Replace ONLY the mistaken woman in the LEFT foreground with LIU LAN from reference 2: wavy brown hair, bare shoulders and a blue-gray satin dress, seen from the back/side while seated examining her raised right-hand nails. The gray-haired woman in beige and apron at center-right is SU HUI and remains the single standing mother. Tighten to a chest-up close-up of Su Hui, hair crown 5% below the top, lower edge beneath her chest. Keep Liu Lan's blurred head and shoulder as a thin LEFT 15% edge sliver; retain the young woman with phone at the far-left edge and the blue-gray-shirted son's blurred side face and shoulder at the far-right edge.\nPreserve Su Hui's tentative polite smile and eye line, the son's tense listening expression, the far-left young woman's identity and phone, and the villa entrance camera direction. Keep all FOUR distinct people. The mother's left hand holds her bag and the son's right hand holds the suitcase below the chest crop. Preserve natural photographic skin and cloth.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜28/ep01_镜28_00.png",
+      "output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch3_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第65行「苏慧（小心翼翼地陪着笑）：刘姐，瑶瑶，小砚到了。」——介绍儿子也要小心讨认可。"
+  }
+]

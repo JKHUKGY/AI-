@@ -1,0 +1,20 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜30",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_02.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Zoom in strongly for a reaction close-up of the young man: show only his complete head, neck, shoulders and chest. Place the complete hair crown close to the TOP border. The BOTTOM border cuts directly across his CHEST, around the upper part of his shirt pocket. Retain the mother’s side-back head and a narrow shoulder at the RIGHT edge, and narrow blurred portions of both seated women’s heads at the LEFT edge.",
+      "preserve_zh": "Keep the same four identities, positions relative to each other, the young man’s quiet tense expression and leftward gaze, same hair and clothing colors, entrance-door background and lighting. Preserve natural photographic skin and plain cotton cloth."
+    },
+    {
+      "id": "ep01_镜32",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_01.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Zoom in strongly for a reaction close-up of the young man: show only his complete head, neck, shoulders and chest. Place the complete hair crown close to the TOP border. The BOTTOM border cuts directly across his CHEST, around the upper part of his shirt pocket. Retain the mother’s side-back head and a narrow shoulder at the RIGHT edge, and narrow blurred portions of both seated women’s heads at the LEFT edge.",
+      "preserve_zh": "Keep the same four identities, positions relative to each other, the young man’s quiet tense expression and leftward gaze, same hair and clothing colors, entrance-door background and lighting. Preserve natural photographic skin and plain cotton cloth."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "plans": [
+    {
+      "id": "ep01_镜29",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜29/ep01_镜29_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Reframe this into a chest-up close-up of the older woman on the LEFT, looking down at her raised RIGHT-hand fingernails. Correct the depth: the younger woman belongs CLOSER to the camera, as a blurred partial head and shoulder with a phone edge at the far RIGHT edge. The older woman is farther behind her, sharp and dominant. Bring the top border close above the older woman’s full hair crown; cut the bottom at her lower chest.",
+      "preserve_zh": "Keep the same two women, their exact faces, brown hairstyles, blue-gray satin dress and white top, relaxed downward gazes, black sofa, window and television wall. Keep their bodies turned toward each other. Preserve natural photographic skin and fabric."
+    },
+    {
+      "id": "ep01_镜31",
+      "target_image": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜31/ep01_镜31_00.png",
+      "mode": "directed_edit",
+      "prompt_variant": "composition_only",
+      "correction_zh": "Crop in to a chest-up close-up of the younger woman on the RIGHT looking at her phone. Remove the out-of-frame visitors currently intruding at the left and right foreground edges, including their luggage; those edges show the sofa and room instead. Retain the older woman as a small blurred seated figure behind her on the LEFT, looking at her nails. Place the younger woman’s full hair crown near the top; cut the bottom at her lower chest.",
+      "preserve_zh": "Preserve both seated women’s exact identities, expressions, eye directions, hairstyles and clothes. Keep the younger woman’s phone and hands naturally posed at chest level, the same black sofa and room direction, and realistic skin."
+    }
+  ]
+}

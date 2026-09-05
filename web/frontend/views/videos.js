@@ -7,25 +7,23 @@ Views.videos = async function videos(app, project, ep) {
   const episodes = Array.from(new Set([
     ...(epList.episodes || []), ...(epList.video_episodes || []),
   ])).sort((a, b) => a - b);
-  if (!episodes.length) {
-    app.innerHTML = '<div class="empty-hint">这个项目还没有分镜表，也还没有任何视频产出。</div>';
-    return;
-  }
-  const currentEp = episodes.includes(ep) ? ep : episodes[0];
+  const currentEp = episodes.includes(ep) ? ep : (episodes[0] || 1);
 
   app.innerHTML = `
     <h1>${UI.esc(project)} · 视频</h1>
+    <div class="toolbar"><a class="action-link" href="#/production?project=${encodeURIComponent(project)}">视频制作中心</a><a class="action-link" href="#/gpu?project=${encodeURIComponent(project)}">租用 / 关闭显卡</a></div>
     <div class="notice warn">
-      视频生成大多要在可灵/即梦等平台网页手动提交，或者需要真的租显卡跑，
-      这个页面的"请求重新生成"不会自动帮你跑视频，只会把你的意见记下来，
-      由后续处理这一步的人决定要不要真的重新提交。
+      生成视频每条消耗 300 点数，显卡租用另花真实费用。先检查任务和生成服务是否就绪，再租卡并确认生成；生成失败退还点数，已产生的显卡费用按实际使用计费。
     </div>
+    ${!episodes.length?'<p class="notice">这个项目还没有分集，请先在分镜表页准备分集和镜头。</p>':''}
     <div class="pill-tabs">${episodes.map((n) => `<a href="#/p/${encodeURIComponent(project)}/videos/${n}" class="${n === currentEp ? 'active' : ''}">第${n}集</a>`).join('')}</div>
     <div id="videoFiles"></div>
+    <div id="videoGeneration"></div>
     <div id="videoTableWrap"></div>
   `;
 
   const data = await API.videos(project, currentEp);
+  await Views.videoGeneration(document.getElementById('videoGeneration'),project,currentEp);
 
   const filesWrap = document.getElementById('videoFiles');
   const fileKeys = Object.keys(data.video_files || {});

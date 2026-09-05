@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜11",
+    "prompt": "Edit this same photograph. Reframe as a tight chest-up reaction close-up of the young clean-shaven man in the faded blue-gray shirt. Enlarge this sharp person strongly: his hair crown is 5% below the top edge, and the lower edge cuts directly beneath his chest. His waist, belt and trousers are outside the frame. Move the blurred brown-jacketed bearded listener to the extreme left edge, retaining just a narrow sliver of the back of his head and shoulder within the leftmost 15% of the image, including the bottom-left corner.\nPreserve both identities, the exact expression, eye direction, head angle, clothes, natural skin and original background direction. Keep the same moment of dialogue. Hands and bottle retain their original action below the chest crop; do not raise them into the picture.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜11/ep01_镜11_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch2_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第46行「江砚（语气冰冷）：除了他，没人会这么针对我。」——怀疑有明确对象，他没有失控。"
+  },
+  {
+    "id": "ep01_镜12",
+    "prompt": "Edit this same photograph. Reframe as a tight chest-up reaction close-up of the bearded man in the brown jacket and gray scarf. Enlarge this sharp person strongly: his hair crown is 5% below the top edge, and the lower edge cuts directly beneath his chest. His waist, belt and trousers are outside the frame. Move the blurred young blue-gray-shirted listener to the extreme left edge, retaining just a narrow sliver of the back of his head and shoulder within the leftmost 15% of the image, including the bottom-left corner.\nPreserve both identities, the exact expression, eye direction, head angle, clothes, natural skin and original background direction. Keep the same moment of dialogue. Hands and bottle retain their original action below the chest crop; do not raise them into the picture.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜12/ep01_镜12_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch2_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第47行「陈野（不忿）：这兔崽子也太缺德了！你前脚刚帮他们家找出三吨储量的金矿，后脚他就卸磨杀驴！」——用三吨金矿与栽赃的反差说明顾家忘恩负义。"
+  }
+]

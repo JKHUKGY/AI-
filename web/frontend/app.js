@@ -1,10 +1,10 @@
 function parseHash() {
-  const hash = location.hash.replace(/^#\/?/, '');
+  const [hash, query = ''] = location.hash.replace(/^#\/?/, '').split('?');
   const parts = hash.split('/').filter(Boolean);
   if (parts.length === 0) return { name: 'home' };
   if (parts[0] === 'guide') return { name: 'guide' };
   if (parts[0] === 'inbox') return { name: 'inbox' };
-  if (['admin','usage','gpu'].includes(parts[0])) return {name:parts[0]};
+  if (['admin','usage','gpu','production','help-history'].includes(parts[0])) return {name:parts[0], project: new URLSearchParams(query).get('project') || undefined};
   if (parts[0] === 'p' && parts[1]) {
     const project = decodeURIComponent(parts[1]);
     const section = parts[2] || 'characters';
@@ -22,7 +22,7 @@ function parseHash() {
 let currentUser = null;
 
 function navHtml(route) {
-  const items = [['#/guide', '指南', route.name === 'guide']];
+  const items = [['#/production', '租显卡 / 生成视频', ['production','gpu'].includes(route.name)], ['#/guide', '指南', route.name === 'guide']];
   if (route.project) {
     const p = encodeURIComponent(route.project);
     items.push([`#/p/${p}/setup`, '项目筹备', route.name === 'setup']);
@@ -51,7 +51,7 @@ async function render() {
   app.innerHTML = '<div class="empty-hint">加载中…</div>';
   try {
     if (route.name === 'home') await Views.home(app);
-    else if (['admin','usage','gpu'].includes(route.name)) await Views[route.name](app);
+    else if (['admin','usage','gpu','production','help-history'].includes(route.name)) await Views[route.name](app,route.project);
     else if (route.name === 'setup') await Views.setup(app, route.project);
     else if (route.name === 'guide') await Views.guide(app);
     else if (route.name === 'inbox') await Views.inbox(app);

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ep01_镜30",
+    "prompt": "Edit this same photograph. Tighten this photograph into a chest-up reaction close-up of the young man. Place his complete hair crown near the top border and cut the bottom border at his lower chest. Keep the gray-haired mother’s side-back head and shoulder along the RIGHT edge. At the far LEFT edge retain only narrow blurred partial heads and shoulders of the brown-haired woman and, behind her, the younger woman. The young man’s face is the dominant subject.\nPreserve all four identities, the young man’s restrained closed-mouth expression and leftward gaze, the mother’s bun and beige clothing, the left women’s brown hair and blue-gray/white clothing, and the entrance-door camera direction. Keep natural skin and fabric texture.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜30/ep01_镜30_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch4_round2_plans_b.json",
+    "script_ref_zh": "script_source.txt 第66行「刘兰（眼皮都没抬，慢悠悠地吹了吹指甲）：哟，来了啊，听你妈说你是名牌大学毕业？我们家可小，委屈你大学生了。」——反话让江砚难堪，但他尚未反驳。"
+  },
+  {
+    "id": "ep01_镜32",
+    "prompt": "Edit this same photograph. Tighten this photograph into a chest-up reaction close-up of the young man. Place his complete hair crown near the top border and cut the bottom border at his lower chest. Keep the gray-haired mother’s side-back head and shoulder along the RIGHT edge. At the far LEFT edge retain only narrow blurred partial heads and shoulders of the brown-haired woman and, behind her, the younger woman. The young man’s face is the dominant subject.\nPreserve all four identities, the young man’s restrained closed-mouth expression and leftward gaze, the mother’s bun and beige clothing, the left women’s brown hair and blue-gray/white clothing, and the entrance-door camera direction. Keep natural skin and fabric texture.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜32/ep01_镜32_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch4_round2_plans_b.json",
+    "script_ref_zh": "script_source.txt 第67行「顾瑶（抬眼扫了江砚一身平价衣服，嗤笑一声）：妈，人家好不容易从国内来，不得好好见识见识非洲的好日子？别回头住不惯，再闹着要回去。」；script_source.txt 第68行「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——江砚受辱，母亲首先担心儿子顶嘴。"
+  }
+]

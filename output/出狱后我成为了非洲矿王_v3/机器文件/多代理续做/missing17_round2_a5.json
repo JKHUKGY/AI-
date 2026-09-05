@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ep01_镜33",
+    "prompt": "Edit this same photograph. Make a tight insert close-up of this SAME RIGHT HAND on the BLACK LUGGAGE HANDLE. The upper border cuts across the wrist just above the hand. The lower border cuts through the two rods just below the handle. The hand and horizontal grip dominate the frame. Only softly blurred marble floor appears around them.\nPreserve the exact same anatomically natural right hand, finger positions, relaxed initial grip, realistic skin, black horizontal handle and twin rods, same daylight and portrait orientation. The torso, suitcase body, long forearm and long lower rods are outside this much tighter crop.\nKeep the same photographic style and lighting. Final portrait 9:16.",
+    "ref_images": [
+      "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜33/ep01_镜33_00.png"
+    ],
+    "count": 2,
+    "generation_round": 2,
+    "candidate_start": 1,
+    "mode": "same_unit_edit",
+    "source_cards": "output/出狱后我成为了非洲矿王_v3/keyframes/ep01/keyframe_cards.json",
+    "source_edit_plan": "output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_batch5_round2_plans.json",
+    "script_ref_zh": "script_source.txt 第68行「▲江砚眉头微蹙，没说话，攥紧了行李箱拉杆。」——愤怒落到攥紧拉杆上，他始终没开口。"
+  }
+]

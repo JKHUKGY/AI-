@@ -1,0 +1,66 @@
+{
+  "agent_id": "/root/missing17_ga",
+  "role": "Generator A",
+  "status": "prepared_only",
+  "prepared_at": "2026-09-05T13:33:51.027615+00:00",
+  "source_job": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/机器文件/多代理续做/missing17_round1_a3.json",
+  "source_job_sha256": "02d280e094d4ff38bce91f356136123394354cbb2e10ea9e90056cb63e57a3e0",
+  "viewed_references": [
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/SC05_监狱门口_A主机位_紧/SC05_监狱门口_A主机位_紧_00.png",
+      "exists": true,
+      "sha256": "db080ccd96271c03b2a7dcc29c3f377e501bf23d286ab47168506d45210893bd",
+      "actually_viewed": true
+    },
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/江砚_初来期_三视图/江砚_初来期_三视图_02.png",
+      "exists": true,
+      "sha256": "f92bac6347329d0e9c4987608bde6a409f61c0d2893d5af6fe6b63197ad4d635",
+      "actually_viewed": true
+    },
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/陈野_三视图/陈野_三视图_00.png",
+      "exists": true,
+      "sha256": "8140176900bc20d6378804b7b9e35897a0492377188fa8e32c62a4d5d2c2c829",
+      "actually_viewed": true
+    },
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_master/master_ep01_v1/master_ep01_v1_03.png",
+      "exists": true,
+      "sha256": "00c06ed140acd12376fbf2cf67649d2a032daa07e72c6bc3baba36d9bcf85dc3",
+      "actually_viewed": true
+    },
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/苏慧_佣人期_三视图/苏慧_佣人期_三视图_01.png",
+      "exists": true,
+      "sha256": "793129e1a4e79ca8ab16b8f5c3cb8db0837655c35c71cbe902c41e5b8827dc36",
+      "actually_viewed": true
+    },
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/刘兰_三视图/刘兰_三视图_01.png",
+      "exists": true,
+      "sha256": "8b1395d2487a383d8a545c11ab846868a565423fa0ac954d043a7caef2a47401",
+      "actually_viewed": true
+    },
+    {
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/assets/顾瑶_三视图/顾瑶_三视图_00.png",
+      "exists": true,
+      "sha256": "16833643e23be8b1af564760f96e736fa6ea912c260719ede9cba9da7ebddaad",
+      "actually_viewed": true
+    }
+  ],
+  "targets": [
+    {
+      "id": "ep01_镜13",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜13/ep01_镜13_00.png",
+      "exists": false
+    },
+    {
+      "id": "ep01_镜26",
+      "path": "/workspaces/AI-/output/出狱后我成为了非洲矿王_v3/keyframes/ep01/_shots/ep01_镜26/ep01_镜26_00.png",
+      "exists": false
+    }
+  ],
+  "imagegen_calls": 0,
+  "errors": []
+}

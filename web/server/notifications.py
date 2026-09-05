@@ -6,6 +6,8 @@ import ssl
 import time
 import control_store as store
 
+GPU_RECIPIENT = 'j18210070075@gmail.com'
+
 
 def configured(config=None):
     config = config or store.settings()
@@ -35,12 +37,17 @@ def deliver_one():
         row = dict(row)
         c.execute('UPDATE outbox SET next_try=?,attempts=attempts+1 WHERE id=?', (time.time()+120, row['id']))
     message = EmailMessage()
-    message['From'], message['To'] = config['mail_from'], config['mail_to']
-    message['Subject'] = '剧本家协作台：账号使用通知'
+    message['From'], message['To'] = config['mail_from'], GPU_RECIPIENT if row['kind'] == 'gpu' else config['mail_to']
+    message['Subject'] = '剧本家协作台：正在使用显卡' if row['kind'] == 'gpu' else '剧本家协作台：通知测试'
     message['Date'] = formatdate(localtime=False)
     message['Message-ID'] = '<' + row['usage_id'] + '@scriptwriter.local>'
     labels = {'image':'图片生成', 'video':'视频生成', 'gpu':'租用显卡', 'prompt':'提示词生成', 'setup':'项目筹备', 'help':'帮助问答', 'login':'登录', 'mail_test':'管理员通知测试'}
     message.set_content(f"账号：{row['username']}\n项目：{row['project'] or '无'}\n操作：{labels.get(row['kind'], row['kind'])}\n数量：{row['quantity']}\n预计积分：{row['quantity'] * row['unit_cost']}\n任务编号：{row['usage_id']}\n时间（UTC）：{time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(row['created_at']))}\n请在管理员页面查看进度、结算及租卡费用。")
+    if row['kind'] == 'gpu':
+        import runpod_service
+        rental = runpod_service.get(row['usage_id'])
+        detail = rental['detail']
+        message.set_content(f"正在使用显卡，已开始产生 RunPod 费用。\n账号：{row['username']}\n项目：{row['project']}\n实例：{rental['pod_id']}\n机型：{detail['gpu']['name']}\n估算单价：${detail['hourly_usd']:.4f}/小时\n预算：${detail['max_usd']}\n无排队或运行任务满 10 分钟自动释放，也可在网站手动关闭。\n管理页面：https://scriptwriter-jia.northcentralus.cloudapp.azure.com/#/gpu\n")
     try:
         send(message, config)
     except Exception:

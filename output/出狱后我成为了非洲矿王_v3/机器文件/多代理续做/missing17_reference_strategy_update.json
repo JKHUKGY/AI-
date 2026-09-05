@@ -1,0 +1,17 @@
+{
+  "changed_before_generation": [
+    "ep01_镜08",
+    "ep01_镜10",
+    "ep01_镜11",
+    "ep01_镜12",
+    "ep01_镜13",
+    "ep01_镜27",
+    "ep01_镜28",
+    "ep01_镜29",
+    "ep01_镜30",
+    "ep01_镜31",
+    "ep01_镜32"
+  ],
+  "reason": "首组宽主帧视觉参考反复拉宽近景；后续未生成近景改为批准紧底板+角色基准；保留scene_beats全部原文与状态。",
+  "checks": "0 card errors; all refs<=5; no existing candidates touched"
+}

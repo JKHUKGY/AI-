@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-09-05T13:56:02.904242+00:00",
+  "trigger_user_question": "你这个反复纠察的是我写在skill里要求的吗",
+  "clarification_by": "/root",
+  "is_new_user_design_change": false,
+  "basis": [
+    ".agents/skills/loop-picture-generation/SKILL.md",
+    ".agents/skills/short-drama-keyframe-gen/references/keyframe_review_checklist.md"
+  ],
+  "interpretation": "独立审查、实质景别/身份/连戏检查及最多三轮由skill明确要求。5%顶空与15%肩幅来自本项目卡片且为约数；skill未规定精确容差。不再仅因轻微目测比例差异判必须重出，判断是否实质改变批准景别和叙事。既有审查原文保留，不能伪造通过；人物复制、明确持物/道具归属/朝向错误仍检查。",
+  "selection_authorization": "继续沿用用户既有到限各选一张指令。"
+}
