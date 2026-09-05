@@ -33,6 +33,7 @@ Views.admin = async function(app) {
   app.innerHTML=`<h1>管理员管理</h1><p>分配项目、停用账号、管理积分及查看使用记录。</p>
     <div class="toolbar"><button class="admin-refresh">刷新使用情况</button><a href="#/gpu">租卡管理</a><a href="#/help-history">助手对话记录</a><a href="#/usage">我的积分</a></div>
     <div class="card"><h2>账号与项目权限</h2><p>新账号可用积分为 0。图片每张 10 积分，视频每条 300 积分；提交先冻结，成功后结算，未完成部分退还。</p>
+    <p>制作 Skills 默认仅管理员可见。为普通账号勾选“查看制作 Skills”并保存权限，即可开放只读查看；取消勾选可收回权限。</p>
     <form class="create-user control-form"><label>新账号<input name="username" required maxlength="40"></label><label>初始密码<input name="password" type="password" required minlength="12" autocomplete="new-password"></label><button class="primary">创建账号</button></form><div class="admin-users"></div></div>
     <div class="card"><h2>服务配置</h2><p class="mail-state"></p><form class="admin-settings control-form"></form></div>
     <div class="card"><h2>租卡运行情况</h2><p>费用为按运行时间计算的估算，最终金额以 RunPod 账单为准；释放中的实例尚未确认停止计费。</p><div class="admin-rentals"></div></div>
@@ -45,7 +46,7 @@ Views.admin = async function(app) {
     item.innerHTML=`<h3>${esc(user.display_name)} <span class="muted">${esc(user.username)} · ${user.admin?'管理员':'普通账号'} · ${user.enabled?'启用':'已停用'}</span></h3>
       <p class="account-balance">可用 ${user.balance} 积分 · 冻结 ${user.held} 积分 · 最近访问 ${esc(ControlUI.time(user.last_seen))}</p>
       <div class="control-projects">${data.projects.map(p=>`<label><input type="checkbox" value="${esc(p)}" ${user.projects.includes(p)?'checked':''} ${user.admin?'disabled':''}>${esc(p)}</label>`).join('')}</div>
-      <div class="control-features">${Object.entries(data.features).map(([key,label])=>`<label><input type="checkbox" value="${esc(key)}" ${user.features[key]?'checked':''} ${user.admin?'disabled':''}>${esc(label)}</label>`).join('')}</div>
+      <div class="control-features">${Object.entries(data.features).map(([key,label])=>`<label><input type="checkbox" value="${esc(key)}" ${user.admin || user.features[key]?'checked':''} ${user.admin?'disabled':''}>${esc(label)}</label>`).join('')}</div>
       <div class="toolbar"><label><input class="gpu-permission" type="checkbox" ${user.gpu_allowed?'checked':''} ${user.admin?'disabled':''}>允许租显卡</label><button class="save-access" ${user.admin?'disabled':''}>保存权限</button>
       <button class="toggle-user" ${user.username===currentUser.username?'disabled':''}>${user.enabled?'立即停用并停止任务':'重新启用'}</button></div>
       <form class="grant-credits toolbar"><label>增加 / 减少积分<input name="delta" type="number" step="1" min="-10000000" max="10000000" placeholder="例如 1000 或 -100" required></label><button>确认调整积分</button></form>

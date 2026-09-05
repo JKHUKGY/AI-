@@ -129,19 +129,25 @@ def _execute(root, proposal):
 def register(router):
     @router.get(r'/api/skills')
     def catalog(ctx, params):
+        control_store.require_feature(ctx.username, 'skills_view')
         return {'skills': skill_catalog.catalog(), 'can_execute': auth.is_admin(ctx.username)}
 
     @router.get(r'/api/skills/(?P<skill>[a-z0-9-]+)')
     def detail(ctx, params):
+        control_store.require_feature(ctx.username, 'skills_view')
         return skill_catalog.get(params['skill'], True)
 
     @router.get(r'/api/projects/(?P<name>[^/]+)/skills/tasks')
     def tasks(ctx, params):
+        control_store.require_feature(ctx.username, 'skills_view')
         root = _root(params['name'])
         return {'tasks': [t for t in prompt_tasks.list_tasks(root) if t['target'].get('type') == 'skill']}
 
     @router.post(r'/api/projects/(?P<name>[^/]+)/skills/(?P<skill>[a-z0-9-]+)/(?P<action>probe|preview)')
     def prepare(ctx, params):
+        control_store.require_feature(ctx.username, 'skills_view')
+        if not auth.is_admin(ctx.username):
+            raise ApiError(403, '仅管理员可规划或调用制作 Skills；当前账号仅可查看')
         root = _root(params['name'])
         body = _body(ctx)
         skill = skill_catalog.get(params['skill'])
@@ -181,10 +187,11 @@ def register(router):
 
     @router.post(r'/api/projects/(?P<name>[^/]+)/skills/execute')
     def execute(ctx, params):
+        control_store.require_feature(ctx.username, 'skills_view')
         root = _root(params['name'])
         body = _body(ctx)
         if not auth.is_admin(ctx.username):
-            raise ApiError(403, '带工具的 skill 执行目前仅对管理员开放；普通账号可使用规划和加载自检')
+            raise ApiError(403, '仅管理员可执行制作 Skills；当前账号仅可查看')
         if body.get('approved') is not True:
             raise ApiError(400, '请先查看并批准具体方案')
         if not isinstance(body.get('proposal'), str):

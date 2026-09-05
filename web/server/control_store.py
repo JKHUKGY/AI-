@@ -12,7 +12,8 @@ from router import ApiError
 _locks = {}
 _guard = threading.Lock()
 PRICES = {'image': 10, 'video': 300}
-FEATURES = {'create':'创建项目', 'edit':'编辑与反馈', 'text':'文字生成', 'image':'图片生成', 'video':'视频生成', 'help':'使用帮助'}
+FEATURES = {'create':'创建项目', 'edit':'编辑与反馈', 'text':'文字生成', 'image':'图片生成', 'video':'视频生成', 'help':'使用帮助', 'skills_view':'查看制作 Skills'}
+FEATURE_DEFAULTS = {key: key != 'skills_view' for key in FEATURES}
 
 
 def user_lock(username):
@@ -66,7 +67,7 @@ def account(username):
         result = _account(c, username)
         result['held'] = c.execute("SELECT COALESCE(SUM(quantity*unit_cost),0) FROM usage WHERE username=? AND status IN ('reserved','running','unknown')", (username,)).fetchone()[0]
         flags = c.execute('SELECT value FROM features WHERE username=?',(username,)).fetchone()
-        result['features'] = {key:True for key in FEATURES} | (json.loads(flags['value']) if flags else {})
+        result['features'] = FEATURE_DEFAULTS | (json.loads(flags['value']) if flags else {})
         return result
 
 
@@ -75,6 +76,12 @@ def require_feature(username, feature):
     ensure_enabled(username)
     if not auth.is_admin(username) and not account(username)['features'].get(feature,True):
         raise ApiError(403, f'管理员已禁止该账号使用{FEATURES[feature]}')
+
+
+def can_view_skills(username):
+    import auth
+    user = account(username)
+    return bool(user['enabled'] and (auth.is_admin(username) or user['features']['skills_view']))
 
 
 def set_features(username, flags):

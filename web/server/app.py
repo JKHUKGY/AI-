@@ -799,7 +799,11 @@ def api_start_prompt_task(ctx, params):
 
 @router.post(r'/api/projects/(?P<name>[^/]+)/prompt_tasks/(?P<identifier>[^/]+)/cancel')
 def api_cancel_prompt_task(ctx, params):
-    task = prompt_tasks.cancel(_project_or_404(params['name']), params['identifier'])
+    pdir = _project_or_404(params['name'])
+    existing = next((t for t in prompt_tasks.list_tasks(pdir) if t['id'] == params['identifier']), None)
+    if existing and existing.get('target', {}).get('type') == 'skill':
+        admin_api.require_admin(ctx.username)
+    task = prompt_tasks.cancel(pdir, params['identifier'])
     if task is None:
         raise ApiError(404, '找不到当前项目的这个任务')
     return {'task': task}
@@ -808,6 +812,7 @@ def api_cancel_prompt_task(ctx, params):
 @router.get(r'/api/tasks')
 def api_tasks(ctx, params):
     result = []
+    skills_allowed = control_store.can_view_skills(ctx.username)
     for project in api_projects(ctx, {})['projects']:
         name = project['name']
         pdir = _project_or_404(name)
@@ -815,7 +820,9 @@ def api_tasks(ctx, params):
         if setup and setup['status'] == 'running':
             result.append({'id': 'setup', 'kind': 'setup', 'project': name, 'status': 'running',
                            'target': {'job_id': '项目筹备', 'type': 'setup'}, 'step': setup.get('step')})
-        result.extend({**t, 'project': name} for t in prompt_tasks.list_tasks(pdir))
+        result.extend({**t, 'project': name, 'can_cancel': t.get('target', {}).get('type') != 'skill' or auth.is_admin(ctx.username)}
+                      for t in prompt_tasks.list_tasks(pdir)
+                      if t.get('target', {}).get('type') != 'skill' or skills_allowed)
         for entry in state.list_regen_jobs(_state_path(name)):
             if entry.get('kind') != 'image' or not entry.get('token'):
                 continue
@@ -1117,6 +1124,11 @@ class Handler(BaseHTTPRequestHandler):
         abs_path = projects.resolve_media_path(rel)
         if not abs_path:
             self.send_error(404)
+            return
+        parts = os.path.relpath(abs_path, projects.OUTPUT_DIR).split(os.sep)
+        skill_files = {'skill_runs', 'skill_proposals.json', 'prompt_tasks.json'}
+        if '_web_state' in parts and skill_files.intersection(parts) and not control_store.can_view_skills(username):
+            self.send_error(403)
             return
         file_size = os.path.getsize(abs_path)
         range_header = self.headers.get('Range')

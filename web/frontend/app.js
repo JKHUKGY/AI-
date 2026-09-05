@@ -25,7 +25,9 @@ let currentUser = null;
 
 function navHtml(route) {
   const items = [['#/production', '租显卡 / 生成视频', ['production','gpu'].includes(route.name)], ['#/guide', '指南', route.name === 'guide']];
-  items.push([route.project ? `#/p/${encodeURIComponent(route.project)}/skills` : '#/skills', '制作 Skills', route.name === 'skills']);
+  if (currentUser?.is_admin || currentUser?.account?.features?.skills_view) {
+    items.push([route.project ? `#/p/${encodeURIComponent(route.project)}/skills` : '#/skills', '制作 Skills', route.name === 'skills']);
+  }
   if (route.project) {
     const p = encodeURIComponent(route.project);
     items.push([`#/p/${p}/setup`, '项目筹备', route.name === 'setup']);

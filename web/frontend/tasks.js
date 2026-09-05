@@ -7,7 +7,7 @@ const TaskUI = (() => {
     if (!container) return;
     const running = tasks.filter(t => t.status === 'running').length;
     container.querySelector('summary').textContent = `生成任务 · ${running} 个进行中 · 切换页面后继续保留`;
-    const nextSignature = JSON.stringify(tasks.map(t => [t.project, t.kind, t.id, t.status, t.step, t.result, t.error, t.new_files]));
+    const nextSignature = JSON.stringify(tasks.map(t => [t.project, t.kind, t.id, t.status, t.step, t.result, t.error, t.new_files, t.can_cancel]));
     if (signature === nextSignature) return;
     signature = nextSignature;
     const list = container.querySelector('.task-list');
@@ -23,7 +23,7 @@ const TaskUI = (() => {
       const route = target.type === 'skill' ? 'skills' : task.kind === 'setup' ? 'setup' : target.type === 'keyframe' ? `keyframes/${target.episode}` : (target.job_id.startsWith('SC') ? 'scenes' : 'characters');
       link.href = `#/p/${encodeURIComponent(task.project)}/${route}`; link.textContent = '打开项目';
       row.append(title, link);
-      if (task.status === 'running') {
+      if (task.status === 'running' && task.can_cancel !== false) {
         const stop = document.createElement('button'); stop.className = 'small'; stop.textContent = '终止生成';
         stop.addEventListener('click', async () => {
           stop.disabled = true; stop.textContent = '正在终止…';

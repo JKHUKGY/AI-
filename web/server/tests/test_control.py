@@ -365,6 +365,61 @@ class ControlTests(unittest.TestCase):
             self.assertEqual(request.call_count,1)
         self.assertEqual(video.get(second)['status'],'running')
 
+    def test_skills_default_denial_admin_grant_read_only_and_revoke(self):
+        import prompt_tasks
+        import state
+        store.set_features('writer', {'text': True})  # 已有账号的旧权限没有新字段。
+        self.assertFalse(store.account('writer')['features']['skills_view'])
+        self.assertFalse(store.account('new-user')['features']['skills_view'])
+        (self.project / 'assets').mkdir()
+        task = {'id': 'skill-task', 'kind': 'prompt', 'status': 'running',
+                'target': {'type': 'skill', 'job_id': 'skill'}, 'result': {'prompt': 'private plan'}}
+        (self.project / '_web_state').mkdir()
+        state.save(prompt_tasks.path(self.project), {'tasks': [task]})
+        artifact = self.project / '_web_state/skill_runs/run/output.txt'
+        artifact.parent.mkdir(parents=True); artifact.write_text('private artifact')
+        server = app.Server(('127.0.0.1', 0), app.Handler); server.secure_cookies = False
+        thread = threading.Thread(target=server.serve_forever, daemon=True); thread.start()
+
+        def request(method, path, username='writer', body=None):
+            connection = HTTPConnection('127.0.0.1', server.server_port, timeout=5)
+            cookie = auth.make_session_cookie_value(username)
+            connection.request(method, path, json.dumps(body or {}) if method == 'POST' else None,
+                               {'Cookie': auth.SESSION_COOKIE_NAME + '=' + cookie, 'Content-Type': 'application/json'})
+            response = connection.getresponse(); payload = response.read(); status = response.status
+            connection.close()
+            return status, payload
+
+        reads = ['/api/skills', '/api/skills/short-drama-scout', '/api/projects/demo/skills/tasks',
+                 '/media/demo/_web_state/skill_runs/run/output.txt', '/media/demo/_web_state/prompt_tasks.json']
+        access = '/api/admin/users/writer/access'
+        grant = {'projects': ['demo'], 'gpu_allowed': True, 'features': {'skills_view': True}}
+        try:
+            with patch.object(app.Handler, 'log_message'), patch.object(app.skill_api.prompt_tasks, 'start') as start:
+                for path in reads:
+                    self.assertEqual(request('GET', path)[0], 403, path)
+                    self.assertEqual(request('GET', path, 'admin')[0], 200, path)
+                self.assertEqual(json.loads(request('GET', '/api/tasks')[1])['tasks'], [])
+                self.assertEqual(request('POST', access, body=grant)[0], 403)
+                self.assertEqual(request('POST', access, 'admin', grant)[0], 200)
+                self.assertTrue(json.loads(request('GET', '/api/me')[1])['account']['features']['skills_view'])
+                for path in reads:
+                    self.assertEqual(request('GET', path)[0], 200, path)
+                self.assertFalse(json.loads(request('GET', '/api/skills')[1])['can_execute'])
+                self.assertFalse(json.loads(request('GET', '/api/tasks')[1])['tasks'][0]['can_cancel'])
+                for suffix in ('short-drama-scout/probe', 'short-drama-scout/preview', 'execute'):
+                    self.assertEqual(request('POST', '/api/projects/demo/skills/' + suffix, body={'request': 'test'})[0], 403)
+                self.assertEqual(request('POST', '/api/projects/demo/prompt_tasks/skill-task/cancel')[0], 403)
+                self.assertEqual(request('GET', '/api/projects/other/skills/tasks')[0], 403)
+                start.assert_not_called()
+                grant['features']['skills_view'] = False
+                self.assertEqual(request('POST', access, 'admin', grant)[0], 200)
+                for path in reads:
+                    self.assertEqual(request('GET', path)[0], 403, path)
+                self.assertEqual(json.loads(request('GET', '/api/tasks')[1])['tasks'], [])
+        finally:
+            server.shutdown(); server.server_close(); thread.join()
+
     def test_http_enforces_admin_feature_disable_and_cross_origin(self):
         server=app.Server(('127.0.0.1',0),app.Handler);server.secure_cookies=False
         thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
